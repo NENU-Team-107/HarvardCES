@@ -1,0 +1,73 @@
+<script lang="ts" setup>
+import { ref } from "vue";
+import {
+  Listbox,
+  ListboxButton,
+  ListboxOptions,
+  ListboxOption,
+} from '@headlessui/vue'
+const title = "Nuxt.js";
+
+// 如果数据结构比较复杂，可以定义一个数据结构
+
+interface RouterItem {
+  name: string;
+  path: string;
+  children?: RouterItem[];
+}
+
+const routerArray = ref<RouterItem[]>([
+  {
+    name: "Home",
+    path: "/",
+  },
+  {
+    name: "Guests",
+    path: "/guests",
+    children: [ // 我推荐不要子路由，懒得调样式了
+      {
+        name: "Tom",
+        path: "/guests/tom",
+      },
+      {
+        name: "Jerry",
+        path: "/guests/jerry",
+      },
+    ],
+  },
+  {
+    name: "About",
+    path: "/about"
+  },
+  {
+    name: "Contact",
+    path: "/contact"
+  },
+]);
+
+const selectBtn = ref(1)
+
+
+</script>
+
+// 最开始写样式的时候可以随便找个颜色填一下背景，确定一下元素的范围，调整好位置之后再去掉背景色
+
+<template>
+  <div class="w-full flex h-12 bg-gray-100 justify-between items-center">
+    <div class="h-full flex justify-center items-center">
+      <NuxtLink to="/" class="text-blue-500">
+        <span>{{ title }}</span>
+        <!-- 也可以插入图片, NuxtLink包裹可以点击跳转 -->
+      </NuxtLink>
+    </div>
+    <!-- 不太确定对导航栏这一块的动态路由的意思，如果是希望样式一样，但是内容不同的话，把路由当作参数传进来就行 -->
+    <div class="h-full flex justify-center items-center flex-row">
+      <NuxtLink v-for="item in routerArray" :to="item.path" class="text-blue-500 mx-3">
+        <span>{{ item.name }}</span>
+      </NuxtLink>
+    </div>
+  </div>
+</template>
+
+// 比较好用的样式: 水平垂直居中: flex justify-center items-center
+// justify-xxxx还有其他属性, 基本可以满足大部分需求
