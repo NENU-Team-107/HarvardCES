@@ -22,6 +22,12 @@ export default defineNuxtConfig({
       fallbackLocale: 'en'
     }
   },
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  }
   // dayjs: {
   //   locales: ["en", "zh-cn", "zh-hk"],
   //   plugins: ['relativeTime', 'utc', 'timezone', 'localizedFormat'],

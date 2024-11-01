@@ -73,16 +73,26 @@ DevTools开启的时候好像非常卡，样式什么的加载的好慢，所以
 詳情請諮詢：GIETfuture@eduhk.hk
 ```
 
+这个图感觉挺好的，但是我不确定放在哪里（
+
+![footer-example](doc/footer-example.png)
+
+
+## 关于 i18n
+
+可以参考这篇文章：https://juejin.cn/post/7405777954515910682
+
+这里的服务端多语言，可以用来返回下方的 `SpeakerBio`
 
 ## Model Defination
 
 ```ts
 type SpeakerBio = {
-    [lang: string] : {
+    details: {
         description: string,
         title: string | undefined
         link: string | undefined
-    } 
+    }
 }
 
 type Speaker = {

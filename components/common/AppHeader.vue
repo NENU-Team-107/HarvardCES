@@ -49,19 +49,6 @@ const routerArray = ref<RouterItem[]>([
   },
 ]);
 
-
-const options = ref([
-  {
-    value: "zh_Hans", label: "简体中文",
-  },
-  {
-    value: "en", label: "English",
-  },
-  {
-    value: "zh_Hant", label: "繁体中文",
-  }
-])
-
 </script>
 
 // 最开始写样式的时候可以随便找个颜色填一下背景，确定一下元素的范围，调整好位置之后再去掉背景色

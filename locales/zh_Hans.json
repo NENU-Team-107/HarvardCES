@@ -1,6 +1,36 @@
 {
-    "Home": "主页",
-    "Speakers": "嘉宾",
-    "About": "论坛介绍",
-    "Contact": "关于我们"
+  "Home": "主页",
+  "Speakers": "嘉宾",
+  "About": "论坛介绍",
+  "Contact": "关于我们",
+  "Host": {
+    "Title": "联系我们",
+    "Name": "主办方",
+    "Language": "语言",
+    "Date": "日期",
+    "Location": "地点",
+    "Details": {
+      "Name": "哈佛中国教育论坛(CES)；香港教育大学",
+      "Language": "普通话和英语",
+      "Date": "2025年5月8日-2025年5月10日",
+      "Location": "香港教育大学大埔校园"
+    }
+  },
+  "Media": {
+    "Redbook": {
+      "Name": "小红书",
+      "Intro": "小红书请关注：",
+      "Details": "哈佛CES香港教大联合论坛"
+    },
+    "Wechat": {
+      "Name": "微信公众号",
+      "Intro": "公众号请关注：",
+      "Details": "Harvard CES-EdUHK"
+    },
+    "Email": {
+      "Name": " ",
+      "Intro": "详情请咨询：",
+      "Details": "{email}"
+    }
+  }
 }
