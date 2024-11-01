@@ -13,6 +13,7 @@
     "@headlessui/vue": "^1.7.23",
     "@heroicons/vue": "^2.1.5",
     "@nuxt/ui": "^2.18.7",
+    "@nuxtjs/i18n": "^8.5.5",
     "@nuxtjs/tailwindcss": "^6.12.2",
     "nuxt": "^3.13.2",
     "vue": "latest",

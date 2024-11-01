@@ -1,13 +1,14 @@
 <script lang="ts" setup>
 
 definePageMeta({
-  layout: 'guests',
+  layout: 'speakers',
+  key: route => route.fullPath
 })
 
 </script>
 
 <template>
   <div>
-    <h1>There is {{ $route.params.name }}</h1>
+    <h1>There is {{ $route.params }}</h1>
   </div>
 </template>

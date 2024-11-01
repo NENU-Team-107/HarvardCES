@@ -6,7 +6,11 @@ import {
   ListboxOptions,
   ListboxOption,
 } from '@headlessui/vue'
+import LangSwitch from "./LangSwitch.vue";
 const title = "Nuxt.js";
+
+
+const { locale, locales, setLocale } = useI18n()
 
 // 如果数据结构比较复杂，可以定义一个数据结构
 
@@ -22,16 +26,16 @@ const routerArray = ref<RouterItem[]>([
     path: "/",
   },
   {
-    name: "Guests",
-    path: "/guests",
+    name: "Speakers",
+    path: "/speakers",
     children: [ // 我推荐不要子路由，懒得调样式了
       {
         name: "Tom",
-        path: "/guests/tom",
+        path: "/speakers/tom",
       },
       {
         name: "Jerry",
-        path: "/guests/jerry",
+        path: "/speakers/jerry",
       },
     ],
   },
@@ -45,8 +49,18 @@ const routerArray = ref<RouterItem[]>([
   },
 ]);
 
-const selectBtn = ref(1)
 
+const options = ref([
+  {
+    value: "zh_Hans", label: "简体中文",
+  },
+  {
+    value: "en", label: "English",
+  },
+  {
+    value: "zh_Hant", label: "繁体中文",
+  }
+])
 
 </script>
 
@@ -55,17 +69,19 @@ const selectBtn = ref(1)
 <template>
   <div class="w-full flex h-12 bg-gray-100 justify-between items-center">
     <div class="h-full flex justify-center items-center">
-      <NuxtLink to="/" class="text-blue-500">
+      <NuxtLinkLocale to="/" class="text-blue-500">
         <span>{{ title }}</span>
         <!-- 也可以插入图片, NuxtLink包裹可以点击跳转 -->
-      </NuxtLink>
+      </NuxtLinkLocale>
     </div>
     <!-- 不太确定对导航栏这一块的动态路由的意思，如果是希望样式一样，但是内容不同的话，把路由当作参数传进来就行 -->
     <div class="h-full flex justify-center items-center flex-row">
-      <NuxtLink v-for="item in routerArray" :to="item.path" class="text-blue-500 mx-3">
-        <span>{{ item.name }}</span>
-      </NuxtLink>
+      <NuxtLinkLocale v-for="item in routerArray" :to="item.path" class="text-blue-500 mx-3">
+        <span>{{ $t(item.name) }}</span>
+      </NuxtLinkLocale>
     </div>
+    <LangSwitch>
+    </LangSwitch>
   </div>
 </template>
 
