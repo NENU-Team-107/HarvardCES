@@ -2,5 +2,34 @@
     "Home": "Home",
     "Speakers": "Speakers",
     "About": "About",
-    "Contact": "Contact"
+    "Contact": "Contact",
+    "Host": {
+        "Name": "Organizer",
+        "Language": "Language",
+        "Date": "Dates",
+        "Location": "Location",
+        "Details": {
+            "Name": "Harvard China Education Symposium, The Education University of Hong Kong",
+            "Language": "Chinese and English",
+            "Date": "8 to1o May,2025",
+            "Location": "The Education University of Hong Kong, the picturesque Tai Po Campus"
+        }
+    },
+    "Media": {
+        "Title": "Connect With Us",
+        "Redbook": {
+            "Name": "Red",
+            "Intro": "Follow us on Xiaohongshu",
+            "Details": "哈佛CES 香港教大聯合論壇"
+        },
+        "Wechat": {
+            "Name": "WeChat",
+            "Intro": "Public Channel on WeChat",
+            "Details": "Harvard CES-EdUHK"
+        },
+        "Email": {
+            "Name": " ",
+            "Details": "Inquiries: {0}"
+        }
+    }
 }

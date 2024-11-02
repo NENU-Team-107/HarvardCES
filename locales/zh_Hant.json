@@ -2,5 +2,34 @@
     "Home": "主頁",
     "Speakers": "嘉賓",
     "About": "論壇介紹",
-    "Contact": "關於我們"
+    "Contact": "關於我們",
+    "Host": {
+        "Name": "主辦方",
+        "Language": "語言",
+        "Date": "日期",
+        "Location": "地點",
+        "Details": {
+            "Name": "哈彿中國教育論壇(CES)；香港教育大學",
+            "Language": "普通話和英語",
+            "Date": "2025年5月8日-2025年5月10日",
+            "Location": "香港教育大學大埔校園"
+        }
+    },
+    "Media": {
+        "Title": "聯係我們",
+        "Redbook": {
+            "Name": "小紅書",
+            "Intro": "小紅書請關注：",
+            "Details": "哈佛CES 香港教大聯合論壇"
+        },
+        "Wechat": {
+            "Name": "微信公眾號",
+            "Intro": "公眾號請關注：",
+            "Details": "Harvard CES-EdUHK"
+        },
+        "Email": {
+            "Name": " ",
+            "Details": "詳情請諮詢：{0}"
+        }
+    }
 }

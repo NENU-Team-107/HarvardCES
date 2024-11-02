@@ -4,7 +4,6 @@
   "About": "论坛介绍",
   "Contact": "关于我们",
   "Host": {
-    "Title": "联系我们",
     "Name": "主办方",
     "Language": "语言",
     "Date": "日期",
@@ -17,6 +16,7 @@
     }
   },
   "Media": {
+    "Title": "联系我们",
     "Redbook": {
       "Name": "小红书",
       "Intro": "小红书请关注：",
@@ -29,8 +29,7 @@
     },
     "Email": {
       "Name": " ",
-      "Intro": "详情请咨询：",
-      "Details": "{email}"
+      "Details": "详情请咨询：{0}"
     }
   }
 }

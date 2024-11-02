@@ -66,9 +66,10 @@ const routerArray = ref<RouterItem[]>([
       <NuxtLinkLocale v-for="item in routerArray" :to="item.path" class="text-blue-500 mx-3">
         <span>{{ $t(item.name) }}</span>
       </NuxtLinkLocale>
+      <LangSwitch>
+      </LangSwitch>
     </div>
-    <LangSwitch>
-    </LangSwitch>
+
   </div>
 </template>
 
