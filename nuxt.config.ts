@@ -4,7 +4,7 @@ import { currentLocaleCodes, currentLocales } from "./config/i18n";
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: false },
-  modules: ['@nuxt/ui', '@nuxtjs/tailwindcss', '@nuxtjs/i18n'],
+  modules: ['@nuxt/ui', '@nuxtjs/tailwindcss', '@nuxtjs/i18n', '@nuxt/image'],
   typescript: { typeCheck: true },
   tailwindcss: {
     exposeConfig: true,

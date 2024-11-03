@@ -1,5 +1,4 @@
 <script setup lang="ts">
-const { locale, locales, setLocale } = useI18n()
 
 const footerTitle = ref<string>("Media.Title")
 
@@ -25,11 +24,11 @@ const contact = ref([
 const media = ref([
     {
         label: "Redbook",
-        image: "redbook.png"
+        image: "/img/redbook.png"
     },
     {
         label: "Wechat",
-        image: "wechat.png"
+        image: "/img/wechat.png"
     },
     {
         label: "Email",
@@ -58,7 +57,7 @@ const media = ref([
                     <div v-for="item in media" class="felx-1">
                         <div v-if="item.label !== 'Email'">
                             <span>{{ $t("Media." + item.label + ".Intro") }}</span>
-                            <Img :src="item.image" class="w-20 h-20"></Img>
+                            <NuxtImg :src="item.image" class="w-20 h-20"></NuxtImg>
                             <span> {{ $t("Media." + item.label + ".Details") }}</span>
                         </div>
                         <div v-else>
