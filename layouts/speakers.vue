@@ -1,8 +1,15 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import AppHeader from "~/components/common/AppHeader.vue";
+import AppFooter from "~/components/common/AppFooter.vue";
+</script>
 
 <template>
-  <div>
-    <h1>There is layouts/custom.vue</h1>
-    <slot />
+  <div class="w-full h-full min-h-full flex flex-col">
+    <AppHeader />
+    <div class="flex-1 flex flex-col justify-center items-center">
+      <!-- TODO 布局 -->
+      <slot />
+    </div>
+    <AppFooter />
   </div>
 </template>

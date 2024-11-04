@@ -56,7 +56,8 @@ const media = ref<MediaItemType[]>([
                 <div class="flex-1 items-center justify-center">
                     <ul>
                         <li v-for="item in contact">
-                            <span>{{ $t(item.before) }} : {{ $t(item.after) }}</span>
+                            <span class="items-center text-center">{{ $t(item.before) }} : </span>
+                            <span>{{ $t(item.after) }}</span>
                         </li>
                     </ul>
                 </div>

@@ -14,28 +14,32 @@ const routerArray = ref<RouterItem[]>([
     path: "/",
   },
   {
-    name: "Speakers",
-    path: "/speakers",
-    children: [
-      {
-        name: "Featured Speakers",
-        path: "/speakers/featured",
-      },
-      {
-        name: "All Speakers",
-        path: "/speakers",
-      },
-    ]
-  },
-  {
     name: "About",
     path: "/about",
-    children: [
-      {
-        name: "Harvard University",
-        path: "/about/harvard"
-      }
-    ]
+    // children: [
+    //   {
+    //     name: "Harvard University",
+    //     path: "/about/harvard"
+    //   }
+    // ]
+  },
+  {
+    name: "Registration",
+    path: "/registration",
+  },
+  {
+    name: "Speakers",
+    path: "/speakers",
+    // children: [
+    //   {
+    //     name: "Featured Speakers",
+    //     path: "/speakers/featured",
+    //   },
+    //   {
+    //     name: "All Speakers",
+    //     path: "/speakers",
+    //   },
+    // ]
   },
   {
     name: "Contact",
