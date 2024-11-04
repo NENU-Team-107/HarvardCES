@@ -1,7 +1,10 @@
 {
   "Home": "主页",
   "Speakers": "嘉宾",
+  "Featured Speakers": "特邀嘉宾",
+  "All Speakers": "所有嘉宾",
   "About": "论坛介绍",
+  "Harvard University": "哈佛大学",
   "Contact": "关于我们",
   "Host": {
     "Name": "主办方",

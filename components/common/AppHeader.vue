@@ -5,6 +5,7 @@ import LangSwitch from "./LangSwitch.vue";
 interface RouterItem {
   name: string;
   path: string;
+  children?: RouterItem[];
 }
 
 const routerArray = ref<RouterItem[]>([
@@ -15,10 +16,26 @@ const routerArray = ref<RouterItem[]>([
   {
     name: "Speakers",
     path: "/speakers",
+    children: [
+      {
+        name: "Featured Speakers",
+        path: "/speakers/featured",
+      },
+      {
+        name: "All Speakers",
+        path: "/speakers",
+      },
+    ]
   },
   {
     name: "About",
-    path: "/about"
+    path: "/about",
+    children: [
+      {
+        name: "Harvard University",
+        path: "/about/harvard"
+      }
+    ]
   },
   {
     name: "Contact",
@@ -41,11 +58,19 @@ const routerArray = ref<RouterItem[]>([
     </div>
     <!-- 不太确定对导航栏这一块的动态路由的意思，如果是希望样式一样，但是内容不同的话，把路由当作参数传进来就行 -->
     <div class="h-full flex justify-center items-center flex-row">
-      <NuxtLinkLocale v-for="item in routerArray" :to="item.path" class="text-blue-500 pl-3">
-        <span class="underline">{{ $t(item.name) }}</span>
-      </NuxtLinkLocale>
-      <LangSwitch>
-      </LangSwitch>
+      <div v-for="item in routerArray" :key="item.path" class="relative group">
+        <NuxtLinkLocale :to="item.path" class="text-blue-500 pl-3">
+          <span class="underline">{{ $t(item.name) }}</span>
+        </NuxtLinkLocale>
+        <div v-if="item.children"
+          class="absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <NuxtLinkLocale v-for="child in item.children" :key="child.path" :to="child.path"
+            class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+            {{ $t(child.name) }}
+          </NuxtLinkLocale>
+        </div>
+      </div>
+      <LangSwitch />
     </div>
 
   </div>
