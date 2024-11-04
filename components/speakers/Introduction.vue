@@ -4,6 +4,8 @@ import type { Speaker } from '~/lib/model';
 const props = defineProps<{
     speakers: Speaker
 }>()
+
+// console.log(props.speakers)
 </script>
 
 <template>

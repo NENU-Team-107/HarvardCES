@@ -1,4 +1,5 @@
 <script setup lang="ts">
+
 const { locales, locale, setLocaleCookie } = useI18n()
 
 const localesOptions = locales.value.map((locale) => {

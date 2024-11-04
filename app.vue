@@ -14,10 +14,11 @@ html {
   padding: 0;
   height: 100vh;
   width: 100vw;
-}
+  scrollbar-gutter:stable;}
 
 #__nuxt {
-  height: 100%;
-  width: 100%;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
 }
 </style>

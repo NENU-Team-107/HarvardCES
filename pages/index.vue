@@ -19,18 +19,18 @@ const logoList = ref([
 <!-- TODO 需要加入一个飘窗，这个飘窗用于链接到投稿链接 -->
 
 <template>
-  <div>
-    <div class=" justify-center items-center flex">
+  <div class="w-full flex flex-col justify-center items-center">
+    <div class="justify-center items-center flex">
       <!-- TODO 这里是封面的大图 -->
       <NuxtImg src="/img/poster/cover.jpg" />
     </div>
-    <div>
+    <div class="my-5">
       <!-- TODO 这里是论坛介绍 -->
       {{ $t("Symposium.Title") }}
 
       {{ $t("Symposium.Intro") }}
     </div>
-    <div class="grid grid-cols-3 gap-4">
+    <div class="grid md:grid-cols-3 gap-4">
       <!-- TODO 这里是嘉宾列表，但只显示不超过 6 个 -->
       <div v-for="speaker in speakersList">
         <SpeakersIntroduction :speakers="speaker" />

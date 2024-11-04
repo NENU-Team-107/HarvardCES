@@ -1,8 +1,13 @@
 <script setup lang="ts">
-
+import { ref } from "vue";
 const footerTitle = ref<string>("Media.Title")
 
-const contact = ref([
+interface ContactItemType {
+    before: string,
+    after: string
+}
+
+const contact = ref<ContactItemType[]>([
     {
         before: "Host.Name",
         after: "Host.Details.Name"
@@ -21,7 +26,12 @@ const contact = ref([
     }
 ])
 
-const media = ref([
+interface MediaItemType {
+    label: string,
+    image: string | undefined
+}
+
+const media = ref<MediaItemType[]>([
     {
         label: "Redbook",
         image: "/img/redbook.png"
@@ -41,7 +51,7 @@ const media = ref([
 <template>
     <UContainer class="min-w-full">
         <!-- TODO 背景颜色 + 文字颜色 -->
-        <div class="flex items-center justify-center min-h-28">
+        <div class="flex md:flex-row flex-col items-center justify-center min-h-28">
             <div class="flex">
                 <div class="flex-1 items-center justify-center">
                     <ul>
@@ -51,11 +61,11 @@ const media = ref([
                     </ul>
                 </div>
             </div>
-            <div>
-                <span class="text-xl font-bold">{{ $t(footerTitle) }}</span>
-                <div class="flex">
-                    <div v-for="item in media" class="felx-1">
-                        <div v-if="item.label !== 'Email'">
+            <div class="flex flex-col">
+                <span class="text-xl font-bold text-center py-2">{{ $t(footerTitle) }}</span>
+                <div class="flex md:flex-row flex-col justify-center items-center">
+                    <div v-for="item in media" class="felx-1 flex justify-center items-center px-2">
+                        <div v-if="item.label !== 'Email'" class="flex flex-col justify-center items-center">
                             <span>{{ $t("Media." + item.label + ".Intro") }}</span>
                             <NuxtImg :src="item.image" class="w-20 h-20"></NuxtImg>
                             <span> {{ $t("Media." + item.label + ".Details") }}</span>
