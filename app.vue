@@ -12,13 +12,15 @@ body,
 html {
   margin: 0;
   padding: 0;
-  height: 100vh;
-  width: 100vw;
-  scrollbar-gutter:stable;}
-
-#__nuxt {
-  margin: 0;
-  height: 100vh;
-  width: 100vw;
+  box-sizing: border-box;
 }
+
+body {
+  background: #fff;
+  color: #333;
+  font: 1em/1.55 Lato, Arial, sans-serif;
+  margin: auto;
+  max-width: 1920px
+}
+
 </style>
