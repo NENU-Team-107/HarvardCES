@@ -16,12 +16,6 @@ const routerArray = ref<RouterItem[]>([
   {
     name: "About",
     path: "/about",
-    // children: [
-    //   {
-    //     name: "Harvard University",
-    //     path: "/about/harvard"
-    //   }
-    // ]
   },
   {
     name: "Registration",
@@ -30,16 +24,6 @@ const routerArray = ref<RouterItem[]>([
   {
     name: "Speakers",
     path: "/speakers",
-    // children: [
-    //   {
-    //     name: "Featured Speakers",
-    //     path: "/speakers/featured",
-    //   },
-    //   {
-    //     name: "All Speakers",
-    //     path: "/speakers",
-    //   },
-    // ]
   },
   {
     name: "Contact",
@@ -49,10 +33,8 @@ const routerArray = ref<RouterItem[]>([
 
 </script>
 
-// 最开始写样式的时候可以随便找个颜色填一下背景，确定一下元素的范围，调整好位置之后再去掉背景色
-
 <template>
-  <div class="w-full flex h-16 bg-gray-100 justify-between items-center px-3">
+  <div class="w-full flex h-22 bg-white/80 justify-between items-center px-16 z-10">
     <div class="h-full flex justify-center items-center">
       <NuxtLinkLocale to="/" class="text-blue-500">
         <!-- TODO 更改 LOGO 的大小以及导航栏的背景颜色 -->
@@ -62,7 +44,7 @@ const routerArray = ref<RouterItem[]>([
     </div>
     <!-- 不太确定对导航栏这一块的动态路由的意思，如果是希望样式一样，但是内容不同的话，把路由当作参数传进来就行 -->
     <div class="h-full flex justify-center items-center flex-row">
-      <div v-for="item in routerArray" :key="item.path" class="relative group">
+      <div v-for="item in routerArray" :key="item.path" class="relative group mr-6 text-lg font-semibold">
         <NuxtLinkLocale :to="item.path" class="text-blue-500 pl-3">
           <span class="underline">{{ $t(item.name) }}</span>
         </NuxtLinkLocale>

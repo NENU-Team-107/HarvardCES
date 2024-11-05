@@ -13,7 +13,24 @@ export default {
     "content/**/*.md",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'letter-paper': "url('~/assets/bg/letter-paper.png')",
+      },
+      colors: {
+        'cover-left': '#c06e74',
+        'cover-right': '#c1daba',
+      },
+      borderRadius: {
+        'edge': '1rem',
+      },
+      borderImage: {
+        'gradient-border': 'linear-gradient(to right, #c06e74, #c1daba) 1',
+      },
+      boxShadow: {
+        'blurred-edge': '0 0 10px 5px rgba(192, 110, 116, 0.5)',
+      },
+    },
   },
   plugins: [],
 }

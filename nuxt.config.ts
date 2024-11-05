@@ -27,7 +27,13 @@ export default defineNuxtConfig({
       tailwindcss: {},
       autoprefixer: {},
     },
-  }
+  },
+  css: [
+    '@fortawesome/fontawesome-svg-core/styles.css'
+  ],
+  plugins:[
+    
+  ]
   // dayjs: {
   //   locales: ["en", "zh-cn", "zh-hk"],
   //   plugins: ['relativeTime', 'utc', 'timezone', 'localizedFormat'],

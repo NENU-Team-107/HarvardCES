@@ -1,16 +1,16 @@
 <template>
-  <div class="w-full h-full min-h-full flex flex-col">
-    <AppHeader />
-    <div class="flex-1 flex flex-col justify-center items-center">
-      <!-- 
-      slot是默认插入的位置，
-      如果本文件的组件一组括号包裹了某个内容，
-      这个内容会默认渲染在这个位置，
-      如果想要多个插槽，可以添加多个slot，但是要分别命名，如<slot #other/>
-      使用的时候，可以在组件中使用<template #other>...</template>来使用 -->
-      <slot />
+  <div class="w-full min-h-screen flex flex-col relative">
+    <!-- 背景图片 -->
+    <div
+      class="absolute top-0 left-0 inset-0 bg-letter-paper bg-no-repeat bg-center bg-cover blur-sm opacity-80 bg-fixed" />
+    <div class="w-full flex flex-col justify-center items-center relative z-10">
+      <AppHeader />
+      <!-- 内容 -->
+      <div class="h-fit flex flex-col justify-center items-center">
+        <slot />
+      </div>
+      <AppFooter />
     </div>
-    <AppFooter />
   </div>
 </template>
 

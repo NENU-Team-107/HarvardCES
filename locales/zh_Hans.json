@@ -19,6 +19,12 @@
       "Location": "香港教育大学大埔校园"
     }
   },
+  "Collapse": "收起",
+  "Show More": "展开",
+  "PopWindow":{
+    "Title": "投稿链接",
+    "Content": "请点击此处提交论文"
+  },
   "Media": {
     "Title": "联系我们",
     "Redbook": {

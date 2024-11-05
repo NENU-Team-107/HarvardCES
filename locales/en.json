@@ -18,6 +18,8 @@
             "Location": "The Education University of Hong Kong, the picturesque Tai Po Campus"
         }
     },
+    "Collapse": "Collapse",
+    "Show More": "Show More",
     "Media": {
         "Title": "Connect With Us",
         "Redbook": {
@@ -34,6 +36,10 @@
             "Name": " ",
             "Details": "Inquiries: {0}"
         }
+    },
+    "PopWindow": {
+        "Title": "Submission Link",
+        "Content": "Please click here to submit your paper"
     },
     "Symposium": {
         "Title": "Introduction",

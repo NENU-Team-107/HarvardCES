@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full h-full min-h-full flex flex-col">
+    <div class="w-full h-full min-h-full flex flex-col bg-letter-paper">
         <AppHeader />
         <div class="flex-1 flex flex-col justify-center items-center">
             <!-- TODO 布局 -->
