@@ -18,7 +18,7 @@ export default {
         'letter-paper': "url('~/assets/bg/letter-paper.png')",
       },
       colors: {
-        'cover-left': '#c06e74',
+        'cover-left': '#c56c70',
         'cover-right': '#c1daba',
       },
       borderRadius: {

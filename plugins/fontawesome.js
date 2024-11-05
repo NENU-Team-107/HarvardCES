@@ -5,7 +5,6 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import {
   faXmark,
 } from '@fortawesome/free-solid-svg-icons'
-
 // This is important, we are going to let Nuxt worry about the CSS
 config.autoAddCss = false
 

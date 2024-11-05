@@ -2,9 +2,9 @@ import { currentLocaleCodes, currentLocales } from "./config/i18n";
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: '2024-11-01',
+  compatibilityDate: "2024-11-01",
   devtools: { enabled: false },
-  modules: ['@nuxt/ui', '@nuxtjs/tailwindcss', '@nuxtjs/i18n', '@nuxt/image'],
+  modules: ["@nuxt/ui", "@nuxtjs/tailwindcss", "@nuxtjs/i18n", "@nuxt/image"],
   typescript: { typeCheck: true },
   tailwindcss: {
     exposeConfig: true,
@@ -12,15 +12,15 @@ export default defineNuxtConfig({
   i18n: {
     strategy: "no_prefix",
     locales: currentLocales,
-    langDir: 'locales',
+    langDir: "locales",
     defaultLocale: "en",
     vueI18n: "./config/i18n.config.ts",
     detectBrowserLanguage: {
       useCookie: true,
-      cookieKey: 'i18n_redirected',
+      cookieKey: "i18n_redirected",
       alwaysRedirect: true,
-      fallbackLocale: 'en'
-    }
+      fallbackLocale: "en",
+    },
   },
   postcss: {
     plugins: {
@@ -28,15 +28,11 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  css: [
-    '@fortawesome/fontawesome-svg-core/styles.css'
-  ],
-  plugins:[
-    
-  ]
+  css: ["@fortawesome/fontawesome-svg-core/styles.css"],
+  plugins: ["~/plugins/fontawesome.js"],
   // dayjs: {
   //   locales: ["en", "zh-cn", "zh-hk"],
   //   plugins: ['relativeTime', 'utc', 'timezone', 'localizedFormat'],
   //   defaultLocale: 'en'
   // }
-})
+});
