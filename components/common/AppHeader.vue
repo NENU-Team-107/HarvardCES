@@ -44,7 +44,8 @@ const toggleMenu = () => {
     <div class="h-full flex justify-center items-center">
       <NuxtLinkLocale to="/" class="text-blue-500">
         <!-- TODO 更改 LOGO 的大小以及导航栏的背景颜色 -->
-        <NuxtImg src="/img/logo/HostLogo_small.jpg" class="w-11/12"/>
+        <NuxtImg src="img/logo/HostLogo_small.jpg" class="w-11/12"></NuxtImg>
+        <!-- 也可以插入图片, NuxtLink包裹可以点击跳转 -->
       </NuxtLinkLocale>
     </div>
     <div class="h-full justify-center items-center flex-row hidden md:flex">
@@ -65,18 +66,17 @@ const toggleMenu = () => {
     <div class="md:hidden flex items-center">
       <button @click="toggleMenu" class="text-blue-500 focus:outline-none">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M4 6h16M4 12h16m-7 6h7"></path>
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
         </svg>
       </button>
     </div>
-    <div v-show="isMenuOpen" class="absolute top-0 right-0 mt-16 w-48 bg-white border border-gray-200 rounded shadow-lg md:hidden">
+    <div v-show="isMenuOpen"
+      class="absolute top-0 right-0 mt-16 w-48 bg-white border border-gray-200 rounded shadow-lg md:hidden">
       <div v-for="item in routerArray" :key="item.path" class="relative group text-lg font-semibold">
         <NuxtLinkLocale :to="item.path" class="block px-4 py-2 text-blue-500">
           <span class="underline">{{ $t(item.name) }}</span>
         </NuxtLinkLocale>
-        <div v-if="item.children"
-          class="mt-2 bg-white border border-gray-200 rounded shadow-lg">
+        <div v-if="item.children" class="mt-2 bg-white border border-gray-200 rounded shadow-lg">
           <NuxtLinkLocale v-for="child in item.children" :key="child.path" :to="child.path"
             class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
             {{ $t(child.name) }}
@@ -104,7 +104,7 @@ const toggleMenu = () => {
   bottom: 0;
   height: 2px;
   width: 100%;
-  background: #007BFF;
+  background: #0d9d57;
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }

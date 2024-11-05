@@ -4,7 +4,7 @@ const { t } = useI18n();
 
 const Introduction = computed(() => {
   return t("Symposium.Details").replace(/\n/g, '<br>')
-}) 
+})
 
 const navMenu = [
   {

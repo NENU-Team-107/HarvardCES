@@ -8,13 +8,13 @@ const speakersList = ref(speakers)
 const logoList = ref([
   {
     label: "Host",
-    path: "/img/logo/HostLogo_large.jpg"
+    path: "img/logo/HostLogo_large.jpg"
   }, {
     label: "Collaborator",
-    path: "/img/logo/co-iLRNLogo.png"
+    path: "img/logo/co-iLRNLogo.png"
   }, {
     label: "Collaborator",
-    path: "/img/logo/co-IEEE-TLTlogo.png"
+    path: "img/logo/co-IEEE-TLTlogo.png"
   }
 ])
 
@@ -54,7 +54,7 @@ const togglePopup = () => {
       <div class="bg-white/80 p-10">
         <!-- TODO 这里是论坛介绍 -->
         <Title :titleMap="title.intro" />
-        <div>
+        <div class="text-lg pl-10">
           <!-- TODO 需要限制边距，保证居中，还有需要设置字号问题 -->
           {{ $t("Symposium.Intro") }}
         </div>
@@ -62,7 +62,7 @@ const togglePopup = () => {
 
       <div class="bg-white/80 p-10">
         <Title :titleMap="title.speaker"></Title>
-        <div class="grid md:grid-cols-3 gap-4">
+        <div class="grid md:grid-cols-3 gap-4 pl-10">
           <!-- TODO 这里是嘉宾列表，但只显示不超过 6 个 -->
           <div v-for="speaker in VisibleSpeakersList">
             <SpeakersIntroduction :speakers="speaker" />
@@ -80,17 +80,24 @@ const togglePopup = () => {
         <!-- TODO 这部分是主办单位和合作者的 Logo -->
         <Title :titleMap="title.logo"></Title>
         <div>
-          <div>
-            <!-- TODO i18n -->
-            <span>Organised by:</span>
-            <NuxtImg :src="logoList[0].path" />
-          </div>
-          <div>
-            <span>In collaboration with:</span>
-            <div v-for="logo in logoList" class="flex">
-              <NuxtImg :src="logo.path" v-if="logo.label === 'Collaborator'" />
+          <div class="grid gap-4 grid-cols-4">
+            <span class="font-bold text-lg pl-10">{{ $t("Organised by") }}</span>
+            <div class="col-span-3 col-start-2">
+              <NuxtImg :src="logoList[0].path" class="h-40" />
             </div>
           </div>
+
+          <div>
+            <span class="font-bold text-lg pl-10">{{ $t("In collaboration with") }}</span>
+
+            <div class="grid gap-4 grid-rows-1 grid-flow-col">
+              <div v-for="logo in logoList">
+                <NuxtImg :src="logo.path" v-if="logo.label === 'Collaborator'" class="h-16" />
+              </div>
+            </div>
+
+          </div>
+
         </div>
       </div>
 
