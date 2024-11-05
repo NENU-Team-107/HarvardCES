@@ -11,10 +11,12 @@ const logoList = ref([
     path: "img/logo/HostLogo_large.jpg"
   }, {
     label: "Collaborator",
-    path: "img/logo/co-iLRNLogo.png"
+    path: "img/logo/co-iLRNLogo.png",
+    link: "https://www.immersivelrn.org/"
   }, {
     label: "Collaborator",
-    path: "img/logo/co-IEEE-TLTlogo.png"
+    path: "img/logo/co-IEEE-TLTlogo.png",
+    link: "https://ieee-edusociety.org/publication/about-publications/tlt"
   }
 ])
 
@@ -92,7 +94,9 @@ const togglePopup = () => {
 
             <div class="grid gap-4 grid-rows-1 grid-flow-col">
               <div v-for="logo in logoList">
-                <NuxtImg :src="logo.path" v-if="logo.label === 'Collaborator'" class="h-16" />
+                <NuxtLink :to="logo.link">
+                  <NuxtImg :src="logo.path" v-if="logo.label === 'Collaborator'" class="h-16" />
+                </NuxtLink>
               </div>
             </div>
 
