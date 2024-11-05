@@ -1,6 +1,5 @@
 import { currentLocaleCodes, currentLocales } from "./config/i18n";
 
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
   devtools: { enabled: false },

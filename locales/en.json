@@ -1,50 +1,55 @@
 {
-    "Home": "Home",
-    "Speakers": "Speakers",
-    "Featured Speakers": "Featured Speakers",
-    "All Speakers": "All Speakers",
-    "Registration": "Registration",
-    "About": "About",
-    "Contact": "Contact",
-    "Host": {
-        "Name": "Organizer",
-        "Language": "Language",
-        "Date": "Dates",
-        "Location": "Location",
-        "Details": {
-            "Name": "Harvard China Education Symposium, The Education University of Hong Kong",
-            "Language": "Chinese and English",
-            "Date": "8 to1o May,2025",
-            "Location": "The Education University of Hong Kong, the picturesque Tai Po Campus"
-        }
+  "Home": "Home",
+  "Speakers": "Speakers",
+  "Featured Speakers": "Featured Speakers",
+  "All Speakers": "All Speakers",
+  "Registration": "Registration",
+  "About": "About",
+  "Contact": "Contact",
+  "Host": {
+    "Name": "Organizer",
+    "Language": "Language",
+    "Date": "Dates",
+    "Location": "Location",
+    "Details": {
+      "Name": "Harvard China Education Symposium, The Education University of Hong Kong",
+      "Language": "Chinese and English",
+      "Date": "8 to1o May,2025",
+      "Location": "The Education University of Hong Kong, the picturesque Tai Po Campus"
+    }
+  },
+  "Collapse": "Collapse",
+  "Show More": "Show More",
+  "Media": {
+    "Title": "Connect With Us",
+    "Redbook": {
+      "Name": "Red",
+      "Intro": "Follow us on Xiaohongshu",
+      "Details": "哈佛CES 香港教大聯合論壇"
     },
-    "Collapse": "Collapse",
-    "Show More": "Show More",
-    "Media": {
-        "Title": "Connect With Us",
-        "Redbook": {
-            "Name": "Red",
-            "Intro": "Follow us on Xiaohongshu",
-            "Details": "哈佛CES 香港教大聯合論壇"
-        },
-        "Wechat": {
-            "Name": "WeChat",
-            "Intro": "Public Channel on WeChat",
-            "Details": "Harvard CES-EdUHK"
-        },
-        "Email": {
-            "Name": " ",
-            "Details": "Inquiries: {0}"
-        }
+    "Wechat": {
+      "Name": "WeChat",
+      "Intro": "Public Channel on WeChat",
+      "Details": "Harvard CES-EdUHK"
     },
-    "PopWindow": {
-        "Title": "Submission Link",
-        "Content": "Please click here to submit your paper"
-    },
-    "Symposium": {
-        "Title": "Introduction",
-        "Intro": "The Joint Symposium on Emerging Technologies and Future Talent, collaboratively organized by The China Education Symposium at Harvard University (CES) and the Global Institute for Emerging Technologies (GIET) at the Education University of Hong Kong (EdUHK), will be a three-day event from May 8-10, 2025. It will delve into the integration of new technologies such as AI, the Metaverse, and Intelligent Reality within teaching, training, and talent development.",
-        "Details": "The Joint Symposium on Emerging Technologies and Future Talent, collaboratively organized by The China Education Symposium at Harvard University (CES) and the Global Institute for Emerging Technologies (GIET) at the Education University of Hong Kong (EdUHK), will be a three-day event from May 8-10, 2025. It will delve into the integration of new technologies such as AI, the Metaverse, and Intelligent Reality within teaching, training, and talent development.\n\nThe Symposium will feature diverse sessions, including workshops on developing AI tools and ethical AI practices, as well as keynote addresses and panel discussions that highlight AI-driven personalized learning, instructional design, and the cultivation of creativity and futuristic thinking. Participants will explore a wide range of topics through parallel sessions focusing on AI, the Metaverse, computing education, research analytics, education futures, and talent development.\n\nThe China Education Symposium, initiated by the Harvard Graduate School of Education in 2010, fosters meaningful dialogue and collaboration among educators, scholars, policymakers, and leaders from China and the United States. EdUHK has become the largest tertiary institution specialized in teacher education in Hong Kong and is recognized internationally for its leadership in education. It is ranked 6th globally in Education and Educational Research in the 2024-2025 U.S. News & World Report’s Best Global Universities Rankings. The 16th China Education Symposium in 2025, besides being held at Harvard, will also collaborate with EdUHK to create a groundbreaking event known as the Joint Symposium on Emerging Technologies and Future Talent. Knowledge knows no bounds! This is a trail-blazing attempt to enhance cooperation between prestigious Chinese and American universities and leading industries in technology and talent development, so as to expand the influence of this iconic symposium of Harvard’s Graduate School of Education to Asia.\n\nSupported by President John Chi Kin Lee of EdUHK and The CES, the Symposium boasts an impressive roster of speakers from globally recognized institutions such as Harvard, Stanford, Cambridge, University of Toronto, and Peking University. It also features technology and education policymakers and experts from Mainland China and Hong Kong SAR to deliver keynote and plenary speeches. We are honored to welcome Presidents from prestigious universities and professors from the Harvard Graduate School of Education and the Education University of Hong Kong to deliver keynote speeches. Each speaker will contribute a rich blend of current insights and research advancements in emerging technologies, education, and talent cultivation. The CES team of Harvard will also conduct a thematic workshop and interact with students and staff from EdUHK and beyond before or after the Symposium.\n\nThis joint Symposium will not only be a feast of knowledge, but also a collision of sparks where diverse thoughts converge across different times and spaces!"
-    },
-    "Organisers and Partners": "Organisers and Partners"
+    "Email": {
+      "Name": " ",
+      "Details": "Inquiries: {0}"
+    }
+  },
+  "PopWindow": {
+    "Title": "Submission Link",
+    "Content": "Please click here to submit your paper"
+  },
+  "Symposium": {
+    "Title": "Introduction",
+    "Intro": "The Joint Symposium on Emerging Technologies and Future Talent, collaboratively organized by The China Education Symposium at Harvard University (CES) and the Global Institute for Emerging Technologies (GIET) at the Education University of Hong Kong (EdUHK), will be a three-day event from May 8-10, 2025. It will delve into the integration of new technologies such as AI, the Metaverse, and Intelligent Reality within teaching, training, and talent development.",
+    "Details": "The Joint Symposium on Emerging Technologies and Future Talent, collaboratively organized by The China Education Symposium at Harvard University (CES) and the Global Institute for Emerging Technologies (GIET) at the Education University of Hong Kong (EdUHK), will be a three-day event from May 8-10, 2025. It will delve into the integration of new technologies such as AI, the Metaverse, and Intelligent Reality within teaching, training, and talent development.\n\nThe Symposium will feature diverse sessions, including workshops on developing AI tools and ethical AI practices, as well as keynote addresses and panel discussions that highlight AI-driven personalized learning, instructional design, and the cultivation of creativity and futuristic thinking. Participants will explore a wide range of topics through parallel sessions focusing on AI, the Metaverse, computing education, research analytics, education futures, and talent development.\n\nThe China Education Symposium, initiated by the Harvard Graduate School of Education in 2010, fosters meaningful dialogue and collaboration among educators, scholars, policymakers, and leaders from China and the United States. EdUHK has become the largest tertiary institution specialized in teacher education in Hong Kong and is recognized internationally for its leadership in education. It is ranked 6th globally in Education and Educational Research in the 2024-2025 U.S. News & World Report’s Best Global Universities Rankings. The 16th China Education Symposium in 2025, besides being held at Harvard, will also collaborate with EdUHK to create a groundbreaking event known as the Joint Symposium on Emerging Technologies and Future Talent. Knowledge knows no bounds! This is a trail-blazing attempt to enhance cooperation between prestigious Chinese and American universities and leading industries in technology and talent development, so as to expand the influence of this iconic symposium of Harvard’s Graduate School of Education to Asia.\n\nSupported by President John Chi Kin Lee of EdUHK and The CES, the Symposium boasts an impressive roster of speakers from globally recognized institutions such as Harvard, Stanford, Cambridge, University of Toronto, and Peking University. It also features technology and education policymakers and experts from Mainland China and Hong Kong SAR to deliver keynote and plenary speeches. We are honored to welcome Presidents from prestigious universities and professors from the Harvard Graduate School of Education and the Education University of Hong Kong to deliver keynote speeches. Each speaker will contribute a rich blend of current insights and research advancements in emerging technologies, education, and talent cultivation. The CES team of Harvard will also conduct a thematic workshop and interact with students and staff from EdUHK and beyond before or after the Symposium.\n\nThis joint Symposium will not only be a feast of knowledge, but also a collision of sparks where diverse thoughts converge across different times and spaces!"
+  },
+  "Organisers and Partners": "Organisers and Partners",
+  "Symposium Introduction": "Symposium Introduction",
+  "Symposium Location": "Symposium Location",
+  "Symposium Time": "Symposium Time",
+  "Harvard China Education Symposium": "Harvard China Education Symposium",
+  "The Education University of Hong Kong": "The Education University of Hong Kong"
 }
