@@ -6,20 +6,22 @@ const Introduction = computed(() => {
   return t("Symposium.Details").replace(/\n/g, '<br>')
 })
 
-const navMenu = [
-  {
-    label: t("Symposium Introduction"),
-    content: "about",
-  },
-  {
-    label: t("Symposium Location"),
-    content: "location",
-  },
-  {
-    label: t("Symposium Time"),
-    content: "time",
-  }
-]
+const navMenu = computed(() => {
+  return [
+    {
+      label: t("Symposium Introduction"),
+      content: "about",
+    },
+    {
+      label: t("Symposium Location"),
+      content: "location",
+    },
+    {
+      label: t("Symposium Time"),
+      content: "time",
+    }
+  ]
+})
 
 // const handleClick = (index: number) => {
 //   let item = navMenu.value[index]

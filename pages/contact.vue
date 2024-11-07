@@ -4,18 +4,20 @@ const { t } = useI18n();
 
 const Introduction = computed(() => {
   return t("Symposium.Details").replace(/\n/g, '<br>')
-}) 
+})
 
-const navMenu = [
-  {
-    label: t("Harvard China Education Symposium"),
-    content: "about",
-  },
-  {
-    label: t("The Education University of Hong Kong"),
-    content: "location",
-  }
-]
+const navMenu = computed(() => {
+  return [
+    {
+      label: t("Harvard China Education Symposium"),
+      content: "about",
+    },
+    {
+      label: t("The Education University of Hong Kong"),
+      content: "location",
+    }
+  ]
+})
 
 // const handleClick = (index: number) => {
 //   let item = navMenu.value[index]
@@ -41,4 +43,3 @@ const navMenu = [
     </UTabs>
   </div>
 </template>
-

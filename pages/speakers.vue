@@ -2,26 +2,28 @@
 import Details from '~/components/speakers/Details.vue';
 import { speakers } from '~/lib/placeholder';
 
+const { t } = useI18n()
+
 const navMenu = ref([
   {
-    label: "Invite Speakers",
-    content: "invite",
+    label: t("Invite Speakers"),
+    content: "Invite Speakers",
   },
   {
-    label: "Guest of Honor",
-    content: "honor",
+    label: t("Guest of Honor"),
+    content: "Guest of Honor",
   },
   {
-    label: "Keynote Speakers",
-    content: "keynote",
+    label: t("Keynote Speakers"),
+    content: "Keynote Speakers",
   },
   {
-    label: "Track Workshop Chair",
-    content: "track",
+    label: t("Track Workshop Chair"),
+    content: "Track Workshop Chair",
   },
   {
-    label: "Organizing Committee",
-    content: "organizing",
+    label: t("Organizing Committee"),
+    content: "Organizing Committee",
   }
 ])
 
@@ -29,8 +31,7 @@ const kindSpeakers = ref(speakers.filter(speaker => speaker.kind === 'Invite Spe
 
 const handleClick = (index: number) => {
   let item = navMenu.value[index]
-  console.log(item)
-  kindSpeakers.value = speakers.filter(speaker => speaker.kind === item.label)
+  kindSpeakers.value = speakers.filter(speaker => speaker.kind === item.content)
 }
 
 </script>
@@ -41,7 +42,7 @@ const handleClick = (index: number) => {
     <UTabs :items="navMenu" orientation="vertical"
       :ui="{ wrapper: 'flex gap-4 px-10', list: { width: 'w-60', tab: { size: 'text-base text-nowrap', padding: 'py-5' } } }"
       class="bg-white/80 w-full h-full min-h-screen" @change="handleClick">
-      <template #item={item}>
+      <template #item>
         <div class="grid grid-cols-3 gap-4">
           <div v-for="speaker in kindSpeakers">
             <Details :speaker="speaker" class="mx-10 my-5" />
