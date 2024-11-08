@@ -4,6 +4,7 @@
   "Featured Speakers": "Featured Speakers",
   "All Speakers": "All Speakers",
   "Registration": "Registration",
+  "Submit": "Call for Paper",
   "About": "About",
   "Contact": "Contact",
   "Host": {
@@ -18,23 +19,18 @@
       "Location": "The Education University of Hong Kong, the picturesque Tai Po Campus"
     }
   },
-
   "Cover Image": "/img/poster/cover_en.jpg",
-
   "Collapse": "Collapse",
   "Show More": "Show More",
-
   "PopWindow": {
     "Title": "Submission Link",
     "Content": "Please click here to submit your paper"
   },
-  
   "Invite Speakers": "Invite Speakers",
   "Guest of Honor": "Guest of Honor",
   "Keynote Speakers": "Keynote Speakers",
   "Track Workshop Chair": "Track Workshop Chair",
   "Organizing Committee": "Organizing Committee",
-
   "Media": {
     "Title": "Connect With Us",
     "Redbook": {
@@ -65,5 +61,8 @@
   "Symposium Time": "Symposium Time",
   "Harvard China Education Symposium": "Harvard China Education Symposium",
   "The Education University of Hong Kong": "The Education University of Hong Kong",
+  "Workshop": "Workshop",
+  "Poster": "Poster",
+  "Track": "Track",
   "server": {}
 }

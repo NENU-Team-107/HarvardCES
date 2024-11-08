@@ -2,10 +2,6 @@
 import { useI18n } from 'vue-i18n';
 const { t } = useI18n();
 
-const Introduction = computed(() => {
-  return t("Symposium.Details").replace(/\n/g, '<br>')
-})
-
 const navMenu = computed(() => {
   return [
     {
@@ -34,10 +30,10 @@ const navMenu = computed(() => {
       class="bg-white/80 w-full h-full min-h-screen">
       <template #item>
         <div class="min-h-full flex flex-col px-20 py-10 bg-white/80">
-          <h1 class="text-center font-bold text-2xl py-6">{{ $t("About") }}</h1>
+          <!-- <h1 class="text-center font-bold text-2xl py-6">{{ $t("About") }}</h1>
           <div class="flex justify-center items-center w-full flex-1">
             <div v-html="Introduction" />
-          </div>
+          </div> -->
         </div>
       </template>
     </UTabs>

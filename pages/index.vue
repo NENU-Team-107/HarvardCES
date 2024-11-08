@@ -2,8 +2,7 @@
 import { speakers } from '~/lib/placeholder';
 import Title from '~/components/common/Title.vue'
 import CoverImage from '~/components/homeIndex/CoverImage.vue';
-
-const speakersList = ref(speakers)
+import type { Speaker } from '~/lib/model';
 
 const host = ref({
   label: "Host",
@@ -29,6 +28,24 @@ const title = ref({
   logo: "Organisers and Partners"
 })
 
+
+const speakersList = ref<Speaker[]>([])
+
+const fetchSpeakers = async () => {
+  const resp = await $fetch('/api/speaker/listByQuery', {
+    method: 'GET',
+    query: {
+      kind: 'Keynote Speakers'
+    }
+  })
+  const { status, data } = resp
+  if (status === "Success") {
+    speakersList.value = data;
+  }
+}
+
+fetchSpeakers()
+
 const VisibleSpeakersList = computed(() => {
   return showMore.value ? speakersList.value : speakersList.value.slice(0, 6)
 })
@@ -38,7 +55,7 @@ const toggleShowMore = () => {
   showMore.value = !showMore.value
 }
 
-const submitLink = ref("#")
+const submitLink = ref("/submit")
 const showPopup = ref(true)
 const togglePopup = () => {
   showPopup.value = !showPopup.value
@@ -68,12 +85,11 @@ const togglePopup = () => {
       <div class="bg-white/80 p-10">
         <Title :titleMap="title.speaker"></Title>
         <div class="grid md:grid-cols-3 gap-4 pl-10">
-          <!-- TODO 这里是嘉宾列表，但只显示不超过 6 个 -->
           <div v-for="speaker in VisibleSpeakersList">
             <SpeakersIntroduction :speakers="speaker" />
           </div>
         </div>
-        <div v-if="speakersList.length > 6" class="flex justify-center mt-4">
+        <div v-if="speakersList?.values.length > 6" class="flex justify-center mt-4">
           <button @click="toggleShowMore" class="text-blue-500 hover:text-blue-700">
             <span v-if="showMore">▲ {{ $t("Collapse") }}</span>
             <span v-else>▼ {{ $t("Show More") }}</span>
