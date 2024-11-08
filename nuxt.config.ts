@@ -20,6 +20,9 @@ export default defineNuxtConfig({
       alwaysRedirect: true,
       fallbackLocale: "en",
     },
+    experimental: {
+      localeDetector: "./config/localeDetector.ts"
+    }
   },
   postcss: {
     plugins: {
