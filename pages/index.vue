@@ -5,15 +5,18 @@ import CoverImage from '~/components/homeIndex/CoverImage.vue';
 
 const speakersList = ref(speakers)
 
+const host = ref({
+  label: "Host",
+  path: "img/logo/HostLogo_large.jpg"
+},);
+
 const logoList = ref([
   {
-    label: "Host",
-    path: "img/logo/HostLogo_large.jpg"
-  }, {
     label: "Collaborator",
     path: "img/logo/co-iLRNLogo.png",
     link: "https://www.immersivelrn.org/"
-  }, {
+  },
+  {
     label: "Collaborator",
     path: "img/logo/co-IEEE-TLTlogo.png",
     link: "https://ieee-edusociety.org/publication/about-publications/tlt"
@@ -82,20 +85,19 @@ const togglePopup = () => {
         <!-- TODO 这部分是主办单位和合作者的 Logo -->
         <Title :titleMap="title.logo"></Title>
         <div>
-          <div class="grid gap-4 grid-cols-4">
-            <span class="font-bold text-lg pl-10">{{ $t("Organised by") }}</span>
-            <div class="col-span-3 col-start-2">
-              <NuxtImg :src="logoList[0].path" class="h-40" />
+          <div>
+            <div class="font-bold text-lg pl-10">{{ $t("Organised by") }}</div>
+            <div class="w-full flex justify-center items-center">
+              <NuxtImg :src="host.path" sizes="400" />
             </div>
           </div>
 
-          <div>
-            <span class="font-bold text-lg pl-10">{{ $t("In collaboration with") }}</span>
-
-            <div class="grid gap-4 grid-rows-1 grid-flow-col">
-              <div v-for="logo in logoList">
+          <div class="w-full flex flex-col">
+            <div class="font-bold text-lg pl-10">{{ $t("In collaboration with") }}</div>
+            <div class="w-full flex items-center justify-evenly md:flex-row flex-col">
+              <div v-for="logo in logoList" class="md:my-0 my-2">
                 <NuxtLink :to="logo.link">
-                  <NuxtImg :src="logo.path" v-if="logo.label === 'Collaborator'" class="h-16" />
+                  <NuxtImg :src="logo.path" class="h-16" />
                 </NuxtLink>
               </div>
             </div>

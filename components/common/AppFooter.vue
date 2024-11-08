@@ -50,6 +50,9 @@ const media = ref<MediaItemType[]>([
     <div class="text-xl font-bold text-center py-2">{{ $t(footerTitle) }}</div>
     <div class="flex md:flex-row flex-col items-center justify-center">
       <div class="flex justify-center items-center">
+        <NuxtImg src="/img/logo/UNESCOLogo.png" class="m-4" sizes="320" />
+      </div>
+      <div class="flex justify-center items-center">
         <div class="flex-1 items-center justify-center">
           <ul>
             <li v-for="item in contact">
