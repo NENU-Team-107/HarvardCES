@@ -5,5 +5,7 @@ definePageMeta({
 </script>
 
 <template>
-    <h1>注册页面</h1>
+    <div class="pt-24">
+        <h1>注册页面</h1>
+    </div>
 </template>

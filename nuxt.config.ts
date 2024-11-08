@@ -3,7 +3,13 @@ import { currentLocaleCodes, currentLocales } from "./config/i18n";
 export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
   devtools: { enabled: false },
-  modules: ["@nuxt/ui", "@nuxtjs/tailwindcss", "@nuxtjs/i18n", "@nuxt/image"],
+  modules: [
+    "@nuxt/ui",
+    "@nuxtjs/tailwindcss",
+    "@nuxtjs/i18n",
+    "@nuxt/image",
+    "@vesp/nuxt-fontawesome"
+  ],
   typescript: { typeCheck: true },
   tailwindcss: {
     exposeConfig: true,
@@ -30,8 +36,13 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  css: ["@fortawesome/fontawesome-svg-core/styles.css"],
-  plugins: ["~/plugins/fontawesome.js"],
+  fontawesome: {
+    icons: {
+      solid: [
+        'arrow-right','xmark'
+      ]
+    }
+  }
   // dayjs: {
   //   locales: ["en", "zh-cn", "zh-hk"],
   //   plugins: ['relativeTime', 'utc', 'timezone', 'localizedFormat'],

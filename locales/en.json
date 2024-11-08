@@ -18,8 +18,23 @@
       "Location": "The Education University of Hong Kong, the picturesque Tai Po Campus"
     }
   },
+
+  "Cover Image": "/img/poster/cover_en.jpg",
+
   "Collapse": "Collapse",
   "Show More": "Show More",
+
+  "PopWindow": {
+    "Title": "Submission Link",
+    "Content": "Please click here to submit your paper"
+  },
+  
+  "Invite Speakers": "Invite Speakers",
+  "Guest of Honor": "Guest of Honor",
+  "Keynote Speakers": "Keynote Speakers",
+  "Track Workshop Chair": "Track Workshop Chair",
+  "Organizing Committee": "Organizing Committee",
+
   "Media": {
     "Title": "Connect With Us",
     "Redbook": {
@@ -36,10 +51,6 @@
       "Name": " ",
       "Details": "Inquiries: {0}"
     }
-  },
-  "PopWindow": {
-    "Title": "Submission Link",
-    "Content": "Please click here to submit your paper"
   },
   "Symposium": {
     "Title": "Introduction",

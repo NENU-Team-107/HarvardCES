@@ -18,12 +18,23 @@
       "Location": "香港教育大學大埔校園"
     }
   },
+
+  "Cover Image":"/img/poster/cover_zh_Hant.jpg",
+
   "Collapse": "收起",
   "Show More": "展開",
+
   "PopWindow": {
     "Title": "投稿鏈接",
     "Content": "請點擊此處提交論文"
   },
+
+  "Invite Speakers":"邀請嘉賓",
+  "Guest of Honor": "嘉賓",
+  "Keynote Speakers": "主題演講嘉賓",
+  "Track Workshop Chair": "分會場主席",
+  "Organizing Committee": "組織委員會",
+  
   "Media": {
     "Title": "聯係我們",
     "Redbook": {

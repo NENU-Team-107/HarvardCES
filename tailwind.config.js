@@ -20,6 +20,7 @@ export default {
       colors: {
         'cover-left': '#c56c70',
         'cover-right': '#c1daba',
+        'footer-bg':'#d29c9c'
       },
       borderRadius: {
         'edge': '1rem',

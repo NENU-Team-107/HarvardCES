@@ -4,28 +4,30 @@ import { speakers } from '~/lib/placeholder';
 
 const { t } = useI18n()
 
-const navMenu = ref([
-  {
-    label: t("Invite Speakers"),
-    content: "Invite Speakers",
-  },
-  {
-    label: t("Guest of Honor"),
-    content: "Guest of Honor",
-  },
-  {
-    label: t("Keynote Speakers"),
-    content: "Keynote Speakers",
-  },
-  {
-    label: t("Track Workshop Chair"),
-    content: "Track Workshop Chair",
-  },
-  {
-    label: t("Organizing Committee"),
-    content: "Organizing Committee",
-  }
-])
+const navMenu = computed(() => {
+  return [
+    {
+      label: t("Invite Speakers"),
+      content: "Invite Speakers",
+    },
+    {
+      label: t("Guest of Honor"),
+      content: "Guest of Honor",
+    },
+    {
+      label: t("Keynote Speakers"),
+      content: "Keynote Speakers",
+    },
+    {
+      label: t("Track Workshop Chair"),
+      content: "Track Workshop Chair",
+    },
+    {
+      label: t("Organizing Committee"),
+      content: "Organizing Committee",
+    }
+  ]
+})
 
 const kindSpeakers = ref(speakers.filter(speaker => speaker.kind === 'Invite Speakers'))
 
@@ -37,7 +39,7 @@ const handleClick = (index: number) => {
 </script>
 
 <template>
-  <div class="w-full h-full min-h-screen mx-10 my-5">
+  <div class="w-full h-full min-h-screen mx-10 my-5 pt-24">
     <NuxtPage />
     <UTabs :items="navMenu" orientation="vertical"
       :ui="{ wrapper: 'flex gap-4 px-10', list: { width: 'w-60', tab: { size: 'text-base text-nowrap', padding: 'py-5' } } }"

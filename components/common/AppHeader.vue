@@ -40,7 +40,7 @@ const toggleMenu = () => {
 </script>
 
 <template>
-  <div class="w-full flex h-22 bg-white/80 justify-between items-center px-16 z-10">
+  <div class="w-full flex h-24 bg-white justify-between items-center px-16 z-50 fixed top-0 shadow-sm">
     <div class="h-full flex justify-center items-center">
       <NuxtLinkLocale to="/" class="text-blue-500">
         <!-- TODO 更改 LOGO 的大小以及导航栏的背景颜色 -->

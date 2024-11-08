@@ -45,12 +45,11 @@ const media = ref<MediaItemType[]>([
 </script>
 
 <template>
-  <div class="min-w-full min-h-28 bg-green-950/80 text-white w-full">
-    <!-- TODO 背景颜色 + 文字颜色 -->
+  <div class="min-w-full min-h-28 bg-footer-bg text-white w-full">
     <div class="text-xl font-bold text-center py-2">{{ $t(footerTitle) }}</div>
-    <div class="flex md:flex-row flex-col items-center justify-center">
-      <div class="flex justify-center items-center">
-        <NuxtImg src="/img/logo/UNESCOLogo.png" class="m-4" sizes="320" />
+    <div class="flex md:flex-row flex-col items-center justify-center gap-3 w-full">
+      <div class="flex justify-center items-center mx-10">
+        <NuxtImg src="/img/logo/UNESCOLogo.png" sizes="320" />
       </div>
       <div class="flex justify-center items-center">
         <div class="flex-1 items-center justify-center">

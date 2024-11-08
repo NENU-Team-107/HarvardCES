@@ -19,12 +19,23 @@
       "Location": "香港教育大学大埔校园"
     }
   },
+
+  "Cover Image":"/img/poster/cover_zh_Hans.jpg",
+
   "Collapse": "收起",
   "Show More": "展开",
+
   "PopWindow": {
     "Title": "投稿链接",
     "Content": "请点击此处提交论文"
   },
+
+  "Invite Speakers":"邀请嘉宾",
+  "Guest of Honor": "嘉宾",
+  "Keynote Speakers": "主题演讲嘉宾",
+  "Track Workshop Chair": "分会场主席",
+  "Organizing Committee": "组织委员会",
+  
   "Media": {
     "Title": "联系我们",
     "Redbook": {

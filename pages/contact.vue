@@ -27,7 +27,7 @@ const navMenu = computed(() => {
 </script>
 
 <template>
-  <div class="w-full h-full min-h-screen mx-10 my-5">
+  <div class="w-full h-full min-h-screen mx-10 my-5 pt-24">
     <NuxtPage />
     <UTabs :items="navMenu" orientation="vertical"
       :ui="{ wrapper: 'flex gap-4 px-10', list: { width: 'w-60', tab: { size: 'text-base text-nowrap', padding: 'py-5' } } }"

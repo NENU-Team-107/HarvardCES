@@ -9,6 +9,7 @@
       <div class="h-fit min-h-screen flex flex-col items-center w-full">
         <slot />
       </div>
+
       <AppFooter />
     </div>
   </div>

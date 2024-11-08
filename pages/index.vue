@@ -50,7 +50,7 @@ const togglePopup = () => {
 <!-- TODO 页面的背景颜色需要设置为信纸的颜色， -->
 
 <template>
-  <div class="w-full flex flex-col justify-center items-center relative my-10">
+  <div class="w-full flex flex-col justify-center items-center relative my-10 pt-24">
 
     <CoverImage />
 
@@ -112,7 +112,7 @@ const togglePopup = () => {
         <div class="flex justify-between items-center">
           <span>{{ $t("PopWindow.Title") }}</span>
           <button @click="togglePopup" class="text-red-500 hover:text-red-700">
-            <font-awesome-icon icon="fa-solid fa-xmark" style="color: #ff0000;" />
+            <font-awesome icon="fa-solid fa-xmark" style="color: #ff0000;" />
           </button>
         </div>
         <a :href="submitLink" target="_blank" class="text-blue-500 hover:text-blue-700">

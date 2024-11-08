@@ -26,7 +26,7 @@ const props = defineProps<{
     <template #footer>
       <ULink :to="props.speakers.bio.details.link" class="italic font-semibold">
         Details
-        <font-awesome-icon icon="fa-solid fa-arrow-right" />
+        <font-awesome icon="fa-solid fa-arrow-right" />
       </ULink>
     </template>
 
