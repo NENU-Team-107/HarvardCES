@@ -2,6 +2,11 @@
 import { useI18n } from 'vue-i18n';
 const { t } = useI18n();
 
+const longTtile = computed(() => {
+  return t("Symposium.Title Long").replace(/\n/g, '<br>')
+
+})
+
 const Introduction = computed(() => {
   return t("Symposium.Details").replace(/\n/g, '<br>')
 })
@@ -49,7 +54,8 @@ const handleChange = async (index: number) => {
       class="bg-white/80 w-full h-full min-h-screen" @change="handleChange">
       <template #item="{ item }">
         <div class="min-h-full flex flex-col px-20 py-10 bg-white/80 justify-center items-center h-full w-full">
-          <h1 v-if="item.content === 'about'" class="text-center font-bold text-2xl py-6">{{ $t("About") }}</h1>
+          <h1 v-if="item.content === 'about'" class="text-center font-bold text-2xl py-6">{{ $t("Symposium.Title") }}
+          </h1>
           <h1 v-else-if="item.content === 'location'" class="text-center font-bold text-2xl py-6">
             {{ $t("Symposium Location") }}
           </h1>
