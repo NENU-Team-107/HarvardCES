@@ -52,6 +52,7 @@ const toggleMenu = () => {
         <!-- 也可以插入图片, NuxtLink包裹可以点击跳转 -->
       </NuxtLinkLocale>
     </div>
+    <!-- FIXME: 缩放会导致导航栏条目消失 -->
     <div class="h-full justify-center items-center flex-row hidden md:flex">
       <div v-for="item in routerArray" :key="item.path" class="relative group mr-6 text-lg font-semibold">
         <NuxtLinkLocale :to="item.path" class="text-blue-500 pl-3">
