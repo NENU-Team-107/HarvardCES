@@ -39,7 +39,7 @@ export default defineNuxtConfig({
   fontawesome: {
     icons: {
       solid: [
-        'arrow-right','xmark'
+        'arrow-right','xmark','arrow-left'
       ]
     }
   }

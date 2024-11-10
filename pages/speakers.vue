@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import Details from '~/components/speakers/Details.vue';
+// import Details from '~/components/speakers/Details.vue';
+import Interoduction from '~/components/speakers/Introduction.vue';
 import { speakers } from '~/lib/placeholder';
 
 const { t } = useI18n()
@@ -47,7 +48,7 @@ const handleClick = (index: number) => {
       <template #item>
         <div class="grid grid-cols-3 gap-4">
           <div v-for="speaker in kindSpeakers">
-            <Details :speaker="speaker" class="mx-10 my-5" />
+            <Interoduction :speakers="speaker" class="mx-10 my-5" />
           </div>
         </div>
       </template>
