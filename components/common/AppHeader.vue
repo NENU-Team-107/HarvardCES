@@ -66,7 +66,9 @@ const toggleMenu = () => {
           </NuxtLinkLocale>
         </div>
       </div>
-      <LangSwitch />
+      <div class="relative group mr-6 text-lg font-semibold">
+        <LangSwitch />
+      </div>
     </div>
     <div class="md:hidden flex items-center">
       <button @click="toggleMenu" class="text-blue-500 focus:outline-none">
