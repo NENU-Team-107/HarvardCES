@@ -19,9 +19,6 @@ const props = defineProps<{
     </div>
     <div class="w-11/12 relative flex flex-col bg-white/80 rounded-lg py-6 md:px-20 px-2 m-auto">
       <div class="text-start">
-        <h2 class="text-slate-900 md:text-3xl text-xl tracking-tight font-extrabold">
-          {{ speaker.name }}
-        </h2>
         <h3 class="text-xl py-2">
           {{ speaker.kind }}
         </h3>
@@ -30,9 +27,12 @@ const props = defineProps<{
         <NuxtImg class=" min-w-4/5 mx-auto rounded-full py-3" :src="props.speaker.photo" :alt="props.speaker.name" />
       </div>
       <div class="w-full text-start flex flex-col justify-center items-center">
-        <h1 class="text-center w-full text-lg font-semibold text-slate-900 dark:text-white py-2 ">
-          {{ speaker.bio.details.title }}
+        <h1 class="text-slate-900 md:text-3xl text-xl tracking-tight font-extrabold">
+          {{ speaker.name }}
         </h1>
+        <h2 class="text-center w-full text-lg font-semibold text-slate-900 dark:text-white py-2 ">
+          {{ speaker.bio.details.title }}
+        </h2>
         <div class="px-10 text-center ">
           <div v-html="speaker.bio.details.description.replace(/\n/g, '<br />')" />
         </div>

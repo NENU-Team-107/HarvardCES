@@ -1,0 +1,10 @@
+version: "3"
+services:
+  harvardCES:
+    image: harvardces:latest
+    restart: on-failure
+    build: 
+      context: ./
+    ports:
+      - 3000:3000
+    container_name: harvardCES_container
