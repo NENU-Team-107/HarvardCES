@@ -3,6 +3,9 @@ import { currentLocaleCodes, currentLocales } from "./config/i18n";
 export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
   devtools: { enabled: false },
+  build: {
+    transpile: ['sharp']
+  },
   modules: [
     "@nuxt/ui",
     "@nuxtjs/tailwindcss",
@@ -39,7 +42,7 @@ export default defineNuxtConfig({
   fontawesome: {
     icons: {
       solid: [
-        'arrow-right','xmark','arrow-left'
+        'arrow-right', 'xmark', 'arrow-left'
       ]
     }
   }

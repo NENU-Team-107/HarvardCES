@@ -39,7 +39,7 @@ const fetchSpeakers = async () => {
     }
   })
   const { status, data } = resp
-  if (status === "Success") {
+  if (status === "Success" && data !== null) {
     speakersList.value = data;
   }
 }

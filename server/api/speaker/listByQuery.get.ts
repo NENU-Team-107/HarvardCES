@@ -27,6 +27,17 @@ export default defineEventHandler(async (event) => {
         }
         return data
     } else {
-        const result = undefined
+        const data = {
+            'status': 'Error',
+            'data': null,
+
+            toJSON() {
+                return {
+                    'status': this.status,
+                    'data': this.data
+                }
+            }
+        }
+        return data
     }
 })

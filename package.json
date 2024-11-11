@@ -19,6 +19,7 @@
     "@nuxtjs/tailwindcss": "^6.12.2",
     "@vesp/nuxt-fontawesome": "^1.1.0",
     "nuxt": "^3.14.159",
+    "sharp": "^0.33.5",
     "vue": "latest",
     "vue-router": "latest"
   },
@@ -35,11 +36,5 @@
     "postcss": "^8.4.47",
     "tailwindcss": "^3.4.14",
     "vue-tsc": "^2.1.10"
-  },
-  "overrides": {
-    "sharp": "0.32.6"
-  },
-  "resolutions": {
-    "sharp": "0.32.6"
   }
 }
