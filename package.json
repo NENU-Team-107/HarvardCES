@@ -35,5 +35,11 @@
     "postcss": "^8.4.47",
     "tailwindcss": "^3.4.14",
     "vue-tsc": "^2.1.10"
+  },
+  "overrides": {
+    "sharp": "0.32.6"
+  },
+  "resolutions": {
+    "sharp": "0.32.6"
   }
 }

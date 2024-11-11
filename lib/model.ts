@@ -1,7 +1,7 @@
 export type SpeakerBio = {
     details: {
         description: string,
-        title: string | undefined
+        title: string
         link: string | undefined
     }
 }
