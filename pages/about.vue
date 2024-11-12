@@ -28,11 +28,9 @@ const navMenu = computed(() => {
   ]
 })
 
-// const handleClick = (index: number) => {
-//   let item = navMenu.value[index]
-//   console.log(item)
-//   kindSpeakers.value = speakers.filter(speaker => speaker.kind === item.label)
-// }
+const AgendaImage = computed(() => {
+  return t("Symposium Agenda")
+})
 
 const LocationImage = ref<string>('')
 
@@ -59,8 +57,6 @@ const handleChange = async (index: number) => {
           <h1 v-else-if="item.content === 'location'" class="text-center font-bold text-2xl py-6">
             {{ $t("Symposium Location") }}
           </h1>
-          <h1 v-else-if="item.content === 'time'" class="text-center font-bold text-2xl py-6">{{ $t("Symposium Time") }}
-          </h1>
           <div class="flex justify-center items-center w-full flex-1">
             <div v-if="item.content === 'about'" v-html="Introduction" />
             <div v-else-if="item.content === 'location'">
@@ -70,7 +66,7 @@ const handleChange = async (index: number) => {
               </div>
             </div>
             <div v-else>
-              <!-- TODO -->
+              <NuxtImg :src="AgendaImage" loading="lazy" />
             </div>
           </div>
         </div>
