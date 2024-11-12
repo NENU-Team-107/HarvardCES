@@ -45,23 +45,6 @@ const fetchSpeakers = async () => {
   }
 }
 
-fetchSpeakers()
-  .then(async () => {
-    for (const speaker of speakersList.value) {
-      const image: Blob = await $fetch('/api/speaker/photo', {
-        method: 'GET',
-        query: {
-          photo: speaker.photo
-        }
-      })
-      speaker.photo = window.URL.createObjectURL(image)
-    }
-  })
-
-const VisibleSpeakersList = computed(() => {
-  return showMore.value ? speakersList.value : speakersList.value.slice(0, 6)
-})
-
 const showMore = ref(false)
 
 const toggleShowMore = () => {
@@ -74,8 +57,26 @@ const togglePopup = () => {
   showPopup.value = !showPopup.value
 }
 
-const SymposiumIntro = computed(() => {
-  return t("Symposium.Intro").replace(/\n/g, '<br>')
+const VisibleSpeakersList = computed(() => {
+  return showMore.value ? speakersList.value : speakersList.value.slice(0, 6)
+})
+
+const SymposiumIntro = ref<string>()
+
+onMounted(() => {
+  fetchSpeakers()
+    .then(async () => {
+      for (const speaker of speakersList.value) {
+        const image: Blob = await $fetch('/api/speaker/photo', {
+          method: 'GET',
+          query: {
+            photo: speaker.photo
+          }
+        })
+        speaker.photo = window.URL.createObjectURL(image)
+      }
+    })
+  SymposiumIntro.value = t("Symposium.Intro").replace(/\n/g, '<br>')
 })
 
 </script>
@@ -96,7 +97,7 @@ const SymposiumIntro = computed(() => {
         <div class="text-lg pl-10">
           <!-- TODO 需要限制边距，保证居中，还有需要设置字号问题 -->
           <div :innerHTML="SymposiumIntro"></div>
-          <div>
+          <div class="flex mt-4">
             <ULink to="/about" class="italic font-semibold">
               {{ $t("Symposium.Click") }}
               <font-awesome icon="fa-solid fa-arrow-right" />
@@ -112,7 +113,7 @@ const SymposiumIntro = computed(() => {
             <SpeakersIntroduction :speakers="speaker" />
           </div>
         </div>
-        <div v-if="speakersList?.values.length > 6" class="flex justify-center mt-4">
+        <div v-if="speakersList.length > 6" class="flex justify-center mt-4">
           <button @click="toggleShowMore" class="text-blue-500 hover:text-blue-700">
             <span v-if="showMore">▲ {{ $t("Collapse") }}</span>
             <span v-else>▼ {{ $t("Show More") }}</span>

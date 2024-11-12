@@ -5,7 +5,7 @@ export default defineEventHandler(async (event: any) => {
     const query = getQuery(event)
 
     const id = Number.parseInt(query.id as string)
-    const kind = speakerToKind.get(query.name as string)
+    const kind = speakerToKind.get(id)
 
     if (kind === "Keynote Speakers") {
         const result = keynoteSpeaker.find(speaker => speaker.id === id)

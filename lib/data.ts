@@ -1,14 +1,19 @@
 import type { Speaker } from "./model";
 
-export const speakerToKind: Map<string, string> = new Map([
-    ['ProfessorLEE,Chi-KinJohn', 'Keynote Speakers'],
-    ['RenYouqun', 'Keynote Speakers'],
-    ['ChrisDede', 'Keynote Speakers'],
-    ['ShijinWang', 'Keynote Speakers'],
-    ['ProfessorMinjuanWANG', 'Keynote Speakers'],
-    ['Yew-SoonOng', 'Keynote Speakers'],
-    ['PaulKim', 'Keynote Speakers'],
-    ['AnnyChan', 'Keynote Speakers']
+export const speakerToKind: Map<number, string> = new Map([
+    [1, 'Keynote Speakers'],
+    [2, 'Keynote Speakers'],
+    [3, 'Keynote Speakers'],
+    [4, 'Keynote Speakers'],
+    [5, 'Keynote Speakers'],
+    [6, 'Keynote Speakers'],
+    [7, 'Keynote Speakers'],
+    [8, 'Keynote Speakers'],
+    [9, 'Organizing Committee'],
+    [10, 'Organizing Committee'],
+    [11, 'Organizing Committee'],
+    [12, 'Organizing Committee'],
+    [13, 'Organizing Committee'],
 ]);
 
 export const keynoteSpeaker: Array<Speaker> = [
@@ -125,3 +130,77 @@ export const keynoteSpeaker: Array<Speaker> = [
         }
     },
 ];
+
+
+export const organizingCommittee: Array<Speaker> = [
+    {
+        id: 9,
+        name: "server.Organizing Committee.id1.name",
+        kind: "Organizing Committee",
+        photo: "./assets/avatars/Chi-Kin John.png",
+        activateDate: new Date("2025-05-09"),
+        bio: {
+            details: {
+                description: "server.Organizing Committee.id1.description",
+                title: "server.Organizing Committee.id1.title",
+                link: 'speaker/9 ProfessorLEE,Chi-KinJohn'
+            }
+        }
+    },
+    {
+        id: 10,
+        name: "server.Organizing Committee.id2.name",
+        kind: "Organizing Committee",
+        photo: "./assets/avatars/Minjuan WANG.png",
+        activateDate: new Date("2025-05-09"),
+        bio: {
+            details: {
+                description: "server.Organizing Committee.id2.description",
+                title: "server.Organizing Committee.id2.title",
+                link: 'speaker/10 MinjuanWANG'
+            }
+        }
+    },
+    {
+        id: 11,
+        name: "server.Organizing Committee.id3.name",
+        kind: "Organizing Committee",
+        photo: "./assets/avatars/Rongbing Shen.png",
+        activateDate: new Date("2025-05-09"),
+        bio: {
+            details: {
+                description: "server.Organizing Committee.id3.description",
+                title: "server.Organizing Committee.id3.title",
+                link: 'speaker/11 Rongbing Shen'
+            }
+        }
+    },
+    {
+        id: 12,
+        name: "server.Organizing Committee.id4.name",
+        kind: "Organizing Committee",
+        photo: "./assets/avatars/Anny Chan.png",
+        activateDate: new Date("2025-05-09"),
+        bio: {
+            details: {
+                description: "server.Organizing Committee.id4.description",
+                title: "server.Organizing Committee.id4.title",
+                link: 'speaker/12 Anny Chan'
+            }
+        }
+    },
+    {
+        id: 13,
+        name: "server.Organizing Committee.id5.name",
+        kind: "Organizing Committee",
+        photo: "./assets/avatars/Xuefan Li.png",
+        activateDate: new Date("2025-05-09"),
+        bio: {
+            details: {
+                description: "server.Organizing Committee.id5.description",
+                title: "server.Organizing Committee.id5.title",
+                link: 'speaker/13 Xuefan Li'
+            }
+        }
+    },
+]

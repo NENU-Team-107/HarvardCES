@@ -1,5 +1,4 @@
 <script setup lang="ts">
-// import Details from '~/components/speakers/Details.vue';
 import Interoduction from '~/components/speakers/Introduction.vue';
 import type { Speaker } from '~/lib/model';
 
@@ -35,30 +34,39 @@ const navMenu = computed(() => {
 const kindSpeakers = ref()
 const speakersList = ref<Speaker[]>([])
 
+const blobMap: Map<string, string> = new Map()
+
 
 const fetchSpeakers = async () => {
   const resp = await $fetch('/api/speaker/listAll', {
     method: 'GET',
-    query: {
-      kind: 'Keynote Speakers'
-    }
   })
   const { status, data } = resp
   if (status === "Success" && data !== null) {
     for (const speaker of data) {
-      const image: Blob = await $fetch('/api/speaker/photo', {
-        method: 'GET',
-        query: {
-          photo: speaker.photo
-        }
-      })
-      speaker.photo = window.URL.createObjectURL(image)
+      if (blobMap.has(speaker.photo)) {
+        speaker.photo = blobMap.get(speaker.photo) as string
+      } else {
+        const image: Blob = await $fetch('/api/speaker/photo', {
+          method: 'GET',
+          query: {
+            photo: speaker.photo
+          }
+        })
+        const url = window.URL.createObjectURL(image)
+        blobMap.set(speaker.photo, url)
+        speaker.photo = url
+      }
     }
     speakersList.value = data;
   }
 }
 
-fetchSpeakers()
+onMounted(() => {
+  fetchSpeakers().then(() => {
+    kindSpeakers.value = speakersList.value.filter(speaker => speaker.kind === "Organizing Committee")
+  })
+})
 
 const handleClick = (index: number) => {
   let item = navMenu.value[index]

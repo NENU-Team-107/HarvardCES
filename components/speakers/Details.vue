@@ -12,6 +12,10 @@ const description = computed(() => {
   return t(props.speaker.bio.details.description).replace(/\n/g, '<br>')
 })
 
+const title = computed(() => {
+  return t(props.speaker.bio.details.title).replace(/\n/g, '<br>')
+})
+
 </script>
 
 <template>
@@ -38,9 +42,9 @@ const description = computed(() => {
         <h1 class="text-slate-900 md:text-3xl text-xl tracking-tight font-extrabold">
           {{ t(speaker.name) }}
         </h1>
-        <h2 class="text-center w-full text-lg font-semibold text-slate-900 dark:text-white py-2 ">
-          {{ t(speaker.bio.details.title) }}
-        </h2>
+        <div class="text-center w-full text-lg font-semibold text-slate-900 dark:text-white py-2 ">
+          <div v-html="title"></div>
+        </div>
         <div class="px-10 text-center ">
           <div v-html="description" />
         </div>
