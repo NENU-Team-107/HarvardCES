@@ -1,17 +1,33 @@
+import { Head } from './.nuxt/components.d';
 import { currentLocaleCodes, currentLocales } from "./config/i18n";
+import font from 'vite-plugin-font';
 
 export default defineNuxtConfig({
+  app: {
+    head: {
+      link: [
+        {
+          href: 'https://cdn.jsdelivr.net/npm/lxgw-wenkai-gb-web@latest/style.css',
+          rel: 'stylesheet'
+        },
+      ]
+    }
+  },
   compatibilityDate: "2024-11-01",
   devtools: { enabled: false },
   build: {
     transpile: ['sharp']
+  },
+  vite: {
+    plugins: [font.vite({})],
   },
   modules: [
     "@nuxt/ui",
     "@nuxtjs/tailwindcss",
     "@nuxtjs/i18n",
     "@nuxt/image",
-    "@vesp/nuxt-fontawesome"
+    "@vesp/nuxt-fontawesome",
+    "nuxt-swiper",
   ],
   typescript: { typeCheck: true },
   tailwindcss: {
@@ -45,7 +61,7 @@ export default defineNuxtConfig({
         'arrow-right', 'xmark', 'arrow-left'
       ]
     }
-  }
+  },
   // dayjs: {
   //   locales: ["en", "zh-cn", "zh-hk"],
   //   plugins: ['relativeTime', 'utc', 'timezone', 'localizedFormat'],

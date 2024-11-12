@@ -18,7 +18,6 @@ html {
 body {
   background: #fff;
   color: #333;
-  font: 1em/1.55 Lato, Arial, sans-serif;
   margin: auto;
   max-width: 1920px
 }

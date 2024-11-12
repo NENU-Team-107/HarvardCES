@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import Title from '~/components/common/Title.vue'
 import CoverImage from '~/components/homeIndex/CoverImage.vue';
+import PopupWindow from '~/components/homeIndex/PopupWindow.vue';
 import type { Speaker } from '~/lib/model';
 
 const { t } = useI18n()
@@ -51,11 +52,11 @@ const toggleShowMore = () => {
   showMore.value = !showMore.value
 }
 
-const submitLink = ref("/submit")
-const showPopup = ref(true)
-const togglePopup = () => {
-  showPopup.value = !showPopup.value
-}
+// const submitLink = ref("/submit")
+// const showPopup = ref(true)
+// const togglePopup = () => {
+//   showPopup.value = !showPopup.value
+// }
 
 const VisibleSpeakersList = computed(() => {
   return showMore.value ? speakersList.value : speakersList.value.slice(0, 6)
@@ -151,7 +152,8 @@ onMounted(() => {
       </div>
 
       <!-- 飘窗 -->
-      <div v-if="showPopup" class="fixed bottom-10 right-10 bg-white p-4 shadow-lg rounded-lg">
+      <PopupWindow/>
+      <!-- <div v-if="showPopup" class="fixed bottom-10 right-10 bg-white p-4 shadow-lg rounded-lg">
         <div class="flex justify-between items-center">
           <span>{{ $t("PopWindow.Title") }}</span>
           <button @click="togglePopup" class="text-red-500 hover:text-red-700">
@@ -161,7 +163,7 @@ onMounted(() => {
         <a :href="submitLink" target="_blank" class="text-blue-500 hover:text-blue-700">
           {{ $t("PopWindow.Content") }}
         </a>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>

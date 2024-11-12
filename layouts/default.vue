@@ -19,3 +19,11 @@
 import AppHeader from "~/components/common/AppHeader.vue";
 import AppFooter from "~/components/common/AppFooter.vue";
 </script>
+
+<style>
+body,
+html {
+  font-family: "LXGW WenKai GB", "Robot";
+  font-weight: normal;
+}
+</style>
