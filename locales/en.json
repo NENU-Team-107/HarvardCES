@@ -7,6 +7,7 @@
   "Submit": "Call for Paper",
   "About": "About",
   "Contact": "Contact",
+  "Back": "Back",
   "Host": {
     "Name": "Organizer",
     "Language": "Language",
@@ -67,42 +68,42 @@
   "Track": "Track",
   "server": {
     "Keynote Speakers": {
-      "Professor LEE, Chi-Kin John": {
+      "id1": {
         "description": "Professor Chi-Kin John Lee is a distinguished academic and leader in education, currently serving as President and Chair Professor at The Education University of Hong Kong. His career is marked by significant contributions to curriculum and instruction, including roles as Vice President (Academic) and Provost. Former Dean of Education and a recipient of the Vice-Chancellor’s Exemplary Teaching Award at The Chinese University of Hong Kong (CUHK), Professor Lee has an extensive research background with a focus on various educational areas. He is a top-cited scientist and has secured numerous grants for his projects. Professor Lee is an active member of several editorial boards, has authored and co-edited over 25 books, and has been involved in education and social services locally, nationally and globally. His projects have won awards, and he has held various prestigious positions, including Changjiang Scholar Chair Professor, UNESCO Chair and membership in the Chinese People’s Political Consultative Conference.",
         "name": "Professor LEE, Chi-Kin John",
         "title": "President, Chair Professor of Curriculum and Instruction, The Education University of Hong Kong, UNESCO Chair"
       },
-      "Ren Youqun": {
+      "id2": {
         "description": "",
         "name": "Prof. Ren Youqun",
         "title": "Secretary of the CPC shandong University Committee, Doctor of Education, Professor, Vice President of the Chinese Society of Education, Deputy Director of the National Graduate Education Steering Committee for Professional Education "
       },
-      "Chris Dede": {
+      "id3": {
         "description": "Prior to becoming a Senior Research Fellow, for 22 years Chris Dede was the Timothy E. Wirth Professor in Learning Technologies. His fundamental interest is developing new types of educational systems to meet the opportunities and challenges of the 21st century. His research spans emerging technologies for learning, infusing technology into large-scale educational improvement initiatives, developing policies that support educational transformation, and providing leadership in educational innovation. Currently, Dede is a co-principal investigator of the NSF-funded National Artificial Intelligence Institute in Adult Learning and Online Education. He co-founded the Silver Lining for Learning initiative and developed a widely used Framework for scaling up educational innovations.",
         "name": "Dr. Chris Dede",
         "title": "Distinguished Professor and Senior Research Fellow, Harvard University (Likely Online)"
       },
-      "Shijin Wang": {
+      "id4": {
         "description": "Dr. Shijin Wang is currently the Executive Dean of the iFlytek Research Institute, Deputy Director of the National Key Laboratory of Cognitive Intelligence, and a part-time professor and doctoral advisor at the University of Science and Technology of China. His main research areas include signal processing, large models, and industry intelligence. He has received numerous awards, including the National Science and Technology Progress Award (First Class), the Provincial Science and Technology Award (First Class), the Wu Wenjun Artificial Intelligence Science and Technology Progress Award (First Class), the China Youth May Fourth Medal (collective), and the China Association for Science and Technology’s Qiu Shi Outstanding Youth Achievement Transformation Award. He has led his team to win several international competitions such as SQuAD, GLUE, and VCR. Dr. Wang spearheaded the “iFlytek Xinghuo Large Model Technology and Application” project, releasing the leading Xinghuo large model in China and continuously empowering multiple industry applications.",
         "name": "Dr. Shijin Wang",
         "title": "Vice CEO of iFlytek, Inc, Deputy Director of the State Key Laboratory of Cognitive Intelligence, P.R.China"
       },
-      "Professor Minjuan WANG": {
+      "id5": {
         "description": "Dr. Minjuan Wang is a newly appointed Chair Professor of Emerging and Technologies and Future Education at the Education University of Hong Kong, Co-Director of the Global Institute for Emerging Technologies, and Editor-in-Chief of the IEEE Transactions on Learning Technologies (TLT). Her research specialties are multidisciplinary, focusing on STEM Education, Future Education enabled by new and emerging technologies, Metaverse and immersive learning, and the design and implementation of artificial intelligence including AIGC for teaching, learning and training. Professor Wang is a high-impact author and an internationally recognized scholar who has keynoted more than 45 conferences. She publishes extensively in indexed and high-impact English journals such as Nature-HSSC, Computers and Education, IEEE-TLT, and British Journal of Education Technology. In addition, her teaching and research were also featured in top core journals in China (e.g., Educational Research). As a senior member of the IEEE Education Society, she has contributed significantly to both the IEEE community and other scholarly circles. Her international reputation in the field is evident, reflected in her recent nomination as an iLRN scholar by Chris Dede from Harvard University. ",
         "name": "Professor Minjuan WANG",
         "title": "The Education University of Hong Kong, Senior Member, IEEE; EiC, IEEE Transactions on Learning Technologies (IEEE-TLT)"
       },
-      "Yew-Soon Ong": {
+      "id6": {
         "description": "Yew-Soon Ong is currently President's Chair Professor of Computer Science at the School of Computer Science and Engineering at Nanyang Technological University (NTU), Singapore. At the same time, he is Chief Artificial Intelligence (CAS) Scientist of the Singapore's Agency for Science, Technology and Research (A*STAR). At NTU, he presently serves as co-Director of the Singtel-NTU Cognitive &#38; Artificial Intelligence Joint Lab (SCALE&#64;NTU). He was Chair of the School of Computer Science and Engineering (SCSE), Nanyang Technological University from 2016-2018, Director of the Data Science and Artificial Intelligence Research Center (DSAIR) from 2016-2022, Director of the Centre for Computational Intelligence from 2008-2015 and Programme Principal Investigator of the Data Analytics &#38; Complex System Programme Rolls-Royce&#64;NTU Corporate Lab from 2013-2017.",
         "name": "Dr. Yew-Soon Ong",
         "title": "President's Chair Professor of Computer Science BEng MEng PhD, FIEEE, Nanyang Technological University (NTU), Singapore"
       },
-      "Paul Kim": {
+      "id7": {
         "description": "Paul Kim (born 1970) is currently a Korean-American Chief Technology Officer and Associate Dean at the Stanford Graduate School of Education and has held this position since 2001. While at Stanford, in addition to teaching graduate level courses in the School of Education, he has been leading projects involving the design of learning technologies, educational research, and community development. Kim leads initiatives involving the design of learning technologies, educational research, and community development. Kim is also working with numerous international organizations to develop mobile empowerment solutions for extremely underserved communities in developing countries. In his recent expeditions to Latin America, Africa, and India, he investigated the effects of highly programmable open-source mobile learning platforms on education programs for literacy, numeracy, and entrepreneurship (e.g., math games, storytelling, and farming simulations)",
         "name": "Paul Kim(Stanford)",
         "title": "Entrepreneur, Former CTO and Associate Dean at the Stanford Graduate School of Education"
       },
-      "Anny Chan": {
+      "id8": {
         "description": "Anny Chan holds a Master’s in Education in Educational Leadership, Organization, and Entrepreneurship from Harvard University and is a faculty member at the Harvard Graduate School of Education. She researches the impact of artificial intelligence on teaching and learning, focusing on advancing equity and diversity through technology in education.",
         "name": "Miss. Anny Chan",
         "title": " Teaching Fellow, Harvard University (CES Board of Advisor) "

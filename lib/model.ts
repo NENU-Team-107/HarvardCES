@@ -7,6 +7,7 @@ export type SpeakerBio = {
 }
 
 export type Speaker = {
+    id: number
     name: string
     kind: string
     photo: string
@@ -18,4 +19,13 @@ export type NewsItem = {
     title: string
     content: string
     link: string | undefined
+}
+
+export interface ApiResponse {
+    status: string;
+    data: Speaker | null;
+}
+
+export interface ApiResponseWithToJSON extends ApiResponse {
+    toJSON(): { status: string; data: Speaker | null };
 }

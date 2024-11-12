@@ -10,12 +10,12 @@ const props = defineProps<{
 <template>
   <UCard>
     <div class="flex flex-col w-full">
-      <UAvatar :src="props.speakers.photo" icon="i-heroicons-photo" class="w-24 h-24 rounded-full mx-auto" />
+      <NuxtImg class=" min-w-3/5 mx-auto rounded-full" :src="props.speakers.photo" :alt="props.speakers.name" />
       <div class="font-bold text-center text-xl py-2">
-        {{ props.speakers.name }}
+        {{ $t(props.speakers.name) }}
       </div>
       <div>
-        {{ props.speakers.bio.details.title }}
+        {{ $t(props.speakers.bio.details.title) }}
       </div>
     </div>
 

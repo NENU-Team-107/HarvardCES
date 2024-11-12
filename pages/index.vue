@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import { speakers } from '~/lib/placeholder';
 import Title from '~/components/common/Title.vue'
 import CoverImage from '~/components/homeIndex/CoverImage.vue';
 import type { Speaker } from '~/lib/model';
@@ -28,7 +27,6 @@ const title = ref({
   logo: "Organisers and Partners"
 })
 
-
 const speakersList = ref<Speaker[]>([])
 
 const fetchSpeakers = async () => {
@@ -45,6 +43,17 @@ const fetchSpeakers = async () => {
 }
 
 fetchSpeakers()
+  .then(async () => {
+    for (const speaker of speakersList.value) {
+      const image: Blob = await $fetch('/api/speaker/photo', {
+        method: 'GET',
+        query: {
+          photo: speaker.photo
+        }
+      })
+      speaker.photo = window.URL.createObjectURL(image)
+    }
+  })
 
 const VisibleSpeakersList = computed(() => {
   return showMore.value ? speakersList.value : speakersList.value.slice(0, 6)

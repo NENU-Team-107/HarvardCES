@@ -1,107 +1,126 @@
 import type { Speaker } from "./model";
 
+export const speakerToKind: Map<string, string> = new Map([
+    ['ProfessorLEE,Chi-KinJohn', 'Keynote Speakers'],
+    ['RenYouqun', 'Keynote Speakers'],
+    ['ChrisDede', 'Keynote Speakers'],
+    ['ShijinWang', 'Keynote Speakers'],
+    ['ProfessorMinjuanWANG', 'Keynote Speakers'],
+    ['Yew-SoonOng', 'Keynote Speakers'],
+    ['PaulKim', 'Keynote Speakers'],
+    ['AnnyChan', 'Keynote Speakers']
+]);
+
 export const keynoteSpeaker: Array<Speaker> = [
     {
-        name: "server.Keynote Speakers.Professor LEE, Chi-Kin John.name",
+        id: 1,
+        name: "server.Keynote Speakers.id1.name",
         kind: "Keynote Speakers",
         photo: "./assets/avatars/Chi-Kin John.png",
         activateDate: new Date("2025-05-09"),
         bio: {
             details: {
-                description: "server.Keynote Speakers.Professor LEE, Chi-Kin John.description",
-                title: "server.Keynote Speakers.Professor LEE, Chi-Kin John.title",
-                link: undefined
+                description: "server.Keynote Speakers.id1.description",
+                title: "server.Keynote Speakers.id1.title",
+                link: 'speaker/1 ProfessorLEE,Chi-KinJohn'
             }
         }
     },
     {
-        name: "server.Keynote Speakers.Ren Youqun.name",
+        id: 2,
+        name: "server.Keynote Speakers.id2.name",
         kind: "Keynote Speakers",
         photo: "./assets/avatars/Ren Youqun.png",
         activateDate: new Date("2025-05-09"),
         bio: {
             details: {
-                description: "server.Keynote Speakers.Ren Youqun.description",
-                title: "server.Keynote Speakers.Ren Youqun.title",
-                link: undefined
+                description: "server.Keynote Speakers.id2.description",
+                title: "server.Keynote Speakers.id2.title",
+                link: 'speaker/2 RenYouqun'
             }
         }
     },
     {
-        name: "server.Keynote Speakers.Chris Dede.name",
+        id: 3,
+        name: "server.Keynote Speakers.id3.name",
         kind: "Keynote Speakers",
         photo: "./assets/avatars/Chris Dede.png",
         activateDate: new Date("2025-05-09"),
         bio: {
             details: {
-                description: "server.Keynote Speakers.Chris Dede.description",
-                title: "server.Keynote Speakers.Chris Dede.title",
-                link: undefined
+                description: "server.Keynote Speakers.id3.description",
+                title: "server.Keynote Speakers.id3.title",
+                link: 'speaker/3 ChrisDede'
             }
         }
     },
     {
-        name: "server.Keynote Speakers.Shijin Wang.name",
+        id: 4,
+        name: "server.Keynote Speakers.id4.name",
         kind: "Keynote Speakers",
         photo: "./assets/avatars/Shijin Wang.png",
         activateDate: new Date("2025-05-09"),
         bio: {
             details: {
-                description: "server.Keynote Speakers.Shijin Wang.description",
-                title: "server.Keynote Speakers.Shijin Wang.title",
-                link: undefined
+                description: "server.Keynote Speakers.id4.description",
+                title: "server.Keynote Speakers.id4.title",
+                link: 'speaker/4 ShijinWang'
             }
         }
     },
     {
-        name: "server.Keynote Speakers.Professor Minjuan WANG.name",
+        id: 5,
+        name: "server.Keynote Speakers.id5.name",
         kind: "Keynote Speakers",
         photo: "./assets/avatars/Minjuan WANG.png",
         activateDate: new Date("2025-05-09"),
         bio: {
             details: {
-                description: "server.Keynote Speakers.Professor Minjuan WANG.description",
-                title: "server.Keynote Speakers.Professor Minjuan WANG.title",
-                link: undefined
+                description: "server.Keynote Speakers.id5.description",
+                title: "server.Keynote Speakers.id5.title",
+                link: 'speaker/5 MinjuanWANG'
             }
         }
     },
     {
-        name: "server.Keynote Speakers.Yew-Soon Ong.name",
+        id: 6,
+        name: "server.Keynote Speakers.id6.name",
         kind: "Keynote Speakers",
         photo: "./assets/avatars/Yew-Soon Ong.png",
         activateDate: new Date("2025-05-09"),
         bio: {
             details: {
-                description: "server.Keynote Speakers.Yew-Soon Ong.description",
-                title: "server.Keynote Speakers.Yew-Soon Ong.title",
-                link: undefined
+                description: "server.Keynote Speakers.id6.description",
+                title: "server.Keynote Speakers.id6.title",
+                link: 'speaker/6 Yew-SoonOng'
             }
         }
     },
     {
-        name: "server.Keynote Speakers.Paul Kim.name",
+        id: 7,
+        name: "server.Keynote Speakers.id7.name",
         kind: "Keynote Speakers",
         photo: "./assets/avatars/Paul Kim.png",
         activateDate: new Date("2025-05-09"),
         bio: {
             details: {
-                description: "server.Keynote Speakers.Paul Kim.description",
-                title: "server.Keynote Speakers.Paul Kim.title",
-                link: undefined
+                description: "server.Keynote Speakers.id7.description",
+                title: "server.Keynote Speakers.id7.title",
+                link: 'speaker/7 PaulKim'
             }
         }
     },
     {
-        name: "server.Keynote Speakers.Anny Chan.name",
+        id: 8,
+        name: "server.Keynote Speakers.id8.name",
         kind: "Keynote Speakers",
         photo: "./assets/avatars/Anny Chan.png",
         activateDate: new Date("2025-05-09"),
         bio: {
             details: {
-                description: "server.Keynote Speakers.Anny Chan.description",
-                title: "server.Keynote Speakers.Anny Chan.title",
-                link: undefined
+                description: "server.Keynote Speakers.id8.description",
+                title: "server.Keynote Speakers.id8.title",
+                link: 'speaker/8 AnnyChan'
             }
         }
     },

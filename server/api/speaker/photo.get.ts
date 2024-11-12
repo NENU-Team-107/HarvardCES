@@ -1,6 +1,6 @@
 import fs from 'node:fs'
 
-export default defineEventHandler(async (event) => {
+export default defineEventHandler(async (event: any) => {
     const query = getQuery(event)
     const image = fs.readFileSync(query.photo as string)
     event.node.res.setHeader('Content-Type', 'image/png')

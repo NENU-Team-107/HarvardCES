@@ -1,7 +1,7 @@
 <script setup lang="ts">
 // import Details from '~/components/speakers/Details.vue';
 import Interoduction from '~/components/speakers/Introduction.vue';
-import { speakers } from '~/lib/placeholder';
+import type { Speaker } from '~/lib/model';
 
 const { t } = useI18n()
 
@@ -30,11 +30,37 @@ const navMenu = computed(() => {
   ]
 })
 
-const kindSpeakers = ref(speakers.filter(speaker => speaker.kind === 'Invite Speakers'))
+const kindSpeakers = ref()
+const speakersList = ref<Speaker[]>([])
+
+
+const fetchSpeakers = async () => {
+  const resp = await $fetch('/api/speaker/listAll', {
+    method: 'GET',
+    query: {
+      kind: 'Keynote Speakers'
+    }
+  })
+  const { status, data } = resp
+  if (status === "Success" && data !== null) {
+    for (const speaker of data) {
+      const image: Blob = await $fetch('/api/speaker/photo', {
+        method: 'GET',
+        query: {
+          photo: speaker.photo
+        }
+      })
+      speaker.photo = window.URL.createObjectURL(image)
+    }
+    speakersList.value = data;
+  }
+}
+
+fetchSpeakers()
 
 const handleClick = (index: number) => {
   let item = navMenu.value[index]
-  kindSpeakers.value = speakers.filter(speaker => speaker.kind === item.content)
+  kindSpeakers.value = speakersList.value.filter(speaker => speaker.kind === item.content)
 }
 
 </script>

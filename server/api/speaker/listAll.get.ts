@@ -1,6 +1,21 @@
-import { speakers } from "~/lib/placeholder"
+import { keynoteSpeaker } from "~/lib/data";
 
-export default defineEventHandler(async (event) => {
-    // TODO read from database
-    return speakers
+export default defineEventHandler(async (event: any) => {
+
+
+    const result = keynoteSpeaker
+    const data = {
+        'status': 'Success',
+        'data': result,
+
+        toJSON() {
+            return {
+                'status': this.status,
+                'data': [
+                    ...this.data
+                ]
+            }
+        }
+    }
+    return data
 })

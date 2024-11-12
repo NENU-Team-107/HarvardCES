@@ -1,29 +1,46 @@
 <script setup lang="ts">
 import Details from '~/components/speakers/Details.vue';
-import type { Speaker, SpeakerBio } from '~/lib/model.ts';
+import type { ApiResponse, Speaker } from '~/lib/model.ts';
 
-// const speaker = defineProps<{
-//   speaker: Speaker,
-// }>().speaker;
+const route = useRoute()
 
+const speaker = ref<Speaker>();
 
-const speaker = ref<Speaker>({
-  name: 'Miss. Anny Chan',
-  kind: 'Guest of Honour',
-  photo: '/img/speakers/anny-chan.png',
-  bio: {
-    details: {
-      description: 'Board Member\nHarvard China Education Symposium\nDirector of External Affairs of Joint Symposium on Emerging Technologies and Future Talent',
-      title: 'Teaching Fellow, Harvard University'
+const getSpeaker = async (idWithName: string) => {
+  const id = idWithName.split(' ')[0];
+  const name = idWithName.split(' ')[1];
+  const resp = await $fetch<ApiResponse>('/api/speaker/queryByID', {
+    method: 'GET',
+    query: {
+      id: id,
+      name: name
     }
-  } as SpeakerBio,
-  activateDate: new Date(),
-});
+  });
+  if (resp && 'status' in resp && 'data' in resp) {
+    const { status, data } = resp;
+    if (status === 'Success' && data !== null) {
+      speaker.value = data;
+    }
+  }
+}
+
+getSpeaker(decodeURIComponent(route.params.name as string))
+  .then(async () => {
+    if (speaker.value) {
+      const image: Blob = await $fetch('/api/speaker/photo', {
+        method: 'GET',
+        query: {
+          photo: speaker.value.photo
+        }
+      })
+      speaker.value.photo = window.URL.createObjectURL(image)
+    }
+  })
 
 </script>
 
 <template>
   <div class="w-full h-full min-h-screen mx-10 y-5 pt-24">
-    <Details :speaker="speaker" />
+    <Details v-if="speaker !== undefined" :speaker="speaker" />
   </div>
 </template>

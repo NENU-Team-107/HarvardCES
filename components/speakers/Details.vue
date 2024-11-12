@@ -4,6 +4,14 @@ const props = defineProps<{
   speaker: Speaker,
 }>()
 
+const { t } = useI18n();
+
+console.log(props.speaker.bio.details.description)
+
+const description = computed(() => {
+  return t(props.speaker.bio.details.description).replace(/\n/g, '<br>')
+})
+
 </script>
 
 <template>
@@ -13,14 +21,14 @@ const props = defineProps<{
         class="font-semibold cursor-pointer items-center flex bg-slate-300 justify-center px-4 py-2 w-fit link-with-gradient">
         <NuxtLink to="/speakers">
           <font-awesome icon="fa-solid fa-arrow-left" />
-          Back
+          {{ t("Back") }}
         </NuxtLink>
       </div>
     </div>
     <div class="w-11/12 relative flex flex-col bg-white/80 rounded-lg py-6 md:px-20 px-2 m-auto">
       <div class="text-start">
         <h3 class="text-xl py-2">
-          {{ speaker.kind }}
+          {{ t(speaker.kind) }}
         </h3>
       </div>
       <div class="w-full h-fit">
@@ -28,13 +36,13 @@ const props = defineProps<{
       </div>
       <div class="w-full text-start flex flex-col justify-center items-center">
         <h1 class="text-slate-900 md:text-3xl text-xl tracking-tight font-extrabold">
-          {{ speaker.name }}
+          {{ t(speaker.name) }}
         </h1>
         <h2 class="text-center w-full text-lg font-semibold text-slate-900 dark:text-white py-2 ">
-          {{ speaker.bio.details.title }}
+          {{ t(speaker.bio.details.title) }}
         </h2>
         <div class="px-10 text-center ">
-          <div v-html="speaker.bio.details.description.replace(/\n/g, '<br />')" />
+          <div v-html="description" />
         </div>
       </div>
     </div>
