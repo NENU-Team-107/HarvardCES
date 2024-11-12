@@ -1,8 +1,8 @@
-import { keynoteSpeaker, organizingCommittee } from "~/lib/data";
+import { guestOfHonor, keynoteSpeaker, organizingCommittee } from "~/lib/data";
 
 export default defineEventHandler(async (event: any) => {
     let result = keynoteSpeaker
-    result = result.concat(organizingCommittee)
+    result = result.concat(organizingCommittee).concat(guestOfHonor)
 
     const data = {
         'status': 'Success',

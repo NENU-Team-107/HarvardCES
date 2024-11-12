@@ -137,6 +137,23 @@
         "name": "Miss. Anny Chan",
         "title": " Teaching Fellow, Harvard University (CES Board of Advisor) "
       }
+    },
+    "Guest of Honor": {
+      "id1": {
+        "description": "",
+        "name": "Miss. Anny Chan",
+        "title": "Teaching Fellow, Harvard University; Board Member, Harvard China Education Symposium(CES)\n\nDirector of External Affairs, Joint Symposium on Emerging Technologies and Future Talent 2025"
+      },
+      "id2": {
+        "description": "",
+        "name": "Professor CHENG, May Hung",
+        "title": "Vice President (Academic); Chair Professor of Teacher Education\n\nGuest of Honor"
+      },
+      "id3": {
+        "description": "",
+        "name": "Prof. CHAN, Che Hin Chetwyn",
+        "title": "Vice President (Research and Development); Peter T. C. Lee Chair Professor of Psychology\n\nGuest of Honor"
+      }
     }
   }
 }

@@ -5,6 +5,12 @@ const props = defineProps<{
   speakers: Speaker
 }>()
 
+const { t } = useI18n()
+
+const title = computed(() => {
+  return t(props.speakers.bio.details.title).replace(/\n\n/g, '<br>')
+})
+
 </script>
 
 <template>
@@ -14,8 +20,7 @@ const props = defineProps<{
       <div class="font-bold text-center text-xl py-2">
         {{ $t(props.speakers.name) }}
       </div>
-      <div>
-        {{ $t(props.speakers.bio.details.title) }}
+      <div v-html="title">
       </div>
     </div>
 

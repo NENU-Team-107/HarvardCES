@@ -1,4 +1,4 @@
-import { keynoteSpeaker, speakerToKind } from "~/lib/data"
+import { guestOfHonor, keynoteSpeaker, organizingCommittee, speakerToKind } from "~/lib/data"
 import type { ApiResponse } from "~/lib/model"
 
 export default defineEventHandler(async (event: any) => {
@@ -7,21 +7,42 @@ export default defineEventHandler(async (event: any) => {
     const id = Number.parseInt(query.id as string)
     const kind = speakerToKind.get(id)
 
-    if (kind === "Keynote Speakers") {
-        const result = keynoteSpeaker.find(speaker => speaker.id === id)
-        if (result !== undefined) {
-
-            const data: ApiResponse = {
-                'status': 'Success',
-                'data': result,
-            }
-            return data
-        } else {
-            const data: ApiResponse = {
-                'status': 'Error',
-                'data': null,
-            }
-            return data
-        }
+    let data: ApiResponse = {
+        status: "Error",
+        data: null
     }
+
+    console.log(kind)
+
+    switch (kind) {
+        case "Keynote Speakers":
+            {
+                const result = keynoteSpeaker.find(speaker => speaker.id === id)
+                if (result !== undefined) {
+                    data.status = "Success"
+                    data.data = result
+                }
+            }
+            break
+        case "Organizing Committee":
+            {
+                const result = organizingCommittee.find(speaker => speaker.id === id)
+                if (result !== undefined) {
+                    data.status = "Success"
+                    data.data = result
+                }
+                console.log(data)
+            }
+            break
+        case "Guest of Honor":
+            {
+                const result = guestOfHonor.find(speaker => speaker.id === id)
+                if (result !== undefined) {
+                    data.status = "Success"
+                    data.data = result
+                }
+            }
+            break
+    }
+    return data
 })

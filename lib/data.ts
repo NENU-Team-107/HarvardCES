@@ -14,6 +14,9 @@ export const speakerToKind: Map<number, string> = new Map([
     [11, 'Organizing Committee'],
     [12, 'Organizing Committee'],
     [13, 'Organizing Committee'],
+    [14, 'Guest of Honor'],
+    [15, 'Guest of Honor'],
+    [16, 'Guest of Honor'],
 ]);
 
 export const keynoteSpeaker: Array<Speaker> = [
@@ -171,7 +174,7 @@ export const organizingCommittee: Array<Speaker> = [
             details: {
                 description: "server.Organizing Committee.id3.description",
                 title: "server.Organizing Committee.id3.title",
-                link: 'speaker/11 Rongbing Shen'
+                link: 'speaker/11 RongbingShen'
             }
         }
     },
@@ -185,7 +188,7 @@ export const organizingCommittee: Array<Speaker> = [
             details: {
                 description: "server.Organizing Committee.id4.description",
                 title: "server.Organizing Committee.id4.title",
-                link: 'speaker/12 Anny Chan'
+                link: 'speaker/12 AnnyChan'
             }
         }
     },
@@ -200,6 +203,51 @@ export const organizingCommittee: Array<Speaker> = [
                 description: "server.Organizing Committee.id5.description",
                 title: "server.Organizing Committee.id5.title",
                 link: 'speaker/13 Xuefan Li'
+            }
+        }
+    },
+]
+
+export const guestOfHonor: Array<Speaker> = [
+    {
+        id: 14,
+        name: "server.Guest of Honor.id1.name",
+        kind: "Guest of Honor",
+        photo: "./assets/avatars/Anny Chan.png",
+        activateDate: new Date("2025-05-09"),
+        bio: {
+            details: {
+                description: "server.Guest of Honor.id1.description",
+                title: "server.Guest of Honor.id1.title",
+                link: 'speaker/14 AnnyChan'
+            }
+        }
+    },
+    {
+        id: 15,
+        name: "server.Guest of Honor.id2.name",
+        kind: "Guest of Honor",
+        photo: "./assets/avatars/CHENG May Hung.png",
+        activateDate: new Date("2025-05-09"),
+        bio: {
+            details: {
+                description: "server.Guest of Honor.id2.description",
+                title: "server.Guest of Honor.id2.title",
+                link: 'speaker/15 CHENG,MayHung'
+            }
+        }
+    },
+    {
+        id: 16,
+        name: "server.Guest of Honor.id3.name",
+        kind: "Guest of Honor",
+        photo: "./assets/avatars/CHAN Che Hin Chetwyn.png",
+        activateDate: new Date("2025-05-09"),
+        bio: {
+            details: {
+                description: "server.Guest of Honor.id3.description",
+                title: "server.Guest of Honor.id3.title",
+                link: 'speaker/16 CHAN,CheHinChetwyn'
             }
         }
     },
