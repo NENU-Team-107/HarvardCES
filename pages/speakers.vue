@@ -8,6 +8,14 @@ const { t } = useI18n()
 const navMenu = computed(() => {
   return [
     {
+      label: t("Organizing Committee"),
+      content: "Organizing Committee",
+    },
+    {
+      label: t("Keynote Speakers"),
+      content: "Keynote Speakers",
+    },
+    {
       label: t("Invite Speakers"),
       content: "Invite Speakers",
     },
@@ -15,18 +23,12 @@ const navMenu = computed(() => {
       label: t("Guest of Honor"),
       content: "Guest of Honor",
     },
-    {
-      label: t("Keynote Speakers"),
-      content: "Keynote Speakers",
-    },
+
     {
       label: t("Track Workshop Chair"),
       content: "Track Workshop Chair",
     },
-    {
-      label: t("Organizing Committee"),
-      content: "Organizing Committee",
-    }
+
   ]
 })
 

@@ -5,17 +5,10 @@ const { t } = useI18n();
 const navMenu = computed(() => {
     return [
         {
-            label: t("Workshop"),
-            content: "workshop",
+            label: t("Sub-symposium Sessions Submit"),
+            content: "Sub-symposium Sessions",
         },
-        {
-            label: t("Poster"),
-            content: "poster",
-        },
-        {
-            label: t("Track"),
-            content: "track",
-        }
+
     ]
 })
 

@@ -3,6 +3,8 @@ import Title from '~/components/common/Title.vue'
 import CoverImage from '~/components/homeIndex/CoverImage.vue';
 import type { Speaker } from '~/lib/model';
 
+const { t } = useI18n()
+
 const host = ref({
   label: "Host",
   path: "img/logo/HostLogo_large.jpg"
@@ -23,8 +25,9 @@ const logoList = ref([
 
 const title = ref({
   intro: "Symposium.Title",
-  speaker: "Speakers",
-  logo: "Organisers and Partners"
+  speaker: "Keynote Speakers",
+  logo: "Organisers and Partners",
+  workshop: "Workshop and Sub-symposium Sessions"
 })
 
 const speakersList = ref<Speaker[]>([])
@@ -60,6 +63,7 @@ const VisibleSpeakersList = computed(() => {
 })
 
 const showMore = ref(false)
+
 const toggleShowMore = () => {
   showMore.value = !showMore.value
 }
@@ -69,6 +73,10 @@ const showPopup = ref(true)
 const togglePopup = () => {
   showPopup.value = !showPopup.value
 }
+
+const SymposiumIntro = computed(() => {
+  return t("Symposium.Intro").replace(/\n/g, '<br>')
+})
 
 </script>
 
@@ -87,7 +95,13 @@ const togglePopup = () => {
         <Title :titleMap="title.intro" />
         <div class="text-lg pl-10">
           <!-- TODO 需要限制边距，保证居中，还有需要设置字号问题 -->
-          {{ $t("Symposium.Intro") }}
+          <div :innerHTML="SymposiumIntro"></div>
+          <div>
+            <ULink to="/about" class="italic font-semibold">
+              {{ $t("Symposium.Click") }}
+              <font-awesome icon="fa-solid fa-arrow-right" />
+            </ULink>
+          </div>
         </div>
       </div>
 
@@ -107,6 +121,10 @@ const togglePopup = () => {
       </div>
 
       <div class="bg-white/80 p-10">
+        <Title :titleMap="title.workshop"> </Title>
+      </div>
+
+      <div class="bg-white/80 p-10">
         <!-- TODO 这部分是主办单位和合作者的 Logo -->
         <Title :titleMap="title.logo"></Title>
         <div>
@@ -116,7 +134,6 @@ const togglePopup = () => {
               <NuxtImg :src="host.path" sizes="400" />
             </div>
           </div>
-
           <div class="w-full flex flex-col">
             <div class="font-bold text-lg pl-10">{{ $t("In collaboration with") }}</div>
             <div class="w-full flex items-center justify-evenly md:flex-row flex-col">

@@ -20,115 +20,16 @@ yarn install
 bun install
 ```
 
+## TODO List
 
-## ddl写的
+ - [ ] 主页上的海报把繁体字和简体字海报做成滑页，两页，滑动可以看
+ - [x] 首页"论文介绍"补充内容
+ - [x] 首页"嘉宾"部分，改为“主题演讲嘉宾” 照片、姓名、职位可以先写在这里。把 header 部分去掉，整体就是圆形照片+姓名+职位，在 details 里面附上完整个人简介
+ - [x] 在主办方与合作伙伴上面加一个部分：工作室与分论坛 Workshop and Sub-symposium Sessions
+ - [ ] 网页字体选择一个稍微大气和艺术一点点的字体
+ - [ ] 论坛中文议程
+ - [x] 嘉宾的Tab：从上到下依次是：组委会、主题演讲嘉宾、特邀嘉宾、荣誉嘉宾
+ - [ ] 关于我们 补全内容
+ - [ ] 投稿链接这个框框可以突出醒目点
+ - [x] 注册/投稿 这里就是“分论坛投稿”，其他的不要。这里我之后会把分论坛的投稿邮箱整理一下放在这里
 
-DevTools开启的时候好像非常卡，样式什么的加载的好慢，所以我关掉了。
-
-调整之后TailwindCSS可以兼容插件。
-
-主要读一下Nuxt关于Route部分的文档，pages文件夹下的文件会自动生成路由，这个Nuxt的路由是基于文件的，所以不需要配置路由，只需要在pages文件夹下创建文件即可，关于动态路由的参数看官方文档应该就能看懂。
-
-关于Nuxt的Layout，可以在layouts文件夹下创建文件，然后在页面文件中使用layout属性指定使用的layout，如果不指定layout，那么就会使用默认的layout，也就是default.vue，我写了一个粗略的default.vue，打算用来做首页的layout。
-
-
-## 关于首页的布局
-
-### 导航栏
-
-条目为: 
-- 首页
-- 论坛介绍
-	- 论坛背景
-	- 论坛日程
-	- 论坛地点
-- 嘉宾
-	- 特邀嘉宾
-	- 演讲者
-- 关于我们
-	- 哈佛大学
-	- 香港教育大学
-- 论文征稿
-	- workshop：工作室，
-	- poster：海报，
-	- track：？
-
-### 首页背景颜色
-
-使用固定的信纸，链接为 [Letterhead_rainbowWhiteSnow.png](https://uedhk-my.sharepoint.com/:i:/r/personal/yyin_eduhk_hk/Documents/ResearchEDU/02_Reseach%20Collaborations/Prof%20Wang%20Research%20Team/6.%20JointSyposium/Materials%20for%20Joint%20Symposium%27s%20Website/Publicity%20logos+Letter%20head+%20Rainbow%20Decoration/Letterhead_rainbowWhiteSnow.png?csf=1&web=1&e=zs16zQ)
-
-### 首页封面图（也就是会议的主题海报）
-
-不需要管，等做好了图片直接贴上就可以
-
-### 首页的页脚
-
-分为两栏，左边一栏可以
-
-```plaintext
-公眾號請關注：Harvard CES-EdUHK
-
-小紅書請關注：哈佛CES 香港教大聯合論壇
-
-詳情請諮詢：GIETfuture@eduhk.hk
-```
-
-这个图感觉挺好的，但是我不确定放在哪里（
-
-![footer-example](doc/footer-example.png)
-
-
-## 关于 i18n
-
-可以参考这篇文章：https://juejin.cn/post/7405777954515910682
-
-这里的服务端多语言，可以用来返回下方的 `SpeakerBio`
-
-## Model Defination
-
-```ts
-type SpeakerBio = {
-    details: {
-        description: string,
-        title: string | undefined
-        link: string | undefined
-    }
-}
-
-type Speaker = {
-    name: string
-    kind: string
-    photo: string
-    bio: SpeakerBio
-    activateDate: Date
-}
-
-type NewsItem = {
-    title: string
-    content: string
-    link: string | undefined
-}
-```
-
-## 关于 layout/details 这个布局
-
-我们不需要二级路由了，可以尝试在点击一级路由后，跳转到详情页面，在这个页面下显示二级路由的内容，样式参考：
-
-![NTU](./doc/ntu-details-layout.png)
-
-![ifhe](./doc/ifhe-details-layout.png)
-
-## 关于页脚
-
-页脚目前渲染是
-
-```plain
-主办方 : 哈佛中国教育论坛(CES)；香港教育大学
-语言 : 普通话和英语
-日期 : 2025年5月8日-2025年5月10日
-地点 : 香港教育大学大埔校园
-```
-
-期望能做到冒号前的文字能对其
-
-感觉右边这个也有点违和感，邮箱可以放在两个二维码下面，二维码网格布局一行两列，然后联系我们这行字和下面的文字都保持左对齐
