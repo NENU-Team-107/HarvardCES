@@ -14,13 +14,18 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'display': ['KaiTi', 'Time New Roman'],
+      },
       backgroundImage: {
         'letter-paper': "url('~/assets/bg/letter-paper.png')",
       },
       colors: {
         'cover-left': '#c56c70',
         'cover-right': '#c1daba',
-        'footer-bg':'#d29c9c'
+        'footer-bg': '#d29c9c',
+        'tabs-header': '#f3f4f6',
+        'nav-bg': '#ffffff',
       },
       borderRadius: {
         'edge': '1rem',

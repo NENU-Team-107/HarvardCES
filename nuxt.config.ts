@@ -1,14 +1,14 @@
 import { Head } from './.nuxt/components.d';
 import { currentLocaleCodes, currentLocales } from "./config/i18n";
-import font from 'vite-plugin-font';
+// import font from 'vite-plugin-font';
 
 export default defineNuxtConfig({
   app: {
     head: {
       link: [
         {
-          href: 'https://cdn.jsdelivr.net/npm/lxgw-wenkai-gb-web@latest/style.css',
-          rel: 'stylesheet'
+          // href: 'https://cdn.jsdelivr.net/npm/lxgw-wenkai-gb-web@latest/style.css',
+          // rel: 'stylesheet'
         },
       ]
     }
@@ -19,7 +19,7 @@ export default defineNuxtConfig({
     transpile: ['sharp']
   },
   vite: {
-    plugins: [font.vite({})],
+    // plugins: [font.vite({})],
   },
   modules: [
     "@nuxt/ui",
@@ -58,7 +58,7 @@ export default defineNuxtConfig({
   fontawesome: {
     icons: {
       solid: [
-        'arrow-right', 'xmark', 'arrow-left'
+        'arrow-right', 'xmark', 'arrow-left','angle-up','angle-down'
       ]
     }
   },

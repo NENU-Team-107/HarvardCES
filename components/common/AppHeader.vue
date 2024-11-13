@@ -40,7 +40,7 @@ const toggleMenu = () => {
 </script>
 
 <template>
-  <div class="w-full flex h-24 bg-white justify-between items-center px-16 z-50 fixed top-0 shadow-sm">
+  <div class="w-full flex h-24 bg-nav-bg justify-between items-center px-16 z-50 fixed top-0 shadow-sm">
     <div class="h-full flex justify-center items-center">
       <NuxtLinkLocale to="/" class="text-blue-500">
         <NuxtImg src="img/logo/HostLogo_small.jpg" class="w-11/12"></NuxtImg>

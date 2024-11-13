@@ -1,10 +1,13 @@
 <template>
   <div>
-    <div v-if="showPopup" class="fixed bottom-10 right-10 bg-white p-4 flex ring-4 ring-cover-left/20 rounded-xl shadow-xl">
-      <div class="m-3">
-        <NuxtImg src="/img/paper_icon.png" sizes="50" />
-      </div>
-      <div class="flex flex-col justify-center">
+    <div v-if="showPopup"
+      class="fixed bottom-10 right-10 bg-white p-4 flex ring-4 ring-cover-left/20 rounded-xl shadow-xl">
+      <a :href="submitLink" target="_blank" class="text-blue-500 hover:text-blue-700">
+        <div class="md:m-2">
+          <NuxtImg src="/img/paper_icon.png" sizes="50" />
+        </div>
+      </a>
+      <div class="md:flex md:flex-col md:justify-center hidden">
         <div class="flex justify-between items-center">
           <span>{{ $t("PopWindow.Title") }}</span>
           <button @click="togglePopup" class="text-red-500 hover:text-red-700">

@@ -7,27 +7,33 @@ const Introduction = computed(() => {
   return t("Symposium.Details").replace(/\n/g, '<br>')
 })
 
-const tabMenu = ref<TabItems[]>([
+const tabMenuBase = ref<TabItems[]>([
   {
     label: t("Symposium Introduction"),
-    content: "about",
+    content: "Symposium Introduction",
     show: true,
     index: 0
   },
   {
     label: t("Symposium Location"),
-    content: "location",
+    content: "Symposium Location",
     show: false,
     index: 1
   },
   {
     label: t("Symposium Time"),
-    content: "time",
+    content: "Symposium Time",
     show: false,
     index: 2
   }
-]
-)
+]);
+
+const tabMenu = computed(() => {
+  return tabMenuBase.value.map(item => ({
+    ...item,
+    label: t(item.content)
+  }));
+});
 
 const AgendaImage = computed(() => {
   return t("Symposium Agenda")
@@ -35,20 +41,27 @@ const AgendaImage = computed(() => {
 
 const LocationImage = ref<string>('')
 
-const handleChange = async (index: number) => {
+const fetchLocationImage = async () => {
+  const data: Blob = await $fetch('/api/about/localtion')
+  LocationImage.value = window.URL.createObjectURL(data)
+}
+
+const handleChange = (index: number) => {
   if (index === 1) {
-    const data: Blob = await $fetch('/api/about/localtion')
-    LocationImage.value = window.URL.createObjectURL(data)
+    fetchLocationImage();
   }
 }
 
-const toggleShowMore = async (index: number) => {
-
+const toggleShowMore = (index: number) => {
+  for (let i = 0; i < tabMenu.value.length; i++) {
+    if (i !== index) {
+      tabMenu.value[i].show = false
+    }
+  }
   tabMenu.value[index].show = !tabMenu.value[index].show;
 
-  if (index === 1) {
-    const data: Blob = await $fetch('/api/about/localtion')
-    LocationImage.value = window.URL.createObjectURL(data)
+  if (index === 1 && tabMenu.value[index].show) {
+    fetchLocationImage()
   }
 }
 
@@ -56,20 +69,20 @@ const toggleShowMore = async (index: number) => {
 
 <template>
   <div class="w-full h-full min-h-screen mx-10 my-5 pt-24">
-    <NuxtPage />
     <UTabs :items="tabMenu" orientation="vertical"
       :ui="{ wrapper: 'gap-4 px-10 hidden md:flex', list: { width: 'w-60', tab: { size: 'text-base text-nowrap', padding: 'py-5' } } }"
       class="bg-white/80 w-full h-full min-h-screen" @change="handleChange">
       <template #item="{ item }">
         <div class="min-h-full flex flex-col px-20 py-10 bg-white/80 justify-center items-center h-full w-full">
-          <h1 v-if="item.content === 'about'" class="text-center font-bold text-2xl py-6">{{ $t("Symposium.Title") }}
+          <h1 v-if="item.content === 'Symposium Introduction'" class="text-center font-bold text-2xl py-6">{{
+            $t("Symposium.Title") }}
           </h1>
-          <h1 v-else-if="item.content === 'location'" class="text-center font-bold text-2xl py-6">
+          <h1 v-else-if="item.content === 'Symposium Location'" class="text-center font-bold text-2xl py-6">
             {{ $t("Symposium Location") }}
           </h1>
           <div class="flex justify-center items-center w-full flex-1">
-            <div v-if="item.content === 'about'" v-html="Introduction" />
-            <div v-else-if="item.content === 'location'">
+            <div v-if="item.content === 'Symposium Introduction'" v-html="Introduction" />
+            <div v-else-if="item.content === 'Symposium Location'">
               <NuxtImg :src="LocationImage" loading="lazy" />
               <div class="items-center justify-center text-center text-lg mt-5">
                 <span>{{ $t("Host.Details.Location") }}</span>
@@ -86,39 +99,61 @@ const toggleShowMore = async (index: number) => {
     <!-- TODO 补全样式 -->
     <div class="md:hidden">
       <div v-for="item in tabMenu">
-        <UCard>
-
+        <UCard :ui="{
+          base: '',
+          background: 'bg-white dark:bg-gray-900',
+          divide: 'divide-y divide-gray-200 dark:divide-gray-800',
+          ring: 'ring-1 ring-gray-200 dark:ring-gray-800',
+          rounded: 'rounded-lg',
+          shadow: 'shadow',
+          body: {
+            base: '',
+            background: '',
+            padding: ''
+          },
+          header: {
+            base: '',
+            background: 'bg-tabs-header',
+            padding: 'px-4 py-3 sm:px-6'
+          },
+        }
+          ">
           <template #header>
-            <div>
+            <div class="flex w-full justify-between">
               <span>{{ item.label }}</span>
               <button @click="toggleShowMore(item.index)">
-                <span v-if="item.show">▲ {{ $t("Collapse") }}</span>
-                <span v-else>▼ {{ $t("Show More") }}</span>
+                <span v-if="item.show">
+                  <font-awesome icon="fa-solid fa-angle-up" />
+                  {{ $t("Collapse") }}
+                </span>
+                <span v-else>
+                  <font-awesome icon="fa-solid fa-angle-down" />
+                  {{ $t("Show More") }}
+                </span>
               </button>
             </div>
           </template>
 
-          <div class="min-h-full flex flex-col px-20 py-10 bg-white/80 justify-center items-center h-full w-full">
-            <h1 v-if="item.content === 'about' && item.show === true" class="text-center font-bold text-2xl py-6">{{
+          <!-- <div v-if="item.show">
+            <h1 v-if="item.index === 0" class="text-center font-bold text-2xl py-6">{{
               $t("Symposium.Title") }}
             </h1>
-            <h1 v-else-if="item.content === 'location' && item.show === true"
-              class="text-center font-bold text-2xl py-6">
+            <h1 v-else-if="item.index === 1" class="text-center font-bold text-2xl py-6">
               {{ $t("Symposium Location") }}
             </h1>
             <div class="flex justify-center items-center w-full flex-1">
-              <div v-if="item.content === 'about' && item.show === true" v-html="Introduction" />
-              <div v-else-if="item.content === 'location' && item.show === true">
+              <div v-if="item.index === 0" v-html="Introduction" />
+              <div v-else-if="item.index === 1">
                 <NuxtImg :src="LocationImage" loading="lazy" />
                 <div class="items-center justify-center text-center text-lg mt-5">
                   <span>{{ $t("Host.Details.Location") }}</span>
                 </div>
               </div>
-              <div v-else-if="item.content === 'time' && item.show === true">
+              <div v-else-if="item.index === 2">
                 <NuxtImg :src="AgendaImage" loading="lazy" />
               </div>
             </div>
-          </div>
+          </div> -->
         </UCard>
       </div>
     </div>

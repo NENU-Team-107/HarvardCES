@@ -4,33 +4,39 @@ import type { Speaker, TabItems } from '~/lib/model';
 
 const { t } = useI18n()
 
-const navMenu = ref<TabItems[]>(
-  [
-    {
-      label: t("Organizing Committee"),
-      content: "Organizing Committee",
-      show: false,
-      index: 0
-    },
-    {
-      label: t("Keynote Speakers"),
-      content: "Keynote Speakers",
-      show: false,
-      index: 1
-    },
-    {
-      label: t("Invite Speakers"),
-      content: "Invite Speakers",
-      show: false,
-      index: 2
-    },
-    {
-      label: t("Guest of Honor"),
-      content: "Guest of Honor",
-      show: false,
-      index: 3
-    },
-  ])
+const navMenuBase=ref<TabItems[]>([
+  {
+    label: t("Organizing Committee"),
+    content: "Organizing Committee",
+    show: true,
+    index: 0
+  },
+  {
+    label: t("Keynote Speakers"),
+    content: "Keynote Speakers",
+    show: false,
+    index: 1
+  },
+  {
+    label: t("Invite Speakers"),
+    content: "Invite Speakers",
+    show: false,
+    index: 2
+  },
+  {
+    label: t("Guest of Honor"),
+    content: "Guest of Honor",
+    show: false,
+    index: 3
+  },
+])
+
+const navMenu = computed(() => {
+  return navMenuBase.value.map(item => ({
+    ...item,
+    label: t(item.content)
+  }));
+});
 
 const kindSpeakers = ref()
 const speakersList = ref<Speaker[]>([])
@@ -75,16 +81,23 @@ const handleClick = (index: number) => {
 }
 
 const toggleShowMore = (index: number) => {
+  for (let i = 0; i < navMenu.value.length; i++) {
+    if (i !== index) {
+      navMenu.value[i].show = false
+    }
+  }
+
   navMenu.value[index].show = !navMenu.value[index].show;
+  let item = navMenu.value[index]
+  kindSpeakers.value = speakersList.value.filter(speaker => speaker.kind === item.content)
 }
 
 </script>
 
 <template>
   <div class="w-full h-full min-h-screen mx-10 my-5 pt-24">
-    <NuxtPage />
     <UTabs :items="navMenu" orientation="vertical"
-      :ui="{ wrapper: 'gap-4 px-10 hidden md:flex', list: { width: 'w-60', tab: { size: 'text-base text-nowrap', padding: 'py-5' } } }"
+      :ui="{ wrapper: 'gap-4 px-10 hidden md:flex', list: { width: 'w-60', tab: { background: 'bg-tabs-header', size: 'text-base text-nowrap', padding: 'py-5' } } }"
       class="bg-white/80 w-full h-full min-h-screen" @change="handleClick">
       <template #item>
         <div class="grid md:grid-cols-3 gap-2">
@@ -98,19 +111,41 @@ const toggleShowMore = (index: number) => {
     <!-- TODO 补全样式 -->
     <div class="md:hidden">
       <div v-for="item in navMenu">
-        <UCard>
-
+        <UCard :ui="{
+          base: '',
+          background: 'bg-white dark:bg-gray-900',
+          divide: 'divide-y divide-gray-200 dark:divide-gray-800',
+          ring: 'ring-1 ring-gray-200 dark:ring-gray-800',
+          rounded: 'rounded-lg',
+          shadow: 'shadow',
+          body: {
+            base: '',
+            background: '',
+            padding: ''
+          },
+          header: {
+            base: '',
+            background: 'bg-tabs-header',
+            padding: 'px-4 py-3 sm:px-6'
+          },
+        }
+          ">
           <template #header>
-            <div>
+            <div class="flex w-full justify-between">
               <span>{{ item.label }}</span>
               <button @click="toggleShowMore(item.index)">
-                <span v-if="item.show">▲ {{ $t("Collapse") }}</span>
-                <span v-else>▼ {{ $t("Show More") }}</span>
+                <span v-if="item.show">
+                  <font-awesome icon="fa-solid fa-angle-up" />
+                  {{ $t("Collapse") }}
+                </span>
+                <span v-else>
+                  <font-awesome icon="fa-solid fa-angle-down" />
+                  {{ $t("Show More") }}
+                </span>
               </button>
             </div>
           </template>
-
-          <div class="grid md:grid-cols-3 gap-2" v-if="item.show === true">
+          <div v-show="item.show">
             <div v-for="speaker in kindSpeakers">
               <Interoduction :speakers="speaker" class="mx-10 my-5" />
             </div>

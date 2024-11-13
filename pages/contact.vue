@@ -3,28 +3,34 @@ import { useI18n } from 'vue-i18n';
 import type { TabItems } from '~/lib/model';
 const { t } = useI18n();
 
-const tabMenu = ref<TabItems[]>([
+const tabMenuBase = ref<TabItems[]>([
   {
     label: t("Harvard China Education Symposium"),
-    content: "about",
-    show: false,
+    content: "Harvard China Education Symposium",
+    show: true,
     index: 0,
   },
   {
     label: t("The Education University of Hong Kong"),
-    content: "location",
+    content: "The Education University of Hong Kong",
     show: false,
     index: 1,
   }
 ])
 
-// const handleClick = (index: number) => {
-//   let item = navMenu.value[index]
-//   console.log(item)
-//   kindSpeakers.value = speakers.filter(speaker => speaker.kind === item.label)
-// }
+const tabMenu = computed(() => {
+  return tabMenuBase.value.map(item => ({
+    ...item,
+    label: t(item.content)
+  }));
+})
 
-const toggleShowMore = async (index: number) => {
+const toggleShowMore = (index: number) => {
+  for (let i = 0; i < tabMenu.value.length; i++) {
+    if(i !== index) {
+      tabMenu.value[i].show = false;
+    }
+  }
   tabMenu.value[index].show = !tabMenu.value[index].show;
 }
 </script>
@@ -47,14 +53,36 @@ const toggleShowMore = async (index: number) => {
     <!-- TODO 补全样式 -->
     <div class="md:hidden">
       <div v-for="item in tabMenu">
-        <UCard>
-
-          <template #header>
-            <div>
+        <UCard :ui="{
+          base: '',
+          background: 'bg-white dark:bg-gray-900',
+          divide: 'divide-y divide-gray-200 dark:divide-gray-800',
+          ring: 'ring-1 ring-gray-200 dark:ring-gray-800',
+          rounded: 'rounded-lg',
+          shadow: 'shadow',
+          body: {
+            base: '',
+            background: '',
+            padding: ''
+          },
+          header: {
+            base: '',
+            background: 'bg-tabs-header',
+            padding: 'px-4 py-3 sm:px-6'
+          },
+        }">
+        <template #header>
+            <div class="flex w-full justify-between">
               <span>{{ item.label }}</span>
               <button @click="toggleShowMore(item.index)">
-                <span v-if="item.show">▲ {{ $t("Collapse") }}</span>
-                <span v-else>▼ {{ $t("Show More") }}</span>
+                <span v-if="item.show">
+                  <font-awesome icon="fa-solid fa-angle-up" />
+                  {{ $t("Collapse") }}
+                </span>
+                <span v-else>
+                  <font-awesome icon="fa-solid fa-angle-down" />
+                  {{ $t("Show More") }}
+                </span>
               </button>
             </div>
           </template>

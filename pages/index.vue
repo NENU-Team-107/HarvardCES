@@ -88,12 +88,18 @@ onMounted(() => {
   SymposiumIntro.value = t("Symposium.Intro").replace(/\n/g, '<br>')
 })
 
+const slides = ref(["/img/poster/cover_zh_Hant.jpg", "/img/poster/cover_zh_Hans.jpg"]);
+
+
 </script>
 
 <template>
   <div class="w-full flex flex-col justify-center items-center relative my-10 pt-24">
 
-    <CoverImage />
+    <div
+      class="w-full justify-center items-center flex bg-gradient-to-r from-cover-left from-30% via-red-500 via-40% to-cover-right to-30%">
+      <CoverImage :Slides="slides" />
+    </div>
 
     <div class="my-10 px-2 grid grid-rows-1 gap-5">
 
@@ -112,7 +118,7 @@ onMounted(() => {
       </div>
 
       <div class="bg-white/80 p-10">
-        <Title :titleMap="title.speaker"></Title>
+        <Title :titleMap="title.speaker"/>
         <div class="grid md:grid-cols-3 gap-4 pl-10">
           <div v-for="speaker in VisibleSpeakersList">
             <SpeakersIntroduction :speakers="speaker" />
@@ -120,14 +126,20 @@ onMounted(() => {
         </div>
         <div v-if="speakersList.length > 6" class="flex justify-center mt-4">
           <button @click="toggleShowMore" class="text-blue-500 hover:text-blue-700">
-            <span v-if="showMore">▲ {{ $t("Collapse") }}</span>
-            <span v-else>▼ {{ $t("Show More") }}</span>
+            <span v-if="showMore">
+              <font-awesome icon="fa-solid fa-angle-up" />
+              {{ $t("Collapse") }}
+            </span>
+            <span v-else>
+              <font-awesome icon="fa-solid fa-angle-down" />
+              {{ $t("Show More") }}
+            </span>
           </button>
         </div>
       </div>
 
       <div class="bg-white/80 p-10">
-        <Title :titleMap="title.workshop"> </Title>
+        <Title :titleMap="title.workshop" />
         <!-- TODO 补全资料 -->
         <div>
           <div v-for="poster in posterList">
@@ -168,17 +180,7 @@ onMounted(() => {
 
       <!-- NOTE 飘窗 -->
       <PopupWindow />
-      <!-- <div v-if="showPopup" class="fixed bottom-10 right-10 bg-white p-4 shadow-lg rounded-lg">
-        <div class="flex justify-between items-center">
-          <span>{{ $t("PopWindow.Title") }}</span>
-          <button @click="togglePopup" class="text-red-500 hover:text-red-700">
-            <font-awesome icon="fa-solid fa-xmark" style="color: #ff0000;" />
-          </button>
-        </div>
-        <a :href="submitLink" target="_blank" class="text-blue-500 hover:text-blue-700">
-          {{ $t("PopWindow.Content") }}
-        </a>
-      </div> -->
+
     </div>
   </div>
 </template>

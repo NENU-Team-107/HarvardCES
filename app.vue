@@ -1,6 +1,6 @@
 <script lang="ts" setup></script>
 <template>
-  <div class="w-full h-full">
+  <div class="w-full h-full font-display">
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
@@ -13,6 +13,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: '楷体','KaiTi',"Times New Roman", 'Arial', 'sans-serif';
 }
 
 body {

@@ -1,30 +1,35 @@
 <script setup lang="ts">
 
-const slides = ref(["/img/poster/cover_zh_Hant.jpg", "/img/poster/cover_zh_Hans.jpg"]);
+// Usage:传入一个字符串数组，指示轮播图的图片路径
+
+const slides = defineModel('Slides', {
+  required: true,
+  type: Array as () => string[],
+  default: () => []
+})
+
 
 </script>
 
 <template>
-  <div
-    class="w-full justify-center items-center flex bg-gradient-to-r from-cover-left from-30% via-red-500 via-40% to-cover-right to-30%">
-    <Swiper :modules="[SwiperAutoplay, SwiperEffectCreative]" :slides-per-view="1" :loop="true" :effect="'creative'"
-      :autoplay="{
-        delay: 6000,
-        disableOnInteraction: true
-      }" :creative-effect="{
-        prev: {
-          shadow: false,
-          translate: ['-20%', 0, -1]
-        },
-        next: {
-          translate: ['100%', 0, 0]
-        }
-      }">
-      <SwiperSlide v-for="(slide, idx) in slides" :key="idx" class="h-full w-full flex justify-center items-center">
-        <NuxtImg :src="slide" fit="cover" />
-      </SwiperSlide>
-    </Swiper>
-  </div>
+  <Swiper :modules="[SwiperAutoplay, SwiperEffectCreative, SwiperNavigation, SwiperAutoplay, SwiperPagination]"
+    :slides-per-view="1" :loop="true" :effect="'creative'" :autoplay="{
+      delay: 6000,
+      disableOnInteraction: true
+    }" :creative-effect="{
+      prev: {
+        shadow: false,
+        translate: ['-20%', 0, -1]
+      },
+      next: {
+        translate: ['100%', 0, 0]
+      }
+    }" :pagination="{ clickable: true }">
+    <SwiperSlide v-for="(slide, idx) in slides" :key="idx" class="h-full w-full flex justify-center items-center">
+      <NuxtImg :src="slide" fit="cover" class="mx-1" />
+    </SwiperSlide>
+
+  </Swiper>
 </template>
 <style>
 .swiper-slide {
@@ -36,6 +41,16 @@ const slides = ref(["/img/poster/cover_zh_Hant.jpg", "/img/poster/cover_zh_Hans.
   font-size: 4rem;
   font-weight: bold;
   font-family: 'Roboto', sans-serif;
+}
+
+.swiper-pagination-bullet {
+  background: #000;
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  background: #000;
+  opacity: 1;
 }
 
 .swiper-wrapper {
