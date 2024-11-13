@@ -5,7 +5,7 @@ workdir /app
 
 copy . /app
 
-run npm install --registry https://registry.npmmirror.com && \
+run npm install && \
     npm run build && \
     npm cache clean --force
 
@@ -17,6 +17,7 @@ run mkdir -p /app
 workdir /app
 
 copy --from=build-stage /app/.output /app/.output
+copy ./assets /app/assets
 copy ./package.json /app/
 
 env PORT=3000
