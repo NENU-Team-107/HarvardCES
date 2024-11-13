@@ -29,3 +29,10 @@ export interface ApiResponse {
 export interface ApiResponseWithToJSON extends ApiResponse {
     toJSON(): { status: string; data: Speaker | null };
 }
+
+export interface TabItems {
+    label: string,
+    content: string,
+    show: boolean,
+    index: number
+}

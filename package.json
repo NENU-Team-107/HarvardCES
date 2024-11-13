@@ -23,6 +23,7 @@
     "nuxt-swiper": "^1.2.2",
     "sharp": "^0.33.5",
     "swiper": "^11.1.14",
+    "tslib": "^2.8.1",
     "vite-plugin-font": "^4.0.0",
     "vue": "latest",
     "vue-router": "latest"

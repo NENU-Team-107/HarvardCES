@@ -82,9 +82,6 @@ onMounted(() => {
 
 </script>
 
-<!-- TODO 需要加入一个飘窗，这个飘窗用于链接到投稿链接 -->
-<!-- TODO 页面的背景颜色需要设置为信纸的颜色， -->
-
 <template>
   <div class="w-full flex flex-col justify-center items-center relative my-10 pt-24">
 
@@ -93,10 +90,9 @@ onMounted(() => {
     <div class="my-10 px-2 grid grid-rows-1 gap-5">
 
       <div class="bg-white/80 p-10">
-        <!-- TODO 这里是论坛介绍 -->
+        <!-- NOTE 这里是论坛介绍 -->
         <Title :titleMap="title.intro" />
         <div class="text-lg pl-10">
-          <!-- TODO 需要限制边距，保证居中，还有需要设置字号问题 -->
           <div :innerHTML="SymposiumIntro"></div>
           <div class="flex mt-4">
             <ULink to="/about" class="italic font-semibold">
@@ -124,10 +120,11 @@ onMounted(() => {
 
       <div class="bg-white/80 p-10">
         <Title :titleMap="title.workshop"> </Title>
+        <!-- TODO 补全资料 -->
       </div>
 
       <div class="bg-white/80 p-10">
-        <!-- TODO 这部分是主办单位和合作者的 Logo -->
+        <!-- NOTE 这部分是主办单位和合作者的 Logo -->
         <Title :titleMap="title.logo"></Title>
         <div>
           <div>
@@ -151,8 +148,8 @@ onMounted(() => {
         </div>
       </div>
 
-      <!-- 飘窗 -->
-      <PopupWindow/>
+      <!-- NOTE 飘窗 -->
+      <PopupWindow />
       <!-- <div v-if="showPopup" class="fixed bottom-10 right-10 bg-white p-4 shadow-lg rounded-lg">
         <div class="flex justify-between items-center">
           <span>{{ $t("PopWindow.Title") }}</span>

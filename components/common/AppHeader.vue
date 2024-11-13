@@ -47,12 +47,10 @@ const toggleMenu = () => {
   <div class="w-full flex h-24 bg-white justify-between items-center px-16 z-50 fixed top-0 shadow-sm">
     <div class="h-full flex justify-center items-center">
       <NuxtLinkLocale to="/" class="text-blue-500">
-        <!-- TODO 更改 LOGO 的大小以及导航栏的背景颜色 -->
         <NuxtImg src="img/logo/HostLogo_small.jpg" class="w-11/12"></NuxtImg>
         <!-- 也可以插入图片, NuxtLink包裹可以点击跳转 -->
       </NuxtLinkLocale>
     </div>
-    <!-- FIXME: 缩放会导致导航栏条目消失 -->
     <div class="h-full justify-center items-center flex-row hidden md:flex">
       <div v-for="item in routerArray" :key="item.path" class="relative group mr-6 text-lg font-semibold">
         <NuxtLinkLocale :to="item.path" class="text-blue-500 pl-3">
