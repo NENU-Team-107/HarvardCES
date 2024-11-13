@@ -1,5 +1,5 @@
 import { guestOfHonor, keynoteSpeaker, organizingCommittee, speakerToKind } from "~/lib/data"
-import type { ApiResponse } from "~/lib/model"
+import type { ApiResponseWithSpeaker } from "~/lib/model"
 
 export default defineEventHandler(async (event: any) => {
     const query = getQuery(event)
@@ -7,12 +7,10 @@ export default defineEventHandler(async (event: any) => {
     const id = Number.parseInt(query.id as string)
     const kind = speakerToKind.get(id)
 
-    let data: ApiResponse = {
+    let data: ApiResponseWithSpeaker = {
         status: "Error",
         data: null
     }
-
-    console.log(kind)
 
     switch (kind) {
         case "Keynote Speakers":

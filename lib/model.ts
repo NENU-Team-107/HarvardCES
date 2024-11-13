@@ -21,13 +21,22 @@ export type NewsItem = {
     link: string | undefined
 }
 
-export interface ApiResponse {
-    status: string;
-    data: Speaker | null;
+export type Poster = {
+    id: number,
+    name: string
+    path: string
+    callPath: string
+    link: string
 }
 
-export interface ApiResponseWithToJSON extends ApiResponse {
-    toJSON(): { status: string; data: Speaker | null };
+export interface ApiResponse<T> {
+    status: string;
+    data: T | null;
+}
+
+export interface ApiResponseWithSpeaker extends ApiResponse<Speaker> {
+    status: string;
+    data: Speaker | null;
 }
 
 export interface TabItems {

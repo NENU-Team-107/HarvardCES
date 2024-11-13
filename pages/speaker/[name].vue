@@ -8,7 +8,7 @@ const speaker = ref<Speaker>();
 
 const getSpeaker = async (idWithName: string) => {
   const id = idWithName.split(' ')[0];
-  const resp = await $fetch<ApiResponse>('/api/speaker/queryByID', {
+  const resp = await $fetch<ApiResponse<Speaker>>('/api/speaker/queryByID', {
     method: 'GET',
     query: {
       id: id,

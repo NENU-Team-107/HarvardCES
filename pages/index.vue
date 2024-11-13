@@ -2,7 +2,7 @@
 import Title from '~/components/common/Title.vue'
 import CoverImage from '~/components/homeIndex/CoverImage.vue';
 import PopupWindow from '~/components/homeIndex/PopupWindow.vue';
-import type { Speaker } from '~/lib/model';
+import type { Poster, Speaker } from '~/lib/model';
 
 const { t } = useI18n()
 
@@ -32,6 +32,7 @@ const title = ref({
 })
 
 const speakersList = ref<Speaker[]>([])
+const posterList = ref<Poster[]>([])
 
 const fetchSpeakers = async () => {
   const resp = await $fetch('/api/speaker/listByQuery', {
@@ -46,17 +47,21 @@ const fetchSpeakers = async () => {
   }
 }
 
+const fetchPosters = async () => {
+  const resp = await $fetch('/api/poster/listAll', {
+    method: 'GET'
+  })
+  const { status, data } = resp
+  if (status === "Success" && data !== null) {
+    posterList.value = data;
+  }
+}
+
 const showMore = ref(false)
 
 const toggleShowMore = () => {
   showMore.value = !showMore.value
 }
-
-// const submitLink = ref("/submit")
-// const showPopup = ref(true)
-// const togglePopup = () => {
-//   showPopup.value = !showPopup.value
-// }
 
 const VisibleSpeakersList = computed(() => {
   return showMore.value ? speakersList.value : speakersList.value.slice(0, 6)
@@ -77,6 +82,9 @@ onMounted(() => {
         speaker.photo = window.URL.createObjectURL(image)
       }
     })
+
+  fetchPosters()
+
   SymposiumIntro.value = t("Symposium.Intro").replace(/\n/g, '<br>')
 })
 
@@ -121,6 +129,15 @@ onMounted(() => {
       <div class="bg-white/80 p-10">
         <Title :titleMap="title.workshop"> </Title>
         <!-- TODO 补全资料 -->
+        <div>
+          <div v-for="poster in posterList">
+            <NuxtImg :src="poster.path" sizes="200" />
+            <ULink :to="poster.link" class="italic font-semibold">
+              {{ $t("Details") }}
+              <font-awesome icon="fa-solid fa-arrow-right" />
+            </ULink>
+          </div>
+        </div>
       </div>
 
       <div class="bg-white/80 p-10">
@@ -142,9 +159,10 @@ onMounted(() => {
                 </NuxtLink>
               </div>
             </div>
-
+            <div class="text-center mt-4 text-sm">
+              Assisted By the Department of Mathematics and Information Technology of EdUHK
+            </div>
           </div>
-
         </div>
       </div>
 

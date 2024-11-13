@@ -2,7 +2,6 @@ import { keynoteSpeaker } from '~/lib/data';
 export default defineEventHandler(async (event: any) => {
     const query = getQuery(event)
 
-
     if (query.kind === "Keynote Speakers") {
         const result = keynoteSpeaker
         const data = {

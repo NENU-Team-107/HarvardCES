@@ -17,10 +17,10 @@ const routerArray = ref<RouterItem[]>([
     name: "About",
     path: "/about",
   },
-  {
-    name: "Registration",
-    path: "/registration",
-  },
+  // {
+  //   name: "Sessions",
+  //   path: "/sessions",
+  // },
   {
     name: "Speakers",
     path: "/speakers",
@@ -28,11 +28,7 @@ const routerArray = ref<RouterItem[]>([
   {
     name: "Contact",
     path: "/contact"
-  },
-  // {
-  //   name: "Submit",
-  //   path: "/submit",
-  // },
+  }
 ]);
 
 const isMenuOpen = ref<boolean>(false);

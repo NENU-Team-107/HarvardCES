@@ -69,5 +69,13 @@
   "Poster": "海報",
   "Track": "Track",
   "Sub-symposium Sessions Submit": "分論壇投稿",
-  "server": {}
+  "About Us": {
+    "EduHK": "",
+    "HarvardCES": ""
+  },
+  "server": {
+    "Poster": {
+      "id0": "./assets/poster/sub1-en.pdf"
+    }
+  }
 }
