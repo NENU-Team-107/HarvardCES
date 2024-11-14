@@ -37,6 +37,8 @@ bun install
  - [x] 更新 Agenda
  - [x] 更新 Keynote Speakers 
  - [ ] 关于我们 补全内容
+   - [x] 补全内容
+   - [ ] 修改样式
  - [x] 字体：中文为楷体，英文为 Time New Roman
  - [ ] 工作室与分论坛 Workshop and Sub-symposium Sessions,每个分论坛展出一张海报（中英文一体）首页，一个 call（中文版，英文版各一个）。
     - [x] 接口实现

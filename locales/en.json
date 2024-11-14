@@ -71,35 +71,48 @@
   "Track": "Track",
   "Sub-symposium Sessions Submit": "Sub-symposium Sessions Submission",
   "About Us": {
-    "EduHK": "",
-    "HarvardCES": ""
+    "EduHK": {
+      "intro title": "About EdUHK",
+      "intro": "The Education University of Hong Kong is a publicly funded tertiary institution dedicated to the advancement of learning and teaching, through a diverse offering of academic and research programmes on teacher education and complementary social sciences and humanities disciplines.\n\nWe nurture educators and social leaders who are intellectually active, socially caring, and globally aware, to become agents of change in the communities that they serve. We place great emphasis on research capability — our research will contribute to the advancement of knowledge, scholarship and innovation, with sustainable impact on social progress and human betterment.\n\nEdUHK aims to be a leading university in the Asia Pacific region and beyond, with a focus on educational research, development and innovation.",
+      "vision title": "Our Vision",
+      "vision": "We will further enhance our role as a leading university in the Asia Pacific region and beyond, with a focus on educational research, development and innovation. We will continue to raise our profile and impact locally, regionally and internationally through our high quality research and scholarship. We are committed to nurturing outstanding and caring educators and professionals who contribute constructively to sustainable social and economic development in Hong Kong and beyond.",
+      "mission title": "Our Mission",
+      "mission": "Committed to the Education-plus approach, our primary mission is to lead educational innovation, and to promote and support the strategic development of teaching, teacher education and disciplines complementary to education by preparing outstanding and morally responsible educators and professionals while supporting their lifelong learning.",
+      "president title": "President’s Welcome",
+      "president": "I am pleased that we have created a multidisciplinary environment conducive to the pursuit of knowledge. This goes hand in hand with our increasingly diversified academic profile, as well as our research and knowledge transfer initiatives. This also helps establish a community of engaged learners and eminent academics, who thrive in a vibrant scholarly environment.\n\nAt EdUHK, we are committed to nurturing outstanding educators and professionals, who are passionate, professional, ethical and innovative. Building upon our academic strengths in teacher education, we have been expanding the scope of our undergraduate and postgraduate programmes to encompass artificial intelligence and educational technology, heritage education and arts management, sports science and coaching, and global and regional studies.\n\nAs a research-active university, we have made great strides in research in education and various emerging disciplines, such as environmental management, psychology, linguistics and language studies, with the University Grants Committee recognising our research output as “World Leading” and “Internationally Excellent” in its latest Research Assessment Exercise. The numerous prestigious accolades earned are also testimony to our contribution to the convergence of knowledge, technology and society.\n\nTo better synergise our interdisciplinary expertise, I am pleased to witness the establishment of two new Academies, namely the Academy for Educational Development and Innovation (AEDI), and the Academy for Applied Policy Studies and Education Futures (AAPSEF). They will serve as hubs of excellence to further extend our research impact in Hong Kong and beyond.\n\nI hope you enjoy exploring the learning and research opportunities offered by EdUHK.\n\nProfessor John Lee Chi-Kin, JP\n\nPresident and Chair Professor of Curriculum and Instruction",
+      "link": "Learn More"
+    },
+    "HarvardCES": {
+      "Intro": "Introduction to Harvard CES",
+      "link": "👆 Link to the official Harvard CES website"
+    }
   },
   "server": {
     "Organizing Committee": {
       "id1": {
-        "description": "",
+        "description": "Professor Chi-Kin John Lee is a distinguished academic and leader in education, currently serving as President and Chair Professor at The Education University of Hong Kong. His career is marked by significant contributions to curriculum and instruction, including roles as Vice President (Academic) and Provost. Former Dean of Education and a recipient of the Vice-Chancellor’s Exemplary Teaching Award at The Chinese University of Hong Kong (CUHK), Professor Lee has an extensive research background with a focus on various educational areas. He is a top-cited scientist and has secured numerous grants for his projects. Professor Lee is an active member of several editorial boards, has authored and co-edited over 25 books, and has been involved in education and social services locally, nationally and globally. His projects have won awards, and he has held various prestigious positions, including Changjiang Scholar Chair Professor, UNESCO Chair and membership in the Chinese People’s Political Consultative Conference.",
         "name": "Professor LEE, Chi-Kin John",
         "title": "President of the Education University of Hong Kong\n\nOrganizer and Advisor \n\n Guest of Honor and Keynote Speaker "
       },
       "id2": {
-        "description": "",
+        "description": "Dr. Minjuan Wang is a newly appointed Chair Professor of Emerging and Technologies and Future Education at the Education University of Hong Kong, Co-Director of the Global Institute for Emerging Technologies, and Editor-in-Chief of the IEEE Transactions on Learning Technologies (TLT). Her research specialties are multidisciplinary, focusing on STEM Education, Future Education enabled by new and emerging technologies, Metaverse and immersive learning, and the design and implementation of artificial intelligence including AIGC for teaching, learning and training. Professor Wang is a high-impact author and an internationally recognized scholar who has keynoted more than 45 conferences. She publishes extensively in indexed and high-impact English journals such as Nature-HSSC, Computers and Education, IEEE-TLT, and British Journal of Education Technology. In addition, her teaching and research were also featured in top core journals in China (e.g., Educational Research). As a senior member of the IEEE Education Society, she has contributed significantly to both the IEEE community and other scholarly circles. Her international reputation in the field is evident, reflected in her recent nomination as an iLRN scholar by Chris Dede from Harvard University.",
         "name": "Prof. Minjuan Wang",
         "title": "Co-Director of Global Institute for Emerging Technology (GIET)\n\nDirector of Joint Symposium on Emerging Technologies and Future Talent, 2025\n\nKeynote Speaker"
       },
       "id3": {
-        "description": "",
+        "description": "Elementary Music and Chinese Support Intervention teacher at a Chinese-English bilingual school in Massachusetts, a member of the board of directors of the New England branch of the Orff-Schulwerk Association (AOSA) in the United States, co-chairman of the International Clarinet Association (ICA) Development and Membership Committee and editor, Massachusetts State University Women f Or UMass (WFUM) Alumni Exchange Platform Publicity Director. The head of the music teaching and research team of the teaching support project of Beijing Childhood One Course Student Aid Development Center (TNYK).",
         "name": "Miss. Rongbing Shen",
         "title": "Secretary General of Harvard China Education Symposium\n\nMinister of Internal Affairs, Joint Symposium on Emerging Technologies and Future Talent 2025"
       },
       "id4": {
-        "description": "",
+        "description": "Anny Chan holds a Master’s in Education in Educational Leadership, Organization, and Entrepreneurship from Harvard University and is a faculty member at the Harvard Graduate School of Education. She researches the impact of artificial intelligence on teaching and learning, focusing on advancing equity and diversity through technology in education.\n\nAnny is the Chair of the 15th Harvard China Education Symposium and the founder of the Harvard Graduate School of Education’s Cross-Cultural Education Association and the International STEAM Network. She earned dual degrees in Business and Law from the University of Sydney and brings over a decade of experience across finance, education, and technology sectors in the U.S., U.K., Australia, France, Japan, China, and Hong Kong. Additionally, Anny founded the Global China Entrepreneur Network, mentoring over 500 international students. She is committed to fostering international exchange and interdisciplinary collaboration in education.",
         "name": "Miss. Anny Chan",
         "title": "Teaching Fellow, Harvard University; Board Member, Harvard China Education Symposium(CES)\n\nDirector of External Affairs, Joint Symposium on Emerging Technologies and Future Talent 2025"
       },
       "id5": {
-        "description": "He is a founding member of the CES Symposium, an Executive Officer at City High School in Canada, and also serves as the Executive Officer of the National E-School in Canada.",
-        "name": "Xuefan Li",
-        "title": "Ontario Institute for Studies in Education, University of Toronto, specializing in AI in Education, K-12 Future Education, and Educational Economics. \n\nExecutive Co-director, Joint Symposium on Emerging Technologies and Future Talent 2025 "
+        "description": "Xuefan Li is currently a PhD candidate at the University of Toronto’s Faculty of Education, with research focusing on prompt engineering in education, future and immersive educational technologies, educational economics, and online education. He has demonstrated exceptional research capabilities, leading and contributing to several significant projects. For example, he has conducted a comparative study on the changes in international student policies towards China during the COVID-19 pandemic, analyzed student loans and future returns among American college students, and developed an LSTM model incorporating sentiment and policy analysis for predicting education stock markets. His research has been presented at prestigious international conferences, including the Tsinghua Education Forum, Fudan International Education Research Forum, and the Harvard Chinese Education Conference.",
+        "name": "Dr. Xuefan Li",
+        "title": "Ontario Institute for Studies in Education, University of Toronto, specializing in AI in Education, K-12 Future Education, and Educational Economics"
       }
     },
     "Keynote Speakers": {

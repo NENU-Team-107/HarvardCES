@@ -1,6 +1,8 @@
 <script lang="ts" setup>
 import { useI18n } from 'vue-i18n';
 import type { TabItems } from '~/lib/model';
+import Title from '~/components/common/Title.vue';
+import PDFViewer from '~/components/poster/PDFViewer.vue';
 const { t } = useI18n();
 
 const tabMenuBase = ref<TabItems[]>([
@@ -27,26 +29,114 @@ const tabMenu = computed(() => {
 
 const toggleShowMore = (index: number) => {
   for (let i = 0; i < tabMenu.value.length; i++) {
-    if(i !== index) {
+    if (i !== index) {
       tabMenu.value[i].show = false;
     }
   }
   tabMenu.value[index].show = !tabMenu.value[index].show;
 }
+
+const showCES = ref(true)
+
+const handleChange = (index: number) => {
+  if (index === 0) {
+    showCES.value = true;
+  } else {
+    showCES.value = false;
+  }
+}
+
+const eduHKIntro = computed(() => {
+  return t("About Us.EduHK.intro").replace(/\n/g, "<br>")
+})
+
+const eduHKVision = computed(() => {
+  return t("About Us.EduHK.vision").replace(/\n/g, "<br>")
+})
+
+const eduHKMission = computed(() => {
+  return t("About Us.EduHK.mission").replace(/\n/g, "<br>")
+})
+
+const eduHKPresident = computed(() => {
+  return t("About Us.EduHK.president").replace(/\n/g, "<br>")
+})
 </script>
 
 <template>
   <div class="w-full h-full min-h-screen mx-10 my-5 pt-24">
     <NuxtPage />
     <UTabs :items="tabMenu" orientation="vertical"
-      :ui="{ wrapper: 'hidden md:flex gap-4 px-10', list: { width: 'w-60', tab: { size: 'text-base text-nowrap', padding: 'py-5' } } }"
-      class="bg-white/80 w-full h-full min-h-screen">
+      :ui="{ wrapper: 'hidden md:flex gap-4 px-10', list: { width: 'w-60', tab: { size: 'text-base text-nowrap', padding: 'py-5', font: 'font-bold' } } }"
+      class="bg-white/80 w-full h-full min-h-screen" @change="handleChange">
       <template #item>
         <div class="min-h-full flex flex-col px-20 py-10 bg-white/80">
-          <!-- <h1 class="text-center font-bold text-2xl py-6">{{ $t("About") }}</h1>
-          <div class="flex justify-center items-center w-full flex-1">
-            <div v-html="Introduction" />
-          </div> -->
+
+          <!-- TODO 样式问题，主要是 ULink 部分的样式和位置(可以使用红色粗体/蓝色粗体)，上面 pdf 与 图片的顺序不要改变，从上到下即可 -->
+          <div v-if="showCES === true">
+
+            <ClientOnly>
+              <div class="items-center justify-center text-center flex">
+                <PDFViewer pdf-path="img/harvard/Introduction.pdf"></PDFViewer>
+              </div>
+              <NuxtImg src="img/harvard/aiming.png" />
+              <NuxtImg src="img/harvard/reachUs.png" />
+
+              <div>
+                <ULink to="https://www.hgseces.org/">
+                  {{ $t("About Us.HarvardCES.link") }}
+                </ULink>
+                <font-awesome icon="fa-solid fa-arrow-right" />
+              </div>
+            </ClientOnly>
+
+          </div>
+
+          <div v-else>
+            <!-- TODO 样式修改，主要是图片的样式，一个在左一个在右 -->
+
+            <div class="mb-5">
+              <Title titleMap="About Us.EduHK.intro title" />
+              <div v-html="eduHKIntro"></div>
+            </div>
+
+            <div class="flex">
+              <div class="w-full h-full">
+                <NuxtImg src="img/eduhk/vision.png" />
+              </div>
+
+              <div>
+                <div class="mb-5">
+                  <Title titleMap="About Us.EduHK.vision title" />
+                  <div v-html="eduHKVision"></div>
+                </div>
+
+                <div class="mb-5">
+                  <Title titleMap="About Us.EduHK.mission title" />
+                  <div v-html="eduHKMission"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-5">
+              <Title titleMap="About Us.EduHK.president title" />
+              <div class="flex justify-center items-center">
+                <div v-html="eduHKPresident"></div>
+                <div class="w-full h-full">
+                  <NuxtImg src="img/eduhk/Chi-Kin John.png" />
+                </div>
+              </div>
+            </div>
+
+
+            <div>
+              <ULink to="https://www.eduhk.hk/en/">
+                {{ $t("About Us.EduHK.link") }}
+              </ULink>
+              <font-awesome icon="fa-solid fa-arrow-right" />
+            </div>
+
+          </div>
         </div>
       </template>
     </UTabs>
@@ -71,7 +161,7 @@ const toggleShowMore = (index: number) => {
             padding: 'px-4 py-3 sm:px-6'
           },
         }">
-        <template #header>
+          <template #header>
             <div class="flex w-full justify-between">
               <span>{{ item.label }}</span>
               <button @click="toggleShowMore(item.index)">
