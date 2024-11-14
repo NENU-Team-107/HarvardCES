@@ -27,7 +27,7 @@ function changeLanguage(item: any) {
 <template>
   <UDropdown :items="[localesOptions]" mode="hover" :ui="{ item: { disabled: 'cursor-text select-text' } }"
     :popper="{ placement: 'bottom-start' }">
-    <UButton icon="i-heroicons:language-16-solid" color="gray" variant="ghost" aria-label="Theme" />
+    <UButton icon="i-heroicons:language-16-solid" color="black" variant="ghost" aria-label="Theme" />
     <template #item="{ item }">
       <div class="truncate text-left w-full" :class="{ 'text-primary': locale === item.code }"
         @click="changeLanguage(item)">

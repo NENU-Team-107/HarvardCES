@@ -91,10 +91,10 @@ const toggleShowMore = (index: number) => {
 <template>
   <div class="w-full h-full min-h-screen mx-10 my-5 pt-24">
     <UTabs :items="navMenu" orientation="vertical"
-      :ui="{ wrapper: 'gap-4 px-10 hidden md:flex', list: { width: 'w-60', tab: { size: 'text-base text-nowrap', padding: 'py-5', font: 'font-bold' } } }"
+      :ui="{ wrapper: 'gap-4 px-10 hidden md:flex  dark:bg-black', list: { width: 'w-60', tab: { size: 'text-base text-nowrap', padding: 'py-5', font: 'font-bold' } } }"
       class="bg-white/80 w-full h-full min-h-screen" @change="handleClick">
       <template #item>
-        <div class="grid md:grid-cols-3 gap-2">
+        <div class="grid md:grid-cols-3 gap-2 dark:text-white">
           <div v-for="speaker in kindSpeakers">
             <Interoduction :speakers="speaker" class="mx-10 my-5" />
           </div>
@@ -113,12 +113,12 @@ const toggleShowMore = (index: number) => {
           shadow: 'shadow',
           body: {
             base: '',
-            background: '',
+            background: 'dark:bg-gray-900',
             padding: ''
           },
           header: {
-            base: '',
-            background: 'bg-tabs-header',
+            base: 'dark:text-white/90',
+            background: 'bg-tabs-header dark:bg-gray-700',
             padding: 'px-4 py-3 sm:px-6'
           },
         }
@@ -138,7 +138,7 @@ const toggleShowMore = (index: number) => {
               </button>
             </div>
           </template>
-          <div v-show="item.show">
+          <div v-show="item.show" class="dark:text-white/90">
             <div v-for="speaker in kindSpeakers">
               <Interoduction :speakers="speaker" class="mx-10 my-5" />
             </div>

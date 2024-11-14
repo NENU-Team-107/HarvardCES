@@ -45,7 +45,7 @@ const media = ref<MediaItemType[]>([
 </script>
 
 <template>
-  <div class="min-w-full min-h-28 bg-green-950/90 text-white w-full">
+  <div class="min-w-full min-h-28 bg-green-950/90 dark:bg-green-950 text-white w-full">
     <div class="text-xl font-bold text-center py-2">{{ $t(footerTitle) }}</div>
     <div class="flex md:flex-row flex-col items-center justify-center gap-3 w-full">
       <div class="flex justify-center items-center mx-10">

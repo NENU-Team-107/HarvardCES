@@ -65,18 +65,19 @@ const toggleShowMore = (index: number) => {
 <template>
   <div class="w-full h-full min-h-screen mx-10 my-5 pt-24">
     <UTabs :items="tabMenu" orientation="vertical"
-      :ui="{ wrapper: 'gap-4 px-10 hidden md:flex', list: { width: 'w-60', tab: { size: 'text-base text-nowrap', padding: 'py-5', font: 'font-bold' } } }"
+      :ui="{ wrapper: 'gap-4 px-10 hidden md:flex  dark:bg-black', list: { width: 'w-60', tab: { size: 'text-base text-nowrap', padding: 'py-5', font: 'font-bold' } } }"
       class="bg-white/80 w-full h-full min-h-screen" @change="handleChange">
       <template #item="{ item }">
-        <div class="min-h-full flex flex-col px-20 py-10 bg-white/80 justify-center items-center h-full w-full">
+        <div
+          class="min-h-screen flex flex-col px-20 py-10 bg-white/80 dark:bg-gray-800/80 dark:text-white justify-center items-center h-full w-full">
           <h1 v-if="item.content === 'Symposium Introduction'" class="text-center font-bold text-2xl py-6">{{
             $t("Symposium.Title") }}
           </h1>
           <h1 v-else-if="item.content === 'Symposium Location'" class="text-center font-bold text-2xl py-6">
             {{ $t("Symposium Location") }}
           </h1>
-          <div class="flex justify-center items-center w-full flex-1">
-            <div v-if="item.content === 'Symposium Introduction'" v-html="Introduction" />
+          <div class="flex items-center justify-center w-full flex-1">
+            <div v-if="item.content === 'Symposium Introduction'" class="-mt-40" v-html="Introduction" />
             <div v-else-if="item.content === 'Symposium Location'">
               <NuxtImg :src="LocationImage" loading="lazy" />
               <div class="items-center justify-center text-center text-lg mt-5">
@@ -102,12 +103,12 @@ const toggleShowMore = (index: number) => {
             shadow: 'shadow',
             body: {
               base: '',
-              background: '',
+              background: 'dark:bg-gray-900',
               padding: ''
             },
             header: {
-              base: '',
-              background: 'bg-tabs-header',
+              base: 'dark:text-white/90',
+              background: 'bg-tabs-header dark:bg-gray-700',
               padding: 'px-4 py-3 sm:px-6'
             },
           }
@@ -128,7 +129,7 @@ const toggleShowMore = (index: number) => {
               </div>
             </template>
 
-            <div v-if="item.show">
+            <div v-if="item.show" class="dark:text-white/90 mr-4 ml-4 pb-4">
               <h1 v-if="item.index === 0" class="text-center font-bold text-2xl py-6">{{
                 $t("Symposium.Title") }}
               </h1>

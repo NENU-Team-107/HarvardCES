@@ -93,12 +93,12 @@ const slides = ref<SwiperItem[]>([
 
     <div class="my-10 px-2 flex flex-col w-full">
 
-      <div class="bg-white/80 p-10">
+      <div class="bg-white/80 dark:bg-gray-900/80 p-10">
         <!-- NOTE 这里是论坛介绍 -->
         <Title :titleMap="title.intro" />
         <div class="text-lg pl-10">
-          <div :innerHTML="SymposiumIntro"></div>
-          <div class="flex mt-4">
+          <div :innerHTML="SymposiumIntro" class="dark:text-white/90"></div>
+          <div class="flex mt-4 dark:text-white/90">
             <ULink to="/about" class="italic font-semibold">
               {{ $t("Symposium.Click") }}
               <font-awesome icon="fa-solid fa-arrow-right" />
@@ -107,15 +107,16 @@ const slides = ref<SwiperItem[]>([
         </div>
       </div>
 
-      <div class="bg-white/80 p-10">
-        <Title :titleMap="title.speaker" />
+      <div class="bg-white/80 dark:bg-gray-900/80 p-10">
+        <Title :titleMap="title.speaker" class="dark:text-white/90" />
         <div class="grid md:grid-cols-3 gap-4 pl-10">
-          <div v-for="speaker in VisibleSpeakersList">
+          <div v-for="speaker in VisibleSpeakersList" class="dark:text-white">
             <SpeakersIntroduction :speakers="speaker" />
           </div>
         </div>
         <div v-if="speakersList.length > 6" class="flex justify-center mt-4">
-          <button @click="toggleShowMore" class="text-blue-500 hover:text-blue-700">
+          <button @click="toggleShowMore"
+            class="text-blue-500 hover:text-blue-700 dark:text-blue-300 dark:hover:text-blue-100">
             <span v-if="showMore">
               <font-awesome icon="fa-solid fa-angle-up" />
               {{ $t("Collapse") }}
@@ -128,23 +129,23 @@ const slides = ref<SwiperItem[]>([
         </div>
       </div>
 
-      <div class="bg-white/80 p-10">
-        <Title :titleMap="title.workshop" />
+      <div class="bg-white/80 dark:bg-gray-900/80 p-10">
+        <Title :titleMap="title.workshop" class="dark:text-white/90" />
         <!-- TODO 补全资料 -->
         <SubSwiper />
       </div>
 
-      <div class="bg-white/80 p-10">
+      <div class="bg-white/80 dark:bg-gray-900/80 p-10">
         <!-- NOTE 这部分是主办单位和合作者的 Logo -->
-        <Title :titleMap="title.logo"></Title>
+        <Title :titleMap="title.logo" class="dark:text-white/90"></Title>
         <div>
           <div>
-            <div class="font-bold text-lg pl-10">{{ $t("Organised by") }}</div>
+            <div class="font-bold text-lg pl-10 dark:text-white/90">{{ $t("Organised by") }}</div>
             <div class="w-full flex justify-center items-center">
               <NuxtImg :src="host.path" sizes="400" />
             </div>
           </div>
-          <div class="w-full flex flex-col">
+          <div class="w-full flex flex-col dark:text-white/90">
             <div class="font-bold text-lg pl-10">{{ $t("In collaboration with") }}</div>
             <div class="w-full flex items-center justify-evenly md:flex-row flex-col">
               <div v-for="logo in logoList" class="md:my-0 my-2">

@@ -43,7 +43,7 @@ const jump = (link: string) => {
     }" :pagination="{ clickable: true }">
     <SwiperSlide v-for="(slide, idx) in slides" :key="idx"
       class="w-full flex justify-center items-center h-fit relative">
-      <div v-if="!slide.details" >
+      <div v-if="!slide.details">
         <NuxtImg :src="slide.src" fit="contain" :class="slide.link ? 'mx-1 hover:cursor-pointer' : 'mx-1'"
           :sizes="ImgSize" @click="jump(slide.link ? slide.link : '-1')" />
       </div>
@@ -52,6 +52,7 @@ const jump = (link: string) => {
         ring: '',
         rounded: '',
         shadow: '',
+        background: 'dark:bg-gray-900/80'
       }">
         <NuxtImg :src="slide.src" fit="contain" :class="slide.link ? 'mx-1 hover:cursor-pointer' : 'mx-1'"
           :sizes="ImgSize" @click="jump(slide.link ? slide.link : '-1')" />
@@ -84,13 +85,14 @@ const jump = (link: string) => {
   font-family: 'Roboto', sans-serif;
 }
 
+
 .swiper-pagination-bullet {
-  background: #000;
+  background: #4cabee;
   opacity: 0.5;
 }
 
 .swiper-pagination-bullet-active {
-  background: #000;
+  background: #4cabee;
   opacity: 1;
 }
 
