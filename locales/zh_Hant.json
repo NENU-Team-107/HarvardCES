@@ -9,6 +9,7 @@
   "Back": "返回",
   "Details": "詳情",
   "Workshop and Sub-symposium Sessions": "工作室與分論壇",
+  "Session": "平行分會",
   "Host": {
     "Name": "主辦方",
     "Language": "語言",
@@ -82,6 +83,10 @@
       "link": "瞭解更多"
     },
     "HarvardCES": ""
+  },
+  "pSession": {
+    "sub-symposium": "分論壇主題研究演講",
+    "poster": "現場研究展示"
   },
   "server": {
     "Organizing Committee": {

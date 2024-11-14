@@ -10,6 +10,7 @@ export default defineI18nConfig(() => ({
     availableLocales: currentLocales.map(l => l.code),
     messages: {
         en: en,
+        zh: zh_Hans,
         'zh-cn': zh_Hans,
         'zh-hk': zh_Hant
     }

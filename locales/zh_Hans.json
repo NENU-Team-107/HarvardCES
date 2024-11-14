@@ -10,6 +10,7 @@
   "Back": "返回",
   "Details": "详情",
   "Workshop and Sub-symposium Sessions": "工作室与分论坛",
+  "Session": "平行分会",
   "Host": {
     "Name": "主办方",
     "Language": "语言",
@@ -87,6 +88,10 @@
       "Intro": "哈佛CES介绍",
       "link": "👆 哈佛CES官网链接"
     }
+  },
+  "pSession": {
+    "sub-symposium": "分论坛主题研究演讲",
+    "poster": "现场研究展示"
   },
   "server": {
     "Organizing Committee": {

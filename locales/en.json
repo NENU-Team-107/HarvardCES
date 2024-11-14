@@ -9,6 +9,7 @@
   "Back": "Back",
   "Details": "Details",
   "Workshop and Sub-symposium Sessions": "Workshop and Sub-symposium Sessions",
+  "Session": "Parallel Session",
   "Host": {
     "Name": "Organizer",
     "Language": "Language",
@@ -86,6 +87,10 @@
       "Intro": "Introduction to Harvard CES",
       "link": "👆 Link to the official Harvard CES website"
     }
+  },
+  "pSession": {
+    "sub-symposium": "Sub-symposium: Presentation Session",
+    "poster": " Poster and Showcase Session"
   },
   "server": {
     "Organizing Committee": {

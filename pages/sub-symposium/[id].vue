@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { _data } from "#tailwind-config/theme";
 import { VuePDF, usePDF } from "@tato30/vue-pdf";
 import type { ApiResponse, Poster, Speaker } from '~/lib/model.ts';
 
@@ -53,10 +52,12 @@ const { pdf, pages } = usePDF(pdfurl)
       </div>
       <div class="w-3/4 flex-2 flex-row justify-center items-center">
         <div class="flex-1 flex">
-          <div v-for="page in pages" :key="page" class="w-full flex justify-center items-center px-auto">
-            <VuePDF :pdf="pdf" :page="page" class="w-full h-auto flex justify-center items-center relative"
-              fit-parent />
-          </div>
+          <ClientOnly>
+            <div v-for="page in pages" :key="page" class="w-full flex justify-center items-center px-auto">
+              <VuePDF :pdf="pdf" :page="page" class="w-full h-auto flex justify-center items-center relative"
+                fit-parent />
+            </div>
+          </ClientOnly>
         </div>
       </div>
     </div>

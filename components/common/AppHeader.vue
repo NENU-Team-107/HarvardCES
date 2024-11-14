@@ -17,10 +17,10 @@ const routerArray = ref<RouterItem[]>([
     name: "About",
     path: "/about",
   },
-  // {
-  //   name: "Sessions",
-  //   path: "/sessions",
-  // },
+  {
+    name: "Sessions",
+    path: "/sessions",
+  },
   {
     name: "Speakers",
     path: "/speakers",
