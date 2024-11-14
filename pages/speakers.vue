@@ -4,7 +4,7 @@ import type { Speaker, TabItems } from '~/lib/model';
 
 const { t } = useI18n()
 
-const navMenuBase=ref<TabItems[]>([
+const navMenuBase = ref<TabItems[]>([
   {
     label: t("Organizing Committee"),
     content: "Organizing Committee",
@@ -18,16 +18,10 @@ const navMenuBase=ref<TabItems[]>([
     index: 1
   },
   {
-    label: t("Invite Speakers"),
-    content: "Invite Speakers",
-    show: false,
-    index: 2
-  },
-  {
     label: t("Guest of Honor"),
     content: "Guest of Honor",
     show: false,
-    index: 3
+    index: 2
   },
 ])
 
