@@ -9,6 +9,7 @@ export const speakerToKind: Map<number, string> = new Map([
     [6, 'Keynote Speakers'],
     [7, 'Keynote Speakers'],
     [8, 'Keynote Speakers'],
+    [17, 'Keynote Speakers'],
     [9, 'Organizing Committee'],
     [10, 'Organizing Committee'],
     [11, 'Organizing Committee'],
@@ -59,6 +60,19 @@ export const keynoteSpeaker: Array<Speaker> = [
                 description: "server.Keynote Speakers.id3.description",
                 title: "server.Keynote Speakers.id3.title",
                 link: 'speaker/3 ChrisDede'
+            }
+        }
+    }, {
+        id: 17,
+        name: "server.Keynote Speakers.id9.name",
+        kind: "Keynote Speakers",
+        photo: "./assets/avatars/Tina Grotzer.png",
+        activateDate: new Date("2025-05-09"),
+        bio: {
+            details: {
+                description: "server.Keynote Speakers.id9.description",
+                title: "server.Keynote Speakers.id9.title",
+                link: 'speaker/17 TinaGrotzer'
             }
         }
     },
@@ -260,5 +274,12 @@ export const SubSymposiumPoster: Array<Poster> = [
         path: 'img/poster/Sub-symposium1.png',
         callPath: "server.Poster.id0",
         link: 'sub-symposium/0'
+    },
+    {
+        id: 1,
+        name: 'Sub-symposium2',
+        path: 'img/poster/Sub-symposium2.png',
+        callPath: "server.Poster.id1",
+        link: 'sub-symposium/1'
     }
 ]
