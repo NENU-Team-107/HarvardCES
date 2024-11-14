@@ -1,11 +1,13 @@
 <script setup lang="ts">
-
+import { _data } from "#tailwind-config/theme";
+import { VuePDF, usePDF } from "@tato30/vue-pdf";
 import type { ApiResponse, Poster, Speaker } from '~/lib/model.ts';
 
 const route = useRoute()
 
 const poster = ref<Poster>()
-const callImage = ref<string>('./assets/poster/sub1-zh.pdf')
+
+const pdfurl = ref<string>()
 
 const getPoster = async (id: number) => {
   const { data: resp } = await useFetch<ApiResponse<Poster>>('/api/poster/getByID', {
@@ -19,21 +21,26 @@ const getPoster = async (id: number) => {
   }
 }
 
+
 getPoster(Number.parseInt(route.params.id as string))
   .then(async () => {
     // TODO pdf 的显示
     if (poster.value) {
-      const pdf: Blob = await $fetch('/api/poster/getCallByID', {
+      const { data } = await useFetch('/api/poster/getCallByID', {
         method: 'GET',
         query: {
           path: poster.value.callPath
-
-        }
+        },
+        responseType: 'blob'
       })
-      // callImage.value = window.URL.createObjectURL(image)
-      callImage.value = URL.createObjectURL(pdf);
+      if (data.value) {
+        const file = window.URL.createObjectURL(data.value as Blob);
+        pdfurl.value = file
+      }
     }
   })
+
+const { pdf, pages } = usePDF(pdfurl)
 
 </script>
 
@@ -44,9 +51,12 @@ getPoster(Number.parseInt(route.params.id as string))
       <div class="flex-1 w-full h-full">
         <NuxtImg :src="poster?.path" />
       </div>
-      <div v-show="callImage !== undefined" class="w-3/4 flex-2 flex-row justify-center items-center">
+      <div class="w-3/4 flex-2 flex-row justify-center items-center">
         <div class="flex-1 flex">
-          <PosterPDFViewer :pdfPath="callImage" />
+          <div v-for="page in pages" :key="page" class="w-full flex justify-center items-center px-auto">
+            <VuePDF :pdf="pdf" :page="page" class="w-full h-auto flex justify-center items-center relative"
+              fit-parent />
+          </div>
         </div>
       </div>
     </div>

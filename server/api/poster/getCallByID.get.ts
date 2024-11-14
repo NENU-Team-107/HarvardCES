@@ -11,4 +11,4 @@ export default defineEventHandler(async (event) => {
     event.node.res.setHeader('Content-Type', 'application/pdf')
     event.node.res.write(Buffer.from(pdf))
     event.node.res.end()
-}); 
+});
