@@ -38,17 +38,16 @@ getPoster(Number.parseInt(route.params.id as string))
 </script>
 
 <template>
-  <div class="w-full h-full min-h-screen mx-10 y-5 pt-24">
+  <div class="w-full h-full min-h-screen mx-10 pt-24 flex justify-center items-center">
     <!-- TODO 尝试在这里贴上一个 pdf 文件，但中英文显示不一样 -->
-    <div class="flex">
-      <div class="flex-1">
-        <NuxtImg :src="poster?.path" sizes="500" />
+    <div class="flex flex-row justify-between w-full h-full px-20 pb-6 items-center">
+      <div class="flex-1 w-full h-full">
+        <NuxtImg :src="poster?.path" />
       </div>
-      <div class="flex-1 h-full w-full" v-if="callImage !== undefined">
-        <!-- <PSPDFKitContainer :pdfFile="callImage" /> -->
-        <ClientOnly>
+      <div v-show="callImage !== undefined" class="w-3/4 flex-2 flex-row justify-center items-center">
+        <div class="flex-1 flex">
           <PosterPDFViewer :pdfPath="callImage" />
-        </ClientOnly>
+        </div>
       </div>
     </div>
   </div>

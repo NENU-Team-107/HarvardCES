@@ -1,12 +1,27 @@
 <script setup lang="ts">
-
-// Usage:传入一个字符串数组，指示轮播图的图片路径
-
+import type { SwiperItem } from '~/lib/model';
+import { useRouter } from 'vue-router';
+const router = useRouter();
 const slides = defineModel('Slides', {
   required: true,
-  type: Array as () => string[],
+  type: Array as () => SwiperItem[],
   default: () => []
 })
+const ImgSize = defineModel('ImgSize', {
+  required: false,
+  type: String,
+  default: ''
+});
+
+const jump = (link: string) => {
+  if (link === "-1")
+    return;
+  console.log(link)
+  if (!link.startsWith('/')) {
+    link = '/' + link
+  }
+  router.push(link)
+}
 
 
 </script>
@@ -25,8 +40,10 @@ const slides = defineModel('Slides', {
         translate: ['100%', 0, 0]
       }
     }" :pagination="{ clickable: true }">
-    <SwiperSlide v-for="(slide, idx) in slides" :key="idx" class="h-full w-full flex justify-center items-center">
-      <NuxtImg :src="slide" fit="cover" class="mx-1" />
+    <SwiperSlide v-for="(slide, idx) in slides" :key="idx" class="w-full flex justify-center items-center h-fit">
+      <NuxtImg :src="slide.src" fit="contain" :class="slide.link ? 'mx-1 hover:cursor-pointer' : 'mx-1'"
+      :sizes="ImgSize"
+        @click="jump(slide.link ? slide.link : '-1')" />
     </SwiperSlide>
 
   </Swiper>

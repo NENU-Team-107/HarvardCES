@@ -45,3 +45,7 @@ export interface TabItems {
     show: boolean,
     index: number
 }
+export interface SwiperItem {
+    src: string,
+    link?: string
+}

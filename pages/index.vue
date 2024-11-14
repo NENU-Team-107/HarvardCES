@@ -2,7 +2,8 @@
 import Title from '~/components/common/Title.vue'
 import CoverImage from '~/components/homeIndex/CoverImage.vue';
 import PopupWindow from '~/components/homeIndex/PopupWindow.vue';
-import type { Poster, Speaker } from '~/lib/model';
+import SubSwiper from '~/components/homeIndex/SubSwiper.vue';
+import type { Poster, Speaker, SwiperItem } from '~/lib/model';
 
 const { t } = useI18n()
 
@@ -32,7 +33,6 @@ const title = ref({
 })
 
 const speakersList = ref<Speaker[]>([])
-const posterList = ref<Poster[]>([])
 
 const fetchSpeakers = async () => {
   const resp = await $fetch('/api/speaker/listByQuery', {
@@ -44,16 +44,6 @@ const fetchSpeakers = async () => {
   const { status, data } = resp
   if (status === "Success" && data !== null) {
     speakersList.value = data;
-  }
-}
-
-const fetchPosters = async () => {
-  const resp = await $fetch('/api/poster/listAll', {
-    method: 'GET'
-  })
-  const { status, data } = resp
-  if (status === "Success" && data !== null) {
-    posterList.value = data;
   }
 }
 
@@ -83,12 +73,12 @@ onMounted(() => {
       }
     })
 
-  fetchPosters()
-
   SymposiumIntro.value = t("Symposium.Intro").replace(/\n/g, '<br>')
 })
 
-const slides = ref(["/img/poster/cover_zh_Hant.jpg", "/img/poster/cover_zh_Hans.jpg"]);
+const slides = ref<SwiperItem[]>([
+  { src: "/img/poster/cover_zh_Hant.jpg" }, { src: "/img/poster/cover_zh_Hans.jpg" }
+]);
 
 
 </script>
@@ -101,7 +91,7 @@ const slides = ref(["/img/poster/cover_zh_Hant.jpg", "/img/poster/cover_zh_Hans.
       <CoverImage :Slides="slides" />
     </div>
 
-    <div class="my-10 px-2 grid grid-rows-1 gap-5">
+    <div class="my-10 px-2 flex flex-col w-full">
 
       <div class="bg-white/80 p-10">
         <!-- NOTE 这里是论坛介绍 -->
@@ -118,7 +108,7 @@ const slides = ref(["/img/poster/cover_zh_Hant.jpg", "/img/poster/cover_zh_Hans.
       </div>
 
       <div class="bg-white/80 p-10">
-        <Title :titleMap="title.speaker"/>
+        <Title :titleMap="title.speaker" />
         <div class="grid md:grid-cols-3 gap-4 pl-10">
           <div v-for="speaker in VisibleSpeakersList">
             <SpeakersIntroduction :speakers="speaker" />
@@ -141,15 +131,7 @@ const slides = ref(["/img/poster/cover_zh_Hant.jpg", "/img/poster/cover_zh_Hans.
       <div class="bg-white/80 p-10">
         <Title :titleMap="title.workshop" />
         <!-- TODO 补全资料 -->
-        <div>
-          <div v-for="poster in posterList">
-            <NuxtImg :src="poster.path" sizes="200" />
-            <ULink :to="poster.link" class="italic font-semibold">
-              {{ $t("Details") }}
-              <font-awesome icon="fa-solid fa-arrow-right" />
-            </ULink>
-          </div>
-        </div>
+        <SubSwiper />
       </div>
 
       <div class="bg-white/80 p-10">
@@ -178,7 +160,6 @@ const slides = ref(["/img/poster/cover_zh_Hant.jpg", "/img/poster/cover_zh_Hans.
         </div>
       </div>
 
-      <!-- NOTE 飘窗 -->
       <PopupWindow />
 
     </div>
