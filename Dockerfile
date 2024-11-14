@@ -8,7 +8,7 @@ copy . /app
 run npm install pnpm -g
 
 run pnpm install && \
-    pnpm run build && \
+    pnpm build && \
     pnpm cache clean --force
 
 run rm -rf ./node_modules

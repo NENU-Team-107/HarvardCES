@@ -1,0 +1,19 @@
+#!/bin/bash
+
+echo "Pulling latest version"
+
+git pull
+
+wait
+
+echo "Building"
+
+pnpm install && pnpm build
+
+wait
+
+echo "Build complete"
+
+echo "Start up service"
+
+pm2 start ecosystem.config.cjs
