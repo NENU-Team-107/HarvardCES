@@ -29,21 +29,45 @@ const jump = (link: string) => {
 <template>
   <Swiper :modules="[SwiperAutoplay, SwiperEffectCreative, SwiperNavigation, SwiperAutoplay, SwiperPagination]"
     :slides-per-view="1" :loop="true" :effect="'creative'" :autoplay="{
-      delay: 6000,
+      delay: 5000,
       disableOnInteraction: true
     }" :creative-effect="{
       prev: {
         shadow: false,
-        translate: ['-20%', 0, -1]
+        translate: [-1, 0, 0],
       },
       next: {
-        translate: ['100%', 0, 0]
-      }
+        shadow: false,
+        translate: [-1, 0, 0]
+      },
     }" :pagination="{ clickable: true }">
-    <SwiperSlide v-for="(slide, idx) in slides" :key="idx" class="w-full flex justify-center items-center h-fit">
-      <NuxtImg :src="slide.src" fit="contain" :class="slide.link ? 'mx-1 hover:cursor-pointer' : 'mx-1'"
-      :sizes="ImgSize"
-        @click="jump(slide.link ? slide.link : '-1')" />
+    <SwiperSlide v-for="(slide, idx) in slides" :key="idx"
+      class="w-full flex justify-center items-center h-fit relative">
+      <div v-if="!slide.details" >
+        <NuxtImg :src="slide.src" fit="contain" :class="slide.link ? 'mx-1 hover:cursor-pointer' : 'mx-1'"
+          :sizes="ImgSize" @click="jump(slide.link ? slide.link : '-1')" />
+      </div>
+      <UCard v-if="slide.details" :ui="{
+        divide: '',
+        ring: '',
+        rounded: '',
+        shadow: '',
+      }">
+        <NuxtImg :src="slide.src" fit="contain" :class="slide.link ? 'mx-1 hover:cursor-pointer' : 'mx-1'"
+          :sizes="ImgSize" @click="jump(slide.link ? slide.link : '-1')" />
+        <template #footer>
+          <div class="flex justify-end w-full">
+            <div v-if="slide.details" class="right-20 w-32 h-20 text-sm">
+              <div class="font-semibold text-white bg-red-800 text-center p-2">
+                <ULink :to="slide.link">
+                  {{ $t("About Us.EduHK.link") }}
+                </ULink>
+                <font-awesome class="ml-1" icon="fa-solid fa-arrow-right" />
+              </div>
+            </div>
+          </div>
+        </template>
+      </UCard>
     </SwiperSlide>
 
   </Swiper>

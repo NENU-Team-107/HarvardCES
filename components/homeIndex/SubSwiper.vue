@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full justify-center items-center flex h-3/5">
+  <div class="w-full justify-center items-center flex h-full">
     <CoverImage :Slides="slides" :ImgSize="'300'" />
   </div>
 </template>

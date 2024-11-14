@@ -53,11 +53,6 @@ const handleChange = (index: number) => {
 }
 
 const toggleShowMore = (index: number) => {
-  for (let i = 0; i < tabMenu.value.length; i++) {
-    if (i !== index) {
-      tabMenu.value[i].show = false
-    }
-  }
   tabMenu.value[index].show = !tabMenu.value[index].show;
 
   if (index === 1 && tabMenu.value[index].show) {
@@ -95,10 +90,10 @@ const toggleShowMore = (index: number) => {
         </div>
       </template>
     </UTabs>
-
-    <div class="md:hidden">
-      <div v-for="item in tabMenu">
-        <UCard :ui="{
+    <ClientOnly>
+      <div class="md:hidden">
+        <div v-for="item in tabMenu">
+          <UCard :ui="{
           base: '',
           background: 'bg-white dark:bg-gray-900',
           divide: 'divide-y divide-gray-200 dark:divide-gray-800',
@@ -117,44 +112,48 @@ const toggleShowMore = (index: number) => {
           },
         }
           ">
-          <template #header>
-            <div class="flex w-full justify-between">
-              <span>{{ item.label }}</span>
-              <button @click="toggleShowMore(item.index)">
-                <span v-if="item.show">
-                  <font-awesome icon="fa-solid fa-angle-up" />
-                  {{ $t("Collapse") }}
-                </span>
-                <span v-else>
-                  <font-awesome icon="fa-solid fa-angle-down" />
-                  {{ $t("Show More") }}
-                </span>
-              </button>
-            </div>
-          </template>
+            <template #header>
+              <div class="flex w-full justify-between">
+                <span>{{ item.label }}</span>
+                <button @click="toggleShowMore(item.index)">
+                  <span v-if="item.show">
+                    <font-awesome icon="fa-solid fa-angle-up" />
+                    {{ $t("Collapse") }}
+                  </span>
+                  <span v-else>
+                    <font-awesome icon="fa-solid fa-angle-down" />
+                    {{ $t("Show More") }}
+                  </span>
+                </button>
+              </div>
+            </template>
 
-          <!-- <div v-if="item.show">
-            <h1 v-if="item.index === 0" class="text-center font-bold text-2xl py-6">{{
-              $t("Symposium.Title") }}
-            </h1>
-            <h1 v-else-if="item.index === 1" class="text-center font-bold text-2xl py-6">
-              {{ $t("Symposium Location") }}
-            </h1>
-            <div class="flex justify-center items-center w-full flex-1">
-              <div v-if="item.index === 0" v-html="Introduction" />
-              <div v-else-if="item.index === 1">
-                <NuxtImg :src="LocationImage" loading="lazy" />
-                <div class="items-center justify-center text-center text-lg mt-5">
-                  <span>{{ $t("Host.Details.Location") }}</span>
+            <div v-if="item.show">
+              <h1 v-if="item.index === 0" class="text-center font-bold text-2xl py-6">{{
+                $t("Symposium.Title") }}
+              </h1>
+              <h1 v-else-if="item.index === 1" class="text-center font-bold text-2xl py-6">
+                {{ $t("Symposium Location") }}
+              </h1>
+              <div class="flex justify-center items-center w-full flex-1">
+                <div v-if="item.index === 0" v-html="Introduction" />
+                <div v-else-if="item.index === 1">
+                  <NuxtImg :src="LocationImage" />
+                  <div class="items-center justify-center text-center text-lg mt-5">
+                    <span>{{ $t("Host.Details.Location") }}</span>
+                  </div>
+                </div>
+                <div v-else-if="item.index === 2">
+                  <NuxtImg :src="AgendaImage" />
                 </div>
               </div>
-              <div v-else-if="item.index === 2">
-                <NuxtImg :src="AgendaImage" loading="lazy" />
-              </div>
             </div>
-          </div> -->
-        </UCard>
+
+          </UCard>
+
+        </div>
+
       </div>
-    </div>
+    </ClientOnly>
   </div>
 </template>
