@@ -67,7 +67,7 @@ const eduHKPresident = computed(() => {
       <template #item>
         <div class="min-h-full w-full flex flex-col px-20 py-5 bg-white/80">
 
-          <!-- TODO 样式问题，主要是 ULink 部分的样式和位置(可以使用红色粗体/蓝色粗体)，上面 pdf 与 图片的顺序不要改变，从上到下即可 -->
+          <!-- OK: 样式问题，主要是 ULink 部分的样式和位置(可以使用红色粗体/蓝色粗体)，上面 pdf 与 图片的顺序不要改变，从上到下即可 -->
           <div v-if="showCES === true">
 
             <ClientOnly>
@@ -89,7 +89,6 @@ const eduHKPresident = computed(() => {
           </div>
 
           <div v-else class="w-full min-h-full relative">
-            <!-- TODO 样式修改，主要是图片的样式，一个在左一个在右 -->
             <div class="z-20 bg-white">
               <div class="mb-5 z-20">
                 <Title titleMap="About Us.EduHK.intro title" />
@@ -141,7 +140,6 @@ const eduHKPresident = computed(() => {
         </div>
       </template>
     </UTabs>
-    <!-- TODO 补全样式 -->
     <div class="md:hidden">
       <div v-for="item in tabMenu">
         <UCard :ui="{
@@ -179,7 +177,6 @@ const eduHKPresident = computed(() => {
           </template>
 
           <div class="w-full max-w-screen-md">
-            <!-- TODO 补全资料 -->
             <div v-if="item.index === 0" class="w-full max-w-screen">
               <ClientOnly>
                 <div

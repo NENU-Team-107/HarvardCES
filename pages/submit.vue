@@ -16,9 +16,7 @@ const tabMenu = ref<TabItems[]>(
 )
 
 const toggleShowMore = async (index: number) => {
-
     tabMenu.value[index].show = !tabMenu.value[index].show;
-
 }
 
 </script>

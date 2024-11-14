@@ -96,7 +96,6 @@ const toggleShowMore = (index: number) => {
       </template>
     </UTabs>
 
-    <!-- TODO 补全样式 -->
     <div class="md:hidden">
       <div v-for="item in tabMenu">
         <UCard :ui="{
