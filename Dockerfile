@@ -5,15 +5,17 @@ workdir /app
 
 copy . /app
 
-run npm install && \
-    npm run build && \
-    npm cache clean --force
+run npm install pnpm -g
+
+run pnpm install && \
+    pnpm build && \
+    pnpm cache clean --force
 
 run rm -rf ./node_modules
 
 from node:22.11.0 as run-stage
 
-run mkdir -p /app
+run mkdir -p /app && npm install pnpm -g
 workdir /app
 
 copy --from=build-stage /app/.output /app/.output
@@ -24,4 +26,4 @@ env PORT=3000
 
 expose 3000
 
-entrypoint ["npm", "run", "start"]
+entrypoint ["pnpm", "start"]
