@@ -29,7 +29,7 @@ const title = ref({
   intro: "Symposium.Title",
   speaker: "Keynote Speakers",
   logo: "Organisers and Partners",
-  workshop: "Workshop and Sub-symposium Sessions"
+  workshop: "Session"
 })
 
 const speakersList = ref<Speaker[]>([])
