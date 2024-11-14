@@ -82,7 +82,7 @@ const eduHKPresident = computed(() => {
                 <ULink to="https://www.hgseces.org/">
                   {{ $t("About Us.HarvardCES.link") }}
                 </ULink>
-                <font-awesome icon="fa-solid fa-arrow-right" />
+                <font-awesome class="ml-1" icon="fa-solid fa-arrow-right" />
               </div>
             </ClientOnly>
 
@@ -132,7 +132,7 @@ const eduHKPresident = computed(() => {
                 <ULink to="https://www.eduhk.hk/en/">
                   {{ $t("About Us.EduHK.link") }}
                 </ULink>
-                <font-awesome icon="fa-solid fa-arrow-right" />
+                <font-awesome class="ml-1" icon="fa-solid fa-arrow-right" />
               </div>
 
             </div>
@@ -190,7 +190,7 @@ const eduHKPresident = computed(() => {
                   <ULink to="https://www.hgseces.org/">
                     {{ $t("About Us.HarvardCES.link") }}
                   </ULink>
-                  <font-awesome icon="fa-solid fa-arrow-right" />
+                  <font-awesome class="ml-1" icon="fa-solid fa-arrow-right" />
                 </div>
               </ClientOnly>
             </div>
@@ -234,7 +234,7 @@ const eduHKPresident = computed(() => {
                   <ULink to="https://www.eduhk.hk/en/">
                     {{ $t("About Us.EduHK.link") }}
                   </ULink>
-                  <font-awesome icon="fa-solid fa-arrow-right" />
+                  <font-awesome class="ml-1" icon="fa-solid fa-arrow-right" />
                 </div>
 
               </div>
