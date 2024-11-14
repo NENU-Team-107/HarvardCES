@@ -19,6 +19,7 @@ export default {
       },
       backgroundImage: {
         'letter-paper': "url('~/assets/bg/letter-paper.png')",
+        "eduhk-vision":"url('~/assets/bg/eduhk-vision.png')",
       },
       colors: {
         'cover-left': '#c56c70',
@@ -26,6 +27,9 @@ export default {
         'footer-bg': '#d29c9c',
         'tabs-header': '#f3f4f6',
         'nav-bg': '#ffffff',
+        'pdf-top': '#7a2b2b',
+        'pdf-middle': '#a12c2c',
+        'pdf-bottom': '#7e3636',
       },
       borderRadius: {
         'edge': '1rem',

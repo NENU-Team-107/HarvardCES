@@ -28,11 +28,6 @@ const tabMenu = computed(() => {
 })
 
 const toggleShowMore = (index: number) => {
-  for (let i = 0; i < tabMenu.value.length; i++) {
-    if (i !== index) {
-      tabMenu.value[i].show = false;
-    }
-  }
   tabMenu.value[index].show = !tabMenu.value[index].show;
 }
 
@@ -70,19 +65,20 @@ const eduHKPresident = computed(() => {
       :ui="{ wrapper: 'hidden md:flex gap-4 px-10', list: { width: 'w-60', tab: { size: 'text-base text-nowrap', padding: 'py-5', font: 'font-bold' } } }"
       class="bg-white/80 w-full h-full min-h-screen" @change="handleChange">
       <template #item>
-        <div class="min-h-full flex flex-col px-20 py-10 bg-white/80">
+        <div class="min-h-full w-full flex flex-col px-20 py-5 bg-white/80">
 
           <!-- TODO 样式问题，主要是 ULink 部分的样式和位置(可以使用红色粗体/蓝色粗体)，上面 pdf 与 图片的顺序不要改变，从上到下即可 -->
           <div v-if="showCES === true">
 
             <ClientOnly>
-              <div class="items-center justify-center text-center flex">
+              <div
+                class="items-center justify-center text-center flex w-full bg-pdf-bg bg-gradient-to-b from-pdf-top from-20% via-pdf-middle via-60% to-pdf-top  to-90%">
                 <PDFViewer pdf-path="img/harvard/Introduction.pdf"></PDFViewer>
               </div>
-              <NuxtImg src="img/harvard/aiming.png" />
-              <NuxtImg src="img/harvard/reachUs.png" />
+              <NuxtImg src="img/harvard/aiming.png" class="w-full" />
+              <NuxtImg src="img/harvard/reachUs.png" class="w-full" />
 
-              <div>
+              <div class="font-semibold text-white bg-red-800 p-2">
                 <ULink to="https://www.hgseces.org/">
                   {{ $t("About Us.HarvardCES.link") }}
                 </ULink>
@@ -92,50 +88,55 @@ const eduHKPresident = computed(() => {
 
           </div>
 
-          <div v-else>
+          <div v-else class="w-full min-h-full relative">
             <!-- TODO 样式修改，主要是图片的样式，一个在左一个在右 -->
-
-            <div class="mb-5">
-              <Title titleMap="About Us.EduHK.intro title" />
-              <div v-html="eduHKIntro"></div>
-            </div>
-
-            <div class="flex">
-              <div class="w-full h-full">
-                <NuxtImg src="img/eduhk/vision.png" />
+            <div class="z-20 bg-white">
+              <div class="mb-5 z-20">
+                <Title titleMap="About Us.EduHK.intro title" />
+                <div v-html="eduHKIntro"></div>
               </div>
 
-              <div>
-                <div class="mb-5">
-                  <Title titleMap="About Us.EduHK.vision title" />
-                  <div v-html="eduHKVision"></div>
+              <div class="flex flex-row h-full w-full z-20">
+                <div class="w-4/12 min-h-full flex justify-center items-center ">
+                  <NuxtImg src="img/eduhk/vision.png" class="w-11/12 m-auto" />
                 </div>
 
-                <div class="mb-5">
-                  <Title titleMap="About Us.EduHK.mission title" />
-                  <div v-html="eduHKMission"></div>
-                </div>
-              </div>
-            </div>
+                <div class="w-8/12 h-full z-20 flex flex-col justify-center items-center">
+                  <div class="my-3">
+                    <Title titleMap="About Us.EduHK.vision title" />
+                    <div v-html="eduHKVision"></div>
+                  </div>
 
-            <div class="mb-5">
-              <Title titleMap="About Us.EduHK.president title" />
-              <div class="flex justify-center items-center">
-                <div v-html="eduHKPresident"></div>
-                <div class="w-full h-full">
-                  <NuxtImg src="img/eduhk/Chi-Kin John.png" />
+                  <div class="my-3">
+                    <Title titleMap="About Us.EduHK.mission title" />
+                    <div v-html="eduHKMission"></div>
+                  </div>
                 </div>
               </div>
+
+              <div class="mb-5 flex flex-col w-full h-full">
+                <Title titleMap="About Us.EduHK.president title" />
+
+                <div class="flex flex-row h-full w-full">
+                  <div class="w-4/5 h-full z-20">
+                    <div v-html="eduHKPresident" />
+                  </div>
+                  <div class="w-1/5 min-h-full flex justify-center items-start ">
+                    <NuxtImg src="img/eduhk/Chi-Kin John.png" class="rounded-full mx-auto w-4/5" />
+                  </div>
+                </div>
+
+              </div>
+
+
+              <div class="font-semibold text-white bg-red-800 p-2">
+                <ULink to="https://www.eduhk.hk/en/">
+                  {{ $t("About Us.EduHK.link") }}
+                </ULink>
+                <font-awesome icon="fa-solid fa-arrow-right" />
+              </div>
+
             </div>
-
-
-            <div>
-              <ULink to="https://www.eduhk.hk/en/">
-                {{ $t("About Us.EduHK.link") }}
-              </ULink>
-              <font-awesome icon="fa-solid fa-arrow-right" />
-            </div>
-
           </div>
         </div>
       </template>
@@ -177,8 +178,70 @@ const eduHKPresident = computed(() => {
             </div>
           </template>
 
-          <div>
+          <div class="w-full max-w-screen-md">
             <!-- TODO 补全资料 -->
+            <div v-if="item.index === 0" class="w-full max-w-screen">
+              <ClientOnly>
+                <div
+                  class="items-center justify-center text-center flex w-full bg-pdf-bg bg-gradient-to-b from-pdf-top from-20% via-pdf-middle via-60% to-pdf-top  to-90%">
+                  <PDFViewer pdf-path="img/harvard/Introduction.pdf"></PDFViewer>
+                </div>
+                <NuxtImg src="img/harvard/aiming.png" class="w-full" />
+                <NuxtImg src="img/harvard/reachUs.png" class="w-full" />
+
+                <div class="font-semibold text-white bg-red-800 text-center p-2">
+                  <ULink to="https://www.hgseces.org/">
+                    {{ $t("About Us.HarvardCES.link") }}
+                  </ULink>
+                  <font-awesome icon="fa-solid fa-arrow-right" />
+                </div>
+              </ClientOnly>
+            </div>
+            <div v-else-if="item.index === 1" class="w-full px-2 py-1">
+              <div class="z-20 bg-white">
+                <div class="mb-5 z-20">
+                  <Title titleMap="About Us.EduHK.intro title" />
+                  <div v-html="eduHKIntro"></div>
+                </div>
+
+                <div class="min-h-full flex justify-center items-center ">
+                  <NuxtImg src="img/eduhk/vision.png" class="w-11/12 m-auto" />
+                </div>
+
+                <div class="h-full z-20 flex flex-col justify-center items-center">
+                  <div class="my-3">
+                    <Title titleMap="About Us.EduHK.vision title" />
+                    <div v-html="eduHKVision"></div>
+                  </div>
+
+                  <div class="my-3">
+                    <Title titleMap="About Us.EduHK.mission title" />
+                    <div v-html="eduHKMission"></div>
+                  </div>
+                </div>
+
+                <div class="mb-5 flex flex-col w-full h-full">
+                  <Title titleMap="About Us.EduHK.president title" />
+
+                  <div class="min-h-full flex justify-center items-start ">
+                    <NuxtImg src="img/eduhk/Chi-Kin John.png" class="rounded-full mx-auto w-2/5" />
+                  </div>
+                  <div class="h-full z-20">
+                    <div v-html="eduHKPresident" />
+                  </div>
+
+                </div>
+
+
+                <div class="font-semibold text-white bg-red-800 text-center p-2">
+                  <ULink to="https://www.eduhk.hk/en/">
+                    {{ $t("About Us.EduHK.link") }}
+                  </ULink>
+                  <font-awesome icon="fa-solid fa-arrow-right" />
+                </div>
+
+              </div>
+            </div>
           </div>
 
         </UCard>
@@ -186,3 +249,5 @@ const eduHKPresident = computed(() => {
     </div>
   </div>
 </template>
+
+<style scoped></style>

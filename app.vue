@@ -13,7 +13,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: '楷体','KaiTi',"Times New Roman", 'Arial', 'sans-serif';
+  font-family: '楷体', 'KaiTi', "Times New Roman", 'Arial', 'sans-serif';
 }
 
 body {
@@ -23,4 +23,13 @@ body {
   max-width: 1920px
 }
 
+canvas {
+  max-width: 100%;
+  height: auto;
+}
+div:has(> canvas) {
+  display: flex!important;
+  justify-content: center;
+  align-items: center;
+}
 </style>
