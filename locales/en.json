@@ -180,7 +180,8 @@
       }
     },
     "Poster": {
-      "id0": "./assets/poster/sub1-en.pdf"
+      "id0": "./assets/poster/sub1-en.pdf",
+      "id1": "./assets/poster/sub2-zh.pdf"
     }
   }
 }

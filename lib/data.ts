@@ -274,5 +274,12 @@ export const SubSymposiumPoster: Array<Poster> = [
         path: 'img/poster/Sub-symposium1.png',
         callPath: "server.Poster.id0",
         link: 'sub-symposium/0'
+    },
+    {
+        id: 1,
+        name: 'Sub-symposium2',
+        path: 'img/poster/Sub-symposium2.png',
+        callPath: "server.Poster.id1",
+        link: 'sub-symposium/1'
     }
 ]

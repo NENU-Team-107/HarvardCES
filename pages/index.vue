@@ -118,7 +118,7 @@ const slides = ref(["/img/poster/cover_zh_Hant.jpg", "/img/poster/cover_zh_Hans.
       </div>
 
       <div class="bg-white/80 p-10">
-        <Title :titleMap="title.speaker"/>
+        <Title :titleMap="title.speaker" />
         <div class="grid md:grid-cols-3 gap-4 pl-10">
           <div v-for="speaker in VisibleSpeakersList">
             <SpeakersIntroduction :speakers="speaker" />
