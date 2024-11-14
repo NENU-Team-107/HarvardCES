@@ -18,8 +18,8 @@ const routerArray = ref<RouterItem[]>([
     path: "/about",
   },
   {
-    name: "Sessions",
-    path: "/sessions",
+    name: "Session",
+    path: "/session",
   },
   {
     name: "Speakers",

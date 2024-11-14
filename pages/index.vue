@@ -87,7 +87,7 @@ const slides = ref<SwiperItem[]>([
   <div class="w-full flex flex-col justify-center items-center relative my-10 pt-24">
 
     <div
-      class="w-full justify-center items-center flex bg-gradient-to-r from-cover-left from-30% via-red-500 via-40% to-cover-right to-30%">
+      class="w-full justify-center items-center flex bg-gradient-to-r from-cover-left from-30% via-red-500 via-40% to-cover-right to-30% ">
       <CoverImage :Slides="slides" />
     </div>
 

@@ -18,7 +18,8 @@ const fetchPosters = async () => {
     slides.value = data.map((poster) => {
       return {
         src: poster.path,
-        link: poster.link
+        link: poster.link,
+        details: true
       } as SwiperItem;
     })
   }

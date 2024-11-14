@@ -47,5 +47,6 @@ export interface TabItems {
 }
 export interface SwiperItem {
     src: string,
-    link?: string
+    link?: string,
+    details?: boolean
 }
