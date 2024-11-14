@@ -91,7 +91,7 @@ const toggleShowMore = (index: number) => {
 <template>
   <div class="w-full h-full min-h-screen mx-10 my-5 pt-24">
     <UTabs :items="navMenu" orientation="vertical"
-      :ui="{ wrapper: 'gap-4 px-10 hidden md:flex', list: { width: 'w-60', tab: { background: 'bg-tabs-header', size: 'text-base text-nowrap', padding: 'py-5' } } }"
+      :ui="{ wrapper: 'gap-4 px-10 hidden md:flex', list: { width: 'w-60', tab: { size: 'text-base text-nowrap', padding: 'py-5', font: 'font-bold' } } }"
       class="bg-white/80 w-full h-full min-h-screen" @change="handleClick">
       <template #item>
         <div class="grid md:grid-cols-3 gap-2">

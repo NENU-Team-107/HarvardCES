@@ -65,7 +65,7 @@ const toggleShowMore = (index: number) => {
 <template>
   <div class="w-full h-full min-h-screen mx-10 my-5 pt-24">
     <UTabs :items="tabMenu" orientation="vertical"
-      :ui="{ wrapper: 'gap-4 px-10 hidden md:flex', list: { width: 'w-60', tab: { size: 'text-base text-nowrap', padding: 'py-5' } } }"
+      :ui="{ wrapper: 'gap-4 px-10 hidden md:flex', list: { width: 'w-60', tab: { size: 'text-base text-nowrap', padding: 'py-5', font: 'font-bold' } } }"
       class="bg-white/80 w-full h-full min-h-screen" @change="handleChange">
       <template #item="{ item }">
         <div class="min-h-full flex flex-col px-20 py-10 bg-white/80 justify-center items-center h-full w-full">
@@ -94,24 +94,24 @@ const toggleShowMore = (index: number) => {
       <div class="md:hidden">
         <div v-for="item in tabMenu">
           <UCard :ui="{
-          base: '',
-          background: 'bg-white dark:bg-gray-900',
-          divide: 'divide-y divide-gray-200 dark:divide-gray-800',
-          ring: 'ring-1 ring-gray-200 dark:ring-gray-800',
-          rounded: 'rounded-lg',
-          shadow: 'shadow',
-          body: {
             base: '',
-            background: '',
-            padding: ''
-          },
-          header: {
-            base: '',
-            background: 'bg-tabs-header',
-            padding: 'px-4 py-3 sm:px-6'
-          },
-        }
-          ">
+            background: 'bg-white dark:bg-gray-900',
+            divide: 'divide-y divide-gray-200 dark:divide-gray-800',
+            ring: 'ring-1 ring-gray-200 dark:ring-gray-800',
+            rounded: 'rounded-lg',
+            shadow: 'shadow',
+            body: {
+              base: '',
+              background: '',
+              padding: ''
+            },
+            header: {
+              base: '',
+              background: 'bg-tabs-header',
+              padding: 'px-4 py-3 sm:px-6'
+            },
+          }
+            ">
             <template #header>
               <div class="flex w-full justify-between">
                 <span>{{ item.label }}</span>
