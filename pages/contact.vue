@@ -180,16 +180,12 @@ const eduHKPresident = computed(() => {
           </template>
 
           <div class="w-full max-w-screen-md">
-            <div v-if="item.index === 0" class="w-full max-w-screen">
+            <div v-if="item.index === 0 && item.show" class="w-full max-w-screen">
               <ClientOnly>
-                <div
-                  class="items-center justify-center text-center flex w-full bg-pdf-bg bg-gradient-to-b from-pdf-top from-20% via-pdf-middle via-60% to-pdf-top  to-90%">
-                  <PDFViewer pdf-path="img/harvard/Introduction.pdf"></PDFViewer>
-                </div>
-                <NuxtImg src="img/harvard/aiming.png" class="w-full" />
-                <NuxtImg src="img/harvard/reachUs.png" class="w-full" />
-
-                <div class="font-semibold text-white bg-red-800 text-center p-2">
+                <NuxtImg src="img/harvard/Introduction.png" class="items-center justify-center w-2/3 ml-16 mt-2" />
+                <NuxtImg src="img/harvard/aiming.png" class="items-center justify-center w-10/12 ml-6" />
+                <NuxtImg src="img/harvard/reachUs.png" class="items-center justify-center w-10/12 ml-6" />
+                <div class="font-semibold text-white bg-red-800 mt-2 text-lg w-10/12 ml-6 mb-2">
                   <ULink to="https://www.hgseces.org/">
                     {{ $t("About Us.HarvardCES.link") }}
                   </ULink>
@@ -197,30 +193,30 @@ const eduHKPresident = computed(() => {
                 </div>
               </ClientOnly>
             </div>
-            <div v-else-if="item.index === 1" class="w-full px-2 py-1">
-              <div class="z-20 bg-white">
+            <div v-else-if="item.index === 1 && item.show" class="w-full px-2 py-1">
+              <div class="z-20 bg-white mt-4">
                 <div class="mb-5 z-20">
                   <Title titleMap="About Us.EduHK.intro title" />
                   <div v-html="eduHKIntro"></div>
                 </div>
 
-                <div class="min-h-full flex justify-center items-center ">
+                <div class="min-h-full flex justify-center items-center">
                   <NuxtImg src="img/eduhk/vision.png" class="w-11/12 m-auto" />
                 </div>
 
-                <div class="h-full z-20 flex flex-col justify-center items-center">
+                <div class="h-full z-20 flex flex-col justify-center items-center mt-2">
                   <div class="my-3">
                     <Title titleMap="About Us.EduHK.vision title" />
                     <div v-html="eduHKVision"></div>
                   </div>
 
-                  <div class="my-3">
+                  <div class="my-3 mt-2">
                     <Title titleMap="About Us.EduHK.mission title" />
                     <div v-html="eduHKMission"></div>
                   </div>
                 </div>
 
-                <div class="mb-5 flex flex-col w-full h-full">
+                <div class="mb-5 flex flex-col w-full h-full mt-2">
                   <Title titleMap="About Us.EduHK.president title" />
 
                   <div class="min-h-full flex justify-center items-start ">
@@ -233,7 +229,7 @@ const eduHKPresident = computed(() => {
                 </div>
 
 
-                <div class="font-semibold text-white bg-red-800 text-center p-2">
+                <div class="font-semibold text-white bg-green-800 text-center p-2">
                   <ULink to="https://www.eduhk.hk/en/">
                     {{ $t("About Us.EduHK.link") }}
                   </ULink>

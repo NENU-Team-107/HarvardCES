@@ -37,6 +37,10 @@ const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value;
 };
 
+const closeMenu = () => {
+  isMenuOpen.value = false;
+};
+
 </script>
 
 <template>
@@ -74,17 +78,17 @@ const toggleMenu = () => {
     <div v-show="isMenuOpen"
       class="absolute top-0 right-0 mt-16 w-48 bg-white border border-gray-200 rounded shadow-lg md:hidden">
       <div v-for="item in routerArray" :key="item.path" class="relative group text-lg font-semibold">
-        <NuxtLinkLocale :to="item.path" class="block px-4 py-2 text-blue-500">
+        <NuxtLinkLocale :to="item.path" class="block px-4 py-2 text-blue-500" @click="closeMenu">
           <span class="underline">{{ $t(item.name) }}</span>
         </NuxtLinkLocale>
         <div v-if="item.children" class="mt-2 bg-white border border-gray-200 rounded shadow-lg">
           <NuxtLinkLocale v-for="child in item.children" :key="child.path" :to="child.path"
-            class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+            class="block px-4 py-2 text-gray-700 hover:bg-gray-100" @click="closeMenu">
             {{ $t(child.name) }}
           </NuxtLinkLocale>
         </div>
       </div>
-      <LangSwitch class="block px-4 py-2" />
+      <LangSwitch class="block px-4 py-2" @languageChanged="closeMenu" />
     </div>
 
   </div>
