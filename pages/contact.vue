@@ -28,7 +28,7 @@ const tabMenu = computed(() => {
 })
 
 const toggleShowMore = (index: number) => {
-  tabMenu.value[index].show = !tabMenu.value[index].show;
+  tabMenuBase.value[index].show = !tabMenuBase.value[index].show;
 }
 
 const showCES = ref(true)
@@ -62,7 +62,7 @@ const eduHKPresident = computed(() => {
   <div class="w-full h-full min-h-screen mx-10 my-5 pt-24">
     <NuxtPage />
     <UTabs :items="tabMenu" orientation="vertical"
-      :ui="{ wrapper: 'hidden md:flex gap-4 px-10 dark:bg-black', list: { width: 'w-60', tab: { size: 'text-base text-nowrap', padding: 'py-5', font: 'font-bold' } } }"
+      :ui="{ wrapper: 'hidden md:flex gap-4 px-10 dark:bg-black text-wrap', list: { width: 'w-60', tab: { size: 'text-base text-wrap', padding: 'py-5', font: 'font-bold', base: 'text-balance break-words' } } }"
       class="bg-white/80 w-full h-full min-h-screen" @change="handleChange">
       <template #item>
         <div class="min-h-full w-full flex flex-col px-20 py-5 bg-white/80 dark:bg-gray-800/80 dark:text-white">
@@ -71,18 +71,21 @@ const eduHKPresident = computed(() => {
           <div v-if="showCES === true">
 
             <ClientOnly>
-              <div
-                class="items-center justify-center text-center flex min-w-4/5 min-h-full bg-pdf-bg bg-gradient-to-b from-pdf-top from-20% via-pdf-middle via-60% to-pdf-top  to-90%">
-                <PDFViewer pdf-path="img/harvard/Introduction.pdf"></PDFViewer>
-              </div>
-              <NuxtImg src="img/harvard/aiming.png" class="w-full" />
-              <NuxtImg src="img/harvard/reachUs.png" class="w-full" />
-
-              <div class="font-semibold text-white bg-red-800 p-2">
-                <ULink to="https://www.hgseces.org/">
-                  {{ $t("About Us.HarvardCES.link") }}
-                </ULink>
-                <font-awesome class="ml-1" icon="fa-solid fa-arrow-right" />
+              <div class="items-center justify-center ml-24">
+                <!-- <div> -->
+                <!-- <div
+                  class="items-center justify-center text-center flex min-w-4/5 min-h-full bg-pdf-bg bg-gradient-to-b from-pdf-top from-20% via-pdf-middle via-60% to-pdf-top  to-90%"> -->
+                <!-- <PDFViewer pdf-path="img/harvard/Introduction.pdf"></PDFViewer> -->
+                <!-- </div> -->
+                <NuxtImg src="img/harvard/Introduction.png" class="items-center justify-center w-2/3 ml-12" />
+                <NuxtImg src="img/harvard/aiming.png" sizes="800" class="items-center justify-center" />
+                <NuxtImg src="img/harvard/reachUs.png" sizes="800" class="items-center justify-center" />
+                <div class="font-semibold text-white bg-red-800 mt-5 text-lg w-10/12">
+                  <ULink to="https://www.hgseces.org/">
+                    {{ $t("About Us.HarvardCES.link") }}
+                  </ULink>
+                  <font-awesome class="ml-1" icon="fa-solid fa-arrow-right" />
+                </div>
               </div>
             </ClientOnly>
 
@@ -141,7 +144,7 @@ const eduHKPresident = computed(() => {
       </template>
     </UTabs>
     <div class="md:hidden">
-      <div v-for="item in tabMenu">
+      <div v-for="item in tabMenuBase">
         <UCard :ui="{
           base: '',
           background: 'bg-white dark:bg-gray-900',
@@ -246,5 +249,3 @@ const eduHKPresident = computed(() => {
     </div>
   </div>
 </template>
-
-<style scoped></style>

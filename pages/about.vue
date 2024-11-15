@@ -53,9 +53,9 @@ const handleChange = (index: number) => {
 }
 
 const toggleShowMore = (index: number) => {
-  tabMenu.value[index].show = !tabMenu.value[index].show;
+  tabMenuBase.value[index].show = !tabMenuBase.value[index].show;
 
-  if (index === 1 && tabMenu.value[index].show) {
+  if (index === 1 && tabMenuBase.value[index].show) {
     fetchLocationImage()
   }
 }
@@ -93,7 +93,7 @@ const toggleShowMore = (index: number) => {
     </UTabs>
     <ClientOnly>
       <div class="md:hidden">
-        <div v-for="item in tabMenu">
+        <div v-for="item in tabMenuBase">
           <UCard :ui="{
             base: '',
             background: 'bg-white dark:bg-gray-900',
