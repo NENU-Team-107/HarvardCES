@@ -62,7 +62,7 @@ const eduHKPresident = computed(() => {
   <div class="w-full h-full min-h-screen mx-10 my-5 pt-24">
     <NuxtPage />
     <UTabs :items="tabMenu" orientation="vertical"
-      :ui="{ wrapper: 'hidden md:flex gap-4 px-10 dark:bg-black text-wrap', list: { width: 'w-60', tab: { size: 'text-base text-wrap', padding: 'py-5', font: 'font-bold', base: 'text-balance break-words' } } }"
+      :ui="{ wrapper: 'hidden md:flex gap-4 px-10 dark:bg-black text-wrap break-all', list: { width: 'w-60', tab: { size: 'text-base text-wrap break-all', padding: 'py-10', font: 'font-bold', base: 'text-balance break-all' } } }"
       class="bg-white/80 w-full h-full min-h-screen" @change="handleChange">
       <template #item>
         <div class="min-h-full w-full flex flex-col px-20 py-5 bg-white/80 dark:bg-gray-800/80 dark:text-white">
@@ -246,6 +246,14 @@ const eduHKPresident = computed(() => {
 
         </UCard>
       </div>
-    </div>
+    </div class=" break-all">
   </div>
 </template>
+
+<style>
+.truncate {
+  word-break: break-all;
+  text-overflow: unset;
+  white-space: inherit;
+}
+</style>

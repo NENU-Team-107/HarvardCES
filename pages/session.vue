@@ -35,8 +35,8 @@ const toggleShowMore = (index: number) => {
     <div class="w-full h-full min-h-screen mx-10 my-5 pt-24">
         <NuxtPage />
 
-        <!-- <UTabs :items="tabMenu" orientation="vertical"
-            :ui="{ wrapper: 'hidden md:flex gap-4 px-10 dark:bg-black', list: { width: 'w-60', tab: { size: 'text-base', padding: 'py-5', font: 'font-bold', base: 'break-all' } } }"
+        <UTabs :items="tabMenu" orientation="vertical"
+            :ui="{ wrapper: 'hidden md:flex gap-4 px-10 dark:bg-black', list: { width: 'w-60', tab: { size: 'text-base', padding: 'py-10', font: 'font-bold', base: 'break-all' } } }"
             class="bg-white/80 w-full h-full min-h-screen">
             <template #item="{ item }">
                 <div class="min-h-full w-full flex flex-col px-20 py-5 bg-white/80  dark:bg-gray-800/80">
@@ -47,9 +47,9 @@ const toggleShowMore = (index: number) => {
                     </div>
                 </div>
             </template>
-</UTabs> -->
+        </UTabs>
 
-        <div>
+        <div class="md:hidden">
             <div v-for="item in tabMenuBase">
                 <UCard :ui="{
                     base: '',
