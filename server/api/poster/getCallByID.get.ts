@@ -7,8 +7,14 @@ export default defineEventHandler(async (event) => {
 
     const filePath = t(query.path as string)
 
-    const pdf = fs.readFileSync(filePath)
-    event.node.res.setHeader('Content-Type', 'application/pdf')
-    event.node.res.write(Buffer.from(pdf))
-    event.node.res.end()
+
+    try {
+        const pdf = fs.readFileSync(filePath)
+        event.node.res.setHeader('Content-Type', 'application/pdf')
+        event.node.res.write(Buffer.from(pdf))
+        event.node.res.end()
+    } catch (err) {
+        event.node.res.statusCode = 404
+    }
+
 });

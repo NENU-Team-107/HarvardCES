@@ -41,9 +41,8 @@ const toggleShowMore = (index: number) => {
             <template #item="{ item }">
                 <div class="min-h-full w-full flex flex-col px-20 py-5 bg-white/80  dark:bg-gray-800/80">
 
-
                     <div v-if="item.index === 0">
-                        <SubSwiper />
+                        <SubSwiper :cards="true" />
                     </div>
                 </div>
             </template>
@@ -87,7 +86,7 @@ const toggleShowMore = (index: number) => {
 
                     <div class="w-full min-w-screen-md">
                         <div v-if="item.index === 0 && item.show">
-                            <SubSwiper />
+                            <SubSwiper :cards="true" />
                         </div>
                     </div>
 

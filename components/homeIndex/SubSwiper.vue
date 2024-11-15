@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full justify-center items-center flex h-ful">
+  <div v-if="!cards" class="w-full justify-center items-center flex h-full">
     <Swiper :modules="[SwiperAutoplay, SwiperEffectCreative, SwiperNavigation, SwiperAutoplay]" :slides-per-view="3"
       :space-between="10" :loop="true" :autoplay="{
         delay: 5000,
@@ -51,15 +51,10 @@
         </UCard>
       </SwiperSlide>
     </Swiper>
-
-    <!-- <CoverImage :Slides="slides" :ImgSize="'300'" /> -->
   </div>
-  <!-- <div class="w-full flex flex-row">
-    <div class="h-full ">
-      <font-awesome icon="fa-solid fa-arrow-left" @click="handleChange(-1)" />
-    </div>
+  <div v-else class="w-full flex flex-row">
     <div class="grid md:grid-cols-3 gap-4 px-10 flex-1">
-      <div v-for="slide in subslides" class="dark:text-white">
+      <div v-for="slide in slides" class="dark:text-white">
         <UCard v-if="slide.details" :ui="{
           divide: '',
           ring: '',
@@ -81,16 +76,12 @@
               </div>
             </div>
           </template>
-</UCard>
-</div>
-</div>
-<div>
-  <font-awesome icon="fa-solid fa-arrow-right" @click="handleChange(1)" />
-</div>
-</div> -->
+        </UCard>
+      </div>
+    </div>
+  </div>
 </template>
 <script setup lang="ts">
-// import CoverImage from '~/components/homeIndex/CoverImage.vue'
 import type { Poster, SwiperItem } from '~/lib/model';
 import { useRouter } from 'vue-router';
 
@@ -111,7 +102,6 @@ const fetchPosters = async () => {
         details: true
       } as SwiperItem;
     })
-    subslides.value = slides.value.slice(0, 3);
   }
 }
 
@@ -122,28 +112,6 @@ onMounted(() => {
 const posterList = ref<Poster[]>([]);
 
 const slides = ref<SwiperItem[]>([]);
-
-const subslides = ref<SwiperItem[]>([]);
-const currentPos = ref(0);
-const handleChange = (index: number) => {
-  if (index == -1) {
-    currentPos.value -= 1;
-    if (currentPos.value < 0) {
-      currentPos.value = slides.value.length - 1;
-    }
-    for (let i = 0; i < 3; i++) {
-      subslides.value[i] = slides.value[(currentPos.value + i) % slides.value.length];
-    }
-  } else {
-    currentPos.value += 1;
-    if (currentPos.value >= slides.value.length) {
-      currentPos.value = 0;
-    }
-    for (let i = 0; i < 3; i++) {
-      subslides.value[i] = slides.value[(currentPos.value + i) % slides.value.length];
-    }
-  }
-}
 
 const ImgSize = ref("300")
 
@@ -157,5 +125,10 @@ const jump = (link: string) => {
   router.push(link)
 }
 
+const cards = defineModel('cards', {
+  required: true,
+  type: Boolean,
+  default: false
+});
 
 </script>

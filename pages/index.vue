@@ -132,7 +132,7 @@ const slides = ref<SwiperItem[]>([
       <div class="bg-white/80 dark:bg-gray-900/80 p-10">
         <Title :titleMap="title.workshop" class="dark:text-white/90" />
         <!-- TODO 补全资料 -->
-        <SubSwiper />
+        <SubSwiper :cards="false" />
       </div>
 
       <div class="bg-white/80 dark:bg-gray-900/80 p-10">
