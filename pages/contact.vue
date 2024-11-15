@@ -249,7 +249,6 @@ const eduHKPresident = computed(() => {
     </div class=" break-all">
   </div>
 </template>
-
 <style>
 .truncate {
   word-break: break-all;

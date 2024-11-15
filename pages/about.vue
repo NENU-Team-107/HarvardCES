@@ -158,3 +158,10 @@ const toggleShowMore = (index: number) => {
     </ClientOnly>
   </div>
 </template>
+<style>
+.truncate {
+  word-break: break-all;
+  text-overflow: unset;
+  white-space: inherit;
+}
+</style>

@@ -27,9 +27,16 @@ canvas {
   max-width: 100%;
   height: 100%;
 }
+
 div:has(> canvas) {
-  display: flex!important;
+  display: flex !important;
   justify-content: center;
   align-items: center;
+}
+
+.truncate {
+  word-break: break-all;
+  text-overflow: unset;
+  white-space: inherit;
 }
 </style>
