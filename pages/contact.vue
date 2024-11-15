@@ -78,9 +78,9 @@ const eduHKPresident = computed(() => {
                 <!-- <PDFViewer pdf-path="img/harvard/Introduction.pdf"></PDFViewer> -->
                 <!-- </div> -->
                 <NuxtImg src="img/harvard/Introduction.png" class="items-center justify-center w-2/3 ml-12" />
-                <NuxtImg src="img/harvard/aiming.png" sizes="800" class="items-center justify-center" />
-                <NuxtImg src="img/harvard/reachUs.png" sizes="800" class="items-center justify-center" />
-                <div class="font-semibold text-white bg-red-800 mt-5 text-lg w-10/12">
+                <NuxtImg src="img/harvard/aiming.png" sizes="700" class="items-center justify-center ml-6" />
+                <NuxtImg src="img/harvard/reachUs.png" sizes="700" class="items-center justify-center ml-6" />
+                <div class="font-semibold text-white bg-red-800 mt-5 text-lg w-9/12 ml-3">
                   <ULink to="https://www.hgseces.org/">
                     {{ $t("About Us.HarvardCES.link") }}
                   </ULink>

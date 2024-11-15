@@ -180,20 +180,6 @@ export const organizingCommittee: Array<Speaker> = [
         }
     },
     {
-        id: 11,
-        name: "server.Organizing Committee.id3.name",
-        kind: "Organizing Committee",
-        photo: "./assets/avatars/Rongbing Shen.png",
-        activateDate: new Date("2025-05-09"),
-        bio: {
-            details: {
-                description: "server.Organizing Committee.id3.description",
-                title: "server.Organizing Committee.id3.title",
-                link: 'speaker/11 RongbingShen'
-            }
-        }
-    },
-    {
         id: 12,
         name: "server.Organizing Committee.id4.name",
         kind: "Organizing Committee",
@@ -221,23 +207,23 @@ export const organizingCommittee: Array<Speaker> = [
             }
         }
     },
-]
-
-export const guestOfHonor: Array<Speaker> = [
     {
-        id: 14,
-        name: "server.Guest of Honor.id1.name",
-        kind: "Guest of Honor",
-        photo: "./assets/avatars/Anny Chan.png",
+        id: 11,
+        name: "server.Organizing Committee.id3.name",
+        kind: "Organizing Committee",
+        photo: "./assets/avatars/Rongbing Shen.png",
         activateDate: new Date("2025-05-09"),
         bio: {
             details: {
-                description: "server.Guest of Honor.id1.description",
-                title: "server.Guest of Honor.id1.title",
-                link: 'speaker/14 AnnyChan'
+                description: "server.Organizing Committee.id3.description",
+                title: "server.Organizing Committee.id3.title",
+                link: 'speaker/11 RongbingShen'
             }
         }
     },
+]
+
+export const guestOfHonor: Array<Speaker> = [
     {
         id: 15,
         name: "server.Guest of Honor.id2.name",
@@ -263,6 +249,20 @@ export const guestOfHonor: Array<Speaker> = [
                 description: "server.Guest of Honor.id3.description",
                 title: "server.Guest of Honor.id3.title",
                 link: 'speaker/16 CHAN,CheHinChetwyn'
+            }
+        }
+    },
+    {
+        id: 14,
+        name: "server.Guest of Honor.id1.name",
+        kind: "Guest of Honor",
+        photo: "./assets/avatars/Anny Chan.png",
+        activateDate: new Date("2025-05-09"),
+        bio: {
+            details: {
+                description: "server.Guest of Honor.id1.description",
+                title: "server.Guest of Honor.id1.title",
+                link: 'speaker/14 AnnyChan'
             }
         }
     },

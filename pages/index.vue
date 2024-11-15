@@ -140,17 +140,17 @@ const slides = ref<SwiperItem[]>([
         <Title :titleMap="title.logo" class="dark:text-white/90"></Title>
         <div>
           <div>
-            <div class="font-bold text-lg pl-10 dark:text-white/90">{{ $t("Organised by") }}</div>
+            <div class="font-bold text-2xl pl-10 dark:text-white/90">{{ $t("Organised by") }}</div>
             <div class="w-full flex justify-center items-center">
-              <NuxtImg :src="host.path" sizes="400" />
+              <NuxtImg :src="host.path" sizes="900" />
             </div>
           </div>
           <div class="w-full flex flex-col dark:text-white/90">
-            <div class="font-bold text-lg pl-10">{{ $t("In collaboration with") }}</div>
+            <div class="font-bold text-xl pl-10">{{ $t("In collaboration with") }}</div>
             <div class="w-full flex items-center justify-evenly md:flex-row flex-col">
               <div v-for="logo in logoList" class="md:my-0 my-2">
                 <NuxtLink :to="logo.link">
-                  <NuxtImg :src="logo.path" class="h-16" />
+                  <NuxtImg :src="logo.path" class="h-16" sizes="400" />
                 </NuxtLink>
               </div>
             </div>

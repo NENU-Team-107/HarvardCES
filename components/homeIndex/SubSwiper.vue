@@ -29,7 +29,7 @@
           background: 'dark:bg-gray-900/80'
         }">
           <!-- 固定高度的图片容器 -->
-          <div class="h-[400px] overflow-hidden">
+          <div class="h-[26rem] overflow-hidden">
             <NuxtImg :src="slide.src" fit="contain" :class="[
               slide.link ? 'hover:cursor-pointer' : '',
               'w-full h-full object-contain'
@@ -39,7 +39,7 @@
           <template #footer>
             <div class="flex justify-end w-full">
               <div v-if="slide.details" class="right-20 w-32 h-20 text-sm">
-                <div class="font-semibold text-white bg-red-800 text-center p-2">
+                <div class="font-semibold text-white bg-green-800 text-center p-2">
                   <ULink :to="slide.link">
                     {{ $t("About Us.EduHK.link") }}
                   </ULink>
@@ -62,12 +62,14 @@
           shadow: '',
           background: 'dark:bg-gray-900/80'
         }">
-          <NuxtImg :src="slide.src" fit="contain" :class="slide.link ? 'mx-1 hover:cursor-pointer' : 'mx-1'"
-            :sizes="ImgSize" @click="jump(slide.link ? slide.link : '-1')" />
+          <div class="h-[30rem] overflow-hidden">
+            <NuxtImg :src="slide.src" fit="contain" :class="slide.link ? 'mx-1 hover:cursor-pointer' : 'mx-1'"
+              :sizes="ImgSize" @click="jump(slide.link ? slide.link : '-1')" />
+          </div>
           <template #footer>
             <div class="flex justify-end w-full">
               <div v-if="slide.details" class="right-20 w-32 h-20 text-sm">
-                <div class="font-semibold text-white bg-red-800 text-center p-2">
+                <div class="font-semibold text-white bg-green-800 text-center p-2">
                   <ULink :to="slide.link">
                     {{ $t("About Us.EduHK.link") }}
                   </ULink>
