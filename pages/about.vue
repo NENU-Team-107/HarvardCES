@@ -69,7 +69,7 @@ const toggleShowMore = (index: number) => {
       class="bg-white/80 w-full h-full min-h-screen" @change="handleChange">
       <template #item="{ item }">
         <div
-          class="min-h-screen flex flex-col px-20 py-10 bg-white/80 dark:bg-gray-800/80 dark:text-white justify-center items-center h-full w-full">
+          class="flex flex-col px-20 py-10 bg-white/80 dark:bg-gray-800/80 dark:text-white justify-center items-center h-full w-full">
           <h1 v-if="item.content === 'Symposium Introduction'" class="text-center font-bold text-2xl py-6">{{
             $t("Symposium.Title") }}
           </h1>
@@ -77,7 +77,7 @@ const toggleShowMore = (index: number) => {
             {{ $t("Symposium Location") }}
           </h1>
           <div class="flex items-center justify-center w-full flex-1">
-            <div v-if="item.content === 'Symposium Introduction'" class="-mt-40" v-html="Introduction" />
+            <div v-if="item.content === 'Symposium Introduction'" v-html="Introduction" />
             <div v-else-if="item.content === 'Symposium Location'">
               <NuxtImg :src="LocationImage" loading="lazy" />
               <div class="items-center justify-center text-center text-lg mt-5">

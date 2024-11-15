@@ -96,12 +96,12 @@
     "Organizing Committee": {
       "id1": {
         "description": "Professor Chi-Kin John Lee is a distinguished academic and leader in education, currently serving as President and Chair Professor at The Education University of Hong Kong. His career is marked by significant contributions to curriculum and instruction, including roles as Vice President (Academic) and Provost. Former Dean of Education and a recipient of the Vice-Chancellor’s Exemplary Teaching Award at The Chinese University of Hong Kong (CUHK), Professor Lee has an extensive research background with a focus on various educational areas. He is a top-cited scientist and has secured numerous grants for his projects. Professor Lee is an active member of several editorial boards, has authored and co-edited over 25 books, and has been involved in education and social services locally, nationally and globally. His projects have won awards, and he has held various prestigious positions, including Changjiang Scholar Chair Professor, UNESCO Chair and membership in the Chinese People’s Political Consultative Conference.",
-        "name": "Professor LEE, Chi-Kin John",
+        "name": "Professor John Chi-Kin Le",
         "title": "President, Chair Professor of Curriculum and Instruction, The Education University of Hong Kong, UNESCO Chair"
       },
       "id2": {
         "description": "Dr. Minjuan Wang is a newly appointed Chair Professor of Emerging and Technologies and Future Education at the Education University of Hong Kong, Co-Director of the Global Institute for Emerging Technologies, and Editor-in-Chief of the IEEE Transactions on Learning Technologies (TLT). Her research specialties are multidisciplinary, focusing on STEM Education, Future Education enabled by new and emerging technologies, Metaverse and immersive learning, and the design and implementation of artificial intelligence including AIGC for teaching, learning and training. Professor Wang is a high-impact author and an internationally recognized scholar who has keynoted more than 45 conferences. She publishes extensively in indexed and high-impact English journals such as Nature-HSSC, Computers and Education, IEEE-TLT, and British Journal of Education Technology. In addition, her teaching and research were also featured in top core journals in China (e.g., Educational Research). As a senior member of the IEEE Education Society, she has contributed significantly to both the IEEE community and other scholarly circles. Her international reputation in the field is evident, reflected in her recent nomination as an iLRN scholar by Chris Dede from Harvard University. ",
-        "name": "Professor Minjuan WANG",
+        "name": "Professor Minjuan Wang",
         "title": "The Education University of Hong Kong, Senior Member, IEEE; EiC, IEEE Transactions on Learning Technologies (IEEE-TLT)"
       },
       "id3": {
@@ -123,18 +123,18 @@
     "Keynote Speakers": {
       "id1": {
         "description": "Professor Chi-Kin John Lee is a distinguished academic and leader in education, currently serving as President and Chair Professor at The Education University of Hong Kong. His career is marked by significant contributions to curriculum and instruction, including roles as Vice President (Academic) and Provost. Former Dean of Education and a recipient of the Vice-Chancellor’s Exemplary Teaching Award at The Chinese University of Hong Kong (CUHK), Professor Lee has an extensive research background with a focus on various educational areas. He is a top-cited scientist and has secured numerous grants for his projects. Professor Lee is an active member of several editorial boards, has authored and co-edited over 25 books, and has been involved in education and social services locally, nationally and globally. His projects have won awards, and he has held various prestigious positions, including Changjiang Scholar Chair Professor, UNESCO Chair and membership in the Chinese People’s Political Consultative Conference.",
-        "name": "Professor LEE, Chi-Kin John",
+        "name": "Professor John Chi-Kin Le",
         "title": "President, Chair Professor of Curriculum and Instruction, The Education University of Hong Kong, UNESCO Chair"
       },
       "id2": {
         "description": "",
-        "name": "Prof. Ren Youqun",
+        "name": "Professor Youqun Ren",
         "title": "Secretary of the CPC shandong University Committee, Doctor of Education, Professor, Vice President of the Chinese Society of Education, Deputy Director of the National Graduate Education Steering Committee for Professional Education "
       },
       "id3": {
         "description": "Prior to becoming a Senior Research Fellow, for 22 years Chris Dede was the Timothy E. Wirth Professor in Learning Technologies. His fundamental interest is developing new types of educational systems to meet the opportunities and challenges of the 21st century. His research spans emerging technologies for learning, infusing technology into large-scale educational improvement initiatives, developing policies that support educational transformation, and providing leadership in educational innovation. Currently, Dede is a co-principal investigator of the NSF-funded National Artificial Intelligence Institute in Adult Learning and Online Education. He co-founded the Silver Lining for Learning initiative and developed a widely used Framework for scaling up educational innovations.",
         "name": "Dr. Chris Dede",
-        "title": "Distinguished Professor and Senior Research Fellow, Harvard University (Likely Online)"
+        "title": "Distinguished Professor and Senior Research Fellow, Harvard University"
       },
       "id4": {
         "description": "Dr. Shijin Wang is currently the Executive Dean of the iFlytek Research Institute, Deputy Director of the National Key Laboratory of Cognitive Intelligence, and a part-time professor and doctoral advisor at the University of Science and Technology of China. His main research areas include signal processing, large models, and industry intelligence. He has received numerous awards, including the National Science and Technology Progress Award (First Class), the Provincial Science and Technology Award (First Class), the Wu Wenjun Artificial Intelligence Science and Technology Progress Award (First Class), the China Youth May Fourth Medal (collective), and the China Association for Science and Technology’s Qiu Shi Outstanding Youth Achievement Transformation Award. He has led his team to win several international competitions such as SQuAD, GLUE, and VCR. Dr. Wang spearheaded the “iFlytek Xinghuo Large Model Technology and Application” project, releasing the leading Xinghuo large model in China and continuously empowering multiple industry applications.",
@@ -143,7 +143,7 @@
       },
       "id5": {
         "description": "Dr. Minjuan Wang is a newly appointed Chair Professor of Emerging and Technologies and Future Education at the Education University of Hong Kong, Co-Director of the Global Institute for Emerging Technologies, and Editor-in-Chief of the IEEE Transactions on Learning Technologies (TLT). Her research specialties are multidisciplinary, focusing on STEM Education, Future Education enabled by new and emerging technologies, Metaverse and immersive learning, and the design and implementation of artificial intelligence including AIGC for teaching, learning and training. Professor Wang is a high-impact author and an internationally recognized scholar who has keynoted more than 45 conferences. She publishes extensively in indexed and high-impact English journals such as Nature-HSSC, Computers and Education, IEEE-TLT, and British Journal of Education Technology. In addition, her teaching and research were also featured in top core journals in China (e.g., Educational Research). As a senior member of the IEEE Education Society, she has contributed significantly to both the IEEE community and other scholarly circles. Her international reputation in the field is evident, reflected in her recent nomination as an iLRN scholar by Chris Dede from Harvard University. ",
-        "name": "Professor Minjuan WANG",
+        "name": "Professor Minjuan Wang",
         "title": "The Education University of Hong Kong, Senior Member, IEEE; EiC, IEEE Transactions on Learning Technologies (IEEE-TLT)"
       },
       "id6": {

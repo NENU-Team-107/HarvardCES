@@ -20,7 +20,7 @@ const title = computed(() => {
       <div class="font-bold text-center text-xl py-2">
         {{ $t(props.speakers.name) }}
       </div>
-      <div v-html="title">
+      <div class="text-center" v-html="title">
       </div>
     </div>
 

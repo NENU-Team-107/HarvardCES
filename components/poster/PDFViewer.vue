@@ -15,7 +15,7 @@ const { pdf, pages } = usePDF(props.pdfPath)
 </script>
 
 <template>
-  <div v-for="page in pages" :key="page" class="w-full flex justify-center items-center px-auto">
+  <div v-for="page in pages" :key="page" class="max-w-4/5 flex justify-center items-center px-auto">
     <VuePDF :pdf="pdf" :page="page" class="w-full h-auto flex justify-center items-center relative" fit-parent />
   </div>
 </template>

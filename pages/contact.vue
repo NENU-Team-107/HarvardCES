@@ -72,7 +72,7 @@ const eduHKPresident = computed(() => {
 
             <ClientOnly>
               <div
-                class="items-center justify-center text-center flex w-full bg-pdf-bg bg-gradient-to-b from-pdf-top from-20% via-pdf-middle via-60% to-pdf-top  to-90%">
+                class="items-center justify-center text-center flex min-w-4/5 min-h-full bg-pdf-bg bg-gradient-to-b from-pdf-top from-20% via-pdf-middle via-60% to-pdf-top  to-90%">
                 <PDFViewer pdf-path="img/harvard/Introduction.pdf"></PDFViewer>
               </div>
               <NuxtImg src="img/harvard/aiming.png" class="w-full" />
@@ -128,7 +128,7 @@ const eduHKPresident = computed(() => {
               </div>
 
 
-              <div class="font-semibold text-white bg-red-800 p-2">
+              <div class="font-semibold text-white bg-green-800 p-2">
                 <ULink to="https://www.eduhk.hk/en/">
                   {{ $t("About Us.EduHK.link") }}
                 </ULink>
