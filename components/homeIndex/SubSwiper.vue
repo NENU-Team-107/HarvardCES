@@ -1,5 +1,5 @@
 <template>
-  <div v-if="!cards" class="w-full justify-center items-center flex h-full">
+  <div v-if="!cards" class="w-full  flex">
     <Swiper :modules="[SwiperAutoplay, SwiperEffectCreative, SwiperNavigation, SwiperAutoplay]" :slides-per-view="3"
       :space-between="10" :loop="true" :autoplay="{
         delay: 5000,
@@ -20,26 +20,28 @@
       }">
 
       <SwiperSlide v-for="(slide, idx) in slides" :key="idx"
-        class="w-full flex justify-center items-center h-fit relative">
-        <UCard v-if="slide.details" :ui="{
+        class="w-full flex justify-center items-center h-full relative ">
+        <UCard v-if="slide.details" class="u-card-class" :ui="{
+          base: '',
           divide: '',
           ring: '',
           rounded: '',
           shadow: '',
-          background: 'dark:bg-gray-900/80'
+          background: 'dark:bg-gray-900/80 w-full h-full',
+
+          footer: {
+            base: 'flex justify-end w-full flex-col',
+          }
         }">
           <!-- 固定高度的图片容器 -->
-          <div class="h-[26rem] overflow-hidden">
-            <NuxtImg :src="slide.src" fit="contain" :class="[
-              slide.link ? 'hover:cursor-pointer' : '',
-              'w-full h-full object-contain'
-            ]" :sizes="ImgSize" @click="jump(slide.link ? slide.link : '-1')" />
+          <div class="max-h-[30rem] overflow-hidden flex-1 justify-center w-full flex">
+            <NuxtImg :src="slide.src" fit="contain" :class="slide.link ? 'mx-0 hover:cursor-pointer' : 'mx-0'"
+              :sizes="ImgSize" @click="jump(slide.link ? slide.link : '-1')" />
           </div>
-
           <template #footer>
-            <div class="flex justify-end w-full">
-              <div v-if="slide.details" class="right-20 w-32 h-20 text-sm">
-                <div class="font-semibold text-white bg-green-800 text-center p-2">
+            <div class="flex w-full h-20">
+              <div v-if="slide.details" class="w-11/12 text-sm justify-end flex relative">
+                <div class="font-semibold text-white bg-green-800 text-center p-2 h-fit absolute bottom-0 right-0">
                   <ULink :to="slide.link">
                     {{ $t("About Us.EduHK.link") }}
                   </ULink>
@@ -54,22 +56,27 @@
   </div>
   <div v-else class="w-full flex flex-row">
     <div class="grid md:grid-cols-3 gap-4 px-10 flex-1">
-      <div v-for="slide in slides" class="dark:text-white">
-        <UCard v-if="slide.details" :ui="{
+      <div v-for="slide in slides" class="dark:text-white relative h-full w-full">
+        <UCard v-if="slide.details" class="u-card-class" :ui="{
+          base: '',
           divide: '',
           ring: '',
           rounded: '',
           shadow: '',
-          background: 'dark:bg-gray-900/80'
+          background: 'dark:bg-gray-900/80 w-full h-full',
+
+          footer: {
+            base: 'flex justify-end w-full flex-col',
+          }
         }">
-          <div class="h-[30rem] overflow-hidden">
-            <NuxtImg :src="slide.src" fit="contain" :class="slide.link ? 'mx-1 hover:cursor-pointer' : 'mx-1'"
+          <div class="max-h-[30rem] overflow-hidden flex-1 justify-center w-full flex">
+            <NuxtImg :src="slide.src" fit="contain" :class="slide.link ? 'mx-0 hover:cursor-pointer' : 'mx-0'"
               :sizes="ImgSize" @click="jump(slide.link ? slide.link : '-1')" />
           </div>
           <template #footer>
-            <div class="flex justify-end w-full">
-              <div v-if="slide.details" class="right-20 w-32 h-20 text-sm">
-                <div class="font-semibold text-white bg-green-800 text-center p-2">
+            <div class="flex w-full h-20">
+              <div v-if="slide.details" class="w-11/12 text-sm justify-end flex relative">
+                <div class="font-semibold text-white bg-green-800 text-center p-2 h-fit absolute bottom-0 right-0">
                   <ULink :to="slide.link">
                     {{ $t("About Us.EduHK.link") }}
                   </ULink>
@@ -134,3 +141,21 @@ const cards = defineModel('cards', {
 });
 
 </script>
+<style>
+.u-card-class>div {
+  padding: 0 !important;
+  /* 强制去除内边距 */
+  height: 50%;
+}
+
+.swiper-wrapper>.swiper-slide {
+  padding: 0 !important;
+  height: 100% !important;
+}
+.swiper-wrapper{
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  height: 100%;
+}
+</style>

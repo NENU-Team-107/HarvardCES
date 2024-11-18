@@ -79,7 +79,7 @@ const jump = (link: string) => {
   justify-content: center;
   align-items: center;
   font-size: 18px;
-  height: fit-content;
+  height: 100%;
   font-size: 4rem;
   font-weight: bold;
   font-family: 'Roboto', sans-serif;
@@ -98,6 +98,7 @@ const jump = (link: string) => {
 
 .swiper-wrapper {
   min-width: 100vh;
+  height: 100% !important;
   width: 100vh;
 }
 
@@ -110,4 +111,5 @@ const jump = (link: string) => {
   border-radius: 6px;
   border: 1px solid black;
 }
+
 </style>

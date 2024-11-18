@@ -67,19 +67,12 @@ const eduHKPresident = computed(() => {
       <template #item>
         <div class="min-h-full w-full flex flex-col px-20 py-5 bg-white/80 dark:bg-gray-800/80 dark:text-white">
 
-          <!-- OK: 样式问题，主要是 ULink 部分的样式和位置(可以使用红色粗体/蓝色粗体)，上面 pdf 与 图片的顺序不要改变，从上到下即可 -->
           <div v-if="showCES === true">
-
             <ClientOnly>
-              <div class="items-center justify-center ml-24">
-                <!-- <div> -->
-                <!-- <div
-                  class="items-center justify-center text-center flex min-w-4/5 min-h-full bg-pdf-bg bg-gradient-to-b from-pdf-top from-20% via-pdf-middle via-60% to-pdf-top  to-90%"> -->
-                <!-- <PDFViewer pdf-path="img/harvard/Introduction.pdf"></PDFViewer> -->
-                <!-- </div> -->
-                <NuxtImg src="img/harvard/Introduction.png" class="items-center justify-center w-2/3 ml-12" />
-                <NuxtImg src="img/harvard/aiming.png" sizes="700" class="items-center justify-center ml-6" />
-                <NuxtImg src="img/harvard/reachUs.png" sizes="700" class="items-center justify-center ml-6" />
+              <div class="items-center justify-center flex flex-col w-full px-auto">
+                <NuxtImg src="img/harvard/Introduction.png" class="w-2/3" />
+                <NuxtImg src="img/harvard/aiming.png"  class="w-2/3" />
+                <NuxtImg src="img/harvard/reachUs.png"  class="w-2/3" />
                 <div class="font-semibold text-white bg-red-800 mt-5 text-lg w-9/12 ml-3">
                   <ULink to="https://www.hgseces.org/">
                     {{ $t("About Us.HarvardCES.link") }}
@@ -88,7 +81,6 @@ const eduHKPresident = computed(() => {
                 </div>
               </div>
             </ClientOnly>
-
           </div>
 
           <div v-else class="w-full min-h-full relative">
