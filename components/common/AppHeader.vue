@@ -47,7 +47,7 @@ const closeMenu = () => {
   <div class="w-full flex h-24 bg-nav-bg justify-between items-center px-16 z-50 fixed top-0 shadow-sm">
     <div class="h-full flex justify-center items-center">
       <NuxtLinkLocale to="/" class="text-blue-500">
-        <NuxtImg src="img/logo/HostLogo_small.jpg" class="w-11/12 h-full"></NuxtImg>
+        <NuxtImg src="img/logo/HostLogo_small.jpg" class="h-full" sizes="600"></NuxtImg>
       </NuxtLinkLocale>
     </div>
     <div class="h-full justify-center items-center flex-row hidden md:flex">
