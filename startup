@@ -1,9 +1,15 @@
 #!/bin/bash
+
 echo "Pulling latest version"
 
-git pull
+git_output=$(git pull)
 
-wait
+if [[ $git_output == *"Already up to date."* ]]; then
+  echo "No changes detected. Exiting."
+  exit 0
+fi
+
+echo "Changes detected. Proceeding with build."
 
 echo "Building"
 
