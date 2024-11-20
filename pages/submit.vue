@@ -63,15 +63,18 @@ const contact = [{
 
 
 <template>
-    <div class="w-full h-full min-h-screen mx-10 my-5 pt-24">
+    <div class="w-full min-h-screen mx-10 my-5 pt-24">
         <NuxtPage />
         <!-- TODO 样式，本页只有一个标题栏目，后续需要填写渲染的均为链接内容 -->
         <div
-            class="flex flex-col px-20 py-10 bg-white/80 dark:bg-gray-800/80 dark:text-white justify-center items-center h-full w-full">
+            class="flex flex-col px-20 py-10 bg-white/80 dark:bg-gray-800/80 dark:text-white justify-center items-center min-h-screen w-full">
             <h1 class="text-center font-bold text-2xl py-6">
                 {{ $t("Sub-symposium Sessions Submit") }}
             </h1>
-            <div class="flex items-center justify-center w-full flex-1 text-xl">
+            <h2 class="text-red-600/80">
+                <strong><i>Due 31 December, 2024; Notification by 31 January, 2025, Extension upon request</i></strong>
+            </h2>
+            <div class="flex mt-10 justify-center w-full flex-1 text-xl">
                 <UTable
                     :ui="{ td: { size: 'text-base', color: 'text-black drak:text:white' }, th: { size: 'text-lg' } }"
                     :rows="contact" :columns="columns" />

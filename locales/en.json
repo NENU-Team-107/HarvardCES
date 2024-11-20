@@ -8,7 +8,7 @@
   "Contact": "Contact",
   "Back": "Back",
   "Details": "Details",
-  "Workshop and Sub-symposium Sessions": "Workshop and Sub-symposium Sessions",
+  "Workshop and Sub-symposium Sessions": "Workshop and Parallel Sessions",
   "Session": "Parallel Session",
   "Host": {
     "Name": "Organizer",
@@ -51,6 +51,7 @@
       "Details": "Inquiries: {0}"
     }
   },
+  "Disclaimer": "<span class=\"text-start\"><strong><i>Disclaimer:</i></strong></span><i>The ideas and opinions expressed in this  symposium are those of the speakers;</i><br><span class=\"ml-20\"><i>they are not necessarily those of UNESCO and do not commit the Organization.</i></span>",
   "Symposium": {
     "Title": "Introduction",
     "Click": "Click About for more details",
@@ -70,7 +71,7 @@
   "Workshop": "Workshop",
   "Poster": "Poster",
   "Track": "Track",
-  "Sub-symposium Sessions Submit": "Sub-symposium Sessions Submission",
+  "Sub-symposium Sessions Submit": "Parallel Sessions Submission",
   "About Us": {
     "EduHK": {
       "intro title": "About EdUHK",
@@ -89,7 +90,7 @@
     }
   },
   "pSession": {
-    "sub-symposium": "Sub-symposium: Presentation Session",
+    "sub-symposium": "Parallel Session: Presentation Session",
     "poster": " Poster and Showcase Session"
   },
   "server": {

@@ -71,8 +71,8 @@ const eduHKPresident = computed(() => {
             <ClientOnly>
               <div class="items-center justify-center flex flex-col w-full px-auto">
                 <NuxtImg src="img/harvard/Introduction.png" class="w-2/3" />
-                <NuxtImg src="img/harvard/aiming.png"  class="w-2/3" />
-                <NuxtImg src="img/harvard/reachUs.png"  class="w-2/3" />
+                <NuxtImg src="img/harvard/aiming.png" class="w-2/3" />
+                <NuxtImg src="img/harvard/reachUs.png" class="w-2/3" />
                 <div class="font-semibold text-white bg-red-800 mt-5 text-lg w-9/12 ml-3">
                   <ULink to="https://www.hgseces.org/">
                     {{ $t("About Us.HarvardCES.link") }}
@@ -87,7 +87,7 @@ const eduHKPresident = computed(() => {
             <div class="z-20 bg-white  dark:bg-gray-800/80">
               <div class="mb-5 z-20">
                 <Title titleMap="About Us.EduHK.intro title" />
-                <div v-html="eduHKIntro"></div>
+                <div class="text-justify" v-html="eduHKIntro"></div>
               </div>
 
               <div class="flex flex-row h-full w-full z-20">
@@ -98,12 +98,12 @@ const eduHKPresident = computed(() => {
                 <div class="w-8/12 h-full z-20 flex flex-col justify-center items-center">
                   <div class="my-3">
                     <Title titleMap="About Us.EduHK.vision title" />
-                    <div v-html="eduHKVision"></div>
+                    <div class="text-justify" v-html="eduHKVision"></div>
                   </div>
 
                   <div class="my-3">
                     <Title titleMap="About Us.EduHK.mission title" />
-                    <div v-html="eduHKMission"></div>
+                    <div class="text-justify" v-html="eduHKMission"></div>
                   </div>
                 </div>
               </div>
@@ -113,7 +113,7 @@ const eduHKPresident = computed(() => {
 
                 <div class="flex flex-row h-full w-full">
                   <div class="w-4/5 h-full z-20">
-                    <div v-html="eduHKPresident" />
+                    <div class="text-justify" v-html="eduHKPresident" />
                   </div>
                   <div class="w-1/5 min-h-full flex justify-center items-start ">
                     <NuxtImg src="img/eduhk/Chi-Kin John.png" class="rounded-full mx-auto w-4/5" />
@@ -189,7 +189,7 @@ const eduHKPresident = computed(() => {
               <div class="z-20 bg-white mt-4">
                 <div class="mb-5 z-20">
                   <Title titleMap="About Us.EduHK.intro title" />
-                  <div v-html="eduHKIntro"></div>
+                  <div class="text-justify" v-html="eduHKIntro"></div>
                 </div>
 
                 <div class="min-h-full flex justify-center items-center">
@@ -199,12 +199,12 @@ const eduHKPresident = computed(() => {
                 <div class="h-full z-20 flex flex-col justify-center items-center mt-2">
                   <div class="my-3">
                     <Title titleMap="About Us.EduHK.vision title" />
-                    <div v-html="eduHKVision"></div>
+                    <div class="text-justify" v-html="eduHKVision"></div>
                   </div>
 
                   <div class="my-3 mt-2">
                     <Title titleMap="About Us.EduHK.mission title" />
-                    <div v-html="eduHKMission"></div>
+                    <div class="text-justify" v-html="eduHKMission"></div>
                   </div>
                 </div>
 
@@ -215,7 +215,7 @@ const eduHKPresident = computed(() => {
                     <NuxtImg src="img/eduhk/Chi-Kin John.png" class="rounded-full mx-auto w-2/5" />
                   </div>
                   <div class="h-full z-20">
-                    <div v-html="eduHKPresident" />
+                    <div class="text-justify" v-html="eduHKPresident" />
                   </div>
 
                 </div>

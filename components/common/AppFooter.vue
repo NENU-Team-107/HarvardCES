@@ -59,7 +59,7 @@ const media = ref<MediaItemType[]>([
               </template> -->
             </UButton>
           </div>
-          <NuxtImg src="img/logo/UNESCOLogo.png" sizes="320" />
+          <NuxtImg src="img/logo/UNESCOLogo-single.png" sizes="320" />
         </div>
       </div>
       <div class="flex justify-center items-center">
@@ -76,7 +76,7 @@ const media = ref<MediaItemType[]>([
         <div class="flex flex-col justify-center items-center">
           <div class="flex flex-row">
             <div v-for="item in media" class="flex flex-row ml-5">
-              <div class="flex flex-col justify-center items-center">
+              <div class="flex flex-col justify-center items-center text-justify">
                 <span>{{ $t("Media." + item.label + ".Intro") }}</span>
                 <NuxtImg v-if="item.label !== 'Email'" :src="item.image" class="w-20 h-20"></NuxtImg>
                 <span> {{ $t("Media." + item.label + ".Details") }}</span>

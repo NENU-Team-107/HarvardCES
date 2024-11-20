@@ -22,6 +22,21 @@ const logoList = ref([
     label: "Collaborator",
     path: "img/logo/co-IEEE-TLTlogo.png",
     link: "https://ieee-edusociety.org/publication/about-publications/tlt"
+  },
+  {
+    label: "Collaborator",
+    path: "img/logo/co-sklcilogo.png",
+    link: "https://cogskl.iflytek.com/"
+  },
+  {
+    label: "Collaborator",
+    path: "img/logo/co-ERCELlogo.jpg",
+    link: ""
+  },
+  {
+    label: "Collaborator",
+    path: "img/logo/co-ERCELlogo.jpg",
+    link: ""
   }
 ])
 
@@ -94,7 +109,6 @@ const slides = ref<SwiperItem[]>([
     <div class="my-10 px-2 flex flex-col w-full">
 
       <div class="bg-white/80 dark:bg-gray-900/80 p-10">
-        <!-- NOTE 这里是论坛介绍 -->
         <Title :titleMap="title.intro" />
         <div class="text-lg pl-10">
           <div :innerHTML="SymposiumIntro" class="dark:text-white/90"></div>
@@ -131,7 +145,6 @@ const slides = ref<SwiperItem[]>([
 
       <div class="bg-white/80 dark:bg-gray-900/80 p-10">
         <Title :titleMap="title.workshop" class="dark:text-white/90" />
-        <!-- TODO 补全资料 -->
         <SubSwiper :cards="false" />
       </div>
 
@@ -139,33 +152,47 @@ const slides = ref<SwiperItem[]>([
         <!-- NOTE 这部分是主办单位和合作者的 Logo -->
         <Title :titleMap="title.logo" class="dark:text-white/90"></Title>
         <div>
-          <div>
+          <div class="mb-5">
             <div class="font-bold text-2xl pl-10 dark:text-white/90">{{ $t("Organised by") }}</div>
-            <div class="w-full flex justify-center items-center">
+
+            <!-- TODO 去掉 Logo，使用文字 -->
+            <!-- <div class="w-full flex justify-center items-center">
+
               <NuxtImg :src="host.path" sizes="900" />
-            </div>
-          </div>
-          <div class="w-full flex flex-col dark:text-white/90">
-            <div class="font-bold text-xl pl-10">{{ $t("In collaboration with") }}</div>
-            <div class="w-full flex items-center justify-evenly md:flex-row flex-col">
-              <div v-for="logo in logoList" class="md:my-0 my-2">
-                <NuxtLink :to="logo.link">
-                  <NuxtImg :src="logo.path" class="h-16" sizes="400" />
-                </NuxtLink>
+
+            </div> -->
+
+            <div class="grid grid-cols-2 gap-2 items-center justify-center text-center text-lg font-semibold">
+              <div class=" hover:text-red-400">
+                Harvard CES, Graduate School of Education, Harvard University;
+              </div>
+              <div class=" hover:text-green-800/80">
+                President's Office and Global Institute for Emerging Technologies (GIET), The Education University of
+                Hong Kong
               </div>
             </div>
+
+          </div>
+
+          <div class="w-full dark:text-white/90">
+            <div class="font-bold text-xl pl-10">{{ $t("In collaboration with") }}</div>
+            <div>
+              <div class="grid grid-cols-3 gap-4 mt-5 w-full">
+                <div v-for="logo in logoList" class="flex items-center justify-center">
+                  <NuxtLink :to="logo.link">
+                    <NuxtImg :src="logo.path" :class="logo.path === 'img/logo/co-ERCELlogo.jpg' ? 'h-20' : 'h-14'" />
+                  </NuxtLink>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="w-full flex items-center justify-evenly md:flex-row flex-col">
+
+            </div> -->
+
             <div class="text-center mt-4 text-sm">
               <span><i> Assisted By the Department of Mathematics and Information Technology of EdUHK</i></span>
-              <div class="mt-1">
-                <span class="text-start">
-                  <strong><i>Disclaimer:</i></strong>
-                </span>
-                <i>The ideas and opinions expressed in this symposium are those of the speakers;</i>
-                <br>
-                <span class="ml-20"><i>they are not necessarily those of UNESCO and do not commit the
-                    Organization.</i></span>
+              <div class="mt-1" v-html="$t('Disclaimer')">
               </div>
-
             </div>
           </div>
         </div>

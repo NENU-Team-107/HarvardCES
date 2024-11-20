@@ -77,7 +77,7 @@ const toggleShowMore = (index: number) => {
             {{ $t("Symposium Location") }}
           </h1>
           <div class="flex items-center justify-center w-full flex-1">
-            <div v-if="item.content === 'Symposium Introduction'" v-html="Introduction" />
+            <div v-if="item.content === 'Symposium Introduction'" class="text-justify" v-html="Introduction" />
             <div v-else-if="item.content === 'Symposium Location'">
               <NuxtImg :src="LocationImage" loading="lazy" />
               <div class="items-center justify-center text-center text-lg mt-5">
@@ -137,7 +137,7 @@ const toggleShowMore = (index: number) => {
                 {{ $t("Symposium Location") }}
               </h1>
               <div class="flex justify-center items-center w-full flex-1">
-                <div v-if="item.index === 0" v-html="Introduction" />
+                <div v-if="item.index === 0" class="text-justify" v-html="Introduction" />
                 <div v-else-if="item.index === 1">
                   <NuxtImg :src="LocationImage" />
                   <div class="items-center justify-center text-center text-lg mt-5">

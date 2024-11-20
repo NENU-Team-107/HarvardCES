@@ -15,7 +15,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'display': ['KaiTi', 'Time New Roman'],
+        'display': ['"Times New Roman"', 'KaiTi'],
+        'body': ['"Times New Roman"', 'KaiTi'],
       },
       backgroundImage: {
         'letter-paper': "url('~/assets/bg/letter-paper.png')",

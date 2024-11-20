@@ -34,6 +34,9 @@ export default defineNuxtConfig({
     exposeConfig: true,
   },
   i18n: {
+    compilation: {
+      strictMessage: false,
+    },
     strategy: "no_prefix",
     locales: currentLocales,
     langDir: "locales",

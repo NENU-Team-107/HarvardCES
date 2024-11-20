@@ -51,6 +51,7 @@
       "Details": "詳情請諮詢：{0}"
     }
   },
+  "Disclaimer": "<span class=\"text-start\"><strong><i>免責聲明：</i></strong></span><i>本次研討會所發表的觀點和意見僅代表演講者本人；</i><br><span class=\"ml-20\"><i>並不代表UNESCO、哈佛中國教育論壇和香港教育大學的立場和觀點。</i></span>",
   "Symposium": {
     "Title": "論壇簡介",
     "Click": "詳情請點擊論壇介紹",

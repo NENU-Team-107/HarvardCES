@@ -44,10 +44,10 @@ const title = computed(() => {
           {{ t(speaker.name) }}
         </h1>
         <div class="text-center w-full text-lg font-semibold text-slate-900 dark:text-white py-2 ">
-          <div v-html="title"></div>
+          <div class="text-justify" v-html="title"></div>
         </div>
         <div class="px-10 text-center ">
-          <div v-html="description" />
+          <div class="text-justify" v-html="description" />
         </div>
       </div>
     </div>
