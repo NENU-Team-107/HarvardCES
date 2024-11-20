@@ -155,7 +155,17 @@ const slides = ref<SwiperItem[]>([
               </div>
             </div>
             <div class="text-center mt-4 text-sm">
-              Assisted By the Department of Mathematics and Information Technology of EdUHK
+              <span><i> Assisted By the Department of Mathematics and Information Technology of EdUHK</i></span>
+              <div class="mt-1">
+                <span class="text-start">
+                  <strong><i>Disclaimer:</i></strong>
+                </span>
+                <i>The ideas and opinions expressed in this symposium are those of the speakers;</i>
+                <br>
+                <span class="ml-20"><i>they are not necessarily those of UNESCO and do not commit the
+                    Organization.</i></span>
+              </div>
+
             </div>
           </div>
         </div>
