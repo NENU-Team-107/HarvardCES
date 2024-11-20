@@ -49,7 +49,18 @@ const media = ref<MediaItemType[]>([
     <div class="text-xl font-bold text-center py-2">{{ $t(footerTitle) }}</div>
     <div class="flex md:flex-row flex-col items-center justify-center gap-3 w-full">
       <div class="flex justify-center items-center mx-10">
-        <NuxtImg src="img/logo/UNESCOLogo.png" sizes="320" />
+        <div>
+          <div class="items-center justify-center mb-2 max-w-md max-h-28">
+            <UButton icon="i-fa6-solid-heart" padding="2xs" gap="xs" color="sky" variant="soft"
+              :ui="{ rounded: 'rounded-full', font: 'font-bold' }" block :trailing="true" to="" target="_blank">
+              <span class="text-lg">Sponsor Ship</span>
+              <!-- <template #trailing>
+                <UIcon name="i-heroicons-arrow-right-20-solid" class="w-5 h-5" />
+              </template> -->
+            </UButton>
+          </div>
+          <NuxtImg src="img/logo/UNESCOLogo.png" sizes="320" />
+        </div>
       </div>
       <div class="flex justify-center items-center">
         <div class="flex-1 items-center justify-center">
