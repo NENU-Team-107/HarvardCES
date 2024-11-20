@@ -164,11 +164,10 @@ const slides = ref<SwiperItem[]>([
 
             <div class="grid grid-cols-2 gap-2 items-center justify-center text-center text-lg font-semibold">
               <div class=" hover:text-red-400">
-                Harvard CES, Graduate School of Education, Harvard University;
+                {{ $t("Harvard") }}
               </div>
               <div class=" hover:text-green-800/80">
-                President's Office and Global Institute for Emerging Technologies (GIET), The Education University of
-                Hong Kong
+                {{ $t("GIET") }}
               </div>
             </div>
 
