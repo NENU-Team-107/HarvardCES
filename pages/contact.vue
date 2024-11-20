@@ -67,13 +67,13 @@ const eduHKPresident = computed(() => {
       <template #item>
         <div class="min-h-full w-full flex flex-col px-20 py-5 bg-white/80 dark:bg-gray-800/80 dark:text-white">
 
-          <div v-if="showCES === true">
+          <div v-if="showCES === true" class="w-full max-w-screen">
             <ClientOnly>
               <div class="items-center justify-center flex flex-col w-full px-auto">
-                <NuxtImg src="img/harvard/Introduction.png" class="w-2/3" />
-                <NuxtImg src="img/harvard/aiming.png" class="w-2/3" />
-                <NuxtImg src="img/harvard/reachUs.png" class="w-2/3" />
-                <div class="font-semibold text-white bg-red-800 mt-5 text-lg w-9/12 ml-3">
+                <NuxtImg src="img/harvard/Introduction.png" class="w-2/5" />
+                <NuxtImg src="img/harvard/aiming.png" class="w-2/5" />
+                <NuxtImg src="img/harvard/reachUs.png" class="w-2/5" />
+                <div class="font-semibold text-white bg-red-800 mt-5 text-lg w-5/12">
                   <ULink to="https://www.hgseces.org/">
                     {{ $t("About Us.HarvardCES.link") }}
                   </ULink>
@@ -92,7 +92,7 @@ const eduHKPresident = computed(() => {
 
               <div class="flex flex-row h-full w-full z-20">
                 <div class="w-4/12 min-h-full flex justify-center items-center ">
-                  <NuxtImg src="img/eduhk/vision.png" class="w-11/12 m-auto" />
+                  <NuxtImg src="img/eduhk/vision.png" class="w-11/12 m-5" />
                 </div>
 
                 <div class="w-8/12 h-full z-20 flex flex-col justify-center items-center">
