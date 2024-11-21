@@ -35,8 +35,8 @@ const logoList = ref([
   },
   {
     label: "Collaborator",
-    path: "img/logo/co-ERCELlogo.jpg",
-    link: ""
+    path: "img/logo/co-iFLYTEKlogo.png",
+    link: "https://www.iflytek.com/cn/"
   }
 ])
 
@@ -179,7 +179,7 @@ const slides = ref<SwiperItem[]>([
               <div class="grid grid-cols-3 gap-4 mt-5 w-full">
                 <div v-for="logo in logoList" class="flex items-center justify-center">
                   <NuxtLink :to="logo.link">
-                    <NuxtImg :src="logo.path" :class="logo.path === 'img/logo/co-ERCELlogo.jpg' ? 'h-16' : 'h-14'" />
+                    <NuxtImg :src="logo.path" :class="logo.path === 'img/logo/co-ERCELlogo.jpg' ? 'h-14' : 'h-10'" />
                   </NuxtLink>
                 </div>
               </div>
