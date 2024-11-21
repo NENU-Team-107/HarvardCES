@@ -179,7 +179,7 @@ const slides = ref<SwiperItem[]>([
               <div class="grid grid-cols-3 gap-4 mt-5 w-full">
                 <div v-for="logo in logoList" class="flex items-center justify-center">
                   <NuxtLink :to="logo.link">
-                    <NuxtImg :src="logo.path" :class="logo.path === 'img/logo/co-ERCELlogo.jpg' ? 'h-20' : 'h-14'" />
+                    <NuxtImg :src="logo.path" :class="logo.path === 'img/logo/co-ERCELlogo.jpg' ? 'h-16' : 'h-14'" />
                   </NuxtLink>
                 </div>
               </div>
