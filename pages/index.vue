@@ -16,27 +16,38 @@ const logoList = ref([
   {
     label: "Collaborator",
     path: "img/logo/co-iLRNLogo.png",
-    link: "https://www.immersivelrn.org/"
+    link: "https://www.immersivelrn.org/",
+    height: 10,
   },
   {
     label: "Collaborator",
     path: "img/logo/co-IEEE-TLTlogo.png",
-    link: "https://ieee-edusociety.org/publication/about-publications/tlt"
+    link: "https://ieee-edusociety.org/publication/about-publications/tlt",
+    height: 12,
   },
   {
     label: "Collaborator",
     path: "img/logo/co-sklcilogo.png",
-    link: "https://cogskl.iflytek.com/"
+    link: "https://cogskl.iflytek.com/",
+    height: 14,
   },
   {
     label: "Collaborator",
     path: "img/logo/co-ERCELlogo.jpg",
-    link: ""
+    link: "",
+    height: 18,
   },
   {
     label: "Collaborator",
     path: "img/logo/co-iFLYTEKlogo.png",
-    link: "https://www.iflytek.com/cn/"
+    link: "https://www.iflytek.com/cn/",
+    height: 12,
+  },
+  {
+    label: "Collaborator",
+    path: "img/logo/co-MOElogo.png",
+    link: "https://www.iflytek.com/cn/",
+    height: 18,
   }
 ])
 
@@ -151,9 +162,10 @@ const slides = ref<SwiperItem[]>([
       <div class="bg-white/80 dark:bg-gray-900/80 p-10">
         <!-- NOTE 这部分是主办单位和合作者的 Logo -->
         <Title :titleMap="title.logo" class="dark:text-white/90"></Title>
-        <div class="justify-self-center w-11/12">
+        <div class="justify-self-center w-full md:w-11/12">
           <div class="mb-5">
             <div class="font-bold text-2xl pl-10 dark:text-white/90">{{ $t("Organised by") }}</div>
+            <br>
 
             <!-- DONE 去掉 Logo，使用文字 -->
             <!-- <div class="w-full flex justify-center items-center">
@@ -162,7 +174,7 @@ const slides = ref<SwiperItem[]>([
 
             </div> -->
 
-            <div class="grid grid-cols-2 gap-2 w-4/5 justify-self-center text-center text-xl font-semibold">
+            <div class="grid grid-cols-2 gap-2 w-4/5 justify-self-center text-center text-2xl font-semibold">
               <div class="hover:text-red-400">
                 <ULink>{{ $t("Harvard") }}</ULink>
               </div>
@@ -176,10 +188,10 @@ const slides = ref<SwiperItem[]>([
           <div class="w-full dark:text-white/90">
             <div class="font-bold text-xl pl-10">{{ $t("In collaboration with") }}</div>
             <div>
-              <div class="grid grid-cols-3 gap-4 mt-5 w-3/5 justify-self-center">
+              <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-5 w-full md:w-3/5 justify-self-center">
                 <div v-for="logo in logoList" class="flex items-center justify-center">
                   <NuxtLink :to="logo.link">
-                    <NuxtImg :src="logo.path" :class="logo.path === 'img/logo/co-ERCELlogo.jpg' ? 'h-14' : 'h-10'" />
+                    <NuxtImg :src="logo.path" :class="'h-' + (logo.height - 2) + ' md:h-' + logo.height" />
                   </NuxtLink>
                 </div>
               </div>
