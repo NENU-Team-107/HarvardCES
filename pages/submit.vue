@@ -7,7 +7,7 @@ const tabMenu = ref<TabItems[]>(
     [
         {
             label: t("Sub-symposium Sessions Submit"),
-            content: "Sub-symposium Sessions",
+            content: "Parallel Sessions",
             show: false,
             index: 0
         },
@@ -24,40 +24,40 @@ const columns = [{
     label: '分论坛序号 Number'
 }, {
     key: 'topic',
-    label: '分论坛主题 Sub-symposium Topic'
+    label: '分论坛主题 Parallel Topic'
 }, {
     key: 'mail',
     label: '征稿联系方式 Call for Proposal'
 }]
 
 const contact = [{
-    id: 'Sub-symposium 1 ',
+    id: 'Parallel Session 1 ',
     topic: 'Al for Teaching, Learning and Traning',
     mail: '发送至邮箱：lujijian@hznu.edu.cn',
 }, {
-    id: 'Sub-symposium 2',
+    id: 'Parallel Session 2',
     topic: 'Furistics Mindset and Trends of Teaching and Training',
     mail: '发送至邮箱：xiaoyanchu@zju.edu.cn',
 }, {
-    id: 'Sub-symposium 3',
+    id: 'Parallel Session 3',
     topic: 'AI Enabsed Science Education',
     mail: '发送至邮箱：mtt@snnu.edu.cn',
 }, {
-    id: 'Sub-symposium 4',
+    id: 'Parallel Session 4',
     topic: 'Large Language Model & Computing Education',
-    mail: ' ',
+    mail: '发送至邮箱：mhyin@nenu.edu.cn',
 }, {
-    id: 'Sub-symposium 5',
+    id: 'Parallel Session 5',
     topic: 'Ethical and Fairness in AI Application Decisions',
     mail: '发送至邮箱：celab2208@163.com',
 }, {
-    id: 'Sub-symposium 6',
+    id: 'Parallel Session 6',
     topic: 'Research and Learning Analytics in the Age of AI',
-    mail: 'EdUHK-Qualtrics',
+    mail: '发送至邮箱：hnubai@hainan.edu.cn',
 }, {
     id: 'Poster and Showcase Session',
     topic: 'Above all',
-    mail: '在线提交：https://www.wjx.top/vm/tdLaPJt.aspx#',
+    mail: '问卷星在线提交：https://www.wjx.top/vm/tdLaPJt.aspx#',
 }]
 </script>
 
