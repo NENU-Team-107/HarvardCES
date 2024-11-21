@@ -151,23 +151,23 @@ const slides = ref<SwiperItem[]>([
       <div class="bg-white/80 dark:bg-gray-900/80 p-10">
         <!-- NOTE 这部分是主办单位和合作者的 Logo -->
         <Title :titleMap="title.logo" class="dark:text-white/90"></Title>
-        <div>
+        <div class="justify-self-center w-11/12">
           <div class="mb-5">
             <div class="font-bold text-2xl pl-10 dark:text-white/90">{{ $t("Organised by") }}</div>
 
-            <!-- TODO 去掉 Logo，使用文字 -->
+            <!-- DONE 去掉 Logo，使用文字 -->
             <!-- <div class="w-full flex justify-center items-center">
 
               <NuxtImg :src="host.path" sizes="900" />
 
             </div> -->
 
-            <div class="grid grid-cols-2 gap-2 items-center justify-center text-center text-lg font-semibold">
-              <div class=" hover:text-red-400">
-                {{ $t("Harvard") }}
+            <div class="grid grid-cols-2 gap-2 w-4/5 justify-self-center text-center text-xl font-semibold">
+              <div class="hover:text-red-400">
+                <ULink>{{ $t("Harvard") }}</ULink>
               </div>
-              <div class=" hover:text-green-800/80">
-                {{ $t("GIET") }}
+              <div class="hover:text-green-800/80">
+                <ULink>{{ $t("GIET") }}</ULink>
               </div>
             </div>
 
@@ -176,7 +176,7 @@ const slides = ref<SwiperItem[]>([
           <div class="w-full dark:text-white/90">
             <div class="font-bold text-xl pl-10">{{ $t("In collaboration with") }}</div>
             <div>
-              <div class="grid grid-cols-3 gap-4 mt-5 w-full">
+              <div class="grid grid-cols-3 gap-4 mt-5 w-3/5 justify-self-center">
                 <div v-for="logo in logoList" class="flex items-center justify-center">
                   <NuxtLink :to="logo.link">
                     <NuxtImg :src="logo.path" :class="logo.path === 'img/logo/co-ERCELlogo.jpg' ? 'h-14' : 'h-10'" />
@@ -184,9 +184,6 @@ const slides = ref<SwiperItem[]>([
                 </div>
               </div>
             </div>
-            <!-- <div class="w-full flex items-center justify-evenly md:flex-row flex-col">
-
-            </div> -->
 
             <div class="text-center mt-4 text-sm">
               <span><i> Assisted By the Department of Mathematics and Information Technology of EdUHK</i></span>

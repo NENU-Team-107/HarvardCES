@@ -8,10 +8,6 @@
 </template>
 
 <style>
-#__nuxt {
-  width: 100vw !important;
-}
-
 body,
 html {
   margin: 0;
@@ -24,7 +20,6 @@ body {
   background: #fff;
   color: #333;
   margin: 0;
-  max-width: 1920px
 }
 
 canvas {

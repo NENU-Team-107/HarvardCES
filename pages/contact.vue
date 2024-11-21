@@ -2,7 +2,6 @@
 import { useI18n } from 'vue-i18n';
 import type { TabItems } from '~/lib/model';
 import Title from '~/components/common/Title.vue';
-import PDFViewer from '~/components/poster/PDFViewer.vue';
 const { t } = useI18n();
 
 const tabMenuBase = ref<TabItems[]>([
