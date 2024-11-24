@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 const keepalive = {
-  include: ["speakers"]
+  include: ["speakers", "contact", "session"]
 }
 </script>
 <template>
