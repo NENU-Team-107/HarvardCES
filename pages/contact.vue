@@ -2,6 +2,8 @@
 import { useI18n } from 'vue-i18n';
 import type { TabItems } from '~/lib/model';
 import Title from '~/components/common/Title.vue';
+import { TabsContent, TabsIndicator, TabsList, TabsRoot, TabsTrigger } from 'radix-vue'
+
 const { t } = useI18n();
 
 const tabMenuBase = ref<TabItems[]>([
@@ -60,80 +62,102 @@ const eduHKPresident = computed(() => {
 <template>
   <div class="w-full h-full min-h-screen mx-10 my-5 pt-24">
     <NuxtPage />
-    <UTabs :items="tabMenu" orientation="vertical"
-      :ui="{ wrapper: 'hidden md:flex gap-4 px-10 dark:bg-black text-wrap break-all', list: { width: 'w-60', tab: { size: 'text-base text-wrap break-all', padding: 'py-10', font: 'font-bold', base: 'text-balance break-all' } } }"
-      class="bg-white/80 w-full h-full min-h-screen" @change="handleChange">
-      <template #item>
-        <div class="min-h-full w-full flex flex-col px-20 py-5 bg-white/80 dark:bg-gray-800/80 dark:text-white">
 
-          <div v-if="showCES === true" class="w-full max-w-screen">
-            <ClientOnly>
-              <div class="items-center justify-center flex flex-col w-full px-auto">
-                <NuxtImg src="img/harvard/Introduction.png" class="w-2/5" />
-                <NuxtImg src="img/harvard/aiming.png" class="w-2/5" />
-                <NuxtImg src="img/harvard/reachUs.png" class="w-2/5" />
-                <div class="font-semibold text-white bg-red-800 mt-5 text-lg w-5/12">
-                  <ULink to="https://www.hgseces.org/">
-                    {{ $t("About Us.HarvardCES.link") }}
+    <div class="hidden md:flex justify-center w-full min-h-screen">
+      <TabsRoot :default-value="tabMenuBase.at(0)?.index" orientation="vertical" class="flex w-full max-w-7xl">
+        <TabsList
+          class="flex flex-col min-w-44 items-center h-fit sticky top-20 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-md mr-4">
+          <TabsIndicator
+            class="w-[2px] h-[48px] absolute left-1 top-1 translate-y-[--radix-tabs-indicator-position] rounded-full transition-[width,transform] duration-300">
+            <div class="bg-green-600 w-full h-full" />
+          </TabsIndicator>
+          <TabsTrigger class="relative px-8 h-[60px] flex items-center text-[17px] leading-none text-gray-600 dark:text-gray-300 select-none
+        hover:text-green-600
+        data-[state=active]:text-green-600 data-[state=active]:font-semibold
+        outline-none cursor-pointer transition-all
+        border-b border-gray-200 dark:border-gray-600
+        last:border-b-0
+        before:content-[''] before:absolute before:left-0 before:top-0 before:bottom-0 before:w-[3px] 
+        before:bg-grass9 before:transform before:-translate-x-full
+        before:transition-transform before:duration-200
+        hover:before:translate-x-0
+        data-[state=active]:before:translate-x-0" v-for="item in tabMenuBase" :value="item.index">
+            {{ $t(item.label) }}
+          </TabsTrigger>
+        </TabsList>
+        <TabsContent v-for="item in tabMenuBase" :value="item.index" class="min-w-screen">
+          <div class="min-h-full w-full flex flex-col px-20 py-5 bg-white/80 dark:bg-gray-800/80 dark:text-white">
+
+            <div v-if="item.index === 0" class="w-full max-w-screen">
+              <ClientOnly>
+                <div class="items-center justify-center flex flex-col w-full px-auto">
+                  <NuxtImg src="img/harvard/Introduction.png" class="w-2/5" />
+                  <NuxtImg src="img/harvard/aiming.png" class="w-2/5" />
+                  <NuxtImg src="img/harvard/reachUs.png" class="w-2/5" />
+                  <div class="font-semibold text-white bg-red-800 mt-5 text-lg w-5/12">
+                    <ULink to="https://www.hgseces.org/">
+                      {{ $t("About Us.HarvardCES.link") }}
+                    </ULink>
+                    <font-awesome class="ml-1" icon="fa-solid fa-arrow-right" />
+                  </div>
+                </div>
+              </ClientOnly>
+            </div>
+
+            <div v-else class="w-full min-h-full relative">
+              <div class="z-20 bg-white  dark:bg-gray-800/80">
+                <div class="mb-5 z-20">
+                  <Title titleMap="About Us.EduHK.intro title" />
+                  <div class="text-justify" v-html="eduHKIntro"></div>
+                </div>
+
+                <div class="flex flex-row h-full w-full z-20">
+                  <div class="w-4/12 min-h-full flex justify-center items-center ">
+                    <NuxtImg src="img/eduhk/vision.png" class="w-11/12 m-5" />
+                  </div>
+
+                  <div class="w-8/12 h-full z-20 flex flex-col justify-center items-center">
+                    <div class="my-3">
+                      <Title titleMap="About Us.EduHK.vision title" />
+                      <div class="text-justify" v-html="eduHKVision"></div>
+                    </div>
+
+                    <div class="my-3">
+                      <Title titleMap="About Us.EduHK.mission title" />
+                      <div class="text-justify" v-html="eduHKMission"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mb-5 flex flex-col w-full h-full">
+                  <Title titleMap="About Us.EduHK.president title" />
+
+                  <div class="flex flex-row h-full w-full">
+                    <div class="w-4/5 h-full z-20">
+                      <div class="text-justify" v-html="eduHKPresident" />
+                    </div>
+                    <div class="w-1/5 min-h-full flex justify-center items-start ">
+                      <NuxtImg src="img/eduhk/Chi-Kin John.png" class="rounded-full mx-auto w-4/5" />
+                    </div>
+                  </div>
+
+                </div>
+
+
+                <div class="font-semibold text-white bg-green-800 p-2">
+                  <ULink to="https://www.eduhk.hk/en/">
+                    {{ $t("About Us.EduHK.link") }}
                   </ULink>
                   <font-awesome class="ml-1" icon="fa-solid fa-arrow-right" />
                 </div>
-              </div>
-            </ClientOnly>
-          </div>
-
-          <div v-else class="w-full min-h-full relative">
-            <div class="z-20 bg-white  dark:bg-gray-800/80">
-              <div class="mb-5 z-20">
-                <Title titleMap="About Us.EduHK.intro title" />
-                <div class="text-justify" v-html="eduHKIntro"></div>
-              </div>
-
-              <div class="flex flex-row h-full w-full z-20">
-                <div class="w-4/12 min-h-full flex justify-center items-center ">
-                  <NuxtImg src="img/eduhk/vision.png" class="w-11/12 m-5" />
-                </div>
-
-                <div class="w-8/12 h-full z-20 flex flex-col justify-center items-center">
-                  <div class="my-3">
-                    <Title titleMap="About Us.EduHK.vision title" />
-                    <div class="text-justify" v-html="eduHKVision"></div>
-                  </div>
-
-                  <div class="my-3">
-                    <Title titleMap="About Us.EduHK.mission title" />
-                    <div class="text-justify" v-html="eduHKMission"></div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="mb-5 flex flex-col w-full h-full">
-                <Title titleMap="About Us.EduHK.president title" />
-
-                <div class="flex flex-row h-full w-full">
-                  <div class="w-4/5 h-full z-20">
-                    <div class="text-justify" v-html="eduHKPresident" />
-                  </div>
-                  <div class="w-1/5 min-h-full flex justify-center items-start ">
-                    <NuxtImg src="img/eduhk/Chi-Kin John.png" class="rounded-full mx-auto w-4/5" />
-                  </div>
-                </div>
 
               </div>
-
-
-              <div class="font-semibold text-white bg-green-800 p-2">
-                <ULink to="https://www.eduhk.hk/en/">
-                  {{ $t("About Us.EduHK.link") }}
-                </ULink>
-                <font-awesome class="ml-1" icon="fa-solid fa-arrow-right" />
-              </div>
-
             </div>
           </div>
-        </div>
-      </template>
-    </UTabs>
+        </TabsContent>
+      </TabsRoot>
+    </div>
+
     <div class="md:hidden">
       <div v-for="item in tabMenuBase">
         <UCard :ui="{

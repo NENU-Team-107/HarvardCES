@@ -103,7 +103,6 @@ const fetchPosters = async () => {
   const { status, data } = resp
   if (status === "Success" && data !== null) {
     posterList.value = data;
-    console.log(posterList.value)
     slides.value = data.map((poster) => {
       return {
         src: poster.path,
@@ -127,7 +126,6 @@ const ImgSize = ref("300")
 const jump = (link: string) => {
   if (link === "-1")
     return;
-  console.log(link)
   if (!link.startsWith('/')) {
     link = '/' + link
   }
@@ -152,7 +150,8 @@ const cards = defineModel('cards', {
   padding: 0 !important;
   height: 100% !important;
 }
-.swiper-wrapper{
+
+.swiper-wrapper {
   /* display: flex; */
   /* align-items: center; */
   /* justify-content: center; */

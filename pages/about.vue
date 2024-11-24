@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import { useI18n } from 'vue-i18n';
+import { TabsContent, TabsIndicator, TabsList, TabsRoot, TabsTrigger } from 'radix-vue'
 import type { TabItems } from '~/lib/model';
 const { t } = useI18n();
 
@@ -28,12 +29,6 @@ const tabMenuBase = ref<TabItems[]>([
   }
 ]);
 
-const tabMenu = computed(() => {
-  return tabMenuBase.value.map(item => ({
-    ...item,
-    label: t(item.content)
-  }));
-});
 
 const AgendaImage = computed(() => {
   return t("Symposium Agenda")
@@ -46,11 +41,7 @@ const fetchLocationImage = async () => {
   LocationImage.value = window.URL.createObjectURL(data)
 }
 
-const handleChange = (index: number) => {
-  if (index === 1) {
-    fetchLocationImage();
-  }
-}
+fetchLocationImage();
 
 const toggleShowMore = (index: number) => {
   tabMenuBase.value[index].show = !tabMenuBase.value[index].show;
@@ -64,33 +55,57 @@ const toggleShowMore = (index: number) => {
 
 <template>
   <div class="w-full h-full min-h-screen mx-10 my-5 pt-24">
-    <UTabs :items="tabMenu" orientation="vertical"
-      :ui="{ wrapper: 'gap-4 px-10 hidden md:flex  dark:bg-black', list: { width: 'w-60', tab: { size: 'text-base text-nowrap', padding: 'py-5', font: 'font-bold' } } }"
-      class="bg-white/80 w-full h-full min-h-screen" @change="handleChange">
-      <template #item="{ item }">
-        <div
-          class="flex flex-col px-20 py-10 bg-white/80 dark:bg-gray-800/80 dark:text-white justify-center items-center h-full w-full">
-          <h1 v-if="item.content === 'Symposium Introduction'" class="text-center font-bold text-2xl py-6">{{
-            $t("Symposium.Title") }}
-          </h1>
-          <h1 v-else-if="item.content === 'Symposium Location'" class="text-center font-bold text-2xl py-6">
-            {{ $t("Symposium Location") }}
-          </h1>
-          <div class="flex items-center justify-center w-full flex-1">
-            <div v-if="item.content === 'Symposium Introduction'" class="text-justify" v-html="Introduction" />
-            <div v-else-if="item.content === 'Symposium Location'">
-              <NuxtImg :src="LocationImage" loading="lazy" />
-              <div class="items-center justify-center text-center text-lg mt-5">
-                <span>{{ $t("Host.Details.Location") }}</span>
+
+    <div class="hidden md:flex justify-center w-full min-h-screen">
+      <TabsRoot :default-value="tabMenuBase.at(0)?.label" orientation="vertical" class="flex w-full max-w-6xl">
+        <TabsList
+          class="flex flex-col min-w-40 items-center h-fit sticky top-20 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-md">
+          <TabsIndicator
+            class="w-[2px] h-[48px] absolute left-1 top-1 translate-y-[--radix-tabs-indicator-position] rounded-full transition-[width,transform] duration-300">
+            <div class="bg-green-600 w-full h-full" />
+          </TabsIndicator>
+          <TabsTrigger class="relative px-8 h-[60px] flex items-center text-[17px] leading-none text-gray-600 dark:text-gray-300 select-none
+        hover:text-green-600
+        data-[state=active]:text-green-600 data-[state=active]:font-semibold
+        outline-none cursor-pointer transition-all
+        border-b border-gray-200 dark:border-gray-600
+        last:border-b-0
+        before:content-[''] before:absolute before:left-0 before:top-0 before:bottom-0 before:w-[3px] 
+        before:bg-grass9 before:transform before:-translate-x-full
+        before:transition-transform before:duration-200
+        hover:before:translate-x-0
+        data-[state=active]:before:translate-x-0" v-for="item in tabMenuBase" :value="item.label">
+            {{ $t(item.label) }}
+          </TabsTrigger>
+        </TabsList>
+
+        <TabsContent v-for="item in tabMenuBase" :value="item.label" class="flex-1 ml-8">
+          <div
+            class="flex flex-col px-8 md:px-16 py-6 bg-white/80 dark:bg-gray-800/80 dark:text-white h-full w-full rounded-lg shadow-sm">
+            <h1 v-if="item.content === 'Symposium Introduction'" class="text-center font-bold text-2xl mb-4">
+              {{ $t("Symposium.Title") }}
+            </h1>
+            <h1 v-else-if="item.content === 'Symposium Location'" class="text-center font-bold text-2xl mb-4">
+              {{ $t("Symposium Location") }}
+            </h1>
+
+            <div class="flex items-start justify-center w-full">
+              <div v-if="item.content === 'Symposium Introduction'" class="text-justify" v-html="Introduction" />
+              <div v-else-if="item.content === 'Symposium Location'" class="w-full">
+                <NuxtImg :src="LocationImage" class="w-full object-cover rounded-lg" />
+                <div class="text-center text-lg mt-4">
+                  <span>{{ $t("Host.Details.Location") }}</span>
+                </div>
+              </div>
+              <div v-else class="w-full">
+                <NuxtImg :src="AgendaImage" loading="lazy" class="w-full object-cover rounded-lg" />
               </div>
             </div>
-            <div v-else>
-              <NuxtImg :src="AgendaImage" loading="lazy" />
-            </div>
           </div>
-        </div>
-      </template>
-    </UTabs>
+        </TabsContent>
+      </TabsRoot>
+    </div>
+
     <ClientOnly>
       <div class="md:hidden">
         <div v-for="item in tabMenuBase">

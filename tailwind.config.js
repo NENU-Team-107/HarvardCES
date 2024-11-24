@@ -20,7 +20,7 @@ export default {
       },
       backgroundImage: {
         'letter-paper': "url('~/assets/bg/letter-paper.png')",
-        "eduhk-vision":"url('~/assets/bg/eduhk-vision.png')",
+        "eduhk-vision": "url('~/assets/bg/eduhk-vision.png')",
       },
       colors: {
         'cover-left': '#c56c70',

@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import Interoduction from '~/components/speakers/Introduction.vue';
 import type { Speaker, TabItems } from '~/lib/model';
+import { TabsContent, TabsIndicator, TabsList, TabsRoot, TabsTrigger } from 'radix-vue'
 
 const { t } = useI18n()
 
@@ -89,18 +90,40 @@ const toggleShowMore = (index: number) => {
 </script>
 
 <template>
+
   <div class="w-full h-full min-h-screen mx-10 my-5 pt-24">
-    <UTabs :items="navMenu" orientation="vertical"
-      :ui="{ wrapper: 'gap-4 px-10 hidden md:flex  dark:bg-black', list: { width: 'w-60', tab: { size: 'text-base text-nowrap', padding: 'py-5', font: 'font-bold' } } }"
-      class="bg-white/80 w-full h-full min-h-screen" @change="handleClick">
-      <template #item>
-        <div class="grid md:grid-cols-3 gap-2 dark:text-white">
-          <div v-for="speaker in kindSpeakers">
-            <Interoduction :speakers="speaker" class="mx-10 my-5" />
+
+    <div class="hidden md:flex justify-center w-full min-h-screen">
+      <TabsRoot :default-value="navMenuBase.at(0)?.index" orientation="vertical" class="flex w-full max-w-7xl">
+        <TabsList
+          class="flex flex-col min-w-44 items-center h-fit sticky top-20 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-md mr-4">
+          <TabsIndicator
+            class="w-[2px] h-[48px] absolute left-1 top-1 translate-y-[--radix-tabs-indicator-position] rounded-full transition-[width,transform] duration-300">
+            <div class="bg-green-600 w-full h-full" />
+          </TabsIndicator>
+          <TabsTrigger class="relative px-8 h-[60px] flex items-center text-[17px] leading-none text-gray-600 dark:text-gray-300 select-none
+        hover:text-green-600
+        data-[state=active]:text-green-600 data-[state=active]:font-semibold
+        outline-none cursor-pointer transition-all
+        border-b border-gray-200 dark:border-gray-600
+        last:border-b-0
+        before:content-[''] before:absolute before:left-0 before:top-0 before:bottom-0 before:w-[3px] 
+        before:bg-grass9 before:transform before:-translate-x-full
+        before:transition-transform before:duration-200
+        hover:before:translate-x-0
+        data-[state=active]:before:translate-x-0" v-for="item in navMenuBase" :value="item.index">
+            {{ $t(item.label) }}
+          </TabsTrigger>
+        </TabsList>
+        <TabsContent v-for="item in navMenuBase" :value="item.index" class="min-w-screen">
+          <div class="grid md:grid-cols-3 dark:text-white">
+            <div v-for="speaker in speakersList.filter(speaker => speaker.kind === item.content)">
+              <Interoduction :speakers="speaker" class="mx-4 my-2" />
+            </div>
           </div>
-        </div>
-      </template>
-    </UTabs>
+        </TabsContent>
+      </TabsRoot>
+    </div>
 
     <div class="md:hidden">
       <div v-for="item in navMenu">

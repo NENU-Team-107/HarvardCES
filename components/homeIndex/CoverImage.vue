@@ -82,7 +82,6 @@ const jump = (link: string) => {
   height: 100%;
   font-size: 4rem;
   font-weight: bold;
-  font-family: 'Roboto', sans-serif;
 }
 
 
@@ -111,5 +110,4 @@ const jump = (link: string) => {
   border-radius: 6px;
   border: 1px solid black;
 }
-
 </style>
