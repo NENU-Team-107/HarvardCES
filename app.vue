@@ -1,8 +1,12 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+const keepalive = {
+  include: ["speakers"]
+}
+</script>
 <template>
   <div class="w-full h-full font-display">
     <NuxtLayout>
-      <NuxtPage />
+      <NuxtPage :keepalive />
     </NuxtLayout>
   </div>
 </template>

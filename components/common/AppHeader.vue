@@ -26,6 +26,10 @@ const routerArray = ref<RouterItem[]>([
     path: "/speakers",
   },
   {
+    name: "Submit",
+    path: "/submit"
+  },
+  {
     name: "Contact",
     path: "/contact"
   }
