@@ -59,12 +59,12 @@ const toggleShowMore = (index: number) => {
     <div class="hidden md:flex justify-center w-full min-h-screen">
       <TabsRoot :default-value="tabMenuBase.at(0)?.label" orientation="vertical" class="flex w-full max-w-6xl">
         <TabsList
-          class="flex flex-col min-w-40 items-center h-fit sticky top-20 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-md">
+          class="flex flex-col min-w-40 items-center h-fit sticky top-24 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-md">
           <TabsIndicator
             class="w-[2px] h-[48px] absolute left-1 top-1 translate-y-[--radix-tabs-indicator-position] rounded-full transition-[width,transform] duration-300">
             <div class="bg-green-600 w-full h-full" />
           </TabsIndicator>
-          <TabsTrigger class="relative px-8 h-[60px] flex items-center text-[17px] leading-none text-gray-600 dark:text-gray-300 select-none
+          <TabsTrigger class="relative px-8 h-[60px] flex items-center text-base leading-none text-gray-600 dark:text-gray-300 select-none
         hover:text-green-600
         data-[state=active]:text-green-600 data-[state=active]:font-semibold
         outline-none cursor-pointer transition-all
@@ -90,7 +90,8 @@ const toggleShowMore = (index: number) => {
             </h1>
 
             <div class="flex items-start justify-center w-full">
-              <div v-if="item.content === 'Symposium Introduction'" class="text-justify" v-html="Introduction" />
+              <div v-if="item.content === 'Symposium Introduction'" class="text-justify indent-8"
+                v-html="Introduction" />
               <div v-else-if="item.content === 'Symposium Location'" class="w-full">
                 <NuxtImg :src="LocationImage" class="w-full object-cover rounded-lg" />
                 <div class="text-center text-lg mt-4">

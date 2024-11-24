@@ -19,7 +19,7 @@ const title = computed(() => {
 </script>
 
 <template>
-  <div class="flex w-full flex-col h-full py-20 px-10 justify-center items-center">
+  <div class="flex w-4/5 justify-self-center flex-col h-full py-20 px-10 justify-center items-center">
     <div class="w-11/12 my-2 dark:text-white/90">
       <div
         class="font-semibold cursor-pointer items-center flex bg-slate-300 justify-center px-4 py-2 w-fit link-with-gradient">

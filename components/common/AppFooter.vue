@@ -1,6 +1,10 @@
 <script setup lang="ts">
 import { ref } from "vue";
+import { HoverCardArrow, HoverCardContent, HoverCardPortal, HoverCardRoot, HoverCardTrigger } from 'radix-vue';
+
 const footerTitle = ref<string>("Media.Title")
+
+const hoverState = ref(false)
 
 interface ContactItemType {
   before: string,
@@ -64,12 +68,18 @@ const media = ref<MediaItemType[]>([
       </div>
       <div class="flex justify-center items-center">
         <div class="flex-1 items-center justify-center">
-          <ul>
-            <li v-for="item in contact">
-              <span class="items-center text-center">{{ $t(item.before) }} : </span>
-              <span>{{ $t(item.after) }}</span>
-            </li>
-          </ul>
+          <!-- TODO 这里改为联系邮箱等信息 -->
+          <HoverCardRoot v-model:open="hoverState">
+            <HoverCardPortal>
+              <HoverCardContent>
+                <HoverCardArrow />
+              </HoverCardContent>
+            </HoverCardPortal>
+          </HoverCardRoot>
+          https://www.hgseces.org/
+          mailto:general@hgseces.org
+          {{ $t("Harvard") }}
+          {{ $t("GIET") }}
         </div>
       </div>
       <div class="flex flex-col">

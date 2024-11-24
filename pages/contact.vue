@@ -8,38 +8,21 @@ const { t } = useI18n();
 
 const tabMenuBase = ref<TabItems[]>([
   {
-    label: t("Harvard China Education Symposium"),
+    label: "Harvard China Education Symposium",
     content: "Harvard China Education Symposium",
     show: true,
     index: 0,
   },
   {
-    label: t("The Education University of Hong Kong"),
+    label: "The Education University of Hong Kong",
     content: "The Education University of Hong Kong",
     show: false,
     index: 1,
   }
 ])
 
-const tabMenu = computed(() => {
-  return tabMenuBase.value.map(item => ({
-    ...item,
-    label: t(item.content)
-  }));
-})
-
 const toggleShowMore = (index: number) => {
   tabMenuBase.value[index].show = !tabMenuBase.value[index].show;
-}
-
-const showCES = ref(true)
-
-const handleChange = (index: number) => {
-  if (index === 0) {
-    showCES.value = true;
-  } else {
-    showCES.value = false;
-  }
 }
 
 const eduHKIntro = computed(() => {
@@ -66,12 +49,12 @@ const eduHKPresident = computed(() => {
     <div class="hidden md:flex justify-center w-full min-h-screen">
       <TabsRoot :default-value="tabMenuBase.at(0)?.index" orientation="vertical" class="flex w-full max-w-7xl">
         <TabsList
-          class="flex flex-col min-w-44 items-center h-fit sticky top-20 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-md mr-4">
+          class="flex flex-col min-w-48 items-center h-fit sticky top-24 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-md ">
           <TabsIndicator
             class="w-[2px] h-[48px] absolute left-1 top-1 translate-y-[--radix-tabs-indicator-position] rounded-full transition-[width,transform] duration-300">
             <div class="bg-green-600 w-full h-full" />
           </TabsIndicator>
-          <TabsTrigger class="relative px-8 h-[60px] flex items-center text-[17px] leading-none text-gray-600 dark:text-gray-300 select-none
+          <TabsTrigger class="relative px-8 h-20 flex items-center text-base leading-none text-gray-600 dark:text-gray-300 select-none
         hover:text-green-600
         data-[state=active]:text-green-600 data-[state=active]:font-semibold
         outline-none cursor-pointer transition-all
@@ -86,9 +69,16 @@ const eduHKPresident = computed(() => {
           </TabsTrigger>
         </TabsList>
         <TabsContent v-for="item in tabMenuBase" :value="item.index" class="min-w-screen">
-          <div class="min-h-full w-full flex flex-col px-20 py-5 bg-white/80 dark:bg-gray-800/80 dark:text-white">
+          <div class="min-h-full w-full flex flex-col px-10 py-5 bg-white/80 dark:bg-gray-800/80 dark:text-white">
 
             <div v-if="item.index === 0" class="w-full max-w-screen">
+              <!-- TODO 将此处更改为和下面一样的文字而不是图片 -->
+              <div>
+                title: {{ $t("About Us.HarvardCES.title") }}
+              </div>
+              <div>
+                {{ $t("About Us.HarvardCES.Introduction") }}
+              </div>
               <ClientOnly>
                 <div class="items-center justify-center flex flex-col w-full px-auto">
                   <NuxtImg src="img/harvard/Introduction.png" class="w-2/5" />
@@ -129,7 +119,7 @@ const eduHKPresident = computed(() => {
                   </div>
                 </div>
 
-                <div class="mb-5 flex flex-col w-full h-full">
+                <div class="flex flex-col w-full h-full mb-5 ">
                   <Title titleMap="About Us.EduHK.president title" />
 
                   <div class="flex flex-row h-full w-full">
