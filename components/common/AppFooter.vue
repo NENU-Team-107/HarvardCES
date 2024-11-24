@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { ref } from "vue";
 const footerTitle = ref<string>("Media.Title")
 
 interface ContactItemType {
