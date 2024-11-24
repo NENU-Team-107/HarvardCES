@@ -1,19 +1,17 @@
 <script lang="ts" setup>
-import { useI18n } from 'vue-i18n';
 import SubSwiper from '~/components/homeIndex/SubSwiper.vue';
 import { TabsContent, TabsIndicator, TabsList, TabsRoot, TabsTrigger } from 'radix-vue'
 import type { TabItems } from '~/lib/model';
-const { t } = useI18n();
 
 const tabMenuBase = ref<TabItems[]>([
   {
-    label: t("pSession.sub-symposium"),
+    label: "pSession.sub-symposium",
     content: "pSession.sub-symposium",
     show: true,
     index: 0,
   },
   {
-    label: t("pSession.poster"),
+    label: "pSession.poster",
     content: "pSession.poster",
     show: false,
     index: 1,

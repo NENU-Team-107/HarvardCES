@@ -27,7 +27,7 @@ export default defineNuxtConfig({
     "@nuxtjs/i18n",
     "@nuxt/image",
     "@vesp/nuxt-fontawesome",
-    "nuxt-swiper",
+    'radix-vue/nuxt'
   ],
   typescript: { typeCheck: true },
   tailwindcss: {

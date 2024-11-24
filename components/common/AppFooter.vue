@@ -1,10 +1,6 @@
 <script setup lang="ts">
 import { ref } from "vue";
-import { HoverCardArrow, HoverCardContent, HoverCardPortal, HoverCardRoot, HoverCardTrigger } from 'radix-vue';
-
 const footerTitle = ref<string>("Media.Title")
-
-const hoverState = ref(false)
 
 interface ContactItemType {
   before: string,
@@ -50,7 +46,8 @@ const media = ref<MediaItemType[]>([
 
 <template>
   <div class="min-w-full min-h-28 bg-green-950/90 dark:bg-green-950 text-white w-full">
-    <div class="text-xl font-bold text-center py-2">{{ $t(footerTitle) }}</div>
+    <div class="text-xl font-bold text-center h-10"></div>
+    <div class="text-xl font-bold text-center md:hidden relative">{{ $t(footerTitle) }}</div>
     <div class="flex md:flex-row flex-col items-center justify-center gap-3 w-full">
       <div class="flex justify-center items-center mx-10">
         <div>
@@ -66,20 +63,31 @@ const media = ref<MediaItemType[]>([
           <NuxtImg src="img/logo/UNESCOLogo-single.png" sizes="320" />
         </div>
       </div>
-      <div class="flex justify-center items-center">
-        <div class="flex-1 items-center justify-center">
+      <div class="max-w-screen-md">
+        <div class="text-xl font-bold text-center hidden md:-top-10 md:block relative">{{ $t(footerTitle) }}</div>
+        <!-- <NuxtImg src="img/logo/HostLogo_small.jpg" sizes="300" class="justify-self-center" /> -->
+        <div class="grid grid-cols-2 gap-4 text-center ml-5">
           <!-- TODO 这里改为联系邮箱等信息 -->
-          <HoverCardRoot v-model:open="hoverState">
-            <HoverCardPortal>
-              <HoverCardContent>
-                <HoverCardArrow />
-              </HoverCardContent>
-            </HoverCardPortal>
-          </HoverCardRoot>
-          https://www.hgseces.org/
-          mailto:general@hgseces.org
-          {{ $t("Harvard") }}
-          {{ $t("GIET") }}
+          <div>
+            <div class="grid grid-rows-2 gap-2">
+              <div>{{ $t("Harvard") }}</div>
+              <div class="flex justify-center items-center">
+                <UButton icon="i-material-symbols-public" size="lg" color="rose" square variant="soft" class="mr-2"
+                  to="https://www.hgseces.org/" />
+                <UButton icon="i-material-symbols-mail-rounded" size="lg" color="rose" square variant="soft"
+                  class="ml-2" to="mailto:general@hgseces.org" />
+              </div>
+            </div>
+          </div>
+          <div class="grid grid-rows-2 gap-2">
+            <div> {{ $t("GIET") }}</div>
+            <div class="flex justify-center items-center">
+              <UButton icon="i-material-symbols-public" size="lg" color="primary" square variant="soft" class="mr-2"
+                to="https://www.eduhk.hk/en/" />
+              <UButton icon="i-material-symbols-mail-rounded" size="lg" color="primary" square variant="soft"
+                class="ml-2" to="mailto:GIETfuture@eduhk.hk" />
+            </div>
+          </div>
         </div>
       </div>
       <div class="flex flex-col">
@@ -94,9 +102,9 @@ const media = ref<MediaItemType[]>([
               <!--  -->
             </div>
           </div>
-          <div class="my-2">
+          <!-- <div class="my-2">
             <span>{{ $t("Media.Email.Details", ["GIETfuture@eduhk.hk"]) }}</span>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>

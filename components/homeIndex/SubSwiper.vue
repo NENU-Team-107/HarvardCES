@@ -1,9 +1,11 @@
 <template>
   <div v-if="!cards" class="w-full">
     <div class="w-4/5 justify-self-center items-center justify-center">
-      <UCarousel ref="carouselRef" v-slot="{ item }" , :items="slides"
-        :ui="{ item: 'basis-full lg:basis-1/3 snap-end' }" class="overflow-hidden">
-        <NuxtImg :src="item.src" draggable="false" class="w-4/5" />
+      <UCarousel ref="carouselRef" v-slot="{ item }" , :items="slides" :ui="{ item: 'basis-full lg:basis-1/3' }"
+        class="overflow-hidden">
+        <NuxtLink :to="item.link" class="w-full">
+          <NuxtImg :src="item.src" draggable="false" class="w-9/12" />
+        </NuxtLink>
       </UCarousel>
     </div>
   </div>
@@ -22,7 +24,7 @@
             base: 'flex justify-end w-full flex-col',
           }
         }">
-          <div class="max-h-[30rem] overflow-hidden flex-1 justify-center w-full flex">
+          <div class="max-h-[32rem] overflow-hidden flex-1 justify-center w-full flex">
             <NuxtImg :src="slide.src" fit="contain" :class="slide.link ? 'mx-0 hover:cursor-pointer' : 'mx-0'"
               :sizes="ImgSize" @click="jump(slide.link ? slide.link : '-1')" />
           </div>
@@ -63,12 +65,9 @@ const fetchPosters = async () => {
         details: true
       } as SwiperItem;
     })
+
   }
 }
-
-onMounted(() => {
-  fetchPosters()
-})
 
 const posterList = ref<Poster[]>([]);
 
@@ -93,21 +92,25 @@ const cards = defineModel('cards', {
 
 const carouselRef = ref()
 
+fetchPosters()
+
 onMounted(() => {
-  setInterval(() => {
-    if (!carouselRef.value) return
+  if (!cards) {
+    setInterval(() => {
+      if (!carouselRef.value) return
 
-    if (carouselRef.value.page === carouselRef.value.pages) {
-      return carouselRef.value.select(0)
-    }
+      if (carouselRef.value.page === carouselRef.value.pages) {
+        return carouselRef.value.select(0)
+      }
 
-    carouselRef.value.next()
-  }, 3000)
+      carouselRef.value.next()
+    }, 3000)
+  }
 })
 
 </script>
 
-<style scoped>
+<style>
 .u-card-class>div {
   padding: 0 !important;
   /* 强制去除内边距 */

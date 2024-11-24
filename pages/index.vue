@@ -7,11 +7,6 @@ import type { Poster, Speaker, SwiperItem } from '~/lib/model';
 
 const { t } = useI18n()
 
-const host = ref({
-  label: "Host",
-  path: "img/logo/HostLogo_large.jpg"
-},);
-
 const logoList = ref([
   {
     label: "Collaborator",
@@ -99,7 +94,7 @@ onMounted(() => {
       }
     })
 
-  SymposiumIntro.value = t("Symposium.Intro").replace(/\n/g, '<br>')
+  SymposiumIntro.value = t("Symposium.Intro")
 })
 
 const slides = ref<SwiperItem[]>([
@@ -113,16 +108,18 @@ const slides = ref<SwiperItem[]>([
   <div class="w-full flex flex-col justify-center items-center relative my-10 pt-24">
 
     <div
-      class="w-full justify-center items-center flex bg-gradient-to-r from-cover-left from-30% via-red-500 via-40% to-cover-right to-30% ">
+      class="w-full justify-center items-center justify-self-center  bg-gradient-to-r from-cover-left from-30% via-red-500 via-40% to-cover-right to-30% ">
       <CoverImage :Slides="slides" />
     </div>
+
+
 
     <div class="my-10 px-2 flex flex-col w-full">
 
       <div class="bg-white/80 dark:bg-gray-900/80 p-10">
         <Title :titleMap="title.intro" />
         <div class="text-lg pl-10">
-          <div :innerHTML="SymposiumIntro" class="dark:text-white/90"></div>
+          <div :innerHTML="SymposiumIntro" class="dark:text-white/90 text-justify indent-8"></div>
           <div class="flex mt-4 dark:text-white/90">
             <ULink to="/about" class="italic font-semibold">
               {{ $t("Symposium.Click") }}
@@ -166,13 +163,6 @@ const slides = ref<SwiperItem[]>([
           <div class="mb-5">
             <div class="font-bold text-2xl pl-10 dark:text-white/90">{{ $t("Organised by") }}</div>
             <br>
-
-            <!-- DONE 去掉 Logo，使用文字 -->
-            <!-- <div class="w-full flex justify-center items-center">
-
-              <NuxtImg :src="host.path" sizes="900" />
-
-            </div> -->
 
             <div class="grid grid-cols-2 gap-2 w-4/5 justify-self-center text-center text-2xl font-semibold">
               <div class="hover:text-red-400">

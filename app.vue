@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 const keepalive = {
-  include: ["speakers", "contact", "session"]
+  include: ["speakers", "session", "index"]
 }
 </script>
 <template>
@@ -17,7 +17,6 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: '楷体', 'KaiTi', "Times New Roman", 'Arial', 'sans-serif';
 }
 
 body {
