@@ -66,42 +66,40 @@ const isHover = ref<boolean[]>([false, false])
         </div>
       </div>
 
-      <div class="max-w-screen-md py-6">
-        <div class="grid md:grid-cols-2 gap-4 md:grid-rows-3 grid-rows-1 grid-cols-1 text-center ml-5">
-          <!-- TODO 这里改为联系邮箱等信息 -->
+      <div class="max-w-screen-md">
+        <div class="grid gap-4 grid-rows-2 text-justify ml-5">
 
-          <div class="row-span-2">{{ $t("Harvard") }}</div>
-
-          <div class="md:hidden flex justify-center items-center" @mouseover="isHover[0] = true"
-            @mouseleave="isHover[0] = false">
-            <UButton icon="i-material-symbols-public" size="lg" color="rose" square variant="soft"
-              :class="isHover[0] ? 'mr-2 bg-white/60' : 'mr-2 bg-white'" :ui="{ rounded: 'rounded-full', }"
-              to="https://www.hgseces.org/" />
-            <UButton icon="i-material-symbols-mail-rounded" size="lg" color="rose" square variant="soft"
-              :class="isHover[0] ? 'ml-2 bg-white/60' : 'ml-2 bg-white'" :ui="{ rounded: 'rounded-full' }"
-              to="mailto:general@hgseces.org" />
+          <!-- TODO 加上原来的列表形式，并在下方加上button -->
+          <div class="grid gap-2 grid-rows-4">
+            <div v-for="item in contact" class="grid grid-cols-2 grid-rows-1 grid-flow-col-dense">
+              <div class="mr-5 text-end justify-items-end items-end">{{ $t(item.before) }} : </div>
+              <div class="justify-self-start">{{ $t(item.after) }}</div>
+            </div>
           </div>
 
-          <div class="row-span-2"> {{ $t("GIET") }}</div>
+          <div class="grid md:grid-cols-2 grid-cols-2">
+            <div class="hidden md:flex justify-center items-center" @mouseover="isHover[0] = true"
+              @mouseleave="isHover[0] = false">
+              <UButton icon="i-material-symbols-public" size="lg" color="rose" square variant="soft"
+                :class="isHover[0] ? 'mr-2 bg-white/60' : 'mr-2 bg-white'" :ui="{ rounded: 'rounded-full', }"
+                to="https://www.hgseces.org/" />
+              <UButton icon="i-material-symbols-mail-rounded" size="lg" color="rose" square variant="soft"
+                :class="isHover[0] ? 'ml-2 bg-white/60' : 'ml-2 bg-white'" :ui="{ rounded: 'rounded-full' }"
+                to="mailto:general@hgseces.org" />
+            </div>
 
-          <div class="hidden md:flex justify-center items-center" @mouseover="isHover[0] = true"
-            @mouseleave="isHover[0] = false">
-            <UButton icon="i-material-symbols-public" size="lg" color="rose" square variant="soft"
-              :class="isHover[0] ? 'mr-2 bg-white/60' : 'mr-2 bg-white'" :ui="{ rounded: 'rounded-full', }"
-              to="https://www.hgseces.org/" />
-            <UButton icon="i-material-symbols-mail-rounded" size="lg" color="rose" square variant="soft"
-              :class="isHover[0] ? 'ml-2 bg-white/60' : 'ml-2 bg-white'" :ui="{ rounded: 'rounded-full' }"
-              to="mailto:general@hgseces.org" />
+            <div class="flex justify-center items-center" @mouseover="isHover[1] = true"
+              @mouseleave="isHover[1] = false">
+              <UButton icon="i-material-symbols-public" size="lg" color="primary" square variant="soft"
+                :class="isHover[1] ? 'mr-2 bg-white/60' : 'mr-2 bg-white'" :ui="{ rounded: 'rounded-full', }"
+                to="https://www.eduhk.hk/en/" />
+              <UButton icon="i-material-symbols-mail-rounded" size="lg" color="primary" square variant="soft"
+                :class="isHover[1] ? 'ml-2 bg-white/60' : 'ml-2 bg-white'" :ui="{ rounded: 'rounded-full' }"
+                to="mailto:GIETfuture@eduhk.hk" />
+            </div>
           </div>
 
-          <div class="flex justify-center items-center" @mouseover="isHover[1] = true" @mouseleave="isHover[1] = false">
-            <UButton icon="i-material-symbols-public" size="lg" color="primary" square variant="soft"
-              :class="isHover[1] ? 'mr-2 bg-white/60' : 'mr-2 bg-white'" :ui="{ rounded: 'rounded-full', }"
-              to="https://www.eduhk.hk/en/" />
-            <UButton icon="i-material-symbols-mail-rounded" size="lg" color="primary" square variant="soft"
-              :class="isHover[1] ? 'ml-2 bg-white/60' : 'ml-2 bg-white'" :ui="{ rounded: 'rounded-full' }"
-              to="mailto:GIETfuture@eduhk.hk" />
-          </div>
+
         </div>
       </div>
 

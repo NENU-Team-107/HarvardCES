@@ -116,7 +116,7 @@ const slides = ref<SwiperItem[]>([
       <div class="bg-white/80 dark:bg-gray-900/80 p-10">
         <Title :titleMap="title.intro" />
         <div class="text-lg pl-10">
-          <div :innerHTML="SymposiumIntro" class="dark:text-white/90 text-justify indent-8"></div>
+          <div v-html="SymposiumIntro" class="dark:text-white/90 text-justify indent-8"></div>
           <div class="flex mt-4 dark:text-white/90">
             <ULink to="/about" class="italic font-semibold">
               {{ $t("Symposium.Click") }}
