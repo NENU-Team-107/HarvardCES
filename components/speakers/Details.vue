@@ -1,12 +1,12 @@
 <script lang="ts" setup>
 import type { Speaker } from '~/lib/model.ts'
+
 const props = defineProps<{
   speaker: Speaker,
 }>()
 
 const { t } = useI18n();
-
-console.log(props.speaker.bio.details.description)
+const router = useRouter()
 
 const description = computed(() => {
   return t(props.speaker.bio.details.description).replace(/\n/g, '<br>')
@@ -22,11 +22,10 @@ const title = computed(() => {
   <div class="flex w-4/5 justify-self-center flex-col h-full py-20 px-10 justify-center items-center">
     <div class="w-11/12 my-2 dark:text-white/90">
       <div
-        class="font-semibold cursor-pointer items-center flex bg-slate-300 justify-center px-4 py-2 w-fit link-with-gradient">
-        <NuxtLink to="/speakers">
-          <font-awesome icon="fa-solid fa-arrow-left" />
-          {{ t("Back") }}
-        </NuxtLink>
+        class="font-semibold cursor-pointer items-center flex bg-slate-300 justify-center px-4 py-2 w-fit link-with-gradient"
+        @click="router.go(-1)">
+        <font-awesome icon="fa-solid fa-arrow-left" />
+        {{ t("Back") }}
       </div>
     </div>
     <div
