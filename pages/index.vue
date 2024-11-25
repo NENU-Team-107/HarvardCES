@@ -111,7 +111,7 @@ const slides = ref<SwiperItem[]>([
       <CoverImage :Slides="slides" />
     </div>
 
-    <div class="my-10 px-2 flex flex-col w-full">
+    <div class="my-10  flex flex-col w-full">
 
       <div class="bg-white/80 dark:bg-gray-900/80 p-10">
         <Title :titleMap="title.intro" />
@@ -161,7 +161,7 @@ const slides = ref<SwiperItem[]>([
             <div class="font-bold text-2xl pl-10 dark:text-white/90">{{ $t("Organised by") }}</div>
             <br>
 
-            <div class="grid grid-cols-2 gap-2 w-4/5 justify-self-center text-center text-2xl font-semibold">
+            <div class="grid md:grid-cols-2 grid-rows-2 gap-2 w-4/5 justify-self-center text-center md:text-2xl text-xl font-semibold">
               <div class="hover:text-red-400">
                 <ULink to="https://www.hgseces.org/">{{ $t("Harvard") }}</ULink>
               </div>
