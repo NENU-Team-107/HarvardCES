@@ -150,6 +150,43 @@ const slides = ref<SwiperItem[]>([
 
       <div class="bg-white/80 dark:bg-gray-900/80 p-10">
         <Title :titleMap="title.workshop" class="dark:text-white/90" />
+        <div class="grid grid-cols-3 gap-0 w-full justify-center items-center text-center">
+          <div class="grid grid-rows-2 grid-flow-col-dense gap-0">
+            <div>
+              <UIcon name="i-file-icons-keynote" class="w-28 h-28 bg-red-500" />
+              <div>Keynote & Invited Talk</div>
+            </div>
+            <div>
+              <NuxtImg src="/img/logo/workshop.png" loading="lazy"></NuxtImg>
+              <div>Workshop</div>
+            </div>
+          </div>
+
+          <div class="grid grid-rows-2 gap-2 ">
+
+            <div>
+              <UIcon name="i-healthicons-group-discussion-meetingx3" class="w-28 h-28" />
+              <div>Panel Discussion</div>
+            </div>
+            <div>
+              <UIcon name="i-streamline-group-meeting-call-solid" class="w-28 h-28" />
+              <div>Symposium</div>
+            </div>
+          </div>
+
+          <div class="grid grid-rows-2 gap-2 ">
+            <div>
+              <NuxtImg src="/img/logo/round-table.png" loading="lazy"></NuxtImg>
+              <div>Round Table</div>
+            </div>
+            <div>
+              <UIcon name="i-mdi-projector-screen" class="w-28 h-28" />
+              <div>Onsite Demo and Exhibition</div>
+            </div>
+          </div>
+        </div>
+
+
         <SubSwiper :cards="false" />
       </div>
 

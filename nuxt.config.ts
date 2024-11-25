@@ -4,14 +4,6 @@ import { currentLocaleCodes, currentLocales } from "./config/i18n";
 
 export default defineNuxtConfig({
   app: {
-    head: {
-      link: [
-        {
-          // href: 'https://cdn.jsdelivr.net/npm/lxgw-wenkai-gb-web@latest/style.css',
-          // rel: 'stylesheet'
-        },
-      ]
-    }
   },
   compatibilityDate: "2024-11-01",
   devtools: { enabled: false },

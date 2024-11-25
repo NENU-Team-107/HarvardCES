@@ -94,7 +94,7 @@ const isHover = ref<boolean[]>([false, false])
                   </span>
                 </template>
               </UButton>
-              <UButton icon="i-material-symbols-mail-rounded" size="lg" color="rose" square variant="soft"
+              <UButton icon="i-line-md-email-arrow-right-filled" size="lg" color="rose" square variant="soft"
                 :class="isHover[0] ? 'ml-2 bg-white/60' : 'ml-2 bg-white'" :ui="{ rounded: 'rounded-full' }"
                 to="mailto:general@hgseces.org" />
             </div>
@@ -115,7 +115,7 @@ const isHover = ref<boolean[]>([false, false])
                   </span>
                 </template>
               </UButton>
-              <UButton icon="i-material-symbols-mail-rounded" size="lg" color="blue" square variant="soft"
+              <UButton icon="i-line-md-email-arrow-right-filled" size="lg" color="blue" square variant="soft"
                 :class="isHover[1] ? 'ml-2 bg-white/60' : 'ml-2 bg-white'" :ui="{ rounded: 'rounded-full' }"
                 to="mailto:GIETfuture@eduhk.hk" />
             </div>
