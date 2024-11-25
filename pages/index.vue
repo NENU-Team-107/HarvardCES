@@ -2,6 +2,7 @@
 import Title from '~/components/common/Title.vue'
 import CoverImage from '~/components/homeIndex/CoverImage.vue';
 import PopupWindow from '~/components/homeIndex/PopupWindow.vue';
+import Note from '~/components/homeIndex/Note.vue';
 import SubSwiper from '~/components/homeIndex/SubSwiper.vue';
 import type { Poster, Speaker, SwiperItem } from '~/lib/model';
 
@@ -78,7 +79,7 @@ const VisibleSpeakersList = computed(() => {
   return showMore.value ? speakersList.value : speakersList.value.slice(0, 6)
 })
 
-const SymposiumIntro = ref<string>()
+const SymposiumIntro = computed(() => t("Symposium.Intro"))
 
 onMounted(() => {
   fetchSpeakers()
@@ -93,8 +94,6 @@ onMounted(() => {
         speaker.photo = window.URL.createObjectURL(image)
       }
     })
-
-  SymposiumIntro.value = t("Symposium.Intro")
 })
 
 const slides = ref<SwiperItem[]>([
@@ -111,8 +110,6 @@ const slides = ref<SwiperItem[]>([
       class="w-full justify-center items-center justify-self-center  bg-gradient-to-r from-cover-left from-30% via-red-500 via-40% to-cover-right to-30% ">
       <CoverImage :Slides="slides" />
     </div>
-
-
 
     <div class="my-10 px-2 flex flex-col w-full">
 
@@ -166,10 +163,10 @@ const slides = ref<SwiperItem[]>([
 
             <div class="grid grid-cols-2 gap-2 w-4/5 justify-self-center text-center text-2xl font-semibold">
               <div class="hover:text-red-400">
-                <ULink>{{ $t("Harvard") }}</ULink>
+                <ULink to="https://www.hgseces.org/">{{ $t("Harvard") }}</ULink>
               </div>
               <div class="hover:text-green-800/80">
-                <ULink>{{ $t("GIET") }}</ULink>
+                <ULink to="https://www.eduhk.hk/en/">{{ $t("GIET") }}</ULink>
               </div>
             </div>
 
@@ -197,6 +194,7 @@ const slides = ref<SwiperItem[]>([
       </div>
 
       <PopupWindow />
+      <Note />
 
     </div>
   </div>
