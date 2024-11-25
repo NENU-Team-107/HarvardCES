@@ -9,7 +9,6 @@ export const speakerToKind: Map<number, string> = new Map([
     [6, 'Keynote Speakers'],
     [7, 'Keynote Speakers'],
     [8, 'Keynote Speakers'],
-    [17, 'Keynote Speakers'],
     [9, 'Organizing Committee'],
     [10, 'Organizing Committee'],
     [11, 'Organizing Committee'],
@@ -18,6 +17,12 @@ export const speakerToKind: Map<number, string> = new Map([
     [14, 'Guest of Honor'],
     [15, 'Guest of Honor'],
     [16, 'Guest of Honor'],
+    [17, 'Keynote Speakers'],
+    [18, 'Invited Speakers'],
+    [19, 'Invited Speakers'],
+    [20, 'Invited Speakers'],
+    [21, 'Invited Speakers'],
+    [22, 'Invited Speakers'],
 ]);
 
 export const keynoteSpeaker: Array<Speaker> = [
@@ -266,6 +271,94 @@ export const guestOfHonor: Array<Speaker> = [
             }
         }
     },
+]
+
+export const invitedSpeakers: Array<Speaker> = [
+    {
+        id: 17,
+        name: "server.Invited Speakers.id1.name",
+        kind: "Invited Speakers",
+        photo: "./assets/avatars/John Clifford Mitchell.png",
+        activateDate: new Date("2025-05-09"),
+        bio: {
+            details: {
+                description: "server.Invited Speakers.id1.description",
+                title: "server.Invited Speakers.id1.title",
+                link: 'speaker/17 John Clifford Mitchell'
+            }
+        }
+    },
+    {
+        id: 18,
+        name: "server.Invited Speakers.id2.name",
+        kind: "Invited Speakers",
+        photo: "./assets/avatars/University College London.png",
+        activateDate: new Date("2025-05-09"),
+        bio: {
+            details: {
+                description: "server.Invited Speakers.id2.description",
+                title: "server.Invited Speakers.id2.title",
+                link: 'speaker/18 University College London'
+            }
+        }
+    },
+    {
+        id: 19,
+        name: "server.Invited Speakers.id3.name",
+        kind: "Invited Speakers",
+        photo: "./assets/avatars/Hongjie Chen.png",
+        activateDate: new Date("2025-05-09"),
+        bio: {
+            details: {
+                description: "server.Invited Speakers.id3.description",
+                title: "server.Invited Speakers.id3.title",
+                link: 'speaker/19 Hongjie Chen'
+            }
+        }
+    },
+    {
+        id: 20,
+        name: "server.Invited Speakers.id4.name",
+        kind: "Invited Speakers",
+        photo: "./assets/avatars/Qing LI.png",
+        activateDate: new Date("2025-05-09"),
+        bio: {
+            details: {
+                description: "server.Invited Speakers.id4.description",
+                title: "server.Invited Speakers.id4.title",
+                link: 'speaker/20 Qing LI'
+            }
+        }
+    },
+    {
+        id: 21,
+        name: "server.Invited Speakers.id5.name",
+        kind: "Invited Speakers",
+        photo: "./assets/avatars/Enhong Chen.png",
+        activateDate: new Date("2025-05-09"),
+        bio: {
+            details: {
+                description: "server.Invited Speakers.id5.description",
+                title: "server.Invited Speakers.id5.title",
+                link: 'speaker/21 Enhong Chen'
+            }
+        }
+    },
+    {
+        id: 22,
+        name: "server.Invited Speakers.id6.name",
+        kind: "Invited Speakers",
+        photo: "./assets/avatars/Anny Chan.png",
+
+        activateDate: new Date("2025-05-09"),
+        bio: {
+            details: {
+                description: "server.Invited Speakers.id6.description",
+                title: "server.Invited Speakers.id6.title",
+                link: 'speaker/22 Anny Chan'
+            }
+        }
+    }
 ]
 
 export const SubSymposiumPoster: Array<Poster> = [

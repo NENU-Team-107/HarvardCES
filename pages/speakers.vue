@@ -19,10 +19,16 @@ const navMenuBase = ref<TabItems[]>([
     index: 1
   },
   {
+    label: "Invited Speakers",
+    content: "Invited Speakers",
+    show: false,
+    index: 2
+  },
+  {
     label: "Guest of Honor",
     content: "Guest of Honor",
     show: false,
-    index: 2
+    index: 3
   },
 ])
 
