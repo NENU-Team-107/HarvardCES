@@ -5,6 +5,7 @@ import PopupWindow from '~/components/homeIndex/PopupWindow.vue';
 import Note from '~/components/homeIndex/Note.vue';
 import SubSwiper from '~/components/homeIndex/SubSwiper.vue';
 import type { Poster, Speaker, SwiperItem } from '~/lib/model';
+import IconGrid from '~/components/homeIndex/IconGrid.vue';
 
 const { t } = useI18n()
 
@@ -150,44 +151,10 @@ const slides = ref<SwiperItem[]>([
 
       <div class="bg-white/80 dark:bg-gray-900/80 p-10">
         <Title :titleMap="title.workshop" class="dark:text-white/90" />
-        <div class="grid grid-cols-3 gap-0 w-full justify-center items-center text-center">
-          <div class="grid grid-rows-2 grid-flow-col-dense gap-0">
-            <div>
-              <UIcon name="i-file-icons-keynote" class="w-28 h-28 bg-red-500" />
-              <div>Keynote & Invited Talk</div>
-            </div>
-            <div>
-              <NuxtImg src="/img/logo/workshop.png" loading="lazy"></NuxtImg>
-              <div>Workshop</div>
-            </div>
-          </div>
-
-          <div class="grid grid-rows-2 gap-2 ">
-
-            <div>
-              <UIcon name="i-healthicons-group-discussion-meetingx3" class="w-28 h-28" />
-              <div>Panel Discussion</div>
-            </div>
-            <div>
-              <UIcon name="i-streamline-group-meeting-call-solid" class="w-28 h-28" />
-              <div>Symposium</div>
-            </div>
-          </div>
-
-          <div class="grid grid-rows-2 gap-2 ">
-            <div>
-              <NuxtImg src="/img/logo/round-table.png" loading="lazy"></NuxtImg>
-              <div>Round Table</div>
-            </div>
-            <div>
-              <UIcon name="i-mdi-projector-screen" class="w-28 h-28" />
-              <div>Onsite Demo and Exhibition</div>
-            </div>
-          </div>
+        <div class="grid grid-rows-1 grid-cols-1 justify-center items-center">
+          <IconGrid />
+          <SubSwiper :cards="false" />
         </div>
-
-
-        <SubSwiper :cards="false" />
       </div>
 
       <div class="bg-white/80 dark:bg-gray-900/80 p-10">
@@ -197,9 +164,8 @@ const slides = ref<SwiperItem[]>([
           <div class="mb-5">
             <div class="font-bold text-2xl pl-10 dark:text-white/90">{{ $t("Organised by") }}</div>
             <br>
-
             <div
-              class="grid md:grid-cols-2 grid-rows-2 gap-2 w-4/5 justify-self-center text-center md:text-2xl text-xl font-semibold">
+              class="grid md:grid-cols-2 md:grid-rows-1 grid-rows-2 grid-cols-1 gap-2 w-4/5 justify-self-center text-center md:text-2xl text-xl font-semibold ">
               <div class="hover:text-red-400">
                 <ULink to="https://www.hgseces.org/">{{ $t("Harvard") }}</ULink>
               </div>

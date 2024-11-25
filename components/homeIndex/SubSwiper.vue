@@ -3,8 +3,8 @@
     <div class="w-4/5 justify-self-center items-center justify-center">
       <UCarousel ref="carouselRef" v-slot="{ item }" , :items="slides" :ui="{ item: 'basis-full lg:basis-1/3' }"
         class="overflow-hidden">
-        <NuxtLink :to="item.link" class="w-full">
-          <NuxtImg :src="item.src" draggable="false" class="w-9/12" loading="lazy" />
+        <NuxtLink :to="item.link" class="w-full flex justify-center items-center">
+          <NuxtImg :src="item.src" draggable="false" class="w-3/4" loading="lazy" />
         </NuxtLink>
       </UCarousel>
     </div>
