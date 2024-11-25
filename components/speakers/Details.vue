@@ -36,7 +36,8 @@ const title = computed(() => {
         </h3>
       </div>
       <div class="w-full h-fit">
-        <NuxtImg class=" min-w-4/5 mx-auto rounded-full py-3" :src="props.speaker.photo" :alt="props.speaker.name" />
+        <NuxtImg class=" min-w-4/5 mx-auto rounded-full py-3" :src="props.speaker.photo" :alt="props.speaker.name"
+          preload />
       </div>
       <div class="w-full text-start flex flex-col justify-center items-center">
         <h1 class="text-slate-900 md:text-3xl text-xl tracking-tight font-extrabold dark:text-white/90">

@@ -16,7 +16,8 @@ const title = computed(() => {
 <template>
   <UCard>
     <div class="flex flex-col w-full">
-      <NuxtImg class="min-w-3/5 max-h-44 mx-auto rounded-full" :src="props.speakers.photo" :alt="props.speakers.name" />
+      <NuxtImg class="min-w-3/5 max-h-44 mx-auto rounded-full" :src="props.speakers.photo" :alt="props.speakers.name"
+        preload />
       <div class="font-bold text-center text-xl py-2">
         {{ $t(props.speakers.name) }}
       </div>

@@ -13,19 +13,19 @@ const logoList = ref([
     label: "Collaborator",
     path: "img/logo/co-iLRNLogo.png",
     link: "https://www.immersivelrn.org/",
-    height: 10,
+    height: 12,
   },
   {
     label: "Collaborator",
     path: "img/logo/co-IEEE-TLTlogo.png",
     link: "https://ieee-edusociety.org/publication/about-publications/tlt",
-    height: 12,
+    height: 14,
   },
   {
     label: "Collaborator",
     path: "img/logo/co-sklcilogo.png",
     link: "https://cogskl.iflytek.com/",
-    height: 14,
+    height: 16,
   },
   {
     label: "Collaborator",
@@ -111,7 +111,7 @@ const slides = ref<SwiperItem[]>([
       <CoverImage :Slides="slides" />
     </div>
 
-    <div class="my-10  flex flex-col w-full">
+    <div class="my-10 flex flex-col w-11/12">
 
       <div class="bg-white/80 dark:bg-gray-900/80 p-10">
         <Title :titleMap="title.intro" />
@@ -161,7 +161,8 @@ const slides = ref<SwiperItem[]>([
             <div class="font-bold text-2xl pl-10 dark:text-white/90">{{ $t("Organised by") }}</div>
             <br>
 
-            <div class="grid md:grid-cols-2 grid-rows-2 gap-2 w-4/5 justify-self-center text-center md:text-2xl text-xl font-semibold">
+            <div
+              class="grid md:grid-cols-2 grid-rows-2 gap-2 w-4/5 justify-self-center text-center md:text-2xl text-xl font-semibold">
               <div class="hover:text-red-400">
                 <ULink to="https://www.hgseces.org/">{{ $t("Harvard") }}</ULink>
               </div>

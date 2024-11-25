@@ -63,16 +63,16 @@ const toggleShowMore = (index: number) => {
         <TabsContent v-for="item in tabMenuBase" :value="item.label" class="flex-1 ml-8">
           <div
             class="flex flex-col px-8 md:px-16 py-6 bg-white/80 dark:bg-gray-800/80 dark:text-white h-full w-full rounded-lg shadow-sm">
-            <h1 v-if="item.content === 'Symposium Introduction'" class="text-center font-bold text-2xl mb-4">
-              {{ $t("Symposium.Title") }}
+            <h1 v-if="item.content === 'Symposium Introduction'" class="text-center font-bold text-3xl mb-4">
+              {{ $t("Symposium Introduction") }}
             </h1>
-            <h1 v-else-if="item.content === 'Symposium Location'" class="text-center font-bold text-2xl mb-4">
+            <h1 v-else-if="item.content === 'Symposium Location'" class="text-center font-bold text-3xl mb-4">
               {{ $t("Symposium Location") }}
             </h1>
 
             <div class="flex items-start justify-center w-full">
-              <div v-if="item.content === 'Symposium Introduction'" class="text-justify indent-8"
-                v-html="Introduction" />
+              <div v-if="item.content === 'Symposium Introduction'"
+                class="max-h-fit self-center text-justify indent-8 text-lg" v-html="Introduction" />
               <div v-else-if="item.content === 'Symposium Location'" class="w-full">
                 <NuxtImg :src="LocationImage" class="w-full object-cover rounded-lg" />
                 <div class="text-center text-lg mt-4">

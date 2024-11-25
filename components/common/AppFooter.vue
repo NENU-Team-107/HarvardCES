@@ -46,30 +46,30 @@ const isHover = ref<boolean[]>([false, false])
 </script>
 
 <template>
-  <div class="min-w-full min-h-28 bg-green-950/90 dark:bg-green-950 text-white w-full py-6">
-    <div class="text-xl font-bold text-center relative leading-10 pb-2">
+  <div class="min-w-full min-h-28 bg-green-950/90 dark:bg-green-950 text-white w-full py-3">
+    <div class="text-xl font-bold text-center relative pb-2">
       {{ $t(footerTitle) }}
     </div>
 
-    <div class="grid md:grid-cols-3 md:grid-rows-1 md:divide-x gap-1 grid-cols-1 grid-rows-4 w-full">
+    <div class="grid md:grid-cols-3 md:grid-rows-1 md:divide-x gap-1 grid-cols-1 grid-rows-4 w-full max-h-60">
 
-      <div class="hidden row-span-1 md:grid grid-rows-2 grid-cols-1 justify-center items-center mx-10">
-        <div class="flex items-center justify-center max-w-md max-h-28">
+      <div class="hidden row-span-1 md:grid grid-rows-2 grid-flow-col-dense mx-10 h-1/2">
+        <div class="justify-center items-center flex">
           <UButton icon="i-fa6-solid-heart" padding="2xs" gap="xs" color="sky" variant="soft"
             :ui="{ rounded: 'rounded-full', font: 'font-bold' }" class="w-1/2" block :trailing="true" to=""
             target="_blank">
             <span class="text-lg">Sponsor Ship</span>
           </UButton>
         </div>
-        <div class="w-full justify-center items-center flex row-span-1">
+        <div class="justify-center items-center flex mt-16">
           <NuxtImg src="img/logo/UNESCOLogo-single.png" />
         </div>
       </div>
 
-      <div class="max-w-screen-md grid grid-cols-1 row-span-2">
-        <div class="grid md:gap-4 gap-0 grid-rows-5 text-justify mx-5">
+      <div class="max-w-screen-md grid grid-cols-1 row-span-2 h-1/2">
+        <div class="grid gap-0 grid-rows-5 text-justify mx-5">
           <!-- TODO 加上原来的列表形式，并在下方加上button -->
-          <div class="grid gap-2 grid-rows-4 row-span-4">
+          <div class="grid gap-0 grid-rows-4 row-span-4 justify-center items-center">
             <div v-for="item in contact" class="grid grid-cols-3 grid-rows-1 grid-flow-col-dense">
               <div class="mr-5 text-end justify-items-end items-end">
                 {{ $t(item.before) }} :
@@ -137,7 +137,7 @@ const isHover = ref<boolean[]>([false, false])
         </div>
       </div>
 
-      <div class="grid  grid-rows-1 grid-cols-1 row-span-1">
+      <div class="grid  grid-rows-1 grid-cols-1 row-span-1 h-1/2">
         <div class="flex flex-col justify-center items-center">
           <div class="grid grid-rows-1 grid-cols-2 ">
             <div v-for="item in media" class="ml-5">
