@@ -29,7 +29,6 @@ export default defineEventHandler(async (event: any) => {
                     data.status = "Success"
                     data.data = result
                 }
-                console.log(data)
             }
             break
         case "Guest of Honor":

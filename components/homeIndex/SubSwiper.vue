@@ -1,8 +1,8 @@
 <template>
   <div v-if="!cards" class="w-full">
     <div class="w-full justify-self-center items-center justify-center relative">
-      <UCarousel ref="carouselRef" , :items="slides" :ui="{ item: 'basis-full lg:basis-1/3' }" arrows
-        class="overflow-hidden" indicators>
+      <UCarousel ref="carouselRef" , :items="slides" :ui="{ item: 'basis-full lg:basis-1/3' }" class="overflow-hidden"
+        arrows>
         <template #default="{ item }">
           <div class="w-full flex justify-center items-center">
             <NuxtLink :to="item.link" class="w-full flex justify-center mx-5 items-center mb-6">
@@ -23,7 +23,7 @@
         </template> -->
 
         <template #prev="{ onClick, disabled }">
-          <UButton :disabled="disabled" @click="onClick" color="blue">
+          <UButton :disabled="disabled" @click="onClick" color="sky">
             {{ $t("Prev") }}
             <template #leading>
               <UIcon name="i-heroicons-arrow-left-20-solid" class="w-5 h-5" />
@@ -32,7 +32,7 @@
         </template>
 
         <template #next="{ onClick, disabled }">
-          <UButton :disabled="disabled" @click="onClick" color="blue">
+          <UButton :disabled="disabled" @click="onClick" color="sky">
             {{ $t("Next") }}
             <template #trailing>
               <UIcon name="i-heroicons-arrow-right-20-solid" class="w-5 h-5" />
