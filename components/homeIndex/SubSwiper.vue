@@ -5,12 +5,15 @@
         :prev-button="{
           color: 'gray',
           icon: 'i-heroicons-arrow-left-20-solid',
-          class: '-start-12'
+          class: '-start-12 h-full w-10 border-none duration-200 hover:bg-gray-200/80',
+  variant: 'link',
+          square: true
         }" :next-button="{
-      color: 'gray',
-      icon: 'i-heroicons-arrow-right-20-solid',
-      class: '-end-12'
-    }" indicators>
+          color: 'gray',
+          icon: 'i-heroicons-arrow-right-20-solid',
+          class: '-end-12 h-full w-10 border-none duration-200 hover:bg-gray-200/80',
+          variant: 'link'
+        }" indicators>
         <template #default="{ item }">
           <div class="w-full flex justify-center items-center mb-6">
             <NuxtLink :to="item.link" class="w-full flex justify-center mx-5 items-center mb-6">
