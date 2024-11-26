@@ -13,14 +13,7 @@ export default defineNuxtConfig({
   vite: {
     // plugins: [font.vite({})],
   },
-  modules: [
-    "@nuxt/ui",
-    "@nuxtjs/tailwindcss",
-    "@nuxtjs/i18n",
-    "@nuxt/image",
-    "@vesp/nuxt-fontawesome",
-    'radix-vue/nuxt'
-  ],
+  modules: ["@nuxt/ui", "@nuxtjs/tailwindcss", "@nuxtjs/i18n", "@nuxt/image", "@vesp/nuxt-fontawesome", 'radix-vue/nuxt', '@nuxtjs/color-mode'],
   typescript: { typeCheck: true },
   tailwindcss: {
     exposeConfig: true,
@@ -57,9 +50,13 @@ export default defineNuxtConfig({
       ]
     }
   },
-  // dayjs: {
-  //   locales: ["en", "zh-cn", "zh-hk"],
-  //   plugins: ['relativeTime', 'utc', 'timezone', 'localizedFormat'],
-  //   defaultLocale: 'en'
-  // }
+  colorMode: {
+    preference: 'light', // default value of $colorMode.preference
+    fallback: 'light', // fallback value if not system preference found
+    hid: 'nuxt-color-mode-script',
+    globalName: '__NUXT_COLOR_MODE__',
+    componentName: 'ColorScheme',
+    storage: 'cookie', // or 'sessionStorage' or 'cookie'
+    storageKey: 'nuxt-color-mode'
+  }
 });
