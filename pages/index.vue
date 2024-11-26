@@ -117,7 +117,7 @@ const slides = ref<SwiperItem[]>([
       <div class="bg-white/80  p-10">
         <Title :titleMap="title.intro" />
         <div class="text-lg pl-10">
-          <div v-html="SymposiumIntro" class=" text-justify indent-8"></div>
+          <div v-html="$t('Symposium.Intro')" class="text-justify indent-8"></div>
           <div class="flex mt-4 ">
             <ULink to="/about"
               class="italic font-semibold transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
@@ -191,7 +191,9 @@ const slides = ref<SwiperItem[]>([
                 <div v-for="logo in logoList"
                   class="flex w-full h-full bg-collabor-item items-center justify-around">
                   <NuxtLink :to="logo.link" target="_blank" class="w-full h-full flex justify-center items-center">
+                    <!-- <div class="w-full h-full px-1 py-2 flex "> -->
                     <NuxtImg :src="logo.path" :class="'h-' + (logo.height - 2) + ' md:h-' + logo.height" />
+                    <!-- </div> -->
                   </NuxtLink>
                 </div>
               </div>

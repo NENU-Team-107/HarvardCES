@@ -2,10 +2,10 @@
   <div v-if="showPopup" class="bg-green-800/80  text-white/80 p-4 shadow-xl z-50 w-full hidden md:block">
     <div class="md:flex md:flex-col md:justify-center px-20">
       <div class="flex justify-between ">
-        <span class="text-2xl font-bold"> Privacy Notice</span>
+        <span class="text-2xl font-bold">Privacy Notice</span>
       </div>
       <div class="flex justify-between items-center mt-2">
-        <span class="text-justify leading-tight text-xl">This site uses cookies to offer you a better browsing
+        <span class="text-justify leading-tight text-lg">This site uses cookies to offer you a better browsing
           experience. By continuing, you are agreeing to the use of cookies on your device as described in our
           <a href="https://www.eduhk.hk/en/cookies" class="hover:text-red-500/95 underline">privacy policy. </a>
         </span>
