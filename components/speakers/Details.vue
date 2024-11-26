@@ -30,11 +30,11 @@ const title = computed(() => {
         </div>
       </div>
 
-      <div class="w-full h-full flex overflow-hidden">
+      <div class="w-full h-full flex overflow-hidden justify-center items-center py-5">
 
-        <div class="relative w-2/5 inset-0 flex items-end self-end">
-          <NuxtImg class="w-2/5 mx-auto rounded-full py-3" :src="props.speaker.photo" :alt="props.speaker.name"
-            preload />
+        <div class="w-2/5">
+          <NuxtImg class="rounded-full py-3 justify-self-center w-3/5" :src="props.speaker.photo"
+            :alt="props.speaker.name" preload />
         </div>
         <!-- Text Content -->
         <div class="flex-1 p-8 flex flex-col justify-center">
@@ -53,8 +53,8 @@ const title = computed(() => {
         </div>
       </div>
       <div class="px-10 text-justify my-5">
-        <div class=" text-lg font-bold justify-start">{{ $t("bio") }}</div>
-        <div class="indent-8 text-lg" v-html="description" />
+        <div v-if="description !== ''" class=" text-lg font-bold justify-start">{{ $t("bio") }}</div>
+        <div class=" text-lg" v-html="description" />
       </div>
     </div>
   </div>
