@@ -6,7 +6,7 @@ import Tabs from '~/components/common/Tabs.vue';
 const { t } = useI18n();
 
 const Introduction = computed(() => {
-  return t("Symposium.Details")
+  return t("Symposium.Details").replace(/\n/g, '<br>')
 })
 
 const tabMenuBase = ref<TabItems[]>([
@@ -62,14 +62,10 @@ const toggleShowMore = (index: number) => {
               <!-- <h1 class="text-start font-bold text-xl py-6 float-start">
                 {{ $t("Symposium.Topic") }}
               </h1> -->
-              <div class="text-justify indent-8 text-lg mt-5">
-                {{ $t("Symposium.Intro") }}
-              </div>
-              <br><br>
               <!-- <div class=" w-3/5 h-1 bg-gradient-to-r from-cover-left to-cover-right to-30% my-5">
               </div> -->
               <div class="text-justify indent-8 text-lg">
-                {{ $t("Symposium.Details") }}
+                <div v-html="Introduction"></div>
               </div>
             </div>
             <div v-else class="w-full">
