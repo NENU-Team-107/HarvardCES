@@ -32,6 +32,8 @@
   "Cover Image": "/img/poster/cover_en.jpg",
   "Collapse": "Collapse",
   "Show More": "Show More",
+  "Prev": "Prev",
+  "Next": "Next",
   "PopWindow": {
     "Title": "Submission Link",
     "Content": "Please click here to submit your paper"

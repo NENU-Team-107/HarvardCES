@@ -33,6 +33,8 @@
   "Cover Image": "/img/poster/cover_zh_Hans.jpg",
   "Collapse": "收起",
   "Show More": "展开",
+  "Prev": "上一页",
+  "Next": "下一页",
   "PopWindow": {
     "Title": "投稿链接",
     "Content": "请点击此处提交论文"

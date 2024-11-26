@@ -1,11 +1,37 @@
 <template>
   <div v-if="!cards" class="w-full">
-    <div class="w-full justify-self-center items-center justify-center">
-      <UCarousel ref="carouselRef" v-slot="{ item }" , :items="slides" :ui="{ item: 'basis-full lg:basis-1/3' }"
+    <div class="w-full justify-self-center items-center justify-center relative">
+      <UCarousel ref="carouselRef" , :items="slides" :ui="{ item: 'basis-full lg:basis-1/3' }" arrows
         class="overflow-hidden" indicators>
-        <NuxtLink :to="item.link" class="w-full flex justify-center items-center">
-          <NuxtImg :src="item.src" draggable="false" class="w-10/12" loading="lazy" />
-        </NuxtLink>
+        <template #default="{ item }">
+          <NuxtLink :to="item.link" class="w-full flex justify-center items-center mb-6">
+            <NuxtImg :src="item.src" draggable="false" class="w-10/12" loading="lazy" />
+          </NuxtLink>
+        </template>
+
+        <!-- <template #indicator="{ onClick, page, active }">
+          <UButton :label="String(page)" :variant="active ? 'solid' : 'outline'" size="2xs"
+            class="rounded-full min-w-6 justify-center" @click="onClick(page)" />
+        </template> -->
+
+        <template #prev="{ onClick, disabled }">
+          <UButton :disabled="disabled" @click="onClick" color="blue">
+            {{ $t("Prev") }}
+            <template #leading>
+              <UIcon name="i-heroicons-arrow-left-20-solid" class="w-5 h-5" />
+            </template>
+          </UButton>
+        </template>
+
+        <template #next="{ onClick, disabled }">
+          <UButton :disabled="disabled" @click="onClick" color="blue">
+            {{ $t("Next") }}
+            <template #trailing>
+              <UIcon name="i-heroicons-arrow-right-20-solid" class="w-5 h-5" />
+            </template>
+          </UButton>
+        </template>
+
       </UCarousel>
     </div>
   </div>
@@ -117,4 +143,8 @@ onMounted(() => {
   /* 强制去除内边距 */
   height: 50%;
 }
+
+/* .swiper-container>div>div {
+  display: relative;
+} */
 </style>
