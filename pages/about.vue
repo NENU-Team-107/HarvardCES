@@ -11,19 +11,19 @@ const Introduction = computed(() => {
 
 const tabMenuBase = ref<TabItems[]>([
   {
-    label: t("Symposium Introduction"),
+    label: "Symposium Introduction",
     content: "Symposium Introduction",
     show: true,
     index: 0
   },
   {
-    label: t("Symposium Location"),
+    label: "Symposium Location",
     content: "Symposium Location",
     show: false,
     index: 1
   },
   {
-    label: t("Symposium Time"),
+    label: "Symposium Time",
     content: "Symposium Time",
     show: false,
     index: 2

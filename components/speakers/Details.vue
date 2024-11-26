@@ -46,7 +46,7 @@ const title = computed(() => {
         <div class="text-center w-full text-lg font-semibold text-slate-900 dark:text-white py-2 ">
           <div v-html="title"></div>
         </div>
-        <div class="px-10 text-justify ">
+        <div class="px-10 text-justify indent-8 ">
           <div v-html="description" />
         </div>
       </div>
@@ -60,7 +60,7 @@ const title = computed(() => {
   display: inline-block;
   color: inherit;
   text-decoration: none;
-  background: linear-gradient(to top, rgb(93, 93, 99) 50%, transparent 50%);
+  background: linear-gradient(to top, rgb(255, 0, 0) 50%, transparent 50%);
   background-size: 100% 200%;
   background-position: 0 0;
   transition: background-position 0.3s, color 0.3s;

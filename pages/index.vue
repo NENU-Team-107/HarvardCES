@@ -2,7 +2,6 @@
 import Title from '~/components/common/Title.vue'
 import CoverImage from '~/components/homeIndex/CoverImage.vue';
 import PopupWindow from '~/components/homeIndex/PopupWindow.vue';
-import Note from '~/components/homeIndex/Note.vue';
 import SubSwiper from '~/components/homeIndex/SubSwiper.vue';
 import type { Poster, Speaker, SwiperItem } from '~/lib/model';
 import IconGrid from '~/components/homeIndex/IconGrid.vue';
@@ -198,8 +197,6 @@ const slides = ref<SwiperItem[]>([
       </div>
 
       <PopupWindow />
-      <Note />
-
     </div>
   </div>
 </template>
