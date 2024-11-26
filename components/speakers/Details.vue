@@ -54,7 +54,7 @@ const title = computed(() => {
       </div>
       <div class="px-10 text-justify my-5">
         <div class=" text-lg font-bold justify-start">{{ $t("bio") }}</div>
-        <div class="indent-8 text-lg" v-html="description" />
+        <div class=" text-lg" v-html="description" />
       </div>
     </div>
   </div>
