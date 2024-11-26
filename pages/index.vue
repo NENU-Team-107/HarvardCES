@@ -119,7 +119,8 @@ const slides = ref<SwiperItem[]>([
         <div class="text-lg pl-10">
           <div v-html="SymposiumIntro" class=" text-justify indent-8"></div>
           <div class="flex mt-4 ">
-            <ULink to="/about" class="italic font-semibold">
+            <ULink to="/about"
+              class="italic font-semibold transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
               {{ $t("Symposium.Click") }}
               <font-awesome icon="fa-solid fa-arrow-right" />
             </ULink>
