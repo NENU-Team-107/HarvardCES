@@ -4,7 +4,7 @@
       <UCarousel ref="carouselRef" , :items="slides" :ui="{ item: 'basis-full lg:basis-1/3' }" class="overflow-hidden"
         indicators>
         <template #default="{ item }">
-          <div class="w-full flex justify-center items-center">
+          <div class="w-full flex justify-center items-center mb-6">
             <NuxtLink :to="item.link" class="w-full flex justify-center mx-5 items-center mb-6">
               <div
                 class="flex justify-center items-center flex-col overflow-hidden text-center before:absolute before:h-1.1-full after:h-2-full after:-translate-y-1/2 after:absolute">
@@ -19,7 +19,7 @@
 
         <template #indicator="{ onClick, page, active }">
           <UButton :variant="active ? 'solid' : 'outline'" size="2xs"
-            class="rounded-full min-w-3 bg-red-400 text-red-400 hover:bg-red-200 mt-10" @click="onClick(page)" />
+            class="rounded-full min-w-4 h-4 bg-blue-400 text-blue-400 hover:bg-blue-200" @click="onClick(page)" />
         </template>
 
         <!-- <template #indicator="{ onClick, page, active }">
