@@ -76,14 +76,16 @@ const isHover = ref<boolean[]>([false, false])
               <div class="mr-5 text-end justify-items-end items-end w-1/6">
                 {{ $t(item.before) }}:
               </div>
-              <div class="justify-self-start col-span-2 flex-1">
+              <div class="justify-self-start col-span-2 flex-1 ">
 
                 <span v-if="item.before === 'Host.Location'" class="hover:text-blue-300">
                   <a href="https://www.google.com/maps/place/The+Education+University+of+Hong+Kong+(EdUHK)/@22.4670285,114.1936333,17z/data=!3m1!4b1!4m6!3m5!1s0x340409071d2e8877:0x9062d0835c0a2b87!8m2!3d22.4670285!4d114.1936333!16zL20vMDNtdl9s?hl=en&entry=ttu&g_ep=EgoyMDI0MTExOS4yIKXMDSoASAFQAw%3D%3D"
-                    target="_blank">{{
-                      $t(item.after) }}</a>
+                    target="_blank">
+                    <span v-html="$t(item.after).replace(/\n/g, '<br>')" />
+                    <!-- {{ $t(item.after) }} -->
+                  </a>
                 </span>
-                <span v-else>{{ $t(item.after) }}</span>
+                <span v-else v-html="$t(item.after).replace(/\n/g, '<br>')"></span>
               </div>
             </div>
           </div>

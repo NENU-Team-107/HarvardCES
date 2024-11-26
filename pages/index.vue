@@ -170,10 +170,14 @@ const slides = ref<SwiperItem[]>([
             <div
               class="grid md:grid-cols-2 md:grid-rows-1 grid-rows-2 grid-cols-1 gap-2 w-4/5 justify-self-center text-center md:text-2xl text-xl font-semibold ">
               <div class="hover:text-red-400">
-                <ULink to="https://www.hgseces.org/">{{ $t("Harvard") }}</ULink>
+                <ULink to="https://www.hgseces.org/">
+                  <span v-html="$t('Harvard').replace(/\n/g, '<br>')" />
+                </ULink>
               </div>
               <div class="hover:text-green-800/80">
-                <ULink to="https://www.eduhk.hk/en/">{{ $t("GIET") }}</ULink>
+                <ULink to="https://www.eduhk.hk/en/">
+                  <span v-html="$t('GIET').replace(/\n/g, '<br>')" />
+                </ULink>
               </div>
             </div>
 

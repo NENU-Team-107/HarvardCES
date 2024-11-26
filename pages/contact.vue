@@ -55,29 +55,34 @@ const eduHKPresident = computed(() => {
             <div class="flex flex-col space-y-12">
               <!-- 关于我们部分 -->
               <div class="bg-harvard-img1 bg-cover bg-no-repeat bg-center">
-                <div class="bg-red-900/85 text-white pr-10 pb-5">
-                  <div class="grid grid-cols-3 gap-4 w-full">
-                    <div class="col-start-2 col-span-2">
+                <div class="bg-red-900/85 text-white px-10 pb-8">
+                  <div class="grid grid-cols-1 gap-4 w-full">
+                    <div class="col-span-1">
                       <div class="grid-flow-row gap-4">
-                        <div class="text-3xl font-bold mt-10 mb-5">
+                        <div class="text-4xl leading-10 font-bold mt-10 mb-5 text-center">
                           哈佛中国教育论坛 | China Education Symposium
                         </div>
 
                         <div class=" bg-white w-full h-0.5 mb-5"></div>
 
-                        <div class="text-lg text-justify">
-                          哈佛中国教育论坛成立于2010年，是哈佛教育学院官方的学生组织，也是美国顶尖高等学府中对中国教育关注度最长和影响力最大的公益平台。一年一度的论坛旨在连接中美教育实践者、学者、政策制定者及各界领袖精英，促进与中国教育相关的讨论并支持教育实践，交锋观点，展示成果。
-                          <br>
-                          <br>
-                          China Education Symposium, established in 2010, is an official student-run organization at the
-                          Harvard Graduate School of Education. The non-profit Symposium has been widely recognized as
-                          one
-                          of the most well-established and well-known events in the United States around education in
-                          China. The annual Symposium aims to gather practitioners, researchers, and policymakers in the
-                          field of education to present the latest research, exchange new ideas, and brainstorm
-                          innovative
-                          solutions related to education in China.
+                        <div class="text-lg text-justify leading-8">
+                          <p class="my-6 indent-10">
+                            哈佛中国教育论坛成立于2010年，是哈佛教育学院官方的学生组织，也是美国顶尖高等学府中对中国教育关注度最长和影响力最大的公益平台。一年一度的论坛旨在连接中美教育实践者、学者、政策制定者及各界领袖精英，促进与中国教育相关的讨论并支持教育实践，交锋观点，展示成果。
+                          </p>
+                          <p class="my-6 indent-10">
+                            China Education Symposium, established in 2010, is an official student-run organization at
+                            the
+                            Harvard Graduate School of Education. The non-profit Symposium has been widely recognized as
+                            one
+                            of the most well-established and well-known events in the United States around education in
+                            China. The annual Symposium aims to gather practitioners, researchers, and policymakers in
+                            the
+                            field of education to present the latest research, exchange new ideas, and brainstorm
+                            innovative
+                            solutions related to education in China.
+                          </p>
                         </div>
+
                       </div>
                     </div>
                   </div>
