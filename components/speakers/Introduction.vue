@@ -26,7 +26,8 @@ const title = computed(() => {
     </div>
 
     <template #footer>
-      <ULink :to="props.speakers.bio.details.link" class="italic font-semibold">
+      <ULink :to="props.speakers.bio.details.link"
+        class="italic font-semibold hover:text-blue-600 text-black hover:transition-all hover:-translate-y-1 hover:scale-110 duration-300">
         {{ $t("Details") }}
         <font-awesome icon="fa-solid fa-arrow-right" />
       </ULink>

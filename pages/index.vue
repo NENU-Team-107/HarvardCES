@@ -112,7 +112,7 @@ const slides = ref<SwiperItem[]>([
       <CoverImage :Slides="slides" />
     </div>
 
-    <div class="my-10 flex flex-col w-11/12">
+    <div class="my-10 flex flex-col w-10/12">
 
       <div class="bg-white/80 dark:bg-gray-900/80 p-10">
         <Title :titleMap="title.intro" />
@@ -129,7 +129,7 @@ const slides = ref<SwiperItem[]>([
 
       <div class="bg-white/80 dark:bg-gray-900/80 p-10">
         <Title :titleMap="title.speaker" class="dark:text-white/90" />
-        <div class="grid md:grid-cols-3 gap-4 pl-10">
+        <div class="grid md:grid-cols-3 gap-4 px-10">
           <div v-for="speaker in VisibleSpeakersList" class="dark:text-white">
             <SpeakersIntroduction :speakers="speaker" />
           </div>
@@ -151,7 +151,7 @@ const slides = ref<SwiperItem[]>([
 
       <div class="bg-white/80 dark:bg-gray-900/80 p-10">
         <Title :titleMap="title.workshop" class="dark:text-white/90" />
-        <div class="grid grid-rows-1 grid-cols-1 justify-center items-center">
+        <div class="grid grid-rows-1 grid-cols-1 justify-center items-center w-4/5 justify-self-center">
           <IconGrid />
           <div class="text-center text-xl font-bold my-4 grid-cols-3 grid">
             <!-- <div class="h-1 w-full bg-black"></div>
@@ -200,7 +200,6 @@ const slides = ref<SwiperItem[]>([
           </div>
         </div>
       </div>
-
       <PopupWindow />
     </div>
   </div>

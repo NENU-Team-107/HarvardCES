@@ -1,10 +1,10 @@
 <template>
   <div v-if="!cards" class="w-full">
-    <div class="w-4/5 justify-self-center items-center justify-center">
+    <div class="w-full justify-self-center items-center justify-center">
       <UCarousel ref="carouselRef" v-slot="{ item }" , :items="slides" :ui="{ item: 'basis-full lg:basis-1/3' }"
         class="overflow-hidden">
         <NuxtLink :to="item.link" class="w-full flex justify-center items-center">
-          <NuxtImg :src="item.src" draggable="false" class="w-3/4" loading="lazy" />
+          <NuxtImg :src="item.src" draggable="false" class="w-10/12" loading="lazy" />
         </NuxtLink>
       </UCarousel>
     </div>
@@ -31,7 +31,8 @@
           <template #footer>
             <div class="flex w-full h-20">
               <div v-if="slide.details" class="w-11/12 text-sm justify-end flex relative">
-                <div class="font-semibold text-white bg-green-800 text-center p-2 h-fit absolute bottom-0 right-0">
+                <div
+                  class="font-semibold text-white bg-green-800 hover:bg-green-600 text-center p-2 h-fit absolute bottom-0 right-0">
                   <ULink :to="slide.link">
                     {{ $t("About Us.EduHK.link") }}
                   </ULink>

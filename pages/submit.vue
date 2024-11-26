@@ -78,7 +78,7 @@ function select(row: any) {
                 {{ $t("Sub-symposium Sessions Submit") }}
             </h1>
             <h2 class="text-red-500/90 text-lg">
-                <strong><i>Due 31 December, 2024; Notification by 31 January, 2025, Extension upon request</i></strong>
+                <strong><i>Due 31 December, 2024; Notification by 31 January, 2025; Extension upon request</i></strong>
             </h2>
             <div class="flex mt-10 justify-center items-center w-full self-center">
                 <UTable

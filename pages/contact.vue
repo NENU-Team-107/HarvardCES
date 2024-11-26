@@ -9,13 +9,13 @@ const { t } = useI18n();
 
 const tabMenuBase = ref<TabItems[]>([
   {
-    label: "Harvard China Education Symposium",
+    label: t("Harvard China Education Symposium"),
     content: "Harvard China Education Symposium",
     show: true,
     index: 0,
   },
   {
-    label: "The Education University of Hong Kong",
+    label: t("The Education University of Hong Kong"),
     content: "The Education University of Hong Kong",
     show: false,
     index: 1,
@@ -48,7 +48,7 @@ const eduHKPresident = computed(() => {
     <NuxtPage />
 
     <Tabs :tab-menu-base="tabMenuBase">
-      <TabsContent v-for="item in tabMenuBase" :value="item.label" class="flex-1 ml-8">
+      <TabsContent v-for="item in tabMenuBase" :value="item.content" class="flex-1 ml-8">
         <div class="min-h-full w-full flex flex-col bg-white/80 dark:bg-gray-800/80 dark:text-white px-10">
 
           <div v-if="item.index === 0" class="w-full max-w-screen">

@@ -7,25 +7,25 @@ const { t } = useI18n()
 
 const navMenuBase = ref<TabItems[]>([
   {
-    label: "Organizing Committee",
+    label: t("Organizing Committee"),
     content: "Organizing Committee",
     show: true,
     index: 0
   },
   {
-    label: "Keynote Speakers",
+    label: t("Keynote Speakers"),
     content: "Keynote Speakers",
     show: false,
     index: 1
   },
   // {
-  //   label: "Invited Speakers",
+  //   label: t("Invited Speakers"),
   //   content: "Invited Speakers",
   //   show: false,
   //   index: 2
   // },
   {
-    label: "Guest of Honor",
+    label: t("Guest of Honor"),
     content: "Guest of Honor",
     show: false,
     index: 3
@@ -93,16 +93,16 @@ const toggleShowMore = (index: number) => {
   <div class="w-full h-full min-h-screen mx-10 my-5 pt-24">
 
     <div class="hidden md:flex justify-center w-full min-h-screen">
-      <TabsRoot :default-value="navMenuBase.at(0)?.index" orientation="vertical" class="flex w-full max-w-7xl">
+      <TabsRoot :default-value="navMenuBase.at(0)?.content" orientation="vertical" class="flex w-full max-w-7xl">
         <TabsList
           class="flex flex-col min-w-48 items-center h-fit sticky top-24 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-md mr-4">
           <TabsIndicator
-            class="w-[2px] h-[48px] absolute left-1 top-1 translate-y-[--radix-tabs-indicator-position] rounded-full transition-[width,transform] duration-300">
-            <div class="bg-green-600 w-full h-full" />
+            class="w-[3px] h-[48px] absolute left-1 top-1 translate-y-[--radix-tabs-indicator-position] rounded-full transition-[width,transform] duration-300">
+            <div class="bg-blue-600 w-full h-full" />
           </TabsIndicator>
-          <TabsTrigger class="relative px-8 h-[60px] flex items-center text-base leading-none text-gray-600 dark:text-gray-300 select-none
-        hover:text-green-600
-        data-[state=active]:text-green-600 data-[state=active]:font-semibold
+          <TabsTrigger class="relative px-8 h-[60px] flex items-center text-base leading-none text-black dark:text-gray-300 select-none
+        hover:text-blue-500
+        data-[state=active]:text-blue-600
         outline-none cursor-pointer transition-all
         border-b border-gray-200 dark:border-gray-600
         last:border-b-0
@@ -110,11 +110,11 @@ const toggleShowMore = (index: number) => {
         before:bg-grass9 before:transform before:-translate-x-full
         before:transition-transform before:duration-200
         hover:before:translate-x-0
-        data-[state=active]:before:translate-x-0" v-for="item in navMenuBase" :value="item.index">
+        data-[state=active]:before:translate-x-0" v-for="item in navMenuBase" :value="item.content">
             {{ $t(item.label) }}
           </TabsTrigger>
         </TabsList>
-        <TabsContent v-for="item in navMenuBase" :value="item.index" class="min-w-screen">
+        <TabsContent v-for="item in navMenuBase" :value="item.content" class="min-w-screen">
           <div class="grid md:grid-cols-3 dark:text-white">
             <div v-for="speaker in speakersList.filter(speaker => speaker.kind === item.content)">
               <Interoduction :speakers="speaker" class="mx-4 my-2" />
