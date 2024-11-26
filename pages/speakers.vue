@@ -100,8 +100,7 @@ const toggleShowMore = (index: number) => {
     <div v-else>
       <div class="hidden md:flex justify-center w-full min-h-screen">
         <TabsRoot :default-value="navMenuBase.at(0)?.content" orientation="vertical" class="flex w-full max-w-7xl">
-          <TabsList
-            class="flex flex-col min-w-48 items-center h-fit sticky top-24 bg-gray-100  rounded-lg shadow-md mr-4">
+          <TabsList class="flex flex-col w-60 items-center h-fit sticky top-24 bg-gray-100  rounded-lg shadow-md mr-4">
             <TabsIndicator
               class="w-[3px] h-[48px] absolute left-1 top-1 translate-y-[--radix-tabs-indicator-position] rounded-full transition-[width,transform] duration-300">
               <div class="bg-blue-600 w-full h-full" />
