@@ -188,7 +188,7 @@ const slides = ref<SwiperItem[]>([
             <div class="font-bold text-xl pl-10">{{ $t("In collaboration with") }}</div>
             <div>
               <div class="grid grid-cols-2 md:grid-cols-3 mt-5 gap-0.5 w-full md:w-4/5 justify-self-center">
-                <div v-for="logo in logoList" class="flex w-full h-full bg-collabor-item items-center justify-around">
+                <div v-for="logo in logoList" class="flex w-full h-full  items-center justify-around">
                   <NuxtLink :to="logo.link" target="_blank" class="w-full h-full flex justify-center items-center">
                     <NuxtImg :src="logo.path" :class="'h-' + (logo.height - 2) + ' md:h-' + logo.height" />
                   </NuxtLink>

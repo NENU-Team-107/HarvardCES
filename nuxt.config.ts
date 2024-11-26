@@ -4,6 +4,9 @@ import { currentLocaleCodes, currentLocales } from "./config/i18n";
 
 export default defineNuxtConfig({
   app: {
+    pageTransition: {
+      name: 'page', mode: 'out-in'
+    }
   },
   compatibilityDate: "2024-11-01",
   devtools: { enabled: false },

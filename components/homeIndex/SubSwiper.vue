@@ -29,8 +29,8 @@
         </template>
 
         <template #indicator="{ onClick, page, active }">
-          <UButton :variant="active ? 'solid' : 'outline'" size="2xs"
-            class="rounded-full min-w-4 h-4 bg-blue-400 text-blue-400 hover:bg-blue-200" @click="onClick(page)" />
+          <UButton :variant="active ? 'solid' : 'outline'" size="2xs" color="rose" class="rounded-full min-w-4 "
+            @click="onClick(page)" />
         </template>
 
         <!-- <template #indicator="{ onClick, page, active }">
@@ -141,23 +141,7 @@ const cards = defineModel('cards', {
   default: false
 });
 
-const carouselRef = ref()
-
 fetchPosters()
-
-onMounted(() => {
-  if (!cards) {
-    setInterval(() => {
-      if (!carouselRef.value) return
-
-      if (carouselRef.value.page === carouselRef.value.pages) {
-        return carouselRef.value.select(0)
-      }
-
-      carouselRef.value.next()
-    }, 1000)
-  }
-})
 
 </script>
 
