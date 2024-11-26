@@ -29,7 +29,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="w-4/6 items-center justify-center justify-self-center">
+  <div class="md:w-4/6 w-full items-center justify-center justify-self-center">
     <UCarousel ref="carouselRef" v-slot="{ item }" , :items="slides" :ui="{ item: 'basis-full lg:basis-full' }"
       class="overflow-hidden">
       <NuxtImg :src="item.src" draggable="false" class="w-full" preload />

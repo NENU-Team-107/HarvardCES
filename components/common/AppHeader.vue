@@ -49,12 +49,13 @@ const closeMenu = () => {
 </script>
 
 <template>
-  <div class="w-full flex h-24 bg-nav-bg justify-between items-center px-16 z-50 fixed top-0 shadow-sm">
+  <div class="w-full flex md:h-24 h-20 bg-nav-bg justify-between items-center md:px-16 px-5 z-50 fixed top-0 shadow-sm">
     <div class="h-full flex justify-center items-center">
       <NuxtLinkLocale to="/" class="text-blue-500">
-        <NuxtImg src="img/logo/HostLogo_small.jpg" class="h-full max-h-24" sizes="600"></NuxtImg>
+        <NuxtImg src="img/logo/HostLogo_small.jpg" class="h-full max-h-24" sizes="md:600 200"></NuxtImg>
       </NuxtLinkLocale>
     </div>
+    <!-- 客户端显示 -->
     <div class="h-full justify-center items-center flex-row hidden md:flex">
       <div v-for="item in routerArray" :key="item.path" class="relative group mr-6 text-lg font-semibold">
         <NuxtLinkLocale :to="item.path" class="text-blue-500 pl-3">
@@ -72,6 +73,7 @@ const closeMenu = () => {
         <LangSwitch />
       </div>
     </div>
+    <!-- 移动端显示 -->
     <div class="md:hidden flex items-center">
       <button @click="toggleMenu" class="text-blue-500 focus:outline-none">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

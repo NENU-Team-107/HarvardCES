@@ -114,9 +114,9 @@ const slides = ref<SwiperItem[]>([
 
     <div class="my-10 flex flex-col w-10/12">
 
-      <div class="bg-white/80  p-10">
+      <div class="bg-white/80  md:p-10 p-1">
         <Title :titleMap="title.intro" />
-        <div class="text-lg pl-10">
+        <div class="md:text-lg text-sm pl-10">
           <div v-html="$t('Symposium.Intro')" class="text-justify indent-8"></div>
           <div class="flex mt-4 ">
             <ULink to="/about"
@@ -128,7 +128,7 @@ const slides = ref<SwiperItem[]>([
         </div>
       </div>
 
-      <div class="bg-white/80  p-10">
+      <div class="bg-white/80  md:p-10 p-1">
         <Title :titleMap="title.speaker" />
         <div class="grid md:grid-cols-3 gap-4 px-10">
           <div v-for="speaker in VisibleSpeakersList">
@@ -188,12 +188,9 @@ const slides = ref<SwiperItem[]>([
             <div class="font-bold text-xl pl-10">{{ $t("In collaboration with") }}</div>
             <div>
               <div class="grid grid-cols-2 md:grid-cols-3 mt-5 gap-0.5 w-full md:w-4/5 justify-self-center">
-                <div v-for="logo in logoList"
-                  class="flex w-full h-full bg-collabor-item items-center justify-around">
+                <div v-for="logo in logoList" class="flex w-full h-full bg-collabor-item items-center justify-around">
                   <NuxtLink :to="logo.link" target="_blank" class="w-full h-full flex justify-center items-center">
-                    <!-- <div class="w-full h-full px-1 py-2 flex "> -->
                     <NuxtImg :src="logo.path" :class="'h-' + (logo.height - 2) + ' md:h-' + logo.height" />
-                    <!-- </div> -->
                   </NuxtLink>
                 </div>
               </div>

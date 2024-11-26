@@ -9,7 +9,7 @@
               <div
                 class="flex justify-center items-center flex-col overflow-hidden text-center before:absolute before:h-1.1-full after:h-2-full after:-translate-y-1/2 after:absolute">
                 <NuxtImg :src="item.src" draggable="false" class="w-full" loading="lazy" />
-                <!-- <div>
+                <!-- <div class="flex ease-in-out duration-700">
                   <h1>Title</h1>
                 </div> -->
               </div>
