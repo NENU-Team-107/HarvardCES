@@ -23,6 +23,7 @@ body {
   background: #fff;
   color: #333;
   margin: 0;
+  overflow-wrap: break-word;
 }
 
 canvas {
