@@ -51,7 +51,8 @@ const title = ref({
   intro: "Symposium.Title",
   speaker: "Keynote Speakers",
   logo: "Organisers and Partners",
-  workshop: "Session"
+  workshop: "Activities"
+  //   workshop: "Session"
 })
 
 const speakersList = ref<Speaker[]>([])
@@ -152,6 +153,10 @@ const slides = ref<SwiperItem[]>([
         <Title :titleMap="title.workshop" class="dark:text-white/90" />
         <div class="grid grid-rows-1 grid-cols-1 justify-center items-center">
           <IconGrid />
+          <div class="text-center text-xl font-bold my-4 grid-cols-3 grid">
+            <!-- <div class="h-1 w-full bg-black"></div>
+            <span>{{ $t("Session") }}</span> -->
+          </div>
           <SubSwiper :cards="false" />
         </div>
       </div>

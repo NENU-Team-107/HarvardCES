@@ -8,7 +8,7 @@
         </div>
       </a>
       <div class="md:flex md:flex-col md:justify-center hidden">
-        <div class="flex justify-between items-center text-white/90 text-center">
+        <div class="flex justify-between items-center text-white text-center">
           <span class="text-center">{{ $t("PopWindow.Title") }}</span>
           <button @click="togglePopup" class="text-red-300 hover:text-red-200">
             <font-awesome icon="fa-solid fa-xmark" style="color: #ff0000;" />
