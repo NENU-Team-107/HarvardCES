@@ -49,11 +49,12 @@ const closeMenu = () => {
 </script>
 
 <template>
-  <div>
-    <div class="min-w-full">
+  <div class="w-full stick">
+    <div class="min-w-full relative">
       <Note />
     </div>
-    <div class="w-full flex h-24 bg-nav-bg justify-between items-center px-16 z-50  shadow-sm">
+
+    <div class="w-full flex h-24 bg-nav-bg justify-between items-center px-16 z-50 sticky top-0 shadow-sm">
       <div class="h-full flex justify-center items-center">
         <NuxtLinkLocale to="/" class="text-blue-500">
           <NuxtImg src="img/logo/HostLogo_small.jpg" class="h-full max-h-24" sizes="600"></NuxtImg>
