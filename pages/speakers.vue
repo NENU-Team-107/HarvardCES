@@ -111,7 +111,7 @@ const toggleShowMore = (index: number) => {
         before:transition-transform before:duration-200
         hover:before:translate-x-0
         data-[state=active]:before:translate-x-0" v-for="item in navMenuBase" :value="item.content">
-            {{ $t(item.label) }}
+            {{ $t(item.content) }}
           </TabsTrigger>
         </TabsList>
         <TabsContent v-for="item in navMenuBase" :value="item.content" class="min-w-screen">

@@ -35,20 +35,9 @@ const AgendaImage = computed(() => {
   return t("Symposium Agenda")
 })
 
-// const LocationImage = ref<string>('')
-
-// const fetchLocationImage = async () => {
-//   const data: Blob = await $fetch('/api/about/localtion')
-//   LocationImage.value = window.URL.createObjectURL(data)
-// }
-
-// fetchLocationImage();
 
 const toggleShowMore = (index: number) => {
   tabMenuBase.value[index].show = !tabMenuBase.value[index].show;
-  // if (index === 1 && tabMenuBase.value[index].show) {
-  //   fetchLocationImage()
-  // }
 }
 
 </script>
@@ -61,14 +50,24 @@ const toggleShowMore = (index: number) => {
 
         <TabsContent v-for="item in tabMenuBase" :value="item.content" class="flex-1 ml-8">
           <div
-            class="flex flex-col px-8 md:px-16 bg-white/80 py-4 dark:bg-gray-800/80 dark:text-white h-full w-full shadow-sm self-center">
-            <h1 v-if="item.index === 0" class="text-center font-bold text-2xl py-6">{{
-              $t("Symposium Introduction") }}
-            </h1>
-            <div v-if="item.content === 'Symposium Introduction'">
-              <div class="text-justify indent-8 text-lg">
+            class="flex flex-col px-8 md:px-16 bg-white/50 py-4 dark:bg-gray-800/80 dark:text-white h-full w-full shadow-2xl  border-1 rounded-lg self-center relative">
+
+            <div v-if="item.index === 0" class=" leading-6">
+              <div class="w-32 mx-0 my-0 z-30 float-right justify-self-end absolute right-0 top-0 rotate-12">
+                <NuxtImg src="/img/poster/Rainbowonly_organgeFlower_Small.svg" />
+              </div>
+              <h1 class="text-center font-bold text-2xl py-6">
+                {{ $t('Symposium.Name') }}
+              </h1>
+              <!-- <h1 class="text-start font-bold text-xl py-6 float-start">
+                {{ $t("Symposium.Topic") }}
+              </h1> -->
+              <div class="text-justify indent-8 text-lg mt-5">
                 {{ $t("Symposium.Intro") }}
               </div>
+              <br><br>
+              <!-- <div class=" w-3/5 h-1 bg-gradient-to-r from-cover-left to-cover-right to-30% my-5">
+              </div> -->
               <div class="text-justify indent-8 text-lg">
                 {{ $t("Symposium.Details") }}
               </div>
