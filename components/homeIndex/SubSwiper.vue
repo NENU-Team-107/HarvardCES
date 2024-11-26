@@ -1,8 +1,16 @@
 <template>
   <div v-if="!cards" class="w-full">
     <div class="w-full justify-self-center items-center justify-center relative">
-      <UCarousel ref="carouselRef" , :items="slides" :ui="{ item: 'basis-full lg:basis-1/3' }" class="overflow-hidden"
-        indicators>
+      <UCarousel ref="carouselRef" , :items="slides" :ui="{ item: 'basis-full lg:basis-1/3' }" class="" arrows
+        :prev-button="{
+          color: 'gray',
+          icon: 'i-heroicons-arrow-left-20-solid',
+          class: '-start-12'
+        }" :next-button="{
+      color: 'gray',
+      icon: 'i-heroicons-arrow-right-20-solid',
+      class: '-end-12'
+    }" indicators>
         <template #default="{ item }">
           <div class="w-full flex justify-center items-center mb-6">
             <NuxtLink :to="item.link" class="w-full flex justify-center mx-5 items-center mb-6">
