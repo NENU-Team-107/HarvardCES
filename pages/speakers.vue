@@ -18,12 +18,12 @@ const navMenuBase = ref<TabItems[]>([
     show: false,
     index: 1
   },
-  {
-    label: "Invited Speakers",
-    content: "Invited Speakers",
-    show: false,
-    index: 2
-  },
+  // {
+  //   label: "Invited Speakers",
+  //   content: "Invited Speakers",
+  //   show: false,
+  //   index: 2
+  // },
   {
     label: "Guest of Honor",
     content: "Guest of Honor",
