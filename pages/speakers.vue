@@ -43,7 +43,7 @@ const kindSpeakers = ref()
 const speakersList = ref<Speaker[]>([])
 
 const blobMap: Map<string, string> = new Map()
-
+const pending = ref(true)
 
 const fetchSpeakers = async () => {
   const resp = await $fetch('/api/speaker/listAll', {
@@ -67,6 +67,7 @@ const fetchSpeakers = async () => {
       }
     }
     speakersList.value = data;
+    pending.value = false;
   }
 }
 
@@ -92,15 +93,20 @@ const toggleShowMore = (index: number) => {
 
   <div class="w-full h-full min-h-screen mx-10 my-5 pt-24">
 
-    <div class="hidden md:flex justify-center w-full min-h-screen">
-      <TabsRoot :default-value="navMenuBase.at(0)?.content" orientation="vertical" class="flex w-full max-w-7xl">
-        <TabsList
-          class="flex flex-col min-w-48 items-center h-fit sticky top-24 bg-gray-100  rounded-lg shadow-md mr-4">
-          <TabsIndicator
-            class="w-[3px] h-[48px] absolute left-1 top-1 translate-y-[--radix-tabs-indicator-position] rounded-full transition-[width,transform] duration-300">
-            <div class="bg-blue-600 w-full h-full" />
-          </TabsIndicator>
-          <TabsTrigger class="relative px-8 h-[60px] flex items-center text-base leading-none text-black  select-none
+    <div v-if="pending">
+      <UCommandPalette loading />
+    </div>
+
+    <div v-else>
+      <div class="hidden md:flex justify-center w-full min-h-screen">
+        <TabsRoot :default-value="navMenuBase.at(0)?.content" orientation="vertical" class="flex w-full max-w-7xl">
+          <TabsList
+            class="flex flex-col min-w-48 items-center h-fit sticky top-24 bg-gray-100  rounded-lg shadow-md mr-4">
+            <TabsIndicator
+              class="w-[3px] h-[48px] absolute left-1 top-1 translate-y-[--radix-tabs-indicator-position] rounded-full transition-[width,transform] duration-300">
+              <div class="bg-blue-600 w-full h-full" />
+            </TabsIndicator>
+            <TabsTrigger class="relative px-8 h-[60px] flex items-center text-base leading-none text-black  select-none
         hover:text-blue-500
         data-[state=active]:text-blue-600
         outline-none cursor-pointer transition-all
@@ -111,61 +117,62 @@ const toggleShowMore = (index: number) => {
         before:transition-transform before:duration-200
         hover:before:translate-x-0
         data-[state=active]:before:translate-x-0" v-for="item in navMenuBase" :value="item.content">
-            {{ $t(item.content) }}
-          </TabsTrigger>
-        </TabsList>
-        <TabsContent v-for="item in navMenuBase" :value="item.content" class="min-w-screen">
-          <div class="grid md:grid-cols-3 ">
-            <div v-for="speaker in speakersList.filter(speaker => speaker.kind === item.content)">
-              <Interoduction :speakers="speaker" class="mx-4 my-2" />
+              {{ $t(item.content) }}
+            </TabsTrigger>
+          </TabsList>
+          <TabsContent v-for="item in navMenuBase" :value="item.content" class="min-w-screen">
+            <div class="grid md:grid-cols-3 ">
+              <div v-for="speaker in speakersList.filter(speaker => speaker.kind === item.content)">
+                <Interoduction :speakers="speaker" class="mx-4 my-2" />
+              </div>
             </div>
-          </div>
-        </TabsContent>
-      </TabsRoot>
-    </div>
+          </TabsContent>
+        </TabsRoot>
+      </div>
 
-    <div class="md:hidden">
-      <div v-for="item in navMenu">
-        <UCard :ui="{
-          base: '',
-          background: 'bg-white ',
-          divide: 'divide-y divide-gray-200 ',
-          ring: 'ring-1 ring-gray-200 ',
-          rounded: 'rounded-lg',
-          shadow: 'shadow',
-          body: {
+      <div class="md:hidden">
+        <div v-for="item in navMenu">
+          <UCard :ui="{
             base: '',
-            background: '',
-            padding: ''
-          },
-          header: {
-            base: '',
-            background: 'bg-tabs-header ',
-            padding: 'px-4 py-3 sm:px-6'
-          },
-        }
-          ">
-          <template #header>
-            <div class="flex w-full justify-between">
-              <span>{{ item.label }}</span>
-              <button @click="toggleShowMore(item.index)">
-                <span v-if="item.show">
-                  <font-awesome icon="fa-solid fa-angle-up" />
-                  {{ $t("Collapse") }}
-                </span>
-                <span v-else>
-                  <font-awesome icon="fa-solid fa-angle-down" />
-                  {{ $t("Show More") }}
-                </span>
-              </button>
+            background: 'bg-white ',
+            divide: 'divide-y divide-gray-200 ',
+            ring: 'ring-1 ring-gray-200 ',
+            rounded: 'rounded-lg',
+            shadow: 'shadow',
+            body: {
+              base: '',
+              background: '',
+              padding: ''
+            },
+            header: {
+              base: '',
+              background: 'bg-tabs-header ',
+              padding: 'px-4 py-3 sm:px-6'
+            },
+          }
+            ">
+            <template #header>
+              <div class="flex w-full justify-between">
+                <span>{{ item.label }}</span>
+                <button @click="toggleShowMore(item.index)">
+                  <span v-if="item.show">
+                    <font-awesome icon="fa-solid fa-angle-up" />
+                    {{ $t("Collapse") }}
+                  </span>
+                  <span v-else>
+                    <font-awesome icon="fa-solid fa-angle-down" />
+                    {{ $t("Show More") }}
+                  </span>
+                </button>
+              </div>
+            </template>
+            <div v-show="item.show">
+              <div v-for="speaker in kindSpeakers">
+                <Interoduction :speakers="speaker" class="mx-10 my-5" />
+              </div>
             </div>
-          </template>
-          <div v-show="item.show">
-            <div v-for="speaker in kindSpeakers">
-              <Interoduction :speakers="speaker" class="mx-10 my-5" />
-            </div>
-          </div>
-        </UCard>
+          </UCard>
+        </div>
       </div>
     </div>
   </div>
