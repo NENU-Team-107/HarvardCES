@@ -27,6 +27,7 @@ export default {
       colors: {
         'cover-left': '#c56c70',
         'cover-right': '#c1daba',
+        'collabor-item':'#f9f9f9',
         'footer-bg': '#d29c9c',
         'tabs-header': '#f3f4f6',
         'nav-bg': '#ffffff',

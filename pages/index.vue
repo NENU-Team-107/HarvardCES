@@ -19,7 +19,7 @@ const logoList = ref([
     label: "Collaborator",
     path: "img/logo/co-IEEE-TLTlogo.png",
     link: "https://ieee-edusociety.org/publication/about-publications/tlt",
-    height: 14,
+    height: 16,
   },
   {
     label: "Collaborator",
@@ -42,7 +42,7 @@ const logoList = ref([
   {
     label: "Collaborator",
     path: "img/logo/co-MOElogo.png",
-    link: "https://www.iflytek.com/cn/",
+    link: "https://mtt.snnu.edu.cn/index.htm",
     height: 18,
   }
 ])
@@ -170,12 +170,12 @@ const slides = ref<SwiperItem[]>([
             <div
               class="grid md:grid-cols-2 md:grid-rows-1 grid-rows-2 grid-cols-1 gap-2 w-4/5 justify-self-center text-center md:text-2xl text-xl font-semibold ">
               <div class="hover:text-red-400">
-                <ULink to="https://www.hgseces.org/">
+                <ULink to="https://www.hgseces.org/" target="_blank">
                   <span v-html="$t('Harvard').replace(/\n/g, '<br>')" />
                 </ULink>
               </div>
               <div class="hover:text-green-800/80">
-                <ULink to="https://www.eduhk.hk/en/">
+                <ULink to="https://www.eduhk.hk/en/" target="_blank">
                   <span v-html="$t('GIET').replace(/\n/g, '<br>')" />
                 </ULink>
               </div>
@@ -186,10 +186,13 @@ const slides = ref<SwiperItem[]>([
           <div class="w-full ">
             <div class="font-bold text-xl pl-10">{{ $t("In collaboration with") }}</div>
             <div>
-              <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-5 w-full md:w-3/5 justify-self-center">
-                <div v-for="logo in logoList" class="flex items-center justify-center">
-                  <NuxtLink :to="logo.link">
-                    <NuxtImg :src="logo.path" :class="'h-' + (logo.height - 2) + ' md:h-' + logo.height" />
+              <div class="grid grid-cols-2 md:grid-cols-3 mt-5 gap-0.5 w-full md:w-4/5 justify-self-center">
+                <div v-for="logo in logoList"
+                  class="flex w-full h-full bg-collabor-item items-center justify-around hover:bg-gray-200">
+                  <NuxtLink :to="logo.link" target="_blank" class="w-full h-full flex justify-center items-center">
+                    <!-- <div class="w-full h-full px-1 py-2 flex "> -->
+                      <NuxtImg :src="logo.path" :class="'h-' + (logo.height - 2) + ' md:h-' + logo.height" />
+                    <!-- </div> -->
                   </NuxtLink>
                 </div>
               </div>
