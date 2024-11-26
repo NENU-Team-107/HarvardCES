@@ -14,6 +14,10 @@ export default {
   ],
   theme: {
     extend: {
+      height: {
+        '1.1-full': '110%',
+        '2-full': '200%'
+      },
       fontFamily: {
         'display': ['"Times New Roman"', 'KaiTi'],
         'body': ['"Times New Roman"', 'KaiTi'],
@@ -27,7 +31,7 @@ export default {
       colors: {
         'cover-left': '#c56c70',
         'cover-right': '#c1daba',
-        'collabor-item':'#f9f9f9',
+        'collabor-item': '#f9f9f9',
         'footer-bg': '#d29c9c',
         'tabs-header': '#f3f4f6',
         'nav-bg': '#ffffff',
