@@ -33,8 +33,8 @@ const title = computed(() => {
       <div class="w-full h-full flex overflow-hidden justify-center items-center py-5">
 
         <div class="w-2/5">
-          <NuxtImg class="rounded-full py-3 justify-self-center w-3/5" :src="props.speaker.photo"
-            :alt="props.speaker.name" preload />
+          <NuxtImg class="rounded-full border-solid border-[2px] border-black/60 transition justify-self-center w-3/5"
+            :src="props.speaker.photo" :alt="props.speaker.name" preload />
         </div>
         <!-- Text Content -->
         <div class="flex-1 p-8 flex flex-col justify-center">

@@ -1,8 +1,8 @@
 <template>
   <div v-if="!cards" class="w-full">
     <div class="w-full justify-self-center items-center justify-center relative">
-      <UCarousel ref="carouselRef" , :items="slides" :ui="{ item: 'basis-full lg:basis-1/3' }" arrows
-        class="overflow-hidden" indicators>
+      <UCarousel ref="carouselRef" , :items="slides" :ui="{ item: 'basis-full lg:basis-1/3' }" class="overflow-hidden"
+        indicators>
         <template #default="{ item }">
           <div class="w-full flex justify-center items-center">
             <NuxtLink :to="item.link" class="w-full flex justify-center mx-5 items-center mb-6">
@@ -17,13 +17,18 @@
           </div>
         </template>
 
+        <template #indicator="{ onClick, page, active }">
+          <UButton :variant="active ? 'solid' : 'outline'" size="2xs"
+            class="rounded-full min-w-3 bg-red-400 text-red-400 hover:bg-red-200 mt-10" @click="onClick(page)" />
+        </template>
+
         <!-- <template #indicator="{ onClick, page, active }">
           <UButton :label="String(page)" :variant="active ? 'solid' : 'outline'" size="2xs"
             class="rounded-full min-w-6 justify-center" @click="onClick(page)" />
         </template> -->
 
-        <template #prev="{ onClick, disabled }">
-          <UButton :disabled="disabled" @click="onClick" color="blue">
+        <!-- <template #prev="{ onClick, disabled }">
+          <UButton :disabled="disabled" @click="onClick" color="sky">
             {{ $t("Prev") }}
             <template #leading>
               <UIcon name="i-heroicons-arrow-left-20-solid" class="w-5 h-5" />
@@ -32,13 +37,13 @@
         </template>
 
         <template #next="{ onClick, disabled }">
-          <UButton :disabled="disabled" @click="onClick" color="blue">
+          <UButton :disabled="disabled" @click="onClick" color="sky">
             {{ $t("Next") }}
             <template #trailing>
               <UIcon name="i-heroicons-arrow-right-20-solid" class="w-5 h-5" />
             </template>
           </UButton>
-        </template>
+        </template> -->
 
       </UCarousel>
     </div>
@@ -139,7 +144,7 @@ onMounted(() => {
       }
 
       carouselRef.value.next()
-    }, 3000)
+    }, 1000)
   }
 })
 

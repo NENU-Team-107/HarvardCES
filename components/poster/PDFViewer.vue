@@ -7,7 +7,6 @@ const props = defineProps<{
 }>()
 
 // TODO 似乎有 bug，如果去掉打印的这一行，就会导致不显示 pdf
-console.log(props.pdfPath)
 
 const { pdf, pages } = usePDF(props.pdfPath)
 
