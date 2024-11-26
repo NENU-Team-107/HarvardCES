@@ -1,8 +1,8 @@
 <template>
-  <div class="w-full min-h-screen flex flex-col relative dark:bg-black">
+  <div class="w-full min-h-screen flex flex-col relative">
     <!-- 背景图片 -->
     <div
-      class="absolute top-0 left-0 inset-0 dark:bg-none bg-letter-paper bg-no-repeat bg-center bg-cover blur-sm opacity-80 bg-fixed dark:opacity-95" />
+      class="absolute top-0 left-0 inset-0  bg-letter-paper bg-no-repeat bg-center bg-cover blur-sm opacity-80 bg-fixed " />
     <div class="w-full flex flex-col justify-center relative z-10">
       <AppHeader />
       <!-- 内容 -->

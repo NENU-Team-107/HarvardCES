@@ -114,11 +114,11 @@ const slides = ref<SwiperItem[]>([
 
     <div class="my-10 flex flex-col w-10/12">
 
-      <div class="bg-white/80 dark:bg-gray-900/80 p-10">
+      <div class="bg-white/80  p-10">
         <Title :titleMap="title.intro" />
         <div class="text-lg pl-10">
-          <div v-html="SymposiumIntro" class="dark:text-white/90 text-justify indent-8"></div>
-          <div class="flex mt-4 dark:text-white/90">
+          <div v-html="SymposiumIntro" class=" text-justify indent-8"></div>
+          <div class="flex mt-4 ">
             <ULink to="/about" class="italic font-semibold">
               {{ $t("Symposium.Click") }}
               <font-awesome icon="fa-solid fa-arrow-right" />
@@ -127,16 +127,15 @@ const slides = ref<SwiperItem[]>([
         </div>
       </div>
 
-      <div class="bg-white/80 dark:bg-gray-900/80 p-10">
-        <Title :titleMap="title.speaker" class="dark:text-white/90" />
+      <div class="bg-white/80  p-10">
+        <Title :titleMap="title.speaker" />
         <div class="grid md:grid-cols-3 gap-4 px-10">
-          <div v-for="speaker in VisibleSpeakersList" class="dark:text-white">
+          <div v-for="speaker in VisibleSpeakersList">
             <SpeakersIntroduction :speakers="speaker" />
           </div>
         </div>
         <div v-if="speakersList.length > 6" class="flex justify-center mt-4">
-          <button @click="toggleShowMore"
-            class="text-blue-500 hover:text-blue-700 dark:text-blue-300 dark:hover:text-blue-100">
+          <button @click="toggleShowMore" class="text-blue-500 hover:text-blue-700 ">
             <span v-if="showMore">
               <font-awesome icon="fa-solid fa-angle-up" />
               {{ $t("Collapse") }}
@@ -149,8 +148,8 @@ const slides = ref<SwiperItem[]>([
         </div>
       </div>
 
-      <div class="bg-white/80 dark:bg-gray-900/80 p-10">
-        <Title :titleMap="title.workshop" class="dark:text-white/90" />
+      <div class="bg-white/80  p-10">
+        <Title :titleMap="title.workshop" />
         <div class="grid grid-rows-1 grid-cols-1 justify-center items-center w-4/5 justify-self-center">
           <IconGrid />
           <div class="text-center text-xl font-bold my-4 grid-cols-3 grid">
@@ -161,12 +160,12 @@ const slides = ref<SwiperItem[]>([
         </div>
       </div>
 
-      <div class="bg-white/80 dark:bg-gray-900/80 p-10">
+      <div class="bg-white/80  p-10">
         <!-- NOTE 这部分是主办单位和合作者的 Logo -->
-        <Title :titleMap="title.logo" class="dark:text-white/90"></Title>
+        <Title :titleMap="title.logo"></Title>
         <div class="justify-self-center w-full md:w-11/12">
           <div class="mb-5">
-            <div class="font-bold text-2xl pl-10 dark:text-white/90">{{ $t("Organised by") }}</div>
+            <div class="font-bold text-2xl pl-10 ">{{ $t("Organised by") }}</div>
             <br>
             <div
               class="grid md:grid-cols-2 md:grid-rows-1 grid-rows-2 grid-cols-1 gap-2 w-4/5 justify-self-center text-center md:text-2xl text-xl font-semibold ">
@@ -180,7 +179,7 @@ const slides = ref<SwiperItem[]>([
 
           </div>
 
-          <div class="w-full dark:text-white/90">
+          <div class="w-full ">
             <div class="font-bold text-xl pl-10">{{ $t("In collaboration with") }}</div>
             <div>
               <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-5 w-full md:w-3/5 justify-self-center">

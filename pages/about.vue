@@ -50,7 +50,7 @@ const toggleShowMore = (index: number) => {
 
         <TabsContent v-for="item in tabMenuBase" :value="item.content" class="flex-1 ml-8">
           <div
-            class="flex flex-col px-8 md:px-16 bg-white/50 py-4 dark:bg-gray-800/80 dark:text-white h-full w-full shadow-2xl  border-1 rounded-lg self-center relative">
+            class="flex flex-col px-8 md:px-16 bg-white/50 py-4  h-full w-full shadow-2xl  border-1 rounded-lg self-center relative">
 
             <div v-if="item.index === 0" class=" leading-6">
               <div class="w-32 mx-0 my-0 z-30 float-right justify-self-end absolute right-0 top-0 rotate-12">
@@ -86,19 +86,19 @@ const toggleShowMore = (index: number) => {
       <div v-for="item in tabMenuBase">
         <UCard :ui="{
           base: '',
-          background: 'bg-white dark:bg-gray-900',
-          divide: 'divide-y divide-gray-200 dark:divide-gray-800',
-          ring: 'ring-1 ring-gray-200 dark:ring-gray-800',
+          background: 'bg-white ',
+          divide: 'divide-y divide-gray-200 ',
+          ring: 'ring-1 ring-gray-200 0',
           rounded: 'rounded-lg',
           shadow: 'shadow',
           body: {
             base: '',
-            background: 'dark:bg-gray-900',
+            background: '',
             padding: ''
           },
           header: {
-            base: 'dark:text-white/90',
-            background: 'bg-tabs-header dark:bg-gray-700',
+            base: '',
+            background: 'bg-tabs-header',
             padding: 'px-4 py-3 sm:px-6'
           },
         }
@@ -119,7 +119,7 @@ const toggleShowMore = (index: number) => {
             </div>
           </template>
 
-          <div v-if="item.show" class="dark:text-white/90 mr-4 ml-4 pb-4">
+          <div v-if="item.show" class=" mr-4 ml-4 pb-4">
             <h1 v-if="item.index === 0" class="text-center font-bold text-2xl py-6">{{
               $t("Symposium Introduction") }}
             </h1>

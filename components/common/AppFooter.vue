@@ -46,7 +46,7 @@ const isHover = ref<boolean[]>([false, false])
 </script>
 
 <template>
-  <div class="min-w-full min-h-28 bg-green-950/90 dark:bg-green-950 text-white w-full py-3">
+  <div class="min-w-full min-h-28 bg-green-950/90 text-white w-full py-3">
     <div class="text-xl font-bold text-center relative pb-2">
       {{ $t(footerTitle) }}
     </div>

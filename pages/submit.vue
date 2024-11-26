@@ -72,8 +72,7 @@ function select(row: any) {
 <template>
     <div class="w-fit min-h-fit mx-10 my-5 pt-24">
         <NuxtPage />
-        <div
-            class="flex flex-col px-20 py-10 bg-white/80 dark:bg-gray-800/80 dark:text-white justify-center items-center w-full">
+        <div class="flex flex-col px-20 py-10 bg-white/80  justify-center items-center w-full">
             <h1 class="text-center font-bold text-3xl py-6">
                 {{ $t("Sub-symposium Sessions Submit") }}
             </h1>

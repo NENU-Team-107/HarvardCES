@@ -2,7 +2,7 @@
   <div v-if="!cards" class="w-full">
     <div class="w-full justify-self-center items-center justify-center">
       <UCarousel ref="carouselRef" v-slot="{ item }" , :items="slides" :ui="{ item: 'basis-full lg:basis-1/3' }"
-        class="overflow-hidden">
+        class="overflow-hidden" indicators>
         <NuxtLink :to="item.link" class="w-full flex justify-center items-center">
           <NuxtImg :src="item.src" draggable="false" class="w-10/12" loading="lazy" />
         </NuxtLink>
@@ -11,14 +11,14 @@
   </div>
   <div v-else class="w-full flex flex-row">
     <div class="grid md:grid-cols-3 gap-4 px-10 flex-1">
-      <div v-for="slide in slides" class="dark:text-white relative h-full w-full">
+      <div v-for="slide in slides" class=" relative h-full w-full">
         <UCard v-if="slide.details" class="u-card-class" :ui="{
           base: '',
           divide: '',
           ring: '',
           rounded: '',
           shadow: '',
-          background: 'dark:bg-gray-900/80 w-full h-full',
+          background: 'w-full h-full',
 
           footer: {
             base: 'flex justify-end w-full flex-col',

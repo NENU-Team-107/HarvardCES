@@ -32,17 +32,16 @@ const toggleShowMore = (index: number) => {
 
     <div class="hidden md:flex justify-center w-full min-h-screen">
       <TabsRoot :default-value="tabMenuBase.at(0)?.content" orientation="vertical" class="flex w-full max-w-7xl">
-        <TabsList
-          class="flex flex-col min-w-52 items-center h-fit sticky top-24 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-md">
+        <TabsList class="flex flex-col min-w-52 items-center h-fit sticky top-24 bg-gray-100 rounded-lg shadow-md">
           <TabsIndicator
             class="w-[3px] h-[48px] absolute left-1 top-1 translate-y-[--radix-tabs-indicator-position] rounded-full transition-[width,transform] duration-300">
             <div class="bg-blue-600 w-full h-full" />
           </TabsIndicator>
-          <TabsTrigger class="px-4 h-[60px] flex items-center text-base leading-none text-balck dark:text-gray-300 select-none min-w-fit
+          <TabsTrigger class="px-4 h-[60px] flex items-center text-base leading-none text-balck select-none min-w-fit
         hover:text-blue-500
         data-[state=active]:text-blue-600
         outline-none cursor-pointer transition-all
-        border-b border-gray-300 dark:border-gray-600
+        border-b border-gray-300 
         last:border-b-0
         before:content-[''] before:absolute before:left-0 before:top-0 before:bottom-0 before:w-[0px] 
         before:bg-grass9 before:transform before:-translate-x-full
@@ -65,9 +64,9 @@ const toggleShowMore = (index: number) => {
         <UCard :ui="{
           base: '',
           padding: 'p-0',
-          background: 'bg-white dark:bg-gray-900',
-          divide: 'divide-y divide-gray-200 dark:divide-gray-800',
-          ring: 'ring-1 ring-gray-200 dark:ring-gray-800',
+          background: 'bg-white ',
+          divide: 'divide-y divide-gray-200 ',
+          ring: 'ring-1 ring-gray-200 ',
           rounded: 'rounded-lg',
           shadow: 'shadow',
           body: {

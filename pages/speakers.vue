@@ -95,16 +95,16 @@ const toggleShowMore = (index: number) => {
     <div class="hidden md:flex justify-center w-full min-h-screen">
       <TabsRoot :default-value="navMenuBase.at(0)?.content" orientation="vertical" class="flex w-full max-w-7xl">
         <TabsList
-          class="flex flex-col min-w-48 items-center h-fit sticky top-24 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-md mr-4">
+          class="flex flex-col min-w-48 items-center h-fit sticky top-24 bg-gray-100  rounded-lg shadow-md mr-4">
           <TabsIndicator
             class="w-[3px] h-[48px] absolute left-1 top-1 translate-y-[--radix-tabs-indicator-position] rounded-full transition-[width,transform] duration-300">
             <div class="bg-blue-600 w-full h-full" />
           </TabsIndicator>
-          <TabsTrigger class="relative px-8 h-[60px] flex items-center text-base leading-none text-black dark:text-gray-300 select-none
+          <TabsTrigger class="relative px-8 h-[60px] flex items-center text-base leading-none text-black  select-none
         hover:text-blue-500
         data-[state=active]:text-blue-600
         outline-none cursor-pointer transition-all
-        border-b border-gray-200 dark:border-gray-600
+        border-b border-gray-200 
         last:border-b-0
         before:content-[''] before:absolute before:left-0 before:top-0 before:bottom-0 before:w-[3px] 
         before:bg-grass9 before:transform before:-translate-x-full
@@ -115,7 +115,7 @@ const toggleShowMore = (index: number) => {
           </TabsTrigger>
         </TabsList>
         <TabsContent v-for="item in navMenuBase" :value="item.content" class="min-w-screen">
-          <div class="grid md:grid-cols-3 dark:text-white">
+          <div class="grid md:grid-cols-3 ">
             <div v-for="speaker in speakersList.filter(speaker => speaker.kind === item.content)">
               <Interoduction :speakers="speaker" class="mx-4 my-2" />
             </div>
@@ -128,19 +128,19 @@ const toggleShowMore = (index: number) => {
       <div v-for="item in navMenu">
         <UCard :ui="{
           base: '',
-          background: 'bg-white dark:bg-gray-900',
-          divide: 'divide-y divide-gray-200 dark:divide-gray-800',
-          ring: 'ring-1 ring-gray-200 dark:ring-gray-800',
+          background: 'bg-white ',
+          divide: 'divide-y divide-gray-200 ',
+          ring: 'ring-1 ring-gray-200 ',
           rounded: 'rounded-lg',
           shadow: 'shadow',
           body: {
             base: '',
-            background: 'dark:bg-gray-900',
+            background: '',
             padding: ''
           },
           header: {
-            base: 'dark:text-white/90',
-            background: 'bg-tabs-header dark:bg-gray-700',
+            base: '',
+            background: 'bg-tabs-header ',
             padding: 'px-4 py-3 sm:px-6'
           },
         }
@@ -160,7 +160,7 @@ const toggleShowMore = (index: number) => {
               </button>
             </div>
           </template>
-          <div v-show="item.show" class="dark:text-white/90">
+          <div v-show="item.show">
             <div v-for="speaker in kindSpeakers">
               <Interoduction :speakers="speaker" class="mx-10 my-5" />
             </div>

@@ -1,7 +1,6 @@
 <template>
   <div>
-    <div v-if="showPopup"
-      class="fixed bottom-30 right-10 bg-blue-500 dark:bg-blue-200/80 p-4 flex rounded-xl shadow-xl z-50">
+    <div v-if="showPopup" class="fixed bottom-30 right-10 bg-blue-500 p-4 flex rounded-xl shadow-xl z-50">
       <a :href="submitLink" target="_blank" class="text-red-500 hover:text-red-700">
         <div class="md:m-2">
           <NuxtImg src="/img/paper_icon.png" sizes="50" />

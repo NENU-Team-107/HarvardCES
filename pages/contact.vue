@@ -49,7 +49,7 @@ const eduHKPresident = computed(() => {
 
     <Tabs :tab-menu-base="tabMenuBase">
       <TabsContent v-for="item in tabMenuBase" :value="item.content" class="flex-1 ml-8">
-        <div class="min-h-full w-full flex flex-col bg-white/80 dark:bg-gray-800/80 dark:text-white px-10">
+        <div class="min-h-full w-full flex flex-col bg-white/80  px-10">
 
           <div v-if="item.index === 0" class="w-full max-w-screen">
             <div class="flex flex-col space-y-12">
@@ -86,7 +86,7 @@ const eduHKPresident = computed(() => {
 
               <!-- 使命部分 -->
               <div class="flex flex-col space-y-8">
-                <h2 class="text-2xl font-bold text-gray-800 dark:text-white self-center">
+                <h2 class="text-2xl font-bold text-gray-800  self-center">
                   我们的使命 | Our Mission
                 </h2>
                 <div class=" bg-red-900 w-10/12 h-px items-center self-center"></div>
@@ -168,7 +168,7 @@ const eduHKPresident = computed(() => {
           </div>
 
           <div v-else class="w-full min-h-full relative ">
-            <div class="z-20 bg-white  dark:bg-gray-800/80">
+            <div class="z-20 bg-white  ">
               <div class="mb-5 z-20">
                 <Title titleMap="About Us.EduHK.intro title" />
                 <div class="text-justify" v-html="eduHKIntro"></div>
@@ -224,19 +224,19 @@ const eduHKPresident = computed(() => {
       <div v-for="item in tabMenuBase">
         <UCard :ui="{
           base: '',
-          background: 'bg-white dark:bg-gray-900',
-          divide: 'divide-y divide-gray-200 dark:divide-gray-800',
-          ring: 'ring-1 ring-gray-200 dark:ring-gray-800',
+          background: 'bg-white ',
+          divide: 'divide-y divide-gray-200 ',
+          ring: 'ring-1 ring-gray-200 ',
           rounded: 'rounded-lg',
           shadow: 'shadow',
           body: {
             base: '',
-            background: 'dark:bg-gray-900',
+            background: '',
             padding: ''
           },
           header: {
-            base: 'dark:text-white/90',
-            background: 'bg-tabs-header dark:bg-gray-700',
+            base: '',
+            background: 'bg-tabs-header ',
             padding: 'px-4 py-3 sm:px-6'
           },
         }">
