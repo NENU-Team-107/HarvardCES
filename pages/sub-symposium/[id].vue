@@ -47,10 +47,7 @@ const { pdf, pages } = usePDF(pdfurl)
   <div class="w-full h-full min-h-screen mx-10 pt-24 flex justify-center items-center">
     <!-- TODO 尝试在这里贴上一个 pdf 文件，但中英文显示不一样 -->
     <div class="flex flex-row justify-between w-full h-full px-20 pb-6 items-center">
-      <div class="flex-1 w-full h-full">
-        <NuxtImg :src="poster?.path" />
-      </div>
-      <div class="w-3/4 flex-2 flex-row justify-center items-center">
+      <div class="w-full flex-row justify-center items-center">
         <div class="flex-1 flex">
           <ClientOnly>
             <div v-for="page in pages" :key="page" class="w-full flex justify-center items-center px-auto">
