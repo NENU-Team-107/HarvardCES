@@ -120,10 +120,10 @@ const toggleShowMore = (index: number) => {
               {{ $t(item.content) }}
             </TabsTrigger>
           </TabsList>
-          <TabsContent v-for="item in navMenuBase" :value="item.content" class="min-w-screen">
-            <div class="grid grid-cols-3 min-w-full">
-              <div v-for="speaker in speakersList.filter(speaker => speaker.kind === item.content)">
-                <Interoduction :speakers="speaker" class="mx-4 my-2" />
+          <TabsContent v-for="item in navMenuBase" :value="item.content" class="min-w-screen w-full h-fit">
+            <div class="grid grid-cols-3 min-w-full gap-5 justify-items-center items-start ">
+              <div v-for="speaker in speakersList.filter(speaker => speaker.kind === item.content)" class="w-full h-full">
+                <Interoduction :speakers="speaker" class="mx-4 w-full h-full" />
               </div>
             </div>
           </TabsContent>

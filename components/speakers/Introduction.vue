@@ -14,14 +14,26 @@ const inc = computed(() => {
 </script>
 
 <template>
-  <UCard>
-    <div class="flex flex-col min-w-screen">
+  <UCard :ui="{
+    base: 'h-full flex flex-col justify-between items-center',
+    body: {
+      base: 'min-h-5/6 max-h-5/6 h-full',
+      background: '',
+      padding: 'px-4 py-4 sm:px-6'
+    },
+    footer: {
+      base: 'min-h-1/6 max-h-1/6',
+      background: '',
+      padding: 'px-4 py-4 sm:px-6'
+    }
+  }">
+    <div class="flex flex-col justify-center items-center w-full h-full">
       <NuxtImg class="min-w-3/5 max-h-44 mx-auto rounded-full" :src="props.speakers.photo" :alt="props.speakers.name"
         preload />
-      <div class="font-bold text-center text-xl py-2">
+      <div class="font-bold text-center text-xl">
         {{ $t(props.speakers.name) }}
       </div>
-      <div class="text-center w-full" v-html="inc">
+      <div class="text-center w-full flex justify-center items-center h-full" v-html="inc">
       </div>
     </div>
 
