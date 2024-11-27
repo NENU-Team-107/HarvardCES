@@ -44,7 +44,7 @@ const { pdf, pages } = usePDF(pdfurl)
 </script>
 
 <template>
-  <div class="w-full h-full min-h-screen mx-10 pt-24 flex justify-center items-center">
+  <div class="w-full h-full min-h-screen mx-10 pt-24 md:flex hidden justify-center items-center">
     <!-- TODO 尝试在这里贴上一个 pdf 文件，但中英文显示不一样 -->
     <div class="flex flex-row justify-between w-full h-full px-20 pb-6 items-center">
       <div class="w-full flex-row justify-center items-center">
@@ -57,6 +57,15 @@ const { pdf, pages } = usePDF(pdfurl)
           </ClientOnly>
         </div>
       </div>
+    </div>
+  </div>
+  <div class="md:hidden w-full min-h-screen py-5">
+    <div class="w-full py-20">
+      <ClientOnly>
+        <div v-for="page in pages" :key="page" class="w-full justify-center items-center">
+          <VuePDF :pdf="pdf" :page="page" class="w-full h-auto justify-center items-center" fit-parent />
+        </div>
+      </ClientOnly>
     </div>
   </div>
 </template>

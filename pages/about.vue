@@ -26,7 +26,7 @@ const tabMenuBase = ref<TabItems[]>([
     label: t("Symposium Time"),
     content: "Symposium Time",
     show: false,
-    index: 2
+    index: 1
   }
 ]);
 
@@ -121,7 +121,7 @@ const toggleShowMore = (index: number) => {
             </h1>
             <div class="flex justify-center items-center w-full flex-1">
               <div v-if="item.index === 0" class="text-justify" v-html="Introduction" />
-              <div v-else-if="item.index === 2">
+              <div v-else-if="item.index === 1">
                 <NuxtImg :src="AgendaImage" />
               </div>
             </div>

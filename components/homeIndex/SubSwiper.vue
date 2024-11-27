@@ -57,7 +57,7 @@
     </div>
   </div>
   <div v-else class="w-full flex flex-row">
-    <div v-if="pending">
+    <div v-if="pending" class="justify-self-center">
       <UCommandPalette loading />
     </div>
     <div v-else class=" grid md:grid-cols-3 gap-4 px-10 flex-1">

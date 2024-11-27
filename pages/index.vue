@@ -112,13 +112,12 @@ const slides = ref<SwiperItem[]>([
       <CoverImage :Slides="slides" />
     </div>
 
-    <div class="my-10 flex flex-col w-10/12">
-
-      <div class="bg-white/80  md:p-10 p-1">
+    <div class="md:my-10 my-12 flex flex-col md:w-10/12 w-full">
+      <div class="bg-white/80 md:p-10 p-1">
         <Title :titleMap="title.intro" />
-        <div class="md:text-lg text-sm pl-10">
+        <div class="md:text-lg text-sm md:pl-10 px-5">
           <div v-html="$t('Symposium.Intro')" class="text-justify indent-8"></div>
-          <div class="flex mt-4 ">
+          <div class="flex mt-4 hover:text-red-300">
             <ULink to="/about"
               class="italic font-semibold transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
               {{ $t("Symposium.Click") }}
@@ -128,7 +127,7 @@ const slides = ref<SwiperItem[]>([
         </div>
       </div>
 
-      <div class="bg-white/80  md:p-10 p-1">
+      <div class="bg-white/80 md:p-10 p-1 md:mt-0 mt-5">
         <Title :titleMap="title.speaker" />
         <div class="grid md:grid-cols-3 gap-4 px-10">
           <div v-for="speaker in VisibleSpeakersList">
@@ -149,19 +148,19 @@ const slides = ref<SwiperItem[]>([
         </div>
       </div>
 
-      <div class="bg-white/80  p-10">
+      <div class="bg-white/80  md:p-10 p-1">
         <Title :titleMap="title.workshop" />
         <div class="grid grid-rows-1 grid-cols-1 justify-center items-center w-4/5 justify-self-center">
           <IconGrid />
-          <div class="text-center text-xl font-bold my-4 grid-cols-3 grid">
-            <!-- <div class="h-1 w-full bg-black"></div>
-            <span>{{ $t("Session") }}</span> -->
-          </div>
+          <!-- <div class="text-center text-xl font-bold my-4 grid-cols-3 grid">
+            <div class="h-1 w-full bg-black"></div>
+            <span>{{ $t("Session") }}</span>
+          </div> -->
           <SubSwiper :cards="false" />
         </div>
       </div>
 
-      <div class="bg-white/80  p-10">
+      <div class="bg-white/80  md:p-10 p-1">
         <!-- NOTE 这部分是主办单位和合作者的 Logo -->
         <Title :titleMap="title.logo"></Title>
         <div class="justify-self-center w-full md:w-11/12">
@@ -185,9 +184,10 @@ const slides = ref<SwiperItem[]>([
           </div>
 
           <div class="w-full ">
-            <div class="font-bold text-xl pl-10">{{ $t("In collaboration with") }}</div>
+            <div class="font-bold text-xl md:pl-10 p-1">{{ $t("In collaboration with") }}</div>
             <div>
-              <div class="grid grid-cols-2 md:grid-cols-3 mt-5 gap-0.5 w-full md:w-4/5 justify-self-center">
+              <div
+                class="grid grid-cols-2 md:grid-cols-3 mt-5 gap-0.5 w-full md:w-4/5 px-5 md:px-0 justify-self-center">
                 <div v-for="logo in logoList" class="flex w-full h-full  items-center justify-around">
                   <NuxtLink :to="logo.link" target="_blank" class="w-full h-full flex justify-center items-center">
                     <NuxtImg :src="logo.path" :class="'h-' + (logo.height - 2) + ' md:h-' + logo.height" />

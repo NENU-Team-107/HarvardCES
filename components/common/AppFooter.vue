@@ -55,10 +55,10 @@ const isHover = ref<boolean[]>([false, false])
 
       <div class="hidden md:flex flex-col justify-center mx-10">
         <div class="justify-center items-center flex my-3">
-          <UButton icon="i-fa6-solid-heart" padding="2xs" gap="xs" color="sky" variant="soft"
+          <UButton padding="2xs" gap="xs" color="sky" variant="soft"
             :ui="{ rounded: 'rounded-full', font: 'font-bold' }" class="w-1/2" block :trailing="true" to=""
             target="_blank">
-            <span class="text-lg">Sponsor Ship</span>
+            <span class="text-lg">Sponsorship</span>
           </UButton>
         </div>
         <div class="justify-center items-center flex">
@@ -73,7 +73,7 @@ const isHover = ref<boolean[]>([false, false])
           <!-- TODO 加上原来的列表形式，并在下方加上button -->
           <div class="flex flex-col justify-center items-center py-3 px-6">
             <div v-for="item in contact" class="flex flex-row w-full py-2 ">
-              <div class=" flex text-end justify-items-end items-start w-1/6">
+              <div class=" flex text-end justify-items-end items-start w-2/6 md:w-1/6">
                 {{ $t(item.before) }}:
               </div>
               <div class="justify-self-start col-span-2 flex-1 text-center">
@@ -135,10 +135,10 @@ const isHover = ref<boolean[]>([false, false])
 
       <div class="md:hidden flex flex-col justify-center mx-10">
         <div class="justify-center items-center flex my-3">
-          <UButton icon="i-fa6-solid-heart" padding="2xs" gap="xs" color="sky" variant="soft"
+          <UButton padding="2xs" gap="xs" color="sky" variant="soft"
             :ui="{ rounded: 'rounded-full', font: 'font-bold' }" class="w-1/2" block :trailing="true" to=""
             target="_blank">
-            <span class="text-lg">Sponsor Ship</span>
+            <span class="text-lg">Sponsorship</span>
           </UButton>
         </div>
         <div class="justify-center items-center flex">

@@ -28,7 +28,7 @@ const navMenuBase = ref<TabItems[]>([
     label: t("Guest of Honor"),
     content: "Guest of Honor",
     show: false,
-    index: 3
+    index: 2
   },
 ])
 
@@ -93,19 +93,20 @@ const toggleShowMore = (index: number) => {
 
   <div class="w-full h-full min-h-screen mx-10 my-5 pt-24">
 
-    <div v-if="pending">
+    <div v-if="pending" class="justify-self-center">
       <UCommandPalette loading />
     </div>
 
     <div v-else>
       <div class="hidden md:flex justify-center w-full min-h-screen">
         <TabsRoot :default-value="navMenuBase.at(0)?.content" orientation="vertical" class="flex w-full max-w-7xl">
-          <TabsList class="flex flex-col w-60 items-center h-fit sticky top-24 bg-gray-100  rounded-lg shadow-md mr-4">
+          <TabsList
+            class="flex flex-col min-w-60 items-center h-fit sticky top-24 bg-gray-100  rounded-lg shadow-md mr-4">
             <TabsIndicator
               class="w-[3px] h-[48px] absolute left-1 top-1 translate-y-[--radix-tabs-indicator-position] rounded-full transition-[width,transform] duration-300">
               <div class="bg-blue-600 w-full h-full" />
             </TabsIndicator>
-            <TabsTrigger class="relative px-8 h-[60px] flex items-center text-base leading-none text-black  select-none
+            <TabsTrigger class="px-8 h-[60px] flex items-center text-base leading-none text-black  select-none
         hover:text-blue-500
         data-[state=active]:text-blue-600
         outline-none cursor-pointer transition-all
@@ -167,7 +168,7 @@ const toggleShowMore = (index: number) => {
             </template>
             <div v-show="item.show">
               <div v-for="speaker in kindSpeakers">
-                <Interoduction :speakers="speaker" class="mx-10 my-5" />
+                <Interoduction :speakers="speaker" class="mx-10 my-5 h-full " />
               </div>
             </div>
           </UCard>

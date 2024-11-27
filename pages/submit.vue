@@ -70,7 +70,7 @@ function select(row: any) {
 
 
 <template>
-    <div class="w-fit min-h-fit mx-10 my-5 pt-24">
+    <div class="md:w-fit md:min-h-fit w-screen min-h-screen mx-10 my-5 pt-24">
         <NuxtPage />
         <div class="flex flex-col px-20 py-10 bg-white/80  justify-center items-center w-full">
             <h1 class="text-center font-bold text-3xl py-6">
