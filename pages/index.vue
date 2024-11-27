@@ -148,9 +148,9 @@ const slides = ref<SwiperItem[]>([
         </div>
       </div>
 
-      <div class="bg-white/80  md:p-10 p-1">
+      <div class="bg-white/80 md:p-10 p-3">
         <Title :titleMap="title.workshop" />
-        <div class="grid grid-rows-1 grid-cols-1 justify-center items-center w-4/5 justify-self-center">
+        <div class="grid grid-rows-1 grid-cols-1 justify-center items-center md:w-4/5 w-full justify-self-center">
           <IconGrid />
           <!-- <div class="text-center text-xl font-bold my-4 grid-cols-3 grid">
             <div class="h-1 w-full bg-black"></div>
@@ -160,15 +160,15 @@ const slides = ref<SwiperItem[]>([
         </div>
       </div>
 
-      <div class="bg-white/80  md:p-10 p-1">
+      <div class="bg-white/80 md:p-10 px-5">
         <!-- NOTE 这部分是主办单位和合作者的 Logo -->
         <Title :titleMap="title.logo"></Title>
         <div class="justify-self-center w-full md:w-11/12">
           <div class="mb-5">
-            <div class="font-bold text-2xl pl-10 ">{{ $t("Organised by") }}</div>
+            <div class="font-bold md:text-2xl text-xl md:pl-10 ">{{ $t("Organised by") }}</div>
             <br>
             <div
-              class="grid md:grid-cols-2 md:grid-rows-1 grid-rows-2 grid-cols-1 gap-2 w-4/5 justify-self-center text-center md:text-2xl text-xl font-semibold ">
+              class="grid md:grid-cols-2 md:grid-rows-1 grid-rows-2 grid-cols-1 gap-2 md:w-4/5 w-full justify-self-center text-center md:text-2xl text-xl font-semibold ">
               <div class="hover:text-red-400">
                 <ULink to="https://www.hgseces.org/" target="_blank">
                   <span v-html="$t('Harvard').replace(/\n/g, '<br>')" />
@@ -183,7 +183,7 @@ const slides = ref<SwiperItem[]>([
 
           </div>
 
-          <div class="w-full ">
+          <div class="w-full">
             <div class="font-bold text-xl md:pl-10 p-1">{{ $t("In collaboration with") }}</div>
             <div>
               <div
