@@ -59,31 +59,30 @@ const title = computed(() => {
     </div>
   </div>
   <div class="md:hidden p-5">
-    <div
-      class="w-full relative flex flex-col bg-white/80 dark:bg-gray-800/90 dark:text-white/90 rounded-lg py-6 px-2 m-auto">
-      <div class="grid grid-cols-2 justify-between">
+    <div class="w-full bg-white/80 dark:bg-gray-800/90 dark:text-white/90 rounded-lg py-6 px-2 m-auto">
+      <div class="grid grid-cols-2 justify-between mb-5">
         <div
           class="font-semibold cursor-pointer items-center flex bg-blue-600 text-white justify-center px-4 py-2 w-fit rounded-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-blue-600 duration-300 h-10"
           @click="router.go(-1)">
           <font-awesome icon="fa-solid fa-arrow-left" />
         </div>
-        <div class="text-lg py-2">
+        <div class="text-base font-bold py-2">
           {{ t(speaker.kind) }}
         </div>
       </div>
       <div class="w-full h-fit">
         <NuxtImg class="rounded-full border-solid border-[2px] border-black/60 transition justify-self-center w-2/5"
           :src="props.speaker.photo" :alt="props.speaker.name" preload />
-      </div>
-      <div class="w-full text-start flex flex-col justify-center items-center">
-        <h1 class="text-slate-900 text-lg tracking-tight font-extrabold dark:text-white/90">
-          {{ t(speaker.name) }}
-        </h1>
-        <div class="text-center w-full text-base font-semibold text-slate-900 dark:text-white py-2 ">
-          <div v-html="title"></div>
-        </div>
-        <div class="px-10 text-justify ">
-          <div v-html="description" />
+        <div class="w-full text-start flex flex-col justify-center items-center">
+          <h1 class="text-slate-900 text-lg tracking-tight font-extrabold dark:text-white/90">
+            {{ t(speaker.name) }}
+          </h1>
+          <div class="text-center w-full text-base font-semibold text-slate-900 dark:text-white py-2 ">
+            <div v-html="title"></div>
+          </div>
+          <div class="px-10 text-justify ">
+            <div v-html="description" />
+          </div>
         </div>
       </div>
     </div>

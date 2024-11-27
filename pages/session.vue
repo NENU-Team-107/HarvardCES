@@ -9,7 +9,7 @@ const tabMenuBase = ref<TabItems[]>([
   {
     label: t("pSession.sub-symposium"),
     content: "pSession.sub-symposium",
-    show: true,
+    show: false,
     index: 0,
   },
   {

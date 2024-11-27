@@ -9,7 +9,7 @@ const navMenuBase = ref<TabItems[]>([
   {
     label: t("Organizing Committee"),
     content: "Organizing Committee",
-    show: true,
+    show: false,
     index: 0
   },
   {
