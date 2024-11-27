@@ -32,7 +32,7 @@ const title = computed(() => {
 
       <div class="w-full h-full flex overflow-hidden justify-center items-center py-5">
 
-        <div class="w-2/5">
+        <div class="w-2/5 flex justify-center items-center">
           <NuxtImg class="rounded-full border-solid border-[2px] border-black/60 transition justify-self-center w-3/5"
             :src="props.speaker.photo" :alt="props.speaker.name" preload />
         </div>
@@ -70,7 +70,7 @@ const title = computed(() => {
           {{ t(speaker.kind) }}
         </div>
       </div>
-      <div class="w-full h-fit">
+      <div class="w-full h-fit flex justify-center items-center flex-col">
         <NuxtImg class="rounded-full border-solid border-[2px] border-black/60 transition justify-self-center w-2/5"
           :src="props.speaker.photo" :alt="props.speaker.name" preload />
         <div class="w-full text-start flex flex-col justify-center items-center">

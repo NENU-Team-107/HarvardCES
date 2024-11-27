@@ -38,7 +38,7 @@ getSpeaker(decodeURIComponent(route.params.name as string))
 </script>
 
 <template>
-  <div class="w-full h-full min-h-screen mx-10 y-5 pt-24">
+  <div class="w-full h-full min-h-screen mx-0 y-5 pt-24">
     <Details v-if="speaker !== undefined" :speaker="speaker" />
   </div>
 </template>
