@@ -47,7 +47,7 @@ const isHover = ref<boolean[]>([false, false])
 
 <template>
   <div class="min-w-full min-h-28 bg-green-950/90 text-white w-full py-3">
-    <div class="text-xl font-bold text-center relative pb-2">
+    <div class="md:text-xl text-lg font-bold text-center relative pb-2">
       {{ $t(footerTitle) }}
     </div>
 
@@ -58,7 +58,7 @@ const isHover = ref<boolean[]>([false, false])
           <UButton padding="2xs" gap="xs" color="sky" variant="soft"
             :ui="{ rounded: 'rounded-full', font: 'font-bold' }" class="w-1/2" block :trailing="true" to=""
             target="_blank">
-            <span class="text-lg">Sponsorship</span>
+            <span class="md:text-lg text-sm">Sponsorship</span>
           </UButton>
         </div>
         <div class="justify-center items-center flex">
@@ -138,11 +138,11 @@ const isHover = ref<boolean[]>([false, false])
           <UButton padding="2xs" gap="xs" color="sky" variant="soft"
             :ui="{ rounded: 'rounded-full', font: 'font-bold' }" class="w-1/2" block :trailing="true" to=""
             target="_blank">
-            <span class="text-lg">Sponsorship</span>
+            <span class="md:text-lg text-sm">Sponsorship</span>
           </UButton>
         </div>
         <div class="justify-center items-center flex">
-          <NuxtImg src="img/logo/UNESCOLogo-single.png" />
+          <NuxtImg src="img/logo/UNESCOLogo-single.png" class="md:w-full w-2/5" />
         </div>
       </div>
 
