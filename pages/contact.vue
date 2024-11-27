@@ -11,7 +11,7 @@ const tabMenuBase = ref<TabItems[]>([
   {
     label: t("Harvard China Education Symposium"),
     content: "Harvard China Education Symposium",
-    show: true,
+    show: false,
     index: 0,
   },
   {
