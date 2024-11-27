@@ -7,21 +7,21 @@ const props = defineProps<{
 
 const { t } = useI18n()
 
-const title = computed(() => {
-  return t(props.speakers.bio.details.title).replace(/\n\n/g, '<br>')
+const inc = computed(() => {
+  return t(props.speakers.inc).replace(/\n\n/g, '<br>')
 })
 
 </script>
 
 <template>
   <UCard>
-    <div class="flex flex-col w-full">
+    <div class="flex flex-col min-w-screen">
       <NuxtImg class="min-w-3/5 max-h-44 mx-auto rounded-full" :src="props.speakers.photo" :alt="props.speakers.name"
         preload />
       <div class="font-bold text-center text-xl py-2">
         {{ $t(props.speakers.name) }}
       </div>
-      <div class="text-center" v-html="title">
+      <div class="text-center w-full" v-html="inc">
       </div>
     </div>
 

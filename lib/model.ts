@@ -10,6 +10,7 @@ export type Speaker = {
     id: number
     name: string
     kind: string
+    inc: string
     photo: string
     bio: SpeakerBio
     activateDate: Date

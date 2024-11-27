@@ -121,7 +121,7 @@ const toggleShowMore = (index: number) => {
             </TabsTrigger>
           </TabsList>
           <TabsContent v-for="item in navMenuBase" :value="item.content" class="min-w-screen">
-            <div class="grid md:grid-cols-3 ">
+            <div class="grid grid-cols-3 min-w-full">
               <div v-for="speaker in speakersList.filter(speaker => speaker.kind === item.content)">
                 <Interoduction :speakers="speaker" class="mx-4 my-2" />
               </div>

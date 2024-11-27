@@ -30,6 +30,7 @@ export const keynoteSpeaker: Array<Speaker> = [
         id: 3,
         name: "server.Keynote Speakers.id3.name",
         kind: "Keynote Speakers",
+        inc: "server.Keynote Speakers.id3.inc",
         photo: "./assets/avatars/Chris Dede.png",
         activateDate: new Date("2025-05-09"),
         bio: {
@@ -44,6 +45,7 @@ export const keynoteSpeaker: Array<Speaker> = [
         id: 17,
         name: "server.Keynote Speakers.id9.name",
         kind: "Keynote Speakers",
+        inc: "server.Keynote Speakers.id9.inc",
         photo: "./assets/avatars/Tina Grotzer.png",
         activateDate: new Date("2025-05-09"),
         bio: {
@@ -58,6 +60,7 @@ export const keynoteSpeaker: Array<Speaker> = [
         id: 7,
         name: "server.Keynote Speakers.id7.name",
         kind: "Keynote Speakers",
+        inc: "server.Keynote Speakers.id7.inc",
         photo: "./assets/avatars/Paul Kim.png",
         activateDate: new Date("2025-05-09"),
         bio: {
@@ -72,6 +75,7 @@ export const keynoteSpeaker: Array<Speaker> = [
         id: 1,
         name: "server.Keynote Speakers.id1.name",
         kind: "Keynote Speakers",
+        inc: "server.Keynote Speakers.id1.inc",
         photo: "./assets/avatars/Chi-Kin John.png",
         activateDate: new Date("2025-05-09"),
         bio: {
@@ -86,6 +90,7 @@ export const keynoteSpeaker: Array<Speaker> = [
         id: 6,
         name: "server.Keynote Speakers.id6.name",
         kind: "Keynote Speakers",
+        inc: "server.Keynote Speakers.id6.inc",
         photo: "./assets/avatars/Yew-Soon Ong.png",
         activateDate: new Date("2025-05-09"),
         bio: {
@@ -100,6 +105,7 @@ export const keynoteSpeaker: Array<Speaker> = [
         id: 8,
         name: "server.Keynote Speakers.id8.name",
         kind: "Keynote Speakers",
+        inc: "server.Keynote Speakers.id8.inc",
         photo: "./assets/avatars/Jonathon Ritcher.png",
         activateDate: new Date("2025-05-09"),
         bio: {
@@ -114,6 +120,7 @@ export const keynoteSpeaker: Array<Speaker> = [
         id: 2,
         name: "server.Keynote Speakers.id2.name",
         kind: "Keynote Speakers",
+        inc: "server.Keynote Speakers.id2.inc",
         photo: "./assets/avatars/Ren Youqun.png",
         activateDate: new Date("2025-05-09"),
         bio: {
@@ -128,6 +135,7 @@ export const keynoteSpeaker: Array<Speaker> = [
         id: 5,
         name: "server.Keynote Speakers.id5.name",
         kind: "Keynote Speakers",
+        inc: "server.Keynote Speakers.id5.inc",
         photo: "./assets/avatars/Minjuan WANG.png",
         activateDate: new Date("2025-05-09"),
         bio: {
@@ -142,6 +150,7 @@ export const keynoteSpeaker: Array<Speaker> = [
         id: 4,
         name: "server.Keynote Speakers.id4.name",
         kind: "Keynote Speakers",
+        inc: "server.Keynote Speakers.id4.inc",
         photo: "./assets/avatars/Shijin Wang.png",
         activateDate: new Date("2025-05-09"),
         bio: {
@@ -154,12 +163,12 @@ export const keynoteSpeaker: Array<Speaker> = [
     },
 ];
 
-
 export const organizingCommittee: Array<Speaker> = [
     {
         id: 9,
         name: "server.Organizing Committee.id1.name",
         kind: "Organizing Committee",
+        inc: "server.Organizing Committee.id1.inc",
         photo: "./assets/avatars/Chi-Kin John.png",
         activateDate: new Date("2025-05-09"),
         bio: {
@@ -174,6 +183,7 @@ export const organizingCommittee: Array<Speaker> = [
         id: 10,
         name: "server.Organizing Committee.id2.name",
         kind: "Organizing Committee",
+        inc: "server.Organizing Committee.id2.inc",
         photo: "./assets/avatars/Minjuan WANG.png",
         activateDate: new Date("2025-05-09"),
         bio: {
@@ -188,6 +198,7 @@ export const organizingCommittee: Array<Speaker> = [
         id: 12,
         name: "server.Organizing Committee.id4.name",
         kind: "Organizing Committee",
+        inc: "server.Organizing Committee.id4.inc",
         photo: "./assets/avatars/Anny Chan.png",
         activateDate: new Date("2025-05-09"),
         bio: {
@@ -202,6 +213,7 @@ export const organizingCommittee: Array<Speaker> = [
         id: 13,
         name: "server.Organizing Committee.id5.name",
         kind: "Organizing Committee",
+        inc: "server.Organizing Committee.id5.inc",
         photo: "./assets/avatars/Xuefan Li.png",
         activateDate: new Date("2025-05-09"),
         bio: {
@@ -216,6 +228,7 @@ export const organizingCommittee: Array<Speaker> = [
         id: 11,
         name: "server.Organizing Committee.id3.name",
         kind: "Organizing Committee",
+        inc: "server.Organizing Committee.id3.inc",
         photo: "./assets/avatars/Rongbing Shen.png",
         activateDate: new Date("2025-05-09"),
         bio: {
@@ -233,6 +246,7 @@ export const guestOfHonor: Array<Speaker> = [
         id: 15,
         name: "server.Guest of Honor.id2.name",
         kind: "Guest of Honor",
+        inc: "server.Guest of Honor.id2.inc",
         photo: "./assets/avatars/CHENG May Hung.png",
         activateDate: new Date("2025-05-09"),
         bio: {
@@ -247,6 +261,7 @@ export const guestOfHonor: Array<Speaker> = [
         id: 16,
         name: "server.Guest of Honor.id3.name",
         kind: "Guest of Honor",
+        inc: "server.Guest of Honor.id3.inc",
         photo: "./assets/avatars/CHAN Che Hin Chetwyn.png",
         activateDate: new Date("2025-05-09"),
         bio: {
@@ -261,6 +276,7 @@ export const guestOfHonor: Array<Speaker> = [
         id: 14,
         name: "server.Guest of Honor.id1.name",
         kind: "Guest of Honor",
+        inc: "server.Guest of Honor.id1.inc",
         photo: "./assets/avatars/Anny Chan.png",
         activateDate: new Date("2025-05-09"),
         bio: {
@@ -278,6 +294,7 @@ export const invitedSpeakers: Array<Speaker> = [
         id: 17,
         name: "server.Invited Speakers.id1.name",
         kind: "Invited Speakers",
+        inc: "server.Invited Speakers.id1.inc",
         photo: "./assets/avatars/John Clifford Mitchell.png",
         activateDate: new Date("2025-05-09"),
         bio: {
@@ -292,6 +309,7 @@ export const invitedSpeakers: Array<Speaker> = [
         id: 18,
         name: "server.Invited Speakers.id2.name",
         kind: "Invited Speakers",
+        inc: "server.Invited Speakers.id2.inc",
         photo: "./assets/avatars/University College London.png",
         activateDate: new Date("2025-05-09"),
         bio: {
@@ -306,6 +324,7 @@ export const invitedSpeakers: Array<Speaker> = [
         id: 19,
         name: "server.Invited Speakers.id3.name",
         kind: "Invited Speakers",
+        inc: "server.Invited Speakers.id3.inc",
         photo: "./assets/avatars/Hongjie Chen.png",
         activateDate: new Date("2025-05-09"),
         bio: {
@@ -320,6 +339,7 @@ export const invitedSpeakers: Array<Speaker> = [
         id: 20,
         name: "server.Invited Speakers.id4.name",
         kind: "Invited Speakers",
+        inc: "server.Invited Speakers.id4.inc",
         photo: "./assets/avatars/Qing LI.png",
         activateDate: new Date("2025-05-09"),
         bio: {
@@ -334,6 +354,7 @@ export const invitedSpeakers: Array<Speaker> = [
         id: 21,
         name: "server.Invited Speakers.id5.name",
         kind: "Invited Speakers",
+        inc: "server.Invited Speakers.id5.inc",
         photo: "./assets/avatars/Enhong Chen.png",
         activateDate: new Date("2025-05-09"),
         bio: {
@@ -348,6 +369,7 @@ export const invitedSpeakers: Array<Speaker> = [
         id: 22,
         name: "server.Invited Speakers.id6.name",
         kind: "Invited Speakers",
+        inc: "server.Invited Speakers.id6.inc",
         photo: "./assets/avatars/Anny Chan.png",
 
         activateDate: new Date("2025-05-09"),
