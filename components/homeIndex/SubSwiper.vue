@@ -17,9 +17,6 @@
               <div
                 class="flex justify-center items-center flex-col overflow-hidden text-center before:absolute before:h-1.1-full after:h-2-full after:-translate-y-1/2 after:absolute">
                 <NuxtImg :src="item.src" draggable="false" class="w-full" loading="lazy" />
-                <!-- <div class="flex ease-in-out duration-700">
-                  <h1>Title</h1>
-                </div> -->
               </div>
             </NuxtLink>
           </div>
@@ -68,7 +65,7 @@
           ring: '',
           rounded: '',
           shadow: '',
-          background: 'w-full h-full',
+          background: 'w-full h-full bg-opacity-30',
 
           footer: {
             base: 'flex justify-end w-full flex-col',
@@ -82,7 +79,7 @@
             <div class="flex w-full h-20">
               <div v-if="slide.details" class="w-11/12 text-sm justify-end flex relative">
                 <div
-                  class="font-semibold text-white bg-green-800 hover:bg-green-600 text-center p-2 h-fit absolute bottom-0 right-0">
+                  class="font-semibold text-white bg-green-800 hover:bg-green-600 text-center p-2 h-fit absolute bottom-5 right-0">
                   <ULink :to="slide.link">
                     {{ $t("About Us.EduHK.link") }}
                   </ULink>
@@ -102,23 +99,7 @@ import { useRouter } from 'vue-router';
 
 const router = useRouter();
 
-const fetchPosters = async () => {
-  const resp = await $fetch('/api/poster/listAll', {
-    method: 'GET'
-  })
-  const { status, data } = resp
-  if (status === "Success" && data !== null) {
-    posterList.value = data;
-    slides.value = data.map((poster) => {
-      return {
-        src: poster.path,
-        link: poster.link,
-        details: true
-      } as SwiperItem;
-    })
-    pending.value = false
-  }
-}
+const { t } = useI18n();
 
 const posterList = ref<Poster[]>([]);
 
@@ -142,6 +123,24 @@ const cards = defineModel('cards', {
   type: Boolean,
   default: false
 });
+
+const fetchPosters = async () => {
+  const resp = await $fetch('/api/poster/listAll', {
+    method: 'GET'
+  })
+  const { status, data } = resp
+  if (status === "Success" && data !== null) {
+    posterList.value = data;
+    slides.value = data.map((poster) => {
+      return {
+        src: poster.path,
+        link: poster.link,
+        details: true
+      } as SwiperItem;
+    })
+    pending.value = false
+  }
+}
 
 fetchPosters()
 

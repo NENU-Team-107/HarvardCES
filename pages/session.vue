@@ -32,16 +32,16 @@ const toggleShowMore = (index: number) => {
 
     <div class="hidden md:flex justify-center w-full min-h-screen">
       <TabsRoot :default-value="tabMenuBase.at(0)?.content" orientation="vertical" class="flex w-full max-w-7xl">
-        <TabsList class="flex flex-col min-w-52 items-center h-fit sticky top-24 bg-gray-100 rounded-lg shadow-md">
+        <TabsList class="flex flex-col w-60 items-center h-fit sticky top-24 bg-gray-100 rounded-lg shadow-md">
           <TabsIndicator
             class="w-[3px] h-[48px] absolute left-1 top-1 translate-y-[--radix-tabs-indicator-position] rounded-full transition-[width,transform] duration-300">
             <div class="bg-blue-600 w-full h-full" />
           </TabsIndicator>
-          <TabsTrigger class="px-4 h-[60px] flex items-center text-base leading-none text-balck select-none min-w-fit
+          <TabsTrigger class="px-10 min-w-60 justify-self-center h-[60px] flex items-center text-base leading-none text-black  select-none
         hover:text-blue-500
         data-[state=active]:text-blue-600
         outline-none cursor-pointer transition-all
-        border-b border-gray-300 
+        border-b border-gray-200
         last:border-b-0
         before:content-[''] before:absolute before:left-0 before:top-0 before:bottom-0 before:w-[0px] 
         before:bg-grass9 before:transform before:-translate-x-full
@@ -51,9 +51,19 @@ const toggleShowMore = (index: number) => {
             {{ $t(item.content) }}
           </TabsTrigger>
         </TabsList>
-        <TabsContent v-for="item in tabMenuBase" :value="item.content" class="min-w-screen">
-          <div v-if="item.index === 0">
+        <TabsContent v-for="item in tabMenuBase" :value="item.content" class="w-fit">
+          <div v-if="item.index === 0" class="min-w-screen">
             <SubSwiper :cards="true" />
+          </div>
+          <div v-else class="justify-self-center mx-10">
+            <div class="grid grid-cols-2 grid-flow-row-dense gap-4">
+              <div>
+                <NuxtImg :src="t('Showcase-1')" loading="lazy" />
+              </div>
+              <div>
+                <NuxtImg :src="t('Showcase-2')" loading="lazy" />
+              </div>
+            </div>
           </div>
         </TabsContent>
       </TabsRoot>
@@ -94,6 +104,16 @@ const toggleShowMore = (index: number) => {
           <div class="w-full min-w-screen-md">
             <div v-if="item.index === 0 && item.show">
               <SubSwiper :cards="true" />
+            </div>
+            <div v-else-if="item.index === 1 && item.show">
+              <div class="grid grid-rows-2 grid-flow-col-dense px-6 py-6">
+                <div>
+                  <NuxtImg :src="t('Showcase-1')" loading="lazy" />
+                </div>
+                <div>
+                  <NuxtImg :src="t('Showcase-2')" loading="lazy" />
+                </div>
+              </div>
             </div>
           </div>
 
