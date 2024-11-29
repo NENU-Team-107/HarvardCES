@@ -71,7 +71,7 @@ const isHover = ref<boolean[]>([false, false])
       <div class="max-w-screen-md row-span-1">
         <div class="flex flex-col text-justify mx-5">
           <!-- TODO 加上原来的列表形式，并在下方加上button -->
-          <div class="flex flex-col justify-center items-center py-3 px-6">
+          <div class="flex flex-col justify-center items-center py-3">
             <div v-for="item in contact" class="flex flex-row w-full py-2 ">
               <div class=" flex text-end justify-items-end items-start w-2/6 md:w-1/6 md:mr-3">
                 {{ $t(item.before) }}:
