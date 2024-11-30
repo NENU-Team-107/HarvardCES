@@ -102,21 +102,6 @@ export const keynoteSpeaker: Array<Speaker> = [
         }
     },
     {
-        id: 8,
-        name: "server.Keynote Speakers.id8.name",
-        kind: "Keynote Speakers",
-        inc: "server.Keynote Speakers.id8.inc",
-        photo: "./assets/avatars/Jonathon Ritcher.png",
-        activateDate: new Date("2025-05-09"),
-        bio: {
-            details: {
-                description: "server.Keynote Speakers.id8.description",
-                title: "server.Keynote Speakers.id8.title",
-                link: 'speaker/8 Jonathon Ritcher'
-            }
-        }
-    },
-    {
         id: 2,
         name: "server.Keynote Speakers.id2.name",
         kind: "Keynote Speakers",
@@ -128,6 +113,21 @@ export const keynoteSpeaker: Array<Speaker> = [
                 description: "server.Keynote Speakers.id2.description",
                 title: "server.Keynote Speakers.id2.title",
                 link: 'speaker/2 RenYouqun'
+            }
+        }
+    },
+    {
+        id: 8,
+        name: "server.Keynote Speakers.id8.name",
+        kind: "Keynote Speakers",
+        inc: "server.Keynote Speakers.id8.inc",
+        photo: "./assets/avatars/Jonathon Ritcher.png",
+        activateDate: new Date("2025-05-09"),
+        bio: {
+            details: {
+                description: "server.Keynote Speakers.id8.description",
+                title: "server.Keynote Speakers.id8.title",
+                link: 'speaker/8 Jonathon Ritcher'
             }
         }
     },

@@ -3,58 +3,51 @@ import { useI18n } from 'vue-i18n';
 import type { TabItems } from '~/lib/model';
 const { t } = useI18n();
 
-const tabMenu = ref<TabItems[]>(
-  [
-    {
-      label: t("Sub-symposium Sessions Submit"),
-      content: "Parallel Sessions",
-      show: false,
-      index: 0
-    },
 
-  ]
-)
+const columns = computed(() => {
+  return [{
+    key: 'id',
+    label: t('SubmitNumber')
+  }, {
+    key: 'topic',
+    label: t('SubmitTopic')
+  }, {
+    key: 'mail',
+    label: t('SubmitMethod')
+  }]
+})
 
-const columns = [{
-  key: 'id',
-  label: t('SubmitNumber')
-}, {
-  key: 'topic',
-  label: t('SubmitTopic')
-}, {
-  key: 'mail',
-  label: t('SubmitMethod')
-}]
-
-const contact = [{
-  id: 'Parallel Session 1 ',
-  topic: 'Al for Teaching, Learning and Traning',
-  mail: t('SendTo') + 'lujijian@hznu.edu.cn',
-}, {
-  id: 'Parallel Session 2',
-  topic: 'Furistics Mindset and Trends of Teaching and Training',
-  mail: t('SendTo') + 'xiaoyanchu@zju.edu.cn',
-}, {
-  id: 'Parallel Session 3',
-  topic: 'AI Enabsed Science Education',
-  mail: t('SendTo') + 'mtt@snnu.edu.cn',
-}, {
-  id: 'Parallel Session 4',
-  topic: 'Large Language Model & Computing Education',
-  mail: t('SendTo') + 'mhyin@nenu.edu.cn',
-}, {
-  id: 'Parallel Session 5',
-  topic: 'Ethical and Fairness in AI Application Decisions',
-  mail: t('SendTo') + 'celab2208@163.com',
-}, {
-  id: 'Parallel Session 6',
-  topic: 'Research and Learning Analytics in the Age of AI',
-  mail: t('SendTo') + 'hnubai@hainan.edu.cn',
-}, {
-  id: 'Poster and Showcase Session',
-  topic: 'Above all',
-  mail: t('SendToLink') + 'https://www.wjx.top/vm/tdLaPJt.aspx#',
-}]
+const contact = computed(() => {
+  return [{
+    id: 'Parallel Session 1 ',
+    topic: 'Al for Teaching, Learning and Traning',
+    mail: t('SendTo') + 'lujijian@hznu.edu.cn',
+  }, {
+    id: 'Parallel Session 2',
+    topic: 'Furistics Mindset and Trends of Teaching and Training',
+    mail: t('SendTo') + 'xiaoyanchu@zju.edu.cn',
+  }, {
+    id: 'Parallel Session 3',
+    topic: 'AI Enabsed Science Education',
+    mail: t('SendTo') + 'mtt@snnu.edu.cn',
+  }, {
+    id: 'Parallel Session 4',
+    topic: 'Large Language Model & Computing Education',
+    mail: t('SendTo') + 'mhyin@nenu.edu.cn',
+  }, {
+    id: 'Parallel Session 5',
+    topic: 'Ethical and Fairness in AI Application Decisions',
+    mail: t('SendTo') + 'celab2208@163.com',
+  }, {
+    id: 'Parallel Session 6',
+    topic: 'Research and Learning Analytics in the Age of AI',
+    mail: t('SendTo') + 'hnubai@hainan.edu.cn',
+  }, {
+    id: 'Poster and Showcase Session',
+    topic: 'Above all',
+    mail: t('SendToLink') + 'https://www.wjx.top/vm/tdLaPJt.aspx#',
+  }]
+})
 
 function select(row: any) {
   if (row) {
