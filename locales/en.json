@@ -78,7 +78,7 @@
   "Organisers and Partners": "Organisers and Partners",
   "Symposium Introduction": "Symposium Introduction",
   "Symposium Location": "Symposium Location",
-  "Symposium Time": "Symposium Agenda",
+  "Symposium Time": "Symposium Programme",
   "Symposium Agenda": "img/poster/Agenda-en.png",
   "Harvard China Education Symposium": "Harvard China Education Symposium",
   "The Education University of Hong Kong": "The Education University of Hong Kong",
@@ -87,10 +87,11 @@
   "Sub-symposium Sessions Submit": "Call for Participation",
   "Harvard": "Harvard CES \nGraduate School of Education\n Harvard University",
   "GIET": "President's Office and Global Institute for Emerging Technologies (GIET)\n The Education University of Hong Kong",
-  "SendTo": " ",
+  "SendTo": "Send e-mail to: ",
   "SubmitNumber": "Number",
   "SubmitTopic": "Parallel Topic",
   "SubmitMethod": "Call for Proposal",
+  "SendToLink": "Submit online: ",
   "About Us": {
     "EduHK": {
       "intro title": "About EdUHK",
