@@ -30,8 +30,8 @@
     }
   },
   "Cover Image": "/img/poster/cover_en.jpg",
-  "Showcase-1": "/img/poster/Showcase-zh-Hans-1.png",
-  "Showcase-2": "/img/poster/Showcase-zh-Hans-2.png",
+  "Showcase-1": "/img/poster/Showcase-en-1.png",
+  "Showcase-2": "/img/poster/Showcase-en-2.png",
   "Collapse": "Collapse",
   "Show More": "Show More",
   "Prev": "Prev",
@@ -87,7 +87,7 @@
   "Sub-symposium Sessions Submit": "Call for Participation",
   "Harvard": "Harvard CES \nGraduate School of Education\n Harvard University",
   "GIET": "President's Office and Global Institute for Emerging Technologies (GIET)\n The Education University of Hong Kong",
-  "SendTo": "Send e-mail to: ",
+  "SendTo": " ",
   "SubmitNumber": "Number",
   "SubmitTopic": "Parallel Topic",
   "SubmitMethod": "Call for Proposal",
@@ -265,7 +265,11 @@
     },
     "Poster": {
       "id0": "./assets/poster/sub1-en.pdf",
-      "id1": "./assets/poster/sub2-zh.pdf"
+      "id1": "./assets/poster/sub2-en.pdf",
+      "id2": "./assets/poster/sub3-zh-hans.pdf",
+      "id3": "./assets/poster/sub4-en.pdf",
+      "id4": "./assets/poster/sub5-en.pdf",
+      "id5": "./assets/poster/sub6-en.pdf"
     }
   }
 }

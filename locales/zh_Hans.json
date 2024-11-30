@@ -265,8 +265,12 @@
       }
     },
     "Poster": {
-      "id0": "./assets/poster/sub1-zh.pdf",
-      "id1": "./assets/poster/sub2-zh.pdf"
+      "id0": "./assets/poster/sub1-zh-hans.pdf",
+      "id1": "./assets/poster/sub2-zh-hans.pdf",
+      "id2": "./assets/poster/sub3-zh-hans.pdf",
+      "id3": "./assets/poster/sub4-zh-hans.pdf",
+      "id4": "./assets/poster/sub5-zh-hans.pdf",
+      "id5": "./assets/poster/sub6-zh-hans.pdf"
     }
   }
 }

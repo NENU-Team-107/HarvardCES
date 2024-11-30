@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { VuePDF, usePDF } from "@tato30/vue-pdf";
-import type { ApiResponse, Poster, Speaker } from '~/lib/model.ts';
+import type { ApiResponse, Poster } from '~/lib/model.ts';
 
 const route = useRoute()
 
