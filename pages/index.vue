@@ -197,7 +197,7 @@ const slides = ref<SwiperItem[]>([
             </div>
 
             <div class="text-center mt-4 text-sm">
-              <span><i>Assisted by Department of Mathematics and Information Technology, EdUHK</i></span>
+              <span><i> {{ t('Assisted') }}</i></span>
               <div class="mt-1" v-html="$t('Disclaimer')">
               </div>
             </div>

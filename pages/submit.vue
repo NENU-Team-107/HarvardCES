@@ -17,43 +17,43 @@ const tabMenu = ref<TabItems[]>(
 
 const columns = [{
   key: 'id',
-  label: '分论坛序号 Number'
+  label: t('SubmitNumber')
 }, {
   key: 'topic',
-  label: '分论坛主题 Parallel Topic'
+  label: t('SubmitTopic')
 }, {
   key: 'mail',
-  label: '征稿联系方式 Call for Proposal'
+  label: t('SubmitMethod')
 }]
 
 const contact = [{
   id: 'Parallel Session 1 ',
   topic: 'Al for Teaching, Learning and Traning',
-  mail: '发送至邮箱： lujijian@hznu.edu.cn',
+  mail: t('SendTo') + 'lujijian@hznu.edu.cn',
 }, {
   id: 'Parallel Session 2',
   topic: 'Furistics Mindset and Trends of Teaching and Training',
-  mail: '发送至邮箱： xiaoyanchu@zju.edu.cn',
+  mail: t('SendTo') + 'xiaoyanchu@zju.edu.cn',
 }, {
   id: 'Parallel Session 3',
   topic: 'AI Enabsed Science Education',
-  mail: '发送至邮箱： mtt@snnu.edu.cn',
+  mail: t('SendTo') + 'mtt@snnu.edu.cn',
 }, {
   id: 'Parallel Session 4',
   topic: 'Large Language Model & Computing Education',
-  mail: '发送至邮箱： mhyin@nenu.edu.cn',
+  mail: t('SendTo') + 'mhyin@nenu.edu.cn',
 }, {
   id: 'Parallel Session 5',
   topic: 'Ethical and Fairness in AI Application Decisions',
-  mail: '发送至邮箱： celab2208@163.com',
+  mail: t('SendTo') + 'celab2208@163.com',
 }, {
   id: 'Parallel Session 6',
   topic: 'Research and Learning Analytics in the Age of AI',
-  mail: '发送至邮箱： hnubai@hainan.edu.cn',
+  mail: t('SendTo') + 'hnubai@hainan.edu.cn',
 }, {
   id: 'Poster and Showcase Session',
   topic: 'Above all',
-  mail: '问卷星在线提交： https://www.wjx.top/vm/tdLaPJt.aspx#',
+  mail: t('SendToLink') + 'https://www.wjx.top/vm/tdLaPJt.aspx#',
 }]
 
 function select(row: any) {

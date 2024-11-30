@@ -62,6 +62,7 @@
       "Details": "Inquiries: {0}"
     }
   },
+  "Assisted": "Assisted by Department of Mathematics and Information Technology, EdUHK",
   "Disclaimer": "<span class=\"text-start\"><strong><i>Disclaimer:</i></strong></span><i>The ideas and opinions expressed in this  symposium are those of the speakers;</i><br><span class=\"ml-20\"><i>they are not necessarily those of UNESCO and do not commit the Organization.</i></span>",
   "Symposium": {
     "Topic": "Knowledge Feast Where Great Minds Meet!",
@@ -86,6 +87,10 @@
   "Sub-symposium Sessions Submit": "Call for Participation",
   "Harvard": "Harvard CES \nGraduate School of Education\n Harvard University",
   "GIET": "President's Office and Global Institute for Emerging Technologies (GIET)\n The Education University of Hong Kong",
+  "SendTo": " ",
+  "SubmitNumber": "Number",
+  "SubmitTopic": "Parallel Topic",
+  "SubmitMethod": "Call for Proposal",
   "About Us": {
     "EduHK": {
       "intro title": "About EdUHK",
