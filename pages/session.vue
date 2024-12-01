@@ -19,31 +19,31 @@ const columns = computed(() => {
 
 const contact = computed(() => {
     return [{
-        id: 'Parallel Session 1 ',
-        topic: 'Al for Teaching, Learning and Traning',
+        id: '1 ',
+        topic: t('server.Poster.id0.name'),
         mail: t('SendTo') + 'lujijian@hznu.edu.cn',
     }, {
-        id: 'Parallel Session 2',
-        topic: 'Furistics Mindset and Trends of Teaching and Training',
+        id: '2',
+        topic: t('server.Poster.id1.name'),
         mail: t('SendTo') + 'xiaoyanchu@zju.edu.cn',
     }, {
-        id: 'Parallel Session 3',
-        topic: 'AI Enabsed Science Education',
+        id: '3',
+        topic: t('server.Poster.id2.name'),
         mail: t('SendTo') + 'mtt@snnu.edu.cn',
     }, {
-        id: 'Parallel Session 4',
-        topic: 'Large Language Model & Computing Education',
+        id: '4',
+        topic: t('server.Poster.id3.name'),
         mail: t('SendTo') + 'mhyin@nenu.edu.cn',
     }, {
-        id: 'Parallel Session 5',
-        topic: 'Ethical and Fairness in AI Application Decisions',
+        id: '5',
+        topic: t('server.Poster.id4.name'),
         mail: t('SendTo') + 'celab2208@163.com',
     }, {
-        id: 'Parallel Session 6',
-        topic: 'Research and Learning Analytics in the Age of AI',
+        id: '6',
+        topic: t('server.Poster.id5.name'),
         mail: t('SendTo') + 'hnubai@hainan.edu.cn',
     }, {
-        id: 'Poster and Showcase Session',
+        id: t('pSession.poster'),
         topic: 'Above all',
         mail: t('SendToLink') + 'https://www.wjx.top/vm/tdLaPJt.aspx#',
     }]
