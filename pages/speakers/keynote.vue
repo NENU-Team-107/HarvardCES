@@ -48,26 +48,28 @@ const pending = ref(true)
         <div v-if="pending" class="justify-self-center">
             <UCommandPalette loading />
         </div>
-        <div class="h-full w-full max-w-6xl justify-self-center hidden md:block">
-            <div>
-                <h1 class="text-center font-bold text-2xl py-6">
-                    {{ $t('Keynote Speakers') }}
-                </h1>
-                <div class="grid grid-cols-3 gap-5 justify-items-center items-start ">
-                    <div v-for="speaker in speakersList" class="w-full h-full">
-                        <SpeakersIntroduction :speakers="speaker" class="mx-4 w-full h-full" />
+        <div v-else>
+            <div class="h-full w-full max-w-6xl justify-self-center hidden md:block">
+                <div>
+                    <h1 class="text-center font-bold text-2xl py-6">
+                        {{ $t('Keynote Speakers') }}
+                    </h1>
+                    <div class="grid grid-cols-3 gap-5 justify-items-center items-start ">
+                        <div v-for="speaker in speakersList" class="w-full h-full">
+                            <SpeakersIntroduction :speakers="speaker" class="mx-4 w-full h-full" />
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="md:hidden">
-            <div>
-                <h1 class="text-center font-bold text-xl">
-                    {{ $t('Keynote Speakers') }}
-                </h1>
-            </div>
-            <div v-for="speaker in speakersList">
-                <SpeakersIntroduction :speakers="speaker" class="mx-10 my-5 h-full " />
+            <div class="md:hidden">
+                <div>
+                    <h1 class="text-center font-bold text-xl">
+                        {{ $t('Keynote Speakers') }}
+                    </h1>
+                </div>
+                <div v-for="speaker in speakersList">
+                    <SpeakersIntroduction :speakers="speaker" class="mx-10 my-5 h-full " />
+                </div>
             </div>
         </div>
     </div>

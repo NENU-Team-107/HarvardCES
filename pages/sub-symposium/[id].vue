@@ -23,13 +23,13 @@ const content = computed(() => {
     <div
       class="md:flex flex-col px-8 md:px-16 bg-white/50 py-10 h-full w-full shadow-2xl  border-1 rounded-lg self-center relative hidden">
 
-      <div class="px-8">
-        <div class="flex justify-between px-4">
-          <div class="text-orange-500 text-4xl font-bold mx-10 mt-5">
+      <div class="px-4">
+        <div class="flex justify-between">
+          <div class="text-orange-500 text-4xl font-bold mx-14 mt-5">
             <h1 v-html="t('CallForPoster')">
             </h1>
           </div>
-          <div class="text-green-800 text-center text-2xl font-bold">
+          <div class="text-green-800 text-center text-2xl font-bold mr-8">
             <div>
               {{ $t("Session") }} {{ $t("server.Poster.id" + sessionId + ".index") }}:
             </div>

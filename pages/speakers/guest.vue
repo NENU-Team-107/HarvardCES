@@ -48,26 +48,28 @@ const pending = ref(true)
         <div v-if="pending" class="justify-self-center">
             <UCommandPalette loading />
         </div>
-        <div class="max-w-5xl h-full justify-self-center md:flex hidden">
-            <div>
-                <h1 class="text-center font-bold text-2xl py-6 justify-self-center">
-                    {{ $t('Guest of Honor') }}
-                </h1>
-                <div class="grid grid-cols-3 gap-5 justify-items-center items-start ">
-                    <div v-for="speaker in speakersList" class="w-full h-full">
-                        <SpeakersIntroduction :speakers="speaker" class="mx-4 w-full h-full" />
+        <div v-else>
+            <div class="max-w-5xl h-full justify-self-center md:flex hidden">
+                <div>
+                    <h1 class="text-center font-bold text-2xl py-6 justify-self-center">
+                        {{ $t('Guest of Honor') }}
+                    </h1>
+                    <div class="grid grid-cols-3 gap-5 justify-items-center items-start ">
+                        <div v-for="speaker in speakersList" class="w-full h-full">
+                            <SpeakersIntroduction :speakers="speaker" class="mx-4 w-full h-full" />
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="md:hidden">
-            <div>
-                <h1 class="text-center font-bold text-xl">
-                    {{ $t('Guest of Honor') }}
-                </h1>
-            </div>
-            <div v-for="speaker in speakersList">
-                <SpeakersIntroduction :speakers="speaker" class="mx-10 my-5 h-full " />
+            <div class="md:hidden">
+                <div>
+                    <h1 class="text-center font-bold text-xl">
+                        {{ $t('Guest of Honor') }}
+                    </h1>
+                </div>
+                <div v-for="speaker in speakersList">
+                    <SpeakersIntroduction :speakers="speaker" class="mx-10 my-5 h-full " />
+                </div>
             </div>
         </div>
     </div>
