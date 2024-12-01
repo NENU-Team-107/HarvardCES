@@ -22,18 +22,21 @@ const getSpeaker = async (idWithName: string) => {
   }
 }
 
-getSpeaker(decodeURIComponent(route.params.name as string))
-  .then(async () => {
-    if (speaker.value) {
-      const image: Blob = await $fetch('/api/speaker/photo', {
-        method: 'GET',
-        query: {
-          photo: speaker.value.photo
-        }
-      })
-      speaker.value.photo = window.URL.createObjectURL(image)
-    }
-  })
+onMounted(() => {
+  console.log(route.params.name)
+  getSpeaker(decodeURIComponent(route.params.name as string))
+    .then(async () => {
+      if (speaker.value) {
+        const image: Blob = await $fetch('/api/speaker/photo', {
+          method: 'GET',
+          query: {
+            photo: speaker.value.photo
+          }
+        })
+        speaker.value.photo = window.URL.createObjectURL(image)
+      }
+    })
+})
 
 </script>
 

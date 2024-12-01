@@ -1,20 +1,8 @@
 <script lang="ts" setup>
 import SubSwiper from '~/components/homeIndex/SubSwiper.vue';
-import { SubSymposiumPoster } from '~/lib/data';
-
 const { t } = useI18n()
 
 const router = useRouter()
-
-const items = SubSymposiumPoster.map((item) => {
-    return {
-        ...item,
-        label: 'Session',
-        click: () => {
-            router.push(item.link)
-        }
-    }
-})
 
 const columns = computed(() => {
     return [{

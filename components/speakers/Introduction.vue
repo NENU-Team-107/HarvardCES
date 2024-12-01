@@ -11,6 +11,7 @@ const inc = computed(() => {
   return t(props.speakers.inc).replace(/\n\n/g, '<br>')
 })
 
+
 </script>
 
 <template>

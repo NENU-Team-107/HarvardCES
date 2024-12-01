@@ -1,8 +1,10 @@
 <script setup lang="ts">
+defineOptions({
+    name: "keynoteSpeakers",
+});
 import type { Speaker } from '~/lib/model';
 
 const speakersList = ref<Speaker[]>([])
-const blobMap: Map<string, string> = new Map()
 
 const fetchSpeakers = async () => {
     const resp = await $fetch('/api/speaker/listByQuery', {
@@ -20,7 +22,7 @@ const fetchSpeakers = async () => {
 onMounted(() => {
     fetchSpeakers()
         .then(async () => {
-            for (const speaker of speakersList.value) {
+            for (let speaker of speakersList.value) {
                 const image: Blob = await $fetch('/api/speaker/photo', {
                     method: 'GET',
                     query: {
@@ -28,6 +30,10 @@ onMounted(() => {
                     }
                 })
                 speaker.photo = window.URL.createObjectURL(image)
+                const path = speaker.bio.details.link?.split('/')
+                if (path) {
+                    speaker.bio.details.link = '/speakers/speaker/' + path[path.length - 1]
+                }
             }
             pending.value = false;
         })
@@ -54,15 +60,15 @@ const pending = ref(true)
                 </div>
             </div>
         </div>
-    </div>
-    <div class="md:hidden">
-        <div>
-            <h1 class="text-center font-bold text-xl">
-                {{ $t('Keynote Speakers') }}
-            </h1>
-        </div>
-        <div v-for="speaker in speakersList">
-            <SpeakersIntroduction :speakers="speaker" class="mx-10 my-5 h-full " />
+        <div class="md:hidden">
+            <div>
+                <h1 class="text-center font-bold text-xl">
+                    {{ $t('Keynote Speakers') }}
+                </h1>
+            </div>
+            <div v-for="speaker in speakersList">
+                <SpeakersIntroduction :speakers="speaker" class="mx-10 my-5 h-full " />
+            </div>
         </div>
     </div>
 </template>

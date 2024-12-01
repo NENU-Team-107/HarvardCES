@@ -37,7 +37,7 @@ export const keynoteSpeaker: Array<Speaker> = [
             details: {
                 description: "server.Keynote Speakers.id3.description",
                 title: "server.Keynote Speakers.id3.title",
-                link: 'speaker/3 ChrisDede'
+                link: '/speakers/speaker/3 ChrisDede'
             }
         }
     },
@@ -52,7 +52,7 @@ export const keynoteSpeaker: Array<Speaker> = [
             details: {
                 description: "server.Keynote Speakers.id9.description",
                 title: "server.Keynote Speakers.id9.title",
-                link: 'speaker/17 TinaGrotzer'
+                link: '/speakers/speaker/17 TinaGrotzer'
             }
         }
     },
@@ -67,7 +67,7 @@ export const keynoteSpeaker: Array<Speaker> = [
             details: {
                 description: "server.Keynote Speakers.id7.description",
                 title: "server.Keynote Speakers.id7.title",
-                link: 'speaker/7 PaulKim'
+                link: '/speakers/speaker/7 PaulKim'
             }
         }
     },
@@ -82,7 +82,7 @@ export const keynoteSpeaker: Array<Speaker> = [
             details: {
                 description: "server.Keynote Speakers.id1.description",
                 title: "server.Keynote Speakers.id1.title",
-                link: 'speaker/1 ProfessorLEE,Chi-KinJohn'
+                link: '/speakers/speaker/1 ProfessorLEE,Chi-KinJohn'
             }
         }
     },
@@ -97,7 +97,7 @@ export const keynoteSpeaker: Array<Speaker> = [
             details: {
                 description: "server.Keynote Speakers.id6.description",
                 title: "server.Keynote Speakers.id6.title",
-                link: 'speaker/6 Yew-SoonOng'
+                link: '/speakers/speaker/6 Yew-SoonOng'
             }
         }
     },
@@ -112,7 +112,7 @@ export const keynoteSpeaker: Array<Speaker> = [
             details: {
                 description: "server.Keynote Speakers.id2.description",
                 title: "server.Keynote Speakers.id2.title",
-                link: 'speaker/2 RenYouqun'
+                link: '/speakers/speaker/2 RenYouqun'
             }
         }
     },
@@ -127,7 +127,7 @@ export const keynoteSpeaker: Array<Speaker> = [
             details: {
                 description: "server.Keynote Speakers.id8.description",
                 title: "server.Keynote Speakers.id8.title",
-                link: 'speaker/8 Jonathon Ritcher'
+                link: '/speakers/speaker/8 Jonathon Ritcher'
             }
         }
     },
@@ -142,7 +142,7 @@ export const keynoteSpeaker: Array<Speaker> = [
             details: {
                 description: "server.Keynote Speakers.id5.description",
                 title: "server.Keynote Speakers.id5.title",
-                link: 'speaker/5 MinjuanWANG'
+                link: '/speakers/speaker/5 MinjuanWANG'
             }
         }
     },
@@ -157,7 +157,7 @@ export const keynoteSpeaker: Array<Speaker> = [
             details: {
                 description: "server.Keynote Speakers.id4.description",
                 title: "server.Keynote Speakers.id4.title",
-                link: 'speaker/4 ShijinWang'
+                link: '/speakers/speaker/4 ShijinWang'
             }
         }
     },
@@ -175,7 +175,7 @@ export const organizingCommittee: Array<Speaker> = [
             details: {
                 description: "server.Organizing Committee.id1.description",
                 title: "server.Organizing Committee.id1.title",
-                link: 'speaker/9 ProfessorLEE,Chi-KinJohn'
+                link: '/speakers/speaker/9 ProfessorLEE,Chi-KinJohn'
             }
         }
     },
@@ -190,7 +190,7 @@ export const organizingCommittee: Array<Speaker> = [
             details: {
                 description: "server.Organizing Committee.id2.description",
                 title: "server.Organizing Committee.id2.title",
-                link: 'speaker/10 MinjuanWANG'
+                link: '/speakers/speaker/10 MinjuanWANG'
             }
         }
     },
@@ -205,7 +205,7 @@ export const organizingCommittee: Array<Speaker> = [
             details: {
                 description: "server.Organizing Committee.id4.description",
                 title: "server.Organizing Committee.id4.title",
-                link: 'speaker/12 AnnyChan'
+                link: '/speakers/speaker/12 AnnyChan'
             }
         }
     },
@@ -220,7 +220,7 @@ export const organizingCommittee: Array<Speaker> = [
             details: {
                 description: "server.Organizing Committee.id5.description",
                 title: "server.Organizing Committee.id5.title",
-                link: 'speaker/13 Xuefan Li'
+                link: '/speakers/speaker/13 Xuefan Li'
             }
         }
     },
@@ -235,7 +235,7 @@ export const organizingCommittee: Array<Speaker> = [
             details: {
                 description: "server.Organizing Committee.id3.description",
                 title: "server.Organizing Committee.id3.title",
-                link: 'speaker/11 RongbingShen'
+                link: '/speakers/speaker/11 RongbingShen'
             }
         }
     },
@@ -253,7 +253,7 @@ export const guestOfHonor: Array<Speaker> = [
             details: {
                 description: "server.Guest of Honor.id2.description",
                 title: "server.Guest of Honor.id2.title",
-                link: 'speaker/15 CHENG,MayHung'
+                link: '/speakers/speaker/15 CHENG,MayHung'
             }
         }
     },
@@ -268,7 +268,7 @@ export const guestOfHonor: Array<Speaker> = [
             details: {
                 description: "server.Guest of Honor.id3.description",
                 title: "server.Guest of Honor.id3.title",
-                link: 'speaker/16 CHAN,CheHinChetwyn'
+                link: '/speakers/speaker/16 CHAN,CheHinChetwyn'
             }
         }
     },
@@ -283,7 +283,7 @@ export const guestOfHonor: Array<Speaker> = [
             details: {
                 description: "server.Guest of Honor.id1.description",
                 title: "server.Guest of Honor.id1.title",
-                link: 'speaker/14 AnnyChan'
+                link: '/speakers/speaker/14 AnnyChan'
             }
         }
     },
@@ -301,7 +301,7 @@ export const invitedSpeakers: Array<Speaker> = [
             details: {
                 description: "server.Invited Speakers.id1.description",
                 title: "server.Invited Speakers.id1.title",
-                link: 'speaker/17 John Clifford Mitchell'
+                link: '/speakers/speaker/17 John Clifford Mitchell'
             }
         }
     },
@@ -316,7 +316,7 @@ export const invitedSpeakers: Array<Speaker> = [
             details: {
                 description: "server.Invited Speakers.id2.description",
                 title: "server.Invited Speakers.id2.title",
-                link: 'speaker/18 University College London'
+                link: '/speakers/speaker/18 University College London'
             }
         }
     },
@@ -331,7 +331,7 @@ export const invitedSpeakers: Array<Speaker> = [
             details: {
                 description: "server.Invited Speakers.id3.description",
                 title: "server.Invited Speakers.id3.title",
-                link: 'speaker/19 Hongjie Chen'
+                link: '/speakers/speaker/19 Hongjie Chen'
             }
         }
     },
@@ -346,7 +346,7 @@ export const invitedSpeakers: Array<Speaker> = [
             details: {
                 description: "server.Invited Speakers.id4.description",
                 title: "server.Invited Speakers.id4.title",
-                link: 'speaker/20 Qing LI'
+                link: '/speakers/speaker/20 Qing LI'
             }
         }
     },
@@ -361,7 +361,7 @@ export const invitedSpeakers: Array<Speaker> = [
             details: {
                 description: "server.Invited Speakers.id5.description",
                 title: "server.Invited Speakers.id5.title",
-                link: 'speaker/21 Enhong Chen'
+                link: '/speakers/speaker/21 Enhong Chen'
             }
         }
     },
@@ -377,7 +377,7 @@ export const invitedSpeakers: Array<Speaker> = [
             details: {
                 description: "server.Invited Speakers.id6.description",
                 title: "server.Invited Speakers.id6.title",
-                link: 'speaker/22 Anny Chan'
+                link: '/speakers/speaker/22 Anny Chan'
             }
         }
     }
