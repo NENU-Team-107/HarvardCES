@@ -4,75 +4,72 @@ import type { ApiResponse, Poster } from '~/lib/model.ts';
 
 const route = useRoute()
 
-const poster = ref<Poster>()
+const { t } = useI18n()
 
-const pdfurl = ref<string>()
-const pending = ref(true)
+const sessionId = ref(Number.parseInt(route.params.id as string))
 
-const getPoster = async (id: number) => {
-  const { data: resp } = await useFetch<ApiResponse<Poster>>('/api/poster/getByID', {
-    method: 'GET',
-    query: {
-      id: id
-    }
-  });
-  if (resp.value !== null && resp.value.data) {
-    poster.value = resp.value.data;
-    pending.value = false
-  }
-}
-
-
-getPoster(Number.parseInt(route.params.id as string))
-  .then(async () => {
-    if (poster.value) {
-      const { data } = await useFetch('/api/poster/getCallByID', {
-        method: 'GET',
-        query: {
-          path: poster.value.callPath
-        },
-        responseType: 'blob'
-      })
-      if (data.value) {
-        const file = window.URL.createObjectURL(data.value as Blob);
-        pdfurl.value = file
-      }
-    }
-  })
-
-const { pdf, pages } = usePDF(pdfurl)
+const content = computed(() => {
+  return [
+    t("server.Poster.id" + sessionId.value + ".content.p1"),
+    t("server.Poster.id" + sessionId.value + ".content.p2"),
+    t("server.Poster.id" + sessionId.value + ".content.p3")
+  ]
+})
 
 </script>
 
 <template>
+  <div class="max-w-5xl mx-10 my-5 pt-24">
+    <div
+      class="md:flex flex-col px-8 md:px-16 bg-white/40 py-10 h-full w-full shadow-2xl  border-1 rounded-lg self-center relative hidden">
 
-  <div v-if="pending" class="justify-self-center">
-    <UCommandPalette loading />
-  </div>
-  <div v-else>
-    <div class="w-full h-full min-h-screen mx-10 pt-24 md:flex hidden justify-center items-center">
-      <!-- TODO 尝试在这里贴上一个 pdf 文件，但中英文显示不一样 -->
-      <div class="flex flex-row justify-between w-full h-full px-20 pb-6 items-center">
-        <div class="w-full flex-row justify-center items-center">
-          <div class="flex-1 flex">
-            <ClientOnly>
-              <div v-for="page in pages" :key="page" class="w-full flex justify-center items-center px-auto">
-                <VuePDF :pdf="pdf" :page="page" class="w-full h-auto flex justify-center items-center relative"
-                  fit-parent />
-              </div>
-            </ClientOnly>
+      <div class="px-8">
+        <div class="flex justify-between px-8">
+          <div class="text-orange-500 text-4xl font-bold mx-20 mt-5">
+            <h1 v-html="t('CallForPoster')">
+            </h1>
+          </div>
+          <div class="text-green-800 text-center text-2xl font-bold">
+            <div>
+              {{ $t("Session") }} {{ $t("server.Poster.id" + sessionId + ".index") }}:
+            </div>
+            <div>
+              {{ $t("server.Poster.id" + sessionId + ".name") }}
+            </div>
+            <div class="text-base text-end">
+              {{ $t("server.Poster.id" + sessionId + ".submitddl") }}
+              <br>
+              {{ $t("server.Poster.id" + sessionId + ".notifyddl") }}
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="md:hidden w-full min-h-screen py-5">
-      <div class="w-full py-20">
-        <ClientOnly>
-          <div v-for="page in pages" :key="page" class="w-full justify-center items-center">
-            <VuePDF :pdf="pdf" :page="page" class="w-full h-auto justify-center items-center" fit-parent />
+
+        <div class="py-6 mx-auto text-justify text-base md:text-lg w-11/12 leading-7">
+
+          <div v-html="content[0]"></div>
+
+          <div class="flex text-green-900 justify-center items-center my-5 text-xl">
+            <div class="bg-green-900 w-1/3 h-0.5"></div>
+            <h1 class="mx-auto">{{ t("server.Poster.id" + sessionId + ".content.d1") }}</h1>
+            <div class="bg-green-900 w-1/3 h-0.5"></div>
           </div>
-        </ClientOnly>
+
+          <div v-html="content[1]"></div>
+
+          <div class="flex text-green-900 justify-center items-center my-5 text-xl">
+            <div class="bg-green-900 w-1/3 h-0.5"></div>
+            <h1 class="mx-auto"> {{ t("server.Poster.id" + sessionId + ".content.d2") }}</h1>
+            <div class="bg-green-900 w-1/3 h-0.5"></div>
+          </div>
+
+          <div v-html="content[2]"></div>
+
+        </div>
+
       </div>
+
+
     </div>
   </div>
+
 </template>

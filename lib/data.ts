@@ -1,4 +1,4 @@
-import type { Speaker, Poster } from "./model";
+import type { Speaker, Poster, RouterItem } from "./model";
 
 export const speakerToKind: Map<number, string> = new Map([
     [1, 'Keynote Speakers'],
@@ -427,4 +427,58 @@ export const SubSymposiumPoster: Array<Poster> = [
         link: 'sub-symposium/5'
     },
 
+]
+
+export const routerArray: Array<RouterItem> = [
+    {
+        name: "Home",
+        path: "/",
+    },
+    {
+        name: "About",
+        children: [
+            {
+                name: "Symposium Introduction",
+                path: "/symposium/introduction",
+            },
+            {
+                name: "Symposium Time",
+                path: "/symposium/time"
+            }
+        ]
+    },
+    {
+        name: "Speakers",
+        children: [
+            {
+                name: "Keynote Speakers",
+                path: "/speakers/keynote"
+            },
+            {
+                name: "Guest of Honor",
+                path: "/speakers/guest"
+            }
+        ]
+    },
+    {
+        name: "Session",
+        path: "/session",
+    },
+    {
+        name: "Contact",
+        children: [
+            {
+                name: "Organizing Committee",
+                path: "/contact/committee"
+            },
+            {
+                name: 'Harvard China Education Symposium',
+                path: '/contact/ces'
+            },
+            {
+                name: "The Education University of Hong Kong",
+                path: '/contact/eduhk'
+            }
+        ]
+    }
 ]

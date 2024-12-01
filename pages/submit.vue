@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { useI18n } from 'vue-i18n';
-import type { TabItems } from '~/lib/model';
+import SubSwiper from '~/components/homeIndex/SubSwiper.vue';
 const { t } = useI18n();
 
 
@@ -51,7 +51,8 @@ const contact = computed(() => {
 
 function select(row: any) {
   if (row) {
-    let link = row.mail.split(' ')[1] as string
+    const arr = row.mail.split(' ')
+    let link = arr[arr.length - 1]
     if (row.topic !== "Above all") {
       link = "mailto:" + link
     }
@@ -79,5 +80,7 @@ function select(row: any) {
         </UTable>
       </div>
     </div>
+
+
   </div>
 </template>

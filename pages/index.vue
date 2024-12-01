@@ -51,13 +51,15 @@ const title = ref({
   intro: "Symposium.Title",
   speaker: "Keynote Speakers",
   logo: "Organisers and Partners",
-  workshop: "Activities"
+  organisers: "Organizing Committee"
+  // workshop: "Activities"
   //   workshop: "Session"
 })
 
-const speakersList = ref<Speaker[]>([])
+const keyspeakersList = ref<Speaker[]>([])
+const organizeList = ref<Speaker[]>([])
 
-const fetchSpeakers = async () => {
+const fetchKeynoteSpeakers = async () => {
   const resp = await $fetch('/api/speaker/listByQuery', {
     method: 'GET',
     query: {
@@ -66,7 +68,20 @@ const fetchSpeakers = async () => {
   })
   const { status, data } = resp
   if (status === "Success" && data !== null) {
-    speakersList.value = data;
+    keyspeakersList.value = data;
+  }
+}
+
+const fetchOrganize = async () => {
+  const resp = await $fetch('/api/speaker/listByQuery', {
+    method: 'GET',
+    query: {
+      kind: 'Organizing Committee'
+    }
+  })
+  const { status, data } = resp
+  if (status === "Success" && data !== null) {
+    organizeList.value = data;
   }
 }
 
@@ -76,16 +91,14 @@ const toggleShowMore = () => {
   showMore.value = !showMore.value
 }
 
-const VisibleSpeakersList = computed(() => {
-  return showMore.value ? speakersList.value : speakersList.value.slice(0, 6)
+const KeynoteSpeakers = computed(() => {
+  return showMore.value ? keyspeakersList.value : keyspeakersList.value.slice(0, 6)
 })
 
-const SymposiumIntro = computed(() => t("Symposium.Intro"))
-
 onMounted(() => {
-  fetchSpeakers()
+  fetchKeynoteSpeakers()
     .then(async () => {
-      for (const speaker of speakersList.value) {
+      for (const speaker of keyspeakersList.value) {
         const image: Blob = await $fetch('/api/speaker/photo', {
           method: 'GET',
           query: {
@@ -95,6 +108,19 @@ onMounted(() => {
         speaker.photo = window.URL.createObjectURL(image)
       }
     })
+  fetchOrganize()
+    .then(async () => {
+      for (const organizer of organizeList.value) {
+        const image: Blob = await $fetch('/api/speaker/photo', {
+          method: 'GET',
+          query: {
+            photo: organizer.photo
+          }
+        })
+        organizer.photo = window.URL.createObjectURL(image)
+      }
+    })
+
 })
 
 const slides = ref<SwiperItem[]>([
@@ -130,11 +156,11 @@ const slides = ref<SwiperItem[]>([
       <div class="bg-white/80 md:p-10 p-1 md:mt-0 mt-5">
         <Title :titleMap="title.speaker" />
         <div class="grid md:grid-cols-3 gap-4 px-10">
-          <div v-for="speaker in VisibleSpeakersList">
+          <div v-for="speaker in KeynoteSpeakers">
             <SpeakersIntroduction :speakers="speaker" />
           </div>
         </div>
-        <div v-if="speakersList.length > 6" class="flex justify-center mt-4">
+        <div v-if="keyspeakersList.length > 6" class="flex justify-center mt-4">
           <button @click="toggleShowMore" class="text-blue-500 hover:text-blue-700 ">
             <span v-if="showMore">
               <font-awesome icon="fa-solid fa-angle-up" />
@@ -149,14 +175,20 @@ const slides = ref<SwiperItem[]>([
       </div>
 
       <div class="bg-white/80 md:p-10 p-3">
-        <Title :titleMap="title.workshop" />
+        <!-- <Title :titleMap="title.workshop" />
         <div class="grid grid-rows-1 grid-cols-1 justify-center items-center md:w-4/5 w-full justify-self-center">
           <IconGrid />
-          <!-- <div class="text-center text-xl font-bold my-4 grid-cols-3 grid">
+          <div class="text-center text-xl font-bold my-4 grid-cols-3 grid">
             <div class="h-1 w-full bg-black"></div>
             <span>{{ $t("Session") }}</span>
-          </div> -->
+          </div>
           <SubSwiper :cards="false" />
+        </div> -->
+        <Title :titleMap="title.organisers" />
+        <div class="grid md:grid-cols-3 gap-4 px-10">
+          <div v-for="speaker in organizeList">
+            <SpeakersIntroduction :speakers="speaker" />
+          </div>
         </div>
       </div>
 

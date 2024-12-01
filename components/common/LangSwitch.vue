@@ -50,7 +50,7 @@ function checkMobile(this: Window, ev: UIEvent) {
 
 <template>
   <UDropdown :items="[localesOptions]" :mode="isMobile ? 'click' : 'hover'"
-    :ui="{ item: { disabled: 'cursor-text select-text' } }" :popper="{ placement: 'bottom-start' }">
+    :ui="{ item: { disabled: 'cursor-text select-text' } }" :popper="{ placement: 'bottom-start', offsetDistance: 20 }">
     <UButton icon="i-heroicons:language-16-solid" color="black" variant="ghost" aria-label="Theme" />
     <template #item="{ item }">
       <div class="truncate text-left w-full" :class="{ 'text-primary': locale === item.code }"

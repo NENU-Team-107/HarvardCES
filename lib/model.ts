@@ -51,3 +51,10 @@ export interface SwiperItem {
     link?: string,
     details?: boolean
 }
+
+
+export interface RouterItem {
+    name: string;
+    path?: string;
+    children?: RouterItem[];
+}

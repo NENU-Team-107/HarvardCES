@@ -1,124 +1,122 @@
 <script lang="ts" setup>
 import SubSwiper from '~/components/homeIndex/SubSwiper.vue';
-import { TabsContent, TabsIndicator, TabsList, TabsRoot, TabsTrigger } from 'radix-vue'
-import type { TabItems } from '~/lib/model';
+import { SubSymposiumPoster } from '~/lib/data';
 
 const { t } = useI18n()
 
-const tabMenuBase = ref<TabItems[]>([
-  {
-    label: t("pSession.sub-symposium"),
-    content: "pSession.sub-symposium",
-    show: false,
-    index: 0,
-  },
-  {
-    label: t("pSession.poster"),
-    content: "pSession.poster",
-    show: false,
-    index: 1,
-  }
-])
+const router = useRouter()
 
+const items = SubSymposiumPoster.map((item) => {
+    return {
+        ...item,
+        label: 'Session',
+        click: () => {
+            router.push(item.link)
+        }
+    }
+})
 
-const toggleShowMore = (index: number) => {
-  tabMenuBase.value[index].show = !tabMenuBase.value[index].show;
-}
+const columns = computed(() => {
+    return [{
+        key: 'id',
+        label: t('SubmitNumber')
+    }, {
+        key: 'topic',
+        label: t('SubmitTopic')
+    }, {
+        key: 'mail',
+        label: t('SubmitMethod')
+    }]
+})
+
+const contact = computed(() => {
+    return [{
+        id: 'Parallel Session 1 ',
+        topic: 'Al for Teaching, Learning and Traning',
+        mail: t('SendTo') + 'lujijian@hznu.edu.cn',
+    }, {
+        id: 'Parallel Session 2',
+        topic: 'Furistics Mindset and Trends of Teaching and Training',
+        mail: t('SendTo') + 'xiaoyanchu@zju.edu.cn',
+    }, {
+        id: 'Parallel Session 3',
+        topic: 'AI Enabsed Science Education',
+        mail: t('SendTo') + 'mtt@snnu.edu.cn',
+    }, {
+        id: 'Parallel Session 4',
+        topic: 'Large Language Model & Computing Education',
+        mail: t('SendTo') + 'mhyin@nenu.edu.cn',
+    }, {
+        id: 'Parallel Session 5',
+        topic: 'Ethical and Fairness in AI Application Decisions',
+        mail: t('SendTo') + 'celab2208@163.com',
+    }, {
+        id: 'Parallel Session 6',
+        topic: 'Research and Learning Analytics in the Age of AI',
+        mail: t('SendTo') + 'hnubai@hainan.edu.cn',
+    }, {
+        id: 'Poster and Showcase Session',
+        topic: 'Above all',
+        mail: t('SendToLink') + 'https://www.wjx.top/vm/tdLaPJt.aspx#',
+    }]
+})
 </script>
 
 <template>
-  <div class="w-full h-full min-h-screen mx-10 my-5 pt-24">
-    <NuxtPage />
-
-    <div class="hidden md:flex justify-center w-full min-h-screen">
-      <TabsRoot :default-value="tabMenuBase.at(0)?.content" orientation="vertical" class="flex w-full max-w-7xl">
-        <TabsList class="flex flex-col w-60 items-center h-fit sticky top-24 bg-gray-100 rounded-lg shadow-md">
-          <TabsIndicator
-            class="w-[3px] h-[48px] absolute left-1 top-1 translate-y-[--radix-tabs-indicator-position] rounded-full transition-[width,transform] duration-300">
-            <div class="bg-blue-600 w-full h-full" />
-          </TabsIndicator>
-          <TabsTrigger class="px-10 min-w-60 justify-self-center h-[60px] flex items-center text-base leading-none text-black  select-none
-        hover:text-blue-500
-        data-[state=active]:text-blue-600
-        outline-none cursor-pointer transition-all
-        border-b border-gray-200
-        last:border-b-0
-        before:content-[''] before:absolute before:left-0 before:top-0 before:bottom-0 before:w-[0px] 
-        before:bg-grass9 before:transform before:-translate-x-full
-        before:transition-transform before:duration-200
-        hover:before:translate-x-0
-        data-[state=active]:before:translate-x-0" v-for="item in tabMenuBase" :value="item.content">
-            {{ $t(item.content) }}
-          </TabsTrigger>
-        </TabsList>
-        <TabsContent v-for="item in tabMenuBase" :value="item.content" class="w-fit">
-          <div v-if="item.index === 0" class="min-w-screen">
-            <SubSwiper :cards="true" />
-          </div>
-          <div v-else class="justify-self-center mx-10">
-            <div class="grid grid-cols-2 grid-flow-row-dense gap-4">
-              <div>
-                <NuxtImg :src="t('Showcase-1')" loading="lazy" />
-              </div>
-              <div>
-                <NuxtImg :src="t('Showcase-2')" loading="lazy" />
-              </div>
-            </div>
-          </div>
-        </TabsContent>
-      </TabsRoot>
-    </div>
-
-    <div class="md:hidden">
-      <div v-for="item in tabMenuBase">
-        <UCard :ui="{
-          base: '',
-          padding: 'p-0',
-          background: 'bg-white ',
-          divide: 'divide-y divide-gray-200 ',
-          ring: 'ring-1 ring-gray-200 ',
-          rounded: 'rounded-lg',
-          shadow: 'shadow',
-          body: {
-            base: 'w-full h-full',
-            background: 'bg-tabs-header',
-            padding: 'p-0'
-          },
-        }">
-          <template #header>
-            <div class="flex w-full justify-between">
-              <span class="text-xl font-bold">{{ item.label }}</span>
-              <button @click="toggleShowMore(item.index)">
-                <span v-if="item.show">
-                  <font-awesome icon="fa-solid fa-angle-up" />
-                  {{ $t("Collapse") }}
-                </span>
-                <span v-else>
-                  <font-awesome icon="fa-solid fa-angle-down" />
-                  {{ $t("Show More") }}
-                </span>
-              </button>
-            </div>
-          </template>
-
-          <div class="w-full min-w-screen-md">
-            <div v-if="item.index === 0 && item.show">
-              <SubSwiper :cards="true" />
-            </div>
-            <div v-else-if="item.index === 1 && item.show">
-              <div class="grid grid-rows-2 grid-flow-col-dense px-6 py-6">
-                <div>
-                  <NuxtImg :src="t('Showcase-1')" loading="lazy" />
+    <div class="w-full h-full mx-10 my-5 pt-24">
+        <div
+            class="h-full w-full max-w-6xl justify-self-center hidden md:block bg-white/80 justify-center items-center">
+            <div class="flex flex-col justify-center items-center">
+                <h1 class="text-center font-bold md:text-xl text-lg py-3">
+                    {{ $t("Sub-symposium Sessions Submit") }}
+                </h1>
+                <h2 class="text-red-500/90 text-base">
+                    <strong><i>Due 31 December, 2024; Notification by 31 January, 2025; Extension upon
+                            request</i></strong>
+                </h2>
+                <div class="flex justify-center items-center w-full self-center">
+                    <UTable
+                        :ui="{ td: { size: 'md:text-base text-sm', color: 'text-black drak:text:white hover:text-green-600' }, th: { size: 'md:text-base text-base', } }"
+                        :rows="contact" :columns="columns">
+                    </UTable>
                 </div>
-                <div>
-                  <NuxtImg :src="t('Showcase-2')" loading="lazy" />
-                </div>
-              </div>
             </div>
-          </div>
 
-        </UCard>
-      </div>
+            <div class="text-2xl font-bold text-center my-5">
+                <div class="flex justify-center items-center ">
+                    <div class="h-0.5 w-24 bg-black"></div>
+                    <h1 class="mx-4">{{ $t("Session") }} </h1>
+                    <div class="h-0.5 w-20 bg-black"></div>
+                </div>
+            </div>
+
+            <div class="min-w-screen">
+                <SubSwiper :cards="true" />
+            </div>
+
+            <div class="text-2xl font-bold text-center my-5">
+                <div class="flex justify-center items-center ">
+                    <div class="h-0.5 w-24 bg-black"></div>
+                    <h1 class="mx-4">{{ $t("pSession.poster") }} </h1>
+                    <div class="h-0.5 w-20 bg-black"></div>
+                </div>
+            </div>
+
+            <div class="justify-self-center mx-10">
+                <div class="grid grid-cols-2 grid-flow-row-dense gap-4">
+                    <div>
+                        <NuxtImg :src="t('Showcase-1')" loading="lazy" />
+                    </div>
+                    <div>
+                        <NuxtImg :src="t('Showcase-2')" loading="lazy" />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="md:hidden">
+
+        </div>
     </div>
-  </div>
 </template>
