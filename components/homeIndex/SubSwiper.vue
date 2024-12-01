@@ -73,7 +73,7 @@
         }">
           <div class="max-h-[32rem] overflow-hidden flex-1 justify-center w-full flex">
             <NuxtImg :src="slide.src" fit="contain" :class="slide.link ? 'mx-0 hover:cursor-pointer' : 'mx-0'"
-              :sizes="ImgSize" @click="jump(slide.link ? slide.link : '-1')" />
+              :sizes="ImgSize" @click="jump(slide.link ? slide.link : '-1')" preload />
           </div>
           <template #footer>
             <div class="flex w-full h-20">
