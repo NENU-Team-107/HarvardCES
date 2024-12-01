@@ -62,7 +62,7 @@ const contact = computed(() => {
                 </h2>
                 <div class="flex justify-center items-center w-full self-center">
                     <UTable
-                        :ui="{ td: { size: 'md:text-base text-sm', color: 'text-black drak:text:white hover:text-green-600' }, th: { size: 'md:text-base text-base', } }"
+                        :ui="{ td: { size: 'md:text-base text-sm', color: 'text-black' }, th: { size: 'md:text-base text-base', } }"
                         :rows="contact" :columns="columns">
                     </UTable>
                 </div>

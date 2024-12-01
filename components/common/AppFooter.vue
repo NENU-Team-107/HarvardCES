@@ -61,11 +61,11 @@ const isHover = ref<boolean[]>([false, false])
             <span class="md:text-lg text-sm">Sponsorship</span>
           </UButton>
         </div>
-        <div class="justify-center items-center flex">
+        <!-- <div class="justify-center items-center flex">
           <a href="https://www.unesco.org/en" target="_blank">
             <NuxtImg src="img/logo/UNESCOLogo-single.png" />
           </a>
-        </div>
+        </div> -->
       </div>
 
       <div class="max-w-screen-md row-span-1">
@@ -141,9 +141,9 @@ const isHover = ref<boolean[]>([false, false])
             <span class="md:text-lg text-sm">Sponsorship</span>
           </UButton>
         </div>
-        <div class="justify-center items-center flex">
+        <!-- <div class="justify-center items-center flex">
           <NuxtImg src="img/logo/UNESCOLogo-single.png" class="md:w-full w-2/5" />
-        </div>
+        </div> -->
       </div>
 
       <div class="grid  grid-rows-1 grid-cols-1 row-span-1">

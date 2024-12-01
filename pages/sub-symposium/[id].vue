@@ -31,7 +31,7 @@ const content = computed(() => {
           </div>
           <div class="text-green-800 text-center text-2xl font-bold mr-8">
             <div>
-              {{ $t("Session") }} {{ $t("server.Poster.id" + sessionId + ".index") }}:
+              {{ $t("Session") }}{{ $t("server.Poster.id" + sessionId + ".index") }}:
             </div>
             <div>
               {{ $t("server.Poster.id" + sessionId + ".name") }}
