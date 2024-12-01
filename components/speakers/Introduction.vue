@@ -31,10 +31,10 @@ const inc = computed(() => {
     <div class="flex flex-col justify-center items-center w-full h-full">
       <NuxtImg class="min-w-3/5 max-h-44 mx-auto rounded-full" :src="props.speakers.photo" :alt="props.speakers.name"
         preload />
-      <div class="font-bold text-center text-xl">
+      <div class="font-bold text-center text-xl mt-2">
         {{ $t(props.speakers.name) }}
       </div>
-      <div class="text-center w-full flex justify-center items-center h-full" v-html="inc">
+      <div class="text-center w-full flex justify-center items-center h-full my-auto" v-html="inc">
       </div>
     </div>
 
