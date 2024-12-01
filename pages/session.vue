@@ -2,8 +2,6 @@
 import SubSwiper from '~/components/homeIndex/SubSwiper.vue';
 const { t } = useI18n()
 
-const router = useRouter()
-
 const columns = computed(() => {
     return [{
         key: 'id',
@@ -72,7 +70,7 @@ const contact = computed(() => {
 
             <div class="text-2xl font-bold text-center my-5">
                 <div class="flex justify-center items-center ">
-                    <div class="h-0.5 w-24 bg-black"></div>
+                    <div class="h-0.5 w-20 bg-black"></div>
                     <h1 class="mx-4">{{ $t("Session") }} </h1>
                     <div class="h-0.5 w-20 bg-black"></div>
                 </div>
@@ -84,7 +82,7 @@ const contact = computed(() => {
 
             <div class="text-2xl font-bold text-center my-5">
                 <div class="flex justify-center items-center ">
-                    <div class="h-0.5 w-24 bg-black"></div>
+                    <div class="h-0.5 w-20 bg-black"></div>
                     <h1 class="mx-4">{{ $t("pSession.poster") }} </h1>
                     <div class="h-0.5 w-20 bg-black"></div>
                 </div>
@@ -103,7 +101,52 @@ const contact = computed(() => {
 
         </div>
 
-        <div class="md:hidden">
+        <div class="md:hidden h-full w-full justify-self-center bg-white/80 justify-center items-center">
+            <div class="justify-center items-center px-8">
+                <h1 class="text-center font-bold py-3">
+                    {{ $t("Sub-symposium Sessions Submit") }}
+                </h1>
+                <h2 class="text-red-500/90">
+                    <strong><i>Due 31 December, 2024; Notification by 31 January, 2025; Extension upon
+                            request</i></strong>
+                </h2>
+                <div class="flex justify-center items-center w-full self-center">
+                    <UTable
+                        :ui="{ td: { size: 'text-sm', color: 'text-black drak:text:white hover:text-green-600' }, th: { size: 'text-base', } }"
+                        :rows="contact" :columns="columns">
+                    </UTable>
+                </div>
+            </div>
+            <div class="text-lg font-bold text-center my-5">
+                <div class="flex justify-center items-center ">
+                    <div class="h-0.5 w-20 bg-black"></div>
+                    <h1 class="mx-4">{{ $t("Session") }} </h1>
+                    <div class="h-0.5 w-20 bg-black"></div>
+                </div>
+            </div>
+
+            <div class="min-w-screen">
+                <SubSwiper :cards="true" />
+            </div>
+
+            <div class="text-lg font-bold text-center my-5">
+                <div class="flex justify-center items-center ">
+                    <div class="h-0.5 w-16 bg-black"></div>
+                    <h1 class="mx-2">{{ $t("pSession.poster") }} </h1>
+                    <div class="h-0.5 w-16 bg-black"></div>
+                </div>
+            </div>
+
+            <div class="justify-self-center mx-10">
+                <div class="grid grid-cols-1 grid-flow-row-dense gap-4">
+                    <div>
+                        <NuxtImg :src="t('Showcase-1')" loading="lazy" />
+                    </div>
+                    <div>
+                        <NuxtImg :src="t('Showcase-2')" loading="lazy" />
+                    </div>
+                </div>
+            </div>
 
         </div>
     </div>

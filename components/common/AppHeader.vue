@@ -81,7 +81,7 @@ const closeMenu = () => {
           <div v-if="submenu[index].show">
             <NuxtLinkLocale v-for="child in item.children" :key="child.path" :to="child.path"
               class="block px-4 py-2 text-gray-700 hover:bg-gray-100" @click="closeMenu">
-              {{ $t(child.name) }}
+              <span class="text-sm">{{ $t(child.name) }}</span>
             </NuxtLinkLocale>
           </div>
         </div>
