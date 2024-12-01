@@ -28,7 +28,7 @@ export default defineNuxtConfig({
     strategy: "no_prefix",
     locales: currentLocales,
     langDir: "locales",
-    defaultLocale: "en",
+    defaultLocale: "zh-Hans",
     vueI18n: "./config/i18n.config.ts",
     detectBrowserLanguage: {
       useCookie: true,

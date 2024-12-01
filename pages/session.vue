@@ -2,6 +2,8 @@
 import SubSwiper from '~/components/homeIndex/SubSwiper.vue';
 const { t } = useI18n()
 
+const lang = useCookie("i18n_redirected")
+
 const columns = computed(() => {
     return [{
         key: 'id',
@@ -66,6 +68,13 @@ const contact = computed(() => {
                         :rows="contact" :columns="columns">
                     </UTable>
                 </div>
+            </div>
+
+            <div v-if="lang !== 'zh-cn'"
+                class="text-center text-red-500 font-bold text-lg flex justify-center items-center my-8">
+                <div class="h-0.5 w-32 bg-red-500"></div>
+                <div><i>{{ $t("UnderConstruct") }}</i></div>
+                <div class="h-0.5 w-32 bg-red-500"></div>
             </div>
 
             <div class="text-2xl font-bold text-center my-5">

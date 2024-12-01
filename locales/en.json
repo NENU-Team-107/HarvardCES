@@ -201,8 +201,8 @@
         "inc": "CEO of iLRN"
       },
       "id9": {
-        "description": "Dr. Tina Grotzer is a distinguished research scientist and educator with a focus on the learning and cognitive sciences. She has dedicated over three decades to applying cognitive science in various educational contexts, teaching on sustainability, complexity, and climate change. Grotzer is known for her work on fostering expert learners and promoting adaptive expertise to prepare students for future challenges. As the faculty director of the Next Level Lab, she explores future work environments and optimal learning. Her earlier roles include being a principal investigator on projects that advanced causal learning in education and understanding of ecosystems through immersive technology, supported by the NSF and IES. Among her accolades are an NSF Career Award, a PECASE award, and the Morningstar Teaching Award. Grotzer has authored numerous research publications, books, and curricula, and collaborated on educational television with major networks. Her pre-Harvard career includes over a decade as an administrator and teacher.",
-        "name": "Dr. Tina Grotzer",
+        "description": "Professor Tina Grotzer is a distinguished research scientist and educator with a focus on the learning and cognitive sciences. She has dedicated over three decades to applying cognitive science in various educational contexts, teaching on sustainability, complexity, and climate change. Grotzer is known for her work on fostering expert learners and promoting adaptive expertise to prepare students for future challenges. As the faculty director of the Next Level Lab, she explores future work environments and optimal learning. Her earlier roles include being a principal investigator on projects that advanced causal learning in education and understanding of ecosystems through immersive technology, supported by the NSF and IES. Among her accolades are an NSF Career Award, a PECASE award, and the Morningstar Teaching Award. Grotzer has authored numerous research publications, books, and curricula, and collaborated on educational television with major networks. Her pre-Harvard career includes over a decade as an administrator and teacher.",
+        "name": "Professor Tina Grotzer",
         "title": "Principal Research Scientist in Education, Faculty Director <br> Harvard Graduate School of Education",
         "inc": "Harvard University"
       }
@@ -346,5 +346,6 @@
       }
     }
   },
-  "CallForPoster": "Call for<br>Participation"
+  "CallForPoster": "Call for<br>Participation",
+  "UnderConstruct": "This language version of the webpage is under modification. Please view the Simplified Chinese version"
 }

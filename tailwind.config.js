@@ -19,8 +19,8 @@ export default {
         '2-full': '200%'
       },
       fontFamily: {
-        'display': ['"Times New Roman"', 'SimSun'],
-        'body': ['"Times New Roman"', 'SimSun'],
+        'display': ['"Times New Roman"', 'NSimSun'],
+        'body': ['"Times New Roman"', 'NSimSun'],
       },
       backgroundImage: {
         'letter-paper': "url('~/assets/bg/letter-paper.png')",

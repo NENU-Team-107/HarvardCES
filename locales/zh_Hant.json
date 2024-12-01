@@ -66,7 +66,7 @@
   "Harvard": "哈佛中國教育論壇\n哈佛大學教育研究生院",
   "GIET": "香港教育大學校長辦公室\n及全球新興科技研究院",
   "SendTo": "發送至郵箱： ",
-  "SubmitNumber": "分論壇",
+  "SubmitNumber": "平行分會",
   "SubmitTopic": "主題",
   "SubmitMethod": "徵稿聯繫方式",
   "SendToLink": "問卷星在線提交： ",
@@ -93,7 +93,7 @@
   "The Education University of Hong Kong": "香港教育大學",
   "Poster": "海報",
   "Track": "Track",
-  "Sub-symposium Sessions Submit": "2025年5月10日分論壇徵稿方式總結",
+  "Sub-symposium Sessions Submit": "2025年5月10日平行分會徵稿方式總結",
   "About Us": {
     "EduHK": {
       "intro title": "关于教大",
@@ -128,7 +128,7 @@
         "inc": "香港教育大學"
       },
       "id3": {
-        "description": "沈容冰是麻省排名第二先鋒谷中文特許學校的音樂總監和語言教師。她擔任第16屆哈佛大學中國教育研討會（2025年）的顧問，此前曾在2024年擔任大會秘書長，2023年擔任分論壇主創。她是美國新英格蘭地區奧爾夫Orff-Schulwerk 協會（AOSA）董事會成員，並擔任國際單簧管協會（ICA）的發展與會員委員會聯合主席，ClarinetFest®國際會議會刊首席編輯。<br><br>她還是波士頓青年交響樂團的理事會成員，以及馬薩諸塞大學阿默斯特分校Women For UMass（WFUM）校友交流平台的媒體總監。作為北京TNYK教育發展中心音樂教學與研究團隊的負責人，沈容冰專注於課程規劃、教學法分享和教師培訓，已經指導了200多名教師，顯著提高了在線教學效果。<br><br>她的研究重點在於人工智能對音樂教育的影響，並通過創新的表演和國際巡演致力於推廣文化多樣性。",
+        "description": "沈容冰是麻省先鋒谷中文特許學校的音樂總監和語言教師。她擔任第16屆哈佛大學中國教育研討會（2025年）的顧問，此前曾在2024年擔任大會秘書長，2023年擔任分論壇主創。她是美國新英格蘭地區奧尔夫Orff-Schulwerk協會（AOSA）董事會成員，並擔任國際單簧管協會（ICA）的發展與會員委員會聯合主席，ClarinetFest®國際會議會刊首席編輯。<br> 她還是波士頓青年交響樂團的理事會成員，以及馬薩諸塞大學阿默斯特分校Women For UMass（WFUM）校友交流平台的媒體總監。作為北京TNYK教育發展中心音樂教學與研究團隊的負責人，沈容冰專注於課程規劃、教學法分享和教師培訓，已經指導了200多名教師，顯著提高了在線教學效果。<br> 她的研究重點在於人工智能對音樂教育的影响，並通過創新的表演和國際巡演致力於推廣文化多樣性。",
         "name": " 沈容冰",
         "title": "哈佛中國教育論壇秘書長",
         "inc": "哈佛中國教育論壇秘書長"
@@ -142,8 +142,8 @@
       "id5": {
         "description": "李學凡是加拿大NES (National e-School)和CHS (City High School)的首席執行官，也是多倫多大學安大略教育研究学院的博士生。學術研究重點是教育中的及時工程、沉浸式教育技術、教育經濟學和在線教育。他擁有卓越的研究能力，領導並參與了多個重要項目，包括 COVID-19 期间的留學生政策研究、學生貸款和未來回報研究，以及開發用於預測教育股票市場的 LSTM 模型。他的研究成果曾在清華教育論壇、復旦國際教育研究論壇和亞洲教育會議等頂級會議上發表。在2025“新興科技與未來人才”哈佛中國教育論壇和香港教育大學聯合論壇中擔任聯合執行主席。",
         "name": "李學凡",
-        "title": "多倫多大學博士生 <br> 哈佛中國教育論壇創始人 <br> 加拿大 NES & CHS 首席執行官",
-        "inc": "多倫多大學博士生 <br> 哈佛中國教育論壇創始人 <br> 加拿大 NES & CHS 首席執行官"
+        "title": "多倫多大學博士生 <br> 哈佛中國教育分論壇主創 <br> 加拿大 NES & CHS 首席執行官",
+        "inc": "多倫多大學博士生 <br> 哈佛中國教育分論壇主創 <br> 加拿大 NES & CHS 首席執行官"
       }
     },
     "Keynote Speakers": {
@@ -196,7 +196,7 @@
         "inc": "iLRN首席執行官"
       },
       "id9": {
-        "description": "Tina Grotzer博士是一位傑出的研究科學家和教育家，主要研究學習和認知科學。三十多年來，她致力於在各種教育環境中應用認知科學，讲授可持續發展、複雜性和氣候變化等課程。Grotzer因其在培養專家級學者和提升學生適應未來挑戰的工作而聞名。作為Next Level Lab的負責人，她致力於探索未來的工作環境和最佳學習方式。她早期的工作包括擔任由美國國家科學基金會（NSF）和國際教育研究所（IES）支持的項目的首席研究員，這些項目通過沉浸式技術推進教育中的因果學習和對生態系統的理解。她獲得的榮譽包括NSF Career Award、PECASE Award 和 Morningstar Teaching Award。Grotzer撰寫了大量的研究出版物、書籍和課程，並與各大網絡電視聯合製作教育電視。她在進入哈佛大學之前，做了十多年的行政管理和教學工作。",
+        "description": "Tina Grotzer 教授是一位傑出的研究科學家和教育家，主要研究學習和認知科學。三十多年來，她致力於在各種教育環境中應用認知科學，讲授可持續發展、複雜性和氣候變化等課程。Grotzer因其在培養專家級學者和提升學生適應未來挑戰的工作而聞名。作為Next Level Lab的負責人，她致力於探索未來的工作環境和最佳學習方式。她早期的工作包括擔任由美國國家科學基金會（NSF）和國際教育研究所（IES）支持的項目的首席研究員，這些項目通過沉浸式技術推進教育中的因果學習和對生態系統的理解。她獲得的榮譽包括NSF Career Award、PECASE Award 和 Morningstar Teaching Award。Grotzer撰寫了大量的研究出版物、書籍和課程，並與各大網絡電視聯合製作教育電視。她在進入哈佛大學之前，做了十多年的行政管理和教學工作。",
         "name": "Tina Grotzer 教授",
         "title": "教育首席科學家\n哈佛大學教育學院",
         "inc": "哈佛大學"
@@ -263,17 +263,18 @@
       "id3": {
         "index": "四",
         "name": "大語言模型賦能的計算教育",
-        "submitddl": "Submission Deadline: 31st December, 2024",
-        "notifyddl": "Notification of Acceptance Date: 31st January, 2025",
+        "submitddl": "提交截止日期：2024年12月 31 日",
+        "notifyddl": "接受通知日期：2025年 1 月 31 日",
         "content": {
-          "p1": "<p> In the early summer of 2025, the renowned Harvard China Education Symposium (CES) will join the QS 5-star rated The Education University of Hong Kong (EdUHK) to co-host a joint symposium on Emerging Technologies and Future Talents. This marks the first attempt by the Harvard CES team to co-host this signature event with an Asian university. The Symposium boasts an impressive roster of speakers from globally recognized institutions such as Harvard, Stanford, MIT, EdUHK and Peking University. This three-day event will delve into the integration of new technologies such as AI, the Metaverse, and Intelligent Reality within teaching, training, and talent development. We invite you to share your proposal and present in the parallel session on 10 May. Excellent proposal may be invited to publish the full version in high-impact journals (SCI, SSCI & CSSCI). </p>",
-          "d1": "Parallel Session Introduction",
-          "p2": "<p>Focusing on the current hot topic of ‘Artificial Intelligence in Teaching and Learning’, this parallel session aims to discuss the diversified applications of AI technology in education and how to enhance the effectiveness of teaching and learning through intelligent technology. The parallel session consists of the following three sub-themes, which provide a broad exchange platform for scholars and practitioners of different research directions.</p><div class=\"my-2\"><strong>Sub-theme 1: Artificial Intelligence and its Applications in Teaching and Learning</strong></div><p>Focusing on the application of AI in the teaching and learning process, we will explore how to integrate advanced AI technologies into teaching practice to improve the quality and efficiency of teaching and learning. Participants can present on the following topics:</p><ul class=\"list-disc my-1\"><li>Design and Implementation of Artificial Intelligence Assisted Teaching Strategies.</li><li>Development and application cases of intelligent teaching systems.</li><li>Application of Artificial Intelligence in classroom interaction, content presentation and teaching management.</li><li>Teacher's role transformation and adaptation in AI-assisted instruction</li><li>Exploration of the application of artificial intelligence in special education, vocational education and higher education.</li></ul><div class=\"my-2\"><strong>Sub-theme 2: Artificial Intelligence in Learning and its Applications</strong></div><p>Focusing on the application of AI in the learning process, the aim is to explore how intelligent technologies can be used to provide learners with personalize and efficient learning experiences.</p><ul class=\"list-disc my-1\"><li>Design and Implementation of Personalized Learning Systems.</li><li>Application of Artificial Intelligence in Adaptive Learning.</li><li>Development and application of intelligent tutoring and assessment tools.</li><li>Role of Artificial Intelligence in Collaborative Learning and Distance Learning.</li><li>Research and practice of learning data analysis and learning behaviour prediction.</li></ul><div class=\"my-2\"><strong>Sub-theme 3: Intelligent Enhancement in Teaching and Learning Assessment </strong></div><p>Focusing on the application of AI in the field of education and learning assessment, we will explore how to enhance the accuracy and efficiency of assessment through intelligent technology.</p><ul class=\"list-disc my-2\"><li>Construction and Implementation of Intelligent Education Evaluation System</li><li>Application of Artificial Intelligence in Students' Comprehensive Quality Evaluation</li><li>The role of intelligent technology in teaching effectiveness evaluation</li><li>Learning analysis and evaluation methods based on big data</li><li>Practical cases of intelligently enhanced evaluation tools in promoting teaching and learning improvement</li></ul><p>You’re invited to share your proposal on any of the above sub-themes according to their research directions and interests in this parallel session.</p>",
-          "d2": "Guidelines for Proposal",
-          "p3": "<p>Please prepare a <strong>one-page</strong> proposal containing the following information:</p><ol class=\"list-decimal my-1\"><li><strong>Proposal Title:</strong> The title of your proposal session.</li><li><strong>Proposal Abstract:</strong> A brief description of your proposal topic and its relevance to the session topic.</li><li><strong>Proposal Objectives:</strong> The purpose of the proposal and the expected research outcomes.</li><li><strong>Methodology:</strong> The methods or data sources you plan to use.</li><li><strong>Contribution and Future Work:</strong> The possible contributions of this proposal to the application of LLMs in the field of education, and future research directions.</li><li><strong>Contact Information:</strong> Your full name, affiliation, email address, and phone number.</li></ol><div class=\"mt-10\">Please send your <strong>one-page</strong> contribution and other information as a Word attachment to <a href=\"mailto:lujijian&#64;hznu.edu.cn\" class=\"font-bold underline hover:text-red-600\">lujijian&#64;hznu.edu.cn</a> with the subject ‘Your Name+Harvard CES-EdUHK Joint Symposium Sub-symposium I Proposal Presentation’. We look forward to receiving your proposal and discussing the infinite possibilities of AI in education!</div>"
+          "p1": "<p> 名揚中外的哈佛中國教育論壇，將在2025年的初夏走進香港教育大學依山傍水的大埔校園。本次論壇將匯聚來自哈佛、斯坦福、香港教育大學和北京大學等全球知名高校的傑出學者，以及技術和教育政策制定者及專家。為期三天的活動，將深入研究人工智能、元宇宙和智能現實等新興科技在教學、培訓和人才發展中的整合與應用。我們誠邀您來分享最新的研發成果，參與5月10日的分論壇。優秀分享將被邀請在高影響力期刊（SCI、SSCI和CSSCI）上發表完整論文。 </p>",
+          "d1": "分論壇簡介",
+          "p2": "<p> 本次分論壇以“大語言模型賦能計算教育”為主題，旨在探討大語言模型（LLM）在教育實踐中的應用，推動教學創新，提升學習過程的智能化與個性化，並優化教育評價與反饋機制。分論壇將包含以下三個子會議主題，通過分享研究成果與實踐經驗，為教育工作者、研究人員和技術開發者提供深入交流與合作的平台。 </p><div class=\"my-2\"><strong> 子主題 1：大語言模型賦能教學創新 </strong></div><p> 圍繞大語言模型在教學中的前沿應用，討論如何將先進生成式人工智能系統融入教學實踐中，以探索新型教學模式，以下議題可供參會者選擇進行報告： </p> <ul class=\"list-disc my-1\"><li>基於大語言模型的智能教學助手與應用</li><li>智能學情分析與教學決策中的大語言模型實踐</li><li>跨學科教學中數字教師的整合與應用</li><li>教學內容的個性化生成與教學策略優化</li><li>大語言模型賦能教師專業發展與培訓</li></ul> <div class=\"my-2\"><strong> 子主題 2：學習過程的智能化與個性化 </strong></div><p> 聚焦大語言模型在學習過程的智能化和個性化的創新實踐，以提升學生的學習效果、學習效率和參與度，以下議題可供參會者選擇進行報告： </p> <ul class=\"list-disc my-1\"><li>基於大語言模型的學生行為預測與自適應路徑設計</li><li>實時反饋機制與個性化教育智能體研究</li><li>多模態學習資源生成中的應用與實踐</li><li>增強學習動機與參與度的交互式學習體驗設計</li><li>大語言模型在學習障礙識別與個性化干預中的應用</li></ul> <div class=\"my-2\"><strong> 子主題 3：大語言模型支持的教學或培訓的評價與反饋 </strong></div><p> 聚焦大語言模型在教學或培訓的評價與反饋中的創新應用，探討如何通過智能化評估與實時反饋機制，提升評價的精準性和個性化。以下議題可供參會者選擇進行報告： </p> <ul class=\"list-disc my-1\"><li>大語言模型支持的動態學習評價體系構建</li><li>基於大語言模型的學習成果自適應測試</li><li>教學與培訓的效果評估與反饋機制優化</li><li>大語言模型支持的多維度認知診斷機制構建</li><li>大語言模型對教育評估公平性與透明度的應用</li></ul> <p> 我們誠摯邀請廣大學者、學生、企業界人士根據自己的研發方向和興趣，選擇上述任一子主題分享最新的成果，並參與本次分論壇的交流與討論。 </p>",
+          "d2": "研發成果書寫指南",
+          "p3": "<p>請準備一份<strong>一頁</strong>的分享，包含以下信息：</p><ol class=\"list-decimal my-1\"><li> <strong>報告標題：</strong> 您的報告標題。</li><li><strong>研究摘要：</strong> 簡要描述您的研發主題及其與論壇議題的相關性。</li><li><strong>報告目標：</strong> 報告的目的和預期的研發結果。</li><li><strong>方法論：</strong> 您計劃使用的研發方法或數據來源。</li><li><strong>貢獻與未來工作：</strong> 該研發對大語言模型在教育領域的可能貢獻及未來方向。</li><li><strong>聯繫信息：</strong> 您的全名、所屬機構、電子郵箱、聯繫電話。</li></ol><div class=\"mt-10\">請將您的一頁成果分享和其他資料以Word附件的形式發送到電子郵件地址：<a href=\"mailto:mhyin&#64;nenu.edu.cn\" class=\"font-bold underline hover:text-red-600\">mhyin&#64;nenu.edu.cn</a>，標題為“您的姓名+哈佛CES-香港教育大學聯合論壇分論壇四”。您的參與將為推動大語言模型在教育領域的應用與發展貢獻力量。期待您的佳作，共同探討大語言模型賦能計算教育的廣闊前景！</div>"
         }
       }
     }
   },
-  "CallForPoster": "論壇徵稿"
+  "CallForPoster": "論壇徵稿",
+  "UnderConstruct": "此語言版本的網頁正在修改，請查看簡體中文版本"
 }
