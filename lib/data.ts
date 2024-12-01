@@ -472,11 +472,11 @@ export const routerArray: Array<RouterItem> = [
                 path: "/contact/committee"
             },
             {
-                name: 'Harvard China Education Symposium',
+                name: 'Harvard CES',
                 path: '/contact/ces'
             },
             {
-                name: "The Education University of Hong Kong",
+                name: "EduHK",
                 path: '/contact/eduhk'
             }
         ]

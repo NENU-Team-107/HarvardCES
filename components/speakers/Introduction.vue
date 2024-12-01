@@ -8,7 +8,7 @@ const props = defineProps<{
 const { t } = useI18n()
 
 const inc = computed(() => {
-  return t(props.speakers.inc).replace(/\n\n/g, '<br>')
+  return t(props.speakers.inc).replace(/\n/g, '<br>')
 })
 
 
