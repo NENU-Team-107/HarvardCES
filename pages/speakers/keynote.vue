@@ -29,8 +29,8 @@ onMounted(() => {
                 })
                 speaker.photo = window.URL.createObjectURL(image)
             }
+            pending.value = false;
         })
-    pending.value = false;
 })
 
 
@@ -58,7 +58,7 @@ const pending = ref(true)
     <div class="md:hidden">
         <div>
             <h1 class="text-center font-bold text-xl">
-                {{ $t('Guest of Honor') }}
+                {{ $t('Keynote Speakers') }}
             </h1>
         </div>
         <div v-for="speaker in speakersList">
