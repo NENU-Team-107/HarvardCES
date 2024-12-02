@@ -42,28 +42,36 @@ const pending = ref(true)
         <div v-if="pending" class="justify-self-center">
             <UCommandPalette loading />
         </div>
-        <div class="max-w-6xl h-full justify-self-center md:flex hidden">
-            <div>
-                <h1 class="text-center font-bold text-2xl py-6">
-                    {{ $t('Organizing Committee') }}
-                </h1>
+        <div v-else>
+            <div class="h-full w-full max-w-6xl justify-self-center hidden md:block">
+                <div class="flex justify-center items-center ">
+                    <div class="h-0.5 w-24 bg-black"></div>
+                    <h1 class="text-center font-bold text-2xl py-6 justify-self-center mx-5">
+                        {{ $t('Organizing Committee') }}
+                    </h1>
+                    <div class="h-0.5 w-24 bg-black"></div>
+                </div>
+
                 <div class="grid grid-cols-3 gap-5 justify-items-center items-start ">
                     <div v-for="speaker in speakersList" class="w-full h-full">
                         <SpeakersIntroduction :speakers="speaker" class="mx-4 w-full h-full" />
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="md:hidden">
-            <div>
-                <h1 class="text-center font-bold text-xl">
-                    {{ $t('Organizing Committee') }}
-                </h1>
+            <div class="md:hidden">
+                <div class="flex justify-center items-center ">
+                    <div class="h-0.5 w-12 bg-black"></div>
+                    <h1 class="text-center font-bold text-2xl py-6 justify-self-center">
+                        {{ $t('Organizing Committee') }}
+                    </h1>
+                    <div class="h-0.5 w-12 bg-black"></div>
+                </div>
+                <div v-for="speaker in speakersList">
+                    <SpeakersIntroduction :speakers="speaker" class="mx-10 my-5 h-full " />
+                </div>
             </div>
-            <div v-for="speaker in speakersList">
-                <SpeakersIntroduction :speakers="speaker" class="mx-10 my-5 h-full " />
-            </div>
         </div>
+
     </div>
 
 </template>
