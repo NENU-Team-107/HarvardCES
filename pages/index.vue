@@ -1,10 +1,12 @@
 <script lang="ts" setup>
+definePageMeta({
+  keepalive: true,
+})
+
 import Title from '~/components/common/Title.vue'
 import CoverImage from '~/components/homeIndex/CoverImage.vue';
 import PopupWindow from '~/components/homeIndex/PopupWindow.vue';
-import SubSwiper from '~/components/homeIndex/SubSwiper.vue';
-import type { Poster, Speaker, SwiperItem } from '~/lib/model';
-import IconGrid from '~/components/homeIndex/IconGrid.vue';
+import type { Speaker, SwiperItem } from '~/lib/model';
 
 const { t } = useI18n()
 

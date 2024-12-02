@@ -1,4 +1,8 @@
 <script lang="ts" setup>
+definePageMeta({
+    keepalive: true,
+})
+
 import SubSwiper from '~/components/homeIndex/SubSwiper.vue';
 const { t } = useI18n()
 
@@ -115,8 +119,7 @@ const contact = computed(() => {
                     {{ $t("Sub-symposium Sessions Submit") }}
                 </h1>
                 <h2 class="text-red-500/90">
-                    <strong><i>Due 31 December, 2024; Notification by 31 January, 2025; Extension upon
-                            request</i></strong>
+                    <strong><i>{{ $t("Due") }}</i></strong>
                 </h2>
                 <div class="flex justify-center items-center w-full self-center">
                     <UTable

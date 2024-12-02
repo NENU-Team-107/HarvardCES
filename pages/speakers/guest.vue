@@ -2,6 +2,11 @@
 defineOptions({
     name: "guestSpeakers",
 });
+
+definePageMeta({
+    keepalive: true,
+})
+
 import type { Speaker } from '~/lib/model';
 
 const speakersList = ref<Speaker[]>([])

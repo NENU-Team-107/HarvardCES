@@ -1,13 +1,8 @@
-<script lang="ts" setup>
-const keepalive = {
-  include: ["keynoteSpeakers", "guestSpeakers", "session", "index"]
-}
-</script>
 <template>
   <div class="w-full h-full font-display">
     <NuxtLayout>
       <NuxtLoadingIndicator />
-      <NuxtPage :keepalive />
+      <NuxtPage :keepalive="{ max: 5 }" />
     </NuxtLayout>
   </div>
 </template>
