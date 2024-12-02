@@ -118,7 +118,7 @@ const contact = computed(() => {
                 <h1 class="text-center font-bold py-3">
                     {{ $t("Sub-symposium Sessions Submit") }}
                 </h1>
-                <h2 class="text-red-500/90">
+                <h2 class="text-red-500/90 text-sm">
                     <strong><i>{{ $t("Due") }}</i></strong>
                 </h2>
                 <div class="flex justify-center items-center w-full self-center">

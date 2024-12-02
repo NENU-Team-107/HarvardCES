@@ -17,7 +17,7 @@ const Introduction = computed(() => {
 
             <div class=" leading-6">
                 <div class="w-32 mx-0 my-0 z-30 float-right justify-self-end absolute right-0 top-0 rotate-12">
-                    <NuxtImg src="/img/poster/Rainbowonly_organgeFlower_Small.svg" />
+                    <NuxtImg src="/img/poster/Rainbowonly_organgeFlower_Small.svg" preload />
                 </div>
                 <h1 class="text-center font-bold text-2xl py-6">
                     {{ $t('Symposium.Name') }}
@@ -30,7 +30,7 @@ const Introduction = computed(() => {
         </div>
         <div class="md:hidden flex-col px-4 bg-white/50 py-10  h-full w-full shadow-2xl relative">
             <div class="w-16 mx-0 my-0 z-30 float-right justify-self-end absolute right-0 top-0 rotate-12">
-                <NuxtImg src="/img/poster/Rainbowonly_organgeFlower_Small.svg" />
+                <NuxtImg src="/img/poster/Rainbowonly_organgeFlower_Small.svg" preload />
             </div>
             <h1 class="text-center font-bold text-xl py-6">
                 {{ $t('Symposium.Name') }}
