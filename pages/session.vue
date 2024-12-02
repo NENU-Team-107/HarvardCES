@@ -19,32 +19,32 @@ const columns = computed(() => {
 
 const contact = computed(() => {
     return [{
-        id: '1 ',
+        id: t('server.Poster.id0.index'),
         topic: t('server.Poster.id0.name'),
         mail: t('SendTo') + 'lujijian@hznu.edu.cn',
     }, {
-        id: '2',
+        id: t('server.Poster.id1.index'),
         topic: t('server.Poster.id1.name'),
         mail: t('SendTo') + 'xiaoyanchu@zju.edu.cn',
     }, {
-        id: '3',
+        id: t('server.Poster.id2.index'),
         topic: t('server.Poster.id2.name'),
         mail: t('SendTo') + 'mtt@snnu.edu.cn',
     }, {
-        id: '4',
+        id: t('server.Poster.id3.index'),
         topic: t('server.Poster.id3.name'),
         mail: t('SendTo') + 'mhyin@nenu.edu.cn',
     }, {
-        id: '5',
+        id: t('server.Poster.id4.index'),
         topic: t('server.Poster.id4.name'),
         mail: t('SendTo') + 'celab2208@163.com',
     }, {
-        id: '6',
+        id: t('server.Poster.id5.index'),
         topic: t('server.Poster.id5.name'),
         mail: t('SendTo') + 'hnubai@hainan.edu.cn',
     }, {
         id: t('pSession.poster'),
-        topic: 'Above all',
+        topic: t("Above All"),
         mail: t('SendToLink') + 'https://www.wjx.top/vm/tdLaPJt.aspx#',
     }]
 })
@@ -59,8 +59,7 @@ const contact = computed(() => {
                     {{ $t("Sub-symposium Sessions Submit") }}
                 </h1>
                 <h2 class="text-red-500/90 text-base">
-                    <strong><i>Due 31 December, 2024; Notification by 31 January, 2025; Extension upon
-                            request</i></strong>
+                    <strong><i>{{ $t("Due") }}</i></strong>
                 </h2>
                 <div class="flex justify-center items-center w-full self-center">
                     <UTable

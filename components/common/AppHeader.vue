@@ -34,9 +34,9 @@ const closeMenu = () => {
     <div class="h-full flex justify-center items-center">
       <NuxtLinkLocale to="/" class="text-blue-500">
         <div class="flex">
-          <NuxtImg src="img/logo/HostLogo_small.jpg" class="h-full max-h-24" sizes="md:600 200"></NuxtImg>
+          <NuxtImg src="img/logo/HostLogo_small.jpg" class="h-full md:max-h-24 max-h-20" sizes="md:600 200"></NuxtImg>
           <NuxtImg src="img/logo/Unesco logo.pic.jpg"
-            class="justify-items-center items-center my-auto md:max-h-14 max-h-12" sizes="md:600 200"></NuxtImg>
+            class="justify-items-center items-center my-auto md:max-h-14 max-h-10" sizes="md:600 200"></NuxtImg>
         </div>
       </NuxtLinkLocale>
     </div>

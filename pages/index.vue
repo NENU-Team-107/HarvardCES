@@ -174,23 +174,14 @@ const slides = ref<SwiperItem[]>([
         </div>
       </div>
 
-      <div class="bg-white/80 md:p-10 p-3">
-        <!-- <Title :titleMap="title.workshop" />
-        <div class="grid grid-rows-1 grid-cols-1 justify-center items-center md:w-4/5 w-full justify-self-center">
-          <IconGrid />
-          <div class="text-center text-xl font-bold my-4 grid-cols-3 grid">
-            <div class="h-1 w-full bg-black"></div>
-            <span>{{ $t("Session") }}</span>
-          </div>
-          <SubSwiper :cards="false" />
-        </div> -->
+      <!-- <div class="bg-white/80 md:p-10 p-3">
         <Title :titleMap="title.organisers" />
         <div class="grid md:grid-cols-3 gap-4 px-10">
           <div v-for="speaker in organizeList">
             <SpeakersIntroduction :speakers="speaker" />
           </div>
         </div>
-      </div>
+      </div> -->
 
       <div class="bg-white/80 md:p-10 px-5">
         <!-- NOTE 这部分是主办单位和合作者的 Logo -->
