@@ -47,7 +47,7 @@ const contact = computed(() => {
         topic: t('server.Poster.id5.name'),
         mail: t('SendTo') + 'hnubai@hainan.edu.cn',
     }, {
-        id: t('pSession.poster'),
+        id: t('pSession.index') + ' (' + t('pSession.poster') + ')',
         topic: t("Above All"),
         mail: t('SendToLink') + 'https://www.wjx.top/vm/tdLaPJt.aspx#',
     }]

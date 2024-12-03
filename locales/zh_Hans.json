@@ -116,7 +116,8 @@
   },
   "pSession": {
     "sub-symposium": "分论坛主题研究演讲",
-    "poster": "现场研究展示"
+    "poster": "现场研究展示",
+    "index": "七"
   },
   "bio": "个人简介",
   "server": {
