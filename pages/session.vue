@@ -93,7 +93,7 @@ watchEffect(() => {
             :ui="{ td: { size: 'md:text-base text-sm', color: 'text-black' }, th: { size: 'md:text-base text-base', } }"
             :rows="contact" :columns="columns">
             <template #topic-data="{ row }">
-              <NuxtLink v-if="row.link" :to="row.link" class="hover:text-blue-500 hover:underline">
+              <NuxtLink v-if="row.link" :to="row.link" class="hover:text-green-500">
                 {{ row.topic }}
               </NuxtLink>
               <span v-else>{{ row.topic }}</span>
