@@ -1,5 +1,4 @@
 <template>
-
   <div v-if="!cards" class="w-full">
     <div class="w-full justify-self-center items-center justify-center relative">
       <UCarousel ref="carouselRef" , :items="slides" :ui="{ item: 'basis-full lg:basis-1/3' }" :prev-button="{
@@ -153,7 +152,4 @@ fetchPosters()
   height: 50%;
 }
 
-/* .swiper-container>div>div {
-  display: relative;
-} */
 </style>
