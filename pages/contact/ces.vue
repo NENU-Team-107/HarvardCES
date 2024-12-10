@@ -12,7 +12,7 @@
               <div class="col-span-1">
                 <div class="grid-flow-row gap-4">
                   <div class="text-4xl leading-10 font-bold mt-10 mb-5 text-center">
-                    哈佛中国教育论坛 | China Education Symposium
+                    哈佛中国教育论坛 | China Education Symposium at Harvard University
                   </div>
 
                   <div class=" bg-white w-full h-0.5 mb-5"></div>
@@ -22,7 +22,7 @@
                       哈佛中国教育论坛成立于2010年，是哈佛教育学院官方的学生组织，也是美国顶尖高等学府中对中国教育关注度最长和影响力最大的公益平台。一年一度的论坛旨在连接中美教育实践者、学者、政策制定者及各界领袖精英，促进与中国教育相关的讨论并支持教育实践，交锋观点，展示成果。
                     </p>
                     <p class="my-6 indent-10">
-                      China Education Symposium, established in 2010, is an official student-run
+                      China Education Symposium at Harvard University, established in 2010, is an official student-run
                       organization at
                       the
                       Harvard Graduate School of Education. The non-profit Symposium has been
@@ -139,7 +139,7 @@
                 <div class="col-span-1">
                   <div class="grid-flow-row gap-4">
                     <div class="text-2xl leading-10 font-bold mt-10 mb-5 text-center">
-                      哈佛中国教育论坛 | China Education Symposium
+                      哈佛中国教育论坛 | China Education Symposium at Harvard University
                     </div>
 
                     <div class=" bg-white w-full h-0.5 mb-5"></div>
@@ -149,7 +149,7 @@
                         哈佛中国教育论坛成立于2010年，是哈佛教育学院官方的学生组织，也是美国顶尖高等学府中对中国教育关注度最长和影响力最大的公益平台。一年一度的论坛旨在连接中美教育实践者、学者、政策制定者及各界领袖精英，促进与中国教育相关的讨论并支持教育实践，交锋观点，展示成果。
                       </p>
                       <p class="my-6 indent-10">
-                        China Education Symposium, established in 2010, is an official
+                        China Education Symposium at Harvard University, established in 2010, is an official
                         student-run organization at
                         the
                         Harvard Graduate School of Education. The non-profit Symposium has been
