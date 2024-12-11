@@ -433,6 +433,12 @@ export const routerArray: Array<RouterItem> = [
     {
         name: "Home",
         path: "/",
+        children: [
+            {
+                name: "Registration",
+                path: '/registration'
+            }
+        ]
     },
     {
         name: "About",

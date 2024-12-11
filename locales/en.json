@@ -351,5 +351,24 @@
   "UnderConstruct": "This language version of the webpage is under modification. Please view the Simplified Chinese version",
   "Above All": "Includes all parallel session topics",
   "Due": "Due 31 December, 2024; Notification by 31 January, 2025; Extension upon request",
-  "Agenda Note": "(Preliminary  subject to change)"
+  "Agenda Note": "(Preliminary  subject to change)",
+
+  "Register": {
+    "title": "Registration and Payment",
+    "type": "Personnel Category",
+    "banquet": "Whether to Attend Banquet",
+    "fee": "Fee",
+    "student": "Student",
+    "non-student": "Non-Student",
+    "virtual": "Virtual Participation",
+    "HKD": "HKD",
+    "about": "About",
+    "USD": "USD",
+    "Free": "Free",
+    "FeeDetails1": "The registration fee includes the welcome reception (May 8) and coffee breaks and lunch for the entire conference (May 9-10)",
+    "FeeDetails2": "The registration fee will be charged in HKD",
+    "banquetDate" : "10 May 2025",
+    "click": "Registration"
+  }
+
 }

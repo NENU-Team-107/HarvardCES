@@ -21,6 +21,7 @@ const columns = computed(() => {
     label: t('SubmitMethod')
   }]
 })
+
 interface Contact {
   id: string;
   topic: string;

@@ -46,7 +46,10 @@ const closeMenu = () => {
       <div class="h-full justify-center items-center flex-row hidden md:flex">
         <div v-for="item in routers" :key="item.path" class="relative group mr-6 text-lg font-semibold">
           <div v-if="item.children">
-            <NuxtLink :to="item.children[0].path" class="text-blue-500 pl-3">
+            <NuxtLink v-if="item.name !== 'Home'" :to="item.children[0].path" class="text-blue-500 pl-3">
+              <span class="underline">{{ $t(item.name) }}</span>
+            </NuxtLink>
+            <NuxtLink v-else :to="item.path" class="text-blue-500 pl-3">
               <span class="underline">{{ $t(item.name) }}</span>
             </NuxtLink>
             <div
