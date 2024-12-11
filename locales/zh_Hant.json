@@ -298,6 +298,11 @@
     "title": "註冊與費用",
     "type": "人員類別",
     "banquet": "是否參加晚宴",
+    "trackTitle": "研討會註冊費（5月9日至10日）",
+    "workshopTitle": "研討會前工作坊註冊費（5月8日下午）",
+    "wsName": "工作室主題",
+    "wsHost": "主持機構",
+    "wsLength": "預計每場3小時",
     "fee": "註冊費用",
     "student": "在校學生",
     "non-student": "非在校學生",
@@ -309,7 +314,13 @@
     "FeeDetails1": "註冊費用包括歡迎招待會（5月8日）以及整個會議期間的茶歇和午餐（5月9日至10日）",
     "FeeDetails2": "註冊費用將以港幣收取",
     "banquetDate" : "2025年5月10日",
-    "click": "參會註冊"
+    "click": "參會註冊",
+    "Harvard": "哈佛工作室",
+    "HarvardHost": "由哈佛大學教育研究生院主持",
+    "journals": "高影響力期刊的寫作與發表",
+    "journalsHost": "由頂尖期刊的主編主持",
+    "EduAI": "創業教育與人工智能",
+    "EduAIHost": "由香港教育大學和斯坦福大學主持"
   }
 
 }

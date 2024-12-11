@@ -355,6 +355,11 @@
 
   "Register": {
     "title": "Registration and Payment",
+    "trackTitle": "Registration Fee for the Symposium (9-10 May) ",
+    "workshopTitle": "Registration Fee for the Pre-Symposium Workshop (afternoon of 8 May)",
+    "wsName": "Workshop Topic",
+    "wsHost": "Host Institution",
+    "wsLength": "Estimated 3 hours each",
     "type": "Personnel Category",
     "banquet": "Whether to Attend Banquet",
     "fee": "Fee",
@@ -368,7 +373,13 @@
     "FeeDetails1": "The registration fee includes the welcome reception (May 8) and coffee breaks and lunch for the entire conference (May 9-10)",
     "FeeDetails2": "The registration fee will be charged in HKD",
     "banquetDate" : "10 May 2025",
-    "click": "Registration"
+    "click": "Registration",
+    "Harvard": "Harvard Workshop",
+    "HarvardHost": "led by Harvard Graduate School of Education",
+    "journals": "Writing and Publishing in high-impact journals",
+    "journalsHost": "led by EiCs of leading journals",
+    "EduAI": "Entrepreneurship Education and AI",
+    "EduAIHost": "led by EdUHK and Stanford"
   }
 
 }

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const { t } = useI18n()
 
-const columns = computed(() => {
+const trackColumns = computed(() => {
     return [{
         key: 'type',
         label: t('Register.type')
@@ -14,13 +14,36 @@ const columns = computed(() => {
     }]
 })
 
-interface RegistrationInfo {
+const workshopColumns = computed(() => {
+    return [
+        {
+            key: 'name',
+            label: t('Register.wsName')
+        },
+        {
+            key: 'host',
+            label: t('Register.wsHost')
+        },
+        {
+            key: 'fee',
+            label: t('Register.fee')
+        }
+    ]
+})
+
+interface TrackInfo {
     type: string;
     banquet: number;
     fee: string;
 }
 
-const contactData = computed(() => {
+interface WorkshopInfo {
+    name: string;
+    host: string;
+    fee: string;
+}
+
+const trackData = computed(() => {
     return [
         {
             type: t('Register.non-student'),
@@ -47,52 +70,127 @@ const contactData = computed(() => {
             banquet: -1,
             fee: t("Register.Free")
         }
-    ] as RegistrationInfo[];
+    ] as TrackInfo[];
 })
 
-const contact = ref<RegistrationInfo[]>([]);
+const workshopData = computed(() => {
+    return [
+        {
+            name: t('Register.Harvard'),
+            host: t('Register.HarvardHost'),
+            fee: '100 ' + t('Register.USD')
+        },
+        {
+            name: t('Register.journals'),
+            host: t('Register.journalsHost'),
+            fee: '100 ' + t('Register.USD')
+        },
+        {
+            name: t('Register.EduAI'),
+            host: t('Register.EduAIHost'),
+            fee: '100 ' + t('Register.USD')
+        }
+    ]
+})
+
+const track = ref<TrackInfo[]>([]);
+const ws = ref<WorkshopInfo[]>([]);
+
 watchEffect(() => {
-    contact.value = contactData.value;
+    track.value = trackData.value;
+    ws.value = workshopData.value;
 });
 
 </script>
 
 <template>
-    <div class="w-full h-screen mx-10 my-5 pt-24">
-        <div class="h-full w-full max-w-5xl justify-self-center bg-white/80 justify-center items-center">
-            <div class="flex flex-col justify-center items-center">
-                <h1 class="text-center font-bold md:text-2xl text-xl py-3">
+    <div class="w-full h-full mx-10 my-5 pt-24">
+        <div class="text-center font-bold md:text-2xl text-xl  my-5">
+            <div class="flex justify-center items-center ">
+                <div class="h-0.5 w-20 bg-black"></div>
+                <h1 class="py-3 px-2">
                     {{ $t("Register.title") }}
                 </h1>
-                <div class="flex justify-center items-center w-full self-center">
-                    <UTable
-                        :ui="{ td: { size: 'md:text-base text-sm text-center', color: 'text-black' }, th: { size: 'md:text-base text-base text-center', } }"
-                        :rows="contact" :columns="columns">
-                        <template #type-data="{ row }">
-                            <div><span class="text-center">{{ row.type }}</span></div>
-                        </template>
-                        <template #banquet-data="{ row }">
-                            <div v-if="row.banquet === 1">
-                                <UIcon name="i-material-symbols-check-small" class="w-7 h-7 text-green-400" />
-                            </div>
-                            <div v-else-if="row.banquet === 0">
-                                <UIcon name="i-material-symbols-close" class="w-7 h-7 text-red-400" />
-                            </div>
-                            <div v-else>
-                                <UIcon name="i-material-symbols-close" class="w-7 h-7 text-red-400" />
-                            </div>
-                        </template>
-                    </UTable>
-                </div>
-                <div class="my-5 text-left font-bold text-sm px-5">
-                    <div>
-                        <i>* {{ $t('Register.FeeDetails1') }}</i>
+                <div class="h-0.5 w-20 bg-black"></div>
+            </div>
+        </div>
+
+        <div class="h-full w-full max-w-7xl justify-self-center bg-white/80 justify-center items-center">
+            <div class="flex w-full h-full">
+                <div class="justify-center items-center flex flex-col">
+                    <h1 class="text-center font-bold md:text-lg text-base py-3">
+                        {{ $t("Register.trackTitle") }}
+                    </h1>
+
+                    <div class="flex justify-center items-center w-full self-center">
+                        <UTable
+                            :ui="{ td: { size: 'md:text-base text-sm text-center', color: 'text-black' }, th: { size: 'md:text-base text-base text-center', } }"
+                            :rows="track" :columns="trackColumns">
+                            <template #type-data="{ row }">
+                                <div><span class="text-center">{{ row.type }}</span></div>
+                            </template>
+                            <template #banquet-data="{ row }">
+                                <div v-if="row.banquet === 1">
+                                    <UIcon name="i-material-symbols-check-small" class="w-7 h-7 text-green-400" />
+                                </div>
+                                <div v-else-if="row.banquet === 0">
+                                    <UIcon name="i-material-symbols-close" class="w-7 h-7 text-red-400" />
+                                </div>
+                                <div v-else>
+                                    <UIcon name="i-material-symbols-close" class="w-7 h-7 text-red-400" />
+                                </div>
+                            </template>
+                        </UTable>
                     </div>
-                    <div>
-                        <i>* {{ $t('Register.FeeDetails2') }}</i>
+                    <div class="my-5 font-bold text-sm px-5 text-gray-800/80">
+                        <div>
+                            <i>* {{ $t('Register.FeeDetails1') }}</i>
+                        </div>
+                        <div>
+                            <i>* {{ $t('Register.FeeDetails2') }}</i>
+                        </div>
                     </div>
                 </div>
-                <div class="md:text-xl text-sm md:w-1/4 w-1/2 h-full py-5 hover:scale-110 transition-all">
+
+                <div class="mx-auto py-4">
+                    <div class="h-full w-0.5 bg-green-700/70"></div>
+                </div>
+
+                <div class="justify-center items-center flex flex-col">
+                    <h1 class="text-center font-bold md:text-lg text-base py-3">
+                        {{ $t("Register.workshopTitle") }} *
+                    </h1>
+
+                    <div class="flex justify-center items-center w-full self-center">
+                        <UTable
+                            :ui="{ td: { size: 'md:text-base text-sm text-center', color: 'text-black' }, th: { size: 'md:text-base text-base text-center', } }"
+                            :rows="ws" :columns="workshopColumns">
+                            <template #type-data="{ row }">
+                                <div><span class="text-center">{{ row.type }}</span></div>
+                            </template>
+                            <template #banquet-data="{ row }">
+                                <div v-if="row.banquet === 1">
+                                    <UIcon name="i-material-symbols-check-small" class="w-7 h-7 text-green-400" />
+                                </div>
+                                <div v-else-if="row.banquet === 0">
+                                    <UIcon name="i-material-symbols-close" class="w-7 h-7 text-red-400" />
+                                </div>
+                                <div v-else>
+                                    <UIcon name="i-material-symbols-close" class="w-7 h-7 text-red-400" />
+                                </div>
+                            </template>
+                        </UTable>
+                    </div>
+                    <div class="my-5 font-bold text-sm px-5 text-gray-800/80">
+                        <div>
+                            <i>* {{ $t('Register.wsLength') }}</i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="py-3">
+                <div
+                    class="justify-self-center md:text-xl text-sm md:w-1/4 w-1/2 h-full py-5 hover:scale-110 transition-all">
                     <UButton :ui="{ rounded: 'rounded-full' }" icon="i-ic-round-arrow-forward" size="md" color="rose"
                         variant="solid" trailing padded to="https://eduhk.au1.qualtrics.com/jfe/form/SV_agWfa1tf9UtiVU2"
                         target="_blank" block>
@@ -100,7 +198,6 @@ watchEffect(() => {
                     </UButton>
                 </div>
             </div>
-
         </div>
     </div>
 
