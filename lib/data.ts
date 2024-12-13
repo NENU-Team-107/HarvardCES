@@ -425,8 +425,7 @@ export const SubSymposiumPoster: Array<Poster> = [
         path: 'img/poster/Sub-symposium6.png',
         callPath: "server.Poster.id5",
         link: 'sub-symposium/5'
-    },
-
+    }
 ]
 
 export const routerArray: Array<RouterItem> = [
@@ -434,10 +433,10 @@ export const routerArray: Array<RouterItem> = [
         name: "Home",
         path: "/",
         children: [
-            {
-                name: "Registration",
-                path: '/registration'
-            }
+            // {
+            //     name: "Registration",
+            //     path: '/registration'
+            // }
         ]
     },
     {

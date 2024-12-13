@@ -22,11 +22,13 @@
     "Language": "Language",
     "Date": "Date",
     "Location": "Location",
+    "Mail": "Mail",
     "Details": {
       "Name": "China Education Symposium at Harvard University (CES)\n The Education University of Hong Kong (EdUHK)",
       "Language": "Chinese and English",
       "Date": "8-10 May, 2025",
-      "Location": "The Education University of Hong Kong, Tai Po Campus"
+      "Location": "The Education University of Hong Kong, Tai Po Campus",
+      "Mail": "general&#64;hgseces.org \n GIETfuture&#64;eduhk.hk"
     }
   },
   "Cover Image": "/img/poster/cover_en.jpg",
@@ -143,7 +145,7 @@
         "description": "Anny Chan holds a Master’s in Education in Educational Leadership, Organization, and Entrepreneurship from Harvard University and is a faculty member at the Harvard Graduate School of Education. She researches the impact of artificial intelligence on teaching and learning, focusing on advancing equity and diversity through technology in education.\n\nAnny is the Chair of the 15th China Education Symposium at Harvard University and the founder of the Harvard Graduate School of Education’s Cross-Cultural Education Association and the International STEAM Network. She earned dual degrees in Business and Law from the University of Sydney and brings over a decade of experience across finance,education, and technology sectors in the U.S., U.K., Australia, France, Japan, China, and Hong Kong. Additionally, Anny founded the Global China Entrepreneur Network, mentoring over 500 international students. She is committed to fostering international exchange and interdisciplinary collaboration in education.",
         "name": "Miss. Anny Chan",
         "title": "Teaching Fellow <br> Harvard University (CES Board of Advisor)",
-        "inc": "Teaching Fellow <br> Harvard University (CES Board of Advisor)"
+        "inc": "Harvard University (CES Board of Advisor)"
       },
       "id5": {
         "description": "Xuefan Li, CEO of National e-School and City High School in Canada, is a PhD candidate at the Ontario Institute for Studies in Education at the University of Toronto. His research focuses on prompt engineering in education, immersive educational technologies, educational economics, and online education. He has demonstrated exceptional research capabilities, leading and contributing to several significant projects, including studies on international student policies during COVID-19, student loans and future returns, and developing an LSTM model for predicting education stock markets. His work has been featured at top conferences like the Tsinghua Education Forum, Fudan International Education Research Forum and the Asian Conference on Education (ACE). He also serves as a panel director at the Harvard Chinese Education Symposium.",
@@ -213,19 +215,19 @@
         "description": "Anny Chan holds a Master’s in Education in Educational Leadership, Organization, and Entrepreneurship from Harvard University and is a faculty member at the Harvard Graduate School of Education. She researches the impact of artificial intelligence on teaching and learning, focusing on advancing equity and diversity through technology in education.\n\nAnny is the Chair of the 15th China Education Symposium at Harvard University and the founder of the Harvard Graduate School of Education’s Cross-Cultural Education Association and the International STEAM Network. She earned dual degrees in Business and Law from the University of Sydney and brings over a decade of experience across finance, education, and technology sectors in the U.S., U.K., Australia, France, Japan, China, and Hong Kong. Additionally, Anny founded the Global China Entrepreneur Network, mentoring over 500 international students. She is committed to fostering international exchange and interdisciplinary collaboration in education.",
         "name": "Miss. Anny Chan",
         "title": "Teaching Fellow <br> Harvard University (CES Board of Advisor)",
-        "inc": "Teaching Fellow <br> Harvard University (CES Board of Advisor)"
+        "inc": "Harvard University (CES Board of Advisor)"
       },
       "id2": {
         "description": "Professor May Cheng May-hung is currently Vice President (Academic) and Chair Professor of Teacher Education of The Education University of Hong Kong (EdUHK).\n\nProfessor Cheng began her teacher education work at the Sir Robert Black College of Education in 1990. As a long-serving member of EdUHK and the former Hong Kong Institute of Education, she has taken up academic leadership positions at different stages, such as Associate Vice President (Academic Affairs), Registrar, Acting Dean of the Faculty of Arts and Sciences, Associate Dean (Programmes), and Programme Director. Between 2010 and the end of 2011, Professor Cheng was a Reader in Professional Education in the Department of Education at the University of Oxford, and a fellow of the Governing Body at Kellogg College.\n\nProfessor Cheng graduated from The University of Hong Kong with a BSc (First-class Honours) degree, a Certificate in Education (Distinction) and a Master’s in Education. She obtained a PhD at the University of Waikato, New Zealand. She served as President of the East Asian Association for Science Education (EASE) from 2016 to 2019. Professor Cheng has actively participated in and made contributions to the international teacher education and science education arena.\n\nShe has been an International Committee member of the National Association for Research in Science Teaching in the US, and has chartered status as a fellow of the Royal Society of Biology in the UK. She is on the editorial boards of various international journals, such as Cogent Education, Teaching and Teacher Education, Teachers and Teaching, and Asia Pacific Journal of Teacher Education. She has obtained various research and project grants from the General Research Fund, the Quality Education Fund and the Education Bureau. She is also a prolific writer, having edited and written more than 13 books and published over 140 journal articles and book chapters.",
         "name": "Professor May Hung Cheng",
         "title": "Vice President (Academic) <br> Chair Professor of Teacher Education <br> The Education University of Hong Kong",
-        "inc": "Vice President (Academic) <br> Chair Professor of Teacher Education <br> The Education University of Hong Kong"
+        "inc": "The Education University of Hong Kong"
       },
       "id3": {
         "description": "Professor Chetwyn Chan is Vice President (Research and Development) and Peter T. C. Lee Chair Professor of Psychology. He obtained a PhD in educational psychology in 1995 from the University of Alberta, Canada. Professor Chan has been an Elected Fellow of the American Psychological Association since 2008 and a Fellow of the Hong Kong Psychological Society since 2007.\n\nIn 2008, in recognition of his contribution to psychology and rehabilitation sciences, Professor Chan received the Global Leadership in Rehabilitation Science Award from Virginia Commonwealth University in the United States. In 2011, he received the Alumni Honour Award from the University of Alberta in recognition of his influence in research and education development in rehabilitation in Asia. In 2018, Professor Chan and his research team won the First Prize in Science and Technology from the Chinese Association of Rehabilitation Medicine on post-stroke cognitive assessment and intervention innovation. In 2019, his research team won the Second Class State Scientific and Technology Progress Award from the State Council of the People’s Republic of China for integrating Chinese medicine into innovative post-stroke rehabilitation.\n\nProfessor Chan’s research work focuses on exploring mechanisms underlying human learning, particularly perceptual and cross-modal learning employing brain imaging, electroencephalograms, and behavioural methods. He also applies the mechanisms to understand the behaviours of people with disabilities and older individuals, and design interventions to enhance the functional capabilities of these individuals. He has published more than 200 research papers and secured more than $20 million in competitive research and development grants. Professor Chan is the chief specialty editor of Frontiers in Rehabilitation Science and an associate editor of Journal of Sports and Health Science.",
         "name": "Prof. Che Hin Chetwyn Chan",
         "title": "Vice President (Research and Development) <br> Peter T. C. Lee Chair Professor of Psychology <br> The Education University of Hong Kong",
-        "inc": "Vice President (Research and Development) <br> Peter T. C. Lee Chair Professor of Psychology <br> The Education University of Hong Kong"
+        "inc": "The Education University of Hong Kong"
       }
     },
     "Invited Speakers": {
@@ -263,7 +265,7 @@
         "description": "Anny Chan holds a Master’s in Education in Educational Leadership, Organization, and Entrepreneurship from Harvard University and is a faculty member at the Harvard Graduate School of Education. She researches the impact of artificial intelligence on teaching and learning, focusing on advancing equity and diversity through technology in education.\n\nAnny is the Chair of the 15th China Education Symposium at Harvard University and the founder of the Harvard Graduate School of Education’s Cross-Cultural Education Association and the International STEAM Network. She earned dual degrees in Business and Law from the University of Sydney and brings over a decade of experience across finance, education, and technology sectors in the U.S., U.K., Australia, France, Japan, China, and Hong Kong. Additionally, Anny founded the Global China Entrepreneur Network, mentoring over 500 international students. She is committed to fostering international exchange and interdisciplinary collaboration in education.",
         "name": "Miss. Anny Chan",
         "title": "Teaching Fellow <br> Harvard University (CES Board of Advisor)",
-        "inc": "Teaching Fellow <br> Harvard University (CES Board of Advisor)"
+        "inc": "Harvard University (CES Board of Advisor)"
       }
     },
     "Poster": {

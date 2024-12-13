@@ -69,6 +69,7 @@ const contactData = computed(() => {
     id: t('pSession.index') + ' (' + t('pSession.poster') + ')',
     topic: t("Above All"),
     mail: t('SendToLink') + 'https://www.wjx.top/vm/tdLaPJt.aspx#',
+    // link: "/sub-symposium/6"
   }] as Contact[];
 })
 

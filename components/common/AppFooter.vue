@@ -22,6 +22,10 @@ const contact = ref<ContactItemType[]>([
   {
     before: "Host.Location",
     after: "Host.Details.Location"
+  },
+  {
+    before: "Host.Mail",
+    after: "Host.Details.Mail"
   }
 ])
 
@@ -54,23 +58,10 @@ const isHover = ref<boolean[]>([false, false])
     <div class="grid md:grid-cols-3 md:grid-rows-1 gap-1 grid-cols-1 grid-rows-1 w-full">
 
       <div class="hidden md:flex flex-col justify-center mx-10">
-        <!-- <div class="justify-center items-center flex my-3">
-          <UButton padding="2xs" gap="xs" color="sky" variant="soft"
-            :ui="{ rounded: 'rounded-full', font: 'font-bold' }" class="w-1/2" block :trailing="true" to=""
-            target="_blank">
-            <span class="md:text-lg text-sm">Sponsorship</span>
-          </UButton>
-        </div>
-        <div class="justify-center items-center flex">
-          <a href="https://www.unesco.org/en" target="_blank">
-            <NuxtImg src="img/logo/UNESCOLogo-single.png" />
-          </a>
-        </div> -->
       </div>
 
       <div class="max-w-screen-md row-span-1">
         <div class="flex flex-col text-justify mx-5">
-          <!-- TODO 加上原来的列表形式，并在下方加上button -->
           <div class="flex flex-col justify-center items-center py-3">
             <div v-for="item in contact" class="flex flex-row w-full py-2 ">
               <div class=" flex text-end justify-items-end items-start w-2/6 md:w-1/6 md:mr-3">
@@ -88,10 +79,10 @@ const isHover = ref<boolean[]>([false, false])
               </div>
             </div>
           </div>
-          <div class="grid grid-cols-2 grid-rows-1 py-3">
+          <div class="grid grid-cols-2 grid-rows-1 py-3 md:gap-8 gap-0">
             <div class="flex justify-center items-center" @mouseover="isHover[0] = true"
               @mouseleave="isHover[0] = false">
-              <UButton icon="i-material-symbols-public" size="lg" color="rose" square variant="soft"
+              <UButton icon="i-material-symbols-public" size="lg" padded color="rose" square variant="soft"
                 :class="isHover[0] ? 'mr-2 bg-white/60' : 'mr-2 bg-white'" :ui="{ rounded: 'rounded-full', }"
                 to="https://www.hgseces.org/">
                 <template #leading>
@@ -103,14 +94,11 @@ const isHover = ref<boolean[]>([false, false])
                   </span>
                 </template>
               </UButton>
-              <UButton icon="i-line-md-email-arrow-right-filled" size="lg" color="rose" square variant="soft"
-                :class="isHover[0] ? 'ml-2 bg-white/60' : 'ml-2 bg-white'" :ui="{ rounded: 'rounded-full' }"
-                to="mailto:general@hgseces.org" />
             </div>
 
             <div class="flex justify-center items-center" @mouseover="isHover[1] = true"
               @mouseleave="isHover[1] = false">
-              <UButton size="lg" color="blue" square variant="soft"
+              <UButton padded color="blue" size="lg" square variant="soft"
                 :class="isHover[1] ? 'mr-2 bg-white/60' : 'mr-2 bg-white'" :ui="{ rounded: 'rounded-full', }"
                 to="https://www.eduhk.hk/en/">
                 <template #leading>
@@ -124,9 +112,6 @@ const isHover = ref<boolean[]>([false, false])
                   </span>
                 </template>
               </UButton>
-              <UButton icon="i-line-md-email-arrow-right-filled" size="lg" color="blue" square variant="soft"
-                :class="isHover[1] ? 'ml-2 bg-white/60' : 'ml-2 bg-white'" :ui="{ rounded: 'rounded-full' }"
-                to="mailto:GIETfuture@eduhk.hk" />
             </div>
           </div>
 
