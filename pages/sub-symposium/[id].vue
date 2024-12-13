@@ -16,6 +16,10 @@ const content = computed(() => {
   ]
 })
 
+const notifyddl = computed(() => {
+  return t('server.Poster.id' + sessionId.value + '.notifyddl')
+})
+
 </script>
 
 <template>
@@ -39,7 +43,7 @@ const content = computed(() => {
             <div class="text-base text-end">
               {{ $t("server.Poster.id" + sessionId + ".submitddl") }}
               <br>
-              {{ $t("server.Poster.id" + sessionId + ".notifyddl") }}
+              <span v-html="notifyddl"></span>
             </div>
           </div>
         </div>

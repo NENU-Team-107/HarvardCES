@@ -69,7 +69,7 @@ const contactData = computed(() => {
     id: t('pSession.index') + ' (' + t('pSession.poster') + ')',
     topic: t("Above All"),
     mail: t('SendToLink') + 'https://www.wjx.top/vm/tdLaPJt.aspx#',
-    // link: "/sub-symposium/6"
+    link: "/sub-symposium/6"
   }] as Contact[];
 })
 
@@ -123,7 +123,7 @@ watchEffect(() => {
         <SubSwiper :cards="true" />
       </div>
 
-      <div class="text-2xl font-bold text-center my-5">
+      <!-- <div class="text-2xl font-bold text-center my-5">
         <div class="flex justify-center items-center ">
           <div class="h-0.5 w-20 bg-black"></div>
           <h1 class="mx-4">{{ $t("pSession.poster") }} </h1>
@@ -140,7 +140,7 @@ watchEffect(() => {
             <NuxtImg :src="t('Showcase-2')" loading="lazy" />
           </div>
         </div>
-      </div>
+      </div> -->
 
     </div>
 
@@ -174,15 +174,15 @@ watchEffect(() => {
         <SubSwiper :cards="true" />
       </div>
 
-      <div class="text-lg font-bold text-center my-5">
+      <!-- <div class="text-lg font-bold text-center my-5">
         <div class="flex justify-center items-center ">
           <div class="h-0.5 w-16 bg-black"></div>
           <h1 class="mx-2">{{ $t("pSession.poster") }} </h1>
           <div class="h-0.5 w-16 bg-black"></div>
         </div>
-      </div>
+      </div> -->
 
-      <div class="justify-self-center mx-10">
+      <!-- <div class="justify-self-center mx-10">
         <div class="grid grid-cols-1 grid-flow-row-dense gap-4">
           <div>
             <NuxtImg :src="t('Showcase-1')" loading="lazy" />
@@ -191,7 +191,7 @@ watchEffect(() => {
             <NuxtImg :src="t('Showcase-2')" loading="lazy" />
           </div>
         </div>
-      </div>
+      </div> -->
 
     </div>
   </div>
