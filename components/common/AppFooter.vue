@@ -35,10 +35,10 @@ interface MediaItemType {
 }
 
 const media = ref<MediaItemType[]>([
-  {
-    label: "Redbook",
-    image: "/img/redbook.png"
-  },
+  // {
+  //   label: "Redbook",
+  //   image: "/img/redbook.png"
+  // },
   {
     label: "Wechat",
     image: "/img/wechat.png"
@@ -133,7 +133,7 @@ const isHover = ref<boolean[]>([false, false])
 
       <div class="grid  grid-rows-1 grid-cols-1 row-span-1">
         <div class="flex flex-col justify-center items-center">
-          <div class="grid grid-rows-1 grid-cols-2 ">
+          <div class="grid grid-rows-1 md:grid-cols-2 grid-cols-1 ">
             <div v-for="item in media" class="ml-5">
               <div class="grid grid-rows-3 grid-cols-1 text-justify">
                 <div class="row-span-2">
