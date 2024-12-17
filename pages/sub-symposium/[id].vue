@@ -30,11 +30,12 @@ const notifyddl = computed(() => {
       <div class="px-4">
         <div class="flex justify-between">
           <div class="text-orange-500 text-4xl font-bold mx-14 mt-5">
-            <h1 v-html="t('CallForPoster')">
+            <h1 v-if="sessionId != 6" v-html="t('CallForPoster')">
             </h1>
+            <h1 v-else v-html="t('CallForShowcase')"></h1>
           </div>
           <div class="text-green-800 text-center text-2xl font-bold mr-8">
-            <div>
+            <div v-if="sessionId !== 6">
               {{ $t("Session") }}{{ $t("server.Poster.id" + sessionId + ".index") }}:
             </div>
             <div>
@@ -48,22 +49,22 @@ const notifyddl = computed(() => {
           </div>
         </div>
 
-        <div class="py-6 mx-auto text-justify text-base md:text-lg w-11/12 leading-7">
+        <div class="py-6 mx-auto text-justify text-base md:text-lg w-11/12 leading-7 list-decimal">
 
           <div v-html="content[0]"></div>
 
           <div class="flex text-green-900 justify-center items-center my-5 text-xl">
-            <div class="bg-green-900 w-1/3 h-0.5"></div>
+            <div class="bg-green-900 w-1/4 h-0.5"></div>
             <h1 class="mx-auto">{{ t("server.Poster.id" + sessionId + ".content.d1") }}</h1>
-            <div class="bg-green-900 w-1/3 h-0.5"></div>
+            <div class="bg-green-900 w-1/4 h-0.5"></div>
           </div>
 
           <div v-html="content[1]"></div>
 
           <div class="flex text-green-900 justify-center items-center my-5 text-xl">
-            <div class="bg-green-900 w-1/3 h-0.5"></div>
+            <div class="bg-green-900 w-1/4 h-0.5"></div>
             <h1 class="mx-auto"> {{ t("server.Poster.id" + sessionId + ".content.d2") }}</h1>
-            <div class="bg-green-900 w-1/3 h-0.5"></div>
+            <div class="bg-green-900 w-1/4 h-0.5"></div>
           </div>
 
           <div v-html="content[2]"></div>

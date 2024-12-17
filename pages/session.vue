@@ -66,8 +66,8 @@ const contactData = computed(() => {
     mail: t('SendTo') + 'hnubai@hainan.edu.cn',
     link: '/sub-symposium/5',
   }, {
-    id: t('pSession.index') + ' (' + t('pSession.poster') + ')',
-    topic: t("Above All"),
+    id: t('pSession.index'),
+    topic: t('pSession.poster') + '(' + t("Above All") + ')',
     mail: t('SendToLink') + 'https://www.wjx.top/vm/tdLaPJt.aspx#',
     link: "/sub-symposium/6"
   }] as Contact[];
@@ -104,12 +104,12 @@ watchEffect(() => {
         </div>
       </div>
 
-      <div v-if="lang !== 'zh-cn'"
+      <!-- <div v-if="lang !== 'zh-cn'"
         class="text-center text-red-500 font-bold text-lg flex justify-center items-center my-8">
         <div class="h-0.5 w-32 bg-red-500"></div>
         <div><i>{{ $t("UnderConstruct") }}</i></div>
         <div class="h-0.5 w-32 bg-red-500"></div>
-      </div>
+      </div> -->
 
       <div class="text-2xl font-bold text-center my-5">
         <div class="flex justify-center items-center ">
