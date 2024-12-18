@@ -123,7 +123,7 @@ watchEffect(() => {
         <SubSwiper :cards="true" />
       </div>
 
-      <!-- <div class="text-2xl font-bold text-center my-5">
+      <div class="text-2xl font-bold text-center my-5">
         <div class="flex justify-center items-center ">
           <div class="h-0.5 w-20 bg-black"></div>
           <h1 class="mx-4">{{ $t("pSession.poster") }} </h1>
@@ -140,7 +140,13 @@ watchEffect(() => {
             <NuxtImg :src="t('Showcase-2')" loading="lazy" />
           </div>
         </div>
-      </div> -->
+        <div class="my-5 justify-self-end py-4 px-4">
+          <ULink to="/sub-symposium/6" class="italic font-semibold text-lg  hover:text-rose-400">
+            {{ $t("Symposium.Click") }}
+            <font-awesome icon="fa-solid fa-arrow-right" />
+          </ULink>
+        </div>
+      </div>
 
     </div>
 
@@ -174,15 +180,15 @@ watchEffect(() => {
         <SubSwiper :cards="true" />
       </div>
 
-      <!-- <div class="text-lg font-bold text-center my-5">
+      <div class="text-lg font-bold text-center my-5">
         <div class="flex justify-center items-center ">
           <div class="h-0.5 w-16 bg-black"></div>
           <h1 class="mx-2">{{ $t("pSession.poster") }} </h1>
           <div class="h-0.5 w-16 bg-black"></div>
         </div>
-      </div> -->
+      </div>
 
-      <!-- <div class="justify-self-center mx-10">
+      <div class="justify-self-center mx-10">
         <div class="grid grid-cols-1 grid-flow-row-dense gap-4">
           <div>
             <NuxtImg :src="t('Showcase-1')" loading="lazy" />
@@ -191,7 +197,14 @@ watchEffect(() => {
             <NuxtImg :src="t('Showcase-2')" loading="lazy" />
           </div>
         </div>
-      </div> -->
+        <div class="my-3 justify-self-end py-2 px-2">
+          <ULink to="/sub-symposium/6"
+            class="italic font-semibold transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
+            {{ $t("Symposium.Click") }}
+            <font-awesome icon="fa-solid fa-arrow-right" />
+          </ULink>
+        </div>
+      </div>
 
     </div>
   </div>

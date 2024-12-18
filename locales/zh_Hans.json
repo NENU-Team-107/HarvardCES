@@ -118,7 +118,7 @@
   },
   "pSession": {
     "sub-symposium": "分论坛主题研究演讲",
-    "poster": "现场研究展示",
+    "poster": "研发项目展示",
     "index": "七"
   },
   "bio": "个人简介",
@@ -350,21 +350,21 @@
       },
       "id6": {
         "index": "七",
-        "name": "新兴技术与未来人才联合论坛",
+        "name": "新兴科技与未来人才联合论坛",
         "submitddl": "提交截止日期：2024 年 12 月 31 日",
         "notifyddl": "录用通知日期：2025 年 1 月 31 日 <br> (日期可由具体情况推迟)",
         "content": {
-          "p1": "<p> 哈佛CES与香港教育大学将于2025年5月8日至10日在香港教育大学联合举办“新兴技术与未来人才”主题论坛。此次盛会将汇聚全球教育与科技领域的杰出学者及行业领袖，共同探讨前沿发展与创新趋势。我们诚挚邀请您参与现场研究展示环节，提交您的卓越成果，展示您在四大并行专题（包括人工智能、元宇宙、创业精神、未来思维模式与人才培养）中的前沿研究与实践探索。 </p>",
-          "d1": "现场研究展示介绍",
-          "p2": "<p>在这个高度互动且自定进度的环节中，您可以通过多种媒介（如海报展示、现场讲解、笔记本电脑演示、XR头戴设备体验或视频播放）来展示您的作品并与观众进行交流互动。海报展示环节将分为四个主题专场，涵盖广泛且备受关注的议题，包括但不限于： </p><div class=\"my-2\"><strong> AI 创新展 </strong></div> <ul class=\"list-disc my-1\"><li>AI 在教学与学习中的应用</li><li>科学教育 + AI</li><li>教育数据分析</li></ul> <div class=\"my-2\"><strong>未来教育展 </strong></div> <ul class=\"list-disc my-1\"><li>AI 时代的人才培养与创业</li><li>大语言模型与计算机教育</li><li>创业教育&教育技术趋势</li></ul>  <div class=\"my-2\"><strong> AI 创意与设计展 </strong></div> <ul class=\"list-disc my-1\"><li>AI 时代的写作、研究与评估</li><li>AI 赋能的创意与创新激发</li><li>AI 在创意产业与设计更新中的应用</li></ul> <div class=\"my-2\"><strong> AI 伦理与政策展 </strong></div> <ul class=\"list-disc my-1\"><li>AI 使用的伦理与标准</li><li>AI 教育决策中的伦理与公平性</li><li>AI 教育应用中的隐私技术与标准</li></ul>",
-          "d2": "现场研究展示提交指南",
-          "p3": "<ul class=\"list-disc  my-1\"><li>所有提交材料须于<strong>2024 年 12 月 31 日</strong>前通过网上系统提交。</li><li> 在提交过程中，作者需提供 <strong>个人信息</strong>（包括姓名、所属机构/大学、电子邮件）、作品信息（标题与摘要），并上传一页<strong>PDF格式</strong>的海报提案，简要概述海报内容。 </li><li> 参与者可选择以下任一方式展示设计内容：<ol class=\"list-decimal my-2 mx-4\"> <li> <strong>打印全尺寸彩色海报</strong>：符合国际会议标准，宽 90 厘米，高 120 厘米，顶部和底部边距 25 毫米； </li> <li> <strong>自带笔记本电脑</strong>：循环播放作品展示内容； </li> <li> <strong>其他适当媒介</strong>：利用适合的展示工具进行设计内容展示。 </li> </ol> </li><li> 组委会将依据海报与会议主题的<strong>相关性</strong>以及研究工作的<strong>科学质量</strong>进行评审。被录用的参展人员须在指定截止日期前完成会议注册报名。 </li> <li> 具体海报要求及提交请参阅：https://www.wjx.top/vm/tdLaPJt.aspx# </li> </ol>"
+          "p1": "<p> 哈佛 CES 与香港教育大学将于 2025 年 5 月 8 日至 10 日在香港教育大学联合举办“新兴科技与未来人才”主题论坛。此次盛会将汇聚全球教育与科技领域的杰出学者及行业领袖，共同探讨前沿发展与创新趋势。我们诚挚邀请您参与研发项目展示环节，提交您的卓越成果，展示您在四大平行分会（包括人工智能、元宇宙、创业精神、未来思维模式与人才培养）中的前沿研究与实践探索。 </p>",
+          "d1": "研发项目展示介绍",
+          "p2": "<p> 在这个环节中，您可以通过多种媒介（如海报展示、现场讲解、笔记本电脑演示、XR头戴设备体验或视频播放）来展示您的作品并与观众进行交流互动。研发项目展示环节将分为四个主题专场，涵盖以下议题： </p><div class=\"my-2\"><strong> AI 创新展 </strong></div> <ul class=\"list-disc my-1\"><li>AI 在教学与学习中的应用</li><li>科学教育 + AI</li><li>教育数据分析</li></ul> <div class=\"my-2\"><strong>未来教育展 </strong></div> <ul class=\"list-disc my-1\"><li>AI 时代的人才培养与创业</li><li>大语言模型与计算机教育</li><li>创业教育 & 教育技术趋势</li></ul>  <div class=\"my-2\"><strong> AI 创意与设计展 </strong></div> <ul class=\"list-disc my-1\"><li>AI 时代的写作、研究与评估</li><li>AI 赋能的创意与创新 </li><li>AI 在创意产业与设计迭代中的应用</li></ul> <div class=\"my-2\"><strong> AI 伦理与政策展 </strong></div> <ul class=\"list-disc my-1\"><li>AI 使用的伦理与标准</li><li>AI 教育决策中的伦理与公平性</li><li>AI 教育应用中的隐私技术与标准</li></ul>",
+          "d2": "提   交   指   南",
+          "p3": "<ul class=\"list-disc  my-1\"><li>所有提交材料须于<strong>2024 年 12 月 31 日</strong>前通过网上系统提交。</li><li> 提交过程中，作者需提供 <strong>个人信息</strong>（包括姓名、所属机构/大学、电子邮件）、<strong>作品信息</strong>（标题与摘要），并上传一页<strong>PDF格式</strong>的海报提案，简要概述海报内容。 </li><li> 参与者可选择以下任一方式展示设计内容：<ol class=\"list-decimal my-2 mx-4\"> <li> <strong>打印全尺寸彩色海报</strong>：符合国际会议标准，宽 90 厘米，高 120 厘米，顶部和底部边距 25 毫米； </li> <li> <strong>自带笔记本电脑</strong>：循环播放作品展示内容； </li> <li> <strong>其他适当媒介</strong>：利用适合的展示工具进行设计内容展示。 </li> </ol> </li><li> 组委会将依据海报与会议主题的<strong>相关性</strong>以及研究工作的<strong>科学质量</strong>进行评审。被录用的参展人员须在指定截止日期前完成会议注册报名。 </li> <li> 具体海报要求及提交请参阅：<a href=\"https://www.wjx.top/vm/tdLaPJt.aspx#\">https://www.wjx.top/vm/tdLaPJt.aspx#</a> </li> </ol>"
         }
       }
     }
   },
   "CallForPoster": "论坛征稿",
-  "CallForShowcase": "现场研究展示征集",
+  "CallForShowcase": "研发项目展示征集",
   "Above All": "包含所有平行会议主题",
   "Due": "截止日期：2024年12月31日；通知日期：2025年1月31日；可申请延期",
   "Agenda Note": "（初步议程，可能更改）",
