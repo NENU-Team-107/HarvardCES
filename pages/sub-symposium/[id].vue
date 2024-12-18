@@ -78,42 +78,45 @@ const notifyddl = computed(() => {
 
     <div class="md:hidden">
 
-      <div class="justify-between px-4">
-        <div class="text-orange-500 text-2xl font-bold">
-          <h1 v-html="t('CallForPoster')">
+      <div class="justify-between">
+        <div class="text-orange-500 text-xl font-bold">
+          <h1 v-if="sessionId != 6" v-html="t('CallForPoster')">
           </h1>
+          <h1 v-else v-html="t('CallForShowcase')"></h1>
         </div>
-        <div class="text-green-800  text-end text-base font-bold">
-          <div>
+        <div class="text-green-800 text-end text-xl font-bold">
+          <div v-if="sessionId !== 6">
             {{ $t("Session") }} {{ $t("server.Poster.id" + sessionId + ".index") }}:
           </div>
           <div>
             {{ $t("server.Poster.id" + sessionId + ".name") }}
+            <br>
+            <br>
           </div>
-          <div class="text-base text-end">
+          <div class="text-sm text-end">
             {{ $t("server.Poster.id" + sessionId + ".submitddl") }}
             <br>
-            {{ $t("server.Poster.id" + sessionId + ".notifyddl") }}
+            <span v-html="notifyddl"></span>
           </div>
         </div>
       </div>
 
-      <div class="py-6 mx-auto text-justify text-sm w-11/12 leading-7">
+      <div class="py-6 mx-auto text-justify text-sm w-full leading-7">
 
         <div v-html="content[0]"></div>
 
         <div class="flex text-green-900 justify-center items-center my-5 text-base">
-          <div class="bg-green-900 w-1/3 h-0.5"></div>
+          <div class="bg-green-900 w-4 h-0.5"></div>
           <h1 class="mx-auto">{{ t("server.Poster.id" + sessionId + ".content.d1") }}</h1>
-          <div class="bg-green-900 w-1/3 h-0.5"></div>
+          <div class="bg-green-900 w-4 h-0.5"></div>
         </div>
 
         <div v-html="content[1]"></div>
 
         <div class="flex text-green-900 justify-center items-center my-5 text-base">
-          <div class="bg-green-900 w-1/4 h-0.5"></div>
+          <div class="bg-green-900 w-1/6 h-0.5"></div>
           <h1 class="mx-auto"> {{ t("server.Poster.id" + sessionId + ".content.d2") }}</h1>
-          <div class="bg-green-900 w-1/4 h-0.5"></div>
+          <div class="bg-green-900 w-1/6 h-0.5"></div>
         </div>
 
         <div v-html="content[2]"></div>
