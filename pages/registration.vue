@@ -41,6 +41,7 @@ interface WorkshopInfo {
     name: string;
     host: string;
     fee: string;
+    link?: string;
 }
 
 const trackData = computed(() => {
@@ -63,7 +64,7 @@ const trackData = computed(() => {
         {
             type: '',
             banquet: 0,
-            fee: '600 ' + t('Register.HKD') + '(' + t('Register.about') + ' 80 ' + t('Register.USD') + ')'
+            fee: '630 ' + t('Register.HKD') + '(' + t('Register.about') + ' 80 ' + t('Register.USD') + ')'
         },
         {
             type: t('Register.virtual'),
@@ -78,17 +79,20 @@ const workshopData = computed(() => {
         {
             name: t('Register.Harvard'),
             host: t('Register.HarvardHost'),
-            fee: '100 ' + t('Register.USD')
+            fee: '780 ' + t('Register.HKD') + '(' + t('Register.about') + ' 99 ' + t('Register.USD') + ')',
+            // link: "/workshop/1"
         },
         {
             name: t('Register.journals'),
             host: t('Register.journalsHost'),
-            fee: '100 ' + t('Register.USD')
+            fee: '780 ' + t('Register.HKD') + '(' + t('Register.about') + ' 99 ' + t('Register.USD') + ')',
+            // link: "/workshop/1"
         },
         {
             name: t('Register.EduAI'),
             host: t('Register.EduAIHost'),
-            fee: '100 ' + t('Register.USD')
+            fee: '780 ' + t('Register.HKD') + '(' + t('Register.about') + ' 99 ' + t('Register.USD') + ')',
+            link: "/workshop/3"
         }
     ]
 })
@@ -115,8 +119,8 @@ watchEffect(() => {
             </div>
         </div>
 
-        <div class="h-full w-full max-w-7xl justify-self-center bg-white/80 justify-center items-center">
-            <div class="flex w-full h-full">
+        <div class="h-full w-full max-w-7xl px-6 md:px-0 justify-self-center bg-white/80 justify-center items-center">
+            <div class="w-full h-full">
                 <div class="justify-center items-center flex flex-col">
                     <h1 class="text-center font-bold md:text-lg text-base py-3">
                         {{ $t("Register.trackTitle") }}
@@ -126,9 +130,6 @@ watchEffect(() => {
                         <UTable
                             :ui="{ td: { size: 'md:text-base text-sm text-center', color: 'text-black' }, th: { size: 'md:text-base text-base text-center', } }"
                             :rows="track" :columns="trackColumns">
-                            <template #type-data="{ row }">
-                                <div><span class="text-center">{{ row.type }}</span></div>
-                            </template>
                             <template #banquet-data="{ row }">
                                 <div v-if="row.banquet === 1">
                                     <UIcon name="i-material-symbols-check-small" class="w-7 h-7 text-green-400" />
@@ -158,32 +159,27 @@ watchEffect(() => {
 
                 <div class="justify-center items-center flex flex-col">
                     <h1 class="text-center font-bold md:text-lg text-base py-3">
-                        {{ $t("Register.workshopTitle") }} *
+                        {{ $t("Register.workshopTitle") }} [{{ $t('Register.wsLength') }}]*
                     </h1>
 
-                    <div class="flex justify-center items-center w-full self-center">
+                    <div class="flex justify-center items-center w-full self-center border-black border-1">
                         <UTable
                             :ui="{ td: { size: 'md:text-base text-sm text-center', color: 'text-black' }, th: { size: 'md:text-base text-base text-center', } }"
                             :rows="ws" :columns="workshopColumns">
                             <template #type-data="{ row }">
                                 <div><span class="text-center">{{ row.type }}</span></div>
                             </template>
-                            <template #banquet-data="{ row }">
-                                <div v-if="row.banquet === 1">
-                                    <UIcon name="i-material-symbols-check-small" class="w-7 h-7 text-green-400" />
-                                </div>
-                                <div v-else-if="row.banquet === 0">
-                                    <UIcon name="i-material-symbols-close" class="w-7 h-7 text-red-400" />
-                                </div>
-                                <div v-else>
-                                    <UIcon name="i-material-symbols-close" class="w-7 h-7 text-red-400" />
-                                </div>
+                            <template #name-data="{ row }">
+                                <NuxtLink v-if="row.link" :to="row.link" class="hover:text-green-500">
+                                    {{ row.name }}
+                                </NuxtLink>
+                                <span v-else>{{ row.name }}</span>
                             </template>
                         </UTable>
                     </div>
                     <div class="my-5 font-bold text-sm px-5 text-gray-800/80">
                         <div>
-                            <i>* {{ $t('Register.wsLength') }}</i>
+                            <i>* {{ $t('Register.FeeDetails2') }}</i>
                         </div>
                     </div>
                 </div>
@@ -191,11 +187,11 @@ watchEffect(() => {
             <div class="py-3">
                 <div
                     class="justify-self-center md:text-xl text-sm md:w-1/4 w-1/2 h-full py-5 hover:scale-110 transition-all">
-                    <UButton :ui="{ rounded: 'rounded-full' }" icon="i-ic-round-arrow-forward" size="md" color="rose"
+                    <!-- <UButton :ui="{ rounded: 'rounded-full' }" icon="i-ic-round-arrow-forward" size="md" color="rose"
                         variant="solid" trailing padded to="https://eduhk.au1.qualtrics.com/jfe/form/SV_agWfa1tf9UtiVU2"
                         target="_blank" block>
                         {{ $t("Register.click") }}
-                    </UButton>
+                    </UButton> -->
                 </div>
             </div>
         </div>

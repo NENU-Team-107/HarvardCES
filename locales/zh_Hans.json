@@ -371,10 +371,10 @@
   "Register": {
     "title": "注册与费用",
     "trackTitle": "研讨会注册费（5月9日至10日）",
-    "workshopTitle": "研讨会前工作坊注册费（5月8日下午）",
+    "workshopTitle": "研讨会前工作室注册费（5月8日下午）",
     "wsName": "工作室主题",
     "wsHost": "主持机构",
-    "wsLength": "预计每场3小时",
+    "wsLength": "预计 3 小时",
     "type": "人员类别",
     "banquet": "是否参加晚宴",
     "fee": "注册费用",
@@ -389,10 +389,10 @@
     "FeeDetails2": "注册费用将以港币收取",
     "banquetDate" : "2025年5月10日",
     "click":"参会注册",
-    "Harvard": "哈佛工作室",
-    "HarvardHost": "由哈佛大学教育研究生院主持",
+    "Harvard": "斯坦福与哈佛工作室",
+    "HarvardHost": "由两所大学的代表主持，探讨人工智能时代的个人与职业发展",
     "journals": "高影响力期刊的写作与发表",
-    "journalsHost": "由顶尖期刊的主编主持",
+    "journalsHost": "由教学、培训和技术领域顶尖期刊的主编主持",
     "EduAI": "创业教育与人工智能",
     "EduAIHost": "由香港教育大学和斯坦福大学主持"
   }

@@ -387,44 +387,51 @@ export const SubSymposiumPoster: Array<Poster> = [
     {
         id: 0,
         name: 'Sub-symposium1',
-        path: 'img/poster/Sub-symposium1.png',
+        path: 'img/poster/Sub-symposium1.jpg',
         callPath: "server.Poster.id0",
         link: 'sub-symposium/0'
     },
     {
         id: 1,
         name: 'Sub-symposium2',
-        path: 'img/poster/Sub-symposium2.png',
+        path: 'img/poster/Sub-symposium2.jpg',
         callPath: "server.Poster.id1",
         link: 'sub-symposium/1'
     },
     {
         id: 2,
         name: 'Sub-symposium3',
-        path: 'img/poster/Sub-symposium3.png',
+        path: 'img/poster/Sub-symposium3.jpg',
         callPath: "server.Poster.id2",
         link: 'sub-symposium/2'
     },
     {
         id: 3,
         name: 'Sub-symposium4',
-        path: 'img/poster/Sub-symposium4.png',
+        path: 'img/poster/Sub-symposium4.jpg',
         callPath: "server.Poster.id3",
         link: 'sub-symposium/3'
     },
     {
         id: 4,
         name: 'Sub-symposium5',
-        path: 'img/poster/Sub-symposium5.png',
+        path: 'img/poster/Sub-symposium5.jpg',
         callPath: "server.Poster.id4",
         link: 'sub-symposium/4'
     },
     {
         id: 5,
         name: 'Sub-symposium6',
-        path: 'img/poster/Sub-symposium6.png',
+        path: 'img/poster/Sub-symposium6.jpg',
         callPath: "server.Poster.id5",
         link: 'sub-symposium/5'
+    },
+    {
+        id: 6,
+        name: 'Sub-symposium7',
+        path: 'img/poster/Sub-symposium7.jpg',
+        callPath: "server.Poster.id6",
+        link: 'sub-symposium/6'
     }
 ]
 
@@ -433,10 +440,10 @@ export const routerArray: Array<RouterItem> = [
         name: "Home",
         path: "/",
         children: [
-            // {
-            //     name: "Registration",
-            //     path: '/registration'
-            // }
+            {
+                name: "Registration",
+                path: '/registration'
+            }
         ]
     },
     {

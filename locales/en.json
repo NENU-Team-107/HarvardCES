@@ -372,10 +372,10 @@
   "Register": {
     "title": "Registration and Payment",
     "trackTitle": "Registration Fee for the Symposium (9-10 May) ",
-    "workshopTitle": "Registration Fee for the Pre-Symposium Workshop (afternoon of 8 May)",
+    "workshopTitle": "Registration Fee for the Pre-Symposium Workshop (8 May, PM)",
     "wsName": "Workshop Topic",
     "wsHost": "Host Institution",
-    "wsLength": "Estimated 3 hours each",
+    "wsLength": "estimated 3 hours",
     "type": "Personnel Category",
     "banquet": "Whether to Attend Banquet",
     "fee": "Fee",
@@ -390,10 +390,10 @@
     "FeeDetails2": "The registration fee will be charged in HKD",
     "banquetDate" : "10 May 2025",
     "click": "Registration",
-    "Harvard": "Harvard Workshop",
-    "HarvardHost": "led by Harvard Graduate School of Education",
+    "Harvard": "Stanford and Harvard Workshop",
+    "HarvardHost": "led by representatives from both universities, on personal and professional development in the age of AI",
     "journals": "Writing and Publishing in high-impact journals",
-    "journalsHost": "led by EiCs of leading journals",
+    "journalsHost": "led by EiCs of leading journals in the field of teaching, training and technology",
     "EduAI": "Entrepreneurship Education and AI",
     "EduAIHost": "led by EdUHK and Stanford"
   }

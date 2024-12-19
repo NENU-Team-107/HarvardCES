@@ -7,7 +7,6 @@ definePageMeta({
 import SubSwiper from '~/components/homeIndex/SubSwiper.vue';
 const { t } = useI18n()
 
-const lang = useCookie("i18n_redirected")
 
 const columns = computed(() => {
   return [{
@@ -104,13 +103,6 @@ watchEffect(() => {
         </div>
       </div>
 
-      <!-- <div v-if="lang !== 'zh-cn'"
-        class="text-center text-red-500 font-bold text-lg flex justify-center items-center my-8">
-        <div class="h-0.5 w-32 bg-red-500"></div>
-        <div><i>{{ $t("UnderConstruct") }}</i></div>
-        <div class="h-0.5 w-32 bg-red-500"></div>
-      </div> -->
-
       <div class="text-2xl font-bold text-center my-5">
         <div class="flex justify-center items-center ">
           <div class="h-0.5 w-20 bg-black"></div>
@@ -121,31 +113,6 @@ watchEffect(() => {
 
       <div class="min-w-screen">
         <SubSwiper :cards="true" />
-      </div>
-
-      <div class="text-2xl font-bold text-center my-5">
-        <div class="flex justify-center items-center ">
-          <div class="h-0.5 w-20 bg-black"></div>
-          <h1 class="mx-4">{{ $t("pSession.poster") }} </h1>
-          <div class="h-0.5 w-20 bg-black"></div>
-        </div>
-      </div>
-
-      <div class="justify-self-center mx-10">
-        <div class="grid grid-cols-2 grid-flow-row-dense gap-4">
-          <div>
-            <NuxtImg :src="t('Showcase-1')" loading="lazy" />
-          </div>
-          <div>
-            <NuxtImg :src="t('Showcase-2')" loading="lazy" />
-          </div>
-        </div>
-        <div class="my-5 justify-self-end py-4 px-4">
-          <ULink to="/sub-symposium/6" class="italic font-semibold text-lg  hover:text-rose-400">
-            {{ $t("Symposium.Click") }}
-            <font-awesome icon="fa-solid fa-arrow-right" />
-          </ULink>
-        </div>
       </div>
 
     </div>
@@ -162,8 +129,11 @@ watchEffect(() => {
           <UTable
             :ui="{ td: { size: 'text-sm', color: 'text-black drak:text:white hover:text-green-600' }, th: { size: 'text-base', } }"
             :rows="contact" :columns="columns">
-            <template #topic-data="{ contact }">
-              <span>123</span>
+            <template #topic-data="{ row }">
+              <NuxtLink v-if="row.link" :to="row.link" class="hover:text-green-500">
+                {{ row.topic }}
+              </NuxtLink>
+              <span v-else>{{ row.topic }}</span>
             </template>
           </UTable>
         </div>
@@ -178,32 +148,6 @@ watchEffect(() => {
 
       <div class="min-w-screen">
         <SubSwiper :cards="true" />
-      </div>
-
-      <div class="text-lg font-bold text-center my-5">
-        <div class="flex justify-center items-center ">
-          <div class="h-0.5 w-16 bg-black"></div>
-          <h1 class="mx-2">{{ $t("pSession.poster") }} </h1>
-          <div class="h-0.5 w-16 bg-black"></div>
-        </div>
-      </div>
-
-      <div class="justify-self-center mx-10">
-        <div class="grid grid-cols-1 grid-flow-row-dense gap-4">
-          <div>
-            <NuxtImg :src="t('Showcase-1')" loading="lazy" />
-          </div>
-          <div>
-            <NuxtImg :src="t('Showcase-2')" loading="lazy" />
-          </div>
-        </div>
-        <div class="my-3 justify-self-end py-2 px-2">
-          <ULink to="/sub-symposium/6"
-            class="italic font-semibold transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
-            {{ $t("Symposium.Click") }}
-            <font-awesome icon="fa-solid fa-arrow-right" />
-          </ULink>
-        </div>
       </div>
 
     </div>
