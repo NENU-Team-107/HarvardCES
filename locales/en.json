@@ -378,6 +378,7 @@
     "wsLength": "estimated 3 hours",
     "type": "Personnel Category",
     "banquet": "Whether to Attend Banquet",
+    "Banquet": "Banquet (10 May 2025) ticket",
     "fee": "Fee",
     "student": "Student",
     "non-student": "Non-Student",

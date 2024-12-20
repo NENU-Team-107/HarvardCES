@@ -148,6 +148,11 @@ watchEffect(() => {
                             <i>* {{ $t('Register.FeeDetails1') }}</i>
                         </div>
                         <div>
+                            <i>* {{ $t("Register.Banquet") }}: 600 {{ $t("Register.HKD") }} ( {{ $t("Register.about") }}
+                                76 {{
+                                $t("Register.USD") }} ) </i>
+                        </div>
+                        <div>
                             <i>* {{ $t('Register.FeeDetails2') }}</i>
                         </div>
                     </div>
