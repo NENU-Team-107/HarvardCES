@@ -23,10 +23,6 @@ const workshopColumns = computed(() => {
         {
             key: 'host',
             label: t('Register.wsHost')
-        },
-        {
-            key: 'fee',
-            label: t('Register.fee')
         }
     ]
 })
@@ -40,7 +36,6 @@ interface TrackInfo {
 interface WorkshopInfo {
     name: string;
     host: string;
-    fee: string;
     link?: string;
 }
 
@@ -79,19 +74,16 @@ const workshopData = computed(() => {
         {
             name: t('Register.Harvard'),
             host: t('Register.HarvardHost'),
-            fee: '780 ' + t('Register.HKD') + '(' + t('Register.about') + ' 99 ' + t('Register.USD') + ')',
             // link: "/workshop/1"
         },
         {
             name: t('Register.journals'),
             host: t('Register.journalsHost'),
-            fee: '780 ' + t('Register.HKD') + '(' + t('Register.about') + ' 99 ' + t('Register.USD') + ')',
             // link: "/workshop/1"
         },
         {
             name: t('Register.EduAI'),
             host: t('Register.EduAIHost'),
-            fee: '780 ' + t('Register.HKD') + '(' + t('Register.about') + ' 99 ' + t('Register.USD') + ')',
             link: "/workshop/3"
         }
     ]
@@ -150,7 +142,7 @@ watchEffect(() => {
                         <div>
                             <i>* {{ $t("Register.Banquet") }}: 600 {{ $t("Register.HKD") }} ( {{ $t("Register.about") }}
                                 76 {{
-                                $t("Register.USD") }} ) </i>
+                                    $t("Register.USD") }} ) </i>
                         </div>
                         <div>
                             <i>* {{ $t('Register.FeeDetails2') }}</i>
@@ -182,6 +174,13 @@ watchEffect(() => {
                             </template>
                         </UTable>
                     </div>
+
+                    <div class="my-5 font-bold text-lg px-5 text-rose-600">
+                        <div>
+                            {{ $t("Register.wsFee") }}
+                        </div>
+                    </div>
+
                     <div class="my-5 font-bold text-sm px-5 text-gray-800/80">
                         <div>
                             <i>* {{ $t('Register.FeeDetails2') }}</i>
