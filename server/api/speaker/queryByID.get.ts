@@ -1,4 +1,4 @@
-import { guestOfHonor, keynoteSpeaker, organizingCommittee, speakerToKind } from "~/lib/data"
+import { guestOfHonor, invitedSpeakers, keynoteSpeaker, organizingCommittee, speakerToKind } from "~/lib/data"
 import type { ApiResponseWithSpeaker } from "~/lib/model"
 
 export default defineEventHandler(async (event: any) => {
@@ -40,6 +40,16 @@ export default defineEventHandler(async (event: any) => {
                 }
             }
             break
+        case "Invited Speakers":
+            {
+                const result = invitedSpeakers.find(speaker => speaker.id === id)
+                if (result !== undefined) {
+                    data.status = "Success"
+                    data.data = result
+                }
+            }
+            break
+
     }
     return data
 })

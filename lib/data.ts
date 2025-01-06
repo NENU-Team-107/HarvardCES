@@ -9,6 +9,7 @@ export const speakerToKind: Map<number, string> = new Map([
     [6, 'Keynote Speakers'],
     [7, 'Keynote Speakers'],
     [8, 'Keynote Speakers'],
+    [17, 'Keynote Speakers'],
     [9, 'Organizing Committee'],
     [10, 'Organizing Committee'],
     [11, 'Organizing Committee'],
@@ -17,13 +18,13 @@ export const speakerToKind: Map<number, string> = new Map([
     [14, 'Guest of Honor'],
     [15, 'Guest of Honor'],
     [16, 'Guest of Honor'],
-    [17, 'Keynote Speakers'],
     [18, 'Invited Speakers'],
     [19, 'Invited Speakers'],
     [20, 'Invited Speakers'],
     [21, 'Invited Speakers'],
     [22, 'Invited Speakers'],
     [23, 'Invited Speakers'],
+    [24, 'Invited Speakers'],
 ]);
 
 export const keynoteSpeaker: Array<Speaker> = [
@@ -292,7 +293,7 @@ export const guestOfHonor: Array<Speaker> = [
 
 export const invitedSpeakers: Array<Speaker> = [
     {
-        id: 17,
+        id: 24,
         name: "server.Invited Speakers.id1.name",
         kind: "Invited Speakers",
         inc: "server.Invited Speakers.id1.inc",
@@ -302,7 +303,7 @@ export const invitedSpeakers: Array<Speaker> = [
             details: {
                 description: "server.Invited Speakers.id1.description",
                 title: "server.Invited Speakers.id1.title",
-                link: '/speakers/speaker/17 John Clifford Mitchell'
+                link: '/speakers/speaker/24 John Clifford Mitchell'
             }
         }
     },
@@ -357,7 +358,7 @@ export const invitedSpeakers: Array<Speaker> = [
         name: "server.Invited Speakers.id5.name",
         kind: "Invited Speakers",
         inc: "server.Invited Speakers.id5.inc",
-        photo: "./assets/avatars/LI, Hui Philip.png",
+        photo: "./assets/avatars/LI HuiPhilip.png",
 
         activateDate: new Date("2025-05-09"),
         bio: {
