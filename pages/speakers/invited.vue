@@ -15,7 +15,7 @@ const fetchSpeakers = async () => {
     const resp = await $fetch('/api/speaker/listByQuery', {
         method: 'GET',
         query: {
-            kind: 'Keynote Speakers'
+            kind: 'Invited Speakers'
         }
     })
     const { status, data } = resp
@@ -58,7 +58,7 @@ const pending = ref(true)
                 <div class="flex justify-center items-center ">
                     <div class="h-0.5 w-24 bg-black"></div>
                     <h1 class="text-center font-bold text-2xl py-6 mx-6">
-                        {{ $t('Keynote Speakers') }}
+                        {{ $t('Invited Speakers') }}
                     </h1>
                     <div class="h-0.5 w-24 bg-black"></div>
                 </div>
@@ -73,7 +73,7 @@ const pending = ref(true)
                 <div class="flex justify-center items-center ">
                     <div class="h-0.5 w-12 bg-black"></div>
                     <h1 class="text-center font-bold text-2xl py-6 justify-self-center">
-                        {{ $t('Keynote Speakers') }}
+                        {{ $t('Invited Speakers') }}
                     </h1>
                     <div class="h-0.5 w-12 bg-black"></div>
                 </div>

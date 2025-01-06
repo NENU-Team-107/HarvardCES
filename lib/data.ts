@@ -23,6 +23,7 @@ export const speakerToKind: Map<number, string> = new Map([
     [20, 'Invited Speakers'],
     [21, 'Invited Speakers'],
     [22, 'Invited Speakers'],
+    [23, 'Invited Speakers'],
 ]);
 
 export const keynoteSpeaker: Array<Speaker> = [
@@ -310,13 +311,13 @@ export const invitedSpeakers: Array<Speaker> = [
         name: "server.Invited Speakers.id2.name",
         kind: "Invited Speakers",
         inc: "server.Invited Speakers.id2.inc",
-        photo: "./assets/avatars/University College London.png",
+        photo: "./assets/avatars/Qing LI.png",
         activateDate: new Date("2025-05-09"),
         bio: {
             details: {
                 description: "server.Invited Speakers.id2.description",
                 title: "server.Invited Speakers.id2.title",
-                link: '/speakers/speaker/18 University College London'
+                link: '/speakers/speaker/18 Qing LI'
             }
         }
     },
@@ -340,13 +341,14 @@ export const invitedSpeakers: Array<Speaker> = [
         name: "server.Invited Speakers.id4.name",
         kind: "Invited Speakers",
         inc: "server.Invited Speakers.id4.inc",
-        photo: "./assets/avatars/Qing LI.png",
+        photo: "./assets/avatars/Anny Chan.png",
+
         activateDate: new Date("2025-05-09"),
         bio: {
             details: {
                 description: "server.Invited Speakers.id4.description",
                 title: "server.Invited Speakers.id4.title",
-                link: '/speakers/speaker/20 Qing LI'
+                link: '/speakers/speaker/20 Anny Chan'
             }
         }
     },
@@ -355,13 +357,14 @@ export const invitedSpeakers: Array<Speaker> = [
         name: "server.Invited Speakers.id5.name",
         kind: "Invited Speakers",
         inc: "server.Invited Speakers.id5.inc",
-        photo: "./assets/avatars/Enhong Chen.png",
+        photo: "./assets/avatars/LI, Hui Philip.png",
+
         activateDate: new Date("2025-05-09"),
         bio: {
             details: {
                 description: "server.Invited Speakers.id5.description",
                 title: "server.Invited Speakers.id5.title",
-                link: '/speakers/speaker/21 Enhong Chen'
+                link: '/speakers/speaker/21 LI HuiPhilip'
             }
         }
     },
@@ -370,17 +373,33 @@ export const invitedSpeakers: Array<Speaker> = [
         name: "server.Invited Speakers.id6.name",
         kind: "Invited Speakers",
         inc: "server.Invited Speakers.id6.inc",
-        photo: "./assets/avatars/Anny Chan.png",
+        photo: "./assets/avatars/Fridolin Ting.png",
 
         activateDate: new Date("2025-05-09"),
         bio: {
             details: {
                 description: "server.Invited Speakers.id6.description",
                 title: "server.Invited Speakers.id6.title",
-                link: '/speakers/speaker/22 Anny Chan'
+                link: '/speakers/speaker/22 Fridolin Ting'
             }
         }
-    }
+    },
+    {
+        id: 23,
+        name: "server.Invited Speakers.id7.name",
+        kind: "Invited Speakers",
+        inc: "server.Invited Speakers.id7.inc",
+        photo: "./assets/avatars/Enhong Chen.png",
+        activateDate: new Date("2025-05-09"),
+        bio: {
+            details: {
+                description: "server.Invited Speakers.id7.description",
+                title: "server.Invited Speakers.id7.title",
+                link: '/speakers/speaker/23 Enhong Chen'
+            }
+        }
+    },
+
 ]
 
 export const SubSymposiumPoster: Array<Poster> = [
@@ -465,6 +484,10 @@ export const routerArray: Array<RouterItem> = [
             {
                 name: "Keynote Speakers",
                 path: "/speakers/keynote"
+            },
+            {
+                name: "Invited Speakers",
+                path: "/speakers/invited"
             },
             {
                 name: "Guest of Honor",
