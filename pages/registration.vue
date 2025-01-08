@@ -191,11 +191,11 @@ watchEffect(() => {
             <div class="py-3">
                 <div
                     class="justify-self-center md:text-xl text-sm md:w-1/4 w-1/2 h-full py-5 hover:scale-110 transition-all">
-                    <!-- <UButton :ui="{ rounded: 'rounded-full' }" icon="i-ic-round-arrow-forward" size="md" color="rose"
+                    <UButton :ui="{ rounded: 'rounded-full' }" icon="i-ic-round-arrow-forward" size="md" color="rose"
                         variant="solid" trailing padded to="https://eduhk.au1.qualtrics.com/jfe/form/SV_agWfa1tf9UtiVU2"
                         target="_blank" block>
                         {{ $t("Register.click") }}
-                    </UButton> -->
+                    </UButton>
                 </div>
             </div>
         </div>
