@@ -17,12 +17,12 @@ const trackColumns = computed(() => {
 const workshopColumns = computed(() => {
     return [
         {
-            key: 'name',
-            label: t('Register.wsName')
-        },
-        {
             key: 'host',
             label: t('Register.wsHost')
+        },
+        {
+            key: 'name',
+            label: t('Register.wsName')
         }
     ]
 })
@@ -72,8 +72,8 @@ const trackData = computed(() => {
 const workshopData = computed(() => {
     return [
         {
-            name: t('Register.Harvard'),
-            host: t('Register.HarvardHost'),
+            name: t('Register.HarvardHost'),
+            host: t('Register.Harvard'),
             // link: "/workshop/1"
         },
         {
