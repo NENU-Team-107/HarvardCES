@@ -499,6 +499,12 @@ export const routerArray: Array<RouterItem> = [
     {
         name: "Session",
         path: "/session",
+        children: [
+            {
+                name: "Workshop",
+                path: "/workshops"
+            }
+        ]
     },
     {
         name: "Contact",

@@ -44,22 +44,22 @@ const trackData = computed(() => {
         {
             type: t('Register.non-student'),
             banquet: 1,
-            fee: '1920 ' + t('Register.HKD') + ' (' + t('Register.about') + ' 244 ' + t('Register.USD') + ')'
+            fee: '1545 ' + t('Register.HKD') + ' (' + t('Register.about') + ' 196 ' + t('Register.USD') + ')'
         },
         {
             type: '',
             banquet: 0,
-            fee: '1320 ' + t('Register.HKD') + ' (' + t('Register.about') + ' 168 ' + t('Register.USD') + ')'
+            fee: '945 ' + t('Register.HKD') + ' (' + t('Register.about') + ' 120 ' + t('Register.USD') + ')'
         },
         {
             type: t('Register.student'),
             banquet: 1,
-            fee: '1230 ' + t('Register.HKD') + '(' + t('Register.about') + ' 156 ' + t('Register.USD') + ')'
+            fee: '915 ' + t('Register.HKD') + '(' + t('Register.about') + ' 116 ' + t('Register.USD') + ')'
         },
         {
             type: '',
             banquet: 0,
-            fee: '630 ' + t('Register.HKD') + '(' + t('Register.about') + ' 80 ' + t('Register.USD') + ')'
+            fee: '315 ' + t('Register.HKD') + '(' + t('Register.about') + ' 40 ' + t('Register.USD') + ')'
         },
         {
             type: t('Register.virtual'),
