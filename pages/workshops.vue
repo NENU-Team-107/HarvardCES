@@ -7,7 +7,13 @@ const posters = ref([
         subtitle: "Register.EduAIHost",
         path: "workshop/ws3-poster.png",
         to: "workshop/3"
-    }
+    },
+    {
+        title: "Register.EduAI",
+        subtitle: "Register.EduAIHost",
+        path: "workshop/ws3-poster.png",
+        to: "workshop/3"
+    },
 ])
 
 const jump = (link: string) => {
@@ -35,29 +41,17 @@ const jump = (link: string) => {
                 </div>
             </div>
 
-            <div class="flex">
-                <div v-for="poster in posters" class="w-full h-full flex-1">
-                    <div class="block w-3/5 h-3/5">
-                        <div>
-
-                        </div>
+            <div class="grid grid-cols-1 justify-center justify-items-center">
+                <div v-for="poster in posters" class="w-full h-full my-2">
+                    <div class="w-3/5 h-3/5 justify-self-center py-4 shadow-lg">
                         <NuxtImg :src="poster.path" class="w-full justify-center"></NuxtImg>
-                        <div class="grid-cols-2 grid gap-14">
-                            <div class="font-semibold text-black ">
-                                <div class="justify-start text-start">
-                                    {{ $t(poster.title) }}
-                                </div>
-                                <div class="justify-end text-end">
-                                    {{ $t(poster.subtitle) }}
-                                </div>
-                            </div>
-                            <div
-                                class="font-semibold text-white bg-green-800 hover:bg-green-600 text-center p-2 h-fit  w-4/5">
-                                <ULink :to="poster.to">
-                                    {{ $t("About Us.EduHK.link") }}
-                                </ULink>
-                                <font-awesome class="ml-1" icon="fa-solid fa-arrow-right" />
-                            </div>
+
+                        <div
+                            class="font-semibold text-white bg-green-800 hover:bg-green-600 text-center p-2 h-fit w-1/5 justify-self-end">
+                            <ULink :to="poster.to">
+                                {{ $t("About Us.EduHK.link") }}
+                            </ULink>
+                            <font-awesome class="ml-1" icon="fa-solid fa-arrow-right" />
                         </div>
                     </div>
                 </div>

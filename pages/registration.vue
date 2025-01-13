@@ -124,7 +124,7 @@ watchEffect(() => {
                             :rows="track" :columns="trackColumns">
                             <template #banquet-data="{ row }">
                                 <div v-if="row.banquet === 1">
-                                    <UIcon name="i-material-symbols-check-small" class="w-7 h-7 text-green-400" />
+                                    <UIcon name="i-material-symbols-check" class="w-7 h-7 text-green-400" />
                                 </div>
                                 <div v-else-if="row.banquet === 0">
                                     <UIcon name="i-material-symbols-close" class="w-7 h-7 text-red-400" />
