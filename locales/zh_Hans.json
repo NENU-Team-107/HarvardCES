@@ -14,6 +14,7 @@
   "Activities": "会议活动",
   "Keynote & Invited Talk": "主题演讲",
   "Workshop": "工作室",
+  "Workshop Session": "工作室 (5 月 8 日)",
   "Panel Discussion": "分会场讨论",
   "symposium": "平行分会",
   "Round Table": "圆桌讨论",
@@ -387,7 +388,7 @@
     "banquet": "是否参加晚宴",
     "Banquet": "晚宴（2025年5月10日）用券",
     "fee": "注册费用",
-    "student": "K-12 教师和学生",
+    "student": "学生和 K-12 教师",
     "non-student": "非学生（如员工、教师、在职专业人士等）",
     "virtual": "线上参会",
     "HKD": "港币",
@@ -398,11 +399,33 @@
     "FeeDetails2": "注册费用将以港币收取",
     "banquetDate": "2025年5月10日",
     "click": "参会注册",
-    "Harvard": "由斯坦福与哈佛大学主持",
+    "Harvard": "斯坦福与哈佛大学",
     "HarvardHost": "哈佛与斯坦福青少年创新教育工作室",
     "journals": "高影响力期刊的写作与发表",
-    "journalsHost": "由教学、培训和技术领域顶尖期刊的主编主持",
+    "journalsHost": "教学、培训和技术领域顶尖期刊的主编",
     "EduAI": "AI 时代的创造思维与创业教育",
-    "EduAIHost": "由香港教育大学和斯坦福大学主持"
+    "EduAIHost": "香港教育大学和斯坦福大学"
+  },
+  "workshop page": {
+    "description": "为了进一步丰富参与者的体验，我们很高兴于5月8日下午1点至5点30分在校园内举办三场连续的研讨会，随后将举行欢迎招待会。\n 这些研讨会将以优惠价格向非本地参与者开放。名额有限，请尽快注册以预留席位。\n （香港及以外的教大（EdUHK）学生和中小学教师可免费参加全部三场活动。请留意单独的注册链接以预留席位。）",
+    "Speaker": "演讲者",
+    "workshop1": {
+      "title": "哈佛与斯坦福青少年创新教育工作室",
+      "description": "哈佛与斯坦福青少年创新教育工作室是一项开创性举措，旨在帮助中小学教师和学生掌握在不断变化的教育环境中取得成功所需的技能和思维方式。\n 通过互动环节、实践活动和真实案例研究，教师将学习如何创建充满活力和吸引力的学习环境，激励学生成为积极主动的终身学习者。学生将有机会参与创新项目，发展自己的想法，并针对现实世界的挑战提出解决方案。加入我们，体验这场变革性的活动，探索如何利用创新的力量提升学校社区的教学与学习。\n（欢迎教师带领学生一同参加本次活动。）",
+      "speaker": "<a href=\"/speakers/speaker/12 AnnyChan\">陈康琪（哈佛大学讲师）</a>、<a href=\"/speakers/speaker/11 RongbingShen\">沈容冰（哈佛中国教育论坛2024届秘书长）</a>、 Clara Yue Jia (Stanford)",
+      "slides":""
+    },
+    "workshop2": {
+      "title": "高影响力期刊的写作与发表",
+      "description": "本次工作室旨在为研究人员提供来自高影响力期刊主编（EiCs）的宝贵见解和实用策略。参与者将全面了解使稿件脱颖而出的关键要素，包括撰写引人注目的摘要、有效构建文章结构以及令人信服地呈现数据。工作室还将涵盖同行评审过程的细节、需要避免的常见错误以及如何回应审稿人意见的技巧。\n 通过互动环节和案例分析，参与者将有机会直接与主编们交流，了解顶级期刊在投稿中寻找的关键要素。无论您是初入职场的研究人员还是经验丰富的学者，本次工作室都将为您提供所需的工具和信心，以提升您的写作水平并增加发表成功的机会。\n 加入我们，抓住这一难得的机会，向专家学习，将您的研究推向新的高度！",
+      "speaker": "<a href='/speakers/speaker/19 Hongjie Chen'>陈洪捷博士 (《北京大学教育评论》主编)</a>、<a href='/speakers/speaker/21 LI HuiPhilip'>李辉教授 (《心理学前沿》副主编) </a>、Mutlu Cukurova (EiC, British Journal of Education Technology) 、<a href='/speakers/speaker/5 MinjuanWANG'> 王敏娟(《IEEE学习技术学报》主编) </a>、Weipeng Yang (EiC, Co-Editor-in-Chief of the Journal of Research in Childhood Education)",
+            "slides":""
+    },
+    "workshop3": {
+      "title": "AI 时代的创造思维与创业教育",
+      "description": "本次工作室探讨了多模态大语言模型（MLLMs）在创新与创业教育和实践中的设计与原型开发方面的变革潜力。参与者将通过使用多种协作式MLLM平台，深入实践应用和结构化活动，共同头脑风暴解决方案，对设计思维步骤和原型提供反馈，并筛选客户反馈以优化产品市场契合度和市场进入策略。我们将通过案例研究探索生成式人工智能（genAI）在人工智能技术、绿色/可持续技术、生物技术、无人机与机器人、元宇宙与AR/VR/XR等领域的应用，或根据参与者的兴趣进行探讨。",
+      "speaker": "<a href= '/speakers/speaker/22 Fridolin Ting'>陈世道博士 </a> 和 <a href= '/speakers/speaker/7 PaulKim'>Paul Kim 博士 (同样也是论坛的主题演讲者)</a>",
+      "slides": "<a href='/workshop/3'>请查看此PPT介绍以了解此工作室详情。</a>"
+    }
   }
 }
