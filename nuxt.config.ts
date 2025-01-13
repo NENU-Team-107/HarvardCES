@@ -16,7 +16,7 @@ export default defineNuxtConfig({
   vite: {
     // plugins: [font.vite({})],
   },
-  modules: ["@nuxt/ui", "@nuxtjs/tailwindcss", "@nuxtjs/i18n", "@nuxt/image", "@vesp/nuxt-fontawesome", '@nuxtjs/color-mode'],
+  modules: ["@nuxt/ui", "@nuxtjs/tailwindcss", "@nuxtjs/i18n", "@nuxt/image", "@vesp/nuxt-fontawesome", '@nuxtjs/color-mode', 'radix-vue/nuxt'],
   typescript: { typeCheck: true },
   tailwindcss: {
     exposeConfig: true,
