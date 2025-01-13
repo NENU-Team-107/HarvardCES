@@ -8,12 +8,6 @@ const posters = ref([
         path: "workshop/ws3-poster.png",
         to: "workshop/3"
     },
-    {
-        title: "Register.EduAI",
-        subtitle: "Register.EduAIHost",
-        path: "workshop/ws3-poster.png",
-        to: "workshop/3"
-    },
 ])
 
 const jump = (link: string) => {
