@@ -9,8 +9,6 @@ export const speakerToKind: Map<number, string> = new Map([
     [6, 'Keynote Speakers'],
     [7, 'Keynote Speakers'],
     [8, 'Keynote Speakers'],
-    [17, 'Keynote Speakers'],
-    [24, 'Keynote Speakers'],
     [9, 'Organizing Committee'],
     [10, 'Organizing Committee'],
     [11, 'Organizing Committee'],
@@ -20,12 +18,13 @@ export const speakerToKind: Map<number, string> = new Map([
     [14, 'Guest of Honor'],
     [15, 'Guest of Honor'],
     [16, 'Guest of Honor'],
+    [17, 'Keynote Speakers'],
     [18, 'Invited Speakers'],
     [19, 'Invited Speakers'],
     [20, 'Invited Speakers'],
     [22, 'Invited Speakers'],
     [23, 'Invited Speakers'],
-    
+    [24, 'Keynote Speakers'],
 ]);
 
 export const keynoteSpeaker: Array<Speaker> = [
@@ -164,6 +163,21 @@ export const keynoteSpeaker: Array<Speaker> = [
             }
         }
     },
+    {
+        id: 24,
+        name: "server.Invited Speakers.id1.name",
+        kind: "Keynote Speakers",
+        inc: "server.Invited Speakers.id1.inc",
+        photo: "./assets/avatars/John Clifford Mitchell.png",
+        activateDate: new Date("2025-05-09"),
+        bio: {
+            details: {
+                description: "server.Invited Speakers.id1.description",
+                title: "server.Invited Speakers.id1.title",
+                link: '/speakers/speaker/24 John Clifford Mitchell'
+            }
+        }
+    },
 ];
 
 export const organizingCommittee: Array<Speaker> = [
@@ -242,6 +256,22 @@ export const organizingCommittee: Array<Speaker> = [
             }
         }
     },
+    {
+        id: 21,
+        name: "server.Invited Speakers.id5.name",
+        kind: "Organizing Committee",
+        inc: "server.Invited Speakers.id5.inc",
+        photo: "./assets/avatars/LI HuiPhilip.png",
+
+        activateDate: new Date("2025-05-09"),
+        bio: {
+            details: {
+                description: "server.Invited Speakers.id5.description",
+                title: "server.Invited Speakers.id5.title",
+                link: '/speakers/speaker/21 LI HuiPhilip'
+            }
+        }
+    },
 ]
 
 export const guestOfHonor: Array<Speaker> = [
@@ -294,21 +324,6 @@ export const guestOfHonor: Array<Speaker> = [
 
 export const invitedSpeakers: Array<Speaker> = [
     {
-        id: 24,
-        name: "server.Invited Speakers.id1.name",
-        kind: "Invited Speakers",
-        inc: "server.Invited Speakers.id1.inc",
-        photo: "./assets/avatars/John Clifford Mitchell.png",
-        activateDate: new Date("2025-05-09"),
-        bio: {
-            details: {
-                description: "server.Invited Speakers.id1.description",
-                title: "server.Invited Speakers.id1.title",
-                link: '/speakers/speaker/24 John Clifford Mitchell'
-            }
-        }
-    },
-    {
         id: 18,
         name: "server.Invited Speakers.id2.name",
         kind: "Invited Speakers",
@@ -355,22 +370,6 @@ export const invitedSpeakers: Array<Speaker> = [
         }
     },
     {
-        id: 21,
-        name: "server.Invited Speakers.id5.name",
-        kind: "Invited Speakers",
-        inc: "server.Invited Speakers.id5.inc",
-        photo: "./assets/avatars/LI HuiPhilip.png",
-
-        activateDate: new Date("2025-05-09"),
-        bio: {
-            details: {
-                description: "server.Invited Speakers.id5.description",
-                title: "server.Invited Speakers.id5.title",
-                link: '/speakers/speaker/21 LI HuiPhilip'
-            }
-        }
-    },
-    {
         id: 22,
         name: "server.Invited Speakers.id6.name",
         kind: "Invited Speakers",
@@ -398,6 +397,36 @@ export const invitedSpeakers: Array<Speaker> = [
                 description: "server.Invited Speakers.id7.description",
                 title: "server.Invited Speakers.id7.title",
                 link: '/speakers/speaker/23 Enhong Chen'
+            }
+        }
+    },
+    {
+        id: 25,
+        name: "server.Invited Speakers.id8.name",
+        kind: "Invited Speakers",
+        inc: "server.Invited Speakers.id8.inc",
+        photo: "./assets/avatars/Mutlu Cukurova.png",
+        activateDate: new Date("2025-05-09"),
+        bio: {
+            details: {
+                description: "server.Invited Speakers.id8.description",
+                title: "server.Invited Speakers.id8.title",
+                link: '/speakers/speaker/25 Mutlu Cukurova'
+            }
+        }
+    },
+    {
+        id: 26,
+        name: "server.Invited Speakers.id9.name",
+        kind: "Invited Speakers",
+        inc: "server.Invited Speakers.id9.inc",
+        photo: "./assets/avatars/Weipeng Yang.png",
+        activateDate: new Date("2025-05-09"),
+        bio: {
+            details: {
+                description: "server.Invited Speakers.id9.description",
+                title: "server.Invited Speakers.id9.title",
+                link: '/speakers/speaker/26 Weipeng Yang'
             }
         }
     },

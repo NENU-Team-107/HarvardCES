@@ -125,11 +125,6 @@ onMounted(() => {
 
 })
 
-const slides = ref<SwiperItem[]>([
-  { src: "/img/poster/cover_zh_Hant.jpg" }, { src: "/img/poster/cover_zh_Hans.jpg" }
-]);
-
-
 </script>
 
 <template>
@@ -137,7 +132,7 @@ const slides = ref<SwiperItem[]>([
 
     <div
       class="w-full justify-center items-center justify-self-center  bg-gradient-to-r from-cover-left from-30% via-red-500 via-40% to-cover-right to-30% ">
-      <CoverImage :Slides="slides" />
+      <CoverImage />
     </div>
 
     <div class="md:my-10 my-12 flex flex-col md:w-10/12 w-full">

@@ -274,6 +274,18 @@
         "name": "Professor Enhong Chen",
         "title": "Chair Professor, vice dean of Faculty of Information and Intelligence <br> University of Science and Technology of China (USTC)",
         "inc": "University of Science and Technology of China (USTC)"
+      },
+      "id8": {
+        "description": "Mutlu Cukurova is a Professor of Learning and Artificial Intelligence at University College London. Prof. Cukurova investigates human-AI complementarity in education, aiming to address the pressing socio-educational challenge of preparing people for a future with AI systems that will require a great deal more than the routine cognitive skills currently prized by many education systems and traditional approaches to automation. He directs the UCLAIT team and leads the Design and Use of AI in Education course at UCL. In addition, he is engaged in policy-making activities as an external expert (including UNESCO, IAEA, and EU external expert groups and co-authored the UNESCO AI Competency Framework for Teachers). He was the programme co-chair of the International Conference of AI in Education in 2020, is part of UCL's Grand Challenges on Transformative Technologies working group, named in Stanford’s Top 2% Scientists List, Editor-in-Chief of the British Journal of Educational Technology and Associate Editor of the International Journal of Child-Computer Interaction.",
+        "name": "Professor Mutlu Cukurova",
+        "title": "Editor-in-Chief, British Journal of Educational Technology <br> Professor of Learning and Artificial Intelligence <br> University College London",
+        "inc": "University College London"
+      },
+      "id9": {
+        "description": "Dr. Wei-Peng Yang is an Assistant Professor and PhD supervisor at the Education University of Hong Kong, and the Director of the Early Childhood Learning Science Laboratory. He is the Editor-in-Chief of the Journal of Research in Childhood Education, Triage Editor of the British Journal of Educational Technology, and Associate Editor of AI, Brain and Child and Journal for the Study of Education and Development. He was named to the global Top 2% of Scientists list (compiled by Stanford University) and received the Outstanding Research Performance Award (Young Scholar Excellence in Research Award) from the Education University of Hong Kong. His main research areas include computational thinking education for young children, STEAM education, and educational robotics.",
+        "name": "Dr. Weipeng Yang",
+        "title": "Editor-in-Chief, Journal of Research in Childhood Education <br> Assistant Professor of Department of Early Childhood Education <br> The Education University of Hong Kong",
+        "inc": "The Education University of Hong Kong"
       }
     },
     "Poster": {
@@ -407,24 +419,33 @@
     "EduAIHost": "EdUHK and Stanford"
   }, 
   "workshop page": {
-    "description": "To further enrich participants’ experiences, we are delighted to offer three sequential workshops on 8th of May, from 1-5:30pm on campus, followed by a welcome reception.\n These workshops will be open to non-local participants for reduced costs. Space are limited. Please Register soon to reserve your space.\n (EdUHK students and K-12 teachers in Hong Kong and beyond may attend all three sessions for free. Please check back for a separate Registration link to reserve your space). ",
-    "Speaker": "Speaker",
+    "description": "Description",
+    "takeaways": "Key Takeaways",
+    "comment": "Three sequential workshops on 8th May, 1:00-5:30 PM, On Campus",
+    "reg1": "Workshop Sessions Open for <a href='/registration' style='text-decoration: underline;'>Registration</a>",
+    "reg-eduhk": "<strong>EdUHK students and K-12 teachers in Hong Kong and beyond:</strong> May attend all three sessions <strong> for free.</strong>",
+    "reg-nonlocal": "<strong>Non-local Participants:</strong> Discounted rates available.",
+    "reg-link": "Please reserve your spot by visiting <a href='/registration' style='text-decoration: underline;'>Registration Link.</a>",
+    "Speakers": "Speakers",
     "workshop1": {
       "title": "Harvard-Stanford Innovation Education (for K-12 teachers and students)",
-      "description": "The Harvard-Stanford Innovation Education workshop is a groundbreaking initiative designed to empower K-12 teachers and students with the skills and mindset needed to thrive in an ever-evolving educational landscape. \nThrough interactive sessions, hands-on activities, and real-world case studies, teachers will learn how to create dynamic and engaging learning environments that inspire students to become active, lifelong learners. Students will have the opportunity to engage in innovative projects, develop their own ideas, and present their solutions to real-world challenges. Join us for this transformative experience and discover how to harness the power of innovation to enhance teaching and learning in your school community. \n(Teachers are welcome to bring their students to this session.)",
-      "speaker": "<a href=\"/speakers/speaker/12 AnnyChan\">Anny Chan (Harvard Teaching Fellow)</a>、<a href=\"/speakers/speaker/11 RongbingShen\">Rongbing Shen (Harvard Alumnus)</a>、 Clara Yue Jia (Stanford)",
-      "slides":""
+      "description": "The Harvard-Stanford Innovation Education workshop is a groundbreaking initiative designed to empower K-12 teachers and students with the skills and mindset needed to thrive in an ever-evolving educational landscape. ",
+      "takeaways": "Through interactive sessions, hands-on activities, and real-world case studies, teachers will learn how to create dynamic and engaging learning environments that inspire students to become active, lifelong learners. Students will have the opportunity to engage in innovative projects, develop their own ideas, and present their solutions to real-world challenges. ",
+      "speaker": "<a href=\"/speakers/speaker/12 AnnyChan\">Anny Chan (Harvard Teaching Fellow)</a> <br> <a href=\"/speakers/speaker/11 RongbingShen\">Rongbing Shen (Harvard Alumnus)</a> <br> Clara Yue Jia (Stanford)",
+      "slides": "Join us for this transformative experience and discover how to harness the power of innovation to enhance teaching and learning in your school community. (Teachers are welcome to bring their students to this session.)"
     },
     "workshop2": {
       "title": "Writing and Publishing in High-Impact Journals",
-      "description": "This workshop is designed to provide researchers with invaluable insights and practical strategies from Editors-in-Chief (EiCs) of leading high-impact journals. Participants will gain a comprehensive understanding of the key elements that make a manuscript stand out, including crafting compelling abstracts, structuring articles effectively, and presenting data convincingly. The workshop will also cover the nuances of the peer-review process, common pitfalls to avoid, and tips for responding to reviewers' comments.\n Through interactive sessions and case studies, attendees will have the opportunity to engage directly with EiCs, gaining firsthand knowledge of what top-tier journals look for in submissions. Whether you are an early-career researcher or an experienced academic, this workshop will equip you with the tools and confidence needed to enhance your writing and increase your chances of publication success.\n Join us for this unique opportunity to learn from the experts and take your research to the next level!",
-      "speaker": "<a href='/speakers/speaker/19 Hongjie Chen'>Hong Jie Chen (EiC, Peking University Education Review)</a>、<a href='/speakers/speaker/21 LI HuiPhilip'>Phillip Hui Li (Editor of Frontiers in Psychology, Springer-Nature Social Sciences) </a>、Mutlu Cukurova (EiC, British Journal of Education Technology) 、 <a href='/speakers/speaker/5 MinjuanWANG'>Minjuan Wang (EiC, IEEE-Transactions on Learning Technoogies) </a> 、Weipeng Yang (EiC, Co-Editor-in-Chief of the Journal of Research in Childhood Education)",
-      "slides":""
+      "description": "This workshop is designed to provide researchers with invaluable insights and practical strategies from Editors-in-Chief (EiCs) of leading high-impact journals. Participants will gain a comprehensive understanding of the key elements that make a manuscript stand out, including crafting compelling abstracts, structuring articles effectively, and presenting data convincingly. The workshop will also cover the nuances of the peer-review process, common pitfalls to avoid, and tips for responding to reviewers' comments.",
+      "takeaways": "Through interactive sessions and case studies, attendees will have the opportunity to engage directly with EiCs, gaining firsthand knowledge of what top-tier journals look for in submissions. Whether you are an early-career researcher or an experienced academic, this workshop will equip you with the tools and confidence needed to enhance your writing and increase your chances of publication success. ",
+      "speaker": "<a href='/speakers/speaker/19 Hongjie Chen'>Hong Jie Chen (EiC, Peking University Education Review)</a> <br> <a href='/speakers/speaker/21 LI HuiPhilip'>Phillip Hui Li (Editor of Frontiers in Psychology, Springer-Nature Social Sciences) </a> <br> <a href='/speakers/speaker/25 Mutlu Cukurova'> Mutlu Cukurova (EiC, British Journal of Education Technology)</a> <br> <a href='/speakers/speaker/5 MinjuanWANG'>Minjuan Wang (EiC, IEEE-Transactions on Learning Technoogies) </a> <br> <a href='/speakers/speaker/26 Weipeng Yang'>Weipeng Yang (EiC, Co-Editor-in-Chief of the Journal of Research in Childhood Education)</a>",
+      "slides": "Join us for this unique opportunity to learn from the experts and take your research to the next level!"
     },
     "workshop3": {
       "title": "Leveraging Collaborative Generative AI for Design and Enterpreneurship Education",
-      "description": "This workshop explores the transformative potential of Multimodal Large Language Models (MLLMs) for design and prototyping in innovation and entrepreneurship education and practice. Participants will delve into hands-on applications and scaffolded activities using various collaborative MLLM platforms to collectively brainstorm solutions to problems, give feedback on design thinking steps and prototypes, and sift through customer feedback for navigating product-market fit and go-to-market strategies.  We'll explore genAI applications in case studies involving AI tech, green/sustainable tech, biotechnology, drones and robotics, metaverse and AR/VR/XR, or interests of participants.",
-      "speaker": "<a href='/speakers/speaker/22 Fridolin Ting'>Dr. Fridolin TING </a> and <a href='/speakers/speaker/7 PaulKim'>Dr. Paul Kim (also the symposium Keynote speaker)</a>",
+      "description": "This workshop explores the transformative potential of Multimodal Large Language Models (MLLMs) for design and prototyping in innovation and entrepreneurship education and practice. Participants will delve into hands-on applications and scaffolded activities using various collaborative MLLM platforms to collectively brainstorm solutions to problemr feedback for navigating produs, give feedback on design thinking steps and prototypes, and sift through customect-market fit and go-to-market strategies.",
+      "takeaways": "We'll explore genAI applications in case studies involving AI tech, green/sustainable tech, biotechnology, drones and robotics, metaverse and AR/VR/XR, or interests of participants.",
+      "speaker": "<a href='/speakers/speaker/22 Fridolin Ting'>Dr. Fridolin TING </a> <br> <a href='/speakers/speaker/7 PaulKim'>Dr. Paul Kim (also the symposium Keynote speaker)</a>",
       "slides": "<a href='/workshop/3'>Please check out the details of this session.</a>"
     }
   }
