@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 
-import type { WorkshopItem } from '~/types/workshop';
+import type { WorkshopItem } from '~/lib/models';
 const props = defineProps<{
   index: number
 }>();
