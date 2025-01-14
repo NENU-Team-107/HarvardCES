@@ -18,6 +18,10 @@ export default {
         '1.1-full': '110%',
         '2-full': '200%'
       },
+      width: {
+        '1/11': '9.090909%',
+        '10/11': '90.909091%',
+      },
       fontFamily: {
         'display': ['"Times New Roman"', 'NSimSun'],
         'body': ['"Times New Roman"', 'NSimSun'],

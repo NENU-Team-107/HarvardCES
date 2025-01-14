@@ -52,9 +52,16 @@ export interface SwiperItem {
     details?: boolean
 }
 
-
 export interface RouterItem {
     name: string;
     path?: string;
     children?: RouterItem[];
+}
+
+export interface WorkShopItem {
+    title: string,
+    description: string,
+    takeaways: string,
+    speaker: string,
+    slides: string,
 }
