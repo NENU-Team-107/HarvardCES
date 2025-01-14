@@ -258,9 +258,9 @@
         "inc": "Harvard University (CES Board of Advisor)"
       },
       "id5": {
-        "description": "Anny Chan holds a Master’s in Education in Educational Leadership, Organization, and Entrepreneurship from Harvard University and is a faculty member at the Harvard Graduate School of Education. She researches the impact of artificial intelligence on teaching and learning, focusing on advancing equity and diversity through technology in education. Anny is the Chair of the 15th Harvard China Education Symposium and the founder of the Harvard Graduate School of Education’s Cross-Cultural Education Association and the International STEAM Network. She earned dual degrees in Business and Law from the University of Sydney and brings over a decade of experience across finance, education, and technology sectors in the U.S., U.K., Australia, France, Japan, China, and Hong Kong. Additionally, Anny founded the Global China Entrepreneur Network, mentoring over 500 international students. She is committed to fostering international exchange and interdisciplinary collaboration in education.",
+        "description": "Professor Philip Li is Chair Professor of Early Childhood Education. He previously held leadership positions as Dean of the Shanghai Institute of Early Childhood Education at Shanghai Normal University (SHNU), Program Director (Master) in the Macquarie School of Education at Macquarie University (MQ), and Program Director (MEd) of the Faculty of Education at The University of Hong Kong (HKU). Professor Li has extensive and focused research interests in the field of early childhood development and education, spanning developmental cognitive neuroscience, developmental psycholinguistics, early literacy and bilingualism, curriculum and pedagogy, educational policy, school leadership, and teacher education. According to Google Scholar, he has a track record of 293 academic publications, including 234 journal articles, 9 books, 38 chapters, and 12 conference papers. Since 2021, he has been ranked among the World’s Top 2% Scientists by Stanford University.",
         "name": "Professor LI, Hui Philip",
-        "title": "Associate Editor, Frontiers in Psychology <br> Chair Professor of Early Childhood Education <br> The Education University of Hong Kong",
+        "title": "Publicity and Outreach Chair <br> Associate Editor, Frontiers in Psychology <br> Chair Professor of Early Childhood Education <br> The Education University of Hong Kong",
         "inc": "The Education University of Hong Kong"
       },
       "id6": {
@@ -425,7 +425,7 @@
       "title": "Leveraging Collaborative Generative AI for Design and Enterpreneurship Education",
       "description": "This workshop explores the transformative potential of Multimodal Large Language Models (MLLMs) for design and prototyping in innovation and entrepreneurship education and practice. Participants will delve into hands-on applications and scaffolded activities using various collaborative MLLM platforms to collectively brainstorm solutions to problems, give feedback on design thinking steps and prototypes, and sift through customer feedback for navigating product-market fit and go-to-market strategies.  We'll explore genAI applications in case studies involving AI tech, green/sustainable tech, biotechnology, drones and robotics, metaverse and AR/VR/XR, or interests of participants.",
       "speaker": "<a href='/speakers/speaker/22 Fridolin Ting'>Dr. Fridolin TING </a> and <a href='/speakers/speaker/7 PaulKim'>Dr. Paul Kim (also the symposium Keynote speaker)</a>",
-      "slides": "<a href='/workshop/3'>Please check out this PPT introduction for session details.</a>"
+      "slides": "<a href='/workshop/3'>Please check out the details of this session.</a>"
     }
   }
 }

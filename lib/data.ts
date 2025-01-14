@@ -10,21 +10,22 @@ export const speakerToKind: Map<number, string> = new Map([
     [7, 'Keynote Speakers'],
     [8, 'Keynote Speakers'],
     [17, 'Keynote Speakers'],
+    [24, 'Keynote Speakers'],
     [9, 'Organizing Committee'],
     [10, 'Organizing Committee'],
     [11, 'Organizing Committee'],
     [12, 'Organizing Committee'],
     [13, 'Organizing Committee'],
+    [21, 'Organizing Committee'],
     [14, 'Guest of Honor'],
     [15, 'Guest of Honor'],
     [16, 'Guest of Honor'],
     [18, 'Invited Speakers'],
     [19, 'Invited Speakers'],
     [20, 'Invited Speakers'],
-    [21, 'Invited Speakers'],
     [22, 'Invited Speakers'],
     [23, 'Invited Speakers'],
-    [24, 'Invited Speakers'],
+    
 ]);
 
 export const keynoteSpeaker: Array<Speaker> = [

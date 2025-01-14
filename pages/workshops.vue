@@ -1,14 +1,5 @@
 <script lang="ts" setup>
 
-const posters = ref([
-    {
-        title: "Register.EduAI",
-        subtitle: "Register.EduAIHost",
-        path: "workshop/ws3-poster.png",
-        to: "workshop/3"
-    },
-])
-
 </script>
 
 <template>
@@ -98,16 +89,7 @@ const posters = ref([
 </template>
 
 <style scoped>
-:deep(#container) a:hover {
-    color: #fb7185;
-}
-
 :deep(#container) a {
-    text-decoration: none;
-    /* 移除默认下划线 */
-    border-bottom: 1px solid currentColor;
-    /* 使用当前文字颜色作为下划线颜色 */
-    padding-bottom: 1px;
-    /* 可选：调整下划线与文字的距离 */
+    color: rgb(24, 169, 231);
 }
 </style>

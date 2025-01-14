@@ -167,7 +167,7 @@ watchEffect(() => {
                                 <div><span class="text-center">{{ row.type }}</span></div>
                             </template>
                             <template #name-data="{ row }">
-                                <NuxtLink v-if="row.link" :to="row.link" class="hover:text-green-500">
+                                <NuxtLink v-if="row.link" :to="row.link" class="text-blue-400">
                                     {{ row.name }}
                                 </NuxtLink>
                                 <span v-else>{{ row.name }}</span>
@@ -200,8 +200,5 @@ watchEffect(() => {
             </div>
         </div>
     </div>
-
-
-
 
 </template>
