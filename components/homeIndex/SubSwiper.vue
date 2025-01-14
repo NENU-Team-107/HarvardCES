@@ -1,7 +1,7 @@
 <template>
   <div v-if="!cards" class="w-full">
     <div class="w-full justify-self-center items-center justify-center relative">
-      <UCarousel ref="carouselRef" , :items="slides" :ui="{ item: 'basis-full lg:basis-1/3' }" :prev-button="{
+      <UCarousel ref="carouselRef" :items="slides" :ui="{ item: 'basis-full lg:basis-1/3' }" :prev-button="{
         color: 'gray',
         icon: 'i-heroicons-arrow-left-20-solid',
         class: '-start-12'
@@ -25,29 +25,6 @@
           <UButton :variant="active ? 'solid' : 'outline'" size="2xs" color="rose" class="rounded-full min-w-4 "
             @click="onClick(page)" />
         </template>
-
-        <!-- <template #indicator="{ onClick, page, active }">
-          <UButton :label="String(page)" :variant="active ? 'solid' : 'outline'" size="2xs"
-            class="rounded-full min-w-6 justify-center" @click="onClick(page)" />
-        </template> -->
-
-        <!-- <template #prev="{ onClick, disabled }">
-          <UButton :disabled="disabled" @click="onClick" color="sky">
-            {{ $t("Prev") }}
-            <template #leading>
-              <UIcon name="i-heroicons-arrow-left-20-solid" class="w-5 h-5" />
-            </template>
-          </UButton>
-        </template>
-
-        <template #next="{ onClick, disabled }">
-          <UButton :disabled="disabled" @click="onClick" color="sky">
-            {{ $t("Next") }}
-            <template #trailing>
-              <UIcon name="i-heroicons-arrow-right-20-solid" class="w-5 h-5" />
-            </template>
-          </UButton>
-        </template> -->
 
       </UCarousel>
     </div>
@@ -130,6 +107,7 @@ const fetchPosters = async () => {
   const { status, data } = resp
   if (status === "Success" && data !== null) {
     posterList.value = data;
+    
     slides.value = data.map((poster) => {
       return {
         src: poster.path,
@@ -137,6 +115,8 @@ const fetchPosters = async () => {
         details: true
       } as SwiperItem;
     })
+    console.log(slides.value);
+    
     pending.value = false
   }
 }
@@ -151,5 +131,4 @@ fetchPosters()
   /* 强制去除内边距 */
   height: 50%;
 }
-
 </style>

@@ -22,6 +22,9 @@ export default {
         '1/11': '9.090909%',
         '10/11': '90.909091%',
       },
+      padding: {
+        '73': '18.25rem',
+      },
       fontFamily: {
         'display': ['"Times New Roman"', 'NSimSun'],
         'body': ['"Times New Roman"', 'NSimSun'],

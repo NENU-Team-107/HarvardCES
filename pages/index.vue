@@ -131,7 +131,7 @@ onMounted(() => {
   <div class="w-full flex flex-col justify-center items-center relative my-10 pt-24">
 
     <div
-      class="w-full justify-center items-center justify-self-center  bg-gradient-to-r from-cover-left from-30% via-red-500 via-80% to-cover-right to-30% ">
+      class="w-full justify-center items-center justify-self-center  bg-gradient-to-r from-cover-left from-30% via-rose-400 via-50% to-cover-right to-70%  min-h-2/5">
       <CoverImage />
     </div>
 
