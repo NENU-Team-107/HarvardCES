@@ -58,7 +58,7 @@ export interface RouterItem {
     children?: RouterItem[];
 }
 
-export interface WorkShopItem {
+export interface WorkshopItem {
     title: string,
     description: string,
     takeaways: string,
