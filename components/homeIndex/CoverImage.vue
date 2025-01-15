@@ -1,10 +1,7 @@
 <script setup lang="ts">
 import type { SwiperItem } from '~/lib/model';
 import Loading from '~/components/common/Loading.vue';
-// const slides = ref([
-//   "img/poster/cover_zh_Hans.jpg",
-//   "img/poster/cover_zh_Hant.jpg"
-// ]);
+
 const slides = ref<SwiperItem[]>([
   { src: "img/poster/cover/zh-Hans.jpg", },
   { src: "img/poster/cover/zh-Hant.jpg", }
@@ -24,9 +21,8 @@ const checkImagesLoaded = () => {
     };
   });
 };
-console.log(slides.value);
 
-const coverRef = ref(null);
+const coverRef = ref();
 
 onMounted(() => {
   checkImagesLoaded();
