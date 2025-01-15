@@ -25,6 +25,8 @@ export const speakerToKind: Map<number, string> = new Map([
     [22, 'Invited Speakers'],
     [23, 'Invited Speakers'],
     [24, 'Keynote Speakers'],
+    [25,  'Invited Speakers'],
+    [26,  'Invited Speakers']
 ]);
 
 export const keynoteSpeaker: Array<Speaker> = [
