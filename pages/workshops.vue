@@ -57,4 +57,8 @@ import WorkshopItem from '~/components/workshops/WorkShopItem.vue'
 :deep(#container) a {
   color: rgb(24, 107, 231);
 }
+
+:deep(#container) a:hover {
+  color: rgb(90, 191, 222);
+}
 </style>

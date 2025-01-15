@@ -14,7 +14,6 @@ export const speakerToKind: Map<number, string> = new Map([
     [11, 'Organizing Committee'],
     [12, 'Organizing Committee'],
     [13, 'Organizing Committee'],
-    [21, 'Organizing Committee'],
     [14, 'Guest of Honor'],
     [15, 'Guest of Honor'],
     [16, 'Guest of Honor'],
@@ -22,11 +21,13 @@ export const speakerToKind: Map<number, string> = new Map([
     [18, 'Invited Speakers'],
     [19, 'Invited Speakers'],
     [20, 'Invited Speakers'],
+    [21, 'Organizing Committee'],
     [22, 'Invited Speakers'],
     [23, 'Invited Speakers'],
     [24, 'Keynote Speakers'],
     [25,  'Invited Speakers'],
-    [26,  'Invited Speakers']
+    [26,  'Invited Speakers'],
+    [27,  'Organizing Committee']
 ]);
 
 export const keynoteSpeaker: Array<Speaker> = [
@@ -271,6 +272,21 @@ export const organizingCommittee: Array<Speaker> = [
                 description: "server.Invited Speakers.id5.description",
                 title: "server.Invited Speakers.id5.title",
                 link: '/speakers/speaker/21 LI HuiPhilip'
+            }
+        }
+    },
+    {
+        id: 27,
+        name: "server.Organizing Committee.id6.name",
+        kind: "Organizing Committee",
+        inc: "server.Organizing Committee.id6.inc",
+        photo: "./assets/avatars/Yue Jia.png",
+        activateDate: new Date("2025-05-09"),
+        bio: {
+            details: {
+                description: "server.Organizing Committee.id6.description",
+                title: "server.Organizing Committee.id6.title",
+                link: '/speakers/speaker/27 Yue Jia'
             }
         }
     },
