@@ -363,25 +363,25 @@
     "reg-link": "請訪問<a href='/registration' style='text-decoration: underline;'>報名連結</a>預留席位。",
     "Speakers": "演講嘉賓",
     "workshop1": {
-      "title": "哈佛與史丹福青少年創新教育工作室（面向K-12教師和學生）",
-      "description": "哈佛與史丹福青少年創新教育工作室是一項開創性舉措，旨在為K-12教師和學生提供在不斷變化的教育環境中蓬勃發展所需的技能與思維方式。",
+      "title": "哈佛與斯坦福青少年創新教育工作室（面向K-12教師和學生）",
+      "description": "哈佛與斯坦福青少年創新教育工作室是一項開創性舉措，旨在為K-12教師和學生提供在不斷變化的教育環境中蓬勃發展所需的技能與思維方式。",
       "takeaways": "通過互動環節、實踐活動和真實案例研究，教師將學習如何創建動態且引人入勝的學習環境，激勵學生成為積極的終身學習者。學生將有機會參與創新項目，發展自己的想法，並為現實世界的挑戰提出解決方案。",
-      "speaker": "<a href=\"/speakers/speaker/12 AnnyChan\">陳康琪（哈佛大學講師）</a> <br> <a href=\"/speakers/speaker/11 RongbingShen\">沈容冰（哈佛中國教育論壇2024屆秘書長）</a> <br> Clara Yue Jia（史丹福）",
+      "speaker": "<a href=\"/speakers/speaker/12 AnnyChan\">陳康琪</a>（哈佛大學講師） <br> <a href=\"/speakers/speaker/11 RongbingShen\">沈容冰</a>（哈佛中國教育論壇2024屆秘書長） <br> <a href='/speakers/speaker/27 Yue Jia'>Clara Yue Jia（斯坦福）</a>",
       "slides": "加入我們，體驗這場變革性的活動，探索如何利用創新力量提升學校社區的教學與學習。（歡迎教師帶領學生參加此場次。）"
     },
     "workshop2": {
       "title": "在高影響力期刊上發表文章",
       "description": "本工作室旨在為研究人員提供來自高影響力期刊主編（EiCs）的寶貴見解與實用策略。參與者將全面了解使稿件脫穎而出的關鍵要素，包括撰寫引人注目的摘要、有效構建文章結構以及令人信服地展示數據。工作室還將涵蓋同行評審過程的細節、需要避免的常見陷阱以及回應審稿人評論的技巧。",
       "takeaways": "通過互動環節與案例研究，參與者將有機會直接與主編互動，了解頂級期刊在投稿中尋找的內容。無論您是早期職業研究人員還是經驗豐富的學者，本工作室都將為您提供增強寫作能力並提高發表成功率的工具與信心。",
-      "speaker": "<a href='/speakers/speaker/19 Hongjie Chen'>陳洪捷博士 (《北京大學教育評論》主編)</a> <br> <a href='/speakers/speaker/21 LI HuiPhilip'>李輝教授 （《心理學前沿》副主編，Springer-Nature 社會科學）</a> <br> <a href='/speakers/speaker/25 Mutlu Cukurova'>Mutlu Cukurova教授（《英國教育技術期刊》主編）</a> <br> <a href='/speakers/speaker/5 MinjuanWANG'> 王敏娟教授 (《IEEE學習技術學報》主編) </a> <br> <a href='/speakers/speaker/26 Weipeng Yang'>楊偉鵬博士（《兒童教育研究期刊》主編）</a>",
+      "speaker": "<a href='/speakers/speaker/19 Hongjie Chen'>陳洪捷博士</a> (《北京大學教育評論》主編) <br> <a href='/speakers/speaker/21 LI HuiPhilip'>李輝教授</a> （《心理學前沿》副主編，Springer-Nature 社會科學） <br> <a href='/speakers/speaker/25 Mutlu Cukurova'>Mutlu Cukurova教授</a>（《英國教育技術期刊》主編） <br> <a href='/speakers/speaker/5 MinjuanWANG'> 王敏娟教授</a> (《IEEE學習技術學報》主編) <br> <a href='/speakers/speaker/26 Weipeng Yang'>楊偉鵬博士</a>（《兒童教育研究期刊》主編）",
       "slides": "加入我們，抓住這一獨特機會，向專家學習，將您的研究提升到新的高度！"
     },
     "workshop3": {
       "title": "AI 時代的創造思維與創業教育",
       "description": "本工作室探討了多模態大語言模型（MLLMs）在創新與創業教育和實踐中用於設計與原型製作的變革潛力。參與者將通過使用各種協作MLLM平台的實際應用與結構化活動，集體頭腦風暴解決方案，提供設計思維步驟與原型的反饋，並篩選定制產品市場契合度與市場進入策略。",
       "takeaways": "我們將通過案例研究探討生成式AI在人工智能技術、綠色/可持續技術、生物技術、無人機與機械人、元宇宙與AR/VR/XR或參與者興趣領域的應用。",
-      "speaker": "<a href='/speakers/speaker/22 Fridolin Ting'>陳世道博士</a> <br> <a href='/speakers/speaker/7 PaulKim'>Paul Kim 博士 (同樣也是論壇的主題演講者)</a>",
-      "slides": "<a href='/workshop/3'>請查看此場次的詳細信息。</a>"
+      "speaker": "<a href='/speakers/speaker/22 Fridolin Ting'>陳世道博士</a> <br> <a href='/speakers/speaker/7 PaulKim'>Paul Kim 博士</a> (同樣也是論壇的主題演講者)",
+      "slides": ">請查看此場次的<a href='/workshop/3'詳細信息。</a>"
     }
   }
 }
