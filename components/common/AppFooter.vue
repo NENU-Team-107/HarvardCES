@@ -118,19 +118,6 @@ const isHover = ref<boolean[]>([false, false])
         </div>
       </div>
 
-      <!-- <div class="md:hidden flex flex-col justify-center mx-10">
-        <div class="justify-center items-center flex my-3">
-          <UButton padding="2xs" gap="xs" color="sky" variant="soft"
-            :ui="{ rounded: 'rounded-full', font: 'font-bold' }" class="w-1/2" block :trailing="true" to=""
-            target="_blank">
-            <span class="md:text-lg text-sm">Sponsorship</span>
-          </UButton>
-        </div>
-        <div class="justify-center items-center flex">
-          <NuxtImg src="img/logo/UNESCOLogo-single.png" class="md:w-full w-2/5" />
-        </div>
-      </div> -->
-
       <div class="grid  grid-rows-1 grid-cols-1 row-span-1">
         <div class="flex flex-col justify-center items-center">
           <div class="grid grid-rows-1 md:grid-cols-2 grid-cols-1 ">

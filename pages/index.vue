@@ -171,33 +171,29 @@ onMounted(() => {
         </div>
       </div>
 
-      <!-- <div class="bg-white/80 md:p-10 p-3">
-        <Title :titleMap="title.organisers" />
-        <div class="grid md:grid-cols-3 gap-4 px-10">
-          <div v-for="speaker in organizeList">
-            <SpeakersIntroduction :speakers="speaker" />
-          </div>
-        </div>
-      </div> -->
-
       <div class="bg-white/80 md:p-10 px-5">
         <!-- NOTE 这部分是主办单位和合作者的 Logo -->
         <Title :titleMap="title.logo"></Title>
         <div class="justify-self-center w-full md:w-11/12">
-          <div class="mb-5">
-            <div class="font-bold md:text-2xl text-xl md:pl-10 ">{{ $t("Organised by") }}</div>
-            <br>
-            <div
-              class="grid md:grid-cols-2 md:grid-rows-1 grid-rows-2 grid-cols-1 gap-2 md:w-4/5 w-full justify-self-center text-center md:text-2xl text-xl font-semibold ">
-              <div class="hover:text-red-400">
-                <ULink to="https://www.hgseces.org/" target="_blank">
-                  <span v-html="$t('Harvard').replace(/\n/g, '<br>')" />
-                </ULink>
+          <div class="mb-5 grid grid-cols-2">
+
+            <div>
+              <div class="font-bold md:text-2xl text-xl md:pl-10 ">{{ $t("Organised by") }}</div>
+              <br>
+              <div class="md:w-4/5 w-full justify-self-center text-center md:text-2xl text-xl font-semibold ">
+                <span v-html="$t('Host.Details.Name').replace(/\n/g, '<br>')" />
               </div>
-              <div class="hover:text-green-800/80">
-                <ULink to="https://www.eduhk.hk/en/" target="_blank">
-                  <span v-html="$t('GIET').replace(/\n/g, '<br>')" />
-                </ULink>
+            </div>
+
+            <div>
+              <div class="font-bold md:text-2xl text-xl md:pl-10 ">{{ $t("Host by") }}</div>
+              <br>
+              <div class="md:w-4/5 w-full justify-self-center text-center md:text-2xl text-xl font-semibold ">
+                <div class="hover:text-green-800/80 ">
+                  <ULink to="https://www.eduhk.hk/en/" target="_blank">
+                    <span v-html="$t('GIET').replace(/\n/g, '<br>')" />
+                  </ULink>
+                </div>
               </div>
             </div>
 

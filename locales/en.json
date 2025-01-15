@@ -13,6 +13,7 @@
   "Workshop": "Workshop",
   "Workshop Session": "Workshop Session(8 May)",
   "Panel Discussion": "Panel Discussion",
+  "Host by": "Hosted By: ",
   "symposium": "Symposium",
   "Round Table": "Round Table",
   "Onsite Demo and Exhibition": "Onsite Demo and Exhibition",
@@ -25,7 +26,7 @@
     "Location": "Location",
     "Mail": "Mail",
     "Details": {
-      "Name": "China Education Symposium at Harvard University (CES)\n The Education University of Hong Kong (EdUHK)",
+      "Name": "Harvard-Stanford-EdUHK China Education Symposium",
       "Language": "Chinese and English",
       "Date": "8-10 May, 2025",
       "Location": "The Education University of Hong Kong, Tai Po Campus",

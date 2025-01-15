@@ -19,6 +19,7 @@
   "symposium": "平行分会",
   "Round Table": "圆桌讨论",
   "Onsite Demo and Exhibition": "研发设计成果展示",
+  "Host by": "承办单位：",
   "Host": {
     "Name": "主办方",
     "Language": "语言",
@@ -26,7 +27,7 @@
     "Location": "地点",
     "Mail": "邮箱",
     "Details": {
-      "Name": "哈佛中国教育论坛(CES)\n香港教育大学",
+      "Name": "哈佛-斯坦福-香港教育大学中国教育论坛",
       "Language": "普通话和英语",
       "Date": "2025年5月8日-10日",
       "Location": "香港教育大学大埔校园",
