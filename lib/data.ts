@@ -560,10 +560,6 @@ export const routerArray: Array<RouterItem> = [
                 path: "/contact/committee"
             },
             {
-                name: 'Harvard CES',
-                path: '/contact/ces'
-            },
-            {
                 name: "EduHK",
                 path: '/contact/eduhk'
             }

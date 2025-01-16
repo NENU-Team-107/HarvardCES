@@ -79,23 +79,7 @@ const isHover = ref<boolean[]>([false, false])
               </div>
             </div>
           </div>
-          <div class="grid grid-cols-2 grid-rows-1 py-3 md:gap-8 gap-0">
-            <div class="flex justify-center items-center" @mouseover="isHover[0] = true"
-              @mouseleave="isHover[0] = false">
-              <UButton icon="i-material-symbols-public" size="lg" padded color="rose" square variant="soft"
-                :class="isHover[0] ? 'mr-2 bg-white/60' : 'mr-2 bg-white'" :ui="{ rounded: 'rounded-full', }"
-                to="https://www.hgseces.org/">
-                <template #leading>
-                  <span>
-                    <font-awesome icon="fa-solid fa-globe" class="px-0.5" />
-                    <font-awesome icon="fa-solid fa-c" size="sm" class="pr-0.5" />
-                    <font-awesome icon="fa-solid fa-e" size="sm" class="pr-0.5" />
-                    <font-awesome icon="fa-solid fa-s" size="sm" class="pr-0.5" />
-                  </span>
-                </template>
-              </UButton>
-            </div>
-
+          <div class="grid grid-cols-1 grid-rows-1 py-3 md:gap-8 gap-0">
             <div class="flex justify-center items-center" @mouseover="isHover[1] = true"
               @mouseleave="isHover[1] = false">
               <UButton padded color="blue" size="lg" square variant="soft"
