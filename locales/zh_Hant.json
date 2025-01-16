@@ -98,6 +98,7 @@
   "Poster": "海報",
   "Track": "Track",
   "Sub-symposium Sessions Submit": "2025年5月10日平行分會徵稿方式總結",
+  "New MA Program": "新碩士項目",
   "About Us": {
     "EduHK": {
       "intro title": "关于教大",
@@ -122,10 +123,15 @@
         "title": "課程副主任",
         "name": "楊茵博士"
       },
+      "Funding": {
+        "title": "学费",
+        "amount": "HK$120,000"
+      },
       "Enquiry": {
         "title": "查詢",
         "content": "有意申請者請通過香港教育大學線上申請系統提交申請。<br>在提交申請前，請訪問<a href='https://www.eduhk.hk/acadprog/postgrad.html'class='hover:text-green-800 text-orange-500 underline'>https://www.eduhk.hk/acadprog/postgrad.html</a>以獲得詳細的申請和錄取資訊。<div class='font-bold text-gray-600 my-2'>聯繫我們：</div><div class='text-orange-500 underline hover:text-green-800'><font-awesome icon='fa-solid fa-envelope' /><a href='mailto:GIETfuture&#64;eduhk.hk'>GIETfuture&#64;eduhk.hk</a></div>"
-      }
+      },
+      "Disclaimer": "<p>*如中英文版本資料信息不一致，又或於課程內容詮釋上出現歧義，則以本校之最後決定作準。</p><p>我們已盡力確保本網站所提供之資訊的準確性。由於課程資訊可能因情況之轉變而時有變動，大學保留在其認為合適及在不事先通知的情況下修改本網站中任何資訊的權利。若因使用、誤用或依據本網站提供的資訊而導致的任何損失或損害，大學概不負上法律責任。</p> <p>大學保留一切修訂課程開辦及其任何有關事項的權利，如有需要，可隨時酌情調整課程（包括但不限於課程內容和授課方式等）。在不限制大學修訂課程和開辦課程的廣泛酌情權的前提下，考慮到教學人員編制 、報讀人數、實際具體安排、課程內容變動以及其他情況的轉變等因素 ，大學可能需要更改課程。已繳學費將不予退還 。</p>"
     }
   },
   "pSession": {

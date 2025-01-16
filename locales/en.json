@@ -99,6 +99,7 @@
   "SubmitTopic": "Topic",
   "SubmitMethod": "How to Submit (by email or online for Session 7)",
   "SendToLink": "Submit online: ",
+  "New MA Program": "New MA Program",
   "About Us": {
     "EduHK": {
       "intro title": "About EdUHK",
@@ -118,8 +119,12 @@
       "link": "👆 Link to the official Harvard CES website"
     },
     "New MA Program": {
-      "name": "New MA Program",
       "title": "Master of Arts in Emerging Technology for Future Workforce [MA(ETFW)]",
+      "Tabs": {
+        "Introduction": "Programme Overview",
+        "Overview": "Programme Structure and Curriculum",
+        "Admission": "Entrance Requirements"
+      },
       "Programme Leader": {
         "title": "Programme Leader",
         "name": "Prof. Wang Minjuan "
@@ -128,24 +133,24 @@
         "title": "Associate Programme Leader",
         "name": "Dr. Yang Yin Nicole "
       },
+      "Funding": {
+        "title": "Tuition Fee",
+        "amount": "HK$120,000"
+      },
       "Enquiry": {
         "title": "Enquiry",
         "content": "Interested applicants please submit your application via EdUHK Online Application Systems.<br>Prior to your submission, please visit<a href='https://www.eduhk.hk/acadprog/postgrad.html'class='hover:text-green-800 text-orange-500 underline'> https://www.eduhk.hk/acadprog/postgrad.html </a>for detailed application and admission information.<div class='font-bold text-gray-600 my-2'>Email us：</div><div class='text-orange-500 underline hover:text-green-800'><a href='mailto:GIETfuture&#64;eduhk.hk'>GIETfuture&#64;eduhk.hk</a></div>"
       },
+      "Disclaimer": "<p>*In the event of inconsistency between information in English and Chinese versions or where an interpretation of the programme content is required, the decision of the University shall be final.</p> <p>Every effort has been made to ensure the accuracy of the information contained in this website. Changes to any aspects of the programmes may be made from time to time as due to change of circumstances and the University reserves the right to revise any information contained in this website as it deems fit without prior notice. The University accepts no liability for any loss or damage arising from any use or misuse of or reliance on any information contained in this website.</p><p>Any aspect of the courses and course offerings (including, without limitation, the contents of the course and the manner in which the course is taught) may be subject to change at any time at the sole discretion of the University if necessary. Without limiting the generality of the University’s discretion to revise the courses and course offerings, it is envisaged that changes may be required due to factors including staffing, enrolment levels, logistical arrangements, curriculum changes, and other factors caused by change of circumstances. Tuition fees, once paid, are non-refundable.</p>",
       "Medium of Instruction": {
         "name": "Medium of Instruction",
         "content": "Putonghua"
-      },
-      "Tuition Fee": {
-        "name": "Tuition Fee",
-        "fee": "HK$168,000"
       },
       "Fellowships Scheme": {
         "name": "Fellowships Scheme",
         "content": "Outstanding candidates will be considered for fellowship."
       },
       "Entrance Requirements": {
-        "name": "Entrance Requirements",
         "condition1": "Applicants should normally hold a recognized bachelor's degree or equivalent. Shortlisted applicants may be required to attend an interview.",
         "CLE": {
           "condition": "Applicants who obtained a bachelor's degree from an institution outside of Hong Kong, Mainland China, Taiwan, and Macau should have attained scores in one of the following Chinese Language or Chinese-related examinations:",

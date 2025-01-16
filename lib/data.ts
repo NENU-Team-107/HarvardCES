@@ -567,7 +567,7 @@ export const routerArray: Array<RouterItem> = [
                 path: '/contact/eduhk'
             },
             {
-                name: "About Us.New MA Program.name",
+                name: "New MA Program",
                 path: "/contact/ma_program"
             }
         ]

@@ -5,15 +5,15 @@ import Requirements from './tabs/Requirements.vue';
 const tabs = [
   {
     key: 'Introduction',
-    label: '課程概覽',
+    label: 'Introduction',
   },
   {
     key: 'Overview',
-    label: '課程結構和內容',
+    label: 'Overview',
   },
   {
-    key: 'Admission Requirements',
-    label: '入学要求',
+    key: 'Admission',
+    label: 'Admission',
   }
 ];
 
@@ -26,9 +26,9 @@ let activeTab = ref('Introduction');
         <li v-for="tab in tabs" :key="tab.key" @click="activeTab = tab.key">
           <h2>
             <span
-              :class="['flex text-lg leading-6 font-semibold pt-3 pb-2.5 border-b-2 -mb-px hover:cursor-pointer justify-center w-40',
+              :class="['flex text-lg leading-6 font-semibold pt-3 pb-2.5 border-b-2 -mb-px hover:cursor-pointer justify-center w-fit',
                 activeTab === tab.key ? 'text-orange-700/90 border-current' : 'text-slate-900 border-transparent hover:border-slate-300']">
-              {{ tab.label }}
+              {{ $t('About Us.New MA Program.Tabs.' + tab.label) }}
             </span>
           </h2>
         </li>
@@ -47,7 +47,7 @@ let activeTab = ref('Introduction');
       <div v-else-if="activeTab === 'Overview'">
         <Overview />
       </div>
-      <div v-else-if="activeTab === 'Admission Requirements'">
+      <div v-else-if="activeTab === 'Admission'">
         <Requirements />
       </div>
     </div>

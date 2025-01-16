@@ -100,6 +100,7 @@
   "Poster": "海报",
   "Track": "Track",
   "Sub-symposium Sessions Submit": "2025年5月10日平行分会征稿方式总结",
+  "New MA Program": "新硕士项目",
   "About Us": {
     "EduHK": {
       "intro title": "关于教大",
@@ -129,10 +130,15 @@
         "title": "课程副主任",
         "name": "杨茵博士"
       },
+      "Funding": {
+        "title": "学费",
+        "amount": "HK$120,000"
+      },
       "Enquiry": {
         "title": "查询",
         "content": "有意申请者请通过香港教育大学线上申请系统提交申请。<br>在提交申请前，请访问<a href='https://www.eduhk.hk/acadprog/postgrad.html'class='hover:text-green-800 text-orange-500 underline'>https://www.eduhk.hk/acadprog/postgrad.html</a>以获得详细的申请和录取资讯。<div class='font-bold text-gray-600 my-2'>联系我们：</div><div class='text-orange-500 underline hover:text-green-800'><font-awesome icon='fa-solid fa-envelope' /><a href='mailto:GIETfuture&#64;eduhk.hk'>GIETfuture&#64;eduhk.hk</a></div>"
-      }
+      },
+      "Disclaimer": "<p>*如中英文版本资料信息不一致，又或于课程内容诠释上出现歧义，则以本校之最后决定作准。</p><p>我们已尽力确保本网站所提供资讯的准确性。由于课程资讯可能因情况之转变而时有变动，大学保留在其认为合适及在不事先通知的情况下修改本网站中任何资讯的权利。若因使用、误用或依据本网站提供的资讯而导致的任何损失或损害，大学概不承担法律责任。</p> <p>大学保留一切修订课程开办及其任何有关事项的权利，如有需要，可随时酌情调整课程（包括但不限于课程内容和授课方式等）。在不限制大学修订课程和开办课程的广泛酌情权的前提下，考虑到教学人员编制、报读人数、实际具体安排、课程内容变动以及其他情况的转变等因素，大学可能需要更改课程。已缴学费将不予退还。</p>"
     }
   },
   "pSession": {
