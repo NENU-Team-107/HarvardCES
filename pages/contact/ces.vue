@@ -101,32 +101,6 @@
 
         </div>
 
-        <!-- 关注我们部分 -->
-
-        <div class="bg-harvard-img2 bg-cover bg-no-repeat bg-center">
-          <div class="bg-red-900/85 text-white pl-10 pb-5">
-            <div class="grid grid-cols-3 gap-4 w-full">
-              <div class="col-start-1 col-span-2">
-                <div class="grid-flow-row gap-4">
-                  <div class="text-3xl font-bold mt-10 mb-5">
-                    关注我们｜Follow US
-                  </div>
-                  <div class=" bg-white w-full h-0.5 mb-5"></div>
-                  <div class="text-lg text-justify">
-                    官方微信公众号：Harvard CES，定期更新论坛动态与相关资讯。
-                    <br>
-                    官方Youtube账号：CES HGSE，记录往年会场
-                    <br>
-                    官方邮箱：general@hgseces.org，洽谈赞助合作
-                  </div>
-                </div>
-              </div>
-              <div class="mt-5">
-                <NuxtImg src="img/eduhk/ces-wechat-logo-white.png" class="w-40" />
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
     <div class="md:hidden">
