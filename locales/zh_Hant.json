@@ -354,34 +354,34 @@
     "EduAIHost": "香港教育大學和斯坦福大學"
   },
   "workshop page": {
-    "description": "描&ensp;&ensp;&ensp;&ensp;述",
-    "takeaways": "核心要點",
-    "comment": "5月8日，下午1:00-5:30，校園內，三場連續工作室",
+    "description": "說&ensp;&ensp;&ensp;&ensp;明",
+    "takeaways": "要點",
+    "comment": "5月8日下午1：00 - 5：30，于校園內舉辦三場連續工作室",
     "reg1": "工作室開放<a href='/registration' style='text-decoration: underline;'>報名</a>",
-    "reg-eduhk": "<strong>香港教育大學學生及香港及其他地區的K-12教師：</strong>可免費參加所有三場工作室。",
-    "reg-nonlocal": "<strong>非本地參與者：</strong>可享受折扣價格。",
-    "reg-link": "請訪問<a href='/registration' style='text-decoration: underline;'>報名連結</a>預留席位。",
-    "Speakers": "演講嘉賓",
+    "reg-eduhk": "<strong>香港教育大學學生與香港及其他地區的K-12教師：</strong>有机会<stron>免費</strong>參加所有三場工作室。",
+    "reg-nonlocal": "<strong>非本地參與者：</strong>可享折扣價。",
+    "reg-link": "請造訪<a href='/registration' style='text-decoration: underline;'>註冊鏈接</a>預訂閣下的席位。 ",
+    "Speakers": "發言人",
     "workshop1": {
-      "title": "哈佛與斯坦福青少年創新教育工作室（面向K-12教師和學生）",
-      "description": "哈佛與斯坦福青少年創新教育工作室是一項開創性舉措，旨在為K-12教師和學生提供在不斷變化的教育環境中蓬勃發展所需的技能與思維方式。",
-      "takeaways": "通過互動環節、實踐活動和真實案例研究，教師將學習如何創建動態且引人入勝的學習環境，激勵學生成為積極的終身學習者。學生將有機會參與創新項目，發展自己的想法，並為現實世界的挑戰提出解決方案。",
-      "speaker": "<a href=\"/speakers/speaker/12 AnnyChan\">陳康琪</a>（哈佛大學講師） <br> <a href=\"/speakers/speaker/11 RongbingShen\">沈容冰</a>（哈佛中國教育論壇2024屆秘書長） <br> <a href='/speakers/speaker/27 Yue Jia'>Clara Yue Jia（斯坦福）</a>",
-      "slides": "加入我們，體驗這場變革性的活動，探索如何利用創新力量提升學校社區的教學與學習。（歡迎教師帶領學生參加此場次。）"
+      "title": "哈佛-斯坦福創新教育 (針對 K-12 教師和學生)",
+      "description": "哈佛-斯坦福創新教育工作室是一項突破性的計畫，旨在讓K-12教師和學生掌握在不斷發展的教育環境中，茁壯成長所需的技能和思維。 ",
+      "takeaways": "透過互動環節、實習活動和真實案例研究，教師將學習如何創造充滿活力且引人入勝的學習環境，激勵學生成為主動的終身學習者。學生將有機會參與創新專案、發展自己的想法，並針對現實世界的挑戰提出解決方案。 ",
+      "speaker": "<a href=\"/speakers/speaker/12 AnnyChan\">陳康琪</a> (哈佛大學教學研究員) <br> <a href=\"/speakers/speaker/11 RongbingShen\">沈容冰</a> (哈佛大學校友) <br> <a href='/speakers/speaker/27 Yue Jia'>Clara Yue Jia (斯坦福大學)</a>",
+      "slides": "歡迎加入我們參與此次的變革體驗，探索如何利用創新的力量提升閣下所在學校社群的教與學。(歡迎教師攜帶學生參與）。"
     },
     "workshop2": {
-      "title": "在高影響力期刊上發表文章",
-      "description": "本工作室旨在為研究人員提供來自高影響力期刊主編（EiCs）的寶貴見解與實用策略。參與者將全面了解使稿件脫穎而出的關鍵要素，包括撰寫引人注目的摘要、有效構建文章結構以及令人信服地展示數據。工作室還將涵蓋同行評審過程的細節、需要避免的常見陷阱以及回應審稿人評論的技巧。",
-      "takeaways": "通過互動環節與案例研究，參與者將有機會直接與主編互動，了解頂級期刊在投稿中尋找的內容。無論您是早期職業研究人員還是經驗豐富的學者，本工作室都將為您提供增強寫作能力並提高發表成功率的工具與信心。",
-      "speaker": "<a href='/speakers/speaker/19 Hongjie Chen'>陳洪捷博士</a> (《北京大學教育評論》主編) <br> <a href='/speakers/speaker/21 LI HuiPhilip'>李輝教授</a> （《心理學前沿》副主編，Springer-Nature 社會科學） <br> <a href='/speakers/speaker/25 Mutlu Cukurova'>Mutlu Cukurova教授</a>（《英國教育技術期刊》主編） <br> <a href='/speakers/speaker/5 MinjuanWANG'> 王敏娟教授</a> (《IEEE學習技術學報》主編) <br> <a href='/speakers/speaker/26 Weipeng Yang'>楊偉鵬博士</a>（《兒童教育研究期刊》主編）",
-      "slides": "加入我們，抓住這一獨特機會，向專家學習，將您的研究提升到新的高度！"
+      "title": "高影響力期刊的文章撰寫與發表",
+      "description": "本工作室旨在為研究人員提供來自頂尖高影響力期刊諸位總編輯的寶貴見解及實用策略。與會者將全面瞭解讓稿件脫穎而出的關鍵要素，包括撰寫令人信服的摘要、有效組織文章結構，以及令人信服地呈現數據。工作室還將涵蓋同行評審過程中的細微差異、應避免的常見陷阱，以及回應審稿人意見的技巧。",
+      "takeaways": "透過互動環節和案例研究，與會者將有機會直接與諸位總編輯接觸，獲得第一手資料，瞭解頂級期刊對投稿的要求。無論閣下是職業生涯初期的研究人員，或是經驗豐富的學者，本工作室都將會為閣下提供所需的工具與信心，以提升寫作能力，並增加成功發表的機會。",
+      "speaker": "<a href='/speakers/speaker/19 Hongjie Chen'>陳洪捷</a> (主編，北京大學教育評論) <br> <a href='/speakers/speaker/25 Mutlu Cukurova'>Mutlu Cukurova</a>（主編, British Journal of Education Technology） <br> <a href='/speakers/speaker/5 MinjuanWANG'> 王敏娟</a> (主編, IEEE-Transactions on Learning Technoogies) <br> <a href='/speakers/speaker/26 Weipeng Yang'>楊偉鵬博士</a> (聯合主編, the Journal of Research in Childhood Education)",
+      "slides": "獲得這個難得的機會，向專家學習，助力閣下的研究更上一層樓！"
     },
     "workshop3": {
       "title": "AI 時代的創造思維與創業教育",
-      "description": "本工作室探討了多模態大語言模型（MLLMs）在創新與創業教育和實踐中用於設計與原型製作的變革潛力。參與者將通過使用各種協作MLLM平台的實際應用與結構化活動，集體頭腦風暴解決方案，提供設計思維步驟與原型的反饋，並篩選定制產品市場契合度與市場進入策略。",
-      "takeaways": "我們將通過案例研究探討生成式AI在人工智能技術、綠色/可持續技術、生物技術、無人機與機械人、元宇宙與AR/VR/XR或參與者興趣領域的應用。",
-      "speaker": "<a href='/speakers/speaker/22 Fridolin Ting'>陳世道博士</a> <br> <a href='/speakers/speaker/7 PaulKim'>Paul Kim 博士</a> (同樣也是論壇的主題演講者)",
-      "slides": ">請查看此場次的<a href='/workshop/3'詳細信息。</a>"
+      "description": "本工作室將探討多模態大型語言模型 (Multimodal Large Language Models, MLLMs) 在創新與創業教育與實務中的設計與原型製作的轉型潛力。與會者將運用各種協作式 MLLM 平台，深入實作應用與支架式活動，集思廣益解決問題、回饋導航原型、回饋設計思維步驟與原型，以及篩選客戶與市場契合度與上市策略。",
+      "takeaways": "我們將探討生成式人工智能在案例研究中的應用，涉及人工智能科技、環保/永續科技、生物科技、無人機與機器人、元宇宙與擴增實境/虛擬實境/混合實境 (AR/VR/XR)，抑或是依據與會者的興趣進行更多討論。",
+      "speaker": "<a href='/speakers/speaker/22 Fridolin Ting'>陳世道</a> (兼任本工作室的主持) <br> <a href='/speakers/speaker/7 PaulKim'>Paul Kim </a> (兼任本工作室的主持)",
+      "slides": ">請參閱<a href='/workshop/3'此工作室的詳細資訊</a>。"
     }
   }
 }
