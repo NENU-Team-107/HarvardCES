@@ -8,7 +8,7 @@ export const speakerToKind: Map<number, string> = new Map([
     [5, 'Keynote Speakers'],
     [6, 'Keynote Speakers'],
     [7, 'Keynote Speakers'],
-    [8, 'Keynote Speakers'],
+    [8, 'Invited Speakers'],
     [9, 'Organizing Committee'],
     [10, 'Organizing Committee'],
     [11, 'Organizing Committee'],
@@ -118,21 +118,6 @@ export const keynoteSpeaker: Array<Speaker> = [
                 description: "server.Keynote Speakers.id2.description",
                 title: "server.Keynote Speakers.id2.title",
                 link: '/speakers/speaker/2 RenYouqun'
-            }
-        }
-    },
-    {
-        id: 8,
-        name: "server.Keynote Speakers.id8.name",
-        kind: "Keynote Speakers",
-        inc: "server.Keynote Speakers.id8.inc",
-        photo: "./assets/avatars/Jonathon Ritcher.png",
-        activateDate: new Date("2025-05-09"),
-        bio: {
-            details: {
-                description: "server.Keynote Speakers.id8.description",
-                title: "server.Keynote Speakers.id8.title",
-                link: '/speakers/speaker/8 Jonathon Ritcher'
             }
         }
     },
@@ -448,7 +433,21 @@ export const invitedSpeakers: Array<Speaker> = [
             }
         }
     },
-
+    {
+        id: 8,
+        name: "server.Keynote Speakers.id8.name",
+        kind: "Keynote Speakers",
+        inc: "server.Keynote Speakers.id8.inc",
+        photo: "./assets/avatars/Jonathon Ritcher.png",
+        activateDate: new Date("2025-05-09"),
+        bio: {
+            details: {
+                description: "server.Keynote Speakers.id8.description",
+                title: "server.Keynote Speakers.id8.title",
+                link: '/speakers/speaker/8 Jonathon Ritcher'
+            }
+        }
+    },
 ]
 
 export const SubSymposiumPoster: Array<Poster> = [
