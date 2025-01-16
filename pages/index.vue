@@ -140,13 +140,13 @@ onMounted(() => {
         <Title :titleMap="title.intro" />
         <div class="md:text-lg text-sm md:pl-10 px-5">
           <div v-html="$t('Symposium.Intro')" class="text-justify indent-8"></div>
-          <div class="flex mt-4">
+          <!-- <div class="flex mt-4">
             <ULink to="/symposium/introduction"
               class="italic font-semibold transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
               {{ $t("Symposium.Click") }}
               <font-awesome icon="fa-solid fa-arrow-right" />
             </ULink>
-          </div>
+          </div> -->
         </div>
       </div>
 
