@@ -118,7 +118,50 @@
       "link": "👆 Link to the official Harvard CES website"
     },
     "New MA Program": {
-      "name" : "New MA Program"
+      "name": "New MA Program",
+      "title": "Master of Arts in Emerging Technology for Future Workforce [MA(ETFW)]",
+      "Programme Leader": {
+        "title": "Programme Leader",
+        "name": "Prof. Wang Minjuan "
+      },
+      "Associate Programme Leader": {
+        "title": "Associate Programme Leader",
+        "name": "Dr. Yang Yin Nicole "
+      },
+      "Enquiry": {
+        "title": "Enquiry",
+        "content": "Interested applicants please submit your application via EdUHK Online Application Systems.<br>Prior to your submission, please visit<a href='https://www.eduhk.hk/acadprog/postgrad.html'class='hover:text-green-800 text-orange-500 underline'> https://www.eduhk.hk/acadprog/postgrad.html </a>for detailed application and admission information.<div class='font-bold text-gray-600 my-2'>Email us：</div><div class='text-orange-500 underline hover:text-green-800'><a href='mailto:GIETfuture&#64;eduhk.hk'>GIETfuture&#64;eduhk.hk</a></div>"
+      },
+      "Medium of Instruction": {
+        "name": "Medium of Instruction",
+        "content": "Putonghua"
+      },
+      "Tuition Fee": {
+        "name": "Tuition Fee",
+        "fee": "HK$168,000"
+      },
+      "Fellowships Scheme": {
+        "name": "Fellowships Scheme",
+        "content": "Outstanding candidates will be considered for fellowship."
+      },
+      "Entrance Requirements": {
+        "name": "Entrance Requirements",
+        "condition1": "Applicants should normally hold a recognized bachelor's degree or equivalent. Shortlisted applicants may be required to attend an interview.",
+        "CLE": {
+          "condition": "Applicants who obtained a bachelor's degree from an institution outside of Hong Kong, Mainland China, Taiwan, and Macau should have attained scores in one of the following Chinese Language or Chinese-related examinations:",
+          "condition1": "A score of 110 in the Joint Entrance Examination for Universities in the People's Republic of China (JEE / Gaokao) (full marks 150); ",
+          "condition2": "Other equivalent qualifications on a case-by-case basis. "
+        },
+        "ELE": {
+          "condition": "Applicants whose entrance qualification is obtained from an institution in a non-English speaking system should normally fulfil one of the following minimums.",
+          "following": "English proficiency requirements: ",
+          "condition1": "Overall score of IELTS 5.5 (academic version); ",
+          "condition2": "TOEFL score of 59 (internet-based test); ",
+          "condition3": "Band 6 in the College English Test (CET) with a total score of 430; ",
+          "condition4": "Grade C or above in GCSE/GCE O-Level English; GCSE/GCE O-level;",
+          "condition5": "Other equivalent qualifications on a case-by-case basis. "
+        }
+      }
     }
   },
   "pSession": {
@@ -427,7 +470,7 @@
     "journalsHost": "EiCs of leading journals in the field of teaching, training and technology",
     "EduAI": "Leveraging Collaborative Generative AI for Design and Prototyping in Innovation and Entrepreneurship Education",
     "EduAIHost": "EdUHK and Stanford"
-  }, 
+  },
   "workshop page": {
     "description": "Description",
     "takeaways": "Key Takeaways",

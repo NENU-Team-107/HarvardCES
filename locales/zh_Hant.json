@@ -110,7 +110,23 @@
       "president": "教大擁有濃厚的研究氛圍，在教育及新拓展領域的研究實力不斷提升，例如環境管理、心理學，以及語言學及語文研究等。在大學教育資助委員會最新公布的研究評審工作結果中，本校多個學科的研究成果獲評為「世界領先」及「國際卓越」水平，成績令人鼓舞。教大學者亦榮膺多項國際殊榮，印證本校積極融匯知識及科技，貢獻社會。\n\n為發揮跨學科的協同效應，教大已成立兩所新學院，分別為「教育發展與創新學院」（AEDI）及「應用政策研究及教育未來學院」（AAPSEF）。這兩所學院將發展成為卓越樞紐，進一步擴大教大在香港乃至全球的研究影響力。\n\n教大的學習和研究機會豐富多姿，歡迎大家進一步探索。\n\n李子建教授\n太平紳士\n校長暨課程與教學講座教授",
       "link": "瞭解更多"
     },
-    "HarvardCES": ""
+    "HarvardCES": "",
+    "New MA Program": {
+      "name": "New MA Program",
+      "title": "新興科技賦能的未來人力文學碩士",
+      "Programme Leader": {
+        "title": "課程主任",
+        "name": "王敏娟教授"
+      },
+      "Associate Programme Leader": {
+        "title": "課程副主任",
+        "name": "楊茵博士"
+      },
+      "Enquiry": {
+        "title": "查詢",
+        "content": "有意申請者請通過香港教育大學線上申請系統提交申請。<br>在提交申請前，請訪問<a href='https://www.eduhk.hk/acadprog/postgrad.html'class='hover:text-green-800 text-orange-500 underline'>https://www.eduhk.hk/acadprog/postgrad.html</a>以獲得詳細的申請和錄取資訊。<div class='font-bold text-gray-600 my-2'>聯繫我們：</div><div class='text-orange-500 underline hover:text-green-800'><font-awesome icon='fa-solid fa-envelope' /><a href='mailto:GIETfuture&#64;eduhk.hk'>GIETfuture&#64;eduhk.hk</a></div>"
+      }
+    }
   },
   "pSession": {
     "sub-symposium": "分論壇主題研究演講",

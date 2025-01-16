@@ -117,6 +117,22 @@
       "Introduction": "哈佛中国教育论坛成立于 2010 年，是哈佛教育学院的官方学生组织，也是美国顶尖高等学府中对中国教育关注度最高、影响力最大的平台，已汇聚 4 万余人的社交媒体关注度。一年一度的论坛旨在连接中美教育实践者、学者、政策制定者及各界领袖精英，开展教育领域前沿的学术探讨并支持观点交锋、成果展示、以及教育实践。论坛往届嘉宾包括：澳大利亚前总理陆克文 (Kevin Rudd)、哈佛大学费正清中国研究中心前所⻓柯伟林 (William Kirby)、《邓小平时代》作者傅高义 (Ezra Vogel)、民进中央副主席朱永新、波士顿市长吴弭、故宫博物院长单霁翔等诸多高校、教育行业中的思想行动领袖。在哈佛中国教育论坛成立十五年之际，我们很荣幸能持续引领新的教育探索，把跨越文化的教育内容带给数十万名世界各地的观众。",
       "Intro": "哈佛CES介绍",
       "link": "👆 哈佛CES官网链接"
+    },
+    "New MA Program": {
+      "name": "New MA Program",
+      "title": "新兴科技赋能的未来人力文学硕士",
+      "Programme Leader": {
+        "title": "课程主任",
+        "name": "王敏娟教授"
+      },
+      "Associate Programme Leader": {
+        "title": "课程副主任",
+        "name": "杨茵博士"
+      },
+      "Enquiry": {
+        "title": "查询",
+        "content": "有意申请者请通过香港教育大学线上申请系统提交申请。<br>在提交申请前，请访问<a href='https://www.eduhk.hk/acadprog/postgrad.html'class='hover:text-green-800 text-orange-500 underline'>https://www.eduhk.hk/acadprog/postgrad.html</a>以获得详细的申请和录取资讯。<div class='font-bold text-gray-600 my-2'>联系我们：</div><div class='text-orange-500 underline hover:text-green-800'><font-awesome icon='fa-solid fa-envelope' /><a href='mailto:GIETfuture&#64;eduhk.hk'>GIETfuture&#64;eduhk.hk</a></div>"
+      }
     }
   },
   "pSession": {

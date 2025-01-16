@@ -49,7 +49,7 @@ export default defineNuxtConfig({
   fontawesome: {
     icons: {
       solid: [
-        'arrow-right', 'xmark', 'arrow-left', 'angle-up', 'angle-down', 'fa-c', 'fa-h', 'fa-e', 'fa-s', 'fa-k', 'fa-d', 'fa-u', 'fa-globe'
+        'arrow-right', 'xmark', 'arrow-left', 'angle-up', 'angle-down', 'fa-c', 'fa-h', 'fa-e', 'fa-s', 'fa-k', 'fa-d', 'fa-u', 'fa-globe', 'fa-envelope', 'fa-circle-right', 'fa-circle'
       ]
     }
   },
