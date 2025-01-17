@@ -64,7 +64,7 @@ const isHover = ref<boolean[]>([false, false])
         <div class="flex flex-col text-justify mx-5">
           <div class="flex flex-col justify-center items-center py-3">
             <div v-for="item in contact" class="flex flex-row w-full py-2 ">
-              <div class=" flex text-end justify-items-end items-start w-2/6 md:w-1/6 md:mr-3">
+              <div class=" flex text-end justify-items-end items-start w-3/6 md:w-2/6 md:mr-3">
                 {{ $t(item.before) }}:
               </div>
               <div class="justify-self-start col-span-2 flex-1 text-center">
