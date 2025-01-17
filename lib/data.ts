@@ -7,7 +7,7 @@ export const speakerToKind: Map<number, string> = new Map([
     [4, 'Keynote Speakers'],
     [5, 'Keynote Speakers'],
     [6, 'Keynote Speakers'],
-    [7, 'Keynote Speakers'],
+    [7, 'Organizing Committee'],
     [8, 'Invited Speakers'],
     [9, 'Organizing Committee'],
     [10, 'Organizing Committee'],
@@ -58,21 +58,6 @@ export const keynoteSpeaker: Array<Speaker> = [
                 description: "server.Keynote Speakers.id9.description",
                 title: "server.Keynote Speakers.id9.title",
                 link: '/speakers/speaker/17 TinaGrotzer'
-            }
-        }
-    },
-    {
-        id: 7,
-        name: "server.Keynote Speakers.id7.name",
-        kind: "Keynote Speakers",
-        inc: "server.Keynote Speakers.id7.inc",
-        photo: "./assets/avatars/Paul Kim.png",
-        activateDate: new Date("2025-05-09"),
-        bio: {
-            details: {
-                description: "server.Keynote Speakers.id7.description",
-                title: "server.Keynote Speakers.id7.title",
-                link: '/speakers/speaker/7 PaulKim'
             }
         }
     },
@@ -257,6 +242,21 @@ export const organizingCommittee: Array<Speaker> = [
                 description: "server.Invited Speakers.id5.description",
                 title: "server.Invited Speakers.id5.title",
                 link: '/speakers/speaker/21 LI HuiPhilip'
+            }
+        }
+    },
+    {
+        id: 7,
+        name: "server.Keynote Speakers.id7.name",
+        kind: "Keynote Speakers",
+        inc: "server.Keynote Speakers.id7.inc",
+        photo: "./assets/avatars/Paul Kim.png",
+        activateDate: new Date("2025-05-09"),
+        bio: {
+            details: {
+                description: "server.Keynote Speakers.id7.description",
+                title: "server.Keynote Speakers.id7.title",
+                link: '/speakers/speaker/7 PaulKim'
             }
         }
     },
