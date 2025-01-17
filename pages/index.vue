@@ -181,7 +181,7 @@ onMounted(() => {
               <div class="font-bold md:text-2xl text-xl md:pl-10 ">{{ $t("Organised by") }}</div>
               <br>
               <div class="md:w-4/5 w-full justify-self-center text-center md:text-2xl text-xl font-semibold ">
-                <span v-html="$t('Host.Details.Name').replace(/\n/g, '<br>')" />
+                <span>{{ $t("EduHK Full") }}</span>
               </div>
             </div>
 
