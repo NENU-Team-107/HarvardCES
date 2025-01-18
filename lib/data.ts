@@ -598,10 +598,10 @@ export const routerArray: Array<RouterItem> = [
                 name: 'Harvard CES',
                 path: '/contact/ces'
             },
-            // {
-            //     name: "New MA Program",
-            //     path: "/contact/ma_program"
-            // }
+            {
+                name: "New MA Program",
+                path: "/contact/program"
+            }
         ]
     }
 ]
