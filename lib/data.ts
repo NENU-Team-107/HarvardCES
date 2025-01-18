@@ -28,7 +28,8 @@ export const speakerToKind: Map<number, string> = new Map([
     [25,  'Invited Speakers'],
     [26,  'Invited Speakers'],
     [27,  'Organizing Committee'],
-    [28,  'Organizing Committee']
+    [28,  'Organizing Committee'],
+    [29,  'Organizing Committee']
 ]);
 
 export const keynoteSpeaker: Array<Speaker> = [
@@ -258,6 +259,21 @@ export const organizingCommittee: Array<Speaker> = [
                 description: "server.Invited Speakers.id5.description",
                 title: "server.Invited Speakers.id5.title",
                 link: '/speakers/speaker/21 LI HuiPhilip'
+            }
+        }
+    },
+    {
+        id: 29,
+        name: "server.Invited Speakers.id1.name",
+        kind: "Organizing Committee",
+        inc: "server.Invited Speakers.id1.inc",
+        photo: "./assets/avatars/John Clifford Mitchell.png",
+        activateDate: new Date("2025-05-09"),
+        bio: {
+            details: {
+                description: "server.Invited Speakers.id1.description",
+                title: "server.Invited Speakers.id1.title",
+                link: '/speakers/speaker/29 John Clifford Mitchell'
             }
         }
     },
