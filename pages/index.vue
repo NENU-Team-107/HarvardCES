@@ -89,7 +89,20 @@ const fetchOrganize = async () => {
   }
 }
 
-const showMore = ref(false)
+const pageRef = ref<HTMLElement | null>(null)
+// const handleScroll = (event: WheelEvent) => {
+//   if (!pageRef.value) return;
+//   const sections = pageRef.value?.querySelectorAll('.section') || [];
+//   let currentSection = Array.from(sections).findIndex(section => section.getBoundingClientRect().top >= 0);
+//   if (event.deltaY > 0) {
+//     currentSection = Math.min(currentSection + 1, sections.length - 1);
+//   } else {
+//     currentSection = Math.max(currentSection - 1, 0);
+//   }
+//   sections[currentSection].scrollIntoView({
+//     behavior: 'smooth' // 平滑滚动
+//   });
+// }
 
 const KeynoteSpeakers = computed(() => {
   return keyspeakersList.value.filter((speaker) => {
@@ -127,14 +140,16 @@ onMounted(() => {
 
 </script>
 
-<template>
-  <div class="w-full flex flex-col justify-center items-center relative my-10 pt-24">
+<style scoped></style>
 
-    <div class="w-full justify-center items-center justify-self-center ">
+<template>
+  <div class="w-full h-fit flex flex-col justify-center items-center relative pt-24 ">
+
+    <div class="w-full flex mx-auto justify-center items-center justify-self-center section">
       <CoverImage />
     </div>
 
-    <div class="md:my-10 my-12 flex flex-col md:w-10/12 w-full">
+    <div class="md:my-10 my-12 flex flex-col md:w-10/12 w-full section">
       <div class="bg-white/80 md:p-10 p-1">
         <Title :titleMap="title.intro" />
         <div class="md:text-lg text-sm md:pl-10 px-5">
