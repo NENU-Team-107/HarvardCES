@@ -3,8 +3,10 @@ import type { SwiperItem } from '~/lib/model';
 import Loading from '~/components/common/Loading.vue';
 
 const slides = ref<SwiperItem[]>([
+  { src: "img/poster/cover/victories.jpg", },
   { src: "img/poster/cover/zh-Hans.jpg", },
-  { src: "img/poster/cover/zh-Hant.jpg", }
+  { src: "img/poster/cover/zh-Hant.jpg", },
+  { src: "img/poster/cover/eduhk.jpg", }
 ]);
 
 const pending = ref(true);

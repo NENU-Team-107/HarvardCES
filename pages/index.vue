@@ -11,17 +11,23 @@ import type { Speaker, SwiperItem } from '~/lib/model';
 const { t } = useI18n()
 
 const logoList = ref([
+  // {
+  //   label: "Collaborator",
+  //   path: "img/logo/co-iLRNLogo.png",
+  //   link: "https://www.immersivelrn.org/",
+  //   height: 12,
+  // },
+  // {
+  //   label: "Collaborator",
+  //   path: "img/logo/co-IEEE-TLTlogo.png",
+  //   link: "https://ieee-edusociety.org/publication/about-publications/tlt",
+  //   height: 16,
+  // },
   {
     label: "Collaborator",
-    path: "img/logo/co-iLRNLogo.png",
-    link: "https://www.immersivelrn.org/",
+    path: "img/logo/co-iFLYTEKlogo.png",
+    link: "https://www.iflytek.com/cn/",
     height: 12,
-  },
-  {
-    label: "Collaborator",
-    path: "img/logo/co-IEEE-TLTlogo.png",
-    link: "https://ieee-edusociety.org/publication/about-publications/tlt",
-    height: 16,
   },
   {
     label: "Collaborator",
@@ -29,18 +35,12 @@ const logoList = ref([
     link: "https://cogskl.iflytek.com/",
     height: 16,
   },
-  {
-    label: "Collaborator",
-    path: "img/logo/co-ERCELlogo.jpg",
-    link: "",
-    height: 18,
-  },
-  {
-    label: "Collaborator",
-    path: "img/logo/co-iFLYTEKlogo.png",
-    link: "https://www.iflytek.com/cn/",
-    height: 12,
-  },
+  // {
+  //   label: "Collaborator",
+  //   path: "img/logo/co-ERCELlogo.jpg",
+  //   link: "",
+  //   height: 18,
+  // },
   {
     label: "Collaborator",
     path: "img/logo/co-MOElogo.png",
@@ -51,12 +51,14 @@ const logoList = ref([
 
 const title = ref({
   intro: "Symposium.Title",
-  speaker: "Keynote Speakers",
+  speaker: "Keynote Speakers Index",
   logo: "Organisers and Partners",
   organisers: "Organizing Committee"
   // workshop: "Activities"
   //   workshop: "Session"
 })
+
+const chosenKeynote = [3, 17, 7, 1, 24, 2]
 
 const keyspeakersList = ref<Speaker[]>([])
 const organizeList = ref<Speaker[]>([])
@@ -94,7 +96,9 @@ const toggleShowMore = () => {
 }
 
 const KeynoteSpeakers = computed(() => {
-  return showMore.value ? keyspeakersList.value : keyspeakersList.value.slice(0, 6)
+  return keyspeakersList.value.filter((speaker) => {
+    return chosenKeynote.includes(speaker.id)
+  })
 })
 
 onMounted(() => {
@@ -130,8 +134,7 @@ onMounted(() => {
 <template>
   <div class="w-full flex flex-col justify-center items-center relative my-10 pt-24">
 
-    <div
-      class="w-full justify-center items-center justify-self-center  bg-gradient-to-r from-cover-left from-30% via-rose-400 via-50% to-cover-right to-70%  min-h-2/5">
+    <div class="w-full justify-center items-center justify-self-center ">
       <CoverImage />
     </div>
 
@@ -157,6 +160,7 @@ onMounted(() => {
             <SpeakersIntroduction :speakers="speaker" />
           </div>
         </div>
+        <!-- TODO 去除按钮，把 Show More Keynote 变成超链接-->
         <div v-if="keyspeakersList.length > 6" class="flex justify-center mt-4">
           <button @click="toggleShowMore" class="text-blue-500 hover:text-blue-700 ">
             <span v-if="showMore">
@@ -165,7 +169,7 @@ onMounted(() => {
             </span>
             <span v-else>
               <font-awesome icon="fa-solid fa-angle-down" />
-              {{ $t("Show More") }}
+              {{ $t("Show More Keynote") }}
             </span>
           </button>
         </div>

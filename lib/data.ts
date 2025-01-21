@@ -94,6 +94,21 @@ export const keynoteSpeaker: Array<Speaker> = [
         }
     },
     {
+        id: 24,
+        name: "server.Invited Speakers.id1.name",
+        kind: "Keynote Speakers",
+        inc: "server.Invited Speakers.id1.inc",
+        photo: "./assets/avatars/John Clifford Mitchell.png",
+        activateDate: new Date("2025-05-09"),
+        bio: {
+            details: {
+                description: "server.Invited Speakers.id1.description",
+                title: "server.Invited Speakers.id1.title",
+                link: '/speakers/speaker/24 John Clifford Mitchell'
+            }
+        }
+    },
+    {
         id: 6,
         name: "server.Keynote Speakers.id6.name",
         kind: "Keynote Speakers",
@@ -150,21 +165,6 @@ export const keynoteSpeaker: Array<Speaker> = [
                 description: "server.Keynote Speakers.id4.description",
                 title: "server.Keynote Speakers.id4.title",
                 link: '/speakers/speaker/4 ShijinWang'
-            }
-        }
-    },
-    {
-        id: 24,
-        name: "server.Invited Speakers.id1.name",
-        kind: "Keynote Speakers",
-        inc: "server.Invited Speakers.id1.inc",
-        photo: "./assets/avatars/John Clifford Mitchell.png",
-        activateDate: new Date("2025-05-09"),
-        bio: {
-            details: {
-                description: "server.Invited Speakers.id1.description",
-                title: "server.Invited Speakers.id1.title",
-                link: '/speakers/speaker/24 John Clifford Mitchell'
             }
         }
     },

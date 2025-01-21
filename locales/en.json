@@ -38,6 +38,7 @@
   "Showcase-2": "/img/poster/Showcase-en-2.png",
   "Collapse": "Collapse",
   "Show More": "Show More",
+  "Show More Keynote": "View All Keynote Speakers",
   "Prev": "Prev",
   "Next": "Next",
   "PopWindow": {
@@ -48,6 +49,7 @@
   "Invited Speakers Title": "Invited Speakers(Workshop and Symposium)",
   "Guest of Honor": "Guest of Honor",
   "Keynote Speakers": "Keynote Speakers",
+  "Keynote Speakers Index": "Featuring Speakers From",
   "Track Workshop Chair": "Track Workshop Chair",
   "Organizing Committee": "Organizing Committee",
   "Media": {
@@ -68,7 +70,7 @@
     }
   },
   "Assisted": "Assisted by Department of Mathematics and Information Technology, EdUHK",
-  "Disclaimer": "<span class=\"text-start\"><strong><i>Disclaimer:</i></strong></span><i>The ideas and opinions expressed in this  symposium are those of the speakers;</i><br><span class=\"ml-20\"><i>they are not necessarily those of UNESCO and do not commit the Organization.</i></span>",
+  "Disclaimer": "<span class=\"text-start\"><strong><i>Disclaimer:</i></strong></span><i>The ideas and opinions expressed in this symposium are those of the speakers;</i><br><span class=\"ml-20\"><i>they are not necessarily the positions and viewpoints of UNESCO, The Education University of Hong Kong, and all partners and sponsors.</i></span>",
   "Symposium": {
     "Topic": "Knowledge Feast Where Great Minds Meet!",
     "Name": "Joint Symposium on Emerging Technologies and Future Talents",
@@ -79,7 +81,7 @@
     "Details": "The Joint Symposium on Emerging Technologies and Future Talents, collaboratively organized by The China Education Symposium at Harvard University (CES) and the Global Institute for Emerging Technologies (GIET) at The Education University of Hong Kong (EdUHK), will be a three-day event from May 8-10, 2025. It will delve into the integration of new technologies such as AI, the Metaverse, and Intelligent Reality within teaching, training, and talent development.\n\n<div class=\"md:text-lg text-sm  indent-8\">The Symposium will feature diverse sessions, including workshops on developing AI tools and ethical AI practices, as well as keynote addresses and panel discussions that highlight AI-driven personalized learning, instructional design, and the cultivation of creativity and futuristic thinking. Participants will explore a wide range of topics through parallel sessions focusing on AI, the Metaverse, computing education, research analytics, education futures, and talent development.</div>\n<div class=\"md:text-lg text-sm  indent-8\">The China Education Symposium, initiated by the Harvard Graduate School of Education in 2010, fosters meaningful dialogue and collaboration among educators, scholars, policymakers, and leaders from China and the United States. EdUHK has become the largest tertiary institution specialized in teacher education in Hong Kong and is recognized internationally for its leadership in education. It is ranked 6th globally in Education and Educational Research in the 2024-2025 U.S. News & World Report’s Best Global Universities Rankings. The 16th China Education Symposium in 2025, besides being held at Harvard, will also collaborate with EdUHK to create a groundbreaking event known as the Joint Symposium on Emerging Technologies and Future Talents. Knowledge knows no bounds! This is a trail-blazing attempt to enhance cooperation between prestigious Chinese and American universities and leading industries in technology and talent development, so as to expand the influence of this iconic symposium of Harvard’s Graduate School of Education to Asia.</div>\n<div class=\"md:text-lg text-sm  indent-8\">Supported by President John Chi Kin Lee of EdUHK and The CES, the Symposium boasts an impressive roster of speakers from globally recognized institutions such as Harvard, Stanford, EdUHK and Peking University. It also features technology and education policymakers and experts from Mainland China and Hong Kong SAR to deliver keynote and plenary speeches. We are honored to welcome Presidents from prestigious universities and professors from the Harvard Graduate School of Education and The Education University of Hong Kong to deliver keynote speeches. Each speaker will contribute a rich blend of current insights and research advancements in emerging technologies, education, and talent cultivation. The CES team of Harvard will also conduct a thematic workshop and interact with students and staff from EdUHK and beyond before or after the Symposium.</div>\n<div class=\"md:text-lg text-sm  indent-8\">This joint Symposium will not only be a feast of knowledge, but also a collision of sparks where diverse thoughts converge across different times and spaces!</div>"
   },
   "Organised by": "Organized by:",
-  "In collaboration with": "In collaboration with:",
+  "In collaboration with": "Sponsored by:",
   "Organisers and Partners": "Organizers and Partners",
   "Symposium Introduction": "Symposium Introduction",
   "Symposium Location": "Symposium Location",
@@ -292,9 +294,9 @@
     },
     "Invited Speakers": {
       "id1": {
-        "description": "John Clifford Mitchell is professor of computer science and by courtesy proffessor of  electrical engineering at Stanford University. He has published in the area of programming language theory and computer security. John C. Mitchell was the Vice Provost for Teaching and Learning at Stanford University, the Mary and Gordon Crary Family Professor in Computer Science and Electrical Engineering at Stanford University, co-director of the Stanford Computer Security Lab, and Professor (by courtesy) of Education. He is a member of the steering committee for Stanford University's Cyber Initiative. Mitchell has been Vice Provost at Stanford University since 2012, first as the inaugural Vice Provost for Online Learning and now in a broader role for Teaching and Learning. Under Mitchell's direction, the Office of the Vice Provost for Teaching and Learning (VPTL) is advancing teaching and learning through faculty-driven initiatives and research, transforming education in Stanford's classrooms and beyond.",
+        "description": "John C. Mitchell is the Mary and Gordon Crary Family Professor, Professor of Computer Science, and by courtesy Professor of Electrical Engineering and Professor of Education at Stanford University. He was previously Stanford Vice Provost for Teaching and Learning and Chair of the Computer Science Department. Mitchell’s research focuses on programming languages, computer security and privacy, blockchain, machine learning, and technology for education. Mitchell’s first research project in online learning started in 2009, when he and six undergraduate students built Stanford CourseWare, an innovative platform that expanded to support interactive video and discussion. CourseWare served as the foundation for initial flipped classroom experiments at Stanford and helped inspire the first massive open online courses (MOOCs) from Stanford. As Co-Director of the Lytics Lab, Carta Lab, and Pathways Lab, he has worked to improve educational outcomes through data-driven research and iterative design. His current education-related research projects are focused on collaborative learning and the use of generative AI. He currently serves as Faculty Director of the Hasso Plattner Institute of Design, which is also known as the Stanford d.school.",
         "name": "Professor John Clifford Mitchell",
-        "title": "Mary and Gordon Crary Family Professor <br> Professor of Computer Science and (by courtesy) Electrical Engineering and Education <br> Stanford University",
+        "title": "Mary and Gordon Crary Family Professor <br> Professor of Computer Science, Professor of Education and by Courtesy <br> Professor of Electrical Engineering <br> Stanford University",
         "inc": "Stanford University"
       },
       "id2": {
