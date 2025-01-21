@@ -91,10 +91,6 @@ const fetchOrganize = async () => {
 
 const showMore = ref(false)
 
-const toggleShowMore = () => {
-  showMore.value = !showMore.value
-}
-
 const KeynoteSpeakers = computed(() => {
   return keyspeakersList.value.filter((speaker) => {
     return chosenKeynote.includes(speaker.id)
@@ -162,16 +158,12 @@ onMounted(() => {
         </div>
         <!-- TODO 去除按钮，把 Show More Keynote 变成超链接-->
         <div v-if="keyspeakersList.length > 6" class="flex justify-center mt-4">
-          <button @click="toggleShowMore" class="text-blue-500 hover:text-blue-700 ">
-            <span v-if="showMore">
-              <font-awesome icon="fa-solid fa-angle-up" />
-              {{ $t("Collapse") }}
-            </span>
-            <span v-else>
-              <font-awesome icon="fa-solid fa-angle-down" />
+          <NuxtLink :to="'/speakers/keynote'" class="text-blue-600 hover:text-green-800/80 font-semibold">
+            <span class="italic">
               {{ $t("Show More Keynote") }}
+              <font-awesome icon="fa-solid fa-angle-right" />
             </span>
-          </button>
+          </NuxtLink>
         </div>
       </div>
 
