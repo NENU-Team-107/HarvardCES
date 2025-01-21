@@ -43,18 +43,18 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="flex w-full items-center justify-center justify-self-center duration-200">
+  <div class="flex w-full items-center justify-center justify-self-center duration-200 mt-12">
     <div v-if="pending" class="justify-self-center">
       <Loading />
     </div>
-    <div v-else class="relative w-full flex justify-center items-center h-[900px] overflow-hidden">
-      <div class="absolute top-0 left-0 inset-0">
+    <div v-else class="relative w-full flex justify-center items-center h-[800px] overflow-hidden">
+      <div class="absolute top-0 left-0 inset-0 h-[800px] overflow-hidden">
         <div
-          class="bg-center bg-cover blur-sm opacity-90 z-10 bg-fixed  flex justify-center item-center h-[895px] overflow-hidden">
+          class="bg-center bg-cover blur-sm opacity-90 z-10 bg-fixed  flex justify-center item-center">
           <UCarousel ref="coverbgRef" :items="slides"
             :ui="{ item: 'basis-full lg:basis-full flex justify-center item-center' }" indicators>
             <template #default="{ item }">
-              <NuxtImg :src="item.src" fit="contain" draggable="false" class="w-full overflow-hidden" />
+              <NuxtImg :src="item.src" fit="cover" draggable="false" class="w-full overflow-hidden" />
             </template>
           </UCarousel>
         </div>
@@ -62,7 +62,7 @@ onMounted(() => {
       <UCarousel ref="coverRef" :items="slides"
         :ui="{ item: 'basis-full lg:basis-full flex justify-center item-center' }" indicators>
         <template #default="{ item }">
-          <NuxtImg :src="item.src" fit="contain" draggable="false" class="w-11/12 box-shadow" />
+          <NuxtImg :src="item.src" fit="cover" draggable="false" class="w-11/12 box-shadow" />
         </template>
       </UCarousel>
     </div>
