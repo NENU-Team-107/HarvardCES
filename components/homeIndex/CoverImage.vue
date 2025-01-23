@@ -26,7 +26,6 @@ const checkImagesLoaded = () => {
 
 const coverRef = ref();
 const coverbgRef = ref();
-const bgSrc = ref("");
 onMounted(() => {
   checkImagesLoaded();
   setInterval(() => {
@@ -47,18 +46,7 @@ onMounted(() => {
     <div v-if="pending" class="justify-self-center">
       <Loading />
     </div>
-    <div v-else class="relative w-full flex justify-center items-center h-[800px] overflow-hidden">
-      <div class="absolute top-0 left-0 inset-0 h-[800px] overflow-hidden">
-        <div
-          class="bg-center bg-cover blur-sm opacity-90 z-10 bg-fixed  flex justify-center item-center">
-          <UCarousel ref="coverbgRef" :items="slides"
-            :ui="{ item: 'basis-full lg:basis-full flex justify-center item-center' }" indicators>
-            <template #default="{ item }">
-              <NuxtImg :src="item.src" fit="cover" draggable="false" class="w-full overflow-hidden" />
-            </template>
-          </UCarousel>
-        </div>
-      </div>
+    <div v-else class="w-4/5 flex justify-center items-center overflow-hidden mt-4">
       <UCarousel ref="coverRef" :items="slides"
         :ui="{ item: 'basis-full lg:basis-full flex justify-center item-center' }" indicators>
         <template #default="{ item }">

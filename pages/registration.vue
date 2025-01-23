@@ -120,7 +120,7 @@ watchEffect(() => {
 
                     <div class="flex justify-center items-center w-full self-center">
                         <UTable
-                            :ui="{ td: { size: 'md:text-base text-sm text-center', color: 'text-black' }, th: { size: 'md:text-base text-base text-center', } }"
+                            :ui="{ td: { size: 'md:text-base text-sm text-center', color: 'text-black', padding: 'py-1' }, th: { size: 'md:text-base text-base text-center', } }"
                             :rows="track" :columns="trackColumns">
                             <template #banquet-data="{ row }">
                                 <div v-if="row.banquet === 1">
@@ -161,7 +161,7 @@ watchEffect(() => {
 
                     <div class="flex justify-center items-center w-full self-center border-black border-1">
                         <UTable
-                            :ui="{ td: { size: 'md:text-base text-sm text-center', color: 'text-black' }, th: { size: 'md:text-base text-base text-center', } }"
+                            :ui="{ td: { size: 'md:text-base text-sm text-center text-wrap', color: 'text-black', padding: 'px-8 py-3' }, th: { size: 'md:text-base text-base text-center', } }"
                             :rows="ws" :columns="workshopColumns">
                             <template #type-data="{ row }">
                                 <div><span class="text-center">{{ row.type }}</span></div>
@@ -175,7 +175,7 @@ watchEffect(() => {
                         </UTable>
                     </div>
 
-                    <div class="my-5 font-bold text-lg px-5 text-rose-600">
+                    <div class="my-5 font-bold text-lg px-5 text-green-800/90">
                         <div>
                             {{ $t("Register.wsFee") }}
                         </div>
@@ -191,9 +191,9 @@ watchEffect(() => {
             <div class="py-3">
                 <div
                     class="justify-self-center md:text-xl text-sm md:w-1/4 w-1/2 h-full py-5 hover:scale-110 transition-all">
-                    <UButton :ui="{ rounded: 'rounded-full' }" icon="i-ic-round-arrow-forward" size="md" color="rose"
-                        variant="solid" trailing padded to="https://eduhk.au1.qualtrics.com/jfe/form/SV_agWfa1tf9UtiVU2"
-                        target="_blank" block>
+                    <UButton :ui="{ rounded: 'rounded-full', font: 'font-bold font-sans', size: { xl: 'text-xl' } }"
+                        icon="i-ic-round-arrow-forward" size="xl" color="rose" variant="solid" trailing padded
+                        to="https://eduhk.au1.qualtrics.com/jfe/form/SV_agWfa1tf9UtiVU2" target="_blank" block>
                         {{ $t("Register.click") }}
                     </UButton>
                 </div>

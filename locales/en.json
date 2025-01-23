@@ -254,10 +254,10 @@
         "inc": "Nanyang Technological University (NTU), Singapore"
       },
       "id7": {
-        "description": "Dr. Paul Kim (born 1970) is currently a Korean-American Chief Technology Officer and Associate Dean at the Stanford Graduate School of Education and has held this position since 2001. While at Stanford, in addition to teaching graduate level courses in the School of Education, he has been leading projects involving the design of learning technologies, educational research, and community development. Kim leads initiatives involving the design of learning technologies, educational research, and community development. Kim is also working with numerous international organizations to develop mobile empowerment solutions for extremely underserved communities in developing countries. In his recent expeditions to Latin America, Africa, and India, he investigated the effects of highly programmable open-source mobile learning platforms on education programs for literacy, numeracy, and entrepreneurship (e.g., math games, storytelling, and farming simulations).",
+        "description": "Paul Kim is the Founder and President of Seeds of Empowerment, a global social innovation incubator he established in collaboration with Stanford University graduate students in 2004. Currently, he serves as the Chair of the International Expert Committee on Education Technology at the World Bank and advises Lumos Capital, Roble Ventures, and Chegg, Inc. As the former Associate Dean and Chief Technology Officer of Stanford University's Graduate School of Education, Dr. Kim dedicated 24 years to advancing learning technology for marginalized communities worldwide. He also launched the Entrepreneur in Residence (EIR) Program and developed a learning innovation design challenge, serving as an edtech startup incubator for Stanford students. Dr. Kim now focuses on global learning technology and entrepreneurship initiatives in the Eurasian region, including designing advanced learning labs in Beijing centered on smart farming, VR/AI, biotech, and aerospace mobility. He also spearheads a youth entrepreneurship education program with Kazakhstan's Ministry of Science. In addition, he launched an AI-powered student learning journey planner for the Metro School District of Incheon, Korea.",
         "name": "Dr. Paul Kim",
-        "title": "Entrepreneur <br> Former CTO and Associate Dean at the Stanford Graduate School of Education <br> Stanford University",
-        "inc": "Entrepreneur, Stanford University"
+        "title": "World Bank <br> Former Associate Dean at the Stanford Graduate School of Education <br> Stanford University (formerly)",
+        "inc": "World Bank; Stanford University (formerly)"
       },
       "id8": {
         "description": "Dr. Jonathon Richter is focused on creating inclusive and meaningful communities for the emerging field of design, research, and applied understanding of immersive learning experiences to amplify its transformational potential for everyone and our planet. Born and raised in Havre, Montana, Jonathon Richter holds a Bachelor of Arts (B.A.) degree in Psychology (1992), Masters of Education (M.Ed.) degree (1998), and a Doctorate of Education (Ed.D.) degree (2003), each from the University of Montana. Following college, he returned to Havre to start his family and his career as a successful grant writer and project coordinator of educational technology, then later as Assistant Professor of Graduate Education Programs working for Montana State University – Northern in Havre, Montana (2000 – 2005).",
@@ -451,16 +451,16 @@
   "Register": {
     "title": "Registration and Payment",
     "trackTitle": "Registration Fee for the Symposium (9-10 May) ",
-    "workshopTitle": "Registration Fee for the Pre-Symposium Workshop Sessions (8 May, PM)",
+    "workshopTitle": "Registration Fee for Workshop Sessions (8 May, 1-6 PM)",
     "wsName": "Workshop Topic",
     "wsHost": "Host Institution",
-    "wsFee": "The fee for attending any one workshop is USD 40, for any two workshops is USD 60, and for all three workshops is USD 80",
-    "wsLength": "estimated 3 hours",
+    "wsFee": "1 workshop, USD40; 2 workshops, USD60, 3 workshops, USD80",
+    "wsLength": "estimated 1.5-2 hours/each",
     "type": "Personnel Category",
     "banquet": "Whether to Attend Banquet",
     "Banquet": "Banquet (10 May 2025) ticket",
     "fee": "Fee",
-    "student": "Student and K-12 Teacher",
+    "student": "Student, K-12 Teacher and EdUHK staff",
     "non-student": "Non-student (Staff, teachers, working professionals etc.)",
     "virtual": "Virtual Participation",
     "HKD": "HKD",
@@ -473,8 +473,8 @@
     "click": "Registration",
     "Harvard": "Stanford and Harvard",
     "HarvardHost": "Harvard Stanford Innovation Education(for K-12 teachers and students)",
-    "journals": "Writing and Publishing in high-impact journals",
-    "journalsHost": "EiCs of leading journals in the field of teaching, training and technology",
+    "journals": "Writing and Publishing in High-Impact Journals",
+    "journalsHost": "EiCs of Leading Journals (IEEE-TLT, BJET, Peking U Review, Childhood Education)",
     "EduAI": "Leveraging Collaborative Generative AI for Design and Prototyping in Innovation and Entrepreneurship Education",
     "EduAIHost": "EdUHK and Stanford"
   },

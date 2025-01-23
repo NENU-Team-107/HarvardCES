@@ -89,20 +89,7 @@ const fetchOrganize = async () => {
   }
 }
 
-const pageRef = ref<HTMLElement | null>(null)
-// const handleScroll = (event: WheelEvent) => {
-//   if (!pageRef.value) return;
-//   const sections = pageRef.value?.querySelectorAll('.section') || [];
-//   let currentSection = Array.from(sections).findIndex(section => section.getBoundingClientRect().top >= 0);
-//   if (event.deltaY > 0) {
-//     currentSection = Math.min(currentSection + 1, sections.length - 1);
-//   } else {
-//     currentSection = Math.max(currentSection - 1, 0);
-//   }
-//   sections[currentSection].scrollIntoView({
-//     behavior: 'smooth' // 平滑滚动
-//   });
-// }
+const showMore = ref(false)
 
 const KeynoteSpeakers = computed(() => {
   return keyspeakersList.value.filter((speaker) => {
