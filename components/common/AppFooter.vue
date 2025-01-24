@@ -112,12 +112,9 @@ const isHover = ref<boolean[]>([false, false])
                     {{ $t("Media." + item.label + ".Intro") }}
                   </span>
                   <div class="flex justify-center items-center">
-                    <NuxtImg v-if="item.label !== 'Email'" :src="item.image" class="w-20 h-20"></NuxtImg>
+                    <NuxtImg v-if="item.label !== 'Email'" :src="item.image" class="w-24 h-24"></NuxtImg>
                   </div>
                 </div>
-                <span class="flex justify-center items-center text-center">
-                  {{ $t("Media." + item.label + ".Details") }}
-                </span>
               </div>
             </div>
           </div>

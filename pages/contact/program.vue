@@ -67,6 +67,12 @@
                             to="https://www.xiaohongshu.com/user/profile/67662a5c0000000014033ca5?xsec_token=YBU6bQqT_KJEAxG-6Ec00oFjIdUPnOm_f-LQzKlv7B0gs=&xsec_source=app_share&xhsshare=CopyLink&appuid=67662a5c0000000014033ca5&apptime=1737176754&share_id=fe95ee76e8854d9fb2ac71fc1acc30c7 ">
                             小红书账号：EdUHK~GIET~Future。
                         </NuxtLink>
+                        <br>
+                        联系邮箱 <NuxtLink
+                            class="hover:cursor-pointer hover:text-orange-500 hover:scale-110 hover:transition-all  text-green-800 font-bold"
+                            to="mailto:GIETfuture@eduhk.hk">
+                            GIETfuture@eduhk.hk
+                        </NuxtLink>
                     </p>
                     <br>
                     <p>
