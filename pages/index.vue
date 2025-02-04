@@ -139,7 +139,7 @@ onMounted(() => {
     <div class="md:my-10 my-12 flex flex-col md:w-10/12 w-full section">
       <div class="bg-white/80 md:p-10 p-1">
         <Title :titleMap="title.intro" />
-        <div class="md:text-lg text-sm md:pl-10 px-5">
+        <div class="md:text-lg text-sm md:pl-10 px-5 leading-7">
           <div v-html="$t('Symposium.Intro')" class="text-justify indent-8"></div>
           <!-- <div class="flex mt-4">
             <ULink to="/symposium/introduction"
