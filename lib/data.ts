@@ -1,4 +1,4 @@
-import type { Speaker, Poster, RouterItem } from "./model";
+import type { Speaker, Poster, RouterItem, ChairListItem } from "./model";
 
 export const speakerToKind: Map<number, string> = new Map([
     [1, 'Keynote Speakers'],
@@ -25,11 +25,11 @@ export const speakerToKind: Map<number, string> = new Map([
     [22, 'Invited Speakers'],
     [23, 'Invited Speakers'],
     [24, 'Keynote Speakers'],
-    [25,  'Invited Speakers'],
-    [26,  'Invited Speakers'],
-    [27,  'Organizing Committee'],
-    [28,  'Organizing Committee'],
-    [29,  'Organizing Committee']
+    [25, 'Invited Speakers'],
+    [26, 'Invited Speakers'],
+    [27, 'Organizing Committee'],
+    [28, 'Organizing Committee'],
+    [29, 'Organizing Committee']
 ]);
 
 export const keynoteSpeaker: Array<Speaker> = [
@@ -603,5 +603,280 @@ export const routerArray: Array<RouterItem> = [
                 path: "/contact/program"
             }
         ]
+    }
+]
+
+export const ChairList = {
+    "Chair of Parallel session": [
+        {
+            "title": "Chair of Parallel session.Details.line1.title",
+            "name": "Chair of Parallel session.Details.line1.name",
+            "inc": "Chair of Parallel session.Details.line1.inc"
+        },
+        {
+            "title": "Chair of Parallel session.Details.line2.title",
+            "name": "Chair of Parallel session.Details.line2.name",
+            "inc": "Chair of Parallel session.Details.line2.inc"
+        },
+        {
+            "title": "Chair of Parallel session.Details.line3.title",
+            "name": "Chair of Parallel session.Details.line3.name",
+            "inc": "Chair of Parallel session.Details.line3.inc"
+        },
+        {
+            "title": "Chair of Parallel session.Details.line4.title",
+            "name": "Chair of Parallel session.Details.line4.name",
+            "inc": "Chair of Parallel session.Details.line4.inc"
+        },
+        {
+            "title": "Chair of Parallel session.Details.line5.title",
+            "name": "Chair of Parallel session.Details.line5.name",
+            "inc": "Chair of Parallel session.Details.line6.inc"
+        },
+        {
+            "title": "Chair of Parallel session.Details.line7.title",
+            "name": "Chair of Parallel session.Details.line7.name",
+            "inc": "Chair of Parallel session.Details.line7.inc"
+        },
+        {
+            "title": "Chair of Parallel session.Details.line8.title",
+            "name": "Chair of Parallel session.Details.line8.name",
+            "inc": "Chair of Parallel session.Details.line8.inc"
+        },
+    ],
+    "Program Chair": [
+        {
+            "name": "Program Chair.Details.line1.name",
+            "inc": "Program Chair.Details.line1.inc"
+        },
+    ],
+    "Publicity Chair": [
+        {
+            "name": "Publicity Chair.Details.line1.name",
+            "inc": "Publicity Chair.Details.line1.inc"
+        },
+    ],
+    "Registration Chair": [
+        {
+            "name": "Registration Chair.Details.line1.name",
+            "inc": "Registration Chair.Details.line1.inc"
+        },
+    ],
+    "Workshop Chair": [
+        {
+            "name": "Workshop Chair.Details.line1.name",
+            "inc": "Workshop Chair.Details.line1.inc"
+        },
+    ],
+    "Local Chair of Parallel session": [
+        {
+            "name": "Local Chair of Parallel session.Details.line1.name",
+            "inc": "Local Chair of Parallel session.Details.line1.inc"
+        },
+        {
+            "name": "Local Chair of Parallel session.Details.line2.name",
+            "inc": "Local Chair of Parallel session.Details.line2.inc"
+        },
+        {
+            "name": "Local Chair of Parallel session.Details.line3.name",
+            "inc": "Local Chair of Parallel session.Details.line3.inc"
+        },
+        {
+            "name": "Local Chair of Parallel session.Details.line4.name",
+            "inc": "Local Chair of Parallel session.Details.line4.inc"
+        },
+        {
+            "name": "Local Chair of Parallel session.Details.line5.name",
+            "inc": "Local Chair of Parallel session.Details.line5.inc"
+        },
+        {
+            "name": "Local Chair of Parallel session.Details.line6.name",
+            "inc": "Local Chair of Parallel session.Details.line6.inc"
+        },
+        {
+            "name": "Local Chair of Parallel session.Details.line7.name",
+            "inc": "Local Chair of Parallel session.Details.line7.inc"
+        },
+    ],
+    "Workshop Co-Chair": [
+        {
+            "name": "Workshop Co-Chair.Details.line1.name",
+            "inc": "Workshop Co-Chair.Details.line1.inc"
+        },
+    ],
+    "Publicity Co-chair": [
+        {
+            "name": "Publicity Co-chair.Details.line1.name",
+            "inc": "Publicity Co-chair.Details.line1.inc"
+        },
+        {
+            "name": "Publicity Co-chair.Details.line2.name",
+            "inc": "Publicity Co-chair.Details.line2.inc"
+        },
+        {
+            "name": "Publicity Co-chair.Details.line3.name",
+            "inc": "Publicity Co-chair.Details.line3.inc"
+        },
+        {
+            "name": "Publicity Co-chair.Details.line4.name",
+            "inc": "Publicity Co-chair.Details.line4.inc"
+        },
+        {
+            "name": "Publicity Co-chair.Details.line5.name",
+            "inc": "Publicity Co-chair.Details.line5.inc"
+        }
+    ],
+    "Outreach Co-Chair": [
+        {
+            "name": "Outreach Co-Chair.Details.line1.name",
+            "inc": "Outreach Co-Chair.Details.line1.inc"
+        }
+    ],
+    "Logistics Support": [
+        {
+            "name": "Logistics Support.Details.line1.name",
+            "inc": "Logistics Support.Details.line1.inc"
+        }
+    ]
+};
+
+export const ChairListParallel: Array<ChairListItem> = [
+    {
+        "title": "Chair of Parallel session.Details.line1.title",
+        "name": "Chair of Parallel session.Details.line1.name",
+        "inc": "Chair of Parallel session.Details.line1.inc"
+    },
+    {
+        "title": "Chair of Parallel session.Details.line2.title",
+        "name": "Chair of Parallel session.Details.line2.name",
+        "inc": "Chair of Parallel session.Details.line2.inc"
+    },
+    {
+        "title": "Chair of Parallel session.Details.line3.title",
+        "name": "Chair of Parallel session.Details.line3.name",
+        "inc": "Chair of Parallel session.Details.line3.inc"
+    },
+    {
+        "title": "Chair of Parallel session.Details.line4.title",
+        "name": "Chair of Parallel session.Details.line4.name",
+        "inc": "Chair of Parallel session.Details.line4.inc"
+    },
+    {
+        "title": "Chair of Parallel session.Details.line5.title",
+        "name": "Chair of Parallel session.Details.line5.name",
+        "inc": "Chair of Parallel session.Details.line6.inc"
+    },
+    {
+        "title": "Chair of Parallel session.Details.line7.title",
+        "name": "Chair of Parallel session.Details.line7.name",
+        "inc": "Chair of Parallel session.Details.line7.inc"
+    },
+    {
+        "title": "Chair of Parallel session.Details.line8.title",
+        "name": "Chair of Parallel session.Details.line8.name",
+        "inc": "Chair of Parallel session.Details.line8.inc"
+    },
+]
+
+export const ChairListProgram: Array<ChairListItem> = [
+    {
+        "name": "Program Chair.Details.line1.name",
+        "inc": "Program Chair.Details.line1.inc"
+    },
+];
+
+export const ChairListPublicity: Array<ChairListItem> = [
+    {
+        "name": "Publicity Chair.Details.line1.name",
+        "inc": "Publicity Chair.Details.line1.inc"
+    },
+];
+
+export const ChairListRegistration: Array<ChairListItem> = [
+    {
+        "name": "Registration Chair.Details.line1.name",
+        "inc": "Registration Chair.Details.line1.inc"
+    },
+];
+
+export const ChairListWorkshop: Array<ChairListItem> = [
+    {
+        "name": "Workshop Chair.Details.line1.name",
+        "inc": "Workshop Chair.Details.line1.inc"
+    },
+]
+
+export const ChairListLocalParallel: Array<ChairListItem> = [
+    {
+        "name": "Local Chair of Parallel session.Details.line1.name",
+        "inc": "Local Chair of Parallel session.Details.line1.inc"
+    },
+    {
+        "name": "Local Chair of Parallel session.Details.line2.name",
+        "inc": "Local Chair of Parallel session.Details.line2.inc"
+    },
+    {
+        "name": "Local Chair of Parallel session.Details.line3.name",
+        "inc": "Local Chair of Parallel session.Details.line3.inc"
+    },
+    {
+        "name": "Local Chair of Parallel session.Details.line4.name",
+        "inc": "Local Chair of Parallel session.Details.line4.inc"
+    },
+    {
+        "name": "Local Chair of Parallel session.Details.line5.name",
+        "inc": "Local Chair of Parallel session.Details.line5.inc"
+    },
+    {
+        "name": "Local Chair of Parallel session.Details.line6.name",
+        "inc": "Local Chair of Parallel session.Details.line6.inc"
+    },
+    {
+        "name": "Local Chair of Parallel session.Details.line7.name",
+        "inc": "Local Chair of Parallel session.Details.line7.inc"
+    },
+];
+
+export const ChairListWorkshopCo: Array<ChairListItem> = [
+    {
+        "name": "Workshop Co-Chair.Details.line1.name",
+        "inc": "Workshop Co-Chair.Details.line1.inc"
+    },
+]
+
+export const ChairListPublicityCo: Array<ChairListItem> = [
+    {
+        "name": "Publicity Co-chair.Details.line1.name",
+        "inc": "Publicity Co-chair.Details.line1.inc"
+    },
+    {
+        "name": "Publicity Co-chair.Details.line2.name",
+        "inc": "Publicity Co-chair.Details.line2.inc"
+    },
+    {
+        "name": "Publicity Co-chair.Details.line3.name",
+        "inc": "Publicity Co-chair.Details.line3.inc"
+    },
+    {
+        "name": "Publicity Co-chair.Details.line4.name",
+        "inc": "Publicity Co-chair.Details.line4.inc"
+    },
+    {
+        "name": "Publicity Co-chair.Details.line5.name",
+        "inc": "Publicity Co-chair.Details.line5.inc"
+    }
+]
+
+export const ChairListOutreachCo: Array<ChairListItem> = [
+    {
+        "name": "Outreach Co-Chair.Details.line1.name",
+        "inc": "Outreach Co-Chair.Details.line1.inc"
+    }
+]
+
+export const ChairListLogistics: Array<ChairListItem> = [
+    {
+        "name": "Logistics Support.Details.line1.name",
+        "inc": "Logistics Support.Details.line1.inc"
     }
 ]

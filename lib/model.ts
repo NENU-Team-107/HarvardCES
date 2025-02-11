@@ -65,3 +65,9 @@ export interface WorkshopItem {
     speaker: string,
     slides: string,
 }
+
+export interface ChairListItem {
+    title?: string,
+    name: string,
+    inc: string,
+}

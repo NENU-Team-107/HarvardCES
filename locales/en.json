@@ -52,6 +52,179 @@
   "Keynote Speakers Index": "Featuring Speakers From",
   "Track Workshop Chair": "Track Workshop Chair",
   "Organizing Committee": "Organizing Committee",
+  "Chair of Parallel session": {
+    "Name": "Chair of Parallel session",
+    "Details": {
+      "line1": {
+        "title": "Chair of Parallel Session 1",
+        "name": "LU Jijian",
+        "inc": "Hangzhou Normal University"
+      },
+      "line2": {
+        "title": "Chair of Parallel Session 2",
+        "name": "QIAN Chunyu",
+        "inc": "Zhejiang University"
+      },
+      "line3": {
+        "title": "Chair of Parallel Session 3",
+        "name": "ZHANG Yang",
+        "inc": "Shaanxi Normal University"
+      },
+      "line4": {
+        "title": "Chair of Parallel Session 4",
+        "name": "YIN Minghao",
+        "inc": "Northeast Normal University"
+      },
+      "line5": {
+        "title": "Chair of Parallel Session 5",
+        "name": "WU Yonghe",
+        "inc": "East China Normal University"
+      },
+      "line6": {
+        "title": "Chair of Parallel Session 6",
+        "name": "ZHANG Yue",
+        "inc": "The Education University of Hong Kong"
+      },
+      "line7": {
+        "title": "Chair of Parallel Session 7",
+        "name": "LU Yu",
+        "inc": "Beijing Normal University"
+      },
+      "line8": {
+        "title": "Chair of Parallel Session 7",
+        "name": "SHEN Lingling",
+        "inc": "Nanjing University of Posts and Telecommunications"
+      }
+    }
+  },
+  "Local Chair of Parallel session": {
+    "Name": "Local Chair of Parallel Session",
+    "Details": {
+      "line1": {
+        "title": "Local Chair of Parallel Session 1",
+        "name": "BAI Shurui Tiffany\n DENG Liping Lisa\n KONG Siu Cheung",
+        "inc": "The Education University of Hong Kong\n Hong Kong Baptist University\n The Education University of Hong Kong"
+      },
+      "line2": {
+        "title": "Local Chair of Parallel Session 2",
+        "name": "DOU Diya\nQIAN Haiyan",
+        "inc": "The Hong Kong Polytechnic University\nThe Chinese University of Hong Kong"
+      },
+      "line3": {
+        "title": "Local Chair of Parallel Session 3",
+        "name": "LIM Cher Ping\nSUN Daner\nSUN Jin",
+        "inc": "The Education University of Hong Kong\nThe Education University of Hong Kong\nUniversity of Macau"
+      },
+      "line4": {
+        "title": "Local Chair of Parallel Session 4",
+        "name": "CHONG Yee Ling\nXU Guandong",
+        "inc": "The Education University of Hong Kong\nThe Education University of Hong Kong"
+      },
+      "line5": {
+        "title": "Local Chair of Parallel Session 5",
+        "name": "PEI Leisi\nZHOU Mingming",
+        "inc": "The Education University of Hong Kong\nUniversity of Macau"
+      },
+      "line6": {
+        "title": "Local Chair of Parallel Session 6",
+        "name": "LIN Dan\nYAN Jing",
+        "inc": "The Education University of Hong Kong\nThe Education University of Hong Kong\n"
+      },
+      "line7": {
+        "title": "Local Chair of Parallel Session 7",
+        "name": "KWOK Ching Man Christine\nSingh, Manpreet",
+        "inc": "The Education University of Hong Kong\nThe Education University of Hong Kong"
+      }
+    }
+  },
+  "Program Chair": {
+    "Name": "Program Chair",
+    "Details": {
+      "line1": {
+        "name": "MA Qing",
+        "inc": "The Education University of Hong Kong"
+      }
+    }
+  },
+  "Publicity Chair": {
+    "Name": "Publicity Chair",
+    "Details": {
+      "line1": {
+        "name": "LI Hui Philip",
+        "inc": "The Education University of Hong Kong"
+      }
+    }
+  },
+  "Registration Chair": {
+    "Name": "Registration Chair",
+    "Details": {
+      "line1": {
+        "name": "Ling Man Ho Alpha",
+        "inc": "The Education University of Hong Kong"
+      }
+    }
+  },
+  "Workshop Chair": {
+    "Name": "Workshop Chair",
+    "Details": {
+      "line1": {
+        "name": "YANG Yin Nicole",
+        "inc": "The Education University of Hong Kong"
+      }
+    }
+  },
+  "Workshop Co-Chair": {
+    "Name": "Workshop Co-Chair",
+    "Details": {
+      "line1": {
+        "name": "YEUNG Siu Sze Susanna",
+        "inc": "The Education University of Hong Kong"
+      }
+    }
+  },
+  "Publicity Co-chair": {
+    "Name": "Publicity Co-chair",
+    "Details": {
+      "line1": {
+        "name": "CHAN Henry",
+        "inc": "The Hong Kong Polytechnic University"
+      },
+      "line2": {
+        "name": "JIANG bo",
+        "inc": "Central China Normal University"
+      },
+      "line3": {
+        "name": "LEI Chi Un  Leon",
+        "inc": "The University of Hong Kong"
+      },
+      "line4": {
+        "name": "WU Longkai",
+        "inc": "Central China Normal University"
+      },
+      "line5": {
+        "name": "XIONG Weiyan",
+        "inc": "The Education University of Hong Kong"
+      }
+    }
+  },
+  "Outreach Co-Chair": {
+    "Name": "Outreach Co-Chair",
+    "Details": {
+      "line1": {
+        "name": "LEE Juseong",
+        "inc": "The Education University of Hong Kong"
+      }
+    }
+  },
+  "Logistics Support": {
+    "Name": "Logistics Support",
+    "Details": {
+      "line1": {
+        "name": "MIT General Office",
+        "inc": "The Education University of Hong Kong"
+      }
+    }
+  },
   "Media": {
     "Title": "Connect With Us",
     "Redbook": {
