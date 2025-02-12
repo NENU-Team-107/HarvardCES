@@ -407,5 +407,324 @@
       "speaker": "<a href='/speakers/speaker/22 Fridolin Ting'>陳世道</a> (兼任本工作室的主持) <br> <a href='/speakers/speaker/7 PaulKim'>Paul Kim </a> (兼任本工作室的主持)",
       "slides": ">請參閱<a href='/workshop/3'此工作室的詳細資訊</a>。"
     }
+  },
+  "Chair of Parallel session": {
+    "Name": "分論壇主席",
+    "Details": {
+      "line1": {
+        "title": "分論壇 1 主席",
+        "name": "陸吉健",
+        "inc": "杭州師範大學"
+      },
+      "line2": {
+        "title": "分論壇 2 主席",
+        "name": "錢春雨",
+        "inc": "浙江大學"
+      },
+      "line3": {
+        "title": "分論壇 3 主席",
+        "name": "張陽",
+        "inc": "陝西師範大學"
+      },
+      "line4": {
+        "title": "分論壇 4 主席",
+        "name": "殷明浩",
+        "inc": "東北師範大學"
+      },
+      "line5": {
+        "title": "分論壇 5 主席",
+        "name": "吳永和",
+        "inc": "華東師範大學"
+      },
+      "line6": {
+        "title": "分論壇 6 主席",
+        "name": "張越",
+        "inc": "香港教育大學"
+      },
+      "line7": {
+        "title": "分論壇7主席",
+        "name": "盧宇",
+        "inc": "北京師範大學"
+      },
+      "line8": {
+        "title": "分論壇 7 主席",
+        "name": "申靈靈",
+        "inc": "南京郵電大學"
+      }
+    }
+  },
+  "Local Chair of Parallel session": {
+    "Name": "分論壇聯席主席",
+    "Details": {
+      "line1": {
+        "title": "分論壇 1 聯席主席",
+        "name": "白書瑞\n鄧立萍\n江紹祥",
+        "inc": "香港教育大學\n香港浸會大學\n香港教育大學"
+      },
+      "line2": {
+        "title": "分論壇 2 聯席主席",
+        "name": "竇迪婭\n錢海燕",
+        "inc": "香港理工大學\n香港中文大學"
+      },
+      "line3": {
+        "title": "分論壇 3 聯席主席",
+        "name": "孫丹兒\n孫瑾\n林質彬",
+        "inc": "香港教育大學\n香港教育大學\n澳門大學"
+      },
+      "line4": {
+        "title": "分論壇 4 聯席主席",
+        "name": "張予菱\n徐貫東",
+        "inc": "香港教育大學\n香港教育大學"
+      },
+      "line5": {
+        "title": "分論壇 5 聯席主席",
+        "name": "裴雷絲\n周明明",
+        "inc": "香港教育大學\n澳門大學"
+      },
+      "line6": {
+        "title": "分論壇 6 聯席主席",
+        "name": "林丹\n延晶",
+        "inc": "香港教育大學\n香港教育大學"
+      },
+      "line7": {
+        "title": "分論壇 7 聯席主席",
+        "name": "郭靜雯\nSingh, Manpreet",
+        "inc": "香港教育大學\n香港教育大學"
+      }
+    }
+  },
+  "Program Chair": {
+    "Name": "程序委員會主席",
+    "Details": {
+      "line1": {
+        "name": "馬清",
+        "inc": "香港教育大學"
+      }
+    }
+  },
+  "Publicity Chair": {
+    "Name": "宣傳主席",
+    "Details": {
+      "line1": {
+        "name": "李輝",
+        "inc": "香港教育大學"
+      }
+    }
+  },
+  "Registration Chair": {
+    "Name": "註冊委員會主席",
+    "Details": {
+      "line1": {
+        "name": "凌萬豪",
+        "inc": "香港教育大學"
+      }
+    }
+  },
+  "Workshop Chair": {
+    "Name": "工作坊主席",
+    "Details": {
+      "line1": {
+        "name": "楊茵",
+        "inc": "香港教育大學"
+      }
+    }
+  },
+  "Workshop Co-Chair": {
+    "Name": "工作坊聯席主席",
+    "Details": {
+      "line1": {
+        "name": "楊少詩",
+        "inc": "香港教育大學"
+      }
+    }
+  },
+  "Publicity Co-chair": {
+    "Name": "宣傳聯席主席",
+    "Details": {
+      "line1": {
+        "name": "陳峻斌",
+        "inc": "香港理工大學"
+      },
+      "line2": {
+        "name": "江波",
+        "inc": "華中師範大學"
+      },
+      "line3": {
+        "name": "李志遠",
+        "inc": "香港大學"
+      },
+      "line4": {
+        "name": "吳龍凱",
+        "inc": "華中師範大學"
+      },
+      "line5": {
+        "name": "熊衛雁",
+        "inc": "香港教育大學"
+      }
+    }
+  },
+  "Outreach Co-Chair": {
+    "Name": "外聯聯席主席",
+    "Details": {
+      "line1": {
+        "name": "李主聖",
+        "inc": "香港教育大學"
+      }
+    }
+  },
+  "Logistics Support": {
+    "Name": "後勤支持",
+    "Details": {
+      "line1": {
+        "name": "MIT辦公室",
+        "inc": "香港教育大學"
+      }
+    }
+  },
+  "MemberLeft": {
+    "Name": "成員",
+    "Details": {
+      "line1": {
+        "name": "蔡敬新",
+        "inc": "香港中文大學"
+      },
+      "line2": {
+        "name": "陳謝天",
+        "inc": "香港教育大學"
+      },
+      "line3": {
+        "name": "陳孚",
+        "inc": "澳門大學"
+      },
+      "line4": {
+        "name": "陳高偉",
+        "inc": "香港大學"
+      },
+      "line5": {
+        "name": "谷明月",
+        "inc": "香港教育大學"
+      },
+      "line6": {
+        "name": "郭歆",
+        "inc": "澳門大學"
+      },
+      "line7": {
+        "name": "香玉梅",
+        "inc": "香港教育大學"
+      },
+      "line8": {
+        "name": "莊紹勇",
+        "inc": "香港中文大學"
+      },
+      "line9": {
+        "name": "賴春",
+        "inc": "香港大學"
+      },
+      "line10": {
+        "name": "李文娟",
+        "inc": "香港教育大學"
+      },
+      "line11": {
+        "name": "李鑫",
+        "inc": "香港教育大學"
+      },
+      "line12": {
+        "name": "李詠燕",
+        "inc": "香港大學"
+      },
+      "line13": {
+        "name": "梁帥",
+        "inc": "上海杉達學院"
+      },
+      "line14": {
+        "name": "劉志純",
+        "inc": "香港大學"
+      },
+      "line15": {
+        "name": "盧頌鈞",
+        "inc": "香港教育大學"
+      },
+      "line16": {
+        "name": "溫佩娣",
+        "inc": "澳門大學"
+      },
+      "line17": {
+        "name": "歐陽湘子",
+        "inc": "嶺南大學"
+      }
+    }
+  },
+  "MemberRight": {
+    "Name": "",
+    "Details": {
+      "line1": {
+        "name": "喬珅",
+        "inc": "香港教育大學"
+      },
+      "line2": {
+        "name": "孫丹兒",
+        "inc": "香港教育大學"
+      },
+      "line3": {
+        "name": "唐丁嵐",
+        "inc": "香港大學"
+      },
+      "line4": {
+        "name": "劉桐汐",
+        "inc": "香港浸會大學"
+      },
+      "line5": {
+        "name": "王敏紅",
+        "inc": "香港大學"
+      },
+      "line6": {
+        "name": "王越",
+        "inc": "香港教育大學"
+      },
+      "line7": {
+        "name": "謝琴",
+        "inc": "澳門大學"
+      },
+      "line8": {
+        "name": "謝依杉",
+        "inc": "香港教育大學"
+      },
+      "line9": {
+        "name": "楊偉鵬",
+        "inc": "香港教育大學"
+      },
+      "line10": {
+        "name": "楊玉芹",
+        "inc": "華中師範大學"
+      },
+      "line11": {
+        "name": "楊志豪",
+        "inc": "香港教育大學"
+      },
+      "line12": {
+        "name": "尹弘飆",
+        "inc": "香港中文大學"
+      },
+      "line13": {
+        "name": "於東興",
+        "inc": "上海杉達學院"
+      },
+      "line14": {
+        "name": "楊良河",
+        "inc": "香港教育大學"
+      },
+      "line15": {
+        "name": "張晨薇",
+        "inc": "香港大學"
+      },
+      "line16": {
+        "name": "張曉",
+        "inc": "香港大學"
+      },
+      "line17": {
+        "name": "趙麗",
+        "inc": "南京師範大學"
+      }
+    }
   }
 }
