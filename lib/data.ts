@@ -606,140 +606,6 @@ export const routerArray: Array<RouterItem> = [
     }
 ]
 
-export const ChairList = {
-    "Chair of Parallel session": [
-        {
-            "title": "Chair of Parallel session.Details.line1.title",
-            "name": "Chair of Parallel session.Details.line1.name",
-            "inc": "Chair of Parallel session.Details.line1.inc"
-        },
-        {
-            "title": "Chair of Parallel session.Details.line2.title",
-            "name": "Chair of Parallel session.Details.line2.name",
-            "inc": "Chair of Parallel session.Details.line2.inc"
-        },
-        {
-            "title": "Chair of Parallel session.Details.line3.title",
-            "name": "Chair of Parallel session.Details.line3.name",
-            "inc": "Chair of Parallel session.Details.line3.inc"
-        },
-        {
-            "title": "Chair of Parallel session.Details.line4.title",
-            "name": "Chair of Parallel session.Details.line4.name",
-            "inc": "Chair of Parallel session.Details.line4.inc"
-        },
-        {
-            "title": "Chair of Parallel session.Details.line5.title",
-            "name": "Chair of Parallel session.Details.line5.name",
-            "inc": "Chair of Parallel session.Details.line6.inc"
-        },
-        {
-            "title": "Chair of Parallel session.Details.line7.title",
-            "name": "Chair of Parallel session.Details.line7.name",
-            "inc": "Chair of Parallel session.Details.line7.inc"
-        },
-        {
-            "title": "Chair of Parallel session.Details.line8.title",
-            "name": "Chair of Parallel session.Details.line8.name",
-            "inc": "Chair of Parallel session.Details.line8.inc"
-        },
-    ],
-    "Program Chair": [
-        {
-            "name": "Program Chair.Details.line1.name",
-            "inc": "Program Chair.Details.line1.inc"
-        },
-    ],
-    "Publicity Chair": [
-        {
-            "name": "Publicity Chair.Details.line1.name",
-            "inc": "Publicity Chair.Details.line1.inc"
-        },
-    ],
-    "Registration Chair": [
-        {
-            "name": "Registration Chair.Details.line1.name",
-            "inc": "Registration Chair.Details.line1.inc"
-        },
-    ],
-    "Workshop Chair": [
-        {
-            "name": "Workshop Chair.Details.line1.name",
-            "inc": "Workshop Chair.Details.line1.inc"
-        },
-    ],
-    "Local Chair of Parallel session": [
-        {
-            "name": "Local Chair of Parallel session.Details.line1.name",
-            "inc": "Local Chair of Parallel session.Details.line1.inc"
-        },
-        {
-            "name": "Local Chair of Parallel session.Details.line2.name",
-            "inc": "Local Chair of Parallel session.Details.line2.inc"
-        },
-        {
-            "name": "Local Chair of Parallel session.Details.line3.name",
-            "inc": "Local Chair of Parallel session.Details.line3.inc"
-        },
-        {
-            "name": "Local Chair of Parallel session.Details.line4.name",
-            "inc": "Local Chair of Parallel session.Details.line4.inc"
-        },
-        {
-            "name": "Local Chair of Parallel session.Details.line5.name",
-            "inc": "Local Chair of Parallel session.Details.line5.inc"
-        },
-        {
-            "name": "Local Chair of Parallel session.Details.line6.name",
-            "inc": "Local Chair of Parallel session.Details.line6.inc"
-        },
-        {
-            "name": "Local Chair of Parallel session.Details.line7.name",
-            "inc": "Local Chair of Parallel session.Details.line7.inc"
-        },
-    ],
-    "Workshop Co-Chair": [
-        {
-            "name": "Workshop Co-Chair.Details.line1.name",
-            "inc": "Workshop Co-Chair.Details.line1.inc"
-        },
-    ],
-    "Publicity Co-chair": [
-        {
-            "name": "Publicity Co-chair.Details.line1.name",
-            "inc": "Publicity Co-chair.Details.line1.inc"
-        },
-        {
-            "name": "Publicity Co-chair.Details.line2.name",
-            "inc": "Publicity Co-chair.Details.line2.inc"
-        },
-        {
-            "name": "Publicity Co-chair.Details.line3.name",
-            "inc": "Publicity Co-chair.Details.line3.inc"
-        },
-        {
-            "name": "Publicity Co-chair.Details.line4.name",
-            "inc": "Publicity Co-chair.Details.line4.inc"
-        },
-        {
-            "name": "Publicity Co-chair.Details.line5.name",
-            "inc": "Publicity Co-chair.Details.line5.inc"
-        }
-    ],
-    "Outreach Co-Chair": [
-        {
-            "name": "Outreach Co-Chair.Details.line1.name",
-            "inc": "Outreach Co-Chair.Details.line1.inc"
-        }
-    ],
-    "Logistics Support": [
-        {
-            "name": "Logistics Support.Details.line1.name",
-            "inc": "Logistics Support.Details.line1.inc"
-        }
-    ]
-};
-
 export const ChairListParallel: Array<ChairListItem> = [
     {
         "title": "Chair of Parallel session.Details.line1.title",
@@ -808,30 +674,37 @@ export const ChairListWorkshop: Array<ChairListItem> = [
 
 export const ChairListLocalParallel: Array<ChairListItem> = [
     {
+        "title": "Local Chair of Parallel session.Details.line1.title",
         "name": "Local Chair of Parallel session.Details.line1.name",
         "inc": "Local Chair of Parallel session.Details.line1.inc"
     },
     {
+        "title": "Local Chair of Parallel session.Details.line2.title",
         "name": "Local Chair of Parallel session.Details.line2.name",
         "inc": "Local Chair of Parallel session.Details.line2.inc"
     },
     {
+        "title": "Local Chair of Parallel session.Details.line3.title",
         "name": "Local Chair of Parallel session.Details.line3.name",
         "inc": "Local Chair of Parallel session.Details.line3.inc"
     },
     {
+        "title": "Local Chair of Parallel session.Details.line4.title",
         "name": "Local Chair of Parallel session.Details.line4.name",
         "inc": "Local Chair of Parallel session.Details.line4.inc"
     },
     {
+        "title": "Local Chair of Parallel session.Details.line5.title",
         "name": "Local Chair of Parallel session.Details.line5.name",
         "inc": "Local Chair of Parallel session.Details.line5.inc"
     },
     {
+        "title": "Local Chair of Parallel session.Details.line6.title",
         "name": "Local Chair of Parallel session.Details.line6.name",
         "inc": "Local Chair of Parallel session.Details.line6.inc"
     },
     {
+        "title": "Local Chair of Parallel session.Details.line7.title",
         "name": "Local Chair of Parallel session.Details.line7.name",
         "inc": "Local Chair of Parallel session.Details.line7.inc"
     },
@@ -879,4 +752,138 @@ export const ChairListLogistics: Array<ChairListItem> = [
         "name": "Logistics Support.Details.line1.name",
         "inc": "Logistics Support.Details.line1.inc"
     }
+]
+
+export const ChairListMemberLeft: Array<ChairListItem> = [
+    {
+        "name": "MemberLeft.Details.line1.name",
+        "inc": "MemberLeft.Details.line1.inc"
+    },
+    {
+        "name": "MemberLeft.Details.line2.name",
+        "inc": "MemberLeft.Details.line2.inc"
+    },
+    {
+        "name": "MemberLeft.Details.line3.name",
+        "inc": "MemberLeft.Details.line3.inc"
+    },
+    {
+        "name": "MemberLeft.Details.line4.name",
+        "inc": "MemberLeft.Details.line4.inc"
+    },
+    {
+        "name": "MemberLeft.Details.line5.name",
+        "inc": "MemberLeft.Details.line5.inc"
+    },
+    {
+        "name": "MemberLeft.Details.line6.name",
+        "inc": "MemberLeft.Details.line6.inc"
+    },
+    {
+        "name": "MemberLeft.Details.line7.name",
+        "inc": "MemberLeft.Details.line7.inc"
+    },
+    {
+        "name": "MemberLeft.Details.line8.name",
+        "inc": "MemberLeft.Details.line8.inc"
+    },
+    {
+        "name": "MemberLeft.Details.line9.name",
+        "inc": "MemberLeft.Details.line9.inc"
+    },
+    {
+        "name": "MemberLeft.Details.line10.name",
+        "inc": "MemberLeft.Details.line10.inc"
+    },
+    {
+        "name": "MemberLeft.Details.line11.name",
+        "inc": "MemberLeft.Details.line11.inc"
+    },
+    {
+        "name": "MemberLeft.Details.line12.name",
+        "inc": "MemberLeft.Details.line12.inc"
+    },
+    {
+        "name": "MemberLeft.Details.line13.name",
+        "inc": "MemberLeft.Details.line13.inc"
+    },
+    {
+        "name": "MemberLeft.Details.line14.name",
+        "inc": "MemberLeft.Details.line14.inc"
+    },
+    {
+        "name": "MemberLeft.Details.line15.name",
+        "inc": "MemberLeft.Details.line15.inc"
+    },
+    {
+        "name": "MemberLeft.Details.line16.name",
+        "inc": "MemberLeft.Details.line16.inc"
+    },
+]
+
+export const ChairListMemberRight: Array<ChairListItem> = [
+    {
+        "name": "MemberRight.Details.line1.name",
+        "inc": "MemberRight.Details.line1.inc"
+    },
+    {
+        "name": "MemberRight.Details.line2.name",
+        "inc": "MemberRight.Details.line2.inc"
+    },
+    {
+        "name": "MemberRight.Details.line3.name",
+        "inc": "MemberRight.Details.line3.inc"
+    },
+    {
+        "name": "MemberRight.Details.line4.name",
+        "inc": "MemberRight.Details.line4.inc"
+    },
+    {
+        "name": "MemberRight.Details.line5.name",
+        "inc": "MemberRight.Details.line5.inc"
+    },
+    {
+        "name": "MemberRight.Details.line6.name",
+        "inc": "MemberRight.Details.line6.inc"
+    },
+    {
+        "name": "MemberRight.Details.line7.name",
+        "inc": "MemberRight.Details.line7.inc"
+    },
+    {
+        "name": "MemberRight.Details.line8.name",
+        "inc": "MemberRight.Details.line8.inc"
+    },
+    {
+        "name": "MemberRight.Details.line9.name",
+        "inc": "MemberRight.Details.line9.inc"
+    },
+    {
+        "name": "MemberRight.Details.line10.name",
+        "inc": "MemberRight.Details.line10.inc"
+    },
+    {
+        "name": "MemberRight.Details.line11.name",
+        "inc": "MemberRight.Details.line11.inc"
+    },
+    {
+        "name": "MemberRight.Details.line12.name",
+        "inc": "MemberRight.Details.line12.inc"
+    },
+    {
+        "name": "MemberRight.Details.line13.name",
+        "inc": "MemberRight.Details.line13.inc"
+    },
+    {
+        "name": "MemberRight.Details.line14.name",
+        "inc": "MemberRight.Details.line14.inc"
+    },
+    {
+        "name": "MemberRight.Details.line15.name",
+        "inc": "MemberRight.Details.line15.inc"
+    },
+    {
+        "name": "MemberRight.Details.line16.name",
+        "inc": "MemberRight.Details.line16.inc"
+    },
 ]

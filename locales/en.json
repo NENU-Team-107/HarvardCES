@@ -98,7 +98,7 @@
     }
   },
   "Local Chair of Parallel session": {
-    "Name": "Local Chair of Parallel Session",
+    "Name": "Chair of Parallel Session",
     "Details": {
       "line1": {
         "title": "Local Chair of Parallel Session 1",
@@ -222,6 +222,152 @@
       "line1": {
         "name": "MIT General Office",
         "inc": "The Education University of Hong Kong"
+      }
+    }
+  },
+  "MemberLeft": {
+    "Name": "Member",
+    "Details": {
+      "line1": {
+        "name": "CHAI Ching-sing",
+        "inc": "The Chinese University of Hong Kong"
+      },
+      "line2": {
+        "name": "Chan Tse Tin David",
+        "inc": "The Education University of Hong Kong"
+      },
+      "line3": {
+        "name": "CHEN Fu",
+        "inc": "University of Macau"
+      },
+      "line4": {
+        "name": "CHEN Gaowei",
+        "inc": "The University of Hong Kong"
+      },
+      "line5": {
+        "name": "GU Mingyue Michelle",
+        "inc": "The Education University of Hong Kong"
+      },
+      "line6": {
+        "name": "GUO Xin",
+        "inc": "University of Macau"
+      },
+      "line7": {
+        "name": "HEUNG Yuk Mui Elly",
+        "inc": "The Education University of Hong Kong"
+      },
+      "line8": {
+        "name": "JONG Siu-yung Morris",
+        "inc": "The Chinese University of Hong Kong"
+      },
+      "line9": {
+        "name": "LAI Chun",
+        "inc": "The University of Hong Kong"
+      },
+      "line10": {
+        "name": "LI Wenjuan",
+        "inc": "The Education University of Hong Kong"
+      },
+      "line11": {
+        "name": "LI Xin Stephen",
+        "inc": "The Education University of Hong Kong"
+      },
+      "line12": {
+        "name": "LI Yongyan",
+        "inc": "The University of Hong Kong"
+      },
+      "line13": {
+        "name": "LIANG Shuai",
+        "inc": "Sanda University"
+      },
+      "line14": {
+        "name": "LIU Lukas Z.",
+        "inc": "The University of Hong Kong"
+      },
+      "line15": {
+        "name": "LO Chung Kwan",
+        "inc": "The Education University of Hong Kong"
+      },
+      "line16": {
+        "name": "OON Pey-Tee Emily",
+        "inc": "University of Macau"
+      },
+      "line17": {
+        "name": "OUYANG Xiangzi Olivia",
+        "inc": "Lingnan University"
+      }
+    }
+  },
+  "MemberRight": {
+    "Name": "",
+    "Details": {
+      "line1": {
+        "name": "QIAO Shen Maggie",
+        "inc": "The Education University of Hong Kong"
+      },
+      "line2": {
+        "name": "SUN Daner",
+        "inc": "The Education University of Hong Kong"
+      },
+      "line3": {
+        "name": "TANG Ding-lan",
+        "inc": "The University of Hong Kong"
+      },
+      "line4": {
+        "name": "Tongxi Liu",
+        "inc": "Hong Kong Baptist University"
+      },
+      "line5": {
+        "name": "WANG Maggie M.",
+        "inc": "The University of Hong Kong"
+      },
+      "line6": {
+        "name": "WANG Yue",
+        "inc": "The Education University of Hong Kong"
+      },
+      "line7": {
+        "name": "XIE Qin",
+        "inc": "University of Macau"
+      },
+      "line8": {
+        "name": "XIE Yishan Ellen",
+        "inc": "The Education University of Hong Kong"
+      },
+      "line9": {
+        "name": "YANG Weipeng",
+        "inc": "The Education University of Hong Kong"
+      },
+      "line10": {
+        "name": "YANG Yuqin",
+        "inc": "Central China Normal University"
+      },
+      "line11": {
+        "name": "YEUNG Chi Ho Bill",
+        "inc": "The Education University of HongKong"
+      },
+      "line12": {
+        "name": "YIN Hong-biao",
+        "inc": "The Chinese University of Hong Kong"
+      },
+      "line13": {
+        "name": "YU Dongxing",
+        "inc": "Sanda University"
+      },
+      "line14": {
+        "name": "YU Leung Ho Philip",
+        "inc": "The Education University of Hong Kong"
+      },
+      "line15": {
+        "name": "ZHANG Chenwei",
+        "inc": "The University of Hong Kong"
+      },
+      "line16": {
+        "name": "ZHANG Xiao",
+        "inc": "The University of Hong Kong"
+      },
+      "line17": {
+        "name": "ZHAO Li",
+        "inc": "Nanjing Normal University"
       }
     }
   },

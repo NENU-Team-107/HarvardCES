@@ -31,6 +31,7 @@ const kinds = ref([
   { name: "Outreach Co-Chair", flag: false },
   { name: "Logistics Support", flag: false },
 ]);
+const member = [{ title: "MemberLeft", flag: false }, { title: "MemberRight", flag: false }];
 
 const pending = ref(true);
 onMounted(() => {
@@ -71,15 +72,18 @@ onMounted(() => {
           </div>
         </div>
       </div>
-      <!-- <div class="min-h-full w-full px-28 justify-self-center">
+      <div class="min-h-full w-full md:px-28 px-2 justify-self-center">
         <div
-          class="w-full grid grid-cols-5 grid-rows-4 gap-12 justify-center justify-item-center bg-white/80 pt-12 rounded-lg">
+          class="w-full grid md:grid-cols-10 grid-cols-1 gap-12 justify-center justify-item-center bg-white/80 md:pt-12 rounded-lg">
           <div v-for="(item, index) in kinds"
-            :class="['w-full flex justify-center items-center', index % 5 == 0 ? 'row-span-4 col-span-3' : 'row-span-1 col-span-2']">
+            :class="['w-full flex justify-center items-center', index % 5 == 0 ? 'row-span-4 md:col-span-6 col-span-1' : 'row-span-1 md:col-span-4 col-span-1']">
             <ChairTable :title="item.name" :flag="item.flag" />
           </div>
+          <div v-for="item in member" class='w-full flex justify-center items-center md:col-span-5 col-span-1'>
+            <ChairTable :title="item.title" :flag="item.flag" />
+          </div>
         </div>
-      </div> -->
+      </div>
     </div>
 
   </div>
