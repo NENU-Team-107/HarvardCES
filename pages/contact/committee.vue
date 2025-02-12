@@ -71,8 +71,7 @@ onMounted(() => {
           </div>
         </div>
       </div>
-      <div class="min-h-full w-full px-28 justify-self-center">
-        <!-- 表格 -->
+      <!-- <div class="min-h-full w-full px-28 justify-self-center">
         <div
           class="w-full grid grid-cols-5 grid-rows-4 gap-12 justify-center justify-item-center bg-white/80 pt-12 rounded-lg">
           <div v-for="(item, index) in kinds"
@@ -80,7 +79,7 @@ onMounted(() => {
             <ChairTable :title="item.name" :flag="item.flag" />
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
 
   </div>
