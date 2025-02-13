@@ -46,12 +46,12 @@ const columns = computed(() => {
 
 <template>
   <div class="w-full h-full">
-    <h1 class="md:text-3xl text-2xl text-green-900 font-bold text-left pl-5 md:min-h-10">{{ $t(props.title + ".Name") }}
+    <h1 class="md:text-xl text-lg text-green-900 font-bold text-left pl-5 md:min-h-7">{{ $t(props.title + ".Name") }}
     </h1>
     <div>
       <UTable :rows="lines" :columns="columns"
         :loading-state="{ icon: 'i-heroicons-arrow-path-20-solid', label: 'Loading...' }"
-        :ui="{ base: 'min-w-full table-fixed ', td: { base: 'break-words text-left min-w-full table-fixed', size: 'md:text-lg text-sm', color: 'text-black drak:text:white' }, th: { base: 'hidden', }, tr: { base: 'h-fit' } }">
+        :ui="{ base: 'min-w-full table-fixed ', td: { base: 'break-words text-left min-w-full table-fixed', size: 'md:text-base text-sm', color: 'text-black drak:text:white' }, tr: { base: 'h-fit' } }">
         <template #name-data="{ row }">
           <div v-html="$t(row.name).replace(/\n/g, '<br>')"></div>
         </template>

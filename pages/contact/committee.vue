@@ -72,7 +72,7 @@ onMounted(() => {
           </div>
         </div>
       </div>
-      <div class="min-h-full w-full md:px-28 px-2 justify-self-center">
+      <div class="min-h-full w-full md:px-32 px-2 justify-self-center">
         <div
           class="w-full grid md:grid-cols-10 grid-cols-1 gap-12 justify-center justify-item-center bg-white/80 md:pt-12 rounded-lg">
           <div v-for="(item, index) in kinds"
