@@ -83,12 +83,18 @@ watchEffect(() => {
   <div class="w-full h-full mx-10 my-5 pt-24">
     <div class="h-full w-full max-w-6xl justify-self-center hidden md:block bg-white/80 justify-center items-center">
       <div class="flex flex-col justify-center items-center">
-        <h1 class="text-center font-bold md:text-xl text-lg py-3">
-          {{ $t("Sub-symposium Sessions Submit") }}
-        </h1>
-        <h2 class="text-red-500/90 text-base">
+        <div class="text-2xl font-bold text-center my-5">
+        <div class="flex justify-center items-center ">
+          <div class="h-0.5 w-20 bg-black"></div>
+          <h1 class="mx-4">{{ $t("Sub-symposium Sessions Submit") }} </h1>
+          <div class="h-0.5 w-20 bg-black"></div>
+        </div>
+      </div>
+        <div class="text-red-500/90 text-base mb-2">
           <strong><i>{{ $t("Due") }}</i></strong>
-        </h2>
+          <br>
+          <span class="text-black"><strong><i>* {{ $t("session more") }}</i></strong></span>
+        </div>
         <div class="flex justify-center items-center w-full self-center">
           <UTable
             :ui="{ td: { size: 'md:text-base text-sm', color: 'text-black' }, th: { size: 'md:text-base text-base', } }"

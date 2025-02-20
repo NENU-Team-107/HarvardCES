@@ -45,6 +45,7 @@
     "Title": "Submission Link",
     "Content": "Please click here to submit your paper"
   },
+  "session more": "The submission deadline for Parallel Sessions 2, 6, and 7 is February 28, 2025",
   "Invited Speakers": "Invited Speakers",
   "Invited Speakers Title": "Invited Speakers(Workshop and Symposium)",
   "Guest of Honor": "Guest of Honor",
@@ -736,7 +737,7 @@
       "id5": {
         "index": "6",
         "name": "AI Writing and Assessment",
-        "submitddl": "Submission Deadline: 15 February, 2025",
+        "submitddl": "Submission Deadline: 28 February, 2025",
         "notifyddl": "Notification of Acceptance Date: 28 February, 2025",
         "content": {
           "p1": "<p> The prestigious Harvard China Education Forum will be held in the early summer of 2025 at The Education University of Hong Kong (EdUHK)'s campus in Tai Po, which is situated on a mountainous landscape. The forum will bring together distinguished scholars from globally renowned universities such as Harvard, Stanford, MIT, EdUHK, and Peking University, as well as technology and education policy makers and experts. The three-day event will delve into the integration and application of emerging technologies such as Artificial Intelligence, Metaverse and Intelligent Reality in teaching, training and talent development. We invite you to share the latest R&D results and participate in the parallel session on May 10th. Excellent sharing may be invited to publish an extended version in high impact journals (SCI, SSCI and CSSCI). </p>",
@@ -749,7 +750,7 @@
       "id6": {
         "index": "7",
         "name": "Poster and Showcase: Joint Symposium on Emerging Technologies and Future Talents",
-        "submitddl": "Submission Deadline: 15 February, 2025",
+        "submitddl": "Submission Deadline: 28 February, 2025",
         "notifyddl": "Notification of Acceptance Date: 28 February, 2025 <br> (dates may be delayed depending on circumstances)",
         "content": {
           "p1": "<p> The Joint Symposium on Emerging Technologies and Future Talents, co-organized by Harvard CES and The Education University of Hong Kong, will be held from May 8–10, 2025, at The Education University of Hong Kong. This prestigious event will bring together top scholars and industry experts from the fields of education and technology to explore cutting-edge advancements and strategies for future talent development. We are pleased to invite you to participate in the Poster and Showcase Session, where you can present your innovative research and development work. Submissions are encouraged across all four parallel sessions, including Artificial Intelligence (AI), the Metaverse, Entrepreneurship, and Futuristic Mindset and Talent Development. </p>",
