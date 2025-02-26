@@ -455,9 +455,9 @@
     "takeaways": "关键点",
     "comment": "定于5月8日下午1:00至5:30，于校园内连续举行三场工作室",
     "reg1": "工作室开始接受<a href='/registration' style='text-decoration: underline;'>报名</a>：",
-    "reg-eduhk": "<strong>香港教育大学学生与香港及其他地区的K-12教师：</strong>有机会获得<strong>免费</strong>参加所有三场工作室。。",
+    "reg-eduhk": "<strong>香港教育大学学生与香港及其他地区的K-12教师：</strong>有机会获得<strong>免费</strong>参加所有三场工作室。 <br> （请把您的姓名，学校，香港教育大学学生学号/教师工号发送到<strong> GIETfuture&#64;eduhk.hk</strong> 名额有限，先到先得。）",
     "reg-nonlocal": "<strong>非本地参与者：</strong>提供折扣价。",
-    "reg-link": "请访问<a href='/registration' style='text-decoration: underline;'>注册链接</a>进行报名。",
+    "reg-link": "请访问<strong><a href='/registration' class='text-lg' style='text-decoration: underline;'>注册链接</a></strong>进行报名。",
     "Speakers": "演讲者",
     "workshop1": {
       "title": "哈佛-斯坦福创新教育(针对K-12教师和学生)",
@@ -470,7 +470,7 @@
       "title": "高影响力期刊的文章写作与发表",
       "description": "本工作室目的是为研究人员提供来自高影响力期刊主编们的宝贵见解和实用策略。参与者将全面了解使论文脱颖而出的关键要素，包括撰写引人注目的摘要、有效构建文章结构以及有说服力地呈现数据。工作室还将分享同行评审过程的细微差别、常见误区以及回应审稿人意见的技巧。",
       "takeaways": "通过互动环节和案例研究，参会者将有机会与主编们进行互动，获得有关顶级期刊在投稿中寻找内容的信息。无论您是处于职业生涯早期的研究人员还是经验丰富的学者，该工作室都将为您提供提高写作水平和增加发表成功机会所需的工具和信心。",
-      "speaker": "<a href='/speakers/speaker/19 Hongjie Chen'>陈洪捷 </a> (北京大学教育评论主编) <br> <a href='/speakers/speaker/25 Mutlu Cukurova'>Mutlu Cukurova </a> (British Journal of Education Technology主编) <br> <a href='/speakers/speaker/5 MinjuanWANG'> 王敏娟 </a> (IEEE-Transactions on Learning Technoogies主编) <br> <a href='/speakers/speaker/26 Weipeng Yang'>杨伟鹏博士</a> (the Journal of Research in Childhood Education联合主编)",
+      "speaker": "<a href='/speakers/speaker/19 Hongjie Chen'>陈洪捷 </a> (北京大学教育评论主编) <br> <a href='/speakers/speaker/25 Mutlu Cukurova'>Mutlu Cukurova </a> (British Journal of Education Technology主编) <br> <a href='/speakers/speaker/5 MinjuanWANG'> 王敏娟 </a> (IEEE-Transactions on Learning Technoogies主编) <br> <a href='/speakers/speaker/26 Weipeng Yang'>杨伟鹏博士</a> (the Journal of Research in Childhood Education联合主编)<br> <a href='/speakers/speaker/21 LI HuiPhilip'>李辉教授</a> (幼儿教育讲座教授)",
       "slides": "诚邀您参加本研讨会，向专家学习，助力您的研究迈向新的高度！"
     },
     "workshop3": {
@@ -755,7 +755,7 @@
         "inc": "香港教育大学"
       },
       "line7": {
-      "name": "谢琴",
+        "name": "谢琴",
         "inc": "澳门大学"
       },
       "line8": {

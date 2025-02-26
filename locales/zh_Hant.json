@@ -383,9 +383,9 @@
     "takeaways": "要點",
     "comment": "5月8日下午1：00 - 5：30，于校園內舉辦三場連續工作室",
     "reg1": "工作室開放<a href='/registration' style='text-decoration: underline;'>報名</a>",
-    "reg-eduhk": "<strong>香港教育大學學生與香港及其他地區的K-12教師：</strong>有机会<stron>免費</strong>參加所有三場工作室。",
+    "reg-eduhk": "<strong>香港教育大學學生與香港及其他地區的K-12教師：</strong>有机会<stron>免費</strong>參加所有三場工作室。<br> (請將您的姓名、學校及香港教育大學學生學號/教師工號發送至 <strong>GIETfuture&#64;eduhk.hk</strong>。名額有限，先到先得。)",
     "reg-nonlocal": "<strong>非本地參與者：</strong>可享折扣價。",
-    "reg-link": "請造訪<a href='/registration' style='text-decoration: underline;'>註冊鏈接</a>預訂閣下的席位。 ",
+    "reg-link": "請造訪<strong><a href='/registration' class='text-lg' style='text-decoration: underline;'>註冊鏈接</a></strong>預訂閣下的席位。 ",
     "Speakers": "發言人",
     "workshop1": {
       "title": "哈佛-斯坦福創新教育 (針對 K-12 教師和學生)",
@@ -398,7 +398,7 @@
       "title": "高影響力期刊的文章撰寫與發表",
       "description": "本工作室旨在為研究人員提供來自頂尖高影響力期刊諸位總編輯的寶貴見解及實用策略。與會者將全面瞭解讓稿件脫穎而出的關鍵要素，包括撰寫令人信服的摘要、有效組織文章結構，以及令人信服地呈現數據。工作室還將涵蓋同行評審過程中的細微差異、應避免的常見陷阱，以及回應審稿人意見的技巧。",
       "takeaways": "透過互動環節和案例研究，與會者將有機會直接與諸位總編輯接觸，獲得第一手資料，瞭解頂級期刊對投稿的要求。無論閣下是職業生涯初期的研究人員，或是經驗豐富的學者，本工作室都將會為閣下提供所需的工具與信心，以提升寫作能力，並增加成功發表的機會。",
-      "speaker": "<a href='/speakers/speaker/19 Hongjie Chen'>陳洪捷</a> (主編，北京大學教育評論) <br> <a href='/speakers/speaker/25 Mutlu Cukurova'>Mutlu Cukurova</a>（主編, British Journal of Education Technology） <br> <a href='/speakers/speaker/5 MinjuanWANG'> 王敏娟</a> (主編, IEEE-Transactions on Learning Technoogies) <br> <a href='/speakers/speaker/26 Weipeng Yang'>楊偉鵬博士</a> (聯合主編, the Journal of Research in Childhood Education)",
+      "speaker": "<a href='/speakers/speaker/19 Hongjie Chen'>陳洪捷</a> (主編，北京大學教育評論) <br> <a href='/speakers/speaker/25 Mutlu Cukurova'>Mutlu Cukurova</a>（主編, British Journal of Education Technology） <br> <a href='/speakers/speaker/5 MinjuanWANG'> 王敏娟</a> (主編, IEEE-Transactions on Learning Technoogies) <br> <a href='/speakers/speaker/26 Weipeng Yang'>楊偉鵬博士</a> (聯合主編, the Journal of Research in Childhood Education)<br> <a href='/speakers/speaker/21 LI HuiPhilip'>李輝教授</a> (幼兒教育講座教授)",
       "slides": "獲得這個難得的機會，向專家學習，助力閣下的研究更上一層樓！"
     },
     "workshop3": {
