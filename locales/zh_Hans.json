@@ -95,6 +95,97 @@
   "Symposium Location": "论坛地点",
   "Symposium Time": "论坛议程",
   "Symposium Agenda": "img/poster/Agenda-zh-Hans.png",
+  "Visitor Guide": "来访指南",
+  "Guide for Guests Visiting The Education University of Hong Kong (Tai Po Campus)": "香港教育大学（大埔校区）嘉宾来访指南",
+  "From Airport": {
+    "Title": "从香港国际机场出发",
+    "Airport Express": {
+      "Title": "1.1 机场快线",
+      "Route": {
+        "Title": "路线",
+        "content": "机场站 → 九龙站（约20分钟）"
+      },
+      "Ticket": {
+        "Title": "票价",
+        "content": "约HK$60-115"
+      },
+      "Tip": {
+        "Title": "提示",
+        "content": "出站后可转乘出租车或地铁（参阅2.1）前往大埔校区。"
+      }
+    },
+    "Taxi": {
+      "Title": "1.2 出租车（红色）",
+      "Time": {
+        "Title": "车程",
+        "content": "约50-60分钟"
+      },
+      "Fee": {
+        "Title": "费用",
+        "content": "约HK$400-550（现金或八达通支付）"
+      },
+      "Tip": {
+        "Title": "提示",
+        "content": "告知司机目的地为“香港教育大学大埔校区（露屏路10号）”。"
+      }
+    }
+  },
+  "From Terminus": {
+    "Title": "从香港高铁西九龙总站出发",
+    "From the West Kowloon Terminus/Kowloon Station": {
+      "Title": "2.1 从 高铁西九龙总站/九龙站 出发",
+      "content": "步行 → 柯士甸站 → 乘坐港铁屯马线（乌溪沙方向） → 红磡站 → 换乘东铁线（罗湖方向） → 大埔墟站下车。"
+    },
+    "From Tai Po Market Station": {
+      "Title": "2.2 从 大埔墟站 出发",
+      "Method1": {
+        "Title": "方式一",
+        "content": "巴士。乘74K号巴士至“香港教育大学”站，车程约20分钟。"
+      },
+      "Method2": {
+        "Title": "方式二",
+        "content": "出租车。约HK$60-80，车程10分钟。"
+      }
+    }
+  },
+  "Recommended Hotels": {
+    "Name": "酒店",
+    "Address": "地址",
+    "Contact": "联系方式",
+    "Title": "推荐酒店",
+    "Tip": "* 以上推荐酒店均位于香港沙田。",
+    "Details": {
+      "line1": {
+        "Name": "丽豪酒店",
+        "Address": "沙田大涌桥路34～36号",
+        "Contact": "Katie Lui 女士 (营运经理)\n电话: 2132 1111\n\n<a class='hover:text-green-500' href=\"mailto:stay&#64;riverside.regalhotel.com\">stay&#64;riverside.regalhotel.com</a>"
+      },
+      "line2": {
+        "Name": "沙田万怡酒店",
+        "Address": "沙田安平街1号",
+        "Contact": "酒店接待处\n电话: 3051 2777\n<a class='hover:text-green-500' href=\"mailto:reservations.office.hkgst&#64;marriottservice.com\">reservations.office.hkgst&#64;marriottservice.com</a>"
+      },
+      "line3": {
+        "Name": "帝都酒店",
+        "Address": "沙田白鹤汀街8号",
+        "Contact": "酒店接待处\n电话: 2694 3898\n<a class='hover:text-green-500' href=\"mailto:resvn&#64;royalpark.com.hk\">resvn&#64;royalpark.com.hk</a>"
+      },
+      "line4": {
+        "Name": "香港沙田凯悦酒店",
+        "Address": "马料水泽祥街18号",
+        "Contact": "Moon Chan女士 (销售协调员)\n电话: 3723 7321\n<a class='hover:text-green-500' href=\"mailto:moon.chan&#64;hyatt.com\">moon.chan&#64;hyatt.com</a>"
+      },
+      "line5": {
+        "Name": "帝逸酒店",
+        "Address": "沙田源康街1号",
+        "Contact": "酒店接待处\n电话: 3653 1188\n<a class='hover:text-green-500' href=\"mailto:rsvn&#64;alva.com.hk\">rsvn&#64;alva.com.hk</a>"
+      }
+    }
+  },
+  "Campus Map": {
+    "Title": "校内地图",
+    "src": "img/poster/CampusMap.png"
+  },
   "Harvard CES": "中国教育论坛 (CES)",
   "EduHK": "香港教育大学",
   "Harvard China Education Symposium": "哈佛中国教育论坛 (CES)",

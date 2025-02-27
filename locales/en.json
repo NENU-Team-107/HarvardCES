@@ -407,6 +407,97 @@
   "Symposium Location": "Symposium Location",
   "Symposium Time": "Symposium Agenda",
   "Symposium Agenda": "img/poster/Agenda-en.png",
+  "Visitor Guide": "Visitor Guide",
+  "Guide for Guests Visiting The Education University of Hong Kong (Tai Po Campus)": "Guide for Guests Visiting The Education University of Hong Kong (Tai Po Campus)",
+  "From Airport": {
+    "Title": "From Hong Kong International Airport",
+    "Airport Express": {
+      "Title": "1.1 Airport Express",
+      "Route": {
+        "Title": "Route",
+        "content": "Airport Station → Kowloon Station (about 20 minutes)"
+      },
+      "Ticket": {
+        "Title": "Ticket Price",
+        "content": "Ticket Price: About HK$60-115"
+      },
+      "Tip": {
+        "Title": "Tip",
+        "content": "After exiting the station, you can take a taxi or subway (see 2.1) to Tai Po Campus."
+      }
+    },
+    "Taxi": {
+      "Title": "1.2 Taxi (red)",
+      "Time": {
+        "Title": "Time",
+        "content": "about 50-60 minutes"
+      },
+      "Fee": {
+        "Title": "Fee",
+        "content": "about HK$400-550 (pay by cash or Octopus)"
+      },
+      "Tip": {
+        "Title": "Tip",
+        "content": "tell the driver the destination is \"The Education University of Hong Kong, Tai Po Campus (10 Lo Ping Road)\"."
+      }
+    }
+  },
+  "From Terminus": {
+    "Title": "From Hong Kong West Kowloon Terminus",
+    "From the West Kowloon Terminus/Kowloon Station": {
+      "Title": "2.1 From the West Kowloon Terminus/Kowloon Station",
+      "content": "Walk → Austin Station → Take the MTR Tuen Ma Line (Wu Kai Sha Direction) → Hung Hom Station → Transfer to the East Rail Line (Lo Wu Direction) → Get off at Tai Po Market Station."
+    },
+    "From Tai Po Market Station": {
+      "Title": "2.2 From Tai Po Market Station",
+      "Method1": {
+        "Title": "Method 1",
+        "content": "Bus. Take bus No. 74K to the \"Education University of Hong Kong\" stop, the journey takes about 20 minutes."
+      },
+      "Method2": {
+        "Title": "Method 2",
+        "content": "Taxi. About HK$60-80, the journey takes 10 minutes."
+      }
+    }
+  },
+  "Recommended Hotels": {
+    "Name": "Name",
+    "Address": "Address",
+    "Contact": "Contact",
+    "Title": "Recommended Hotels",
+    "Tip": "* The above hotels are all in Shatin, HongKong.",
+    "Details": {
+      "line1": {
+        "Name": "Regal Riverside Hotel",
+        "Address": "34-36 Tai Chung Kiu Road",
+        "Contact": "Ms Katie Lui (Operations Manager)\nTel: 2132 1111\nFax: 2648 0505\n<a class='hover:text-green-500' href=\"mailto:stay&#64;riverside.regalhotel.com\">stay&#64;riverside.regalhotel.com</a>"
+      },
+      "line2": {
+        "Name": "Courtyard By Marriott Hong Kong Shatin",
+        "Address": "1 On Ping Street",
+        "Contact": "Reservation\nTel: 3051 2777\nFax: 3940 8822\n<a class='hover:text-green-500' href=\"mailto:reservations.office.hkgst&#64;marriottservice.com\">reservations.office.hkgst&#64;marriottservice.com</a>"
+      },
+      "line3": {
+        "Name": "Royal Park Hotel",
+        "Address": "8 Pak Hok Ting Street",
+        "Contact": "Reservation\nTel: 2694 3898\nFax: 2698 0505\n<a class='hover:text-green-500' href=\"mailto:resvn&#64;royalpark.com.hk\">resvn&#64;royalpark.com.hk</a>"
+      },
+      "line4": {
+        "Name": "Hyatt Regency Hong Kong Shatin",
+        "Address": "18 Chak Cheung Street",
+        "Contact": "Ms Moon Chan (Sales Coordinator)\nTel: 3723 7321\nFax: 3051 2838\n<a class='hover:text-green-500' href=\"mailto:moon.chan&#64;hyatt.com\">moon.chan&#64;hyatt.com</a>"
+      },
+      "line5": {
+        "Name": "Alva Hotel by Royal",
+        "Address": "1 Yuen Hong Street",
+        "Contact": "Reservation\nTel: 3653 1188\nFax: 2707 3388\n<a class='hover:text-green-500' href=\"mailto:rsvn&#64;alva.com.hk\">rsvn&#64;alva.com.hk</a>"
+      }
+    }
+  },
+  "Campus Map": {
+    "Title": "Campus Map",
+    "src": "img/poster/CampusMap.png"
+  },
   "Harvard CES": "CES",
   "EduHK": "EdUHK",
   "Harvard China Education Symposium": "China Education Symposium at Harvard University",

@@ -555,6 +555,10 @@ export const routerArray: Array<RouterItem> = [
             {
                 name: "Symposium Time",
                 path: "/symposium/time"
+            },
+            {
+                name: "Visitor Guide",
+                path: "/symposium/guide"
             }
         ]
     },
