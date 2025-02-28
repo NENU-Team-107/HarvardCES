@@ -1,5 +1,11 @@
 #!/bin/bash
 
+. /etc/profile
+. ~/.bashrc
+
+project_path=$(cd `dirname $0`; pwd)
+cd $project_path
+
 echo "Pulling latest version"
 
 git_output=$(git pull)
