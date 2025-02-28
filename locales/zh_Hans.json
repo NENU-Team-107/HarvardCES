@@ -158,7 +158,7 @@
       "line1": {
         "Name": "丽豪酒店",
         "Address": "沙田大涌桥路34～36号",
-        "Contact": "Katie Lui 女士 (营运经理)\n电话: 2132 1111\n\n<a class='hover:text-green-500' href=\"mailto:stay&#64;riverside.regalhotel.com\">stay&#64;riverside.regalhotel.com</a>"
+        "Contact": "Katie Lui 女士 (营运经理)\n电话: 2132 1111\n<a class='hover:text-green-500' href=\"mailto:stay&#64;riverside.regalhotel.com\">stay&#64;riverside.regalhotel.com</a>"
       },
       "line2": {
         "Name": "沙田万怡酒店",

@@ -82,7 +82,7 @@
       "line1": {
         "Name": "麗豪酒店",
         "Address": "沙田大湧橋路34～36號",
-        "Contact": "Katie Lui 女士 (營運經理)\n電話: 2132 1111\n\n<a class='hover:text-green-500' href=\"mailto:stay&#64;riverside.regalhotel.com\">stay&#64;riverside.regalhotel.com</a>"
+        "Contact": "Katie Lui 女士 (營運經理)\n電話: 2132 1111\n<a class='hover:text-green-500' href=\"mailto:stay&#64;riverside.regalhotel.com\">stay&#64;riverside.regalhotel.com</a>"
       },
       "line2": {
         "Name": "沙田萬怡酒店",

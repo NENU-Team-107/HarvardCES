@@ -33,12 +33,19 @@ const rows = [
 
 </script>
 <template>
-  <div class="max-w-7xl mx-10 mt-5 pt-24 bg-white/50 w-full">
 
-    <h1 class="px-2 text-3xl font-bold text-center py-6 justify-self-center mx-5">
-      {{ $t('Guide for Guests Visiting The Education University of Hong Kong (Tai Po Campus)') }}
-    </h1>
-
+  <div class="w-full h-full mx-10 my-5 pt-24">
+        <div class="text-center font-bold md:text-2xl text-xl  my-5">
+            <div class="flex justify-center items-center ">
+                <div class="h-0.5 w-20 bg-black"></div>
+                <h1 class="py-3 px-2 text-2xl">
+                  {{ $t('Guide for Guests Visiting The Education University of Hong Kong (Tai Po Campus)') }}
+                </h1>
+                <div class="h-0.5 w-20 bg-black"></div>
+            </div>
+        </div>
+        
+    <div class="h-full w-full max-w-7xl px-6 md:px-0 justify-self-center bg-white/80 justify-center items-center">
     <div class="w-full h-full max-w-6xl justify-self-center">
       <div class="flex justify-center items-center ">
         <div class="h-0.5 w-24 bg-black"></div>
@@ -125,7 +132,7 @@ const rows = [
     </div>
     <UTable :rows="rows" :columns="columns"
       :loading-state="{ icon: 'i-heroicons-arrow-path-20-solid', label: 'Loading...' }"
-      :ui="{ base: 'min-w-full table-fixed', td: { base: 'break-words text-left min-w-full table-fixed', size: ' text-sm', color: 'text-black drak:text:white' }, tr: { base: 'h-fit' } }">
+      :ui="{ base: 'min-w-full table-fixed', td: { base: 'break-words text-left min-w-full table-fixed', size: ' text-base', color: 'text-black drak:text:white' }, tr: { base: 'h-fit' } }">
       <template #index-data="{ row }">
         <div class="font-bold" v-html="$t(row.index).replace(/\n/g, '<br>')"></div>
       </template>
@@ -146,7 +153,7 @@ const rows = [
       </template>
     </UTable>
 
-    <span class="italic">{{ $t("Recommended Hotels.Tip") }}</span>
+    <span class="italic font-bold">{{ $t("Recommended Hotels.Tip") }}</span>
     <div class="flex justify-center items-center ">
       <div class="h-0.5 w-24 bg-black"></div>
       <h1 class="text-center font-bold text-2xl py-6 justify-self-center mx-5">
@@ -158,4 +165,6 @@ const rows = [
       <NuxtImg :src="$t('Campus Map.src')" loading="lazy" class="w-5/6 object-cover" />
     </div>
   </div>
+  </div>
+
 </template>
