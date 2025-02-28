@@ -30,10 +30,9 @@ export default {
         'body': ['"Times New Roman"', 'NSimSun'],
       },
       backgroundImage: {
-        'letter-paper': "url('~/assets/bg/letter-paper.png')",
-        "eduhk-vision": "url('~/assets/bg/eduhk-vision.png')",
-        'harvard-img1': "url('~/assets/bg/photo_1.jpg')",
-        'harvard-img2': "url('~/assets/bg/photo_2.jpg')",
+        'letter-paper': "url('/bg/letter-paper.png')",
+        'harvard-img1': "url('/bg/photo_1.jpg')",
+        'harvard-img2': "url('/bg/photo_2.jpg')",
       },
       colors: {
         'cover-left': '#c56c70',

@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div class="w-full h-full mx-10 my-5 pt-24 min-h-full md:max-w-5xl max-xl:max-w-7xl">
+  <div class="w-full h-full mx-10 my-5 pt-24 md:max-w-5xl max-xl:max-w-7xl">
     <div class="md:flex hidden w-full max-w-screen">
       <div class="flex flex-col space-y-12">
         <!-- 关于我们部分 -->
@@ -11,7 +11,7 @@
             <div class="grid grid-cols-1 gap-4 w-full">
               <div class="col-span-1">
                 <div class="grid-flow-row gap-4">
-                  <div class="text-4xl leading-10 font-bold mt-10 mb-5 text-center">
+                  <div class="text-3xl leading-10 font-bold mt-10 mb-5 text-center">
                     哈佛中国教育论坛 | China Education Symposium at Harvard University
                   </div>
 
