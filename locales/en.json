@@ -191,8 +191,8 @@
         "inc": "The Hong Kong Polytechnic University"
       },
       "line2": {
-        "name": "JIANG bo",
-        "inc": "Central China Normal University"
+        "name": "JIANG Bo",
+        "inc": "East China Normal University"
       },
       "line3": {
         "name": "LEI Chi Un  Leon",
@@ -757,6 +757,12 @@
         "name": "Dr. Weipeng Yang",
         "title": "Editor-in-Chief, Journal of Research in Childhood Education <br> Assistant Professor of Department of Early Childhood Education <br> The Education University of Hong Kong",
         "inc": "The Education University of Hong Kong"
+      },
+      "id10": {
+        "description": "Ping Li is Sin Wai Kin Foundation Professor in Humanities and Technology, Chair Professor of Neurolinguistics and Bilingual Studies, and Dean of the Faculty of Humanities at the Hong Kong Polytechnic University. He was previously Professor of Psychology, Linguistics, and Information Sciences at the Pennsylvania State University, and served as Program Director of Cognitive Neuroscience and Perception, Action, and Cognition programs at the U.S. National Science Foundation. Li’s research is focused on investigating the neurocognitive and computational bases of language acquisition, bilingualism, and reading comprehension. He uses cognitive neuroscience approaches and emerging technologies to study the neuroplasticity and individual differences in both children and adults, aiming at understanding the relationships among language, culture, technology, and the brain. Li is currently Editor-in-Chief of Brain and Language and Senior Editor of Cognitive Science. He was President of the Society for Computation in Psychology, and is a Fellow of the American Association for the Advancement of Science, the Psychonomic Society, and the Cognitive Science Society.",
+        "name": "Professor Ping Li",
+        "title": "Chair Professor of Neurolinguistics and Bilingual Studies <br> Dean of the Faculty of Humanities",
+        "inc": "Hong Kong Polytechnic University"
       }
     },
     "Poster": {

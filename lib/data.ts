@@ -29,7 +29,8 @@ export const speakerToKind: Map<number, string> = new Map([
     [26, 'Invited Speakers'],
     [27, 'Organizing Committee'],
     [28, 'Organizing Committee'],
-    [29, 'Organizing Committee']
+    [29, 'Organizing Committee'],
+    [30, 'Invited Speakers']
 ]);
 
 export const keynoteSpeaker: Array<Speaker> = [
@@ -466,6 +467,21 @@ export const invitedSpeakers: Array<Speaker> = [
         }
     },
     {
+        id: 30,
+        name: "server.Invited Speakers.id10.name",
+        kind: "Invited Speakers",
+        inc: "server.Invited Speakers.id10.inc",
+        photo: "./assets/avatars/Ping Li.png",
+        activateDate: new Date("2025-05-09"),
+        bio: {
+            details: {
+                description: "server.Invited Speakers.id10.description",
+                title: "server.Invited Speakers.id10.title",
+                link: '/speakers/speaker/30 Ping Li'
+            }
+        }
+    },
+    {
         id: 8,
         name: "server.Keynote Speakers.id8.name",
         kind: "Keynote Speakers",
@@ -823,6 +839,10 @@ export const ChairListMemberLeft: Array<ChairListItem> = [
         "name": "MemberLeft.Details.line16.name",
         "inc": "MemberLeft.Details.line16.inc"
     },
+    {
+        "name": "MemberLeft.Details.line17.name",
+        "inc": "MemberLeft.Details.line17.inc"
+    },
 ]
 
 export const ChairListMemberRight: Array<ChairListItem> = [
@@ -889,5 +909,9 @@ export const ChairListMemberRight: Array<ChairListItem> = [
     {
         "name": "MemberRight.Details.line16.name",
         "inc": "MemberRight.Details.line16.inc"
+    },
+    {
+        "name": "MemberRight.Details.line17.name",
+        "inc": "MemberRight.Details.line17.inc"
     },
 ]
