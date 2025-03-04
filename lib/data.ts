@@ -1,4 +1,4 @@
-import type { Speaker, Poster, RouterItem, ChairListItem } from "./model";
+import type { Speaker, Poster, RouterItem, ChairListItem, SpeakingInfo } from "./model";
 
 export const speakerToKind: Map<number, string> = new Map([
     [1, 'Keynote Speakers'],
@@ -497,6 +497,26 @@ export const invitedSpeakers: Array<Speaker> = [
         }
     },
 ]
+export const keynoteSpeaking: Array<SpeakingInfo> = [
+    {
+        name: "server.Keynote Speakers.id2.name",
+        kind: "Keynote Speakers",
+        inc: "server.Keynote Speakers.id2.title",
+        photo: "./assets/avatars/Ren Youqun.png",
+        title: "server.Keynote Speakers.id2.speaking.title",
+        abstract: "server.Keynote Speakers.id2.speaking.abstract"
+    }
+];
+export const invitedSpeaking: Array<SpeakingInfo> = [
+    {
+        name: "server.Invited Speakers.id2.name",
+        kind: "Invited Speakers",
+        inc: "server.Invited Speakers.id2.title",
+        photo: "./assets/avatars/Qing LI.png",
+        title: "server.Invited Speakers.id2.speaking.title",
+        abstract: "server.Invited Speakers.id2.speaking.abstract"
+    }
+];
 
 export const SubSymposiumPoster: Array<Poster> = [
     {

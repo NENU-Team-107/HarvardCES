@@ -9,37 +9,29 @@ const props = defineProps<{
 </script>
 
 <template>
-  <UCard :ui="{
-    base: 'h-full flex flex-col justify-between items-center',
-    body: {
-      base: 'min-h-5/6 max-h-5/6 h-full',
-      background: '',
-      padding: 'px-4 py-4 sm:px-6'
-    },
-    footer: {
-      base: 'min-h-1/6 max-h-1/6',
-      background: '',
-      padding: 'px-4 py-4 sm:px-6'
-    }
-  }">
+  <div class="flex flex-col w-full justify-center items-center">
     <div class="flex flex-col justify-center items-center w-full h-full">
-      {{ props }}
-      <div class="flex flex-col justify-center items-center w-full h-full">
-        <div class="flex justify-center items-center">
-          <img :src="props.speaking.photo" class="w-40 h-40 rounded-full" />
-        </div>
-        <div class="flex flex-col justify-center items-center mt-4">
-          <h2 class="text-2xl font-bold">{{ props.speaking.name }}</h2>
-          <h3 class="text-lg font-semibold">{{ props.speaking.title }}</h3>
-          <p class="text-base font-normal">{{ props.speaking.inc }}</p>
-          <div :href="props.speaking.abstract" class="text-base font-normal text-blue-500">
-            {{ props.speaking.abstract }}
+      <div class="w-full mx-auto ">
+        <div class="grid grid-cols-3 h-full">
+          <div class="flex justify-center items-center col-span-1">
+            <NuxtImg :src="props.speaking.photo" class="min-w-3/5 max-h-44 mx-auto rounded-full"
+              :alt="props.speaking.name" preload />
+          </div>
+          <div class="flex flex-col justify-center items-start col-span-2">
+            <h2 class="text-2xl font-bold">{{ $t(props.speaking.name) }}</h2>
+            <!-- <h3 class="text-base font-normal">{{ $t(props.speaking.inc) }}</h3> -->
+            <h3 class="text-base font-normal" v-html="$t(props.speaking.inc)"></h3>
           </div>
         </div>
       </div>
     </div>
-
-    <template #footer>
-    </template>
-  </UCard>
+    <div class="grid grid-cols-6 text-lg w-full my-4">
+      <div class="text-center font-semibold ">Title:</div>
+      <div class="font-semibold col-span-5">{{ $t(props.speaking.title) }}</div>
+      <div class="text-center font-semibold ">Abstract:</div>
+      <div class="font-normal col-span-5">
+        {{ $t(props.speaking.abstract) }}
+      </div>
+    </div>
+  </div>
 </template>
