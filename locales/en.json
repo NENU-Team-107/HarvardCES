@@ -588,6 +588,7 @@
     "index": "7"
   },
   "bio": "Bio",
+  "Speaking": "Speaking",
   "server": {
     "Organizing Committee": {
       "id1": {
@@ -640,6 +641,7 @@
         "title": "Secretary of the CPC Shandong University Committee <br> Doctor of Education, Professor <br> Vice President of the Chinese Society of Education <br> Deputy Director of the National Graduate Education Steering Committee for Professional Education ",
         "inc": "Shandong University",
         "speaking": {
+          "inc": "Secretary of the CPC Shandong University Committee, Vice President of the Chinese Society of Education, Deputy Director of the National Graduate Education Steering Committee for Professional Education <br> Shandong University",
           "title": "Functions, Actions, and Reflections on the Development of Teacher Education in High-Level Comprehensive Universities in China",
           "abstract": "Against the backdrop of national strategies for technological advancement and educational development, the independent cultivation of top innovative talents has become both urgent and essential. This shift places new demands on the quality of STEM educators in primary and secondary education. Situated within this era's context, this report emphasizes the importance of high-level comprehensive universities fully leveraging their disciplinary strengths, research advantages, faculty expertise, and curricular resources to drive the high-quality and transformative development of teacher education, thereby contributing to the cultivation of a teaching workforce that meets the demands of the technological era. The report first reviews the historical trajectory of teacher training in China, underscoring the critical mission of high-level comprehensive universities in advancing teacher education. It then introduces the “National Excellence Plan”, which advocates for the development of teacher education within high-level comprehensive universities, and shares Shandong University's related initiatives and experiences. Finally, the report presents reflections on the development of teacher education in high-level comprehensive universities in the new era and offers insights into future directions."
         }
@@ -650,6 +652,7 @@
         "title": "Distinguished Professor and Senior Research Fellow <br> Harvard University",
         "inc": "Harvard University",
         "speaking": {
+          "inc": "Distinguished Professor and Senior Research Fellow <br> Harvard University",
           "title": "GenAI in Education: The Promises and the Perils",
           "abstract": "The global economy is using AI to move towards an era of Intelligence Augmentation (IA). In coming years, many occupations will shift to people working with generative AI-based agents. These IA partnerships involve complementary roles of reckoning (AI-based calculative prediction) and judgment (human practical wisdom). The human and agent work synergistically together to become more capable than their individual abilities. This talk will discuss what types of learning are most valuable for students to prepare for these IA interactions in work and life. I will also describe ways in which GenAI is currently misused in society and education, with advice on how to avoid these mistakes."
         }
@@ -660,6 +663,7 @@
         "title": "Vice CEO of iFlytek, Inc <br> Deputy Director of the State Key Laboratory of Cognitive Intelligence, P.R.China",
         "inc": "Vice CEO of iFLYTEK Co., Ltd.",
         "speaking": {
+          "inc": "Vice CEO of iFlytek, Inc, Deputy Director of the State Key Laboratory of Cognitive Intelligence, P.R.China <br> iFlytek, Inc",
           "title": "Latest Developments and Typical Applications of the Xinghuo Large Model in Education",
           "abstract": "This report first highlights the widespread global attention garnered by general artificial intelligence technologies, represented by cognitive large models. It then analyzes the technical characteristics, development trends, and application value of transitioning from cognitive large models to multimodal large models. The report also presents the achievements and development experiences of iFlytek in developing the Xinghuo large model. Finally, it focuses on the exploration experiences of using large models in education and provides an outlook on future developments."
         }
@@ -694,6 +698,7 @@
         "title": "Principal Research Scientist in Education, Faculty Director <br> Harvard Graduate School of Education",
         "inc": "Harvard University",
         "speaking": {
+          "inc": "Principal Research Scientist in Education, Faculty Director <br> Harvard University",
           "title": "Supporting Adaptive Expertise: What Does it Involve and Why Is it Important for the Workforce in a Complex and Changing World?  ",
           "abstract": "This talk will highlight frameworks and findings from the Next Level Lab at Harvard University. It will share research-based visions of effective learners who learn in preparation for work contexts, but who also learn continuously in the flow of work and who engage as progressive problem-solvers. It will share the skills and attitudes that are essential for engaging as an adaptive expert in a complex world where innovation and change are demanded. It will report on research with early career and mid-career learners who are navigating these challenges and offer guidelines for supporting them."
         }
@@ -726,6 +731,7 @@
         "title": "Mary and Gordon Crary Family Professor <br> Professor of Computer Science, Professor of Education and by Courtesy <br> Professor of Electrical Engineering <br> Stanford University",
         "inc": "Stanford University",
         "speaking": {
+          "inc": "Mary and Gordon Crary Family Professor, Professor of Computer Science, Professor of Education and by Courtesy, Professor of Electrical Engineering <br> Stanford University",
           "title": "Generative AI for Collaborative Learning and Creativity",
           "abstract": "Generative AI (GenAI) models can be used to create agents that simulate and respond to various kinds of human behavior. Such agents can lead  and support learning activities such as collaborative brainstorming, planning, rehearsal, reflection, and peer mentoring,  Building on early exploration by design teams composed of students and colleagues,  we have developed a series of experimental platforms that leverage GenAI to provide feedback on student writing, comment on group discussion, and structure hybrid teams in which one or more AI agents collaborate with one or more humans.  These tools show promise for  a wide range of learning contexts, some of which will be described in more detail in this talk."
         }
@@ -737,6 +743,7 @@
         "inc": "Hong Kong Polytechnic University ",
         "speaking": {
           "title": "KCUBE: A KG-based University Curriculum Framework for Student Advising and Career Planning",
+          "inc": "IEEE Fellow, Chair of the Department of Computing <br> Hong Kong Polytechnic University",
           "abstract": "Knowledge representations and interactions are at the forefront of teaching, learning, and career planning activities in all endeavors of education and career development. University students are increasingly faced with a myriad of interdisciplinary topics that are seemingly unrelated when unstructured knowledge representations are presented, especially during advising and career orientation sessions. This is especially challenging in fast-changing technical domains such as Computer and Data Science where university curricula are reviewed on an annual basis. This makes it increasingly difficult for instructors and administrators to present both the big picture as well as the detailed knowledge components of degree programs to students who face problems in choosing a career and/or establishing a plan of study and assessment. In this talk, I shall introduce the KCUBE project, a knowledge graph (KG) framework equipped with virtual reality for structuring and presenting both the overviews of the Computer Science curriculum taught at the Department of Computing in the Hong Kong Polytechnic University, as well as for students to develop their study with the help of virual tutor/mentor. We employ computational information storage and retrieval methods, machine learning, and interactive virtual reality to facilitate users (instructors and students) to better understand, manipulate, and visualize abstract concepts and relationships in the development of teaching and learning activities in our department."
         }
       },

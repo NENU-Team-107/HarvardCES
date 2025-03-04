@@ -499,19 +499,51 @@ export const invitedSpeakers: Array<Speaker> = [
 ]
 export const keynoteSpeaking: Array<SpeakingInfo> = [
     {
+        name: "server.Keynote Speakers.id3.name",
+        kind: "Keynote Speakers",
+        inc: "server.Keynote Speakers.id3.speaking.inc",
+        photo: "./assets/avatars/Chris Dede.png",
+        title: "server.Keynote Speakers.id3.speaking.title",
+        abstract: "server.Keynote Speakers.id3.speaking.abstract"
+    },
+    {
+        name: "server.Keynote Speakers.id9.name",
+        kind: "Keynote Speakers",
+        inc: "server.Keynote Speakers.id9.speaking.inc",
+        photo: "./assets/avatars/Tina Grotzer.png",
+        title: "server.Keynote Speakers.id9.speaking.title",
+        abstract: "server.Keynote Speakers.id9.speaking.abstract"
+    },
+    {
+        name: "server.Invited Speakers.id1.name",
+        kind: "Keynote Speakers",
+        inc: "server.Invited Speakers.id1.speaking.inc",
+        photo: "./assets/avatars/John Clifford Mitchell.png",
+        title: "server.Invited Speakers.id1.speaking.title",
+        abstract: "server.Invited Speakers.id1.speaking.abstract"
+    },
+    {
         name: "server.Keynote Speakers.id2.name",
         kind: "Keynote Speakers",
-        inc: "server.Keynote Speakers.id2.title",
+        inc: "server.Keynote Speakers.id2.speaking.inc",
         photo: "./assets/avatars/Ren Youqun.png",
         title: "server.Keynote Speakers.id2.speaking.title",
         abstract: "server.Keynote Speakers.id2.speaking.abstract"
+    },
+    {
+        name: "server.Keynote Speakers.id4.name",
+        kind: "Keynote Speakers",
+        inc: "server.Keynote Speakers.id4.speaking.inc",
+        photo: "./assets/avatars/Shijin Wang.png",
+        title: "server.Keynote Speakers.id4.speaking.title",
+        abstract: "server.Keynote Speakers.id4.speaking.abstract"
     }
 ];
 export const invitedSpeaking: Array<SpeakingInfo> = [
     {
         name: "server.Invited Speakers.id2.name",
         kind: "Invited Speakers",
-        inc: "server.Invited Speakers.id2.title",
+        inc: "server.Invited Speakers.id2.speaking.inc",
         photo: "./assets/avatars/Qing LI.png",
         title: "server.Invited Speakers.id2.speaking.title",
         abstract: "server.Invited Speakers.id2.speaking.abstract"
