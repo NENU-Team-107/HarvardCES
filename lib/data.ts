@@ -30,7 +30,8 @@ export const speakerToKind: Map<number, string> = new Map([
     [27, 'Organizing Committee'],
     [28, 'Organizing Committee'],
     [29, 'Organizing Committee'],
-    [30, 'Invited Speakers']
+    [30, 'Invited Speakers'],
+    [31, 'Invited Speakers']
 ]);
 
 export const keynoteSpeaker: Array<Speaker> = [
@@ -467,6 +468,21 @@ export const invitedSpeakers: Array<Speaker> = [
         }
     },
     {
+        id: 8,
+        name: "server.Keynote Speakers.id8.name",
+        kind: "Keynote Speakers",
+        inc: "server.Keynote Speakers.id8.inc",
+        photo: "./assets/avatars/Jonathon Ritcher.png",
+        activateDate: new Date("2025-05-09"),
+        bio: {
+            details: {
+                description: "server.Keynote Speakers.id8.description",
+                title: "server.Keynote Speakers.id8.title",
+                link: '/speakers/speaker/8 Jonathon Ritcher'
+            }
+        }
+    },
+    {
         id: 30,
         name: "server.Invited Speakers.id10.name",
         kind: "Invited Speakers",
@@ -482,17 +498,17 @@ export const invitedSpeakers: Array<Speaker> = [
         }
     },
     {
-        id: 8,
-        name: "server.Keynote Speakers.id8.name",
-        kind: "Keynote Speakers",
-        inc: "server.Keynote Speakers.id8.inc",
-        photo: "./assets/avatars/Jonathon Ritcher.png",
+        id: 31,
+        name: "server.Invited Speakers.id11.name",
+        kind: "Invited Speakers",
+        inc: "server.Invited Speakers.id11.inc",
+        photo: "./assets/avatars/Alberto Sols.png",
         activateDate: new Date("2025-05-09"),
         bio: {
             details: {
-                description: "server.Keynote Speakers.id8.description",
-                title: "server.Keynote Speakers.id8.title",
-                link: '/speakers/speaker/8 Jonathon Ritcher'
+                description: "server.Invited Speakers.id11.description",
+                title: "server.Invited Speakers.id11.title",
+                link: '/speakers/speaker/31 Alberto Sols'
             }
         }
     },

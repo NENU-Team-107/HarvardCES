@@ -794,6 +794,12 @@
         "name": "Professor Ping Li",
         "title": "Chair Professor of Neurolinguistics and Bilingual Studies <br> Dean of the Faculty of Humanities",
         "inc": "Hong Kong Polytechnic University"
+      },
+      "id11": {
+        "description": "Alberto Sols has 40 years of combined industry and academic experience as a systems engineer. During 25 years he held different managerial positions in four different companies. Alberto serves since January 2018 as Dean of the School of Architecture, Engineering, Science and Computing (Universidad Europea de Madrid). He holds a MSc in Naval Architecture and Marine Engineering (Universidad Politecnica de Madrid), a MSc in Systems Engineering (VirginiaPolytechnic Institute and State University) and a PhD in Systems Engineering (Stevens Institute of Technology). He has published over 35 technical papers, written seven books in systems engineering and related disciplines, and co-authored two others. He is a Certified Professional Logistician and is Certified in Production and Inventory Management. Alberto was inducted in the Academy of Military Arts and Sciences. He has a great interest in artificial intelligence and is playing a key role in the transformation efforts of the School, to leverage the use of artificial intelligence in higher education.",
+        "name": "Dr. Alberto Sols",
+        "title": "Dean of the School of Architecture, Engineering, Science and Computing",
+        "inc": "Universidad Europea de Madrid"
       }
     },
     "Poster": {
