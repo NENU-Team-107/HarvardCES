@@ -592,6 +592,10 @@ export const routerArray: Array<RouterItem> = [
             {
                 name: "Guest of Honor",
                 path: "/speakers/guest"
+            },
+            {
+                name: 'Speaking',
+                path: '/speakers/speaking'
             }
         ]
     },

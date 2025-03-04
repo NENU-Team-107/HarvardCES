@@ -16,6 +16,15 @@ export type Speaker = {
     activateDate: Date
 }
 
+export type SpeakingInfo = {
+    name: string
+    kind: string
+    photo: string
+    inc: string
+    title: string
+    abstract: string
+}
+
 export type NewsItem = {
     title: string
     content: string
