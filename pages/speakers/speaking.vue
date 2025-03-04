@@ -62,7 +62,7 @@ onMounted(() => {
       </div>
       <div class="divide-y-2 divide-gray-400 divide-dashed w-full flex justify-center items-center flex-col">
         <div v-for="speaking in speakingList.get('Keynote Speakers')"
-          class="flex w-3/4 justify-center items-center px-2">
+          class="flex md:w-3/4 justify-center items-center px-2">
           <SpeakingIntro :speaking="speaking" />
         </div>
       </div>
