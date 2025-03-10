@@ -903,6 +903,8 @@
   "Due": "Due 15 February, 2025; Notification by 28 February, 2025; Extension upon request",
   "Agenda Note": "(Preliminary  subject to change)",
   "Register": {
+    "noti": "Unless otherwise notified, all speakers and attendees must register to participate in the Workshops and/or the Symposium.",
+    "earlyReg": "Early Bird Registration ends on 10 April. Register now to Enjoy the reduced Rate.",
     "title": "Registration and Payment",
     "trackTitle": "Registration Fee for the Symposium (9-10 May) ",
     "workshopTitle": "Registration Fee for Workshop Sessions (8 May, 1-6 PM)",
@@ -914,7 +916,7 @@
     "banquet": "Whether to Attend Banquet",
     "Banquet": "Banquet (10 May 2025) ticket",
     "fee": "Fee",
-    "student": "Student, K-12 Teacher and EdUHK staff",
+    "student": "Student, K-12 Teacher and EdUHK staff(ID Check on arrival)",
     "non-student": "Non-student (Staff, teachers, working professionals etc.)",
     "virtual": "Virtual Participation",
     "HKD": "HKD",

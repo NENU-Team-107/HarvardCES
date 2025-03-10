@@ -60,11 +60,6 @@ const trackData = computed(() => {
             type: '',
             banquet: 0,
             fee: '315 ' + t('Register.HKD') + '(' + t('Register.about') + ' 40 ' + t('Register.USD') + ')'
-        },
-        {
-            type: t('Register.virtual'),
-            banquet: -1,
-            fee: t("Register.Free")
         }
     ] as TrackInfo[];
 })
@@ -101,7 +96,7 @@ watchEffect(() => {
 
 <template>
     <div class="w-full h-full mx-10 my-5 pt-24">
-        <div class="text-center font-bold md:text-2xl text-xl  my-5">
+        <div class="text-center font-bold md:text-2xl text-xl  my-5 px-4">
             <div class="flex justify-center items-center ">
                 <div class="h-0.5 w-20 bg-black"></div>
                 <h1 class="py-3 px-2">
@@ -109,11 +104,17 @@ watchEffect(() => {
                 </h1>
                 <div class="h-0.5 w-20 bg-black"></div>
             </div>
+            <div class="text-base text-gray-700 font-bold px-4">
+                {{ $t("Register.noti") }}
+            </div>
         </div>
 
         <div class="h-full w-full max-w-7xl px-6 md:px-0 justify-self-center bg-white/80 justify-center items-center">
-            <div class="w-full h-full">
+            <div class="w-full h-full pt-6">
                 <div class="justify-center items-center flex flex-col">
+                    <h1 class="text-center text-rose-500 italic font-bold">
+                        {{ $t("Register.earlyReg") }}
+                    </h1>
                     <h1 class="text-center font-bold md:text-lg text-base py-3">
                         {{ $t("Register.trackTitle") }}
                     </h1>
