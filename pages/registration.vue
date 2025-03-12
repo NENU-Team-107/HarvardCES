@@ -199,6 +199,13 @@ watchEffect(() => {
                     </UButton>
                 </div>
             </div>
+
+            <div class="py-4 px-10 text-justify">
+                <div class="italic text-orange-600 font-semibold">
+                    *{{ $t("Register.policy") }}*
+                </div>
+            </div>
+
         </div>
     </div>
 
