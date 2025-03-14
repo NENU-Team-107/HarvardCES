@@ -553,6 +553,14 @@ export const keynoteSpeaking: Array<SpeakingInfo> = [
         photo: "./assets/avatars/Shijin Wang.png",
         title: "server.Keynote Speakers.id4.speaking.title",
         abstract: "server.Keynote Speakers.id4.speaking.abstract"
+    },
+    {
+        name: "server.Keynote Speakers.id5.name",
+        kind: "Keynote Speakers",
+        inc: "server.Keynote Speakers.id5.speaking.inc",
+        photo: "./assets/avatars/Minjuan WANG.png",
+        title: "server.Keynote Speakers.id5.speaking.title",
+        abstract: "server.Keynote Speakers.id5.speaking.abstract"
     }
 ];
 export const invitedSpeaking: Array<SpeakingInfo> = [
