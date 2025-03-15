@@ -49,6 +49,11 @@ onMounted(() => {
   pending.value = false;
 })
 
+const logos = ref([
+  "img/logo/sym_logo.png",
+]);
+
+
 </script>
 
 <template>
@@ -72,7 +77,7 @@ onMounted(() => {
           </div>
         </div>
       </div>
-      <div class="min-h-full w-full md:px-32 px-2 justify-self-center">
+      <div class="min-h-full w-full md:px-32 px-4 justify-self-center">
         <div
           class="w-full grid md:grid-cols-10 grid-cols-1 gap-12 justify-center justify-item-center bg-white/80 md:pt-12 rounded-lg">
           <div v-for="(item, index) in kinds"
@@ -84,6 +89,11 @@ onMounted(() => {
           </div>
         </div>
       </div>
+      <div class="w-full h-full flex justify-end items-end">
+  <div class="mx-10 my-5 mt-10">
+    <NuxtImg v-for="logo in logos" :key="logo" :src="logo" class="h-16 mr-24"/>
+  </div>
+</div>
     </div>
 
   </div>
