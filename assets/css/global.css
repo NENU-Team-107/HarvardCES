@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Lavishly';
+    src: url('/assets/fonts/LavishlyYours-Regular.woff') format('woff');
+}
+
+.font-Lavishly {
+    font-family: 'Lavishly';
+}
