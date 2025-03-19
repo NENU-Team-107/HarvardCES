@@ -479,6 +479,12 @@
           "d2": "研發成果書寫指南",
           "p3": "<p>請準備一份<strong>一頁</strong>的分享，包含以下信息：</p><ol class=\"list-decimal my-1\"><li> <strong>報告標題：</strong> 您的報告標題。</li><li><strong>研究摘要：</strong> 簡要描述您的研發主題及其與論壇議題的相關性。</li><li><strong>報告目標：</strong> 報告的目的和預期的研發結果。</li><li><strong>方法論：</strong> 您計劃使用的研發方法或數據來源。</li><li><strong>貢獻與未來工作：</strong> 該研發對大語言模型在教育領域的可能貢獻及未來方向。</li><li><strong>聯繫信息：</strong> 您的全名、所屬機構、電子郵箱、聯繫電話。</li></ol><div class=\"mt-10\"> 請將您的一頁成果分享和其他資料以Word附件的形式髮送到電子郵件地址：<a href=\"mailto:hnubai&#64;hainanu.edu.cn\" class=\"font-bold underline hover:text-red-600\">hnubai&#64;hainanu.edu.cn</a>，標題爲“您的姓名+哈佛CES-香港教育大學聯合論壇分論壇一論文報告”。您的參與將爲推動人工智能在寫作及評估中的使用貢獻力量。期待您的佳作，共同探討無限可能！</div>"
         }
+      },
+      "id7": {
+        "index": "八",
+        "name": "人工智能驅動的數碼教材開發與應用及創新人才培養",
+        "submitddl": "",
+        "notifyddl": ""
       }
     }
   },

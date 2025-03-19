@@ -90,10 +90,10 @@ const logos = ref([
         </div>
       </div>
       <div class="w-full h-full flex justify-end items-end">
-  <div class="mx-10 my-5 mt-10">
-    <NuxtImg v-for="logo in logos" :key="logo" :src="logo" class="h-16 mr-24"/>
-  </div>
-</div>
+        <div class="mx-10 my-5 mt-10">
+          <NuxtImg v-for="logo in logos" :key="logo" :src="logo" class="h-28 mr-24" />
+        </div>
+      </div>
     </div>
 
   </div>

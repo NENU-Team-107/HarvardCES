@@ -69,6 +69,11 @@ const contactData = computed(() => {
     topic: t('pSession.poster') + '(' + t("Above All") + ')',
     mail: t('SendToLink') + 'https://www.wjx.top/vm/tdLaPJt.aspx#',
     link: "/sub-symposium/6"
+  },
+  {
+    id: t('server.Poster.id7.index'),
+    topic: t('server.Poster.id7.name'),
+    mail: t('SendTo') + '706530284@qq.com',
   }] as Contact[];
 })
 
@@ -81,15 +86,15 @@ watchEffect(() => {
 
 <template>
   <div class="w-full h-full mx-10 my-5 pt-24">
-    <div class="h-full w-full max-w-6xl justify-self-center hidden md:block bg-white/80 justify-center items-center">
+    <div class="h-full w-full max-w-7xl justify-self-center hidden md:block bg-white/80 justify-center items-center">
       <div class="flex flex-col justify-center items-center">
         <div class="text-2xl font-bold text-center my-5">
-        <div class="flex justify-center items-center ">
-          <div class="h-0.5 w-20 bg-black"></div>
-          <h1 class="mx-4">{{ $t("Sub-symposium Sessions Submit") }} </h1>
-          <div class="h-0.5 w-20 bg-black"></div>
+          <div class="flex justify-center items-center ">
+            <div class="h-0.5 w-20 bg-black"></div>
+            <h1 class="mx-4">{{ $t("Sub-symposium Sessions Submit") }} </h1>
+            <div class="h-0.5 w-20 bg-black"></div>
+          </div>
         </div>
-      </div>
         <div class="text-red-500/90 text-base mb-2">
           <strong><i>{{ $t("Due") }}</i></strong>
           <br>
