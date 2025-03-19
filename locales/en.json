@@ -14,6 +14,7 @@
   "Workshop Session": "Workshop Session(8 May)",
   "Panel Discussion": "Panel Discussion",
   "Host by": "Hosted By: ",
+  "special font": "font-special-en",
   "symposium": "Symposium",
   "Symposium Handbook": "Program Overview",
   "Round Table": "Round Table",
@@ -379,6 +380,11 @@
       "Name": "Red",
       "Intro": "Follow us on Red",
       "Details": "哈佛CES 香港教大聯合論壇"
+    },
+    "Scan to Register": {
+      "Name": "Scan to Register",
+      "Intro": "Scan to Register",
+      "Details": "Scan to Register"
     },
     "Wechat": {
       "Name": "WeChat",

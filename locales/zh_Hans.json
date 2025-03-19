@@ -9,6 +9,7 @@
   "Contact": "关于我们",
   "Back": "返回",
   "Details": "详情",
+  "special font": "font-special-sc",
   "Symposium Handbook": "工作室与论坛概览",
   "Workshop and Sub-symposium Sessions": "工作室与分论坛",
   "Session": "平行分会",
@@ -60,6 +61,11 @@
       "Name": "小红书",
       "Intro": "小红书请关注：",
       "Details": "哈佛CES香港教大联合论坛"
+    },
+    "Scan to Register": {
+      "Name": "注册请扫描",
+      "Intro": "注册请扫描",
+      "Details": "注册请扫描二维码"
     },
     "Wechat": {
       "Name": "微信公众号",

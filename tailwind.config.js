@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+// @import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=LXGW+WenKai+Mono+TC&family=Ma+Shan+Zheng&family=Yesteryear&display=swap');
+
 export default {
   content: [
     "components/**/*.{vue,js,ts}",

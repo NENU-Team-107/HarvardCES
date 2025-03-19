@@ -12,6 +12,7 @@
   "Session": "平行分會",
   "Keynote & Invited Talk": "主題演講",
   "Workshop": "工作室",
+  "special font": "font-special-tc",
   "Symposium Handbook": "工作室與論壇概覽",
   "Workshop Session": "工作室 (5 月 8 日)",
   "Panel Discussion": "分會場討論",
@@ -150,6 +151,11 @@
       "Name": "小紅書",
       "Intro": "小紅書請關注：",
       "Details": "哈佛CES 香港教大聯合論壇"
+    },
+    "Scan to Register": {
+      "Name": "註冊請掃描",
+      "Intro": "註冊請掃描",
+      "Details": "註冊請掃描"
     },
     "Wechat": {
       "Name": "微信公眾號",

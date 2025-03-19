@@ -11,13 +11,15 @@ export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
   devtools: { enabled: false },
   build: {
-    transpile: ['sharp']
+    transpile: [
+      'sharp',
+    ]
   },
   vite: {
     // plugins: [font.vite({})],
   },
   css: ['~/assets/css/global.css'],
-  modules: ["@nuxt/ui", "@nuxtjs/tailwindcss", "@nuxtjs/i18n", "@nuxt/image", "@vesp/nuxt-fontawesome", '@nuxtjs/color-mode', 'radix-vue/nuxt'],
+  modules: ["@nuxt/ui", "@nuxtjs/tailwindcss", "@nuxtjs/i18n", "@nuxt/image", "@vesp/nuxt-fontawesome", '@nuxtjs/color-mode', 'radix-vue/nuxt', '@sidebase/nuxt-pdf'],
   typescript: { typeCheck: true },
   tailwindcss: {
     exposeConfig: true,

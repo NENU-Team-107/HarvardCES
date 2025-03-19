@@ -43,6 +43,10 @@ const media = ref<MediaItemType[]>([
     label: "Wechat",
     image: "/img/wechat.png"
   },
+  {
+    label: "Scan to Register",
+    image: "/img/register_code.jpeg"
+  }
 ])
 
 const isHover = ref<boolean[]>([false, false])
