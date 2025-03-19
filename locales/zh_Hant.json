@@ -13,6 +13,8 @@
   "Keynote & Invited Talk": "主題演講",
   "Workshop": "工作室",
   "special font": "font-special-tc",
+  "Title": "主題",
+  "Abstract": "摘要",
   "Symposium Handbook": "工作室與論壇概覽",
   "Workshop Session": "工作室 (5 月 8 日)",
   "Panel Discussion": "分會場討論",
@@ -136,8 +138,8 @@
   "Prev": "上一頁",
   "Next": "下一頁",
   "PopWindow": {
-    "Title": "投稿鏈接",
-    "Content": "請點擊此處提交論文"
+    "Title": "註冊鏈接",
+    "Content": "註冊請掃描"
   },
   "Invited Speakers Title": "特邀嘉賓(工作室和論壇)",
   "Guest of Honor": "榮譽嘉賓",

@@ -25,9 +25,9 @@ const props = defineProps<{
       </div>
     </div>
     <div class="grid md:grid-cols-6 grid-cols-5 md:text-lg text-sm w-full my-4">
-      <div class="text-right font-semibold">Title:</div>
+      <div class="text-right font-semibold">{{ $t("Title") }}: </div>
       <div class="font-semibold md:col-span-5 col-span-4 pl-2">{{ $t(props.speaking.title) }}</div>
-      <div class="text-right font-semibold">Abstract:</div>
+      <div class="text-right font-semibold">{{ $t("Abstract") }}:</div>
       <div class="font-normal md:col-span-5 col-span-4 pl-2">
         {{ $t(props.speaking.abstract) }}
       </div>

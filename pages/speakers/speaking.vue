@@ -51,12 +51,12 @@ onMounted(() => {
     <Loading />
   </div>
   <div v-else class="w-full max-w-6xl h-full min-h-screen mx-0 y-5 pt-24">
-    <h1 class="text-4xl font-bold text-center py-6">Speaking</h1>
+    <h1 class="text-4xl font-bold text-center py-6">{{ $t("Speaking") }}</h1>
     <div class=" bg-white/80 w-full h-full mx-auto max-w-6xl flex flex-col justify-center items-center">
       <div class="flex justify-center items-center ">
         <div class="h-0.5 w-24 bg-black"></div>
         <h1 class="text-center font-bold text-2xl py-6 justify-self-center mx-5">
-          Keynote Speakers
+          {{ $t("Keynote Speakers") }}
         </h1>
         <div class="h-0.5 w-24 bg-black"></div>
       </div>
@@ -70,7 +70,7 @@ onMounted(() => {
       <div class="flex justify-center items-center ">
         <div class="h-0.5 w-24 bg-black"></div>
         <h1 class="text-center font-bold text-2xl py-6 justify-self-center mx-5">
-          Invited Speakers
+          {{ $t("Invited Speakers") }}
         </h1>
         <div class="h-0.5 w-24 bg-black"></div>
       </div>

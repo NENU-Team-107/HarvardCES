@@ -22,6 +22,8 @@
   "Round Table": "圆桌讨论",
   "Onsite Demo and Exhibition": "研发设计成果展示",
   "Host by": "承办单位：",
+  "Title": "主题",
+  "Abstract": "摘要",
   "Host": {
     "Name": "领衔主办",
     "Language": "语言",
@@ -45,8 +47,8 @@
   "Prev": "上一页",
   "Next": "下一页",
   "PopWindow": {
-    "Title": "投稿链接",
-    "Content": "请点击此处提交论文"
+    "Title": "注册链接",
+    "Content": "注册请扫描"
   },
   "Invited Speakers": "特邀嘉宾",
   "Invited Speakers Title": "特邀嘉宾(工作室和论坛)",

@@ -37,6 +37,7 @@ const closeMenu = () => {
         <NuxtLink to="/" class="text-blue-500" target="_top">
           <div class="flex">
             <NuxtImg src="img/logo/HostLogo_small.jpg" class="h-full md:max-h-24 max-h-20" sizes="md:600 200"></NuxtImg>
+            <NuxtImg src="img/logo/sym_logo.png" class="h-full md:max-h-16 max-h-10 mt-6" sizes="md:600 200"></NuxtImg>
           </div>
         </NuxtLink>
       </div>
