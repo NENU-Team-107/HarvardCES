@@ -505,6 +505,61 @@
     "Title": "Campus Map",
     "src": "img/poster/CampusMap.png"
   },
+  "School Bus Schedule": {
+    "Title": "School Bus Schedule",
+    "Info": {
+      "Title": "📍接送站說明：",
+      "line1": "EduHK Shuttle Stop at University MTR Station",
+      "line2": "The Education University of Hong Kong",
+      "line3": "Science Park – Happiness Cuisine Restaurant"
+    },
+    "Day1": {
+      "Title": "📅 Day 1 — Thursday, May 8, 2025",
+      "Depart": {
+        "Title": "🚌 Route: University MTR Station → EdUHK",
+        "Details": {
+          "line1": {
+            "Shuttle": "Shuttle A",
+            "Pickup Time": "11:45 AM",
+            "Departure Time": "12:00 PM",
+            "Arrival": "12:30 PM"
+          },
+          "line2": {
+            "Shuttle": "Shuttle B",
+            "Pickup Time": "11:45 AM",
+            "Departure Time": "12:00 PM",
+            "Arrival": "12:30 PM"
+          },
+          "line3": {
+            "Shuttle": "Shuttle C",
+            "Pickup Time": "12:00 PM",
+            "Departure Time": "12:15 PM",
+            "Arrival": "12:45 PM"
+          }
+        }
+      },
+      "Return": {
+        "Title": "🚌 Return Shuttle: EdUHK → University MTR Station",
+        "Details": {
+          "line1": {
+            "Shuttle": "Shuttle A",
+            "Pickup Time":"7:00 PM",
+            "Departure Time": "7:15 PM"
+          },
+          "line2":{
+            "Shuttle": "Shuttle B",
+            "Pickup Time":"7:00 PM",
+            "Departure Time": "7:15 PM"
+          },
+          "line3":{
+            "Shuttle": "Shuttle C",
+            "Pickup Time":"7:00 PM",
+            "Departure Time": "7:15 PM"
+          }
+        }
+      }
+    }
+  },
   "Harvard CES": "CES",
   "EduHK": "EdUHK",
   "Harvard China Education Symposium": "China Education Symposium at Harvard University",
