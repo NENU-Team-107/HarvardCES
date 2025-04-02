@@ -517,18 +517,18 @@
       "Title": "📅 Day 1 — Thursday, May 8, 2025",
       "Route": {
         "Title": "🚌 Route: University MTR Station → EdUHK",
-        "ID":"Day1Route"
+        "src": "img/busLine/Day1/Route.png"
       },
       "Return Shuttle": {
         "Title": "🚌 Return Shuttle: EdUHK → University MTR Station",
-        "ID":"Day1ReturnShuttle"
+        "src": "img/busLine/Day1/ReturnShuttle.png"
       }
     },
     "Day2": {
       "Title": "📅 Day 2 — Friday, May 9, 2025",
       "Morning Route": {
         "Title": "🚌 Morning Route: University MTR Station → EdUHK",
-        "ID": "Day2MorningRoute"
+        "src": "img/busLine/Day2/MorningRoute.png"
       },
       "Dinner": {
         "Title": "🎉 President’s Dinner",
@@ -537,39 +537,39 @@
       },
       "Shuttle to Banquet": {
         "Title": "🚌 Shuttle to Banquet: EdUHK → Science Park",
-        "ID": "Day2Shuttle2Banquet"
+        "src": "img/busLine/Day2/Shuttle2Banquet.png"
       },
       "Extra Shuttle": {
         "Title": "🚌 Extra Shuttle: EdUHK → University Station",
-        "ID": "Day2ExtraShuttle"
+        "src": "img/busLine/Day2/ExtraShuttle.png"
       },
       "After Dinner Shuttle": {
         "Title": "🚌 After Dinner Shuttle: Science Park → University Station",
-        "ID": "Day2AfterDinnerShuttle"
+        "src": "img/busLine/Day2/AfterDinnerShuttle.png"
       }
     },
     "Day3": {
       "Title": "📅 Day 3 — Saturday, May 10, 2025",
       "Morning Route": {
         "Title": "🚌 Morning Route: University Station → EdUHK",
-        "ID": "Day3MorningRoute"
+        "src": "img/busLine/Day3/MorningRoute.png"
       },
       "Dinner": {
-        "Title": "🎉 Gala Dinner 晚宴",
+        "Title": "🎉 Gala Dinner",
         "Time": "🕖 Dinner Time: 7:00–9:30 PM",
         "Local": "📍 Location: Science Park – Haking Wong Restaurant"
       },
       "Shuttle to Banquet": {
         "Title": "🚌 Shuttle to Banquet: EdUHK → Science Park",
-        "ID": "Day3Shuttle2Banquet"
+        "src": "img/busLine/Day3/Shuttle2Banquet.png"
       },
       "Return Shuttles": {
         "Title": "🚌 Return Shuttles: EdUHK → University MTR Station",
-        "ID": "Day3ReturnShuttles"
+        "src": "img/busLine/Day3/ReturnShuttles.png"
       },
       "After Dinner Shuttle": {
         "Title": "🚌 After Dinner Shuttle: Science Park → University MTR Station",
-        "ID": "Day3AfterDinnerShuttle"
+        "src": "img/busLine/Day3/AfterDinnerShuttle.png"
       }
     }
   },
@@ -876,7 +876,7 @@
       },
       "id10": {
         "description": "Ping Li is Sin Wai Kin Foundation Professor in Humanities and Technology, Chair Professor of Neurolinguistics and Bilingual Studies, and Dean of the Faculty of Humanities at the Hong Kong Polytechnic University. He was previously Professor of Psychology, Linguistics, and Information Sciences at the Pennsylvania State University, and served as Program Director of Cognitive Neuroscience and Perception, Action, and Cognition programs at the U.S. National Science Foundation. Li’s research is focused on investigating the neurocognitive and computational bases of language acquisition, bilingualism, and reading comprehension. He uses cognitive neuroscience approaches and emerging technologies to study the neuroplasticity and individual differences in both children and adults, aiming at understanding the relationships among language, culture, technology, and the brain. Li is currently Editor-in-Chief of Brain and Language and Senior Editor of Cognitive Science. He was President of the Society for Computation in Psychology, and is a Fellow of the American Association for the Advancement of Science, the Psychonomic Society, and the Cognitive Science Society.",
-        "name": "Professor Ping Li",
+        "name": "Professor Ping Li(Parallel Session Keynote Speaker)",
         "title": "Chair Professor of Neurolinguistics and Bilingual Studies <br> Dean of the Faculty of Humanities",
         "inc": "Hong Kong Polytechnic University"
       },
@@ -1046,7 +1046,7 @@
       "title": "Writing and Publishing in High-Impact Journals",
       "description": "This workshop is designed to provide researchers with invaluable insights and practical strategies from Editors-in-Chief (EiCs) of leading high-impact journals. Participants will gain a comprehensive understanding of the key elements that make a manuscript stand out, including crafting compelling abstracts, structuring articles effectively, and presenting data convincingly. The workshop will also cover the nuances of the peer-review process, common pitfalls to avoid, and tips for responding to reviewers' comments.",
       "takeaways": "Through interactive sessions and case studies, attendees will have the opportunity to engage directly with EiCs, gaining firsthand knowledge of what top-tier journals look for in submissions. Whether you are an early-career researcher or an experienced academic, this workshop will equip you with the tools and confidence needed to enhance your writing and increase your chances of publication success. ",
-      "speaker": "<a href='/speakers/speaker/19 Hongjie Chen'>Hong Jie Chen</a> (EiC, Peking University Education Review) <br> <a href='/speakers/speaker/25 Mutlu Cukurova'> Mutlu Cukurova </a>(EiC, British Journal of Education Technology)<br> <a href='/speakers/speaker/5 MinjuanWANG'>Minjuan Wang </a>(EiC, IEEE-Transactions on Learning Technoogies) <br> <a href='/speakers/speaker/26 Weipeng Yang'>Weipeng Yang </a>(EiC, Co-Editor-in-Chief of the Journal of Research in Childhood Education) <br> <a href='/speakers/speaker/21 LI HuiPhilip'>Philip Li</a> (Chair Professor, Early Childhood Education)",
+      "speaker": "<a href='/speakers/speaker/19 Hongjie Chen'>Hong Jie Chen</a> (EiC, Peking University Education Review) <br> <a href='/speakers/speaker/25 Mutlu Cukurova'> Mutlu Cukurova </a>(EiC, British Journal of Education Technology)<br> <a href='/speakers/speaker/5 MinjuanWANG'>Minjuan Wang </a>(EiC, IEEE-Transactions on Learning Technologies) <br> <a href='/speakers/speaker/26 Weipeng Yang'>Weipeng Yang </a>(EiC, Co-Editor-in-Chief of the Journal of Research in Childhood Education) <br> <a href='/speakers/speaker/21 LI HuiPhilip'>Philip Li</a> (Chair Professor, Early Childhood Education)",
       "slides": "Join us for this unique opportunity to learn from the experts and take your research to the next level!"
     },
     "workshop3": {

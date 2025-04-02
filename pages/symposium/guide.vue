@@ -1,9 +1,6 @@
 <script lang="ts" setup>
 import { useI18n } from 'vue-i18n'
 
-const { t } = useI18n();
-
-
 const columns = [
   { key: "index" }, { key: "col1" }, { key: "col2" }, { key: "col3" }, { key: "col4" }, { key: "col5" }
 ];
@@ -34,12 +31,6 @@ const rows = [
     "col5": "Recommended Hotels.Details.line5.Contact",
   },
 ]
-
-interface ApiResponse {
-  status: string;
-  data: { data: any } | null;
-}
-
 
 
 </script>
@@ -186,18 +177,124 @@ interface ApiResponse {
         </div>
       </div>
 
-      <div class="text-center font-bold my-5 mx-16">
-        <div class="w-full text-left text-xl pl-10">{{ $t('School Bus Schedule.Info.Title') }}</div>
-        <ul class="list-disc pl-28 text-lg text-left">
-          <li>{{ $t('School Bus Schedule.Info.line1') }}</li>
-          <li>{{ $t('School Bus Schedule.Info.line2') }}</li>
-          <li>{{ $t('School Bus Schedule.Info.line3') }}</li>
-        </ul>
+      <div class="text-center font-bold md:my-5 md:mx-16 flex justify-center items-center flex-col">
+        <div class="w-full">
+          <div class="w-full text-left text-xl md:pl-10">{{ $t('School Bus Schedule.Info.Title') }}</div>
+          <ul class="list-disc pl-6 md:pl-28 text-lg text-left">
+            <li>{{ $t('School Bus Schedule.Info.line1') }}</li>
+            <li>{{ $t('School Bus Schedule.Info.line2') }}</li>
+            <li>{{ $t('School Bus Schedule.Info.line3') }}</li>
+          </ul>
+        </div>
 
-        <div class="w-full text-left text-xl pl-10">{{ $t('School Bus Schedule.Day1.Title') }}</div>
-        <div class="w-full text-left text-xl pl-10">{{ $t('School Bus Schedule.Day1.Route.Title') }}</div>
-        <BusScheduleTable :id="$t('School Bus Schedule.Day1.Route.ID')" />
-        
+        <!-- Day1 -->
+        <div class="w-full text-left text-xl md:pl-10 md:py-3 flex justify-center items-center flex-col">
+          <div class="w-full flex justify-center items-center flex-col">
+            <div class="w-full text-xl md:text-2xl text-center">{{ $t('School Bus Schedule.Day1.Title') }}</div>
+
+            <div class="w-full grid grid-col-1 justify-items-center divide-y-2 divide-dotted divided-gray-950">
+              <div class="w-full md:w-3/5 py-2">
+                <div class="w-full text-lg md:text-xl">{{ $t('School Bus Schedule.Day1.Route.Title') }}</div>
+                <div class="w-full flex justify-center items-center h-40">
+                  <NuxtImg :src="$t('School Bus Schedule.Day1.Route.src')" class="md:w-2/3"></NuxtImg>
+                </div>
+              </div>
+
+              <div class="w-full md:w-3/5 py-2">
+                <div class="w-full text-lg md:text-xl">{{ $t('School Bus Schedule.Day1.Return Shuttle.Title') }}</div>
+                <div class="w-full flex justify-center items-center h-40">
+                  <NuxtImg :src="$t('School Bus Schedule.Day1.Return Shuttle.src')" class="w-full md:w-2/3"></NuxtImg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Day2 -->
+        <div class="w-full text-left text-xl md:pl-10 md:py-3 flex justify-center items-center flex-col">
+          <div class="w-full flex justify-center items-center flex-col">
+            <div class="w-full text-xl md:text-2xl text-center">{{ $t('School Bus Schedule.Day2.Title') }}</div>
+
+            <div class="w-full grid grid-col-1 justify-items-center divide-y-2 divide-dotted divided-gray-950">
+              <div class="w-full md:w-3/5 py-2">
+                <div class="w-full text-xl">{{ $t('School Bus Schedule.Day2.Morning Route.Title') }}</div>
+                <div class="w-full flex justify-center items-center h-40">
+                  <NuxtImg :src="$t('School Bus Schedule.Day2.Morning Route.src')" class="w-full md:w-2/3"></NuxtImg>
+                </div>
+              </div>
+
+              <div class="w-full md:w-3/5 py-4">
+                <div class="w-full text-lg md:text-xl">{{ $t('School Bus Schedule.Day2.Dinner.Title') }}</div>
+                <div class="w-full text-lg md:text-xl">{{ $t('School Bus Schedule.Day2.Dinner.Time') }}</div>
+                <div class="w-full text-lg md:text-xl">{{ $t('School Bus Schedule.Day2.Dinner.Local') }}</div>
+              </div>
+
+              <div class="w-full md:w-3/5 py-2">
+                <div class="w-full text-lg md:text-xl">{{ $t('School Bus Schedule.Day2.Shuttle to Banquet.Title') }}</div>
+                <div class="w-full flex justify-center items-center h-28">
+                  <NuxtImg :src="$t('School Bus Schedule.Day2.Shuttle to Banquet.src')" class="w-full md:w-2/3"></NuxtImg>
+                </div>
+              </div>
+              <div class="w-full md:w-3/5 py-2">
+                <div class="w-full text-xl">{{ $t('School Bus Schedule.Day2.Extra Shuttle.Title') }}</div>
+                <div class="w-full flex justify-center items-center h-28">
+                  <NuxtImg :src="$t('School Bus Schedule.Day2.Extra Shuttle.src')" class="w-full md:w-2/3"></NuxtImg>
+                </div>
+              </div>
+
+              <div class="w-full md:w-3/5 py-2">
+                <div class="w-full text-lg md:text-xl">{{ $t('School Bus Schedule.Day2.After Dinner Shuttle.Title') }}</div>
+                <div class="w-full flex justify-center items-center h-28">
+                  <NuxtImg :src="$t('School Bus Schedule.Day2.After Dinner Shuttle.src')" class="w-full md:w-1/2"></NuxtImg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Day3 -->
+        <div class="w-full text-left text-xl md:pl-10 md:py-3 flex justify-center items-center flex-col">
+          <div class="w-full flex justify-center items-center flex-col">
+            <div class="w-full text-xl md:text-2xl text-center">{{ $t('School Bus Schedule.Day3.Title') }}</div>
+
+            <div class="w-full grid grid-col-1 justify-items-center divide-y-2 divide-dotted divided-gray-950">
+              <div class="w-full md:w-3/5 py-2">
+                <div class="w-full text-lg md:text-xl">{{ $t('School Bus Schedule.Day3.Morning Route.Title') }}</div>
+                <div class="w-full flex justify-center items-center h-40">
+                  <NuxtImg :src="$t('School Bus Schedule.Day3.Morning Route.src')" class="w-full md:w-2/3"></NuxtImg>
+                </div>
+              </div>
+
+              <div class="w-full md:w-3/5 py-4">
+                <div class="w-full text-lg md:text-xl">{{ $t('School Bus Schedule.Day3.Dinner.Title') }}</div>
+                <div class="w-full text-lg md:text-xl">{{ $t('School Bus Schedule.Day3.Dinner.Time') }}</div>
+                <div class="w-full text-lg md:text-xl">{{ $t('School Bus Schedule.Day3.Dinner.Local') }}</div>
+              </div>
+
+              <div class="w-full md:w-3/5 py-2">
+                <div class="w-full text-lg md:text-xl">{{ $t('School Bus Schedule.Day3.Shuttle to Banquet.Title') }}</div>
+                <div class="w-full flex justify-center items-center h-28">
+                  <NuxtImg :src="$t('School Bus Schedule.Day3.Shuttle to Banquet.src')" class="w-full md:w-2/3"></NuxtImg>
+                </div>
+              </div>
+              <div class="w-full md:w-3/5 py-2">
+                <div class="w-full text-lg md:text-xl">{{ $t('School Bus Schedule.Day3.Return Shuttles.Title') }}</div>
+                <div class="w-full flex justify-center items-center h-28">
+                  <NuxtImg :src="$t('School Bus Schedule.Day3.Return Shuttles.src')" class="text-lg md:w-2/3"></NuxtImg>
+                </div>
+              </div>
+
+              <div class="w-full md:w-3/5 py-2">
+                <div class="w-full text-lg md:text-xl">{{ $t('School Bus Schedule.Day3.After Dinner Shuttle.Title') }}</div>
+                <div class="w-full flex justify-center items-center h-28">
+                  <NuxtImg :src="$t('School Bus Schedule.Day3.After Dinner Shuttle.src')" class="w-2/3 md:w-1/2"></NuxtImg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
   </div>

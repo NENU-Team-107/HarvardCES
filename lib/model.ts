@@ -80,8 +80,3 @@ export interface ChairListItem {
     name: string,
     inc: string,
 }
-
-export interface BusScheduleItemResp {
-    col: { key: string }[],
-    data: { [key: string]: string }[],
-}

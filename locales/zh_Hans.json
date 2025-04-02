@@ -195,6 +195,74 @@
     "Title": "校内地图",
     "src": "img/poster/CampusMap.png"
   },
+  "School Bus Schedule": {
+    "Title": "校車接送時間表",
+    "Info": {
+      "Title": "📍接送站說明：",
+      "line1": "大學站 教大校車停靠站",
+      "line2": "香港教育大學校園",
+      "line3": "喜慶餐廳"
+    },
+    "Day1": {
+      "Title": "📅 Day 1 — Thursday, May 8, 2025",
+      "Route": {
+        "Title": "🚌 Route: University MTR Station → EdUHK",
+        "src": "img/busLine/Day1/Route.png"
+      },
+      "Return Shuttle": {
+        "Title": "🚌 Return Shuttle: EdUHK → University MTR Station",
+        "src": "img/busLine/Day1/ReturnShuttle.png"
+      }
+    },
+    "Day2": {
+      "Title": "📅 Day 2 — Friday, May 9, 2025",
+      "Morning Route": {
+        "Title": "🚌 Morning Route: University MTR Station → EdUHK",
+        "src": "img/busLine/Day2/MorningRoute.png"
+      },
+      "Dinner": {
+        "Title": "🎉 校長晚宴",
+        "Time": "🕕 Dinner Time: 6:30 PM",
+        "Local": "📍 Location: Science Park – Happiness Cuisine Restaurant"
+      },
+      "Shuttle to Banquet": {
+        "Title": "🚌 Shuttle to Banquet: EdUHK → Science Park",
+        "src": "img/busLine/Day2/Shuttle2Banquet.png"
+      },
+      "Extra Shuttle": {
+        "Title": "🚌 Extra Shuttle: EdUHK → University Station",
+        "src": "img/busLine/Day2/ExtraShuttle.png"
+      },
+      "After Dinner Shuttle": {
+        "Title": "🚌 After Dinner Shuttle: Science Park → University Station",
+        "src": "img/busLine/Day2/AfterDinnerShuttle.png"
+      }
+    },
+    "Day3": {
+      "Title": "📅 Day 3 — Saturday, May 10, 2025",
+      "Morning Route": {
+        "Title": "🚌 Morning Route: University Station → EdUHK",
+        "src": "img/busLine/Day3/MorningRoute.png"
+      },
+      "Dinner": {
+        "Title": "🎉 晚宴",
+        "Time": "🕖 Dinner Time: 7:00–9:30 PM",
+        "Local": "📍 Location: Science Park – Haking Wong Restaurant"
+      },
+      "Shuttle to Banquet": {
+        "Title": "🚌 Shuttle to Banquet: EdUHK → Science Park",
+        "src": "img/busLine/Day3/Shuttle2Banquet.png"
+      },
+      "Return Shuttles": {
+        "Title": "🚌 Return Shuttles: EdUHK → University MTR Station",
+        "src": "img/busLine/Day3/ReturnShuttles.png"
+      },
+      "After Dinner Shuttle": {
+        "Title": "🚌 After Dinner Shuttle: Science Park → University MTR Station",
+        "src": "img/busLine/Day3/AfterDinnerShuttle.png"
+      }
+    }
+  },
   "Harvard CES": "中国教育论坛 (CES)",
   "EduHK": "香港教育大学",
   "Harvard China Education Symposium": "哈佛中国教育论坛 (CES)",
@@ -332,7 +400,7 @@
       "id5": {
         "description": "王敏娟教授是新上任的香港教育大学新兴技术与未来教育讲座教授、全球新兴科技研究所联席院长，《IEEE学习技术学报》（IEEE TLT Journal）的主编。王教授的研究专长涉猎不同学科，尤其是在STEM教育、由新兴科技实现的未来教育（学习创念及培育人类责任感）、元宇宙与沉浸式学习，以及人工智能（包括AIGC）在教学、学习和培训的设计与实施。她是一位极具影响力的作家和国际知名学者，曾在超过 45 次会议上发表主题演讲。她在Nature旗下HSSC期刊、《计算机与教育》（Computers & Education）、IEEE-TLT（Transactions on Learning Technologies）期刊、《英国教育技术期刊》（British Journal of Education Technology）和《教育技术与社会》（ETS (Education Technology and Society)）等检索英文期刊上，发表过大量有影响力的文章。此外，她的教学和研究还被国内顶级核心期刊（如《教育研究》）收录。作为IEEE教育学会的资深会员，她为 IEEE 和其他学术界做出了巨大贡献。最近，她被哈佛大学的Chris Dede教授提名为在国际学术界有很高的知名度的iLRN Scholar（沉浸式学习研究协会学者）。",
         "name": "王敏娟教授",
-        "title": "香港教育大学新兴科技与未来教育讲座教授 <br> 应用政策研究及教育未来学院联席副院长 <br> 全球新兴科技研究所联席院长",
+        "title": "香港教育大学新兴科技与未来教育讲席教授 <br> 应用政策研究及教育未来联席院长 <br> 全球新兴技术研究所联席院长",
         "inc": "香港教育大学",
         "speaking": {
           "inc": "IEEE 高级会员、《IEEE学习技术学报》（IEEE TLT Journal）主编 <br> 香港教育大学",
@@ -409,7 +477,7 @@
       },
       "id2": {
         "description": "李青教授现为香港理工大学电子计算学系系主任兼数据科学讲座教授。他曾任多媒体软件工程研究中心（MERC）创始董事，1998 年至 2018 年担任香港城市大学计算机科学系教授。在此之前，他还曾在香港科技大学和澳大利亚国立大学（澳大利亚堪培拉）任教。李教授曾担任微软亚洲研究院（中国北京）、摩托罗拉全球计算和电信部门（天津区域运营中心）和澳大利亚联邦科学与工业研究组织（CSIRO）信息技术部的顾问。他曾担任中国科学技术大学和武汉大学的兼职教授，以及湖南大学（中国长沙）的客座教授，并于湖南大学获得工学学士学位。 1982 年获计算机科学系学士学位。他还在出生地浙江省的重点大学浙江大学（中国杭州）担任讲座教授（软件技术）。",
-        "name": "李青教授",
+        "name": "李青教授（分论坛主题演讲嘉宾）",
         "title": "IEEE 会士、电子计算学学系系主任 <br> 香港理工大学",
         "inc": "香港理工大学",
         "speaking": {
@@ -461,16 +529,16 @@
         "inc": "香港教育大学"
       },
       "id10": {
-        "description": "李平教授現任香港理工大學冼為堅基金會人文與技術教授、神經語言學與雙語研究講席教授以及人文學院院長。他曾任賓夕法尼亞州立大學心理學、語言學及資訊科學教授，並擔任美國國家科學基金會認知神經科學及感知、行動與認知項目的主任。李教授的研究聚焦於語言習得、雙語能力及閱讀理解的神經認知與計算基礎。他運用認知神經科學方法及新興技術，探索不同年齡群體的神經可塑性及個體差異，旨在理解語言、文化、科技與大腦之間的關係。李教授現任學術期刊《Brain and Language》主編及《Cognitive Science》資深主編。他曾任心理學計算學會會長、美國科學促進會會士、心理學學會及認知科學學會的會士。",
-        "name": "李平教授",
-        "title": "神經語言學與雙語研究講席教授 <br> 人文學院院長",
-        "inc": "香港理工大學"
+        "description": "李平教授现任香港理工大学冼为坚基金会人文与技术教授、神经语言学与双语研究讲席教授以及人文学院院长。他曾任宾夕法尼亚州立大学心理学、语言学及信息科学教授，并担任美国国家科学基金会认知神经科学及感知、行动与认知项目的主任。李教授的研究聚焦于语言习得、双语能力及阅读理解的神经认知与计算基础。他运用认知神经科学方法及新兴技术，探索不同年龄群体的神经可塑性及个体差异，旨在理解语言、文化、科技与大脑之间的关系。李教授现任学术期刊《Brain and Language》主编及《Cognitive Science》资深主编。他曾任心理学计算学会会长，并是美国科学促进会、心理学学会及认知科学学会的会士。",
+        "name": "李平教授（分论坛主题演讲嘉宾）",
+        "title": "神经语言学与双语研究讲席教授 <br> 人文学院院长",
+        "inc": "香港理工大学"
       },
       "id11": {
-        "description": "作為一名系統工程師，阿爾貝托·索爾斯擁有40年的工業和學術經驗。在25年間，他曾在四家公司擔任不同的管理職務。阿爾貝托自2018年1月起擔任馬德里歐洲大學的建築工程科學與電腦學院院長。他擁有馬德里理工大學 (Universidad Politecnica de Madrid) 的海軍建築與海洋工程碩士學位，弗吉尼亞理工學院與州立大學 (VirginiaPolytechnic Institute and State University) 的系統工程碩士學位，以及史蒂文斯理工學院 (Stevens Institute of Technology) 的系統工程博士學位。他已發表了超過35篇技術論文，撰寫了7本系統工程和相關學科的書籍，並與他人合著了另外兩本書。他是認證專業物流師，並獲得生產和庫存管理認證。阿爾貝托入選了軍事藝術與科學學院。他對人工智慧有著濃厚的興趣，並在學校的轉型工作中扮演著重要的角色，試圖探索人工智慧在高等教育中的充分應用。",
+        "description": "作为一名系统工程师，阿尔贝托·索尔斯拥有40年的工业和学术经验。在25年间，他曾在四家公司担任不同的管理职务。阿尔贝托自2018年1月起担任马德里欧洲大学的建筑工程科学与电脑学院院长。他拥有马德里理工大学 (Universidad Politecnica de Madrid) 的海军建筑与海洋工程硕士学位，弗吉尼亚理工学院与州立大学 (VirginiaPolytechnic Institute and State University) 的系统工程硕士学位，以及史蒂文斯理工学院 (Stevens Institute of Technology) 的系统工程博士学位。他已发表了超过35篇技术论文，撰写了7本系统工程和相关学科的书籍，并与他人合着了另外两本书。他是认证专业物流师，并获得生产和库存管理认证。阿尔贝托入选了军事艺术与科学学院。他对人工智慧有着浓厚的兴趣，并在学校的转型工作中扮演着重要的角色，试图探索人工智慧在高等教育中的充分应用。",
         "name": "Alberto Sols博士",
-        "title": "建築工程科學與電腦學院院長",
-        "inc": "德里歐洲大學"
+        "title": "建筑工程科学与电脑学院院长",
+        "inc": "马德里欧洲大学"
       }
     },
     "Poster": {
@@ -632,7 +700,7 @@
       "title": "高影响力期刊的文章写作与发表",
       "description": "本工作室目的是为研究人员提供来自高影响力期刊主编们的宝贵见解和实用策略。参与者将全面了解使论文脱颖而出的关键要素，包括撰写引人注目的摘要、有效构建文章结构以及有说服力地呈现数据。工作室还将分享同行评审过程的细微差别、常见误区以及回应审稿人意见的技巧。",
       "takeaways": "通过互动环节和案例研究，参会者将有机会与主编们进行互动，获得有关顶级期刊在投稿中寻找内容的信息。无论您是处于职业生涯早期的研究人员还是经验丰富的学者，该工作室都将为您提供提高写作水平和增加发表成功机会所需的工具和信心。",
-      "speaker": "<a href='/speakers/speaker/19 Hongjie Chen'>陈洪捷 </a> (北京大学教育评论主编) <br> <a href='/speakers/speaker/25 Mutlu Cukurova'>Mutlu Cukurova </a> (British Journal of Education Technology主编) <br> <a href='/speakers/speaker/5 MinjuanWANG'> 王敏娟 </a> (IEEE-Transactions on Learning Technoogies主编) <br> <a href='/speakers/speaker/26 Weipeng Yang'>杨伟鹏博士</a> (the Journal of Research in Childhood Education联合主编)<br> <a href='/speakers/speaker/21 LI HuiPhilip'>李辉教授</a> (幼儿教育讲座教授)",
+      "speaker": "<a href='/speakers/speaker/19 Hongjie Chen'>陈洪捷 </a> (北京大学教育评论主编) <br> <a href='/speakers/speaker/25 Mutlu Cukurova'>Mutlu Cukurova </a> (British Journal of Education Technology主编) <br> <a href='/speakers/speaker/5 MinjuanWANG'> 王敏娟 </a> (IEEE-Transactions on Learning Technologies主编) <br> <a href='/speakers/speaker/26 Weipeng Yang'>杨伟鹏博士</a> (the Journal of Research in Childhood Education联合主编)<br> <a href='/speakers/speaker/21 LI HuiPhilip'>李辉教授</a> (幼儿教育讲席教授)",
       "slides": "诚邀您参加本研讨会，向专家学习，助力您的研究迈向新的高度！"
     },
     "workshop3": {

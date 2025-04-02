@@ -995,29 +995,3 @@ export const ChairListMemberRight: Array<ChairListItem> = [
         "inc": "MemberRight.Details.line17.inc"
     },
 ]
-
-
-export const BusSchedule: Map<string, Array<any>> = new Map([
-    [
-      "Day1Route", [
-        {
-          Shuttle: "Shuttle A",
-          PickupTime: "11:45 AM",
-          DepartureTime: "12:00 PM",
-          Arrival: "12:30 PM"
-        },
-        {
-          Shuttle: "Shuttle B",
-          PickupTime: "11:45 AM",
-          DepartureTime: "12:00 PM",
-          Arrival: "12:30 PM"
-        },
-        {
-          Shuttle: "Shuttle C",
-          PickupTime: "12:00 PM",
-          DepartureTime: "12:15 PM",
-          Arrival: "12:45 PM"
-        }
-      ]
-    ],
-  ]);
