@@ -260,7 +260,7 @@ export const organizingCommittee: Array<Speaker> = [
             details: {
                 description: "server.Invited Speakers.id5.description",
                 title: "server.Invited Speakers.id5.title",
-                // link: '/speakers/speaker/21 LI HuiPhilip'
+                // link: 'https://www.eduhk.hk/zhs/experts/professor-li-hui-philip'
                 link: 'https://www.eduhk.hk/zhs/experts/professor-li-hui-philip'
             }
         }
