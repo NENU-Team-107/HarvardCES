@@ -35,9 +35,9 @@
       "Mail": "GIETfuture&#64;eduhk.hk"
     }
   },
-  "Cover Image": "/img/poster/cover_en.jpg",
-  "Showcase-1": "/img/poster/Showcase-en-1.png",
-  "Showcase-2": "/img/poster/Showcase-en-2.png",
+  "Cover Image": "/img/busLine/cover_en.jpg",
+  "Showcase-1": "/img/busLine/Showcase-en-1.png",
+  "Showcase-2": "/img/busLine/Showcase-en-2.png",
   "Collapse": "Collapse",
   "Show More": "Show More",
   "Show More Keynote": "View All Keynote Speakers",
@@ -413,7 +413,7 @@
   "Symposium Introduction": "Symposium Introduction",
   "Symposium Location": "Symposium Location",
   "Symposium Time": "Symposium Agenda",
-  "Symposium Agenda": "img/poster/Agenda-en.png",
+  "Symposium Agenda": "img/busLine/Agenda-en.png",
   "Visitor Guide": "Visitor Guide",
   "Guide for Guests Visiting The Education University of Hong Kong (Tai Po Campus)": "Guide for Guests Visiting The Education University of Hong Kong (Tai Po Campus)",
   "From Airport": {
@@ -503,7 +503,7 @@
   },
   "Campus Map": {
     "Title": "Campus Map",
-    "src": "img/poster/CampusMap.png"
+    "src": "img/busLine/CampusMap.png"
   },
   "School Bus Schedule": {
     "Title": "School Bus Schedule",
@@ -515,48 +515,61 @@
     },
     "Day1": {
       "Title": "📅 Day 1 — Thursday, May 8, 2025",
-      "Depart": {
+      "Route": {
         "Title": "🚌 Route: University MTR Station → EdUHK",
-        "Details": {
-          "line1": {
-            "Shuttle": "Shuttle A",
-            "Pickup Time": "11:45 AM",
-            "Departure Time": "12:00 PM",
-            "Arrival": "12:30 PM"
-          },
-          "line2": {
-            "Shuttle": "Shuttle B",
-            "Pickup Time": "11:45 AM",
-            "Departure Time": "12:00 PM",
-            "Arrival": "12:30 PM"
-          },
-          "line3": {
-            "Shuttle": "Shuttle C",
-            "Pickup Time": "12:00 PM",
-            "Departure Time": "12:15 PM",
-            "Arrival": "12:45 PM"
-          }
-        }
+        "ID":"Day1Route"
       },
-      "Return": {
+      "Return Shuttle": {
         "Title": "🚌 Return Shuttle: EdUHK → University MTR Station",
-        "Details": {
-          "line1": {
-            "Shuttle": "Shuttle A",
-            "Pickup Time":"7:00 PM",
-            "Departure Time": "7:15 PM"
-          },
-          "line2":{
-            "Shuttle": "Shuttle B",
-            "Pickup Time":"7:00 PM",
-            "Departure Time": "7:15 PM"
-          },
-          "line3":{
-            "Shuttle": "Shuttle C",
-            "Pickup Time":"7:00 PM",
-            "Departure Time": "7:15 PM"
-          }
-        }
+        "ID":"Day1ReturnShuttle"
+      }
+    },
+    "Day2": {
+      "Title": "📅 Day 2 — Friday, May 9, 2025",
+      "Morning Route": {
+        "Title": "🚌 Morning Route: University MTR Station → EdUHK",
+        "ID": "Day2MorningRoute"
+      },
+      "Dinner": {
+        "Title": "🎉 President’s Dinner",
+        "Time": "🕕 Dinner Time: 6:30 PM",
+        "Local": "📍 Location: Science Park – Happiness Cuisine Restaurant"
+      },
+      "Shuttle to Banquet": {
+        "Title": "🚌 Shuttle to Banquet: EdUHK → Science Park",
+        "ID": "Day2Shuttle2Banquet"
+      },
+      "Extra Shuttle": {
+        "Title": "🚌 Extra Shuttle: EdUHK → University Station",
+        "ID": "Day2ExtraShuttle"
+      },
+      "After Dinner Shuttle": {
+        "Title": "🚌 After Dinner Shuttle: Science Park → University Station",
+        "ID": "Day2AfterDinnerShuttle"
+      }
+    },
+    "Day3": {
+      "Title": "📅 Day 3 — Saturday, May 10, 2025",
+      "Morning Route": {
+        "Title": "🚌 Morning Route: University Station → EdUHK",
+        "ID": "Day3MorningRoute"
+      },
+      "Dinner": {
+        "Title": "🎉 Gala Dinner 晚宴",
+        "Time": "🕖 Dinner Time: 7:00–9:30 PM",
+        "Local": "📍 Location: Science Park – Haking Wong Restaurant"
+      },
+      "Shuttle to Banquet": {
+        "Title": "🚌 Shuttle to Banquet: EdUHK → Science Park",
+        "ID": "Day3Shuttle2Banquet"
+      },
+      "Return Shuttles": {
+        "Title": "🚌 Return Shuttles: EdUHK → University MTR Station",
+        "ID": "Day3ReturnShuttles"
+      },
+      "After Dinner Shuttle": {
+        "Title": "🚌 After Dinner Shuttle: Science Park → University MTR Station",
+        "ID": "Day3AfterDinnerShuttle"
       }
     }
   },

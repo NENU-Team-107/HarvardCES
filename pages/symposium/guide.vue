@@ -1,4 +1,8 @@
 <script lang="ts" setup>
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n();
+
 
 const columns = [
   { key: "index" }, { key: "col1" }, { key: "col2" }, { key: "col3" }, { key: "col4" }, { key: "col5" }
@@ -30,6 +34,13 @@ const rows = [
     "col5": "Recommended Hotels.Details.line5.Contact",
   },
 ]
+
+interface ApiResponse {
+  status: string;
+  data: { data: any } | null;
+}
+
+
 
 </script>
 <template>
@@ -182,10 +193,13 @@ const rows = [
           <li>{{ $t('School Bus Schedule.Info.line2') }}</li>
           <li>{{ $t('School Bus Schedule.Info.line3') }}</li>
         </ul>
+
+        <div class="w-full text-left text-xl pl-10">{{ $t('School Bus Schedule.Day1.Title') }}</div>
+        <div class="w-full text-left text-xl pl-10">{{ $t('School Bus Schedule.Day1.Route.Title') }}</div>
+        <BusScheduleTable :id="$t('School Bus Schedule.Day1.Route.ID')" />
+        
       </div>
-
     </div>
-
   </div>
 
 
