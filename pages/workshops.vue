@@ -26,13 +26,6 @@ import WorkshopItem from '~/components/workshops/WorkShopItem.vue'
         <div class="font-semibold md:text-xl text-lg mx-auto">
           <div v-html="$t('workshop page.reg1')"></div>
         </div>
-        <br>
-        <ul class="list-disc">
-          <li>
-            <span v-html="$t('workshop page.reg-nonlocal')"></span>
-          </li>
-        </ul>
-        <br>
         <span v-html="$t('workshop page.reg-link')">
         </span>
       </div>
