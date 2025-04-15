@@ -29,9 +29,6 @@ import WorkshopItem from '~/components/workshops/WorkShopItem.vue'
         <br>
         <ul class="list-disc">
           <li>
-            <span v-html="$t('workshop page.reg-eduhk')"></span>
-          </li>
-          <li>
             <span v-html="$t('workshop page.reg-nonlocal')"></span>
           </li>
         </ul>
