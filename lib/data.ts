@@ -381,13 +381,13 @@ export const invitedSpeakers: Array<Speaker> = [
         name: "server.Invited Speakers.id3.name",
         kind: "Invited Speakers",
         inc: "server.Invited Speakers.id3.inc",
-        photo: "./assets/avatars/Hongjie Chen.png",
+        photo: "./assets/avatars/Ju SeongLee.png",
         activateDate: new Date("2025-05-09"),
         bio: {
             details: {
                 description: "server.Invited Speakers.id3.description",
                 title: "server.Invited Speakers.id3.title",
-                link: '/speakers/speaker/19 Hongjie Chen'
+                link: '/speakers/speaker/19 Ju SeongLee'
             }
         }
     },
