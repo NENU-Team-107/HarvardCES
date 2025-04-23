@@ -31,7 +31,8 @@ export const speakerToKind: Map<number, string> = new Map([
     [28, 'Organizing Committee'],
     [29, 'Organizing Committee'],
     [30, 'Invited Speakers'],
-    [31, 'Invited Speakers']
+    [31, 'Invited Speakers'],
+    [32, 'Invited Speakers'],
 ]);
 
 export const keynoteSpeaker: Array<Speaker> = [
@@ -513,6 +514,21 @@ export const invitedSpeakers: Array<Speaker> = [
             }
         }
     },
+    {
+        id: 32,
+        name: "server.Invited Speakers.id12.name",
+        kind: "Invited Speakers",
+        inc: "server.Invited Speakers.id12.inc",
+        photo: "./assets/avatars/CHIU Kin-fung Thomas.png",
+        activateDate: new Date("2025-05-09"),
+        bio: {
+            details: {
+                description: "server.Invited Speakers.id12.description",
+                title: "server.Invited Speakers.id12.title",
+                link: '/speakers/speaker/32 CHIU Kin-fung Thomas'
+            }
+        }
+    }
 ]
 export const keynoteSpeaking: Array<SpeakingInfo> = [
     {
