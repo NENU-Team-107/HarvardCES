@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full min-h-screen flex flex-col relative">
+  <div class="w-full min-h-screen flex flex-col relative font-display">
     <!-- 背景图片 -->
     <div
       class="absolute top-0 left-0 inset-0  bg-letter-paper bg-no-repeat bg-center bg-cover blur-sm opacity-80 bg-fixed " />

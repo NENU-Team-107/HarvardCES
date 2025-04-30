@@ -1,0 +1,35 @@
+#!/bin/bash
+
+. /etc/profile
+. ~/.bashrc
+
+project_path=$(cd `dirname $0`; pwd)
+cd $project_path
+
+echo "Pulling latest version"
+
+git_output=$(git pull)
+
+if [[ $git_output == *"Already up to date."* ]]; then
+  echo "No changes detected. Exiting."
+  exit 0
+fi
+
+echo "Changes detected. Proceeding with build."
+
+echo "Building"
+
+pnpm install && pnpm build
+
+wait
+
+echo "Build complete"
+
+echo "Killing pm2 services"
+
+pm2 stop all
+pm2 delete all
+
+echo "Start up service"
+
+pm2 start ecosystem.config.cjs

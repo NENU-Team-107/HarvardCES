@@ -22,8 +22,9 @@ const fetchList = async () => {
     }
   });
   const { status, data } = resp;
+  pending.value = true; // 设置为加载中状态
   if (status === "Success" && data) {
-    lines.value = data ?? [];
+    lines.value = data ?? [] as ChairListItem[];
     pending.value = false;
   } else {
     console.error('Failed to fetch data');
@@ -37,7 +38,7 @@ onMounted(() => {
 
 const columns = computed(() => {
   if (props.flag)
-    return [{ key: 'title', id: 'title', }, { key: 'name', id: 'name', }, { key: 'inc', id: 'name', }];
+    return [{ key: 'title', id: 'title', }, { key: 'name', id: 'name', }, { key: 'inc', id: 'inc', }];
   return [{ key: 'name', id: 'name', }, { key: 'inc', id: 'name', }];
 });
 
@@ -47,18 +48,25 @@ const columns = computed(() => {
   <div class="w-full h-full">
     <h1 class="md:text-xl text-lg text-green-900 font-bold text-left pl-5 md:min-h-7">{{ $t(props.title + ".Name") }}
     </h1>
-    <div>
-      <UTable :rows="lines" :columns="columns"
+    <div class="">
+      <UTable
+:data="lines" :columns="columns"
         :loading-state="{ icon: 'i-heroicons-arrow-path-20-solid', label: 'Loading...' }"
         :ui="{ base: 'min-w-full table-fixed ', td: { base: 'break-words text-left min-w-full table-fixed', size: 'md:text-base text-sm', color: 'text-black drak:text:white' }, tr: { base: 'h-fit' } }">
-        <template #name-data="{ row }">
-          <div v-html="$t(row.name).replace(/\n/g, '<br>')" />
+        <template #name-cell="{ row }">
+          <div
+class="md:text-base text-sm text-black drak:text:white break-words text-left min-w-full table-fixed"
+            v-html="$t(row.original.name).replace(/\n/g, '<br>')" />
         </template>
-        <template #title-data="{ row }">
-          <div v-html="$t(row.title).replace(/\n/g, '<br>')" />
+        <template #title-cell="{ row }">
+          <div
+class="md:text-base text-sm text-black drak:text:white break-words text-left min-w-full table-fixed"
+            v-html="$t(row.original.title).replace(/\n/g, '<br>')" />
         </template>
-        <template #inc-data="{ row }">
-          <div v-html="$t(row.inc).replace(/\n/g, '<br>')" />
+        <template #inc-cell="{ row }">
+          <div
+class="md:text-base text-sm text-black drak:text:white break-words text-left min-w-full table-fixed"
+            v-html="$t(row.original.inc).replace(/\n/g, '<br>')" />
         </template>
       </UTable>
     </div>

@@ -88,7 +88,7 @@ href="https://www.google.com/maps/place/The+Education+University+of+Hong+Kong+(E
 class="flex justify-center items-center" @mouseover="isHover[1] = true"
               @mouseleave="isHover[1] = false">
               <UButton
-padded color="blue" size="lg" square variant="soft"
+padded color="primary" size="lg" square variant="soft"
                 :class="isHover[1] ? 'mr-2 bg-white/60' : 'mr-2 bg-white'" :ui="{ rounded: 'rounded-full', }"
                 to="https://www.eduhk.hk/en/">
                 <template #leading>

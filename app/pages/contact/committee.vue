@@ -79,11 +79,13 @@ const logos = ref([
       <div class="min-h-full w-full md:px-32 px-4 justify-self-center">
         <div
           class="w-full grid md:grid-cols-10 grid-cols-1 gap-12 justify-center justify-item-center bg-white/80 md:pt-12 rounded-lg">
-          <div v-for="(item, index) in kinds" :key="index"
+          <div
+v-for="(item, index) in kinds" :key="index"
             :class="['w-full flex justify-center items-center', index % 5 == 0 ? 'row-span-4 md:col-span-6 col-span-1' : 'row-span-1 md:col-span-4 col-span-1']">
             <ChairTable :title="item.name" :flag="item.flag" />
           </div>
-          <div v-for="(item, index) in member" :key="index"
+          <div
+v-for="(item, index) in member" :key="index"
             class='w-full flex justify-center items-center md:col-span-5 col-span-1'>
             <ChairTable :title="item.title" :flag="item.flag" />
           </div>

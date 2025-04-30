@@ -1,4 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import {  presetAttributify, presetIcons } from 'unocss'
 
 export default defineNuxtConfig({
   devtools: { enabled: true },
@@ -14,7 +15,7 @@ export default defineNuxtConfig({
     '@nuxt/test-utils',
     '@nuxtjs/i18n',
     '@vesp/nuxt-fontawesome',
-    '@nuxtjs/tailwindcss',
+    '@unocss/nuxt',
   ],
 
   fonts: {
@@ -28,6 +29,27 @@ export default defineNuxtConfig({
       regular: [],
       brands: []
     }
+  },
+  unocss: {
+    // 预设配置
+    presets: [
+      presetAttributify(),
+      presetIcons({
+        scale: 1.2,
+        extraProperties: {
+          'display': 'inline-block',
+          'vertical-align': 'middle',
+        },
+        collections: {
+          // 配置 Heroicons 集合
+          hero: () => import('@iconify-json/heroicons').then(i => i.icons),
+        }
+      })
+    ],
+    // 可选：添加自定义规则或快捷方式
+    shortcuts: [
+      ['icon-btn', 'text-xl inline-block cursor-pointer select-none opacity-75 transition duration-200 ease-in-out hover:opacity-100 hover:text-blue-500']
+    ]
   },
   i18n: {
     compilation: {
@@ -70,7 +92,7 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
 
   ui: {
-    fonts: false
+    fonts: true,
   },
 
   future: {

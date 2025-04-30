@@ -130,7 +130,8 @@ const rows = [
           <div class="h-0.5 w-24 bg-black" />
         </div>
       </div>
-      <UTable :rows="rows" :columns="columns"
+      <UTable
+:rows="rows" :columns="columns"
         :loading-state="{ icon: 'i-heroicons-arrow-path-20-solid', label: 'Loading...' }"
         :ui="{ base: 'min-w-full table-fixed', td: { base: 'break-words text-left min-w-full table-fixed', size: ' text-base', color: 'text-black drak:text:white' }, tr: { base: 'h-fit' } }">
         <template #index-data="{ row }">

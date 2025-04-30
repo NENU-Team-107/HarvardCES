@@ -2,84 +2,46 @@
 @import "@nuxt/ui";
 
 @theme static {
-  --font-sans: 'Public Sans', sans-serif;
+  /* 高度扩展 */
+  --height-1-1-full: 110%;
+  --height-2-full: 200%;
 
-  --color-green-50: #effdf5;
-  --color-green-100: #d9fbe8;
-  --color-green-200: #b3f5d1;
-  --color-green-300: #75edae;
-  --color-green-400: #00dc82;
-  --color-green-500: #00c16a;
-  --color-green-600: #00a155;
-  --color-green-700: #007f45;
-  --color-green-800: #016538;
-  --color-green-900: #0a5331;
-  --color-green-950: #052e16;
+  /* 宽度扩展 */
+  --width-1-11: 9.090909%;
+  --width-10-11: 90.909091%;
+
+  /* 内边距扩展 */
+  --spacing-73: 18.25rem;
+
+  /* 字体家族 */
+  --font-display: "Times New Roman", NSimSun;
+
+  /* 背景图片 */
+  --bg-image-letter-paper: url("/bg/letter-paper.png");
+  --bg-image-harvard-img1: url("/bg/photo_1.jpg");
+  --bg-image-harvard-img2: url("/bg/photo_2.jpg");
+
+  /* 颜色 */
+  --color-cover-left: #c56c70;
+  --color-cover-right: #c1daba;
+  --color-collabor-item: #f9f9f9;
+  --color-footer-bg: #d29c9c;
+  --color-tabs-header: #f3f4f6;
+  --color-nav-bg: #ffffff;
+  --color-pdf-top: #7a2b2b;
+  --color-pdf-middle: #a12c2c;
+  --color-pdf-bottom: #7e3636;
+
+  /* 圆角 */
+  --radius-edge: 1rem;
+
+  /* 边框图片 */
+  --border-image-gradient-border: linear-gradient(to right, #c06e74, #c1daba) 1;
+
+  /* 阴影 */
+  --shadow-blurred-edge: 0 0 10px 5px rgba(192, 110, 116, 0.5);
 }
 
-body,
-html {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background: #fff;
-  color: #333;
-  margin: 0;
-  overflow-wrap: break-word;
-}
-
-canvas {
-  max-width: 100%;
-  height: 100%;
-}
-
-div:has(> canvas) {
-  display: flex !important;
-  justify-content: center;
-  align-items: center;
-}
-
-.truncate {
-  word-break: break-all;
-  text-overflow: unset;
-  white-space: inherit;
-}
-
-
-.page-enter-active,
-.page-leave-active {
-  transition: all 0.4s;
-}
-
-.page-enter-from,
-.page-leave-to {
-  opacity: 0;
-  filter: blur(1rem);
-}
-
-/* 通用滚动条样式 */
-::-webkit-scrollbar {
-  width: 12px;
-}
-
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-
-html {
-  scrollbar-width: thin;
-  scrollbar-color: #888 #f1f1f1;
+@utility aspect-* {
+  aspect-ratio: --value(--aspect-ratio-*, ratio, [ratio]);
 }

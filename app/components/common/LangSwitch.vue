@@ -38,12 +38,15 @@ function changeLanguage(item: { code: string; name: string; label: string }) {
 </script>
 
 <template>
-  <UDropdownMenu :items="localesOptions" :mode="isMobile ? 'click' : 'hover'"
+  <UDropdownMenu
+:items="localesOptions" :mode="isMobile ? 'click' : 'hover'"
     :ui="{ item: { disabled: 'cursor-text select-text' } }" :popper="{ placement: 'bottom-start', offsetDistance: 20 }">
-    <UButton icon="i-heroicons:language-16-solid" color="black" variant="ghost" aria-label="Theme"
+    <UButton
+icon="i-heroicons:language-16-solid" color="black" variant="ghost" aria-label="Theme"
       class="cursor-pointer" />
     <template #item="{ item }">
-      <div class="truncate text-left w-full cursor-pointer" :class="{ 'text-primary': locale === item.code }"
+      <div
+class="truncate text-left w-full cursor-pointer" :class="{ 'text-primary': locale === item.code }"
         @click="changeLanguage(item)">
         {{ item.name }}
       </div>
@@ -54,5 +57,11 @@ function changeLanguage(item: { code: string; name: string; label: string }) {
 <style scoped>
 .active {
   color: var(--primary);
+}
+
+.truncate {
+  word-break: break-all;
+  text-overflow: unset;
+  white-space: inherit;
 }
 </style>

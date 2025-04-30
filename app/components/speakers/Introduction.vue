@@ -30,9 +30,17 @@ const inc = computed(() => {
     }
   }">
     <div class="flex flex-col justify-center items-center w-full h-full">
-      <NuxtImg
-class="min-w-3/5 max-h-44 mx-auto rounded-full" :src="props.speakers.photo" :alt="props.speakers.name"
-        preload />
+      <div class="w-full max-w-44 mx-auto aspect-square">
+    <NuxtImg
+      class="w-full h-full rounded-full object-cover"
+      :src="props.speakers.photo"
+      :alt="props.speakers.name"
+      preload
+    />
+  </div>
+      <!-- <NuxtImg
+class="aspect-square min-w-3/5 max-h-44 mx-auto rounded-full" :src="props.speakers.photo" :alt="props.speakers.name"
+        preload /> -->
       <div class="font-bold text-center text-xl mt-2">
         {{ $t(props.speakers.name) }}
       </div>
