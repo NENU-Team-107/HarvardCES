@@ -1,0 +1,1066 @@
+{
+  "Home": "Home",
+  "Speakers": "Speakers",
+  "All Speakers": "All Speakers",
+  "Registration": "Registration",
+  "Submit": "Call for Presentation",
+  "About": "About Symposium",
+  "Contact": "About Us",
+  "Back": "Back",
+  "Details": "Details",
+  "Workshop and Sub-symposium Sessions": "Workshop and Parallel Sessions",
+  "Keynote & Invited Talk": "Keynote & Invited Talk",
+  "Workshop": "Workshop",
+  "Workshop Session": "Workshop Session(8 May)",
+  "Panel Discussion": "Panel Discussion",
+  "Host by": "Hosted By: ",
+  "special font": "font-special-en",
+  "symposium": "Symposium",
+  "Symposium Handbook": "Program Overview",
+  "Round Table": "Round Table",
+  "Onsite Demo and Exhibition": "Onsite Demo and Exhibition",
+  "Session": "Parallel Sessions",
+  "Activities": "Activities",
+  "Host": {
+    "Name": "Lead Organizer",
+    "Language": "Language",
+    "Date": "Date",
+    "Location": "Location",
+    "Mail": "Mail",
+    "Details": {
+      "Name": "The Education University of Hong Kong",
+      "Language": "Chinese and English",
+      "Date": "8-10 May, 2025",
+      "Location": "The Education University of Hong Kong \n Tai Po Campus",
+      "Mail": "GIETfuture&#64;eduhk.hk"
+    }
+  },
+  "Cover Image": "/img/busLine/cover_en.jpg",
+  "Showcase-1": "/img/busLine/Showcase-en-1.png",
+  "Showcase-2": "/img/busLine/Showcase-en-2.png",
+  "Collapse": "Collapse",
+  "Show More": "Show More",
+  "Show More Keynote": "View All Keynote Speakers",
+  "Prev": "Prev",
+  "Next": "Next",
+  "PopWindow": {
+    "Title": "Registration Link",
+    "Content": "Scan to Register"
+  },
+  "session more": "The submission deadline for Parallel Session 2 and 7 has been extended to the end of March.",
+  "Invited Speakers": "Invited Speakers",
+  "Invited Speakers Title": "Invited Speakers(Workshop and Symposium)",
+  "Guest of Honor": "Guest of Honor",
+  "Keynote Speakers": "Keynote Speakers",
+  "Keynote Speakers Index": "Featuring Speakers From",
+  "Track Workshop Chair": "Track Workshop Chair",
+  "Organizing Committee": "Organizing Committee",
+  "Chair of Parallel session": {
+    "Name": "Chair of Parallel session",
+    "Details": {
+      "line1": {
+        "title": "Chair of Parallel Session 1",
+        "name": "LU Jijian",
+        "inc": "Hangzhou Normal University"
+      },
+      "line2": {
+        "title": "Chair of Parallel Session 2",
+        "name": "QIAN Chunyu",
+        "inc": "Zhejiang University"
+      },
+      "line3": {
+        "title": "Chair of Parallel Session 3",
+        "name": "ZHANG Yang",
+        "inc": "Shaanxi Normal University"
+      },
+      "line4": {
+        "title": "Chair of Parallel Session 4",
+        "name": "YIN Minghao",
+        "inc": "Northeast Normal University"
+      },
+      "line5": {
+        "title": "Chair of Parallel Session 5",
+        "name": "WU Yonghe",
+        "inc": "East China Normal University"
+      },
+      "line6": {
+        "title": "Chair of Parallel Session 6",
+        "name": "ZHANG Yue",
+        "inc": "The Education University of Hong Kong"
+      },
+      "line7": {
+        "title": "Chair of Parallel Session 7",
+        "name": "LU Yu",
+        "inc": "Beijing Normal University"
+      },
+      "line8": {
+        "title": "Chair of Parallel Session 7",
+        "name": "SHEN Lingling",
+        "inc": "Nanjing University of Posts and Telecommunications"
+      }
+    }
+  },
+  "Local Chair of Parallel session": {
+    "Name": "Chair of Parallel Session",
+    "Details": {
+      "line1": {
+        "title": "Local Chair of Parallel Session 1",
+        "name": "BAI Shurui Tiffany\n DENG Liping Lisa\n KONG Siu Cheung",
+        "inc": "The Education University of Hong Kong\n Hong Kong Baptist University\n The Education University of Hong Kong"
+      },
+      "line2": {
+        "title": "Local Chair of Parallel Session 2",
+        "name": "DOU Diya\nQIAN Haiyan",
+        "inc": "The Hong Kong Polytechnic University\nThe Chinese University of Hong Kong"
+      },
+      "line3": {
+        "title": "Local Chair of Parallel Session 3",
+        "name": "LIM Cher Ping\nSUN Daner\nSUN Jin",
+        "inc": "The Education University of Hong Kong\nThe Education University of Hong Kong\nUniversity of Macau"
+      },
+      "line4": {
+        "title": "Local Chair of Parallel Session 4",
+        "name": "CHONG Yee Ling\nXU Guandong",
+        "inc": "The Education University of Hong Kong\nThe Education University of Hong Kong"
+      },
+      "line5": {
+        "title": "Local Chair of Parallel Session 5",
+        "name": "PEI Leisi\nZHOU Mingming",
+        "inc": "The Education University of Hong Kong\nUniversity of Macau"
+      },
+      "line6": {
+        "title": "Local Chair of Parallel Session 6",
+        "name": "LIN Dan\nYAN Jing",
+        "inc": "The Education University of Hong Kong\nThe Education University of Hong Kong\n"
+      },
+      "line7": {
+        "title": "Local Chair of Parallel Session 7",
+        "name": "KWOK Ching Man Christine\nSingh, Manpreet",
+        "inc": "The Education University of Hong Kong\nThe Education University of Hong Kong"
+      }
+    }
+  },
+  "Program Chair": {
+    "Name": "Program Chair",
+    "Details": {
+      "line1": {
+        "name": "MA Qing",
+        "inc": "The Education University of Hong Kong"
+      }
+    }
+  },
+  "Publicity Chair": {
+    "Name": "Publicity Chair",
+    "Details": {
+      "line1": {
+        "name": "LI Hui Philip",
+        "inc": "The Education University of Hong Kong"
+      }
+    }
+  },
+  "Registration Chair": {
+    "Name": "Registration Chair",
+    "Details": {
+      "line1": {
+        "name": "Ling Man Ho Alpha",
+        "inc": "The Education University of Hong Kong"
+      }
+    }
+  },
+  "Workshop Chair": {
+    "Name": "Workshop Chair",
+    "Details": {
+      "line1": {
+        "name": "YANG Yin Nicole",
+        "inc": "The Education University of Hong Kong"
+      }
+    }
+  },
+  "Workshop Co-Chair": {
+    "Name": "Workshop Co-Chair",
+    "Details": {
+      "line1": {
+        "name": "YEUNG Siu Sze Susanna",
+        "inc": "The Education University of Hong Kong"
+      }
+    }
+  },
+  "Publicity Co-chair": {
+    "Name": "Publicity Co-chair",
+    "Details": {
+      "line1": {
+        "name": "CHAN Henry",
+        "inc": "The Hong Kong Polytechnic University"
+      },
+      "line2": {
+        "name": "JIANG Bo",
+        "inc": "East China Normal University"
+      },
+      "line3": {
+        "name": "LEI Chi Un  Leon",
+        "inc": "The University of Hong Kong"
+      },
+      "line4": {
+        "name": "WU Longkai",
+        "inc": "Central China Normal University"
+      },
+      "line5": {
+        "name": "XIONG Weiyan",
+        "inc": "The Education University of Hong Kong"
+      }
+    }
+  },
+  "Outreach Co-Chair": {
+    "Name": "Outreach Co-Chair",
+    "Details": {
+      "line1": {
+        "name": "LEE Juseong",
+        "inc": "The Education University of Hong Kong"
+      }
+    }
+  },
+  "Logistics Support": {
+    "Name": "Logistics Support",
+    "Details": {
+      "line1": {
+        "name": "MIT General Office",
+        "inc": "The Education University of Hong Kong"
+      }
+    }
+  },
+  "MemberLeft": {
+    "Name": "Member",
+    "Details": {
+      "line1": {
+        "name": "CHAI Ching-sing",
+        "inc": "The Chinese University of Hong Kong"
+      },
+      "line2": {
+        "name": "Chan Tse Tin David",
+        "inc": "The Education University of Hong Kong"
+      },
+      "line3": {
+        "name": "CHEN Fu",
+        "inc": "University of Macau"
+      },
+      "line4": {
+        "name": "CHEN Gaowei",
+        "inc": "The University of Hong Kong"
+      },
+      "line5": {
+        "name": "GU Mingyue Michelle",
+        "inc": "The Education University of Hong Kong"
+      },
+      "line6": {
+        "name": "GUO Xin",
+        "inc": "University of Macau"
+      },
+      "line7": {
+        "name": "HEUNG Yuk Mui Elly",
+        "inc": "The Education University of Hong Kong"
+      },
+      "line8": {
+        "name": "JONG Siu-yung Morris",
+        "inc": "The Chinese University of Hong Kong"
+      },
+      "line9": {
+        "name": "LAI Chun",
+        "inc": "The University of Hong Kong"
+      },
+      "line10": {
+        "name": "LI Wenjuan",
+        "inc": "The Education University of Hong Kong"
+      },
+      "line11": {
+        "name": "LI Xin Stephen",
+        "inc": "The Education University of Hong Kong"
+      },
+      "line12": {
+        "name": "LI Yongyan",
+        "inc": "The University of Hong Kong"
+      },
+      "line13": {
+        "name": "LIANG Shuai",
+        "inc": "Sanda University"
+      },
+      "line14": {
+        "name": "LIU Lukas Z.",
+        "inc": "The University of Hong Kong"
+      },
+      "line15": {
+        "name": "LO Chung Kwan",
+        "inc": "The Education University of Hong Kong"
+      },
+      "line16": {
+        "name": "OON Pey-Tee Emily",
+        "inc": "University of Macau"
+      },
+      "line17": {
+        "name": "OUYANG Xiangzi Olivia",
+        "inc": "Lingnan University"
+      }
+    }
+  },
+  "MemberRight": {
+    "Name": "",
+    "Details": {
+      "line1": {
+        "name": "QIAO Shen Maggie",
+        "inc": "The Education University of Hong Kong"
+      },
+      "line2": {
+        "name": "SUN Daner",
+        "inc": "The Education University of Hong Kong"
+      },
+      "line3": {
+        "name": "TANG Ding-lan",
+        "inc": "The University of Hong Kong"
+      },
+      "line4": {
+        "name": "Tongxi Liu",
+        "inc": "Hong Kong Baptist University"
+      },
+      "line5": {
+        "name": "WANG Maggie M.",
+        "inc": "The University of Hong Kong"
+      },
+      "line6": {
+        "name": "WANG Yue",
+        "inc": "The Education University of Hong Kong"
+      },
+      "line7": {
+        "name": "XIE Qin",
+        "inc": "University of Macau"
+      },
+      "line8": {
+        "name": "XIE Yishan Ellen",
+        "inc": "The Education University of Hong Kong"
+      },
+      "line9": {
+        "name": "YANG Weipeng",
+        "inc": "The Education University of Hong Kong"
+      },
+      "line10": {
+        "name": "YANG Yuqin",
+        "inc": "Central China Normal University"
+      },
+      "line11": {
+        "name": "YEUNG Chi Ho Bill",
+        "inc": "The Education University of Hong Kong"
+      },
+      "line12": {
+        "name": "YIN Hong-biao",
+        "inc": "The Chinese University of Hong Kong"
+      },
+      "line13": {
+        "name": "YU Dongxing",
+        "inc": "Sanda University"
+      },
+      "line14": {
+        "name": "YU Leung Ho Philip",
+        "inc": "The Education University of Hong Kong"
+      },
+      "line15": {
+        "name": "ZHANG Chenwei",
+        "inc": "The University of Hong Kong"
+      },
+      "line16": {
+        "name": "ZHANG Xiao",
+        "inc": "The University of Hong Kong"
+      },
+      "line17": {
+        "name": "ZHAO Li",
+        "inc": "Nanjing Normal University"
+      }
+    }
+  },
+  "Media": {
+    "Title": "Connect With Us",
+    "Redbook": {
+      "Name": "Red",
+      "Intro": "Follow us on Red",
+      "Details": "哈佛CES 香港教大聯合論壇"
+    },
+    "Scan to Register": {
+      "Name": "Scan to Register",
+      "Intro": "Scan to Register",
+      "Details": "Scan to Register"
+    },
+    "Wechat": {
+      "Name": "WeChat",
+      "Intro": "Follow us on WeChat",
+      "Details": "Harvard CES-EdUHK"
+    },
+    "Email": {
+      "Name": " ",
+      "Details": "Inquiries: {0}"
+    }
+  },
+  "Assisted": "Assisted by Department of Mathematics and Information Technology, EdUHK",
+  "Disclaimer": "<span class=\"text-start\"><strong><i>Disclaimer:</i></strong></span><i>The ideas and opinions expressed in this symposium are those of the speakers;</i><br><span class=\"ml-20\"><i>they are not necessarily the positions and viewpoints of UNESCO, The Education University of Hong Kong, and all partners and sponsors.</i></span>",
+  "Symposium": {
+    "Topic": "Knowledge Feast Where Great Minds Meet!",
+    "Name": "Joint Symposium on Emerging Technologies and Future Talents",
+    "Title": "Introduction",
+    "Click": "Explore",
+    "Title Long": "Harvard CES and The Education University of HongKong\n\nJoint Symposium on Emerging Technologies and Future Talents",
+    "Intro": "In the early summer of 2025, a joint Symposium on Emerging Technologies and Future Talents will be held by representatives from Harvard, Stanford(representatives) and The Education University of Hong Kong (EdUHK). <br> <div class=\"md:text-lg text-sm  indent-8\"> This event, supported by President John Chi-Kin Lee of EdUHK and the new Global Institute for Emerging Technologies (GIET), features an impressive lineup of speakers from globally renowned institutions such as Harvard, Stanford, Nanyang Technological University, EdUHK and Shandong University. Keynote and plenary speeches will be delivered by technology and education policymakers from the Ministry of Education (MOE) and experts from leading AI companies. Over the course of three days, the Symposium will explore the integration of cutting-edge technologies such as Artificial Intelligence (AI), Extended Reality (XR), and machine learning in teaching, training, and talent development. </div> <div class=\"md:text-lg text-sm  indent-8\"> The Symposium will offer a variety of sessions, including workshops on innovation and entrepreneurship education, panel discussions, poster displays and showcase by global researchers, developers and designers. Participants will explore a wide range of topics through parallel sessions focusing on the application of AI and LLM in STEAM education (from K12 to Higher Ed), creativity and futuristic thinking, entrepreneurship and talent development in the age of AI. Top paper presentations may be invited to publish extended versions in high-impact journals (SCI, SSCI & CSSCI). Top design work may be invited to collaborate with GIET for further development.</div>",
+    "Details": "The Joint Symposium on Emerging Technologies and Future Talents, collaboratively organized by The China Education Symposium at Harvard University (CES) and the Global Institute for Emerging Technologies (GIET) at The Education University of Hong Kong (EdUHK), will be a three-day event from May 8-10, 2025. It will delve into the integration of new technologies such as AI, the Metaverse, and Intelligent Reality within teaching, training, and talent development.\n\n<div class=\"md:text-lg text-sm  indent-8\">The Symposium will feature diverse sessions, including workshops on developing AI tools and ethical AI practices, as well as keynote addresses and panel discussions that highlight AI-driven personalized learning, instructional design, and the cultivation of creativity and futuristic thinking. Participants will explore a wide range of topics through parallel sessions focusing on AI, the Metaverse, computing education, research analytics, education futures, and talent development.</div>\n<div class=\"md:text-lg text-sm  indent-8\">The China Education Symposium, initiated by the Harvard Graduate School of Education in 2010, fosters meaningful dialogue and collaboration among educators, scholars, policymakers, and leaders from China and the United States. EdUHK has become the largest tertiary institution specialized in teacher education in Hong Kong and is recognized internationally for its leadership in education. It is ranked 6th globally in Education and Educational Research in the 2024-2025 U.S. News & World Report’s Best Global Universities Rankings. The 16th China Education Symposium in 2025, besides being held at Harvard, will also collaborate with EdUHK to create a groundbreaking event known as the Joint Symposium on Emerging Technologies and Future Talents. Knowledge knows no bounds! This is a trail-blazing attempt to enhance cooperation between prestigious Chinese and American universities and leading industries in technology and talent development, so as to expand the influence of this iconic symposium of Harvard’s Graduate School of Education to Asia.</div>\n<div class=\"md:text-lg text-sm  indent-8\">Supported by President John Chi Kin Lee of EdUHK and The CES, the Symposium boasts an impressive roster of speakers from globally recognized institutions such as Harvard, Stanford, EdUHK and Peking University. It also features technology and education policymakers and experts from Mainland China and Hong Kong SAR to deliver keynote and plenary speeches. We are honored to welcome Presidents from prestigious universities and professors from the Harvard Graduate School of Education and The Education University of Hong Kong to deliver keynote speeches. Each speaker will contribute a rich blend of current insights and research advancements in emerging technologies, education, and talent cultivation. The CES team of Harvard will also conduct a thematic workshop and interact with students and staff from EdUHK and beyond before or after the Symposium.</div>\n<div class=\"md:text-lg text-sm  indent-8\">This joint Symposium will not only be a feast of knowledge, but also a collision of sparks where diverse thoughts converge across different times and spaces!</div>"
+  },
+  "Organised by": "Organized by:",
+  "In collaboration with": "Sponsored by:",
+  "Organisers and Partners": "Organizers and Partners",
+  "Symposium Introduction": "Symposium Introduction",
+  "Symposium Location": "Symposium Location",
+  "Symposium Time": "Symposium Agenda",
+  "Symposium Agenda": "img/poster/Agenda-en.png",
+  "Visitor Guide": "Visitor Guide",
+  "Guide for Guests Visiting The Education University of Hong Kong (Tai Po Campus)": "Guide for Guests Visiting The Education University of Hong Kong (Tai Po Campus)",
+  "From Airport": {
+    "Title": "From Hong Kong International Airport",
+    "Airport Express": {
+      "Title": "1.1 Airport Express",
+      "Route": {
+        "Title": "Route",
+        "content": "Airport Station → Kowloon Station (about 20 minutes)"
+      },
+      "Ticket": {
+        "Title": "Ticket Price",
+        "content": "Ticket Price: About HK$60-115"
+      },
+      "Tip": {
+        "Title": "Tip",
+        "content": "After exiting the station, you can take a taxi or subway (see 2.1) to Tai Po Campus."
+      }
+    },
+    "Taxi": {
+      "Title": "1.2 Taxi (red)",
+      "Time": {
+        "Title": "Time",
+        "content": "about 50-60 minutes"
+      },
+      "Fee": {
+        "Title": "Fee",
+        "content": "about HK$400-550 (pay by cash or Octopus)"
+      },
+      "Tip": {
+        "Title": "Tip",
+        "content": "tell the driver the destination is \"The Education University of Hong Kong, Tai Po Campus (10 Lo Ping Road)\"."
+      }
+    }
+  },
+  "From Terminus": {
+    "Title": "From Hong Kong West Kowloon Terminus",
+    "From the West Kowloon Terminus/Kowloon Station": {
+      "Title": "2.1 From the West Kowloon Terminus/Kowloon Station",
+      "content": "Walk → Austin Station → Take the MTR Tuen Ma Line (Wu Kai Sha Direction) → Hung Hom Station → Transfer to the East Rail Line (Lo Wu Direction) → Get off at Tai Po Market Station."
+    },
+    "From Tai Po Market Station": {
+      "Title": "2.2 From Tai Po Market Station",
+      "Method1": {
+        "Title": "Method 1",
+        "content": "Bus. Take bus No. 74K to the \"Education University of Hong Kong\" stop, the journey takes about 20 minutes."
+      },
+      "Method2": {
+        "Title": "Method 2",
+        "content": "Taxi. About HK$60-80, the journey takes 10 minutes."
+      }
+    }
+  },
+  "Recommended Hotels": {
+    "Name": "Name",
+    "Address": "Address",
+    "Contact": "Contact",
+    "Title": "Recommended Hotels",
+    "Tip": "* The above hotels are all in Shatin, HongKong.",
+    "Details": {
+      "line1": {
+        "Name": "Regal Riverside Hotel",
+        "Address": "34-36 Tai Chung Kiu Road",
+        "Contact": "Ms Katie Lui (Operations Manager)\nTel: 2132 1111\nFax: 2648 0505\n<a class='hover:text-green-500' href=\"mailto:stay&#64;riverside.regalhotel.com\">stay&#64;riverside.regalhotel.com</a>"
+      },
+      "line2": {
+        "Name": "Courtyard By Marriott Hong Kong Shatin",
+        "Address": "1 On Ping Street",
+        "Contact": "Reservation\nTel: 3051 2777\nFax: 3940 8822\n<a class='hover:text-green-500' href=\"mailto:reservations.office.hkgst&#64;marriottservice.com\">reservations.office.hkgst&#64;marriottservice.com</a>"
+      },
+      "line3": {
+        "Name": "Royal Park Hotel",
+        "Address": "8 Pak Hok Ting Street",
+        "Contact": "Reservation\nTel: 2694 3898\nFax: 2698 0505\n<a class='hover:text-green-500' href=\"mailto:resvn&#64;royalpark.com.hk\">resvn&#64;royalpark.com.hk</a>"
+      },
+      "line4": {
+        "Name": "Hyatt Regency Hong Kong Shatin",
+        "Address": "18 Chak Cheung Street",
+        "Contact": "Ms Moon Chan (Sales Coordinator)\nTel: 3723 7321\nFax: 3051 2838\n<a class='hover:text-green-500' href=\"mailto:moon.chan&#64;hyatt.com\">moon.chan&#64;hyatt.com</a>"
+      },
+      "line5": {
+        "Name": "Alva Hotel by Royal",
+        "Address": "1 Yuen Hong Street",
+        "Contact": "Reservation\nTel: 3653 1188\nFax: 2707 3388\n<a class='hover:text-green-500' href=\"mailto:rsvn&#64;alva.com.hk\">rsvn&#64;alva.com.hk</a>"
+      }
+    }
+  },
+  "Campus Map": {
+    "Title": "Campus Map",
+    "src": "img/poster/CampusMap.png"
+  },
+  "School Bus Schedule": {
+    "Title": "School Bus Schedule",
+    "Info": {
+      "Title": "📍接送站說明：",
+      "line1": "EduHK Shuttle Stop at University MTR Station",
+      "line2": "The Education University of Hong Kong",
+      "line3": "Science Park – Happiness Cuisine Restaurant"
+    },
+    "Day1": {
+      "Title": "📅 Day 1 — Thursday, May 8, 2025",
+      "Route": {
+        "Title": "🚌 Route: University MTR Station → EdUHK",
+        "src": "img/busLine/Day1/Route.png"
+      },
+      "Return Shuttle": {
+        "Title": "🚌 Return Shuttle: EdUHK → University MTR Station",
+        "src": "img/busLine/Day1/ReturnShuttle.png"
+      }
+    },
+    "Day2": {
+      "Title": "📅 Day 2 — Friday, May 9, 2025",
+      "Morning Route": {
+        "Title": "🚌 Morning Route: University MTR Station → EdUHK",
+        "src": "img/busLine/Day2/MorningRoute.png"
+      },
+      "Dinner": {
+        "Title": "🎉 President’s Dinner",
+        "Time": "🕕 Dinner Time: 6:30 PM",
+        "Local": "📍 Location: Science Park – Happiness Cuisine Restaurant"
+      },
+      "Shuttle to Banquet": {
+        "Title": "🚌 Shuttle to Banquet: EdUHK → Science Park",
+        "src": "img/busLine/Day2/Shuttle2Banquet.png"
+      },
+      "Extra Shuttle": {
+        "Title": "🚌 Extra Shuttle: EdUHK → University Station",
+        "src": "img/busLine/Day2/ExtraShuttle.png"
+      },
+      "After Dinner Shuttle": {
+        "Title": "🚌 After Dinner Shuttle: Science Park → University Station",
+        "src": "img/busLine/Day2/AfterDinnerShuttle.png"
+      }
+    },
+    "Day3": {
+      "Title": "📅 Day 3 — Saturday, May 10, 2025",
+      "Morning Route": {
+        "Title": "🚌 Morning Route: University Station → EdUHK",
+        "src": "img/busLine/Day3/MorningRoute.png"
+      },
+      "Dinner": {
+        "Title": "🎉 Gala Dinner",
+        "Time": "🕖 Dinner Time: 7:00–9:30 PM",
+        "Local": "📍 Location: Science Park – Haking Wong Restaurant"
+      },
+      "Shuttle to Banquet": {
+        "Title": "🚌 Shuttle to Banquet: EdUHK → Science Park",
+        "src": "img/busLine/Day3/Shuttle2Banquet.png"
+      },
+      "Return Shuttles": {
+        "Title": "🚌 Return Shuttles: EdUHK → University MTR Station",
+        "src": "img/busLine/Day3/ReturnShuttles.png"
+      },
+      "After Dinner Shuttle": {
+        "Title": "🚌 After Dinner Shuttle: Science Park → University MTR Station",
+        "src": "img/busLine/Day3/AfterDinnerShuttle.png"
+      }
+    }
+  },
+  "Harvard CES": "CES",
+  "EduHK": "EdUHK",
+  "Harvard China Education Symposium": "China Education Symposium at Harvard University",
+  "The Education University of Hong Kong": "The Education University of Hong Kong",
+  "Poster": "Poster",
+  "Track": "Track",
+  "Sub-symposium Sessions Submit": "Call for Presentation",
+  "EduHK Full": "The Education University of Hong Kong",
+  "GIET": "Global Institute for Emerging Technologies (GIET)",
+  "SendTo": "email: ",
+  "SubmitNumber": "Parallel Session",
+  "SubmitTopic": "Topic",
+  "SubmitMethod": "How to Submit (by email or online for Session 7)",
+  "SendToLink": "Submit online: ",
+  "New MA Program": "New Program",
+  "About Us": {
+    "EduHK": {
+      "intro title": "About EdUHK",
+      "intro": "The Education University of Hong Kong is a publicly funded tertiary institution dedicated to the advancement of learning and teaching, through a diverse offering of academic and research programmes on teacher education and complementary social sciences and humanities disciplines.\n\nWe nurture educators and social leaders who are intellectually active, socially caring, and globally aware, to become agents of change in the communities that they serve. We place great emphasis on research capability — our research will contribute to the advancement of knowledge, scholarship and innovation, with sustainable impact on social progress and human betterment.\n\nEdUHK aims to be a leading university in the Asia Pacific region and beyond, with a focus on educational research, development and innovation.",
+      "vision title": "Our Vision",
+      "vision": "We will further enhance our role as a leading university in the Asia Pacific region and beyond, with a focus on educational research, development and innovation. We will continue to raise our profile and impact locally, regionally and internationally through our high quality research and scholarship. We are committed to nurturing outstanding and caring educators and professionals who contribute constructively to sustainable social and economic development in Hong Kong and beyond.",
+      "mission title": "Our Mission",
+      "mission": "Committed to the Education-plus approach, our primary mission is to lead educational innovation, and to promote and support the strategic development of teaching, teacher education and disciplines complementary to education by preparing outstanding and morally responsible educators and professionals while supporting their lifelong learning.",
+      "president title": "President’s Welcome",
+      "president": "I am pleased that we have created a multidisciplinary environment conducive to the pursuit of knowledge. This goes hand in hand with our increasingly diversified academic profile, as well as our research and knowledge transfer initiatives. This also helps establish a community of engaged learners and eminent academics, who thrive in a vibrant scholarly environment.\n\nAt EdUHK, we are committed to nurturing outstanding educators and professionals, who are passionate, professional, ethical and innovative. Building upon our academic strengths in teacher education, we have been expanding the scope of our undergraduate and postgraduate programmes to encompass artificial intelligence and educational technology, heritage education and arts management, sports science and coaching, and global and regional studies.\n\nAs a research-active university, we have made great strides in research in education and various emerging disciplines, such as environmental management, psychology, linguistics and language studies, with the University Grants Committee recognising our research output as “World Leading” and “Internationally Excellent” in its latest Research Assessment Exercise. The numerous prestigious accolades earned are also testimony to our contribution to the convergence of knowledge, technology and society.\n\nTo better synergise our interdisciplinary expertise, I am pleased to witness the establishment of two new Academies, namely the Academy for Educational Development and Innovation (AEDI), and the Academy for Applied Policy Studies and Education Futures (AAPSEF). They will serve as hubs of excellence to further extend our research impact in Hong Kong and beyond.\n\nI hope you enjoy exploring the learning and research opportunities offered by EdUHK.\n\nProfessor John Lee Chi-Kin, JP\n\nPresident and Chair Professor of Curriculum and Instruction",
+      "link": "Learn More"
+    },
+    "HarvardCES": {
+      "title": "China Education Symposium at Harvard University",
+      "Introduction": "The China Education Symposium at Harvard University has a history spanning over a decade and is recognized as both a rigorously organized nonprofit conference and a registered student organization within the Harvard Graduate School of Education. Celebrating 15 years of impactful engagement, the symposium is recognized as a premier platform for facilitating global dialogues on education, innovation, and cross-cultural collaborations. This annual event aims to connect education practitioners, scholars, policymakers, and leaders from China, the US, and across the globe. Its goal is to foster cutting-edge academic discussions in education, encourage the exchange of ideas, showcase achievements, and advance educational practices.\n\nIn the past, we were privileged to welcome numerous insightful speakers, including Kevin Rudd, Former Prime Minister of Australia; William Kirby, former director of the Fairbank Center for Chinese Studies at Harvard University and T.M. Chang Professor of China Studies; Ezra Vogel, Henry Ford II Professor of the Social Sciences at Harvard University and author of 'Deng Xiaoping and the Transformation of China'; Zhu Yongxin, Vice Chairman of the China Association for Promoting Democracy; Michelle Wu, Mayor of Boston; and Shan Jixiang, Former Director of the Palace Museum. As we celebrate the 15th year of the symposium, we are proud to continue spearheading new educational explorations and delivering crosscultural educational content to hundreds of thousands of audiences worldwide.",
+      "Intro": "Introduction to Harvard CES",
+      "link": "👆 Link to the official Harvard CES website"
+    },
+    "New MA Program": {
+      "title": "Master of Arts in Emerging Technology for Future Workforce [MA(ETFW)]",
+      "Tabs": {
+        "Introduction": "Programme Overview",
+        "Overview": "Programme Structure and Curriculum",
+        "Admission": "Entrance Requirements"
+      },
+      "Programme Leader": {
+        "title": "Programme Leader",
+        "name": "Prof. Wang Minjuan "
+      },
+      "Associate Programme Leader": {
+        "title": "Associate Programme Leader",
+        "name": "Dr. Yang Yin Nicole "
+      },
+      "Funding": {
+        "title": "Tuition Fee",
+        "amount": "HK$120,000"
+      },
+      "Enquiry": {
+        "title": "Enquiry",
+        "content": "Interested applicants please submit your application via EdUHK Online Application Systems.<br>Prior to your submission, please visit<a href='https://www.eduhk.hk/acadprog/postgrad.html'class='hover:text-green-800 text-orange-500 underline'> https://www.eduhk.hk/acadprog/postgrad.html </a>for detailed application and admission information.<div class='font-bold text-gray-600 my-2'>Email us：</div><div class='text-orange-500 underline hover:text-green-800'><a href='mailto:GIETfuture&#64;eduhk.hk'>GIETfuture&#64;eduhk.hk</a></div>"
+      },
+      "Disclaimer": "<p>*In the event of inconsistency between information in English and Chinese versions or where an interpretation of the programme content is required, the decision of the University shall be final.</p> <p>Every effort has been made to ensure the accuracy of the information contained in this website. Changes to any aspects of the programmes may be made from time to time as due to change of circumstances and the University reserves the right to revise any information contained in this website as it deems fit without prior notice. The University accepts no liability for any loss or damage arising from any use or misuse of or reliance on any information contained in this website.</p><p>Any aspect of the courses and course offerings (including, without limitation, the contents of the course and the manner in which the course is taught) may be subject to change at any time at the sole discretion of the University if necessary. Without limiting the generality of the University’s discretion to revise the courses and course offerings, it is envisaged that changes may be required due to factors including staffing, enrolment levels, logistical arrangements, curriculum changes, and other factors caused by change of circumstances. Tuition fees, once paid, are non-refundable.</p>",
+      "Medium of Instruction": {
+        "name": "Medium of Instruction",
+        "content": "Putonghua"
+      },
+      "Fellowships Scheme": {
+        "name": "Fellowships Scheme",
+        "content": "Outstanding candidates will be considered for fellowship."
+      },
+      "Entrance Requirements": {
+        "condition1": "Applicants should normally hold a recognized bachelor's degree or equivalent. Shortlisted applicants may be required to attend an interview.",
+        "CLE": {
+          "condition": "Applicants who obtained a bachelor's degree from an institution outside of Hong Kong, Mainland China, Taiwan, and Macau should have attained scores in one of the following Chinese Language or Chinese-related examinations:",
+          "condition1": "A score of 110 in the Joint Entrance Examination for Universities in the People's Republic of China (JEE / Gaokao) (full marks 150); ",
+          "condition2": "Other equivalent qualifications on a case-by-case basis. "
+        },
+        "ELE": {
+          "condition": "Applicants whose entrance qualification is obtained from an institution in a non-English speaking system should normally fulfil one of the following minimums.",
+          "following": "English proficiency requirements: ",
+          "condition1": "Overall score of IELTS 5.5 (academic version); ",
+          "condition2": "TOEFL score of 59 (internet-based test); ",
+          "condition3": "Band 6 in the College English Test (CET) with a total score of 430; ",
+          "condition4": "Grade C or above in GCSE/GCE O-Level English; GCSE/GCE O-level;",
+          "condition5": "Other equivalent qualifications on a case-by-case basis. "
+        }
+      }
+    }
+  },
+  "pSession": {
+    "sub-symposium": "Parallel Session: Presentation Session",
+    "poster": " Poster and Showcase Session",
+    "index": "7"
+  },
+  "bio": "Bio",
+  "Speaking": "Speaking",
+  "server": {
+    "Organizing Committee": {
+      "id1": {
+        "description": "Professor Chi-Kin John Lee is a distinguished academic and leader in education, currently serving as President and Chair Professor at The Education University of Hong Kong. His career is marked by significant contributions to curriculum and instruction, including roles as Vice President (Academic) and Provost. Former Dean of Education and a recipient of the Vice-Chancellor’s Exemplary Teaching Award at The Chinese University of Hong Kong (CUHK). Professor Lee has an extensive research background with a focus on various educational areas. He is a top-cited scientist and has secured numerous grants for his projects. Professor Lee is an active member of several editorial boards, has authored and co-edited over 25 books, and has been involved in education and social services locally, nationally and globally. His projects have won awards, and he has held various prestigious positions, including Changjiang Scholar Chair Professor, UNESCO Chair and membership in the Chinese People’s Political Consultative Conference.",
+        "name": "Professor John Chi-Kin Lee",
+        "title": "President; Chair Professor of Curriculum and Instruction <br> UNESCO Chair in Regional Education Development and Lifelong Learning <br> The Education University of Hong Kong",
+        "inc": "The Education University of Hong Kong"
+      },
+      "id2": {
+        "description": "Dr. Minjuan Wang is a newly appointed Chair Professor of Emerging and Technologies and Future Education at the Education University of Hong Kong, GIET Co-Director, and Editor-in-Chief of the IEEE Transactions on Learning Technologies (TLT). Her research specialties are multidisciplinary, focusing on STEM Education, Future Education enabled by new and emerging technologies, Metaverse and immersive learning, and the design and implementation of artificial intelligence including AIGC for teaching, learning and training. Professor Wang is a high-impact author and an internationally recognized scholar who has keynoted more than 45 conferences. She publishes extensively in indexed and high-impact English journals such as Nature-HSSC, Computers and Education, IEEE-TLT, and British Journal of Education Technology. In addition, her teaching and research were also featured in top core journals in China (e.g., Educational Research). As a senior member of the IEEE Education Society, she has contributed significantly to both the IEEE community and other scholarly circles. Her international reputation in the field is evident, reflected in her recent nomination as an iLRN scholar by Chris Dede from Harvard University. ",
+        "name": "Professor Minjuan Wang",
+        "title": "Senior Member, IEEE <br> EiC, IEEE Transactions on Learning Technologies (IEEE-TLT) <br> The Education University of Hong Kong",
+        "inc": "The Education University of Hong Kong"
+      },
+      "id3": {
+        "description": "Rongbing Shen is the Music Director and Language Teacher at the Pioneer Valley Chinese Immersion Charter School. She serves as an advisor for the 16th China Education Symposium at Harvard University (2025), having previously held the positions of Secretary in 2024 and Panel Director in 2023. Shen is a member of the board of directors for the New England branch of the Orff-Schulwerk Association (AOSA) in the United States and co-chairs the International Clarinet Association (ICA) Development and Membership Committee. She also serves as the ClarinetFest® Program Book Editor. <br><br> In addition to these roles, Shen is the Publicity Director for the University of Massachusetts Amherst Women for UMass (WFUM) Alumni Networking Platform and a Council Member of the Boston Youth Symphony Orchestra. As the head of the music teaching and research team at the Beijing TNYK Education Development Center, she specializes in lesson planning, pedagogy sharing, and teacher training, she has mentored over 200 teachers, significantly enhancing their online teaching effectiveness.<br><br> Her research focuses on the impact of artificial intelligence on music education, and she is dedicated to promoting cultural diversity through innovative performances and international collaborations.",
+        "name": "Miss. Rongbing Shen",
+        "title": "Secretary General of China Education Symposium at Harvard University (CES) 2024",
+        "inc": "Secretary General of China Education Symposium at Harvard University (CES) 2024"
+      },
+      "id4": {
+        "description": "Anny Chan holds a Master’s in Education in Educational Leadership, Organization, and Entrepreneurship from Harvard University and is a faculty member at the Harvard Graduate School of Education. She researches the impact of artificial intelligence on teaching and learning, focusing on advancing equity and diversity through technology in education.\n\nAnny is the Chair of the 15th China Education Symposium at Harvard University and the founder of the Harvard Graduate School of Education’s Cross-Cultural Education Association and the International STEAM Network. She earned dual degrees in Business and Law from the University of Sydney and brings over a decade of experience across finance,education, and technology sectors in the U.S., U.K., Australia, France, Japan, China, and Hong Kong. Additionally, Anny founded the Global China Entrepreneur Network, mentoring over 500 international students. She is committed to fostering international exchange and interdisciplinary collaboration in education.",
+        "name": "Miss. Anny Chan",
+        "title": "Teaching Fellow <br> Harvard University (CES Board of Advisor)",
+        "inc": "Harvard University (CES Board of Advisor)"
+      },
+      "id5": {
+        "description": "Xuefan Li, CEO of National e-School and City High School in Canada, is a PhD candidate at the Ontario Institute for Studies in Education at the University of Toronto. His research focuses on prompt engineering in education, immersive educational technologies, educational economics, and online education. He has demonstrated exceptional research capabilities, leading and contributing to several significant projects, including studies on international student policies during COVID-19, student loans and future returns, and developing an LSTM model for predicting education stock markets. His work has been featured at top conferences like the Tsinghua Education Forum, Fudan International Education Research Forum and the Asian Conference on Education (ACE). He also serves as a panel director at the Harvard Chinese Education Symposium.",
+        "name": "Mr. Xuefan Li",
+        "title": "CEO of National e-School and City High School in Canada <br> PhD Candidate, Ontario Institute for Studies in Education, University of Toronto",
+        "inc": "University of Toronto"
+      },
+      "id6": {
+        "description": "Yue (Clara) Jia is a doctoral student in the Developmental and Psychological Sciences (DAPS) program at Stanford University and the founder of the Stanford Education Practitioners and Innovators of China (EPIC). Her research focuses on the application of psychological interventions in education and workplace settings, aiming to promote well-being, equity, and emotional resilience. Through the Stanford Education Practitioners and Innovators of China, she is committed to spreading innovative educational ideas to broader communities, bridging the gap between research and practice, and empowering learners and educators worldwide. Yue’s work reflects her passion for creating inclusive environments and fostering meaningful change in education and beyond.",
+        "name": "Yue Jia (Clara)",
+        "title": "Doctoral Student in the Developmental and Psychological Sciences  <br> Stanford University",
+        "inc": "Stanford University"
+      }
+    },
+    "Keynote Speakers": {
+      "id1": {
+        "description": "Professor Chi-Kin John Lee is a distinguished academic and leader in education, currently serving as President and Chair Professor at The Education University of Hong Kong. His career is marked by significant contributions to curriculum and instruction, including roles as Vice President (Academic) and Provost. Former Dean of Education and a recipient of the Vice-Chancellor’s Exemplary Teaching Award at The Chinese University of Hong Kong (CUHK). Professor Lee has an extensive research background with a focus on various educational areas. He is a top-cited scientist and has secured numerous grants for his projects. Professor Lee is an active member of several editorial boards, has authored and co-edited over 25 books, and has been involved in education and social services locally, nationally and globally. His projects have won awards, and he has held various prestigious positions, including Changjiang Scholar Chair Professor, UNESCO Chair and membership in the Chinese People’s Political Consultative Conference.",
+        "name": "Professor John Chi-Kin Lee",
+        "title": "President; Chair Professor of Curriculum and Instruction <br> UNESCO Chair in Regional Education Development and Lifelong Learning <br> The Education University of Hong Kong",
+        "inc": "The Education University of Hong Kong"
+      },
+      "id2": {
+        "description": "",
+        "name": "Professor Youqun Ren",
+        "title": "Secretary of the CPC Shandong University Committee <br> Doctor of Education, Professor <br> Vice President of the Chinese Society of Education <br> Deputy Director of the National Graduate Education Steering Committee for Professional Education ",
+        "inc": "Shandong University",
+        "speaking": {
+          "inc": "Secretary of the CPC Shandong University Committee, Vice President of the Chinese Society of Education, Deputy Director of the National Graduate Education Steering Committee for Professional Education <br> Shandong University",
+          "title": "Functions, Actions, and Reflections on the Development of Teacher Education in High-Level Comprehensive Universities in China",
+          "abstract": "Against the backdrop of national strategies for technological advancement and educational development, the independent cultivation of top innovative talents has become both urgent and essential. This shift places new demands on the quality of STEM educators in primary and secondary education. Situated within this era's context, this report emphasizes the importance of high-level comprehensive universities fully leveraging their disciplinary strengths, research advantages, faculty expertise, and curricular resources to drive the high-quality and transformative development of teacher education, thereby contributing to the cultivation of a teaching workforce that meets the demands of the technological era. The report first reviews the historical trajectory of teacher training in China, underscoring the critical mission of high-level comprehensive universities in advancing teacher education. It then introduces the “National Excellence Plan”, which advocates for the development of teacher education within high-level comprehensive universities, and shares Shandong University's related initiatives and experiences. Finally, the report presents reflections on the development of teacher education in high-level comprehensive universities in the new era and offers insights into future directions."
+        }
+      },
+      "id3": {
+        "description": "Prior to becoming a Senior Research Fellow, for 22 years Chris Dede was the Timothy E. Wirth Professor in Learning Technologies. His fundamental interest is developing new types of educational systems to meet the opportunities and challenges of the 21st century. His research spans emerging technologies for learning, infusing technology into large-scale educational improvement initiatives, developing policies that support educational transformation, and providing leadership in educational innovation. Currently, Dede is a co-principal investigator of the NSF-funded National Artificial Intelligence Institute in Adult Learning and Online Education. He co-founded the Silver Lining for Learning initiative and developed a widely used Framework for scaling up educational innovations.",
+        "name": "Dr. Chris Dede",
+        "title": "Distinguished Professor and Senior Research Fellow <br> Harvard University",
+        "inc": "Harvard University",
+        "speaking": {
+          "inc": "Distinguished Professor and Senior Research Fellow <br> Harvard University",
+          "title": "GenAI in Education: The Promises and the Perils",
+          "abstract": "The global economy is using AI to move towards an era of Intelligence Augmentation (IA). In coming years, many occupations will shift to people working with generative AI-based agents. These IA partnerships involve complementary roles of reckoning (AI-based calculative prediction) and judgment (human practical wisdom). The human and agent work synergistically together to become more capable than their individual abilities. This talk will discuss what types of learning are most valuable for students to prepare for these IA interactions in work and life. I will also describe ways in which GenAI is currently misused in society and education, with advice on how to avoid these mistakes."
+        }
+      },
+      "id4": {
+        "description": "Dr. Shijin Wang is currently the Executive Dean of the iFlytek Research Institute, Deputy Director of the National Key Laboratory of Cognitive Intelligence, and a part-time professor and doctoral advisor at the University of Science and Technology of China. His main research areas include signal processing, large models, and industry intelligence. He has received numerous awards, including the National Science and Technology Progress Award (First Class), the Provincial Science and Technology Award (First Class), the Wu Wenjun Artificial Intelligence Science and Technology Progress Award (First Class), the China Youth May Fourth Medal (collective), and the China Association for Science and Technology’s Qiu Shi Outstanding Youth Achievement Transformation Award. He has led his team to win several international competitions such as SQuAD, GLUE, and VCR. Dr. Wang spearheaded the “iFlytek Xinghuo Large Model Technology and Application” project, releasing the leading Xinghuo large model in China and continuously empowering multiple industry applications.",
+        "name": "Dr. Shijin Wang",
+        "title": "Vice CEO of iFlytek, Inc <br> Deputy Director of the State Key Laboratory of Cognitive Intelligence, P.R.China",
+        "inc": "Vice CEO of iFLYTEK Co., Ltd.",
+        "speaking": {
+          "inc": "Vice CEO of iFlytek, Inc, Deputy Director of the State Key Laboratory of Cognitive Intelligence, P.R.China <br> iFlytek, Inc",
+          "title": "Latest Developments and Typical Applications of the Xinghuo Large Model in Education",
+          "abstract": "This report first highlights the widespread global attention garnered by general artificial intelligence technologies, represented by cognitive large models. It then analyzes the technical characteristics, development trends, and application value of transitioning from cognitive large models to multimodal large models. The report also presents the achievements and development experiences of iFlytek in developing the Xinghuo large model. Finally, it focuses on the exploration experiences of using large models in education and provides an outlook on future developments."
+        }
+      },
+      "id5": {
+        "description": "Dr. Minjuan Wang is a newly appointed Chair Professor of Emerging and Technologies and Future Education at the Education University of Hong Kong, GIET Co-Director, and Editor-in-Chief of the IEEE Transactions on Learning Technologies (TLT). Her research specialties are multidisciplinary, focusing on STEM Education, Future Education enabled by new and emerging technologies, Metaverse and immersive learning, and the design and implementation of artificial intelligence including AIGC for teaching, learning and training. Professor Wang is a high-impact author and an internationally recognized scholar who has keynoted more than 45 conferences. She publishes extensively in indexed and high-impact English journals such as Nature-HSSC, Computers and Education, IEEE-TLT, and British Journal of Education Technology. In addition, her teaching and research were also featured in top core journals in China (e.g., Educational Research). As a senior member of the IEEE Education Society, she has contributed significantly to both the IEEE community and other scholarly circles. Her international reputation in the field is evident, reflected in her recent nomination as an iLRN scholar by Chris Dede from Harvard University. ",
+        "name": "Professor Minjuan Wang",
+        "title": "Senior Member, IEEE <br> EiC, IEEE Transactions on Learning Technologies (IEEE-TLT) <br> The Education University of Hong Kong",
+        "inc": "The Education University of Hong Kong",
+        "speaking": {
+          "inc": "IEEE Senior Member, EiC of IEEE Transactions on Learning Technologies (IEEE-TLT) <br> The Education University of Hong Kong",
+          "title": "Emerging Technology and Talent Development",
+          "abstract": "In an era defined by rapid technological advancements, the intersection of emerging technologies and talent development is revolutionizing the fabric of our industries. This keynote address will illuminate the transformative power of innovations such as artificial intelligence, blockchain, and quantum computing, and their profound implications for the future of work and education. This presentation will explore how these groundbreaking technologies are reshaping skill requirements, fostering a culture of perpetual learning, and unlocking new avenues for talent cultivation. Through compelling real-world examples and insightful case studies, Minjuan will reveal strategies that organizations can embrace to leverage these advancements, ensuring they thrive in a dynamic global landscape."
+        }
+      },
+      "id6": {
+        "description": "Yew-Soon Ong is currently President's Chair Professor of Computer Science at the School of Computer Science and Engineering at Nanyang Technological University (NTU), Singapore. At the same time, he is Chief Artificial Intelligence (CAS) Scientist of the Singapore's Agency for Science, Technology and Research (A*STAR). At NTU, he presently serves as co-Director of the Singtel-NTU Cognitive &#38; Artificial Intelligence Joint Lab (SCALE&#64;NTU). He was Chair of the School of Computer Science and Engineering (SCSE), Nanyang Technological University from 2016-2018, Director of the Data Science and Artificial Intelligence Research Center (DSAIR) from 2016-2022, Director of the Centre for Computational Intelligence from 2008-2015 and Programme Principal Investigator of the Data Analytics &#38; Complex System Programme Rolls-Royce&#64;NTU Corporate Lab from 2013-2017.",
+        "name": "Professor Yew-Soon Ong",
+        "title": "President's Chair Professor of Computer Science BEng MEng PhD, FIEEE <br> Nanyang Technological University (NTU), Singapore",
+        "inc": "Nanyang Technological University (NTU), Singapore",
+        "speaking": {
+          "inc": "President's Chair Professor of Computer Science BEng MEng PhD, FIEEE <br> Nanyang Technological University (NTU), Singapore",
+          "title": "Teaching AI, Learning with AI: Multiple Perspectives on Education’s Future",
+          "abstract": "In today’s rapidly evolving educational landscape, artificial intelligence (AI) is transforming how we teach and learn. As educators, we continually seek new ways to enhance student engagement and prepare learners for an AI-driven future. This keynote will present key initiatives that integrate AI into education, offering diverse perspectives on AI as both a learning tool and a subject of study. It will highlight examples of AI-blended learning, where traditional and digital methods are thoughtfully combined with AI-driven experiences to support student learning at the university level. Additionally, it will showcase investigations into AI education, exploring how students can effectively and ethically apply emerging AI technologies, such as large language models, to develop higher-order learning through AI-augmented thinking. Through this keynote, we hope to inspire exploration and encourage educators to discover novel and meaningful ways to integrate AI into teaching. By sparking new ideas and conversations, we can collectively shape AI’s evolving role in education and its impact on the future of learning."
+        }
+      },
+      "id7": {
+        "description": "Paul Kim is the Founder and President of Seeds of Empowerment, a global social innovation incubator he established in collaboration with Stanford University graduate students in 2004. Currently, he serves as the Chair of the International Expert Committee on Education Technology at the World Bank and advises Lumos Capital, Roble Ventures, and Chegg, Inc. As the former Associate Dean and Chief Technology Officer of Stanford University's Graduate School of Education, Dr. Kim dedicated 24 years to advancing learning technology for marginalized communities worldwide. He also launched the Entrepreneur in Residence (EIR) Program and developed a learning innovation design challenge, serving as an edtech startup incubator for Stanford students. Dr. Kim now focuses on global learning technology and entrepreneurship initiatives in the Eurasian region, including designing advanced learning labs in Beijing centered on smart farming, VR/AI, biotech, and aerospace mobility. He also spearheads a youth entrepreneurship education program with Kazakhstan's Ministry of Science. In addition, he launched an AI-powered student learning journey planner for the Metro School District of Incheon, Korea.",
+        "name": "Dr. Paul Kim",
+        "title": "World Bank <br> Former Associate Dean at the Stanford Graduate School of Education <br> Stanford University (formerly)",
+        "inc": "World Bank; Stanford University (formerly)"
+      },
+      "id8": {
+        "description": "Dr. Jonathon Richter is focused on creating inclusive and meaningful communities for the emerging field of design, research, and applied understanding of immersive learning experiences to amplify its transformational potential for everyone and our planet. Born and raised in Havre, Montana, Jonathon Richter holds a Bachelor of Arts (B.A.) degree in Psychology (1992), Masters of Education (M.Ed.) degree (1998), and a Doctorate of Education (Ed.D.) degree (2003), each from the University of Montana. Following college, he returned to Havre to start his family and his career as a successful grant writer and project coordinator of educational technology, then later as Assistant Professor of Graduate Education Programs working for Montana State University – Northern in Havre, Montana (2000 – 2005).",
+        "name": "Dr. Jonathon Ritcher",
+        "title": " CEO of the Immersive Learning Research Network (iLRN) <br> University of Montana ",
+        "inc": "CEO of iLRN"
+      },
+      "id9": {
+        "description": "Professor Tina Grotzer is a distinguished research scientist and educator with a focus on the learning and cognitive sciences. She has dedicated over three decades to applying cognitive science in various educational contexts, teaching on sustainability, complexity, and climate change. Grotzer is known for her work on fostering expert learners and promoting adaptive expertise to prepare students for future challenges. As the faculty director of the Next Level Lab, she explores future work environments and optimal learning. Her earlier roles include being a principal investigator on projects that advanced causal learning in education and understanding of ecosystems through immersive technology, supported by the NSF and IES. Among her accolades are an NSF Career Award, a PECASE award, and the Morningstar Teaching Award. Grotzer has authored numerous research publications, books, and curricula, and collaborated on educational television with major networks. Her pre-Harvard career includes over a decade as an administrator and teacher.",
+        "name": "Professor Tina Grotzer",
+        "title": "Principal Research Scientist in Education, Faculty Director <br> Harvard Graduate School of Education",
+        "inc": "Harvard University",
+        "speaking": {
+          "inc": "Principal Research Scientist in Education, Faculty Director <br> Harvard University",
+          "title": "Supporting Adaptive Expertise: What Does it Involve and Why Is it Important for the Workforce in a Complex and Changing World?  ",
+          "abstract": "This talk will highlight frameworks and findings from the Next Level Lab at Harvard University. It will share research-based visions of effective learners who learn in preparation for work contexts, but who also learn continuously in the flow of work and who engage as progressive problem-solvers. It will share the skills and attitudes that are essential for engaging as an adaptive expert in a complex world where innovation and change are demanded. It will report on research with early career and mid-career learners who are navigating these challenges and offer guidelines for supporting them."
+        }
+      }
+    },
+    "Guest of Honor": {
+      "id1": {
+        "description": "Anny Chan holds a Master’s in Education in Educational Leadership, Organization, and Entrepreneurship from Harvard University and is a faculty member at the Harvard Graduate School of Education. She researches the impact of artificial intelligence on teaching and learning, focusing on advancing equity and diversity through technology in education.\n\nAnny is the Chair of the 15th China Education Symposium at Harvard University and the founder of the Harvard Graduate School of Education’s Cross-Cultural Education Association and the International STEAM Network. She earned dual degrees in Business and Law from the University of Sydney and brings over a decade of experience across finance, education, and technology sectors in the U.S., U.K., Australia, France, Japan, China, and Hong Kong. Additionally, Anny founded the Global China Entrepreneur Network, mentoring over 500 international students. She is committed to fostering international exchange and interdisciplinary collaboration in education.",
+        "name": "Miss. Anny Chan",
+        "title": "Teaching Fellow <br> Harvard University (CES Board of Advisor)",
+        "inc": "Harvard University (CES Board of Advisor)"
+      },
+      "id2": {
+        "description": "Professor May Cheng May-hung is currently Vice President (Academic) and Chair Professor of Teacher Education of The Education University of Hong Kong (EdUHK).\n\nProfessor Cheng began her teacher education work at the Sir Robert Black College of Education in 1990. As a long-serving member of EdUHK and the former Hong Kong Institute of Education, she has taken up academic leadership positions at different stages, such as Associate Vice President (Academic Affairs), Registrar, Acting Dean of the Faculty of Arts and Sciences, Associate Dean (Programmes), and Programme Director. Between 2010 and the end of 2011, Professor Cheng was a Reader in Professional Education in the Department of Education at the University of Oxford, and a fellow of the Governing Body at Kellogg College.\n\nProfessor Cheng graduated from The University of Hong Kong with a BSc (First-class Honours) degree, a Certificate in Education (Distinction) and a Master’s in Education. She obtained a PhD at the University of Waikato, New Zealand. She served as President of the East Asian Association for Science Education (EASE) from 2016 to 2019. Professor Cheng has actively participated in and made contributions to the international teacher education and science education arena.\n\nShe has been an International Committee member of the National Association for Research in Science Teaching in the US, and has chartered status as a fellow of the Royal Society of Biology in the UK. She is on the editorial boards of various international journals, such as Cogent Education, Teaching and Teacher Education, Teachers and Teaching, and Asia Pacific Journal of Teacher Education. She has obtained various research and project grants from the General Research Fund, the Quality Education Fund and the Education Bureau. She is also a prolific writer, having edited and written more than 13 books and published over 140 journal articles and book chapters.",
+        "name": "Professor May Hung Cheng",
+        "title": "Vice President (Academic) <br> Chair Professor of Teacher Education <br> The Education University of Hong Kong",
+        "inc": "The Education University of Hong Kong"
+      },
+      "id3": {
+        "description": "Professor Chetwyn Chan is Vice President (Research and Development) and Peter T. C. Lee Chair Professor of Psychology. He obtained a PhD in educational psychology in 1995 from the University of Alberta, Canada. Professor Chan has been an Elected Fellow of the American Psychological Association since 2008 and a Fellow of the Hong Kong Psychological Society since 2007.\n\nIn 2008, in recognition of his contribution to psychology and rehabilitation sciences, Professor Chan received the Global Leadership in Rehabilitation Science Award from Virginia Commonwealth University in the United States. In 2011, he received the Alumni Honour Award from the University of Alberta in recognition of his influence in research and education development in rehabilitation in Asia. In 2018, Professor Chan and his research team won the First Prize in Science and Technology from the Chinese Association of Rehabilitation Medicine on post-stroke cognitive assessment and intervention innovation. In 2019, his research team won the Second Class State Scientific and Technology Progress Award from the State Council of the People’s Republic of China for integrating Chinese medicine into innovative post-stroke rehabilitation.\n\nProfessor Chan’s research work focuses on exploring mechanisms underlying human learning, particularly perceptual and cross-modal learning employing brain imaging, electroencephalograms, and behavioural methods. He also applies the mechanisms to understand the behaviours of people with disabilities and older individuals, and design interventions to enhance the functional capabilities of these individuals. He has published more than 200 research papers and secured more than $20 million in competitive research and development grants. Professor Chan is the chief specialty editor of Frontiers in Rehabilitation Science and an associate editor of Journal of Sports and Health Science.",
+        "name": "Prof. Che Hin Chetwyn Chan",
+        "title": "Vice President (Research and Development) <br> Peter T. C. Lee Chair Professor of Psychology <br> The Education University of Hong Kong",
+        "inc": "The Education University of Hong Kong"
+      }
+    },
+    "Invited Speakers": {
+      "id1": {
+        "description": "John C. Mitchell is the Mary and Gordon Crary Family Professor, Professor of Computer Science, and by courtesy Professor of Electrical Engineering and Professor of Education at Stanford University. He was previously Stanford Vice Provost for Teaching and Learning and Chair of the Computer Science Department. Mitchell’s research focuses on programming languages, computer security and privacy, blockchain, machine learning, and technology for education. Mitchell’s first research project in online learning started in 2009, when he and six undergraduate students built Stanford CourseWare, an innovative platform that expanded to support interactive video and discussion. CourseWare served as the foundation for initial flipped classroom experiments at Stanford and helped inspire the first massive open online courses (MOOCs) from Stanford. As Co-Director of the Lytics Lab, Carta Lab, and Pathways Lab, he has worked to improve educational outcomes through data-driven research and iterative design. His current education-related research projects are focused on collaborative learning and the use of generative AI. He currently serves as Faculty Director of the Hasso Plattner Institute of Design, which is also known as the Stanford d.school.",
+        "name": "Professor John Clifford Mitchell",
+        "title": "Mary and Gordon Crary Family Professor <br> Professor of Computer Science, Professor of Education and by Courtesy <br> Professor of Electrical Engineering <br> Stanford University",
+        "inc": "Stanford University",
+        "speaking": {
+          "inc": "Mary and Gordon Crary Family Professor, Professor of Computer Science, Professor of Education and by Courtesy, Professor of Electrical Engineering <br> Stanford University",
+          "title": "Generative AI for Collaborative Learning and Creativity",
+          "abstract": "Generative AI (GenAI) models can be used to create agents that simulate and respond to various kinds of human behavior. Such agents can lead  and support learning activities such as collaborative brainstorming, planning, rehearsal, reflection, and peer mentoring,  Building on early exploration by design teams composed of students and colleagues,  we have developed a series of experimental platforms that leverage GenAI to provide feedback on student writing, comment on group discussion, and structure hybrid teams in which one or more AI agents collaborate with one or more humans.  These tools show promise for  a wide range of learning contexts, some of which will be described in more detail in this talk."
+        }
+      },
+      "id2": {
+        "description": "Qing Li is currently a Chair Professor (Data Science) and the Head of the Department of Computing, the Hong Kong Polytechnic University. Formerly, he was the founding Director of the Multimedia software Engineering Research Centre (MERC), and a Professor at City University of Hong Kong where he worked in the Department of Computer Science from 1998 to 2018. Prior to these, he has also taught at the Hong Kong University of Science and Technology and the Australian National University (Canberra, Australia). Prof. Li served as a consultant to Microsoft Research Asia (Beijing, China), Motorola Global Computing and Telecommunications Division (Tianjin Regional Operations Center), and the Division of Information Technology, Commonwealth Scientific and Industrial Research Organization (CSIRO) in Australia. He has been an Adjunct Professor of the University of Science and Technology of China (USTC) and the Wuhan University, and a Guest Professor of the Hunan University (Changsha, China) where he got his BEng. degree from the Department of Computer Science in 1982. He is also a Guest Professor (Software Technology) of the Zhejiang University (Hangzhou, China) -- the leading university of the Zhejiang province where he was born.",
+        "name": "Professor Qing LI",
+        "title": "IEEE Fellow, Chair of the Department of Computing <br> Hong Kong Polytechnic University ",
+        "inc": "Hong Kong Polytechnic University ",
+        "speaking": {
+          "title": "KCUBE: A KG-based University Curriculum Framework for Student Advising and Career Planning",
+          "inc": "IEEE Fellow, Chair of the Department of Computing <br> Hong Kong Polytechnic University",
+          "abstract": "Knowledge representations and interactions are at the forefront of teaching, learning, and career planning activities in all endeavors of education and career development. University students are increasingly faced with a myriad of interdisciplinary topics that are seemingly unrelated when unstructured knowledge representations are presented, especially during advising and career orientation sessions. This is especially challenging in fast-changing technical domains such as Computer and Data Science where university curricula are reviewed on an annual basis. This makes it increasingly difficult for instructors and administrators to present both the big picture as well as the detailed knowledge components of degree programs to students who face problems in choosing a career and/or establishing a plan of study and assessment. In this talk, I shall introduce the KCUBE project, a knowledge graph (KG) framework equipped with virtual reality for structuring and presenting both the overviews of the Computer Science curriculum taught at the Department of Computing in the Hong Kong Polytechnic University, as well as for students to develop their study with the help of virual tutor/mentor. We employ computational information storage and retrieval methods, machine learning, and interactive virtual reality to facilitate users (instructors and students) to better understand, manipulate, and visualize abstract concepts and relationships in the development of teaching and learning activities in our department."
+        }
+      },
+      "id3": {
+        "description": "Dr. Ju Seong Lee is the Acting Head and Associate Professor in the Department of English Language Education at The Education University of Hong Kong. His research focuses on Informal Digital Learning of English (IDLE) and its social impact. He serves as Associate Editor for Innovation in Language Learning and Teaching and the Journal of AsiaTEFL. He was named among the Top 1% of researchers in Language and Linguistics by Stanford University.",
+        "name": "Dr. Ju Seong Lee",
+        "title": "Associate Professor <br> Associate Editor, Innovation in Language Learning and Teaching <br> The Education University of Hong Kong",
+        "inc": "The Education University of Hong Kong"
+      },
+      "id4": {
+        "description": "Anny Chan holds a Master’s in Education in Educational Leadership, Organization, and Entrepreneurship from Harvard University and is a faculty member at the Harvard Graduate School of Education. She researches the impact of artificial intelligence on teaching and learning, focusing on advancing equity and diversity through technology in education. Anny is the Chair of the 15th Harvard China Education Symposium and the founder of the Harvard Graduate School of Education’s Cross-Cultural Education Association and the International STEAM Network. She earned dual degrees in Business and Law from the University of Sydney and brings over a decade of experience across finance, education, and technology sectors in the U.S., U.K., Australia, France, Japan, China, and Hong Kong. Additionally, Anny founded the Global China Entrepreneur Network, mentoring over 500 international students. She is committed to fostering international exchange and interdisciplinary collaboration in education.",
+        "name": "Miss. Anny Chan",
+        "title": "Teaching Fellow <br> Harvard University (CES Board of Advisor)",
+        "inc": "Harvard University (CES Board of Advisor)"
+      },
+      "id5": {
+        "description": "Professor Philip Li is Chair Professor of Early Childhood Education. He previously held leadership positions as Dean of the Shanghai Institute of Early Childhood Education at Shanghai Normal University (SHNU), Program Director (Master) in the Macquarie School of Education at Macquarie University (MQ), and Program Director (MEd) of the Faculty of Education at The University of Hong Kong (HKU). Professor Li has extensive and focused research interests in the field of early childhood development and education, spanning developmental cognitive neuroscience, developmental psycholinguistics, early literacy and bilingualism, curriculum and pedagogy, educational policy, school leadership, and teacher education. According to Google Scholar, he has a track record of 293 academic publications, including 234 journal articles, 9 books, 38 chapters, and 12 conference papers. Since 2021, he has been ranked among the World’s Top 2% Scientists by Stanford University.",
+        "name": "Professor LI, Hui Philip",
+        "title": "Publicity and Outreach Chair <br> Associate Editor, Frontiers in Psychology <br> Chair Professor of Early Childhood Education <br> The Education University of Hong Kong",
+        "inc": "The Education University of Hong Kong"
+      },
+      "id6": {
+        "description": "Dr Fridolin TING has taught university-level mathematics in Canada and Hong Kong for over 20 years. He was the PI of a UGC triennium 2016-2019 teaching and learning project called \"Developing Active Learning Pedagogies and Mobile Applications in University STEM Education\" (http://palms.polyu.edu.hk/), collaborating with four Hong Kong universities and 30+ professors and instructors. The PALMs project developed 13 active learning pedagogies and supporting apps to increase students' learning outcomes in STEM-related tertiary education and has won over ten local and international educational awards. He also was the PI for a QEF Project entitled \"Developing Active Learning Pedagogies and Mobile Applications in Secondary School Mathematics Education\", which involved nine secondary schools, 47 teachers and over 1800+ secondary school students. He was a finalist in Hong Kong's University Grants Committee (UGC) Teaching Awards (General Faculty) in 2021, President's Teaching Award at Poly U (2021), HKTEA CoP Leader in the \"Innovation and Future of STEM Education\" and has published over 20 articles in highly reputable educational and mathematical journals. He is now actively incorporating GenAI into active teaching pedagogies in science, mathematics, and student entrepreneurship education, particularly, using a collaborative genAI platform called YoChatGPT! ",
+        "name": "Dr. Fridolin Ting",
+        "title": " Senior Lecturer, Office of VPRD",
+        "inc": " Senior Lecturer, Office of VPRD"
+      },
+      "id7": {
+        "description": "Enhong Chen, Chair Professor, vice dean of Faculty of Information and Intelligence of University of Science and Technology of China (USTC), CCF Fellow, IEEE Fellow, ACM Distinguished Member, winner of the National Science Fund for Distinguished Young Scholars (in 2013). He is also the vice director of the State Key Laboratory of Cognitive Intelligence, the director of Anhui Province Key Laboratory of Big Data Analysis and Application. His current research interests are data mining, machine learning and intelligent education. He has published more than 200 papers on many journals and conferences, including international journals such as IEEE Trans, ACM Trans, and important data mining conferences, such as KDD, ICDM, NeurIPS. He is the winner of the Best Application Paper Award on KDD2008, Best Research Paper Award on ICDM2011, Outstanding Paper Award on FCS2016, and Best Student Paper Award on KDD2024.",
+        "name": "Professor Enhong Chen",
+        "title": "Chair Professor, vice dean of Faculty of Information and Intelligence <br> University of Science and Technology of China (USTC)",
+        "inc": "University of Science and Technology of China (USTC)"
+      },
+      "id8": {
+        "description": "Mutlu Cukurova is a Professor of Learning and Artificial Intelligence at University College London. Prof. Cukurova investigates human-AI complementarity in education, aiming to address the pressing socio-educational challenge of preparing people for a future with AI systems that will require a great deal more than the routine cognitive skills currently prized by many education systems and traditional approaches to automation. He directs the UCLAIT team and leads the Design and Use of AI in Education course at UCL. In addition, he is engaged in policy-making activities as an external expert (including UNESCO, IAEA, and EU external expert groups and co-authored the UNESCO AI Competency Framework for Teachers). He was the programme co-chair of the International Conference of AI in Education in 2020, is part of UCL's Grand Challenges on Transformative Technologies working group, named in Stanford’s Top 2% Scientists List, Editor-in-Chief of the British Journal of Educational Technology and Associate Editor of the International Journal of Child-Computer Interaction.",
+        "name": "Professor Mutlu Cukurova",
+        "title": "Editor-in-Chief, British Journal of Educational Technology <br> Professor of Learning and Artificial Intelligence <br> University College London",
+        "inc": "University College London"
+      },
+      "id9": {
+        "description": "Dr. Wei-Peng Yang is an Assistant Professor and PhD supervisor at the Education University of Hong Kong, and the Director of the Early Childhood Learning Science Laboratory. He is the Editor-in-Chief of the Journal of Research in Childhood Education, Triage Editor of the British Journal of Educational Technology, and Associate Editor of AI, Brain and Child and Journal for the Study of Education and Development. He was named to the global Top 2% of Scientists list (compiled by Stanford University) and received the Outstanding Research Performance Award (Young Scholar Excellence in Research Award) from the Education University of Hong Kong. His main research areas include computational thinking education for young children, STEAM education, and educational robotics.",
+        "name": "Dr. Weipeng Yang",
+        "title": "Editor-in-Chief, Journal of Research in Childhood Education <br> Assistant Professor of Department of Early Childhood Education <br> The Education University of Hong Kong",
+        "inc": "The Education University of Hong Kong"
+      },
+      "id10": {
+        "description": "Ping Li is Sin Wai Kin Foundation Professor in Humanities and Technology, Chair Professor of Neurolinguistics and Bilingual Studies, and Dean of the Faculty of Humanities at the Hong Kong Polytechnic University. He was previously Professor of Psychology, Linguistics, and Information Sciences at the Pennsylvania State University, and served as Program Director of Cognitive Neuroscience and Perception, Action, and Cognition programs at the U.S. National Science Foundation. Li’s research is focused on investigating the neurocognitive and computational bases of language acquisition, bilingualism, and reading comprehension. He uses cognitive neuroscience approaches and emerging technologies to study the neuroplasticity and individual differences in both children and adults, aiming at understanding the relationships among language, culture, technology, and the brain. Li is currently Editor-in-Chief of Brain and Language and Senior Editor of Cognitive Science. He was President of the Society for Computation in Psychology, and is a Fellow of the American Association for the Advancement of Science, the Psychonomic Society, and the Cognitive Science Society.",
+        "name": "Professor Ping Li(Parallel Session Keynote Speaker)",
+        "title": "Chair Professor of Neurolinguistics and Bilingual Studies <br> Dean of the Faculty of Humanities",
+        "inc": "Hong Kong Polytechnic University"
+      },
+      "id11": {
+        "description": "Alberto Sols has 40 years of combined industry and academic experience as a systems engineer. During 25 years he held different managerial positions in four different companies. Alberto serves since January 2018 as Dean of the School of Architecture, Engineering, Science and Computing (Universidad Europea de Madrid). He holds a MSc in Naval Architecture and Marine Engineering (Universidad Politecnica de Madrid), a MSc in Systems Engineering (VirginiaPolytechnic Institute and State University) and a PhD in Systems Engineering (Stevens Institute of Technology). He has published over 35 technical papers, written seven books in systems engineering and related disciplines, and co-authored two others. He is a Certified Professional Logistician and is Certified in Production and Inventory Management. Alberto was inducted in the Academy of Military Arts and Sciences. He has a great interest in artificial intelligence and is playing a key role in the transformation efforts of the School, to leverage the use of artificial intelligence in higher education.",
+        "name": "Dr. Alberto Sols",
+        "title": "Dean of the School of Architecture, Engineering, Science and Computing",
+        "inc": "Universidad Europea de Madrid"
+      },
+      "id12": {
+        "description": "Thomas K.F. Chiu is a researcher of AI and STEM education at the Department of Curriculum and Instruction at The Chinese University of Hong Kong. He has a strong academic background in software development and mathematics. He is an associate director of the Centre for University and School Partnership and Centre for Learning Sciences and Technologies. He has extensive teaching and leadership experience in schools. Between 2019 and 2024, he shared his research findings locally, regionally, and globally through 150 talks and various media. His research focuses on using AI for education, particularly in areas of STEM domains and teacher education. To support research agenda, he has collaborated with local, regional and international scholars to win grants exceeding USD$ 33 million (USD$5.3 million PI / CO-PI; 27.8 million CO-I) external grants. Thomas is named Top 2% most cited scientist for single year since 2022. He is also the recipient of Research Excellence Award 2022-23 from the Chinese University of Hong Kong, and Teaching Awards from the University of Hong Kong, and Hong Kong Education Bureau. He currently is editor-in-chief of Interactive Learning Environments (ILE/ Q1), and associate editor of other four international journals. Thomas has served on a few advisory panels for digital education policy and curriculum development. He is a joint-faculty programme coordinator of BSc Learning Design and Technology, and his teaching expertise is Digital learning, STEM teaching with specific emphasis on mathematics and technology, and research method. His recent book is Empowering K-12 Education with AI: Preparing for the Future of Education and Work.",
+        "name": "Prof. CHIU Kin-fung, Thomas",
+        "title": "Editor-in-Chief, Interactive Learning Environments <br> Assistant Professor of Department of Curriculum and Instruction",
+        "inc": "The Chinese University of Hong Kong"
+      }
+    },
+    "Poster": {
+      "id0": {
+        "index": "1",
+        "name": "AI for Teaching and Learning",
+        "submitddl": "Submission Deadline: 15 February, 2025",
+        "notifyddl": "Notification of Acceptance Date: 28 February, 2025",
+        "content": {
+          "p1": "<p> In the early summer of 2025, the renowned China Education Symposium at Harvard University (CES) will join the QS 5-star rated The Education University of Hong Kong (EdUHK) to co-host a joint symposium on Emerging Technologies and Future Talents. This marks the first attempt by the Harvard CES team to co-host this signature event with an Asian university. The Symposium boasts an impressive roster of speakers from globally recognized institutions such as Harvard, Stanford, MIT, EdUHK and Peking University. This three-day event will delve into the integration of new technologies such as AI, the Metaverse, and Intelligent Reality within teaching, training, and talent development. We invite you to share your proposal and present in the parallel session on 10 May. Excellent proposal may be invited to publish the full version in high-impact journals (SCI, SSCI & CSSCI). </p>",
+          "d1": "Parallel Session Introduction",
+          "p2": "<p>Focusing on the current hot topic of ‘Artificial Intelligence in Teaching and Learning’, this parallel session aims to discuss the diversified applications of AI technology in education and how to enhance the effectiveness of teaching and learning through intelligent technology. The parallel session consists of the following three sub-themes, which provide a broad exchange platform for scholars and practitioners of different research directions.</p><div class=\"my-2\"><strong>Sub-theme 1: Artificial Intelligence and its Applications in Teaching and Learning</strong></div><p>Focusing on the application of AI in the teaching and learning process, we will explore how to integrate advanced AI technologies into teaching practice to improve the quality and efficiency of teaching and learning. Participants can present on the following topics:</p><ul class=\"list-disc my-1\"><li>Design and Implementation of Artificial Intelligence Assisted Teaching Strategies.</li><li>Development and application cases of intelligent teaching systems.</li><li>Application of Artificial Intelligence in classroom interaction, content presentation and teaching management.</li><li>Teacher's role transformation and adaptation in AI-assisted instruction</li><li>Exploration of the application of artificial intelligence in special education, vocational education and higher education.</li></ul><div class=\"my-2\"><strong>Sub-theme 2: Artificial Intelligence in Learning and its Applications</strong></div><p>Focusing on the application of AI in the learning process, the aim is to explore how intelligent technologies can be used to provide learners with personalize and efficient learning experiences.</p><ul class=\"list-disc my-1\"><li>Design and Implementation of Personalized Learning Systems.</li><li>Application of Artificial Intelligence in Adaptive Learning.</li><li>Development and application of intelligent tutoring and assessment tools.</li><li>Role of Artificial Intelligence in Collaborative Learning and Distance Learning.</li><li>Research and practice of learning data analysis and learning behaviour prediction.</li></ul><div class=\"my-2\"><strong>Sub-theme 3: Intelligent Enhancement in Teaching and Learning Assessment </strong></div><p>Focusing on the application of AI in the field of education and learning assessment, we will explore how to enhance the accuracy and efficiency of assessment through intelligent technology.</p><ul class=\"list-disc my-2\"><li>Construction and Implementation of Intelligent Education Evaluation System</li><li>Application of Artificial Intelligence in Students' Comprehensive Quality Evaluation</li><li>The role of intelligent technology in teaching effectiveness evaluation</li><li>Learning analysis and evaluation methods based on big data</li><li>Practical cases of intelligently enhanced evaluation tools in promoting teaching and learning improvement</li></ul><p>You’re invited to share your proposal on any of the above sub-themes according to their research directions and interests in this parallel session.</p>",
+          "d2": "Guidelines for Proposal",
+          "p3": "<p>Please prepare a <strong>one-page</strong> proposal containing the following information:</p><ol class=\"list-decimal my-1\"><li><strong>Proposal Title:</strong> The title of your proposal session.</li><li><strong>Proposal Abstract:</strong> A brief description of your proposal topic and its relevance to the session topic.</li><li><strong>Proposal Objectives:</strong> The purpose of the proposal and the expected research outcomes.</li><li><strong>Methodology:</strong> The methods or data sources you plan to use.</li><li><strong>Contribution and Future Work:</strong> The possible contributions of this proposal to the application of LLMs in the field of education, and future research directions.</li><li><strong>Contact Information:</strong> Your full name, affiliation, email address, and phone number.</li></ol><div class=\"mt-10\">Please send your <strong>one-page</strong> contribution and other information as a Word attachment to <a href=\"mailto:lujijian&#64;hznu.edu.cn\" class=\"font-bold underline hover:text-red-600\">lujijian&#64;hznu.edu.cn</a> with the subject ‘Your Name+Harvard CES-EdUHK Joint Symposium Sub-symposium I Proposal Presentation’. We look forward to receiving your proposal and discussing the infinite possibilities of AI in education!</div>"
+        }
+      },
+      "id1": {
+        "index": "2",
+        "name": "Talents Development & Entrepreneurship in the Age of AI",
+        "submitddl": "Submission Deadline: March 31, 2025",
+        "notifyddl": "Acceptance Notification Date: March 31, 2025",
+        "content": {
+          "p1": "<p> In the early summer of 2025, the renowned China Education Symposium at Harvard University (CES) will join the QS 5-star rated The Education University of Hong Kong (EdUHK) to co-host a joint symposium on Emerging Technologies and Future Talents. This marks the first attempt by the Harvard CES team to co-host this signature event with an Asian university. The Symposium boasts an impressive roster of speakers from globally recognized institutions such as Harvard, Stanford, MIT, EdUHK and Peking University. This three-day event will delve into the integration of new technologies such as AI, the Metaverse, and Intelligent Reality within teaching, training, and talents development. We invite you to share your proposal and present in the parallel session on 10 May. Excellent proposal may be invited to publish the full version in high-impact journals (SCI, SSCI & CSSCI). </p>",
+          "d1": "Parallel Session Introduction",
+          "p2": "<p>This parallel session aims to explore how AI can drive the upgrading and innovation of educational technology, promote the transformation of educational models, and examine the key role of educational technology enterprises. The track includes the following three sub-themes, providing a platform for educators, technology developers, and industry practitioners to engage in in-depth exchange and collaboration.</p><div class=\"my-2\"><strong>Sub-theme 1：Innovative Models for Talents Development Empowered by AI</strong></div><p>This sub-theme focuses on how AI can reshape talents development models, exploring its in-depth applications and the challenges it poses to traditional education systems. </p><ul class=\"list-disc my-1\"><li>Applications of AI in curriculum design and teaching plans</li><li>Personalized talents development pathways powered by AI</li><li>AI-assisted interdisciplinary course development and innovation</li><li>AI-driven talents development models in university-industry collaboration</li></ul><div class=\"my-2\"><strong>Sub-theme 2: Innovative Applications of AI in Educational Technology and Equipment</strong></div><p>This sub-theme highlights the integration of AI technologies with educational equipment, discussing how advanced educational technology products can enhance teaching quality and efficiency. </p><ul class=\"list-disc my-1\"><li>Applications of AI-driven intelligent learning devices in classroom teaching</li><li>AI-based educational hardware products: From teaching robots to smart classrooms</li><li>Innovations and practices in AI hardware development by educational technology enterprises</li><li>How intelligent teaching devices support personalized learning and differentiated instruction</li></ul> <div class=\"my-2\"><strong>Sub-theme 3: Educational Ecosystem and the Role of Enterprises in the AI Era </strong></div><p>This theme focuses on the supporting role of educational enterprises in the AI era, exploring how technology, platforms, and services can optimize the educational ecosystem.  </p><ul class=\"list-disc my-2\"><li>How educational technology companies promote the intelligentization of education management and teacher professional development</li><li>The integration of educational data analytics and AI: Intelligent decision-making and evaluation in education</li><li>Case studies and best practices in enterprise collaboration with universities and educational institutions</li><li>How intelligent educational resources support special education, distance education, and vocational training</li></ul><p>We sincerely invite scholars, students, and professionals from the industry to choose any of the above sub-themes based on their research directions and interests to share their latest findings and engage in discussions at this track.</p>",
+          "d2": "Guidelines for Proposal",
+          "p3": "<p>Please prepare a <strong>one-page</strong> proposal containing the following information:</p><ol class=\"list-decimal my-1\"><li><strong>Proposal Title:</strong> The title of your proposal session.</li><li><strong>Proposal Abstract:</strong> A brief description of your proposal topic and its relevance to the session topic.</li><li><strong>Proposal Objectives:</strong> The purpose of the proposal and the expected research outcomes.</li><li><strong>Methodology:</strong> The methods or data sources you plan to use.</li><li><strong>Contribution and Future Work:</strong> The possible contributions of this proposal to the application of LLMs in the field of education, and future research directions.</li><li><strong>Contact Information:</strong> Your full name, affiliation, email address, and phone number.</li></ol> <div class=\"mt-10\">Please send your <strong>one-page</strong> proposal and other information as a Word attachment to the email address：<a href=\"mailto:xiaoyanchu&#64;zju.edu.cn\" class=\"font-bold underline hover:text-red-600\">xiaoyanchu&#64;zju.edu.cn</a>, with the subject line \"Your Name + Harvard CES-EdUHK+Parallel Session2 .\" We look forward to your work and to exploring the possibilities of AI-driven talents development and entrepreneurship together!</div>"
+        }
+      },
+      "id2": {
+        "index": "3",
+        "name": "Science Education in the Age of Artificial Intelligence",
+        "submitddl": "Submission Deadline: 15 February, 2025",
+        "notifyddl": "Notification of Acceptance Date: 28 February, 2025",
+        "content": {
+          "p1": "<p> In the early summer of 2025, the renowned China Education Symposium at Harvard University (CES) will join the QS 5-star rated The Education University of Hong Kong (EdUHK) to co-host a joint symposium on Emerging Technologies and Future Talents. This marks the first attempt by the Harvard CES team to co-host this signature event with an Asian university. The Symposium boasts an impressive roster of speakers from globally recognized institutions such as Harvard, Stanford, MIT, EdUHK and Peking University. This three-day event will delve into the integration of new technologies such as AI, the Metaverse, and Intelligent Reality within teaching, training, and talent development. We invite you to share your proposal and present in the parallel session on 10 May. Excellent proposal may be invited to publish the full version in high-impact journals (SCI, SSCI & CSSCI). </p>",
+          "d1": "Parallel Session Introduction",
+          "p2": "<p> The theme of this parallel session is ‘Science Education in the Age of Artificial Intelligence’ aiming to explore utilizing AI technology to promote the innovation of science education, such as the development and application of large model agents in the science education vertical domain, the construction of innovative education model and intelligent evaluation system, and so on. The parallel session involves three sub-themes, providing a platform for bringing educators, researchers, technology developers, and enterprise practitioners to explore the infinite possibilities of AI technology in science education. </p><div class=\"my-2\"><strong> Sub-theme 1: Development and Application of Large Model Agents in the Science Education Vertical Domain </strong></div><p> This theme focuses on the development and application of large model agents in the science education vertical domain and their far-reaching impact on science education.   </p> <ul class=\"list-disc my-2\"><li>Development strategy and technology path of large model agents in the science education vertical domain</li><li>Personalized science education path design based on large model agents</li><li>Application cases of large model agents in scientific inquiry and practice instruction</li><li>Large multimodal agents and science curriculum integration strategy</li><li>Exploration of collaborative teaching models between large model agents and science teachers</li><li>Role positioning and ethical responsibilities of large model agents in science education applications</li></ul> <div class=\"my-2\"><strong> Sub-theme 2: Reform of Science Education in the Age of AI </strong></div><p> This theme aims to explore the comprehensive changes brought to science education in the artificial intelligence age by discussing following topics.  </p> <ul class=\"list-disc my-2\"><li>Repositioning of science education goals</li><li>Selection and reconstruction of teaching content of science education</li><li>Innovation and practice of science education methods</li><li>Intellectualization and diversified teaching evaluation reform</li><li>A new path for science teachers’ professional development</li><li>Strategies for cultivating scientific and technological innovative talents in science education</li></ul> <div class=\"my-2\"><strong>Sub-theme 3: AI Empowered Science Teaching and Learning </strong></div><p>This sub-theme focuses on the innovative applications of AI in science teaching and learning. </p> <ul class=\"list-disc my-2\"><li>AI empowered science education: Strategies and Methods</li><li>Innovative teaching models of AI empowered science education</li><li>Strategies, methods, and approaches of AI empowered Science teaching and learning</li><li>Applications of AI empowered science education</li></ul>  <p>We sincerely invite scholars, students, and professionals from the industry to choose any of the above sub-themes based on their research directions and interests to share their latest findings and engage in discussions at this parallel session.</p>",
+          "d2": "Guidelines for Proposal",
+          "p3": "<p>Please prepare a <strong>one-page</strong> proposal containing the following information:</p><ol class=\"list-decimal my-1\"><li><strong>Proposal Title:</strong> The title of your proposal session.</li><li><strong>Proposal Abstract:</strong> A brief description of your proposal topic and its relevance to the session topic.</li><li><strong>Proposal Objectives:</strong> The purpose of the proposal and the expected research outcomes.</li><li><strong>Methodology:</strong> The methods or data sources you plan to use.</li><li><strong>Contribution and Future Work:</strong> The possible contributions of this proposal to the application of LLMs in the field of education, and future research directions.</li><li><strong>Contact Information:</strong> Your full name, affiliation, email address, and phone number.</li></ol> <div class=\"mt-10\">Please send your <strong>one-page</strong> proposal and other information as a Word attachment to the email address：<a href=\"mailto:mtt&#64;snnu.edu.cn\" class=\"font-bold underline hover:text-red-600\">mtt&#64;snnu.edu.cn</a>, with the subject line \"Your Name + Harvard CES-EdUHK Joint Symposium parallel session 3.\" Your participation will contribute to the advancement of science education in the age of AI. We look forward to your valuable work and discussing the infinite possibilities of AI campaign to empower science education! </div>"
+        }
+      },
+      "id3": {
+        "index": "4",
+        "name": "Large Language Model Enabled Computing Education",
+        "submitddl": "Submission Deadline: 15 February, 2025",
+        "notifyddl": "Notification of Acceptance Date: 28 February, 2025",
+        "content": {
+          "p1": "<p> In the early summer of 2025, the renowned China Education Symposium at Harvard University (CES) will join the QS 5-star rated Education University of Hong Kong (EdUHK) to co-host a joint symposium on Emerging Technologies and Future Talents. This marks the first attempt by the Harvard CES team to co-host this signature event with an Asian university. The Symposium boasts an impressive roster of speakers from globally recognized institutions such as Harvard, Stanford, MIT, EdUHK and Peking University. This three-day event will delve into the integration of new technologies such as AI, the Metaverse, and Intelligent Reality within teaching, training, and talent development. We invite you to share your proposal and present in the parallel session on 10 May. Excellent proposal may be invited to publish the full version in high-impact journals (SCI, SSCI & CSSCI). </p>",
+          "d1": "Parallel Session Introduction",
+          "p2": "<p> The theme of this parallel session is ‘Large Language Model Enabled Computing Education’ aiming to explore the application of Large Language Models (LLMs) in educational practice. It seeks to promote teaching innovation, enhance the intelligence and personalization of learning processes, and optimize educational assessment and feedback mechanisms. The parallel session includes the following three sub-themes, providing a platform for educators, researchers, and technology developers to share research findings and practical experiences, fostering in-depth exchange and collaboration. </p><div class=\"my-2\"><strong>Sub-theme 1: Empowering Teaching Innovation with LLMs </strong></div><p> This theme focuses on the cutting-edge applications of LLMs in teaching, discussing how advanced generative AI systems can be integrated into educational practice to explore new teaching models.  </p> <ul class=\"list-disc my-1\"><li>Intelligent teaching assistants and applications based on LLMs</li><li>Practices of LLMs in intelligent learning analytics and teaching decision-making</li><li>Integration and application of digital teachers in interdisciplinary teaching</li><li>Personalized content generation and teaching strategy optimization</li><li>Empowering teacher professional development with LLMs</li></ul> <div class=\"my-2\"><strong> Sub-theme 2: Intelligent and Personalized Learning Processes </strong></div><p> This theme centers on innovative practices of LLMs in the intelligence and personalization of learning processes to enhance student learning outcomes, efficiency, and engagement.  </p> <ul class=\"list-disc my-1\"><li>Student performance prediction and adaptive path design based on LLMs</li><li>Real-time feedback mechanisms and research on personalized educational agents</li><li>Applications and practices in the generation of multi-modal learning resources</li><li>Designing interactive learning experiences to enhance motivation and engagement</li><li>Applications of LLMs in learning disability identification and personalized interventio</li></ul> <div class=\"my-2\"><strong>Sub-theme 3: Evaluation and Feedback in Teaching and Learning Supported by LLMs </strong></div><p> This sub-theme focuses on the innovative applications of LLMs in the evaluation and feedback processes of teaching and learning. It explores how intelligent assessment and real-time feedback mechanisms can enhance the precision and personalization of evaluations. </p> <ul class=\"list-disc my-2\"><li>Construction of a dynamic learning evaluation system supported by LLMs</li><li>Self-adaptive testing for learning outcomes based on LLMs</li><li>Optimization of effectiveness evaluation and feedback mechanisms in teaching and training</li><li>Construction of a multi-dimensional cognitive diagnosis mechanism supported by LLMs</li><li>Applications of LLMs in promoting fairness and transparency in educational assessment</li></ul>  <p>We sincerely invite scholars, students, and professionals from the industry to choose any of the above sub-themes based on their research directions and interests to share their latest findings and engage in discussions at this parallel session.</p>",
+          "d2": "Guidelines for Proposal",
+          "p3": "<p>Please prepare a <strong>one-page</strong> proposal containing the following information:</p><ol class=\"list-decimal my-1\"><li><strong>Proposal Title:</strong> The title of your proposal session.</li><li><strong>Proposal Abstract:</strong> A brief description of your proposal topic and its relevance to the session topic.</li><li><strong>Proposal Objectives:</strong> The purpose of the proposal and the expected research outcomes.</li><li><strong>Methodology:</strong> The methods or data sources you plan to use.</li><li><strong>Contribution and Future Work:</strong> The possible contributions of this proposal to the application of LLMs in the field of education, and future research directions.</li><li><strong>Contact Information:</strong> Your full name, affiliation, email address, and phone number.</li></ol> <div class=\"mt-10\"> Please send your one-page proposal and other information as a Word attachment to the email address：<a href=\"mailto:mhyin&#64;nenu.edu.cn\" class=\"font-bold underline hover:text-red-600\">mhyin&#64;nenu.edu.cn</a>, with the subject line \"Your Name + Harvard CES-EdUHK Joint Symposium parallel session 4.\" Your participation will contribute to the advancement of LLMs' application and development in the field of education. We look forward to your valuable work and engaging in a discussion on the broad prospects of LLMs empowering computational education! </div>"
+        }
+      },
+      "id4": {
+        "index": "5",
+        "name": "Ethics and Norms of Artificial Intelligence Technology",
+        "submitddl": "Submission Deadline: 15 February, 2025",
+        "notifyddl": "Notification of Acceptance Date: 28 February, 2025",
+        "content": {
+          "p1": "<p> In the early summer of 2025, the renowned China Education Symposium at Harvard University (CES) will join the QS 5-star rated Education University of Hong Kong (EdUHK) to co-host a joint symposium on Emerging Technologies and Future Talents. This marks the first attempt by the Harvard CES team to co-host this signature event with an Asian university. The Symposium boasts an impressive roster of speakers from globally recognized institutions such as Harvard, Stanford, MIT, EdUHK and Peking University. This three-day event will delve into the integration of new technologies such as AI, the Metaverse, and Intelligent Reality within teaching, training, and talent development. We invite you to share your proposal and present in the parallel session on 10 May. Excellent proposal may be invited to publish the full version in high-impact journals (SCI, SSCI & CSSCI). </p>",
+          "d1": "Parallel Session Introduction",
+          "p2": "<p> The theme of this parallel session is \"Ethics and Norms of Artificial Intelligence Technology,\" aims to explore how to establish industry standards and ethical frameworks amidst the rapid development of artificial intelligence. The goal is to ensure that the application of AI technology adheres to societal moral principles and safety standards. The parallel session consists of three thematic sessions, providing a platform for in-depth exchanges among educators, technology developers, and industry professionals. </p><div class=\"my-2\"><strong>Sub-theme 1: Advancing the Ethical Use of Artificial Intelligence </strong></div><p> This sub-theme focuses on ethical issues in AI applications, emphasizing how to ensure that AI is applied responsibly and ethically across various domains. Participants are invited to discuss the following topics:  </p> <ul class=\"list-disc my-1\"><li>Addressing bias and discrimination in AI decision-making to promote fairness and inclusivity.</li><li>Developing ethical guidelines for AI, defining the moral responsibilities of corporations and developers.</li><li>Enhancing social responsibility in AI development to mitigate potential threats to privacy and security.</li><li>Promoting global initiatives for \"AI for Good,\" fostering cross-border collaboration and standardization.</li></ul> <div class=\"my-2\"><strong> Sub-theme 2: Developing Core Competencies in Artificial Intelligence </strong></div><p> This session examines how to cultivate core competencies in AI within education systems, exploring how educators, students, and technology developers can better understand and apply AI technology. Topics for discussion include: </p> <ul class=\"list-disc my-1\"><li>Identifying the key skills and knowledge areas essential for fostering AI literacy in educational systems.</li><li>Integrating foundational AI knowledge into curricula at primary, secondary, and higher education levels.</li><li>Analyzing the implications of AI core competencies for future labor markets and career development.</li><li>Developing students' ethical awareness and critical thinking about AI to enhance their ability to evaluate and use AI responsibly.</li><li>Assessing the role of educators in fostering AI literacy and the resources and training required to support them.</li></ul> <div class=\"my-2\"><strong>Sub-theme 3: Establishing Standards and Norms for Artificial Intelligence </strong></div><p> This sub-theme emphasizes the standardization and regulation of AI technology, focusing on the development of ethical, secure, and privacy-compliant norms for AI development and application. Participants are invited to discuss: </p> <ul class=\"list-disc my-2\"><li>Establishing protocols for data privacy and security management in AI to protect personal information from misuse.</li><li>Defining safety and reliability standards for AI systems across different application scenarios.</li><li>Advancing technical standards for AI development to ensure consistency and compatibility across systems.</li><li>Developing ethical regulatory frameworks for AI, creating national and international industry guidelines.</li></ul> <p>We cordially invite scholars and students to select any of the above sub-themes based on their research interests to share their latest findings (in English or Chinese) and participate in this parallel session’s discussions.</p>",
+          "d2": "Guidelines for Proposal",
+          "p3": "<p>Please prepare a <strong>one-page</strong> proposal containing the following information:</p><ol class=\"list-decimal my-1\"><li><strong>Proposal Title:</strong> The title of your proposal session.</li><li><strong>Proposal Abstract:</strong> A brief description of your proposal topic and its relevance to the session topic.</li><li><strong>Proposal Objectives:</strong> The purpose of the proposal and the expected research outcomes.</li><li><strong>Methodology:</strong> The methods or data sources you plan to use.</li><li><strong>Contribution and Future Work:</strong> The possible contributions of this proposal to the application of LLMs in the field of education, and future research directions.</li><li><strong>Contact Information:</strong> Your full name, affiliation, email address, and phone number.</li></ol> <div class=\"mt-10\"> Please send your one-page proposal and other information as a Word attachment to the email address：<a href=\"mailto:celab2208&#64;163.com\" class=\"font-bold underline hover:text-red-600\">celab2208&#64;163.com</a>, with the subject line \"Your Name + Harvard CES-EdUHK Joint Symposium parallel session 5.\" Your participation will contribute to the advancement of Ethics and Norms of Artificial Intelligence Technology. We look forward to your valuable work and engaging in a discussion on the broad.</div>"
+        }
+      },
+      "id5": {
+        "index": "6",
+        "name": "AI Writing and Assessment",
+        "submitddl": "Submission Deadline: 28 February, 2025",
+        "notifyddl": "Notification of Acceptance Date: 28 February, 2025",
+        "content": {
+          "p1": "<p> The prestigious Harvard China Education Forum will be held in the early summer of 2025 at The Education University of Hong Kong (EdUHK)'s campus in Tai Po, which is situated on a mountainous landscape. The forum will bring together distinguished scholars from globally renowned universities such as Harvard, Stanford, MIT, EdUHK, and Peking University, as well as technology and education policy makers and experts. The three-day event will delve into the integration and application of emerging technologies such as Artificial Intelligence, Metaverse and Intelligent Reality in teaching, training and talent development. We invite you to share the latest R&D results and participate in the parallel session on May 10th. Excellent sharing may be invited to publish an extended version in high impact journals (SCI, SSCI and CSSCI). </p>",
+          "d1": "Parallel Session Introduction",
+          "p2": "<p> Focusing on the current topic of AI technology in writing and assessment in the field of education technology, this parallel session aims to discuss the diversified applications of AI technology in writing and assessment and how to enhance the effectiveness of teaching and learning through AI. The parallel session consists of the following three sub-themes, providing a broad exchange platform for scholars and practitioners from different research directions. </p><div class=\"my-2\"><strong>Sub-theme 1:Artificial Intelligence and its Application in Writing </strong></div><p> Focusing on the application of artificial intelligence in the writing process, it explores how to integrate advanced artificial intelligence technology into writing teaching practices and the writing process to improve teaching quality and efficiency. Participants can present papers on the following topics: </p> <ul class=\"list-disc my-1\"><li>The design and implementation of AI-assisted writing teaching strategies.</li><li>Ethical considerations in AI-assisted writing</li><li>Application of AI in writing classrooms</li><li>Teacher's role in AI-assisted writing instruction</li><li>Exploration of the application of AI in extracurricular writing practices</li><li>Instructors' professional development and training needs</li><li>Critical thinking in AI-assisted writing instruction</li></ul> <div class=\"my-2\"><strong>Sub-theme 2:Artificial Intelligence in Formative Assessment </strong></div><p> Focusing on the application of artificial intelligence in the assessment process, we aim to explore how to use AI to provide learners with personalized and efficient learning experiences. The aim is to explore how intelligent technology can be used to provide learners with personalized and efficient learning experiences. This includes, but not limited to, the following topics: </p> <ul class=\"list-disc my-1\"><li>AI-assisted writing feedback</li><li>AI in corpus-assisted data-driven learning evaluation and assessment</li><li>The development and application of AI tutoring and assessment tools</li><li>Research and practices of AI-Assisted Automatic Evaluation/Grading</li><li>Student/instructor attitudes toward AI in writing</li><li>Ethical considerations in AI-assisted writing</li></ul> <div class=\"my-2\"><strong>Sub-theme 3: Artificial Intelligence’s application in Writing Teaching and Learning </strong></div><p> Exploring the impact of artificial intelligence in writing instruction, focusing on how AI can assist and transform pedagogical materials, teaching, learning, and task completion for teachers and students. This includes, but not limited to, the following topics: </p> <ul class=\"list-disc my-1\"><li>Changes in learning materials brought by AI</li><li>Effects of AI on the agency and interaction of teachers and students</li><li>AI-mediated pedagogy for writing</li><li>Application of AI in task-based writing</li><li>The supportive role of AI in writing tasks in higher education.</li></ul>",
+          "d2": "Guidelines for Proposal",
+          "p3": "<p>Please prepare a <strong>one-page</strong> proposal containing the following information:</p><ol class=\"list-decimal my-1\"><li><strong>Proposal Title:</strong> The title of your proposal session.</li><li><strong>Proposal Abstract:</strong> A brief description of your proposal topic and its relevance to the session topic.</li><li><strong>Proposal Objectives:</strong> The purpose of the proposal and the expected research outcomes.</li><li><strong>Methodology:</strong> The methods or data sources you plan to use.</li><li><strong>Contribution and Future Work:</strong> The possible contributions of this proposal to the application of LLMs in the field of education, and future research directions.</li><li><strong>Contact Information:</strong> Your full name, affiliation, email address, and phone number.</li></ol> <div class=\"mt-10\">Please send your one-page proposal and other information as a Word attachment to the email address：<a href=\"mailto:hnubai&#64;hainanu.edu.cn\" class=\"font-bold underline hover:text-red-600\">hnubai&#64;hainanu.edu.cn</a>, with the subject line \"Your Name + Harvard CES-EdUHK Joint Symposium parallel session 6.\" We look forward to your valuable work and discussing the infinite possibilities of using AI in writing and assessment together! </div>"
+        }
+      },
+      "id6": {
+        "index": "7",
+        "name": "Poster and Showcase: Joint Symposium on Emerging Technologies and Future Talents",
+        "submitddl": "Submission Deadline: March 31, 2025",
+        "notifyddl": "Notification of Acceptance Date: 28 February, 2025 <br> (dates may be delayed depending on circumstances)",
+        "content": {
+          "p1": "<p> The Joint Symposium on Emerging Technologies and Future Talents, co-organized by Harvard CES and The Education University of Hong Kong, will be held from May 8–10, 2025, at The Education University of Hong Kong. This prestigious event will bring together top scholars and industry experts from the fields of education and technology to explore cutting-edge advancements and strategies for future talent development. We are pleased to invite you to participate in the Poster and Showcase Session, where you can present your innovative research and development work. Submissions are encouraged across all four parallel sessions, including Artificial Intelligence (AI), the Metaverse, Entrepreneurship, and Futuristic Mindset and Talent Development. </p>",
+          "d1": "Poster and Showcase INTRODUCTION",
+          "p2": "<p> For this session,you may use any media (posters, live presentations, laptops, XR headsets, video playbacks) to show your work and to engage with the audience. The Poster and Showcase Session will be organized into four thematic sessions, including: </p><div class=\"my-2\"><strong> AI Innovation Exhibition </strong></div> <ul class=\"list-disc my-1\"><li>AI for Teaching and Learning </li><li> AI-Enabled Science Education </li><li> Educational Data Analytics </li></ul> <div class=\"my-2\"><strong> Futuristic Education Exhibition </strong></div> <ul class=\"list-disc my-1\"><li> Talent Development & Entrepreneurship in the Age of AI  </li><li> Large Language Model (LLM) and Computing Education  </li><li> Futuristics Mindset & Trends of Teaching and Training </li></ul>  <div class=\"my-2\"><strong> AI Creativity & Design Exhibition </strong></div> <ul class=\"list-disc my-1\"><li> Research, Writing and Assessment in the Age of AI </li><li> AI-enabled Creativity and Innovation Stimulation  </li><li> AI in Creative Industries and Design Updates </li></ul> <div class=\"my-2\"><strong> AI Ethics & Policy Exhibition </strong></div> <ul class=\"list-disc my-1\"><li> Ethics and Standards of Using AI </li><li> Ethics and Fairness in AI Education Decision-Making </li><li> Privacy Technologies and Standards in AI Education Applications </li></ul>",
+          "d2": "Submission GUIDELINES",
+          "p3": "<ul class=\"list-disc  my-1\"><li> All submissions must be completed through the online system by <strong>15 February, 2025</strong>. </li><li> During the submission process, authors are required to provide  <strong>personal information</strong> (including name, affiliation/university, and email address), <strong>project information</strong> (title and abstract), and upload a <strong>one-page PDF poster proposal</strong> summarizing the poster content. </li><li> Participants may choose one of the following methods to showcase their design content: <ol class=\"list-decimal my-2   mx-4\"> <li> <strong>Full-Size Printed Poster</strong>: Posters must meet international conference standards (90 cm wide, 120 cm high, with 25 mm margins at the top and bottom). </li> <li> <strong> Laptop Display</strong>: Participants may use their personal laptops to loop and display their work. </li> <li> <strong>Other Appropriate Media</strong>: Any suitable tools or media can be used for content presentation. </li> </ol>   </li><li> The organizing committee will evaluate submissions based on the <strong>relevance to the conference theme</strong> and the <strong>scientific quality</strong> of the research work. Accepted participants must complete their conference registration by the specified deadline. </li> <li> For detailed poster requirements and submission, please refer to: <a href=\"https://www.wjx.top/vm/tdLaPJt.aspx#\"> https://www.wjx.top/vm/tdLaPJt.aspx#</a> </li> </ol>"
+        }
+      },
+      "id7": {
+        "index": "8",
+        "name": "AI-Enabled Development and Application of Digital Textbooks and Innovative Talent Cultivation",
+        "submitddl": "",
+        "notifyddl": ""
+      }
+    }
+  },
+  "CallForPoster": "Call for<br>Participation",
+  "CallForShowcase": "Call for Project <br> Presentation",
+  "UnderConstruct": "This language version of the webpage is under modification. Please view the Simplified Chinese version",
+  "Above All": "Includes all parallel session topics",
+  "Due": "Due 15 February, 2025; Notification by 28 February, 2025; Extension upon request",
+  "Agenda Note": "(Preliminary  subject to change)",
+  "Register": {
+    "policy": "By participating in this event, you hereby grant permission to the Organizing Committee to use photographs, video recordings, or other media that include your likeness, image, or voice, taken during the Harvard-EdUHK-Stanford Joint Symposium. These materials may be used for publicity, promotional purposes, or educational materials in both print and digital formats. You understand that these materials may be shared through platforms such as websites, social media, or other public channels, and you waive any rights to compensation or approval of the final content.",
+    "noti": "This symposium will NOT provide online live streaming. Unless otherwise notified, all speakers and attendees must register to participate in the Workshops and/or the Symposium",
+    "earlyReg": "Early Bird Registration ends 10 April—register now to save! Final registration closes 15 April.",
+    "title": "Registration and Payment",
+    "trackTitle": "Registration Fee for the Symposium (9-10 May) ",
+    "workshopTitle": "Registration Fee for Workshop Sessions (8 May, 1-6 PM)",
+    "wsName": "Workshop Topic",
+    "wsHost": "Host Institution",
+    "wsFee": "1 workshop, USD40; 2 workshops, USD60, 3 workshops, USD80",
+    "wsLength": "estimated 1.5-2 hours/each",
+    "type": "Personnel Category",
+    "banquet": "Whether to Attend Banquet",
+    "Banquet": "Banquet (10 May 2025) ticket",
+    "fee": "Fee",
+    "student": "Student, K-12 Teacher and EdUHK staff(ID Check on arrival)",
+    "non-student": "Non-student (Staff, teachers, working professionals etc.)",
+    "virtual": "Virtual Participation",
+    "HKD": "HKD",
+    "about": "About",
+    "USD": "USD",
+    "Free": "Free",
+    "FeeDetails1": "The registration fee includes the welcome reception (May 8) and coffee breaks and lunch for the entire conference (May 9-10)",
+    "FeeDetails2": "The registration fee is in HKD. If you have payment issues, please retry or use a computer. If the problem persists, kindly contact us at GIETfuture&#64;email.com.",
+    "banquetDate": "10 May 2025",
+    "click": "Registration",
+    "Harvard": "Stanford and Harvard",
+    "HarvardHost": "Harvard Stanford Innovation Education(for K-12 teachers and students)",
+    "journals": "Writing and Publishing in High-Impact Journals",
+    "journalsHost": "EiCs of Leading Journals (IEEE-TLT, BJET, Peking U Review, Childhood Education)",
+    "EduAI": "Leveraging Collaborative Generative AI for Design and Prototyping in Innovation and Entrepreneurship Education",
+    "EduAIHost": "EdUHK and Stanford"
+  },
+  "workshop page": {
+    "description": "Description",
+    "takeaways": "Key Takeaways",
+    "comment": "Three sequential workshops on 8th May, 1:00-5:30 PM, On Campus",
+    "reg1": "Workshop Sessions Open for <a href='/registration' style='text-decoration: underline;'>Registration</a>",
+    "reg-eduhk": "<strong>EdUHK students and K-12 teachers in Hong Kong and beyond:</strong> May attend all three sessions <strong> for free.</strong> <br> (For free registration, Please email <strong>GIETfuture&#64;eduhk.hk</strong>: name, school, EdUHK student or teacher ID.)",
+    "reg-nonlocal": "<strong>Non-local Participants:</strong> Discounted rates available.",
+    "reg-link": "Please reserve your spot by visiting <strong><a href='/registration' class='text-lg' style='text-decoration: underline;'>Registration Link.</a></strong>",
+    "Speakers": "Speakers",
+    "workshop1": {
+      "title": "Harvard-Stanford Innovation Education (for K-12 teachers and students)",
+      "description": "The Harvard-Stanford Innovation Education workshop is a groundbreaking initiative designed to empower K-12 teachers and students with the skills and mindset needed to thrive in an ever-evolving educational landscape. ",
+      "takeaways": "Through interactive sessions, hands-on activities, and real-world case studies, teachers will learn how to create dynamic and engaging learning environments that inspire students to become active, lifelong learners. Students will have the opportunity to engage in innovative projects, develop their own ideas, and present their solutions to real-world challenges. ",
+      "speaker": "<a href=\"/speakers/speaker/12 AnnyChan\">Anny Chan </a>(Harvard Teaching Fellow) <br> <a href=\"/speakers/speaker/11 RongbingShen\">Rongbing Shen</a> (Harvard Alumnus) <br> <a href='/speakers/speaker/27 Yue Jia'>Clara Yue Jia</a> (Stanford)",
+      "slides": "Join us for this transformative experience and discover how to harness the power of innovation to enhance teaching and learning in your school community. (Teachers are welcome to bring their students to this session.)"
+    },
+    "workshop2": {
+      "title": "Writing and Publishing in High-Impact Journals",
+      "description": "This workshop is designed to provide researchers with invaluable insights and practical strategies from Editors-in-Chief (EiCs) of leading high-impact journals. Participants will gain a comprehensive understanding of the key elements that make a manuscript stand out, including crafting compelling abstracts, structuring articles effectively, and presenting data convincingly. The workshop will also cover the nuances of the peer-review process, common pitfalls to avoid, and tips for responding to reviewers' comments.",
+      "takeaways": "Through interactive sessions and case studies, attendees will have the opportunity to engage directly with EiCs, gaining firsthand knowledge of what top-tier journals look for in submissions. Whether you are an early-career researcher or an experienced academic, this workshop will equip you with the tools and confidence needed to enhance your writing and increase your chances of publication success. ",
+      "speaker": "<a href='/speakers/speaker/19 Ju SeongLee'>Ju Seong Lee</a> (EiC, Innovation in Language Learning and Teaching) <br> <a href='/speakers/speaker/25 Mutlu Cukurova'> Mutlu Cukurova </a>(EiC, British Journal of Education Technology)<br> <a href='/speakers/speaker/5 MinjuanWANG'>Minjuan Wang </a>(EiC, IEEE-Transactions on Learning Technologies) <br> <a href='/speakers/speaker/26 Weipeng Yang'>Weipeng Yang </a>(EiC, Co-Editor-in-Chief of the Journal of Research in Childhood Education) <br> <a href='https://www.eduhk.hk/zhs/experts/professor-li-hui-philip'>Philip Li</a>(EiC, Chief Editor, AI, Brain and Child)",
+      "slides": "Join us for this unique opportunity to learn from the experts and take your research to the next level!"
+    },
+    "workshop3": {
+      "title": "Leveraging Collaborative Generative AI for Design and Enterpreneurship Education",
+      "description": "This workshop explores the transformative potential of Multimodal Large Language Models (MLLMs) for design and prototyping in innovation and entrepreneurship education and practice. Participants will delve into hands-on applications and scaffolded activities using various collaborative MLLM platforms to collectively brainstorm solutions to problems, give feedback on design thinking steps and prototypes, and sift through customer feedback for navigating product-market fit and go-to-market strategies.",
+      "takeaways": "We'll explore genAI applications in case studies involving AI tech, green/sustainable tech, biotechnology, drones and robotics, metaverse and AR/VR/XR, or interests of participants.",
+      "speaker": "<a href='/speakers/speaker/22 Fridolin Ting'>Dr. Fridolin TING </a>(also the symposium Keynote speaker) <br> <a href='/speakers/speaker/7 PaulKim'>Dr. Paul Kim </a>(also the symposium Keynote speaker)",
+      "slides": "Please check out <a href='/workshop/3'>the details of this session.</a>"
+    }
+  }
+}
