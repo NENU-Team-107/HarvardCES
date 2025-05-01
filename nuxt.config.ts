@@ -1,5 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import {  presetAttributify, presetIcons } from 'unocss'
+import { presetAttributify, presetIcons } from 'unocss'
 
 export default defineNuxtConfig({
   devtools: { enabled: true },
@@ -26,7 +26,7 @@ export default defineNuxtConfig({
   fontawesome: {
     icons: {
       solid: ['arrow-right', 'arrow-left', 'angle-right', 'angle-up', 'angle-down', 'globe', 'e', 'd', 'u', 'h', 'k', 'xmark', 'circle-right', 'circle', 'envelope',],
-      regular: [],
+      regular: ['calendar'],
       brands: []
     }
   },

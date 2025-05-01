@@ -102,8 +102,248 @@
   "Organisers and Partners": "主办单位与赞助方",
   "Symposium Introduction": "论坛介绍",
   "Symposium Location": "论坛地点",
-  "Symposium Time": "论坛议程",
-  "Symposium Agenda": "img/poster/Agenda-zh-Hans.png",
+  "Symposium Time": {
+    "title": "论坛议程",
+    "tip": "Harvard-EdUHK-Stanford Joint Symposium: Emerging Technologies and Future Talents Agenda"
+  },
+  
+  "Symposium Agenda": {
+    "Day1": {
+      "line1": {
+        "Time": "12:30-13:00",
+        "Event": "Registration",
+        "Location": "D1-LP",
+        "Host": ""
+      },
+      "line2": {
+        "Time": "13:00-13:10",
+        "Event": "<div class='bg-yellow-100 w-full text-green-700 font-bold text-lg my-1'>Opening Speech</div>Professor May Hung Cheng, Vice President of Academics, The Education University of Hong Kong",
+        "Location": "D1-LP-04",
+        "Host": "Professor Minjuan Wang"
+      },
+      "line3": {
+        "Time": "14:00-17:00",
+        "Event": "<div class='bg-yellow-100 w-full text-green-700 font-bold text-lg my-1'>WorkshopⅠ Innovation Education (for K-12 teachers and students)</div>Ms. Anny Chan, Harvard University\nMs. Rongbing Shen, Harvard University\nMs. Clara Yue Jia, Stanford University",
+        "Location": "D1-LP-03",
+        "Host": "Ms. Anny Chan"
+      },
+      "line4": {
+        "Time": "13:10-15:00",
+        "Event": "<div class='bg-yellow-100 w-full text-green-700 font-bold text-lg my-1'>WorkshopⅡ Writing and Publishing in High-impact Journals </div>Professor Mutlu Cukurova, EiC of British Journal of Education Technology\nProfessor Minjuan Wang, EiC of IEEE-Transactions on Learning Technologies\nProfessor Kin-fung Chiu, EiC of Interactive Learning Environments\nDr. Weipeng Yang, EiC of the Journal of Research in Childhood Education; \nProfessor Hui Li, EiC of AI, Brain and Child\nDr. Ju Seong Lee, EiC of Innovation in Language Learning and Teaching",
+        "Location": "D1-LP-04",
+        "Host": "Dr. Weipeng Yang\nDr. Ju Seong Lee "
+      },
+      "line5": {
+        "Time": "16:00-17:30",
+        "Event": "<div class='bg-yellow-100 w-full text-green-700 font-bold text-lg my-1'>Workshop Ⅲ Leveraging Collaborative Generative AI for Design and Prototyping\n in Innovation and Entrepreneurship Education</div>Dr. Paul Kim, Chair of the International Expert Committee on Education Technology, The World Bank\nDr. Fridolin TING, Senior Lecturer of The Education University of Hong Kong",
+        "Location": "D1-LP-02",
+        "Host": "Dr. Fridolin TING"
+      },
+      "line6": {
+        "Time": "18:00-19:00",
+        "Event": "Welcome Reception",
+        "Location": "Corridor",
+        "Host": ""
+      }
+    },
+    "Day2": {
+      "line1": {
+        "Time": "08:45-09:00",
+        "Event": "Registration",
+        "Location": "D1-LP",
+        "Host": ""
+      },
+      "line2": {
+        "Time": "09:00-09:10",
+        "Event": "<div class='bg-yellow-100 w-full text-green-700 font-bold text-lg my-1'>Opening Remarks and Welcome</div>Professor John Chi-Kin Lee, President, Director of the Academy for Applied Policy Studies and Education Futures (AAPSEF), EdUHK",
+        "Location": "D1-LP-02",
+        "Host": "Professor Minjuan Wang \nMr. Xuefan Jordan Li"
+      },
+      "line3": {
+        "Time": "09:10-09:20",
+        "Event": "Mr ChangXue Yu, Director, China Center for International People-to-People Exchange, Ministry of Education, China (recorded speaking)",
+        "Location": "D1-LP-02",
+        "Host": "Professor Minjuan Wang \nMr. Xuefan Jordan Li"
+      },
+      "line4": {
+        "Time": "09:20-09:30",
+        "Event": "Professor Minjuan Wang, Co-Director of Global Institute for Emerging Technologies (GIET), EdUHK",
+        "Location": "D1-LP-02",
+        "Host": "Professor Minjuan Wang \nMr. Xuefan Jordan Li"
+      },
+      "line5": {
+        "Time": "09:30-09:40",
+        "Event": "Professor John Clifford Mitchell, Stanford University",
+        "Location": "D1-LP-02",
+        "Host": "Professor Minjuan Wang \nMr. Xuefan Jordan Li"
+      },
+      "line6": {
+        "Time": "09:40-09:50",
+        "Event": "Ms. Anny Chan, Harvard University",
+        "Location": "D1-LP-02",
+        "Host": "Professor Minjuan Wang \nMr. Xuefan Jordan Li"
+      },
+      "line7": {
+        "Time": "09:50-10:30",
+        "Event": "<div class='bg-yellow-100 w-full text-green-700 font-bold text-lg my-1'>GIET Launch Ceremony</div>",
+        "Location": "D1-LP-02",
+        "Host": "Professor Minjuan Wang \nMr. Xuefan Jordan Li"
+      },
+      "line8": {
+        "Time": "10:30-10:40",
+        "Event": "Coffee Break",
+        "Location": "Corridor",
+        "Host": ""
+      },
+      "line9": {
+        "Time": "10:40-11:10",
+        "Event": "<div class='bg-yellow-100 w-full text-green-700 font-bold text-lg my-1'>Keynote Speech</div>Professor John Chi-Kin Lee, President, Director of the Academy for Applied Policy Studies and Education Futures (AAPSEF), EdUHK\n\n<span class='italic'>Ethics and Values of Artificial Intelligence: Exploration of values education implications</span>",
+        "Location": "",
+        "Host": ""
+      },
+      "line10": {
+        "Time": "11:10-11:40",
+        "Event": "<div class='bg-yellow-100 w-full text-green-700 font-bold text-lg my-1'>Professor John Clifford Mitchell, Stanford University</div><span class='italic'>Generative AI for Collaborative Learning and Creativity</span>",
+        "Location": "",
+        "Host": ""
+      },
+      "line11": {
+        "Time": "11:40-12:00",
+        "Event": "Coffee Break",
+        "Location": "Corridor",
+        "Host": ""
+      },
+      "line12": {
+        "Time": "12:00-14:00",
+        "Event": "Lunch - <span class='text-xs italic'>Ticketed Guests Only</span>",
+        "Location": "Corridor",
+        "Host": ""
+      },
+      "line13": {
+        "Time": "14:00-14:40",
+        "Event": "<div class='bg-yellow-100 w-full text-green-700 font-bold text-lg my-1'>Keynote Speech</div>Dr. Shijin Wang, Vice CEO of iFlytek, Inc.<span class='italic'>Latest Developments and Typical Applications of the Xinghuo Large Model in Education</span>",
+        "Location": "D1-LP-04",
+        "Host": "Dr. Yin Yang \nDr. Zhengyuan Wei"
+      },
+      "line14": {
+        "Time": "14:40-15:30",
+        "Event": "Professor Yew-Soon Ong, Nanyang Technological University<span class='italic'>Teaching AI, Learning with AI: Multiple Perspectives on Education’s Future</span>",
+        "Location": "",
+        "Host": ""
+      },
+      "line15": {
+        "Time": "15:30-16:20",
+        "Event": "Dr. Paul Kim, World Bank<span class='italic'>Education Reimagined: Navigating the AI Disruption</span>",
+        "Location": "",
+        "Host": ""
+      },
+      "line16": {
+        "Time": "16:20-17:00",
+        "Event": "Professor Qing Li, Hong Kong Polytechnic University<span class='italic'>KCUBE: A KG-based University Curriculum Framework for Student Advising and Career Planning</span>",
+        "Location": "",
+        "Host": ""
+      },
+      "line17": {
+        "Time": "17:00-17:10",
+        "Event": "<div class='bg-yellow-100 w-full text-green-700 font-bold text-lg my-1'>Closing Remarks and Logistics</div>Professor Minjuan Wang and Dr. Daner Sun, The Education University of Hong Kong",
+        "Location": "D1-LP-04",
+        "Host": "Professor Minjuan Wang"
+      },
+      "line18": {
+        "Time": "18:30-20:00",
+        "Event": "<div class='bg-yellow-100 w-full text-green-700 font-bold text-lg my-1'>President's Dinner - <span class='text-xs'>Invited Guests Only</sapn></div>For transporation arrangement, please check Shuttle schedule and boarding location online. <a class='text-green-500 italic' href='https://harvardces.eduhk.hk/symposium/guide'>https://harvardces.eduhk.hk/symposium/guide</a>",
+        "Location": "Science Park",
+        "Host": ""
+      }
+    },
+    "Day3": {
+      "line1": {
+        "Time": "08:00-09:00",
+        "Event": "Registration",
+        "Location": "D1-LP",
+        "Host": ""
+      },
+      "line2": {
+        "Time": "09:00-09:15",
+        "Event": "<div class='bg-yellow-100 w-full text-green-700 font-bold text-lg my-1'>Opening Remark</div>Professor Chetwyn Che Hin Chan, Vice President of Research and Development, EdUHK",
+        "Location": "D1-LP-02",
+        "Host": "Dr. Daner Sun \nDr. Yin Yang"
+      },
+      "line3": {
+        "Time": "09:00-09:15",
+        "Event": "<div class='bg-yellow-100 w-full text-green-700 font-bold text-lg my-1'>Keynote Speech</div>Professor Chris Dede, Harvard University and Senior Advisor of Global Institute for Emerging Technologies (GIET), EdUHK\n<span class='italic'>GenAI in Education: The Promises and the Perils</span>",
+        "Location": "D1-LP-02",
+        "Host": "Dr. Daner Sun \nDr. Yin Yang"
+      },
+      "line4": {
+        "Time": "09:45-10:00",
+        "Event": "Coffee Break",
+        "Location": "Corridor",
+        "Host": ""
+      },
+      "line5": {
+        "Time": "10:00-10:30",
+        "Event": {
+          "event1": "<div class='w-full '><div class='bg-yellow-100 text-green-700 font-bold text-lg my-1'>Parallel Session Ⅰ Al for Teaching and Learning, <span class='text-amber-800'>D1-LP-02</span> <br> <span class='text-xs text-black'>Chair: Dr. Liping Deng, Dr Jijian Lu</span></div><div class='bg-yellow-50 text-green-700 '>Invited Speaker</div><div>Professor Leonel Caseiro Morgado, Universidade Aberta & INESC TEC</div><div class='italic'>Redesigning Education as a Cognitive Ecosystem: Practical Insights into Emerging Roles for Educators</div></div>",
+          "event2": "<div class='w-full min-w-0'><div class='bg-yellow-100 text-green-700 font-bold text-lg my-1'>Parallel Session Ⅱ Talent Development & Entrepreneurship in the Age of AI, <span class='text-amber-800'>D1-LP-04</span><br><span class='text-xs text-black'>Chair: Dr. Dou Diya, Professor Xuesong Zhai</span></div><div class='bg-yellow-50 text-green-700 '>Keynote Speaker</div><div>Professor Tina Grotzer, Harvard University</div><div class='italic'>Supporting Adaptive Expertise: What Does it Involve and Why Is it Important for the Workforce in a Complex and Changing World?</div></div>",
+          "event3": "<div class='w-full min-w-0'><div class='bg-yellow-100 text-green-700 font-bold text-lg my-1'>Parallel Session Ⅲ Science Education in the Age of AI , <span class='text-amber-800'>D3-LP-07</span><br><span class='text-xs text-black'>Chair: Dr. Daner Sun, Dr. Yang Zhang</span></div><div class='bg-yellow-50 text-green-700 '>Invited Speaker</div><div>Professor Xiang'en Hu, Hong Kong Polytechnic University</div><div class='italic'>Creativity in Practice: Exploring Student Engagement with AI-Supported Learning</div></div>"
+        },
+        "Location": "",
+        "Host": ""
+      },
+      "line6": {
+        "Time": "10:30-12:00",
+        "Event": {
+          "event1": "<div class='w-full '><div class='bg-yellow-50 text-green-700 '>Paper Presentation</div>S1-A, S1-B, S1-C, S1-D, S1-E, S1-F, S1-G, S1-H, S1-J, S1-K</div>",
+          "event2": "<div class='w-full '><div class='bg-yellow-50 text-green-700 '>Paper Presentation</div>S2-A, S2-B, S2-C, S2-D, S2-E, S2-F, S2-G, S2-H, S2-I</div>",
+          "event3": "<div class='w-full '><div class='bg-yellow-50 text-green-700 '>Paper Presentation</div>S3-A, S3-B, S3-C, S3-D, S3-E, S3-F, S3-G, S3-H</div>"
+        },
+        "Location": "",
+        "Host": ""
+      },
+      "line7": {
+        "Time": "12:00-13:00",
+        "Event": "Lunch Break",
+        "Location": "Corridor",
+        "Host": ""
+      },
+      "line8": {
+        "Time": "13:00-13:30",
+        "Event": {
+          "event1": "<div class='w-full '><div class='bg-yellow-100 text-green-700 font-bold text-lg my-1'>Parallel Session Ⅳ Large Language Model Enabled Computing Education, <span class='text-amber-800'>D1-LP-02</span> <br> <span class='text-xs text-black'>Chair: Professor Guandong Xu, Professor Minghao Yin</span></div><div class='bg-yellow-50 text-green-700 '>Invited Speaker</div><div>Dr. Jonathon Ritcher</div><div class='italic'>Rooted in Multimodality: Cultivating the Immersive Learning Sciences</div></div>",
+          "event2": "<div class='w-full min-w-0'><div class='bg-yellow-100 text-green-700 font-bold text-lg my-1'>Parallel Session Ⅴ Ethics and Norms of Artificial Intelligence Technology, <span class='text-amber-800'>D1-LP-04</span><br><span class='text-xs text-black'>Chair: Dr. Yuling Zhang, Professor Yonghe Wu</span></div><div class='bg-yellow-50 text-green-700 '>Invited Speaker</div><div>Dr. Alberto Sols, Universidad Europea de Madrid</div><div class='italic'>A Systems Approach to Leveraging Artificial Intelligence for a Highly Personalized and Effective Higher Education</div></div>",
+          "event3": "<div class='w-full min-w-0'><div class='bg-yellow-100 text-green-700 font-bold text-lg my-1'>Parallel Session Ⅵ AI Writing and Assessment, <span class='text-amber-800'>D3-LP-07</span><br><span class='text-xs text-black'>Chair: Dr. Yue Zhang, Professor LiFang Bai</span></div></div>"
+        },
+        "Location": "",
+        "Host": ""
+      },
+      "line9": {
+        "Time": "13:30-15:00",
+        "Event": {
+          "event1": "<div class='w-full '><div class='bg-yellow-50 text-green-700 '>Paper Presentation</div>S4-A, S4-B, S4-C, S4-D, S4-E, S4-F, S4-G, S4-H</div>",
+          "event2": "<div class='w-full '><div class='bg-yellow-50 text-green-700 '>Paper Presentation</div>S5-A, S5-B, S5-C, S5-D, S5-E, S5-F, S5-G, S5-H</div>",
+          "event3": "<div class='w-full '><div class='bg-yellow-50 text-green-700 '>Paper Presentation</div>S6-A, S6-B, S6-C, S6-D, S6-E, S6-F</div>"
+        },
+        "Location": "",
+        "Host": ""
+      },
+      "line10": {
+        "Time": "15:00-15:30",
+        "Event": "Coffee Break",
+        "Location": "Corridor",
+        "Host": ""
+      },
+      "line11": {
+        "Time": "15:30-16:00",
+        "Event": {
+          "event1": "<div class='w-full '><div class='bg-yellow-100 text-green-700 font-bold text-lg my-1'>Panel Discussion Challenges and Opportunities in Technology and Future Skills, <span class='text-amber-800'>D1-LP-02</span> <br> <span class='text-xs text-black'>Moderator: Dr. Yue Wang</span></div>Prof. CHAN Chun Bun Henry,Hong Kong Polytechnic University\nProf. Mutlu Cukurova, University College London\nMs. Rui Zhao, NetDragon Websoft Holdings Limited</div>",
+          "event2": "<div class='w-full '><div class='bg-yellow-100 text-green-700 font-bold text-lg my-1'>Parallel Session Ⅷ AI-Enabled Development and Application of Digital Textbooks and Innovative Talent Cultivation, <span class='text-amber-800'>D3-LP-01, 13:00-16:00</span> <br> <span class='text-xs text-black'>Chair: Professor Yuxia Du</span></div><span class='pr-2 text-green-700 '>Paper Presentation</span>S8-A, S8-B, S8-C, S8-D, S8-E, S8-F, S8-G, S8-H, S8-J, S8-K, S8-L, S8-M, S8-N, S8-O</div></div>"
+        },
+        "Location": "",
+        "Host": ""
+      }
+    }
+  },
   "Visitor Guide": "来访指南",
   "Guide for Guests Visiting The Education University of Hong Kong (Tai Po Campus)": "香港教育大学（大埔校区）嘉宾来访指南",
   "From Airport": {
