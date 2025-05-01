@@ -125,7 +125,7 @@ watchEffect(() => {
         </div>
       </div>
 
-      <div class="min-w-screen">
+      <div class="w-full">
         <SubSwiper :cards="true" />
       </div>
 

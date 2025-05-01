@@ -91,6 +91,18 @@ const day3Schedule = ref<ScheduleItem[]>([
     time: 'Symposium Agenda.Day3.line11.Time', event: '', location: 'Symposium Agenda.Day3.line11.Location', host: 'Symposium Agenda.Day3.line11.Host', subTableData:
       ['Symposium Agenda.Day3.line11.Event.event1', 'Symposium Agenda.Day3.line11.Event.event2'],
   },
+  {
+    time: 'Symposium Agenda.Day3.line12.Time', event: '', location: 'Symposium Agenda.Day3.line12.Location', host: 'Symposium Agenda.Day3.line12.Host', subTableData:
+      ['Symposium Agenda.Day3.line12.Event.event1'],
+  },
+  {
+    time: 'Symposium Agenda.Day3.line13.Time', event: '', location: 'Symposium Agenda.Day3.line13.Location', host: 'Symposium Agenda.Day3.line13.Host', subTableData:
+      ['Symposium Agenda.Day3.line13.Event.event1'],
+  },
+  {
+    time: 'Symposium Agenda.Day3.line14.Time', event: '', location: 'Symposium Agenda.Day3.line14.Location', host: 'Symposium Agenda.Day3.line14.Host', subTableData:
+      ['Symposium Agenda.Day3.line14.Event.event1'],
+  }
 ]);
 
 </script>

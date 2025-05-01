@@ -33,32 +33,21 @@ import AgendaTable from '~/components/symposium/AgendaTable.vue'
         @load="adjustIframe" :src="fileURL"></iframe>
     </div> -->
 
-    <div class="md:flex hidden flex-col px-8 md:px-16 py-4  h-full w-full rounded-lg self-center">
-      <div class="flex justify-center items-center text-4xl my-4 font-bold">
-        <div class="h-0.5 w-20 bg-black" />
+    <div class="md:flex flex-col px-8 md:px-16 py-4  h-full w-full rounded-lg self-center">
+      <div class="flex justify-center items-center md:text-4xl text-2xl my-4 font-bold">
+        <div class="h-0.5 md:w-20 w-10 bg-black" />
         <h1 class="mx-4">{{ $t("Symposium Time.title") }}</h1>
-        <div class="h-0.5 w-20 bg-black" />
+        <div class="h-0.5 md:w-20 w-10 bg-black" />
       </div>
-      <span class="text-center">{{ $t("Symposium Time.tip") }}</span>
+      <span class="text-center md:text-base text-xs">{{ $t("Symposium Time.tip") }}</span>
       <!-- <div class="w-full">
         <NuxtImg :src="AgendaImage" loading="lazy" class="w-full object-cover" />
         <div class="text-center my-2">
           <i>{{ $t("Agenda Note") }}</i>
         </div>
       </div> -->
-      <AgendaTable />
     </div>
-
-    <!-- <div class="md:hidden">
-      <div class="w-full">
-        <NuxtImg :src="AgendaImage" loading="lazy" class="w-full object-cover" />
-        <div class="text-center text-xs my-2">
-          <i>{{ $t("Agenda Note") }}</i>
-        </div>
-      </div>
-    </div> -->
+    <AgendaTable />
 
   </div>
 </template>
-
-<style scoped></style>

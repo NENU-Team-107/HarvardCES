@@ -67,19 +67,19 @@ export default defineNuxtConfig({
         name: 'English'
       },
       {
-        code: 'zh-cn',
+        code: 'zh-CN',
         file: 'zh_Hans.json',
         label: '简体中文',
         name: '简体中文'
       },
       {
-        code: 'zh-hk',
+        code: 'zh-TW',
         file: 'zh_Hant.json',
         label: '繁體中文',
         name: '繁體中文'
       },
     ],
-    defaultLocale: "zh-cn",
+    defaultLocale: "zh-CN",
     detectBrowserLanguage: {
       useCookie: true,
       cookieKey: "i18n_redirected",
