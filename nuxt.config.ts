@@ -19,7 +19,7 @@ export default defineNuxtConfig({
     // plugins: [font.vite({})],
   },
   css: ['~/assets/css/global.css'],
-  modules: ["@nuxt/ui", "@nuxtjs/tailwindcss", "@nuxtjs/i18n", "@nuxt/image", "@vesp/nuxt-fontawesome", '@nuxtjs/color-mode', 'radix-vue/nuxt', '@sidebase/nuxt-pdf'],
+  modules: ["@nuxt/ui", "@nuxtjs/tailwindcss", "@nuxtjs/i18n", "@nuxt/image", "@vesp/nuxt-fontawesome", '@nuxtjs/color-mode', 'radix-vue/nuxt', '@sidebase/nuxt-pdf', 'nuxt-easy-lightbox'],
   typescript: { typeCheck: true },
   tailwindcss: {
     exposeConfig: true,
