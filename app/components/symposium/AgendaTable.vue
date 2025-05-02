@@ -116,7 +116,9 @@ const day3Schedule = ref<ScheduleItem[]>([
           <div v-html="$t((row.original as ScheduleItem).time).replace(/\n/g, '<br>')" />
         </template>
         <template #event-cell="{ row }">
-          <div v-html="$t((row.original as ScheduleItem).event).replace(/\n/g, '<br>')" />
+          <div class="max-w-sm">
+            <div v-html="$t((row.original as ScheduleItem).event).replace(/\n/g, '<br>')" />
+          </div>
         </template>
         <template #location-cell="{ row }">
           <div v-html="$t((row.original as ScheduleItem).location).replace(/\n/g, '<br>')" />

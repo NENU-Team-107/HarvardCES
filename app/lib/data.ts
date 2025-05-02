@@ -663,7 +663,7 @@ export const routerArray: Array<RouterItem> = [
             // },
             {
                 name: "Symposium Time.title",
-                path: "/symposium/SymposiumTime"
+                path: "/symposium/time"
             },
             {
                 name: "Visitor Guide",
