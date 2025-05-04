@@ -693,20 +693,25 @@ const daySwitchOptions = ref([
             </tr>
 
             <tr class="text-lg border-b border-gray-300">
-              <td class="p-0" rowspan="2">17:00-18:00</td>
-              <td class="p-4 text-green-800 bg-yellow-200/50 text-xl">Closing Remarks and Awards Ceremony
+              <td class="p-0">17:00-18:00</td>
+              <td>
+              <ul class="font-normal text-lg">
+                <li class="font-bold p-4 text-green-800 bg-yellow-200/50 text-xl">Closing Remarks and Awards Ceremony</li>
+                <li>Professor Minjuan Wang and Professor Hui Li (on behalf of the organizing committee)</li>
+              </ul>
               </td>
-              <td class="p-4">Professor Minjuan Wang and Professor Hui Li (on behalf of the organizing committee)
-              </td>
+              
             </tr>
 
             <tr class="text-lg border-b border-gray-300">
-              <td class="p-0" rowspan="2">19:00-21:30</td>
-              <td class="p-4 text-green-800 bg-yellow-200/50 text-xl">Dinner Gala - Invited and Ticketed Guests Only
+              <td class="p-0">19:00-21:30</td>
+              <td>
+                <ul class="font-normal text-lg">
+                  <li class="p-4  font-bold  text-green-800 bg-yellow-200/50 text-xl">Dinner Gala - Invited and Ticketed Guests Only</li>
+                  <li>For transporation arrangement, please check Shuttle schedule and boarding location online.</li>
+                </ul>
               </td>
-               <td class="p-4">For transporation arrangement, please check Shuttle schedule and boarding location online.
-              </td>
-              <td class="p-4" rowspan="2">Happiness Cuisine Restaurant, Science Park</td>
+              <td class="p-4">Happiness Cuisine Restaurant, Science Park</td>
             </tr>
 
 
