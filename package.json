@@ -24,7 +24,8 @@
     "@nuxtjs/i18n": "9.5.3",
     "@unhead/vue": "^2.0.3",
     "@vesp/nuxt-fontawesome": "1.2.1",
-    "nuxt": "^3.17.1"
+    "nuxt": "^3.17.1",
+    "radix-vue": "^1.9.17"
   },
   "devDependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.7.2",

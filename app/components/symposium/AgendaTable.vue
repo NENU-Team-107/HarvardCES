@@ -311,13 +311,13 @@ const daySwitchOptions = ref([
             </tr>
           </thead>
           <tbody>
-            <tr class="text-lg border-b border-gray-500/30">
-              <td class="p-4">08:45 - 09:00</td>
-              <td class="p-4">Registration</td>
-              <td class="p-4">D1-LP</td>
-              <td class="p-4"></td>
+           <tr class="text-lg border-b border-green-700/80">
+              <td class="px-2 py-1 whitespace-nowrap">08:00 - 09:00</td>
+              <td class="p-0">Registration</td>
+              <td class="p-0">D1-LP</td>
+              <td class="p-0"></td>
             </tr>
-
+            
             <tr class="text-lg border-b border-gray-300">
               <td class="p-4 align-top">09:00-09:10</td>
               <td class="p-4 text-green-800 bg-yellow-200/50 text-xl">Opening Remarks and Welcome<br>
@@ -502,18 +502,20 @@ const daySwitchOptions = ref([
             </tr>
             <tr class="text-lg border-b border-gray-300">
               <td class="p-0">09:15-09:45</td>
-              <td class="p-4">
+              <td class="p-4 text-green-800 bg-yellow-200/50 text-xl">Keynote Speech <br>
+                <div class="text-lg text-black bg-transparent">
                 <ul>
                   <li>Professor Chris Dede, Harvard University and Senior Advisor of Global Institute for Emerging
                     Technologies
                     (GIET), EdUHK</li>
                   <li class="font-normal"><i>GenAI in Education: The Promises and the Perils</i></li>
                 </ul>
+                </div>
               </td>
             </tr>
 
             <tr class="text-lg border-b bg-gray-500/30">
-              <td class="p-0">11:40-12:00 </td>
+              <td class="p-0">09:45-10:00 </td>
               <td class="p-4">Coffee Break</td>
               <td class="p-4">Corridor</td>
               <td class="p-4"></td>
