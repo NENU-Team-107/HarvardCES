@@ -312,7 +312,7 @@ const daySwitchOptions = ref([
           </thead>
           <tbody>
            <tr class="text-lg border-b border-green-700/80">
-              <td class="px-2 py-1 whitespace-nowrap">08:00 - 09:00</td>
+              <td class="px-2 py-1 whitespace-nowrap">08:45-09:00</td>
               <td class="p-0">Registration</td>
               <td class="p-0">D1-LP</td>
               <td class="p-0"></td>
