@@ -218,10 +218,10 @@ const daySwitchOptions = ref([
           </thead>
           <tbody>
             <tr class="text-lg border-b border-green-700/80">
-              <td class="p-4">09:00 - 10:00</td>
-              <td class="p-4">Opening Ceremony</td>
-              <td class="p-4">Grand Hall</td>
-              <td class="p-4">Mr. John Doe</td>
+              <td class="p-4">12:30-13:00</td>
+              <td class="p-4">Registration</td>
+              <td class="p-4">D1-LP</td>
+              <td class="p-4"></td>
             </tr>
 
             <!-- 第二行（带子表格的行） -->
