@@ -647,7 +647,7 @@ const daySwitchOptions = ref([
                 Cultivation, <span class="text-orange-700">D3-LP-01, 13:00-16:00</span><br>
                 <span class="font-normal text-black text-base">Chair: Professor Yuxia Du</span>
               </td>
-              <td class="p-4 align-center">Ms. Clara Yue Jia</td>
+              <td class="p-4 align-center" rowspan="2">Ms. Clara Yue Jia</td>
             </tr>
             <tr class="border-b border-red-200">
               <td class="p-2 border-r border-gray-300">
@@ -693,21 +693,20 @@ const daySwitchOptions = ref([
             </tr>
 
             <tr class="text-lg border-b border-gray-300">
-              <td class="p-0 ">17:00-18:00</td>
-              <td class="p-4 text-green-800 bg-yellow-200/50 text-xl">Closing Remarks and Awards Ceremony <br>
-                <span class="text-lg text-black font-normal bg-white">Professor Minjuan Wang and Professor Hui Li (on behalf of the organizing committee)</span>
+              <td class="p-0" rowspan="2">17:00-18:00</td>
+              <td class="p-4 text-green-800 bg-yellow-200/50 text-xl">Closing Remarks and Awards Ceremony
+              </td>
+              <td class="p-4">Professor Minjuan Wang and Professor Hui Li (on behalf of the organizing committee)
               </td>
             </tr>
 
             <tr class="text-lg border-b border-gray-300">
-              <td class="p-0">19:00-21:30</td>
+              <td class="p-0" rowspan="2">19:00-21:30</td>
               <td class="p-4 text-green-800 bg-yellow-200/50 text-xl">Dinner Gala - Invited and Ticketed Guests Only
-                <br>
-                <span class="text-lg text-black font-normal bg-white">For transporation arrangement, please check Shuttle
-                  schedule and boarding location online.</span>
               </td>
-              <td class="p-4">Happiness Cuisine Restaurant, Science Park</td>
-              <td class="p-4"></td>
+               <td class="p-4">For transporation arrangement, please check Shuttle schedule and boarding location online.
+              </td>
+              <td class="p-4" rowspan="2">Happiness Cuisine Restaurant, Science Park</td>
             </tr>
 
 
