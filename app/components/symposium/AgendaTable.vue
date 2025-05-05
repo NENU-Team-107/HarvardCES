@@ -240,7 +240,7 @@ const daySwitchOptions = ref([
 
             <!-- 第三行（带子表格的行） -->
             <tr class="text-lg border-b border-green-700/80">
-              <td class="p-4 align-center">14:00 - 17:00</td>
+              <td class="p-4 align-center">14:30-17:00</td>
               <td class="p-0">
                 <div class="text-green-800 font-bold bg-yellow-200/50 text-xl py-2">Workshop Ⅰ Innovation Education
                   (for K-12 teachers and students)</div>
@@ -256,7 +256,7 @@ const daySwitchOptions = ref([
 
             <!-- 第四行（带子表格的行） -->
             <tr class="text-lg border-b border-green-700/80">
-              <td class="p-4 align-center">13:10 - 15:00</td>
+              <td class="p-4 align-center">13:10-14:30</td>
               <td class="p-0">
                 <div class="text-green-800 font-bold text-xl bg-yellow-200/50 py-2">Workshop Ⅱ Writing and Publishing
                   in High-impact Journals</div>
@@ -274,7 +274,7 @@ const daySwitchOptions = ref([
             </tr>
 
             <tr class="text-lg border-b border-green-700/80">
-              <td class="p-4 align-center">16:00-17:30</td>
+              <td class="p-4 align-center">17:00-18:30</td>
               <td class="p-0">
                 <div class="text-green-800 font-bold text-xl bg-yellow-200/50 py-2">Workshop Ⅲ Leveraging Collaborative
                   Generative AI for Design and Prototyping in Innovation and Entrepreneurship Education</div>
