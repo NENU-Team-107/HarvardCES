@@ -405,7 +405,7 @@ const daySwitchOptions = ref([
               <td class="p-4 align-top">14:00-14:40</td>
               <td class="p-4 text-green-800 bg-yellow-200/50 text-xl">Keynote Speech<br>
                 <ul class="text-black">
-                  <li>Dr. Yin Yang, Vice CEO of iFlytek, Inc.</li>
+                  <li>Dr. Shijin Wang, Vice CEO of iFlytek, Inc.</li>
                   <li class="font-normal"><i>Latest Developments and Typical Applications of the Xinghuo Large Model in
                       Education</i></li>
                 </ul>
