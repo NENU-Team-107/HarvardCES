@@ -657,10 +657,10 @@ export const routerArray: Array<RouterItem> = [
     {
         name: "About",
         children: [
-            // {
-            //     name: "Symposium Introduction",
-            //     path: "/symposium/introduction",
-            // },
+            {
+                name: "Symposium Introduction",
+                path: "/symposium/introduction",
+            },
             {
                 name: "Symposium Time.title",
                 path: "/symposium/time"
