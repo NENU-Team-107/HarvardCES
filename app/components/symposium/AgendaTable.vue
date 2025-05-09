@@ -311,13 +311,13 @@ const daySwitchOptions = ref([
             </tr>
           </thead>
           <tbody>
-           <tr class="text-lg border-b border-green-700/80">
+            <tr class="text-lg border-b border-green-700/80">
               <td class="px-2 py-1 whitespace-nowrap">08:45-09:00</td>
               <td class="p-0">Registration</td>
               <td class="p-0">D1-LP</td>
               <td class="p-0"></td>
             </tr>
-            
+
             <tr class="text-lg border-b border-gray-300">
               <td class="p-4 align-top">09:00-09:10</td>
               <td class="p-4 text-green-800 bg-yellow-200/50 text-xl">Opening Remarks and Welcome<br>
@@ -504,12 +504,12 @@ const daySwitchOptions = ref([
               <td class="p-0">09:15-09:45</td>
               <td class="p-4 text-green-800 bg-yellow-200/50 text-xl">Keynote Speech <br>
                 <div class="text-lg text-black bg-transparent">
-                <ul>
-                  <li>Professor Chris Dede, Harvard University and Senior Advisor of Global Institute for Emerging
-                    Technologies
-                    (GIET), EdUHK</li>
-                  <li class="font-normal"><i>GenAI in Education: The Promises and the Perils</i></li>
-                </ul>
+                  <ul>
+                    <li>Professor Chris Dede, Harvard University and Senior Advisor of Global Institute for Emerging
+                      Technologies
+                      (GIET), EdUHK</li>
+                    <li class="font-normal"><i>GenAI in Education: The Promises and the Perils</i></li>
+                  </ul>
                 </div>
               </td>
             </tr>
@@ -604,9 +604,8 @@ const daySwitchOptions = ref([
             </tr>
             <tr class="border-b border-red-200">
               <td class="p-2 border-r border-gray-300">
-                Dr. Jonathon Richter<br>
-                <span class="italic text-gray-700">Rooted in Multimodality: Cultivating the Immersive Learning
-                  Sciences</span>
+                Professor Qiguang Miao<br>
+                <span class="italic text-gray-700">AI Empowers High-Quality Development of Higher Education</span>
               </td>
               <td class="p-2 border-r border-gray-300">
                 Dr. Alberto Solís, Universidad Europea de Madrid<br>
@@ -624,9 +623,9 @@ const daySwitchOptions = ref([
               <td class="p-2 bg-yellow-200/50 font-bold text-green-800">Paper Presentation</td>
             </tr>
             <tr class="border-b border-red-200">
-              <td class="p-2 border-r border-gray-300">S4-A, S4-B, S4-C, S4-D, S4-E, S4-F, S4-G, S4-H</td>
+              <td class="p-2 border-r border-gray-300">S4-A, S4-B, S4-C, S4-D, S4-E, S4-F, S4-G</td>
               <td class="p-2 border-r border-gray-300">S5-A, S5-B, S5-C, S5-D, S5-E, S5-F, S5-G, S5-H</td>
-              <td class="p-2">S6-A, S6-B, S6-C, S6-D, S6-E, S6-F</td>
+              <td class="p-2">S6-A, S6-B, S6-C, S6-D, S6-E, S6-F, S6-G</td>
             </tr>
             <tr class="text-lg border-b bg-gray-500/30">
               <td class="p-0">15:00-15:30 </td>
@@ -695,19 +694,21 @@ const daySwitchOptions = ref([
             <tr class="text-lg border-b border-gray-300">
               <td class="p-0">17:00-18:00</td>
               <td>
-              <ul class="font-normal text-lg">
-                <li class="font-bold p-4 text-green-800 bg-yellow-200/50 text-xl">Closing Remarks and Awards Ceremony</li>
-                <li>Professor Minjuan Wang and Professor Hui Li (on behalf of the organizing committee)</li>
-              </ul>
+                <ul class="font-normal text-lg">
+                  <li class="font-bold p-4 text-green-800 bg-yellow-200/50 text-xl">Closing Remarks and Awards Ceremony
+                  </li>
+                  <li>Professor Minjuan Wang and Professor Hui Li (on behalf of the organizing committee)</li>
+                </ul>
               </td>
-              
+
             </tr>
 
             <tr class="text-lg border-b border-gray-300">
               <td class="p-0">19:00-21:30</td>
               <td>
                 <ul class="font-normal text-lg">
-                  <li class="p-4  font-bold  text-green-800 bg-yellow-200/50 text-xl">Dinner Gala - Invited and Ticketed Guests Only</li>
+                  <li class="p-4  font-bold  text-green-800 bg-yellow-200/50 text-xl">Dinner Gala - Invited and Ticketed
+                    Guests Only</li>
                   <li>For transporation arrangement, please check Shuttle schedule and boarding location online.</li>
                 </ul>
               </td>
