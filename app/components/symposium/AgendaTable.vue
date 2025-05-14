@@ -203,7 +203,7 @@ v-for="item in daySwitchOptions" :key="item.value"
   </div>
 
   <div class="text-2xl font-bold text-center mt-6">
-    Agenda - {{ daySwitchOptions[daySwitch - 1].label }}
+    Agenda - {{ daySwitchOptions[daySwitch - 1]?.label || 'No Agenda Available' }}
   </div>
 
   <div class="w-full h-full justify-center items-center text-center mx-auto px-4 md:px-8">
