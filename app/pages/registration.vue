@@ -153,6 +153,9 @@ watchEffect(() => {
                         <div>
                             <i>* {{ $t('Register.FeeDetails2') }}</i>
                         </div>
+                        <div class="text-red-500/80">
+                            <i>* {{ $t('Register.FeeDetails3') }}</i>
+                        </div>
                     </div>
                 </div>
 
@@ -190,6 +193,9 @@ watchEffect(() => {
                     <div class="my-5 font-bold text-sm px-5 text-gray-800/80">
                         <div>
                             <i>* {{ $t('Register.FeeDetails2') }}</i>
+                        </div>
+                        <div class="text-red-500/80">
+                            <i>* {{ $t('Register.FeeDetails3') }}</i>
                         </div>
                     </div>
                 </div>
