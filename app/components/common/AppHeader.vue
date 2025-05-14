@@ -52,7 +52,8 @@ const closeMenu = () => {
             </NuxtLink>
             <div
               class="absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <NuxtLink v-for="child in item.children" :key="child.path" :to="child.path"
+              <NuxtLink
+v-for="child in item.children" :key="child.path" :to="child.path"
                 class="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-base z-50">
                 <span class="underline">{{ $t(child.name) }}</span>
               </NuxtLink>
@@ -79,7 +80,8 @@ const closeMenu = () => {
           </svg>
         </button>
       </div>
-      <div v-show="isMenuOpen"
+      <div
+v-show="isMenuOpen"
         class="absolute top-0 right-0 mt-16 w-48 bg-white  rounded shadow-lg md:hidden">
         <div v-for="(item, index) in routerArray" :key="item.path" class="relative group text-lg font-semibold">
           <div v-if="item.children" class="bg-white">
@@ -87,14 +89,16 @@ const closeMenu = () => {
               {{ $t(item.name) }} 
             </span>
             <div v-if="submenu[index].show">
-              <NuxtLink v-for="child in item.children" :key="child.path" :to="child.path"
+              <NuxtLink
+v-for="child in item.children" :key="child.path" :to="child.path"
                 class="block px-4 py-2 text-gray-700 hover:bg-gray-100" @click="closeMenu">
                 <span class="text-sm">{{ $t(child.name) }}</span>
               </NuxtLink>
             </div>
           </div>
           <div v-else>
-            <NuxtLink :to="item.path" class="underline cursor-pointer block w-full px-4 py-2 text-gray-700"
+            <NuxtLink
+:to="item.path" class="underline cursor-pointer block w-full px-4 py-2 text-gray-700"
               @click="closeMenu">
               <span>{{ $t(item.name) }}</span>
             </NuxtLink>

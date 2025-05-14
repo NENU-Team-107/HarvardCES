@@ -1,7 +1,5 @@
 <script setup lang="ts">
 import AgendaTable from '~/components/symposium/AgendaTable.vue'
-import { useI18n } from 'vue-i18n';
-const { t } = useI18n();
 
 // const AgendaImage = computed(() => {
 //   return t("Symposium Agenda")

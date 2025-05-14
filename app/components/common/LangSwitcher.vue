@@ -39,7 +39,8 @@ const languageItems = computed<DropdownMenuItem[][]>(() => {
 </script>
 
 <template>
-  <UDropdownMenu :items="languageItems" :ui="{
+  <UDropdownMenu
+:items="languageItems" :ui="{
     content: 'w-48',
     item: {
       active: 'text-primary-500 dark:text-primary-400',

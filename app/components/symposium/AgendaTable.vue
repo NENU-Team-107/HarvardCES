@@ -194,8 +194,10 @@ const daySwitchOptions = ref([
 
 
   <div class="w-4/5 grid grid-cols-3 gap-4 items-center justify-center text-center mx-auto">
-    <div v-for="item in daySwitchOptions" :key="item.value" @click="daySwitch = item.value"
-      class="w-full h-full text-lg underline bg-white/50 shadow-2xl self-center hover:text-blue-400 hover:cursor-pointer">
+    <div
+v-for="item in daySwitchOptions" :key="item.value"
+      class="w-full h-full text-lg underline bg-white/50 shadow-2xl self-center hover:text-blue-400 hover:cursor-pointer"
+      @click="daySwitch = item.value">
       {{ item.short }}
     </div>
   </div>
@@ -221,7 +223,7 @@ const daySwitchOptions = ref([
               <td class="p-4">12:30-13:00</td>
               <td class="p-4">Registration</td>
               <td class="p-4">D1-LP</td>
-              <td class="p-4"></td>
+              <td class="p-4" />
             </tr>
 
             <!-- 第二行（带子表格的行） -->
@@ -293,7 +295,7 @@ const daySwitchOptions = ref([
               <td class="p-4">18:00-19:00 </td>
               <td class="p-4">Welcome Reception</td>
               <td class="p-4">Corridor</td>
-              <td class="p-4"></td>
+              <td class="p-4" />
             </tr>
 
           </tbody>
@@ -315,7 +317,7 @@ const daySwitchOptions = ref([
               <td class="px-2 py-1 whitespace-nowrap">08:45-09:00</td>
               <td class="p-0">Registration</td>
               <td class="p-0">D1-LP</td>
-              <td class="p-0"></td>
+              <td class="p-0" />
             </tr>
 
             <tr class="text-lg border-b border-gray-300">
@@ -354,7 +356,7 @@ const daySwitchOptions = ref([
               <td class="p-4">10:30-10:40 </td>
               <td class="p-4">Coffee Break</td>
               <td class="p-4">Corridor</td>
-              <td class="p-4"></td>
+              <td class="p-4" />
             </tr>
 
             <tr class="text-lg border-b border-green-700/80">
@@ -369,8 +371,8 @@ const daySwitchOptions = ref([
                   </li>
                 </ul>
               </td>
-              <td class="p-4 align-center"></td>
-              <td class="p-4 align-center"></td>
+              <td class="p-4 align-center" />
+              <td class="p-4 align-center" />
             </tr>
 
             <tr class="text-lg border-b border-green-700/80">
@@ -382,22 +384,22 @@ const daySwitchOptions = ref([
                   </li>
                 </ul>
               </td>
-              <td class="p-4 align-center"></td>
-              <td class="p-4 align-center"></td>
+              <td class="p-4 align-center" />
+              <td class="p-4 align-center" />
             </tr>
 
             <tr class="text-lg border-b bg-gray-500/30">
               <td class="p-4">11:40-12:00 </td>
               <td class="p-4">Coffee Break</td>
               <td class="p-4">Corridor</td>
-              <td class="p-4"></td>
+              <td class="p-4" />
             </tr>
 
             <tr class="text-lg border-b bg-gray-500/30">
               <td class="p-4">12:00-14:00 </td>
               <td class="p-4">Lunch - Ticketed Guests Only</td>
-              <td class="p-4"></td>
-              <td class="p-4"></td>
+              <td class="p-4" />
+              <td class="p-4" />
             </tr>
 
 
@@ -466,14 +468,14 @@ const daySwitchOptions = ref([
                   https://harvardces.eduhk.hk/symposium/guide</span>
               </td>
               <td class="p-4 align-center">Science Park</td>
-              <td class="p-4 align-center"></td>
+              <td class="p-4 align-center" />
             </tr>
 
           </tbody>
         </table>
       </div>
 
-      <div v-else="daySwitch === 3">
+      <div v-else-if="daySwitch === 3">
         <table class="w-full mx-auto border-collapse font-bold">
           <thead>
             <tr class="text-xl text-green-800/70 border-b-2 border-gray-300">
@@ -488,7 +490,7 @@ const daySwitchOptions = ref([
               <td class="px-2 py-1 whitespace-nowrap">08:00 - 09:00</td>
               <td class="p-0">Registration</td>
               <td class="p-0">D1-LP</td>
-              <td class="p-0"></td>
+              <td class="p-0" />
             </tr>
 
             <tr class="text-lg border-b border-gray-300">
@@ -518,7 +520,7 @@ const daySwitchOptions = ref([
               <td class="p-0">09:45-10:00 </td>
               <td class="p-4">Coffee Break</td>
               <td class="p-4">Corridor</td>
-              <td class="p-4"></td>
+              <td class="p-4" />
             </tr>
 
             <tr class="text-lg border-b border-gray-300">
@@ -577,7 +579,7 @@ const daySwitchOptions = ref([
               <td class="p-0">12:00-13:00</td>
               <td class="p-4">Lunch Break</td>
               <td class="p-4">Corridor</td>
-              <td class="p-4"></td>
+              <td class="p-4" />
             </tr>
 
             <tr class="border-b border-red-200">
@@ -612,7 +614,7 @@ const daySwitchOptions = ref([
                 <span class="italic text-gray-700">A Systems Approach to Leveraging Artificial Intelligence for a Highly
                   Personalized and Effective Higher Education</span>
               </td>
-              <td class="p-2"></td>
+              <td class="p-2" />
             </tr>
 
 
@@ -631,7 +633,7 @@ const daySwitchOptions = ref([
               <td class="p-0">15:00-15:30 </td>
               <td class="p-4">Coffee Break</td>
               <td class="p-4">Corridor</td>
-              <td class="p-4"></td>
+              <td class="p-4" />
             </tr>
 
             <tr class="border-b border-red-200">
