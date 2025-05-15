@@ -135,8 +135,11 @@ watchEffect(() => {
             <div>
               <i>* <span v-html="$t('Register.FeeDetails2')" /></i>
             </div>
-            <div class="text-red-500/80">
+            <div class="text-red-500/80 text-base">
               <i>* <span v-html="$t('Register.FeeDetails3')" /></i>
+            </div>
+            <div class="text-red-500/80 text-base">
+              <i>* <span v-html="$t('Register.FeeDetails4')" /></i>
             </div>
           </div>
         </div>
@@ -174,8 +177,11 @@ watchEffect(() => {
             <div>
               <i>* <span v-html="$t('Register.FeeDetails2')" /></i>
             </div>
-            <div class="text-red-500/80">
+            <div class="text-red-500/80 text-base">
               <i>* <span v-html="$t('Register.FeeDetails3')" /></i>
+            </div>
+            <div class="text-red-500/80 text-base">
+              <i>* <span v-html="$t('Register.FeeDetails4')" /></i>
             </div>
           </div>
         </div>
