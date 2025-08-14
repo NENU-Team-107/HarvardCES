@@ -62,6 +62,7 @@ export interface SwiperItem {
 }
 
 export interface RouterItem {
+    year: number;
     name: string;
     path?: string;
     children?: RouterItem[];

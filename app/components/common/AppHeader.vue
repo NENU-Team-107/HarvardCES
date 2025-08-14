@@ -1,13 +1,30 @@
 <script lang="ts" setup>
 import { ref } from "vue";
 import LangSwitcher from "./LangSwitcher.vue";
-import { routerArray } from "~/lib/data";
+import type { RouterItem } from "~/lib/model";
 
-const routers = ref(routerArray);
+const routerArray = async () => {
+    const resp = await $fetch('/api/route/getByYear', {
+        method: 'GET',
+        query: {
+          year: 2025
+        }
+    })
+    const { status, data } = resp
+    if (status === "Success" && data !== null) {
+        routers.value = data;
+    }
+}
+
+onBeforeMount(() => {
+  routerArray()
+});
+
+const routers = ref<RouterItem[]>([]);
 
 const isMenuOpen = ref<boolean>(false);
 
-const submenu = ref(routers.value.map((_item) => {
+const submenu = ref(routers.value.map((_item: RouterItem) => {
   return {
     show: false
   };
@@ -83,7 +100,7 @@ v-for="child in item.children" :key="child.path" :to="child.path"
       <div
 v-show="isMenuOpen"
         class="absolute top-0 right-0 mt-16 w-48 bg-white  rounded shadow-lg md:hidden">
-        <div v-for="(item, index) in routerArray" :key="item.path" class="relative group text-lg font-semibold">
+        <div v-for="(item, index) in routers" :key="item.path" class="relative group text-lg font-semibold">
           <div v-if="item.children" class="bg-white">
             <span class="underline cursor-pointer block w-full px-4 py-2 text-gray-700" @click="handleSubMenu(index)">
               {{ $t(item.name) }} 

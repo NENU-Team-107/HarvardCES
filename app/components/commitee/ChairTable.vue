@@ -52,7 +52,7 @@ const columns = computed(() => {
       <UTable
 :data="lines" :columns="columns"
         :loading-state="{ icon: 'i-heroicons-arrow-path-20-solid', label: 'Loading...' }"
-        :ui="{ base: 'min-w-full table-fixed ', td: { base: 'break-words text-left min-w-full table-fixed', size: 'md:text-base text-sm', color: 'text-black drak:text:white' }, tr: { base: 'h-fit' } }">
+        :ui="{ base: 'min-w-full table-fixed ', td: 'break-words text-left min-w-full table-fixed md:text-base text-sm text-black drak:text:white', tr: 'h-fit' }">
         <template #name-cell="{ row }">
           <div
 class="md:text-base text-sm text-black drak:text:white break-words text-left min-w-full table-fixed"

@@ -109,6 +109,7 @@ watchEffect(() => {
           </h1>
 
           <div class="flex justify-center items-center w-full self-center">
+          <!-- TODO: Use 'primevue/datatable' to replace NUXTUI -->
             <UTable :data="track" :columns="trackColumns">
               <template #banquet-cell="{ row }">
                 <div v-if="(row.original).banquet === 1">
@@ -154,6 +155,7 @@ watchEffect(() => {
           </h1>
 
           <div class="flex justify-center items-center w-full self-center">
+            <!-- TODO: Use 'primevue/datatable' to replace NUXTUI -->
             <UTable :data="ws" :columns="workshopColumns">
               <!-- <template #type-cell="{ row }">
                 <div><span class="text-center">{{ row.original.type }}</span></div>

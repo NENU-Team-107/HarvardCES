@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-
 import SubSwiper from '~/components/homeIndex/SubSwiper.vue';
 
 definePageMeta({
@@ -104,8 +103,9 @@ watchEffect(() => {
           <span class="text-black"><strong><i>* {{ $t("session more") }}</i></strong></span>
         </div>
         <div class="flex justify-center items-center w-full self-center">
+          <!-- TODO: Use 'primevue/datatable' to replace NUXTUI -->
           <UTable
-            :ui="{ td: { size: 'md:text-base text-sm', color: 'text-black' }, th: { size: 'md:text-base text-base', } }"
+            :ui="{ td: 'md:text-base text-sm text-black', th: 'md:text-base text-base' }"
             :rows="contact" :columns="columns">
             <template #topic-data="{ row }">
               <NuxtLink v-if="row.link" :to="row.link" class="hover:text-green-500">
@@ -140,8 +140,9 @@ watchEffect(() => {
           <strong><i>{{ $t("Due") }}</i></strong>
         </h2>
         <div class="flex justify-center items-center w-full self-center">
+          <!-- TODO: Use 'primevue/datatable' to replace NUXTUI -->
           <UTable
-            :ui="{ td: { size: 'text-sm', color: 'text-black drak:text:white hover:text-green-600' }, th: { size: 'text-base', } }"
+            :ui="{ td: 'text-sm text-black drak:text:white hover:text-green-600', th: 'text-base' }"
             :rows="contact" :columns="columns">
             <template #topic-data="{ row }">
               <NuxtLink v-if="row.link" :to="row.link" class="hover:text-green-500">

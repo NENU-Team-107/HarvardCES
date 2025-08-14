@@ -130,10 +130,11 @@ const rows = [
           <div class="h-0.5 w-24 bg-black" />
         </div>
       </div>
+      <!-- TODO: Use 'primevue/datatable' to replace NUXTUI -->
       <UTable
 :rows="rows" :columns="columns"
         :loading-state="{ icon: 'i-heroicons-arrow-path-20-solid', label: 'Loading...' }"
-        :ui="{ base: 'min-w-full table-fixed', td: { base: 'break-words text-left min-w-full table-fixed', size: ' text-base', color: 'text-black drak:text:white' }, tr: { base: 'h-fit' } }">
+        :ui="{ base: 'min-w-full table-fixed', td: 'break-words text-left min-w-full table-fixed  text-base text-black drak:text:white' , tr: 'h-fit' }">
         <template #index-data="{ row }">
           <div class="font-bold" v-html="$t(row.index).replace(/\n/g, '<br>')" />
         </template>

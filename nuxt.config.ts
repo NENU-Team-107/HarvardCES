@@ -16,8 +16,9 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     '@vesp/nuxt-fontawesome',
     '@unocss/nuxt',
+    '@primevue/nuxt-module',
   ],
-
+  
   fonts: {
     providers: {
       google: false
