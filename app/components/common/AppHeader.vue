@@ -3,11 +3,13 @@ import { ref } from "vue";
 import LangSwitcher from "./LangSwitcher.vue";
 import type { RouterItem } from "~/lib/model";
 
-const routerArray = async () => {
+const route = useRoute();
+
+const routerArray = async (year: number) => {
     const resp = await $fetch('/api/route/getByYear', {
         method: 'GET',
         query: {
-          year: 2025
+          year: year
         }
     })
     const { status, data } = resp
@@ -17,7 +19,9 @@ const routerArray = async () => {
 }
 
 onBeforeMount(() => {
-  routerArray()
+  const currentYear = route.path.split('/')[1] || '2026';
+  const year = parseInt(currentYear)
+  routerArray(year);
 });
 
 const routers = ref<RouterItem[]>([]);
@@ -97,7 +101,8 @@ v-for="child in item.children" :key="child.path" :to="child.path"
           </svg>
         </button>
       </div>
-      <div
+      <!-- TODO: FIX mobile nav, the `submenu` send error -->
+      <!-- <div
 v-show="isMenuOpen"
         class="absolute top-0 right-0 mt-16 w-48 bg-white  rounded shadow-lg md:hidden">
         <div v-for="(item, index) in routers" :key="item.path" class="relative group text-lg font-semibold">
@@ -123,7 +128,7 @@ v-for="child in item.children" :key="child.path" :to="child.path"
         </div>
         <LangSwitcher />
 
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
