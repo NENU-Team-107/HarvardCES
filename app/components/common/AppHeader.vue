@@ -65,16 +65,13 @@ const closeMenu = () => {
       <div class="h-full justify-center items-center flex-row hidden md:flex">
         <div v-for="item in routers" :key="item.path" class="relative group mr-6 text-lg font-semibold">
           <div v-if="item.children">
-            <NuxtLink v-if="item.children.length > 1" :to="item.children[0].path" class="text-blue-500 pl-3">
-              <span class="underline">{{ $t(item.name) }}</span>
-            </NuxtLink>
-            <NuxtLink v-else :to="item.path" class="text-blue-500 pl-3">
+            <NuxtLink :to="item.path" class="text-blue-500 pl-3">
               <span class="underline">{{ $t(item.name) }}</span>
             </NuxtLink>
             <div
               class="absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <NuxtLink
-v-for="child in item.children" :key="child.path" :to="child.path"
+                v-for="child in item.children" :key="child.path" :to="child.path"
                 class="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-base z-50">
                 <span class="underline">{{ $t(child.name) }}</span>
               </NuxtLink>

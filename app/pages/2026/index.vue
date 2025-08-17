@@ -1,6 +1,6 @@
-<script lang="ts" setup>
+<script setup lang="ts">
 import Title from '~/components/common/Title.vue'
-import CoverImage from '~/components/homeIndex/CoverImage.vue';
+import CoverImage2026 from '~/components/homeIndex/CoverImage2026.vue';
 import PopupWindow from '~/components/homeIndex/PopupWindow.vue';
 import type { Speaker } from '~/lib/model';
 
@@ -46,7 +46,7 @@ const logoList = ref([
 ])
 
 const title = ref({
-  intro: "Symposium.Title",
+  intro: "Symposium2026.Title",
   speaker: "Keynote Speakers Index",
   logo: "Organisers and Partners",
   organisers: "Organizing Committee"
@@ -125,21 +125,24 @@ onMounted(() => {
   <div class="w-full h-fit flex flex-col justify-center items-center relative pt-24 ">
 
     <div class="w-full flex mx-auto justify-center items-center justify-self-center section">
-      <CoverImage />
+      <CoverImage2026 />
     </div>
 
     <div class="md:my-10 my-12 flex flex-col md:w-10/12 w-full section">
       <div class="bg-white/80 md:p-10 p-1">
         <Title :title-map="title.intro" />
+        <!-- 添加论坛名称、主题和日期 -->
+        <div class="md:text-2xl text-xl font-bold text-center mb-4">
+          {{ $t('Symposium2026.Name') }}
+        </div>
+        <div class="md:text-xl text-lg font-semibold text-center mb-2">
+          {{ $t('Symposium2026.Theme') }}
+        </div>
+        <div class="md:text-lg text-base text-center mb-6 text-gray-600">
+          {{ $t('Symposium2026.Date') }}
+        </div>
         <div class="md:text-lg text-sm md:pl-10 px-5 leading-7">
-          <div class="text-justify indent-8" v-html="$t('Symposium.Intro')" />
-          <!-- <div class="flex mt-4">
-            <ULink to="/symposium/introduction"
-              class="italic font-semibold transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
-              {{ $t("Symposium.Click") }}
-              <font-awesome icon="fa-solid fa-arrow-right" />
-            </ULink>
-          </div> -->
+          <div class="text-justify indent-8" v-html="$t('Symposium2026.Intro')" />
         </div>
       </div>
 

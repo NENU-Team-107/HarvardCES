@@ -2,21 +2,22 @@
   "Home": "主页",
   "Speakers": "嘉宾",
   "All Speakers": "演讲者",
-  "Registration": "参会注册",
+  "Registration": "注册及参会指引",
+  "Registration Sub": "注册",
   "About": "关于论坛",
-  "Submit": "论文征稿",
+  "Submit": "演讲投稿",
   "Harvard University": "哈佛大学",
   "Contact": "关于我们",
   "Back": "返回",
   "Details": "详情",
   "special font": "font-special-sc",
-  "Symposium Handbook": "工作室与论坛概览",
-  "Workshop and Sub-symposium Sessions": "工作室与分论坛",
+  "Symposium Handbook": "工作坊与论坛概览",
+  "Workshop and Sub-symposium Sessions": "工作坊与分论坛",
   "Session": "平行分会",
   "Activities": "会议活动",
   "Keynote & Invited Talk": "主题演讲",
-  "Workshop": "工作室",
-  "Workshop Session": "工作室 (5 月 8 日)",
+  "Workshop": "工作坊",
+  "Workshop Session": "工作坊 (5 月 8 日)",
   "Panel Discussion": "分会场讨论",
   "symposium": "平行分会",
   "Round Table": "圆桌讨论",
@@ -38,6 +39,31 @@
       "Mail": "GIETfuture&#64;eduhk.hk"
     }
   },
+  "Symposium2026": {
+    "Topic": "睿智相遇的知识盛宴！",
+    "Name": "第二届哈佛－香港教大－斯坦福联合论坛",
+    "Title": "论坛简介",
+    "Click": "探索更多",
+    "Title Long": "第二届哈佛－香港教大－斯坦福联合论坛\n\n新兴科技与未来人才",
+    "Date": "5月14-16， 2026",
+    "Theme": "「新兴科技与未来人才」",
+    "Intro": "由哈佛大学、斯坦福大学与香港教育大学（教大）联合主办的首届\"新兴科技与未来人才\"联合论坛，已于2025年5月8日至10日在教大的大埔校园圆满举行。为期三天的论坛汇聚来自全球的学者与业界领袖，通过主题演讲、平行论坛、专题讨论等多元形式，深入探讨人工智能、扩展现实、机器学习等前沿科技在教育、培训与人才培养中的创新应用。正如香港教育大学校长和讲席教授李子建所言：\"这不仅是一场线上与线下结合的论坛，也是一场睿智相逢的知识盛宴。\"<br><br>承接首届的成功与热烈反响，我们诚挚邀请您于2026年5月再次相聚美丽的香港，见证第二届论坛的盛况。本届论坛将进一步探讨新兴科技如何重塑未来教育与人才培养的格局。论坛将汇聚来自教育、科技、媒体、法律和商业等领域的顶尖学者与实践者，共同探索人工智能与人文学科、艺术、创业教育、创意媒体制作以及人工智能法律等议题的交叉融合，激发跨界创新与合作。<br><br>论坛将设置多元交流平台，包括会前工作坊、专题座谈、海报展示，以及面向研究人员、开发者与设计师的成果展示。优秀论文将有机会获推荐并优先考虑发表于SCI、SSCI或CSSCI的高影响力学术期刊；杰出设计作品亦有望与香港教育大学多个科技与创新中心展开合作，推动持续创新与成果转化。<br><br>我们诚挚邀请来自世界各地的学者、学生与业界领袖，齐聚亚洲国际都会——香港，共同开启一场跨界创新的未来之旅！",
+    "Details": "承接首届的成功与热烈反响，我们诚挚邀请您于2026年5月再次相聚美丽的香港，见证第二届论坛的盛况。本届论坛将进一步探讨新兴科技如何重塑未来教育与人才培养的格局。论坛将汇聚来自教育、科技、媒体、法律和商业等领域的顶尖学者与实践者，共同探索人工智能与人文学科、艺术、创业教育、创意媒体制作以及人工智能法律等议题的交叉融合，激发跨界创新与合作。\n\n<div class=\"md:text-lg text-sm  indent-8\">论坛将设置多元交流平台，包括会前工作坊、专题座谈、海报展示，以及面向研究人员、开发者与设计师的成果展示。优秀论文将有机会获推荐并优先考虑发表于SCI、SSCI或CSSCI的高影响力学术期刊；杰出设计作品亦有望与香港教育大学多个科技与创新中心展开合作，推动持续创新与成果转化。</div>\n\n<div class=\"md:text-lg text-sm  indent-8\">我们诚挚邀请来自世界各地的学者、学生与业界领袖，齐聚亚洲国际都会——香港，共同开启一场跨界创新的未来之旅！</div>"
+  },
+  "Host2026": {
+    "Name": "领衔主办",
+    "Language": "语言",
+    "Date": "日期",
+    "Location": "地点",
+    "Mail": "邮箱",
+    "Details": {
+      "Name": "香港教育大学",
+      "Language": "普通话和英语",
+      "Date": "2026年5月14日-16日",
+      "Location": "香港教育大学大埔校园",
+      "Mail": "GIETfuture&#64;eduhk.hk"
+    }
+  },
   "Cover Image": "/img/poster/cover_zh_Hans.jpg",
   "Showcase-1": "/img/poster/Showcase-zh-Hans-1.png",
   "Showcase-2": "/img/poster/Showcase-zh-Hans-2.png",
@@ -51,7 +77,7 @@
     "Content": "注册请扫描"
   },
   "Invited Speakers": "特邀嘉宾",
-  "Invited Speakers Title": "特邀嘉宾(工作室和论坛)",
+  "Invited Speakers Title": "特邀嘉宾(工作坊和论坛)",
   "Guest of Honor": "荣誉嘉宾",
   "Keynote Speakers": "主题演讲嘉宾",
   "Keynote Speakers Index": "演讲嘉宾主要来自",
@@ -105,6 +131,11 @@
   "Symposium Time": {
     "title": "论坛议程",
     "tip": "Harvard-EdUHK-Stanford Joint Symposium: Emerging Technologies and Future Talents Agenda"
+  },
+  "Symposium Tabs": {
+    "overview": "论坛概述",
+    "schedule": "论坛日程",
+    "handbook": "论坛手册"
   },
   
   "Symposium Agenda": {
@@ -535,6 +566,14 @@
   "Track": "Track",
   "Sub-symposium Sessions Submit": "2025年5月10日平行分会征稿方式总结",
   "New MA Program": "新硕士项目",
+  "About EdUHK": "关于香港教育大学",
+  "About GIET": "关于全球新兴技术研究所",
+  "MA Programme": "硕士项目",
+  "2nd Symposium (2026)": "第二届论坛(2026)",
+  "1st Symposium (2025)": "第一届论坛(2025)",
+  "Press Release, Photo and Video": "论坛新闻稿, 照片及视频",
+  "Format and Submission": "格式及提交",
+  "Important Dates": "重要日期",
   "About Us": {
     "EduHK": {
       "intro title": "关于教大",
@@ -923,11 +962,11 @@
     "earlyReg": " 早鸟价于4月10日截止，立即注册享优惠！正式注册通道将于4月15日关闭。",
     "title": "注册与费用",
     "trackTitle": "论坛注册费（5月9日至10日）",
-    "workshopTitle": "工作室注册费（5月8日下午1点至6点）",
-    "wsName": "工作室主题",
+    "workshopTitle": "工作坊注册费（5月8日下午1点至6点）",
+    "wsName": "工作坊主题",
     "wsHost": "主持机构",
     "wsLength": "每个工作室预计1.2到2个小时",
-    "wsFee": "参加一个工作室为40美元，任意两个为60美元，三个为80美元。",
+    "wsFee": "参加一个工作坊为40美元，任意两个为60美元，三个为80美元。",
     "type": "人员类别",
     "banquet": "是否参加晚宴",
     "Banquet": "晚宴（2025年5月10日）用券",
@@ -946,7 +985,7 @@
     "banquetDate": "2025年5月10日",
     "click": "参会注册",
     "Harvard": "斯坦福与哈佛大学",
-    "HarvardHost": "哈佛与斯坦福青少年创新教育工作室",
+    "HarvardHost": "哈佛与斯坦福青少年创新教育工作坊",
     "journals": "高影响力期刊的写作与发表",
     "journalsHost": "顶尖期刊主编（IEEE-TLT, BJET, Peking U Review, Childhood Education）",
     "EduAI": "AI 时代的创造思维与创业教育",
@@ -956,8 +995,8 @@
     "description": "内&ensp;&ensp;&ensp;&ensp;容",
     "takeaways": "关键点",
     "comment": "定于5月8日下午1:00至5:30，于校园内连续举行三场工作室",
-    "reg1": "工作室开始接受<a href='/registration' style='text-decoration: underline;'>报名</a>：",
-    "reg-eduhk": "<strong>香港教育大学学生与香港及其他地区的K-12教师：</strong>有机会获得<strong>免费</strong>参加所有三场工作室。 <br> （请把您的姓名，学校，香港教育大学学生学号/教师工号发送到<strong> GIETfuture&#64;eduhk.hk</strong> 名额有限，先到先得。）",
+    "reg1": "工作坊开始接受<a href='/registration' style='text-decoration: underline;'>报名</a>：",
+    "reg-eduhk": "<strong>香港教育大学学生与香港及其他地区的K-12教师：</strong>有机会获得<strong>免费</strong>参加所有三场工作坊。 <br> （请把您的姓名，学校，香港教育大学学生学号/教师工号发送到<strong> GIETfuture&#64;eduhk.hk</strong> 名额有限，先到先得。）",
     "reg-nonlocal": "<strong>非本地参与者：</strong>提供折扣价。",
     "reg-link": "请访问<strong><a href='/registration' class='text-lg' style='text-decoration: underline;'>注册链接</a></strong>进行报名。",
     "Speakers": "演讲者",
@@ -966,21 +1005,21 @@
       "description": "哈佛-斯坦福创新教育研讨会是一项开创性举措，旨在增强K-12教师和学生的能力，使他们具备在不断发展的教育环境中茁壮成长所需的技能和思维方式。",
       "takeaways": "通过互动课程、实践活动和真实案例研究，教师将学习如何构建动态且富有吸引力的学习环境，激励学生成为积极的终身学习者。学生也将有机会参与创新项目，提升自身的能力，并展示他们应对现实世界挑战的解决方案。",
       "speaker": "<a href=\"/speakers/speaker/12 AnnyChan\">陈康琪</a>（哈佛大学教学研究员） <br> <a href=\"/speakers/speaker/11 RongbingShen\">沈容冰 </a>（哈佛大学校友） <br>  <a href='/speakers/speaker/27 Yue Jia'>Clara Yue Jia</a>（斯坦福大学）",
-      "slides": "欢迎您加入这一创新型的工作室，探索如何利用创新的力量提升您课堂的教学与学生的学习效果。（教师可带学生参加本次活动）"
+      "slides": "欢迎您加入这一创新型的工作坊，探索如何利用创新的力量提升您课堂的教学与学生的学习效果。（教师可带学生参加本次活动）"
     },
     "workshop2": {
       "title": "高影响力期刊的文章写作与发表",
-      "description": "本工作室目的是为研究人员提供来自高影响力期刊主编们的宝贵见解和实用策略。参与者将全面了解使论文脱颖而出的关键要素，包括撰写引人注目的摘要、有效构建文章结构以及有说服力地呈现数据。工作室还将分享同行评审过程的细微差别、常见误区以及回应审稿人意见的技巧。",
-      "takeaways": "通过互动环节和案例研究，参会者将有机会与主编们进行互动，获得有关顶级期刊在投稿中寻找内容的信息。无论您是处于职业生涯早期的研究人员还是经验丰富的学者，该工作室都将为您提供提高写作水平和增加发表成功机会所需的工具和信心。",
+      "description": "本工作坊目的是为研究人员提供来自高影响力期刊主编们的宝贵见解和实用策略。参与者将全面了解使论文脱颖而出的关键要素，包括撰写引人注目的摘要、有效构建文章结构以及有说服力地呈现数据。工作坊还将分享同行评审过程的细微差别、常见误区以及回应审稿人意见的技巧。",
+      "takeaways": "通过互动环节和案例研究，参会者将有机会与主编们进行互动，获得有关顶级期刊在投稿中寻找内容的信息。无论您是处于职业生涯早期的研究人员还是经验丰富的学者，该工作坊都将为您提供提高写作水平和增加发表成功机会所需的工具和信心。",
       "speaker": "<a href='/speakers/speaker/19 Ju SeongLee'>李主圣 </a> (Innovation in Language Learning and Teaching副主编) <br> <a href='/speakers/speaker/25 Mutlu Cukurova'>Mutlu Cukurova </a> (British Journal of Education Technology主编) <br> <a href='/speakers/speaker/5 MinjuanWANG'> 王敏娟 </a> (IEEE-Transactions on Learning Technologies主编) <br> <a href='/speakers/speaker/26 Weipeng Yang'>杨伟鹏博士</a> (the Journal of Research in Childhood Education联合主编)<br> <a href='https://www.eduhk.hk/zhs/experts/professor-li-hui-philip'>李辉教授</a>（AI, Brain and Child主编）",
       "slides": "诚邀您参加本研讨会，向专家学习，助力您的研究迈向新的高度！"
     },
     "workshop3": {
       "title": "AI 时代的创造思维与创业教育",
-      "description": "本工作室探讨了多模态大型语言模型 (Multimodal Large Language Models, MLLMs) 在创新和创业教育及实践中的变革潜力。参与者将通过动手实践和分层活动，深入应用多种协作性MLLM平台，进行头脑风暴，共同解决问题，提出产品导航的反馈，评估设计思维的各个步骤和原型，并探讨客户市场契合度及市场推广策略。",
+      "description": "本工作坊探讨了多模态大型语言模型 (Multimodal Large Language Models, MLLMs) 在创新和创业教育及实践中的变革潜力。参与者将通过动手实践和分层活动，深入应用多种协作性MLLM平台，进行头脑风暴，共同解决问题，提出产品导航的反馈，评估设计思维的各个步骤和原型，并探讨客户市场契合度及市场推广策略。",
       "takeaways": "我们将深入探讨生成式人工智能在多种案例研究中的应用，涵盖人工智能技术、绿色与可持续技术、生物技术、无人机和机器人、元宇宙以及增强现实/虚拟现实/扩展现实（AR/VR/XR）等领域，并根据参与者的具体兴趣进行讨论。",
-      "speaker": "<a href='/speakers/speaker/22 Fridolin Ting'>陈世道</a> (兼任本工作室的主持人) <br> <a href='/speakers/speaker/7 PaulKim'>Paul Kim </a> (兼任本工作室的主持人)",
-      "slides": "请查看本次工作室的<a href='/workshop/3'>详细信息。</a>"
+      "speaker": "<a href='/speakers/speaker/22 Fridolin Ting'>陈世道</a> (兼任本工作坊的主持人) <br> <a href='/speakers/speaker/7 PaulKim'>Paul Kim </a> (兼任本工作坊的主持人)",
+      "slides": "请查看本次工作坊的<a href='/workshop/3'>详细信息。</a>"
     }
   },
   "Chair of Parallel session": {
@@ -1096,7 +1135,7 @@
     }
   },
   "Workshop Chair": {
-    "Name": "工作室主席",
+    "Name": "工作坊主席",
     "Details": {
       "line1": {
         "name": "杨茵",
@@ -1105,7 +1144,7 @@
     }
   },
   "Workshop Co-Chair": {
-    "Name": "工作室联席主席",
+    "Name": "工作坊联席主席",
     "Details": {
       "line1": {
         "name": "杨少诗",

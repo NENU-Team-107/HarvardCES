@@ -31,39 +31,19 @@ export const routerArray: Array<RouterItem> = [
     },
     {
         year: 2026,
-        name: "About Symposium",
+        name: "About",
         children: [
             {
                 year: 2026,
                 name: "2nd Symposium (2026)",
-                children: [
-                    {
-                        year: 2026,
-                        name: "Program Overview",
-                        path: "/2026/symposium/program"
-                    },
-                    {
-                        year: 2026,
-                        name: "Handbook",
-                        path: "/2026/symposium/introduction"
-                    },
-                    {
-                        year: 2026,
-                        name: "Agenda",
-                        path: "/2026/symposium/time"
-                    }
-                ]
+                path: "/2026/symposium"
             },
             {
                 year: 2026,
                 name: "1st Symposium (2025)",
                 path: "/2025"
-            },
-            {
-                year: 2026,
-                name: "Press Release, Photo and Video",
-                path: "/2026/press"
             }
+            // 移除了 "Press Release, Photo and Video" 菜单项
         ]
     },
     {
@@ -89,7 +69,7 @@ export const routerArray: Array<RouterItem> = [
     },
     {
         year: 2026,
-        name: "Call For Presentations",
+        name: "Submit",
         children: [
             {
                 year: 2026,
@@ -103,7 +83,7 @@ export const routerArray: Array<RouterItem> = [
             },
             {
                 year: 2026,
-                name: "Parallel Sessions",
+                name: "Session",
                 path: "/2026/call/session"
             }
         ]
@@ -115,11 +95,11 @@ export const routerArray: Array<RouterItem> = [
     },
     {
         year: 2026,
-        name: "Logistics",
+        name: "Registration",
         children: [
             {
                 year: 2026,
-                name: "Registration",
+                name: "Registration Sub",  // 改为新的键名
                 path: '/2026/registration'
             },
             {
@@ -177,6 +157,11 @@ export const routerArray: Array<RouterItem> = [
                 year: 2025,
                 name: "Visitor Guide",
                 path: "/2025/symposium/guide"
+            },
+            {
+                year: 2025,
+                name: "Press Release, Photo and Video",
+                path: "/2025/press"
             }
         ]
     },

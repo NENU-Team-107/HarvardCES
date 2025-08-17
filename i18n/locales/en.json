@@ -1,8 +1,17 @@
 {
+  "About EdUHK": "About EdUHK",
+  "About GIET": "About GIET",
+  "MA Programme": "MA Programme",
+  "2nd Symposium (2026)": "2nd Symposium (2026)",
+  "1st Symposium (2025)": "1st Symposium (2025)",
+  "Press Release, Photo and Video": "Press Release, Photo and Video",
+  "Format and Submission": "Format and Submission",
+  "Important Dates": "Important Dates",
   "Home": "Home",
   "Speakers": "Speakers",
   "All Speakers": "All Speakers",
-  "Registration": "Registration",
+  "Registration": "Logistics",
+  "Registration Sub": "Registration",
   "Submit": "Call for Presentation",
   "About": "About Symposium",
   "Contact": "About Us",
@@ -17,6 +26,11 @@
   "special font": "font-special-en",
   "symposium": "Symposium",
   "Symposium Handbook": "Program Overview",
+  "Symposium Tabs": {
+    "overview": "Program Overview",
+    "schedule": "Agenda",
+    "handbook": "Handbook"
+  },
   "Round Table": "Round Table",
   "Onsite Demo and Exhibition": "Onsite Demo and Exhibition",
   "Session": "Parallel Sessions",
@@ -33,6 +47,34 @@
       "Date": "8-10 May, 2025",
       "Location": "The Education University of Hong Kong \n Tai Po Campus",
       "Mail": "GIETfuture&#64;eduhk.hk"
+    }
+  },
+  "Symposium2026": {
+    "Topic": "Emerging Technologies and Future Talents",
+    "Name": "The 2nd Harvard–EdUHK–Stanford Joint Symposium",
+    "Title": "Introduction",
+    "Click": "Explore",
+    "Title Long": "The 2nd Harvard–EdUHK–Stanford Joint Symposium\n\nEmerging Technologies and Future Talents",
+    "Date": "May 14-16, 2026",
+    "Theme": "Emerging Technologies and Future Talents",
+    "Intro": "Co-hosted by Harvard University, Stanford University, and The Education University of Hong Kong (EdUHK) representatives, the inaugural \"Emerging Technologies and Future Talents\" Joint Symposium was successfully held from May 8 to 10, 2025, at EdUHK's Tai Po campus. Over three days, leading scholars and industry experts from around the world engaged in keynote speeches, parallel sessions, and thematic discussions, exploring how cutting-edge technologies—such as artificial intelligence, extended reality, and machine learning—can be integrated into education, training, and talent development. As EdUHK's Chair Professor and President Lee Chi-Kin remarked, \"This is not only a hybrid symposium combining online and offline engagement, but also a feast of wisdom and knowledge.\"<br><br>Building on the success and strong momentum of the first event, we cordially invite you to reconvene in May 2026 in the vibrant city of Hong Kong for the second edition. The Symposium will further examine how emerging technologies are reshaping the future of education and talent cultivation. It will convene leading scholars and practitioners from the fields of education, technology, media, law, and business to explore the intersections of AI with the humanities, the arts, entrepreneurship education, creative media production, and the legal dimensions of AI—sparking cross-disciplinary innovation and collaboration.<br><br>The program will feature a diverse range of platforms, including pre-conference workshops, thematic panels, poster presentations, and showcases by researchers, developers, and designers. Outstanding papers presented at the Symposium may be recommended for publishing by high-impact journals indexed in SCI, SSCI, or CSSCI. Exceptional design works may be selected for collaboration with EdUHK's technology and innovation centers to foster ongoing innovation and knowledge transfer.",
+    "Details": "The 2nd Harvard–EdUHK–Stanford Joint Symposium on Emerging Technologies and Future Talents will be held from May 14-16, 2026, in Hong Kong. This three-day event builds upon the remarkable success of the inaugural symposium held in 2025, bringing together world-renowned scholars, industry leaders, and practitioners to explore the transformative impact of emerging technologies on education and talent development.\n\n<div class=\"md:text-lg text-sm indent-8\">The symposium will feature an interdisciplinary approach, examining the intersections of artificial intelligence with humanities, arts, entrepreneurship education, creative media production, and legal frameworks. Participants will engage in cutting-edge discussions about how AI, extended reality, machine learning, and other emerging technologies are reshaping educational paradigms and workforce development strategies.</div>\n<div class=\"md:text-lg text-sm indent-8\">The program includes pre-conference workshops, keynote presentations, thematic panel discussions, poster sessions, and innovative showcases by researchers, developers, and designers from leading institutions worldwide. The symposium provides a unique platform for cross-disciplinary collaboration and knowledge exchange among educators, technologists, policymakers, and industry professionals.</div>\n<div class=\"md:text-lg text-sm indent-8\">Outstanding research papers presented at the symposium will be considered for publication in high-impact journals indexed in SCI, SSCI, or CSSCI. Exceptional design works and innovative projects may be selected for ongoing collaboration with EdUHK's technology and innovation centers, fostering continued innovation and knowledge transfer initiatives.</div>"
+  },
+  "Host2026": {
+    "Name": "Co-hosted by",
+    "Details": {
+      "line1": {
+        "name": "Harvard University",
+        "inc": "Cambridge, Massachusetts, USA"
+      },
+      "line2": {
+        "name": "Stanford University",
+        "inc": "Stanford, California, USA"
+      },
+      "line3": {
+        "name": "The Education University of Hong Kong (EdUHK)",
+        "inc": "Hong Kong SAR, China"
+      }
     }
   },
   "Cover Image": "/img/busLine/cover_en.jpg",
