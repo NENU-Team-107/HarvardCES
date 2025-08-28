@@ -15,6 +15,8 @@ const routerArray = async (year: number) => {
     const { status, data } = resp
     if (status === "Success" && data !== null) {
         routers.value = data;
+        // 初始化三级菜单状态
+        initThirdLevelMenus();
     }
 }
 
@@ -34,6 +36,49 @@ const submenu = ref(routers.value.map((_item: RouterItem) => {
   };
 }))
 
+// 三级菜单状态管理
+const thirdLevelMenus = ref<{ [key: string]: boolean }>({});
+
+// 初始化三级菜单状态
+const initThirdLevelMenus = () => {
+  const menuStates: { [key: string]: boolean } = {};
+  routers.value.forEach((item, itemIndex) => {
+    if (item.children) {
+      item.children.forEach((child, childIndex) => {
+        if (child.children) {
+          const key = `${itemIndex}-${childIndex}`;
+          menuStates[key] = false;
+        }
+      });
+    }
+  });
+  thirdLevelMenus.value = menuStates;
+};
+
+// 切换三级菜单显示状态
+const toggleThirdLevelMenu = (itemIndex: number, childIndex: number, event: Event) => {
+  event.preventDefault();
+  event.stopPropagation();
+  
+  const key = `${itemIndex}-${childIndex}`;
+  
+  // 关闭其他所有三级菜单
+  Object.keys(thirdLevelMenus.value).forEach(k => {
+    if (k !== key) {
+      thirdLevelMenus.value[k] = false;
+    }
+  });
+  
+  // 切换当前三级菜单状态
+  thirdLevelMenus.value[key] = !thirdLevelMenus.value[key];
+};
+
+// 检查三级菜单是否显示
+const isThirdLevelMenuVisible = (itemIndex: number, childIndex: number): boolean => {
+  const key = `${itemIndex}-${childIndex}`;
+  return thirdLevelMenus.value[key] || false;
+};
+
 const handleSubMenu = (index: number) => {
   if (index >= 0 && index < submenu.value.length) {
     submenu.value[index].show = !submenu.value[index].show;
@@ -47,12 +92,27 @@ const toggleMenu = () => {
 const closeMenu = () => {
   isMenuOpen.value = false;
 };
+
+// 点击外部区域关闭所有三级菜单
+const closeAllThirdLevelMenus = () => {
+  Object.keys(thirdLevelMenus.value).forEach(key => {
+    thirdLevelMenus.value[key] = false;
+  });
+};
+
+// 监听全局点击事件
+onMounted(() => {
+  document.addEventListener('click', closeAllThirdLevelMenus);
+});
+
+onUnmounted(() => {
+  document.removeEventListener('click', closeAllThirdLevelMenus);
+});
 </script>
 
 <template>
   <div>
-    <div
-      class="w-full flex md:h-24 h-20 bg-nav-bg justify-between items-center md:px-16 px-5 z-50 fixed top-0 shadow-sm">
+    <div class="w-full flex md:h-24 h-20 bg-nav-bg justify-between items-center md:px-16 px-5 z-50 fixed top-0 shadow-sm">
       <div class="h-full flex justify-center items-center">
         <NuxtLink to="/" target="_top">
           <div class="flex">
@@ -63,18 +123,57 @@ const closeMenu = () => {
       </div>
       <!-- 客户端显示 -->
       <div class="h-full justify-center items-center flex-row hidden md:flex">
-        <div v-for="item in routers" :key="item.path" class="relative group mr-6 text-lg font-semibold">
+        <div v-for="(item, itemIndex) in routers" :key="item.path" class="relative group mr-6 text-lg font-semibold">
           <div v-if="item.children">
             <NuxtLink :to="item.path" class="text-blue-500 pl-3">
               <span class="underline">{{ $t(item.name) }}</span>
             </NuxtLink>
-            <div
-              class="absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <NuxtLink
-                v-for="child in item.children" :key="child.path" :to="child.path"
-                class="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-base z-50">
-                <span class="underline">{{ $t(child.name) }}</span>
-              </NuxtLink>
+            <div class="absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-[60]">
+              <div v-for="(child, childIndex) in item.children" :key="child.path" class="relative">
+                <!-- 有子菜单的二级菜单项 -->
+                <div v-if="child.children" class="relative">
+                  <div 
+                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-sm cursor-pointer relative flex items-center justify-between"
+                    @click="toggleThirdLevelMenu(itemIndex, childIndex, $event)"
+                  >
+                    <span class="underline text-sm">{{ $t(child.name) }}</span>
+                    <svg 
+                      :class="[
+                        'w-3 h-3 transform transition-transform duration-200 flex-shrink-0',
+                        isThirdLevelMenuVisible(itemIndex, childIndex) ? 'rotate-180' : 'rotate-90'
+                      ]" 
+                      fill="currentColor" 
+                      viewBox="0 0 20 20"
+                    >
+                      <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    </svg>
+                  </div>
+                  <!-- 三级菜单 - 点击控制显示 -->
+                  <div 
+                    v-show="isThirdLevelMenuVisible(itemIndex, childIndex)"
+                    class="absolute left-0 top-full w-48 bg-white border border-gray-200 rounded shadow-lg z-[70] mt-1 transition-all duration-200"
+                    @click.stop
+                  >
+                    <NuxtLink
+                      v-for="grandchild in child.children" 
+                      :key="grandchild.path" 
+                      :to="grandchild.path"
+                      class="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-sm transition-colors duration-150"
+                      @click="closeAllThirdLevelMenus"
+                    >
+                      <span class="underline">{{ $t(grandchild.name) }}</span>
+                    </NuxtLink>
+                  </div>
+                </div>
+                <!-- 没有子菜单的二级菜单项 -->
+                <NuxtLink
+                  v-else
+                  :to="child.path"
+                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-sm transition-colors duration-150"
+                >
+                  <span class="underline">{{ $t(child.name) }}</span>
+                </NuxtLink>
+              </div>
             </div>
           </div>
           <div v-else>
@@ -152,9 +251,5 @@ v-for="child in item.children" :key="child.path" :to="child.path"
 
 .underline:hover::after {
   transform: scaleX(1);
-}
-
-.cursor-pointer {
-  cursor: pointer;
 }
 </style>

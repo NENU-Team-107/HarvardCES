@@ -36,14 +36,40 @@ export const routerArray: Array<RouterItem> = [
             {
                 year: 2026,
                 name: "2nd Symposium (2026)",
-                path: "/2026/symposium"
+                children: [
+                    {
+                        year: 2026,
+                        name: "Symposium Tabs.overview",
+                        path: "/2026/symposium/overview"
+                    },
+                    {
+                        year: 2026,
+                        name: "Symposium Tabs.schedule", 
+                        path: "/2026/symposium/program"
+                    },
+                    {
+                        year: 2026,
+                        name: "Symposium Tabs.handbook",
+                        path: "/2026/symposium/handbook"
+                    }
+                ]
             },
             {
                 year: 2026,
                 name: "1st Symposium (2025)",
-                path: "/2025"
+                children: [
+                    {
+                        year: 2026,
+                        name: "1st Symposium (2025)",
+                        path: "/2025"
+                    },
+                    {
+                        year: 2026,
+                        name: "Press Release, Photo and Video",
+                        path: "/2025/press"
+                    }
+                ]
             }
-            // 移除了 "Press Release, Photo and Video" 菜单项
         ]
     },
     {
