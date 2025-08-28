@@ -122,7 +122,6 @@ onUnmounted(() => {
       
       <!-- 图片层叠容器 -->
       <div class="relative w-full max-w-8xl h-[700px] flex items-center justify-center"> <!-- 调整高度从500px到700px -->
-        <!-- 渲染所有可见图片 -->
         <div 
           v-for="slide in visibleSlides" 
           :key="slide.index"
