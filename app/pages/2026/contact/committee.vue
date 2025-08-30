@@ -1,13 +1,10 @@
-<script setup lang="ts">
-// TODO: 2026年内容待更新
-import type { Speaker } from '~/lib/model';
-
+<script setup>
 import ChairTable from '~/components/commitee/ChairTable.vue';
 
-const speakersList = ref<Speaker[]>([])
+const speakersList = ref([])
 
 const fetchSpeakers = async () => {
-  const resp = await $fetch('/api/speaker/listByQuery', {
+  const resp = await $fetch('/api/speaker/listByQuery2026', {
     method: 'GET',
     query: {
       kind: 'Organizing Committee'
@@ -19,12 +16,9 @@ const fetchSpeakers = async () => {
   }
 }
 
-// TODO: 2026年委员会角色待确认
 const kinds = ref([
   { name: "Chair of Parallel session", flag: true },
   { name: "Program Chair", flag: false },
-  { name: "Publicity Chair", flag: false },
-  { name: "Registration Chair", flag: false },
   { name: "Workshop Chair", flag: false },
   { name: "Local Chair of Parallel session", flag: true },
   { name: "Workshop Co-Chair", flag: false },
@@ -32,13 +26,15 @@ const kinds = ref([
   { name: "Outreach Co-Chair", flag: false },
   { name: "Logistics Support", flag: false },
 ]);
+
 const member = [{ title: "MemberLeft", flag: false }, { title: "MemberRight", flag: false }];
 
 const pending = ref(true);
+
 onMounted(() => {
   fetchSpeakers().then(async () => {
     for (const speaker of speakersList.value) {
-      const image: Blob = await $fetch('/api/speaker/photo', {
+      const image = await $fetch('/api/speaker/photo', {
         method: 'GET',
         query: {
           photo: speaker.photo
@@ -54,6 +50,11 @@ const logos = ref([
   "img/logo/sym_logo.png",
 ]);
 
+const { t } = useI18n()
+
+useHead({
+  title: t('Organizing Committee') + ' - Harvard CES 2026'
+})
 </script>
 
 <template>
@@ -78,27 +79,12 @@ const logos = ref([
         </div>
       </div>
       <div class="min-h-full w-full md:px-32 px-4 justify-self-center">
-        <div
-          class="w-full grid md:grid-cols-10 grid-cols-1 gap-12 justify-center justify-item-center bg-white/80 md:pt-12 rounded-lg">
-          <div
-            v-for="(item, index) in kinds" :key="index"
-            :class="['w-full flex justify-center items-center', index % 5 == 0 ? 'row-span-4 md:col-span-6 col-span-1' : 'row-span-1 md:col-span-4 col-span-1']">
+        <div class="w-full grid md:grid-cols-10 grid-cols-1 gap-12 justify-center justify-item-center bg-white/80 md:pt-12 rounded-lg">
+          <div v-for="(item, index) in kinds" :key="index" :class="['w-full flex justify-center items-center', index % 5 == 0 ? 'row-span-4 md:col-span-6 col-span-1' : 'row-span-1 md:col-span-4 col-span-1']">
             <ChairTable :title="item.name" :flag="item.flag" />
           </div>
-          <div
-            v-for="(item, index) in member" :key="index"
-            class='w-full flex justify-center items-center md:col-span-5 col-span-1'>
-            <ChairTable :title="item.title" :flag="item.flag" />
-          </div>
-        </div>
-      </div>
-      <div class="w-full h-full flex justify-end items-end">
-        <div class="mx-10 my-5 mt-10">
-          <NuxtImg v-for="logo in logos" :key="logo" :src="logo" class="h-28 mr-24" />
         </div>
       </div>
     </div>
-
   </div>
-
 </template>

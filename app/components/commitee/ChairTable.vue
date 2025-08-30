@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+<script setup lang="ts">
 
 interface ChairListItem {
   title?: string;
@@ -15,14 +15,17 @@ const pending = ref(true);
 const lines = ref<ChairListItem[]>([]);
 
 const fetchList = async () => {
-  const resp = await $fetch('/api/speaker/listChairAll', {
+  const route = useRoute();
+  const apiPath = route.path.includes('2026') ? '/api/speaker/listChairAll2026' : '/api/speaker/listChairAll';
+  
+  const resp = await $fetch(apiPath, {
     method: 'GET',
     query: {
       kind: props.title
     }
   });
   const { status, data } = resp;
-  pending.value = true; // 设置为加载中状态
+  pending.value = true;
   if (status === "Success" && data) {
     lines.value = data ?? [] as ChairListItem[];
     pending.value = false;
@@ -50,22 +53,22 @@ const columns = computed(() => {
     </h1>
     <div class="">
       <UTable
-:data="lines" :columns="columns"
+        :data="lines" :columns="columns"
         :loading-state="{ icon: 'i-heroicons-arrow-path-20-solid', label: 'Loading...' }"
         :ui="{ base: 'min-w-full table-fixed ', td: 'break-words text-left min-w-full table-fixed md:text-base text-sm text-black drak:text:white', tr: 'h-fit' }">
         <template #name-cell="{ row }">
           <div
-class="md:text-base text-sm text-black drak:text:white break-words text-left min-w-full table-fixed"
+            class="md:text-base text-sm text-black drak:text:white break-words text-left min-w-full table-fixed"
             v-html="$t(row.original.name).replace(/\n/g, '<br>')" />
         </template>
         <template #title-cell="{ row }">
           <div
-class="md:text-base text-sm text-black drak:text:white break-words text-left min-w-full table-fixed"
-            v-html="$t(row.original.title).replace(/\n/g, '<br>')" />
+            class="md:text-base text-sm text-black drak:text:white break-words text-left min-w-full table-fixed"
+            v-html="$t(row.original.title || '').replace(/\n/g, '<br>')" />
         </template>
         <template #inc-cell="{ row }">
           <div
-class="md:text-base text-sm text-black drak:text:white break-words text-left min-w-full table-fixed"
+            class="md:text-base text-sm text-black drak:text:white break-words text-left min-w-full table-fixed"
             v-html="$t(row.original.inc).replace(/\n/g, '<br>')" />
         </template>
       </UTable>

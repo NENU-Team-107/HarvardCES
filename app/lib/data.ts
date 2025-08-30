@@ -185,7 +185,7 @@ export const organizingCommittee: Array<Speaker> = [
             details: {
                 description: "server.Organizing Committee.id1.description",
                 title: "server.Organizing Committee.id1.title",
-                link: '/speakers/speaker/9 ProfessorLEE,Chi-KinJohn'
+                link: '/2025/speakers/speaker/9 ProfessorLEE,Chi-KinJohn'
             }
         }
     },
@@ -200,7 +200,7 @@ export const organizingCommittee: Array<Speaker> = [
             details: {
                 description: "server.Organizing Committee.id2.description",
                 title: "server.Organizing Committee.id2.title",
-                link: '/speakers/speaker/10 MinjuanWANG'
+                link: '/2025/speakers/speaker/10 MinjuanWANG'
             }
         }
     },
@@ -215,7 +215,7 @@ export const organizingCommittee: Array<Speaker> = [
             details: {
                 description: "server.Organizing Committee.id4.description",
                 title: "server.Organizing Committee.id4.title",
-                link: '/speakers/speaker/12 AnnyChan'
+                link: '/2025/speakers/speaker/12 AnnyChan'
             }
         }
     },
@@ -230,7 +230,7 @@ export const organizingCommittee: Array<Speaker> = [
             details: {
                 description: "server.Organizing Committee.id5.description",
                 title: "server.Organizing Committee.id5.title",
-                link: '/speakers/speaker/13 Xuefan Li'
+                link: '/2025/speakers/speaker/13 Xuefan Li'
             }
         }
     },
@@ -245,7 +245,7 @@ export const organizingCommittee: Array<Speaker> = [
             details: {
                 description: "server.Organizing Committee.id3.description",
                 title: "server.Organizing Committee.id3.title",
-                link: '/speakers/speaker/11 RongbingShen'
+                link: '/2025/speakers/speaker/11 RongbingShen'
             }
         }
     },
@@ -255,13 +255,11 @@ export const organizingCommittee: Array<Speaker> = [
         kind: "Organizing Committee",
         inc: "server.Invited Speakers.id5.inc",
         photo: "avatars/LI HuiPhilip.png",
-
         activateDate: new Date("2025-05-09"),
         bio: {
             details: {
                 description: "server.Invited Speakers.id5.description",
                 title: "server.Invited Speakers.id5.title",
-                // link: 'https://www.eduhk.hk/zhs/experts/professor-li-hui-philip'
                 link: 'https://www.eduhk.hk/zhs/experts/professor-li-hui-philip'
             }
         }
@@ -277,7 +275,7 @@ export const organizingCommittee: Array<Speaker> = [
             details: {
                 description: "server.Invited Speakers.id1.description",
                 title: "server.Invited Speakers.id1.title",
-                link: '/speakers/speaker/29 John Clifford Mitchell'
+                link: '/2025/speakers/speaker/29 John Clifford Mitchell'
             }
         }
     },
@@ -286,13 +284,13 @@ export const organizingCommittee: Array<Speaker> = [
         name: "server.Keynote Speakers.id7.name",
         kind: "Organizing Committee",
         inc: "server.Keynote Speakers.id7.inc",
-        photo: "avatars/Paul Kim.png",
+        photo: "avatars/Chris Dede.png",
         activateDate: new Date("2025-05-09"),
         bio: {
             details: {
                 description: "server.Keynote Speakers.id7.description",
                 title: "server.Keynote Speakers.id7.title",
-                link: '/speakers/speaker/28 PaulKim'
+                link: '/2025/speakers/speaker/28 ChrisDede'
             }
         }
     },
@@ -307,11 +305,11 @@ export const organizingCommittee: Array<Speaker> = [
             details: {
                 description: "server.Organizing Committee.id6.description",
                 title: "server.Organizing Committee.id6.title",
-                link: '/speakers/speaker/27 Yue Jia'
+                link: '/2025/speakers/speaker/27 Yue Jia'
             }
         }
     },
-]
+];
 
 export const guestOfHonor: Array<Speaker> = [
     {
@@ -933,3 +931,431 @@ export const ChairListMemberRight: Array<ChairListItem> = [
         "inc": "MemberRight.Details.line17.inc"
     },
 ]
+
+export const organizingCommittee2026: Array<Speaker> = [
+    {
+        id: 9,
+        name: "server.Organizing Committee.id1.name",
+        kind: "Organizing Committee",
+        inc: "server.Organizing Committee.id1.inc",
+        photo: "avatars/Chi-Kin John.png",
+        activateDate: new Date("2025-05-09"),
+        bio: {
+            details: {
+                description: "server.Organizing Committee.id1.description",
+                title: "server.Organizing Committee.id1.title",
+                link: '/2026/speakers/speaker/9 ProfessorLEE,Chi-KinJohn'
+            }
+        }
+    },
+    {
+        id: 10,
+        name: "server.Organizing Committee.id2.name",
+        kind: "Organizing Committee",
+        inc: "server.Organizing Committee.id2.inc",
+        photo: "avatars/Minjuan WANG.png",
+        activateDate: new Date("2025-05-09"),
+        bio: {
+            details: {
+                description: "server.Organizing Committee.id2.description",
+                title: "server.Organizing Committee.id2.title",
+                link: '/2026/speakers/speaker/10 MinjuanWANG'
+            }
+        }
+    },
+    {
+        id: 12,
+        name: "server.Organizing Committee.id4.name",
+        kind: "Organizing Committee",
+        inc: "server.Organizing Committee.id4.inc",
+        photo: "avatars/Anny Chan.png",
+        activateDate: new Date("2025-05-09"),
+        bio: {
+            details: {
+                description: "server.Organizing Committee.id4.description",
+                title: "server.Organizing Committee.id4.title",
+                link: '/2026/speakers/speaker/12 AnnyChan'
+            }
+        }
+    },
+    {
+        id: 13,
+        name: "server.Organizing Committee.id5.name",
+        kind: "Organizing Committee",
+        inc: "server.Organizing Committee.id5.inc",
+        photo: "avatars/Xuefan Li.png",
+        activateDate: new Date("2025-05-09"),
+        bio: {
+            details: {
+                description: "server.Organizing Committee.id5.description",
+                title: "server.Organizing Committee.id5.title",
+                link: '/2026/speakers/speaker/13 Xuefan Li'
+            }
+        }
+    },
+    {
+        id: 11,
+        name: "server.Organizing Committee.id3.name",
+        kind: "Organizing Committee",
+        inc: "server.Organizing Committee.id3.inc",
+        photo: "avatars/Rongbing Shen.png",
+        activateDate: new Date("2025-05-09"),
+        bio: {
+            details: {
+                description: "server.Organizing Committee.id3.description",
+                title: "server.Organizing Committee.id3.title",
+                link: '/2026/speakers/speaker/11 RongbingShen'
+            }
+        }
+    },
+    {
+        id: 21,
+        name: "server.Invited Speakers.id5.name",
+        kind: "Organizing Committee",
+        inc: "server.Invited Speakers.id5.inc",
+        photo: "avatars/LI HuiPhilip.png",
+        activateDate: new Date("2025-05-09"),
+        bio: {
+            details: {
+                description: "server.Invited Speakers.id5.description",
+                title: "server.Invited Speakers.id5.title",
+                link: 'https://www.eduhk.hk/zhs/experts/professor-li-hui-philip'
+            }
+        }
+    },
+    {
+        id: 29,
+        name: "server.Invited Speakers.id1.name",
+        kind: "Organizing Committee",
+        inc: "server.Invited Speakers.id1.inc",
+        photo: "avatars/John Clifford Mitchell.png",
+        activateDate: new Date("2025-05-09"),
+        bio: {
+            details: {
+                description: "server.Invited Speakers.id1.description",
+                title: "server.Invited Speakers.id1.title",
+                link: '/2026/speakers/speaker/29 John Clifford Mitchell'
+            }
+        }
+    },
+    {
+        id: 28,
+        name: "server.Keynote Speakers.id7.name",
+        kind: "Organizing Committee",
+        inc: "server.Keynote Speakers.id7.inc",
+        photo: "avatars/Chris Dede.png",
+        activateDate: new Date("2025-05-09"),
+        bio: {
+            details: {
+                description: "server.Keynote Speakers.id7.description",
+                title: "server.Keynote Speakers.id7.title",
+                link: '/2026/speakers/speaker/28 ChrisDede'
+            }
+        }
+    },
+    {
+        id: 27,
+        name: "server.Organizing Committee.id6.name",
+        kind: "Organizing Committee",
+        inc: "server.Organizing Committee.id6.inc",
+        photo: "avatars/Yue Jia.png",
+        activateDate: new Date("2025-05-09"),
+        bio: {
+            details: {
+                description: "server.Organizing Committee.id6.description",
+                title: "server.Organizing Committee.id6.title",
+                link: '/2026/speakers/speaker/27 Yue Jia'
+            }
+        }
+    },
+];
+
+export const ChairListParallel2026: Array<ChairListItem> = [
+    {
+        "title": "",
+        "name": "",
+        "inc": ""
+    },
+    {
+        "title": "",
+        "name": "",
+        "inc": ""
+    },
+    {
+        "title": "",
+        "name": "",
+        "inc": ""
+    },
+    {
+        "title": "",
+        "name": "",
+        "inc": ""
+    },
+    {
+        "title": "",
+        "name": "",
+        "inc": ""
+    },
+    {
+        "title": "",
+        "name": "",
+        "inc": ""
+    },
+    {
+        "title": "",
+        "name": "",
+        "inc": ""
+    },
+];
+
+export const ChairListProgram2026: Array<ChairListItem> = [
+    {
+        "name": "Program Chair.Details.line1.name",
+        "inc": "Program Chair.Details.line1.inc"
+    },
+];
+
+export const ChairListPublicity2026: Array<ChairListItem> = [
+    {
+        "name": "Publicity Chair.Details.line1.name",
+        "inc": "Publicity Chair.Details.line1.inc"
+    },
+];
+
+export const ChairListRegistration2026: Array<ChairListItem> = [
+    {
+        "name": "Registration Chair.Details.line1.name",
+        "inc": "Registration Chair.Details.line1.inc"
+    },
+];
+
+export const ChairListWorkshop2026: Array<ChairListItem> = [
+    {
+        "name": "Workshop Chair.Details.line1.name",
+        "inc": "Workshop Chair.Details.line1.inc"
+    },
+];
+
+export const ChairListLocalParallel2026: Array<ChairListItem> = [
+    {
+        "title": "Local Chair of Parallel session.Details.line1.title",
+        "name": "Local Chair of Parallel session.Details.line1.name",
+        "inc": "Local Chair of Parallel session.Details.line1.inc"
+    },
+    {
+        "title": "Local Chair of Parallel session.Details.line2.title",
+        "name": "Local Chair of Parallel session.Details.line2.name",
+        "inc": "Local Chair of Parallel session.Details.line2.inc"
+    },
+    {
+        "title": "Local Chair of Parallel session.Details.line3.title",
+        "name": "Local Chair of Parallel session.Details.line3.name",
+        "inc": "Local Chair of Parallel session.Details.line3.inc"
+    },
+    {
+        "title": "Local Chair of Parallel session.Details.line4.title",
+        "name": "Local Chair of Parallel session.Details.line4.name",
+        "inc": "Local Chair of Parallel session.Details.line4.inc"
+    },
+    {
+        "title": "Local Chair of Parallel session.Details.line5.title",
+        "name": "Local Chair of Parallel session.Details.line5.name",
+        "inc": "Local Chair of Parallel session.Details.line5.inc"
+    },
+    {
+        "title": "Local Chair of Parallel session.Details.line6.title",
+        "name": "Local Chair of Parallel session.Details.line6.name",
+        "inc": "Local Chair of Parallel session.Details.line6.inc"
+    },
+    {
+        "title": "Local Chair of Parallel session.Details.line7.title",
+        "name": "Local Chair of Parallel session.Details.line7.name",
+        "inc": "Local Chair of Parallel session.Details.line7.inc"
+    },
+];
+
+export const ChairListWorkshopCo2026: Array<ChairListItem> = [
+    {
+        "name": "Workshop Co-Chair.Details.line1.name",
+        "inc": "Workshop Co-Chair.Details.line1.inc"
+    },
+];
+
+export const ChairListPublicityCo2026: Array<ChairListItem> = [
+    {
+        "name": "Publicity Co-chair.Details.line1.name",
+        "inc": "Publicity Co-chair.Details.line1.inc"
+    },
+    {
+        "name": "Publicity Co-chair.Details.line2.name",
+        "inc": "Publicity Co-chair.Details.line2.inc"
+    },
+    {
+        "name": "Publicity Co-chair.Details.line3.name",
+        "inc": "Publicity Co-chair.Details.line3.inc"
+    },
+    {
+        "name": "Publicity Co-chair.Details.line4.name",
+        "inc": "Publicity Co-chair.Details.line4.inc"
+    },
+    {
+        "name": "Publicity Co-chair.Details.line5.name",
+        "inc": "Publicity Co-chair.Details.line5.inc"
+    }
+];
+
+export const ChairListOutreachCo2026: Array<ChairListItem> = [
+    {
+        "name": "Outreach Co-Chair.Details.line1.name",
+        "inc": "Outreach Co-Chair.Details.line1.inc"
+    }
+];
+
+export const ChairListLogistics2026: Array<ChairListItem> = [
+    {
+        "name": "Logistics Support.Details.line1.name",
+        "inc": "Logistics Support.Details.line1.inc"
+    }
+];
+
+export const ChairListMemberLeft2026: Array<ChairListItem> = [
+    {
+        "name": "MemberLeft.Details.line1.name",
+        "inc": "MemberLeft.Details.line1.inc"
+    },
+    {
+        "name": "MemberLeft.Details.line2.name",
+        "inc": "MemberLeft.Details.line2.inc"
+    },
+    {
+        "name": "MemberLeft.Details.line3.name",
+        "inc": "MemberLeft.Details.line3.inc"
+    },
+    {
+        "name": "MemberLeft.Details.line4.name",
+        "inc": "MemberLeft.Details.line4.inc"
+    },
+    {
+        "name": "MemberLeft.Details.line5.name",
+        "inc": "MemberLeft.Details.line5.inc"
+    },
+    {
+        "name": "MemberLeft.Details.line6.name",
+        "inc": "MemberLeft.Details.line6.inc"
+    },
+    {
+        "name": "MemberLeft.Details.line7.name",
+        "inc": "MemberLeft.Details.line7.inc"
+    },
+    {
+        "name": "MemberLeft.Details.line8.name",
+        "inc": "MemberLeft.Details.line8.inc"
+    },
+    {
+        "name": "MemberLeft.Details.line9.name",
+        "inc": "MemberLeft.Details.line9.inc"
+    },
+    {
+        "name": "MemberLeft.Details.line10.name",
+        "inc": "MemberLeft.Details.line10.inc"
+    },
+    {
+        "name": "MemberLeft.Details.line11.name",
+        "inc": "MemberLeft.Details.line11.inc"
+    },
+    {
+        "name": "MemberLeft.Details.line12.name",
+        "inc": "MemberLeft.Details.line12.inc"
+    },
+    {
+        "name": "MemberLeft.Details.line13.name",
+        "inc": "MemberLeft.Details.line13.inc"
+    },
+    {
+        "name": "MemberLeft.Details.line14.name",
+        "inc": "MemberLeft.Details.line14.inc"
+    },
+    {
+        "name": "MemberLeft.Details.line15.name",
+        "inc": "MemberLeft.Details.line15.inc"
+    },
+    {
+        "name": "MemberLeft.Details.line16.name",
+        "inc": "MemberLeft.Details.line16.inc"
+    },
+    {
+        "name": "MemberLeft.Details.line17.name",
+        "inc": "MemberLeft.Details.line17.inc"
+    },
+];
+
+export const ChairListMemberRight2026: Array<ChairListItem> = [
+    {
+        "name": "MemberRight.Details.line1.name",
+        "inc": "MemberRight.Details.line1.inc"
+    },
+    {
+        "name": "MemberRight.Details.line2.name",
+        "inc": "MemberRight.Details.line2.inc"
+    },
+    {
+        "name": "MemberRight.Details.line3.name",
+        "inc": "MemberRight.Details.line3.inc"
+    },
+    {
+        "name": "MemberRight.Details.line4.name",
+        "inc": "MemberRight.Details.line4.inc"
+    },
+    {
+        "name": "MemberRight.Details.line5.name",
+        "inc": "MemberRight.Details.line5.inc"
+    },
+    {
+        "name": "MemberRight.Details.line6.name",
+        "inc": "MemberRight.Details.line6.inc"
+    },
+    {
+        "name": "MemberRight.Details.line7.name",
+        "inc": "MemberRight.Details.line7.inc"
+    },
+    {
+        "name": "MemberRight.Details.line8.name",
+        "inc": "MemberRight.Details.line8.inc"
+    },
+    {
+        "name": "MemberRight.Details.line9.name",
+        "inc": "MemberRight.Details.line9.inc"
+    },
+    {
+        "name": "MemberRight.Details.line10.name",
+        "inc": "MemberRight.Details.line10.inc"
+    },
+    {
+        "name": "MemberRight.Details.line11.name",
+        "inc": "MemberRight.Details.line11.inc"
+    },
+    {
+        "name": "MemberRight.Details.line12.name",
+        "inc": "MemberRight.Details.line12.inc"
+    },
+    {
+        "name": "MemberRight.Details.line13.name",
+        "inc": "MemberRight.Details.line13.inc"
+    },
+    {
+        "name": "MemberRight.Details.line14.name",
+        "inc": "MemberRight.Details.line14.inc"
+    },
+    {
+        "name": "MemberRight.Details.line15.name",
+        "inc": "MemberRight.Details.line15.inc"
+    },
+    {
+        "name": "MemberRight.Details.line16.name",
+        "inc": "MemberRight.Details.line16.inc"
+    },
+    {
+        "name": "MemberRight.Details.line17.name",
+        "inc": "MemberRight.Details.line17.inc"
+    },
+];
