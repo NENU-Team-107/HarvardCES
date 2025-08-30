@@ -68,15 +68,15 @@ export const keynoteSpeaker: Array<Speaker> = [
     },
     {
         id: 7,
-        name: "server.Keynote Speakers.id7.name",
+        name: "server.Keynote Speakers.id7_paul.name",
         kind: "Keynote Speakers",
-        inc: "server.Keynote Speakers.id7.inc",
+        inc: "server.Keynote Speakers.id7_paul.inc",
         photo: "avatars/Paul Kim.png",
         activateDate: new Date("2025-05-09"),
         bio: {
             details: {
-                description: "server.Keynote Speakers.id7.description",
-                title: "server.Keynote Speakers.id7.title",
+                description: "server.Keynote Speakers.id7_paul.description",
+                title: "server.Keynote Speakers.id7_paul.title",
                 link: '/speakers/speaker/7 PaulKim'
             }
         }
@@ -424,16 +424,16 @@ export const invitedSpeakers: Array<Speaker> = [
     },
     {
         id: 23,
-        name: "server.Invited Speakers.id7.name",
+        name: "server.Invited Speakers.id7_paul.name",
         kind: "Invited Speakers",
-        inc: "server.Invited Speakers.id7.inc",
-        photo: "avatars/Enhong Chen.png",
+        inc: "server.Invited Speakers.id7_paul.inc",
+        photo: "avatars/Paul Kim.png",
         activateDate: new Date("2025-05-09"),
         bio: {
             details: {
-                description: "server.Invited Speakers.id7.description",
-                title: "server.Invited Speakers.id7.title",
-                link: '/speakers/speaker/23 Enhong Chen'
+                description: "server.Invited Speakers.id7_paul.description",
+                title: "server.Invited Speakers.id7_paul.title",
+                link: '/speakers/speaker/23 PaulKim'
             }
         }
     },
