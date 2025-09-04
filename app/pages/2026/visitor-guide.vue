@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+// Recommended Hotels 相关数据已暂时注释
+/*
 const columns = [
   { key: "index", id: "index", }, { key: "col1", id: "col1" }, { key: "col2", id: "col2" }, { key: "col3", id: "col3" }, { key: "col4", id: "col4" }, { key: "col5", id: "col5" }
 ];
@@ -29,7 +31,7 @@ const rows = [
     "col5": "Recommended Hotels.Details.line5.Contact",
   },
 ]
-
+*/
 
 </script>
 <template>
@@ -122,6 +124,8 @@ const rows = [
           </div>
         </div>
 
+        <!-- Recommended Hotels 板块已暂时注释 -->
+        <!--
         <div class="flex justify-center items-center ">
           <div class="h-0.5 w-24 bg-black" />
           <h1 class="text-center font-bold text-2xl py-6 justify-self-center mx-5">
@@ -130,7 +134,6 @@ const rows = [
           <div class="h-0.5 w-24 bg-black" />
         </div>
       </div>
-      <!-- TODO: Use 'primevue/datatable' to replace NUXTUI -->
       <UTable
 :rows="rows" :columns="columns"
         :loading-state="{ icon: 'i-heroicons-arrow-path-20-solid', label: 'Loading...' }"
@@ -156,6 +159,8 @@ const rows = [
       </UTable>
 
       <span class="italic font-bold">{{ $t("Recommended Hotels.Tip") }}</span>
+        -->
+      </div>
       <div class="flex justify-center items-center ">
         <div class="h-0.5 w-24 bg-black" />
         <h1 class="text-center font-bold text-2xl py-6 justify-self-center mx-5">
@@ -167,6 +172,8 @@ const rows = [
         <NuxtImg :src="$t('Campus Map.src')" loading="lazy" class="w-5/6 object-cover" />
       </div>
 
+      <!-- School Bus Schedule 板块已暂时注释 -->
+      <!--
       <div class="text-center font-bold md:text-2xl text-xl my-5">
         <div class="flex justify-center items-center ">
           <div class="h-0.5 w-20 bg-black" />
@@ -187,7 +194,6 @@ const rows = [
           </ul>
         </div>
 
-        <!-- Day1 -->
         <div class="w-full text-left text-xl md:pl-10 md:py-3 flex justify-center items-center flex-col">
           <div class="w-full flex justify-center items-center flex-col">
             <div class="w-full text-xl md:text-2xl text-center">{{ $t('School Bus Schedule.Day1.Title') }}</div>
@@ -210,7 +216,6 @@ const rows = [
           </div>
         </div>
 
-        <!-- Day2 -->
         <div class="w-full text-left text-xl md:pl-10 md:py-3 flex justify-center items-center flex-col">
           <div class="w-full flex justify-center items-center flex-col">
             <div class="w-full text-xl md:text-2xl text-center">{{ $t('School Bus Schedule.Day2.Title') }}</div>
@@ -255,7 +260,6 @@ const rows = [
 
         </div>
 
-        <!-- Day3 -->
         <div class="w-full text-left text-xl md:pl-10 md:py-3 flex justify-center items-center flex-col">
           <div class="w-full flex justify-center items-center flex-col">
             <div class="w-full text-xl md:text-2xl text-center">{{ $t('School Bus Schedule.Day3.Title') }}</div>
@@ -300,6 +304,7 @@ const rows = [
 
         </div>
       </div>
+      -->
     </div>
   </div>
 

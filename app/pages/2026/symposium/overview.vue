@@ -22,7 +22,7 @@ useHead({
           <div class="text-xl font-semibold text-center mb-2">{{ $t('Symposium2026.Theme') }}</div>
           <div class="text-lg text-center mb-6 text-gray-600">{{ $t('Symposium2026.Date') }}</div>
           <div class="text-lg leading-7">
-            <div class="text-justify indent-8" v-html="$t('Symposium2026.Intro')" />
+            <div class="text-justify" v-html="$t('Symposium2026.Intro')" />
           </div>
         </div>
       </div>

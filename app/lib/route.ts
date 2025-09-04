@@ -29,6 +29,12 @@ export const routerArray: Array<RouterItem> = [
             }
         ]
     },
+    // 工作坊菜单项已暂时注释
+    // {
+    //     year: 2026,
+    //     name: "Workshop",
+    //     path: "/2026/workshops"
+    // },
     {
         year: 2026,
         name: "About",
@@ -113,11 +119,6 @@ export const routerArray: Array<RouterItem> = [
                 path: "/2026/call/session"
             }
         ]
-    },
-    {
-        year: 2026,
-        name: "Workshop",
-        path: "/2026/workshops"
     },
     {
         year: 2026,

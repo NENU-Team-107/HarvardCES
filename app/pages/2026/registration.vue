@@ -1,4 +1,6 @@
 <script setup lang="ts">
+// 原有注册页面内容已注释
+/*
 const { t } = useI18n()
 
 const trackColumns = computed(() => {
@@ -82,11 +84,14 @@ watchEffect(() => {
   track.value = trackData.value;
   ws.value = workshopData.value;
 });
+*/
 
 </script>
 
 <template>
   <div class="w-full h-full mx-10 my-5 pt-24">
+    <!-- 原有注册页面内容已注释 -->
+    <!--
     <div class="text-center font-bold md:text-2xl text-xl  my-5 px-4">
       <div class="flex justify-center items-center ">
         <div class="h-0.5 w-20 bg-black" />
@@ -111,8 +116,7 @@ watchEffect(() => {
           </h1>
 
           <div class="flex justify-center items-center w-full self-center">
-          <!-- TODO: Use 'primevue/datatable' to replace NUXTUI -->
-            <UTable :data="track" :columns="trackColumns">
+          <UTable :data="track" :columns="trackColumns">
               <template #banquet-cell="{ row }">
                 <div v-if="(row.original).banquet === 1">
                   <UIcon name="i-material-symbols-check" class="w-7 h-7 text-green-400" />
@@ -157,11 +161,7 @@ watchEffect(() => {
           </h1>
 
           <div class="flex justify-center items-center w-full self-center">
-            <!-- TODO: Use 'primevue/datatable' to replace NUXTUI -->
             <UTable :data="ws" :columns="workshopColumns">
-              <!-- <template #type-cell="{ row }">
-                <div><span class="text-center">{{ row.original.type }}</span></div>
-              </template> -->
               <template #name-cell="{ row }">
                 <NuxtLink v-if="row.original.link" :to="row.original.link" class="text-blue-400">
                   {{ row.original.name }}
@@ -206,6 +206,64 @@ watchEffect(() => {
       </div>
 
     </div>
+    -->
+    
+    <!-- 新的注册尚未开放提示内容 -->
+    <div class="flex flex-col items-center justify-center min-h-[60vh] px-4">
+      <div class="max-w-4xl mx-auto text-center bg-white/90 rounded-lg shadow-lg p-8 md:p-12">
+        <div class="mb-8">
+          <h1 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
+            註冊 / Registration
+          </h1>
+        </div>
+        
+        <div class="space-y-6">
+          <!-- 繁体中文版本 -->
+          <div class="text-lg md:text-xl text-gray-700 leading-relaxed">
+            <p class="mb-4">
+              註冊尚未開放，敬請留意後續公告。
+            </p>
+            <p>
+              如有任何查詢，歡迎電郵至 
+              <a href="mailto:GIETfuture@eduhk.hk" class="text-blue-600 hover:text-blue-800 underline">
+                GIETfuture@eduhk.hk
+              </a> 
+              與我們聯絡。
+            </p>
+          </div>
+          
+          <div class="border-t border-gray-300 my-6"></div>
+          
+          <!-- 简体中文版本 -->
+          <div class="text-lg md:text-xl text-gray-700 leading-relaxed">
+            <p class="mb-4">
+              注册尚未开放，敬请留意后续公告。
+            </p>
+            <p>
+              如有任何查询，欢迎电邮至 
+              <a href="mailto:GIETfuture@eduhk.hk" class="text-blue-600 hover:text-blue-800 underline">
+                GIETfuture@eduhk.hk
+              </a> 
+              与我们联络。
+            </p>
+          </div>
+          
+          <div class="border-t border-gray-300 my-6"></div>
+          
+          <!-- 英文版本 -->
+          <div class="text-lg md:text-xl text-gray-700 leading-relaxed">
+            <p class="mb-4">
+              Registration is not yet open. Please stay tuned for further announcements.
+            </p>
+            <p>
+              For any inquiries, feel free to contact us at 
+              <a href="mailto:GIETfuture@eduhk.hk" class="text-blue-600 hover:text-blue-800 underline">
+                GIETfuture@eduhk.hk
+              </a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-
 </template>

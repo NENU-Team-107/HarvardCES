@@ -54,7 +54,7 @@ const title = ref({
   //   workshop: "Session"
 })
 
-const chosenKeynote = [3, 17, 7, 1, 24, 2]
+const chosenKeynote = [1, 11, 12, 13, 14]
 
 const keyspeakersList = ref<Speaker[]>([])
 const organizeList = ref<Speaker[]>([])
@@ -63,7 +63,8 @@ const fetchKeynoteSpeakers = async () => {
   const resp = await $fetch('/api/speaker/listByQuery', {
     method: 'GET',
     query: {
-      kind: 'Keynote Speakers'
+      kind: 'Keynote Speakers',
+      year: '2026'
     }
   })
   const { status, data } = resp
@@ -76,7 +77,8 @@ const fetchOrganize = async () => {
   const resp = await $fetch('/api/speaker/listByQuery', {
     method: 'GET',
     query: {
-      kind: 'Organizing Committee'
+      kind: 'Organizing Committee',
+      year: '2026'
     }
   })
   const { status, data } = resp
@@ -142,25 +144,25 @@ onMounted(() => {
           {{ $t('Symposium2026.Date') }}
         </div>
         <div class="md:text-lg text-sm md:pl-10 px-5 leading-7">
-          <div class="text-justify indent-8" v-html="$t('Symposium2026.Intro')" />
+          <div class="text-justify" v-html="$t('Symposium2026.Intro')" />
         </div>
       </div>
 
       <div class="bg-white/80 md:p-10 p-1 md:mt-0 mt-5">
         <Title :title-map="title.speaker" />
         <div class="grid md:grid-cols-3 gap-4 px-10">
-          <div v-for="speaker in KeynoteSpeakers" :key="speaker.id">
-            <SpeakersIntroduction :speakers="speaker" />
+          <div v-for="speaker in KeynoteSpeakers" :key="speaker.id" class="h-96">
+            <SpeakersIntroduction :speakers="speaker" class="h-full" />
           </div>
         </div>
-        <div v-if="keyspeakersList.length > 6" class="flex justify-center mt-4">
+        <!-- <div v-if="keyspeakersList.length > 6" class="flex justify-center mt-4">
           <NuxtLink :to="'/speakers/keynote'" class="text-blue-600 hover:text-green-800/80 font-semibold">
             <span class="italic">
               {{ $t("Show More Keynote") }}
               <font-awesome icon="fa-solid fa-angle-right" />
             </span>
           </NuxtLink>
-        </div>
+        </div> -->
       </div>
 
       <div class="bg-white/80 md:p-10 px-5">
@@ -193,7 +195,7 @@ onMounted(() => {
 
           <div class="w-full">
             <div class="font-bold text-xl md:pl-10 p-1">{{ $t("In collaboration with") }}</div>
-            <div>
+            <!-- <div>
               <div
                 class="grid grid-cols-2 md:grid-cols-3 mt-5 gap-0.5 w-full md:w-4/5 px-5 md:px-0 justify-self-center">
                 <div v-for="logo in logoList" :key="logo.path" class="flex w-full h-full  items-center justify-around">
@@ -202,6 +204,11 @@ onMounted(() => {
                   </NuxtLink>
                 </div>
               </div>
+            </div> -->
+            <div class="text-gray-500 italic px-10 py-4">
+              我们正站在科技与教育的交汇点，期待与更多志同道合的伙伴携手前行。<br>
+              我們正站在科技與教育的交匯點，期待與更多志同道合的夥伴攜手前行。<br>
+              We stand at the intersection of technology and education, and look forward to joining hands with like-minded partners on this journey forward.
             </div>
 
             <div class="text-center mt-4 text-sm">

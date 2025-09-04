@@ -59,7 +59,7 @@ const tabs = [
             <div class="text-xl font-semibold text-center mb-2">{{ $t('Symposium2026.Theme') }}</div>
             <div class="text-lg text-center mb-6 text-gray-600">{{ $t('Symposium2026.Date') }}</div>
             <div class="text-lg leading-7">
-              <div class="text-justify indent-8" v-html="$t('Symposium2026.Intro')" />
+              <div class="text-justify" v-html="$t('Symposium2026.Intro')" />
             </div>
           </div>
         </div>
@@ -67,6 +67,7 @@ const tabs = [
         <!-- 论坛日程 -->
         <div v-show="activeTab === 'schedule'" class="w-full h-full">
           <div class="bg-white/80 p-6 rounded-lg">
+            <!-- 注释掉原有的议程内容
             <div class="flex justify-center items-center text-2xl font-bold mb-6">
               <div class="h-0.5 w-16 bg-black" />
               <h2 class="mx-4">{{ $t("Symposium Time.title") }}</h2>
@@ -78,12 +79,25 @@ const tabs = [
             <span class="text-center md:text-base text-xs mt-4 block">
               <i>{{ $t("Agenda Note") }}</i>
             </span>
+            -->
+            
+            <!-- 敬请期待提示 -->
+            <div class="flex justify-center items-center min-h-[400px]">
+              <div class="text-center">
+                <p class="text-gray-500 text-xl md:text-2xl leading-relaxed">
+                  我們正在精心規劃本次論壇的議程，敬請期待。<br>
+                  我们正在精心规划本次论坛的议程，敬请期待。<br>
+                  We are thoughtfully curating the agenda for this symposium—stay tuned.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
         <!-- 论坛手册 -->
         <div v-show="activeTab === 'handbook'" class="w-full h-full">
           <div class="bg-white/80 p-6 rounded-lg">
+            <!-- 注释掉原有的手册内容
             <div class="flex justify-center items-center text-2xl font-bold mb-6">
               <div class="h-0.5 w-16 bg-black" />
               <h2 class="mx-4">{{ $t("Symposium Handbook") }}</h2>
@@ -99,6 +113,18 @@ const tabs = [
                 @load="adjustIframe"
                 class="rounded-lg shadow-lg"
               />
+            </div>
+            -->
+            
+            <!-- 手册编制中提示 -->
+            <div class="flex justify-center items-center min-h-[400px]">
+              <div class="text-center">
+                <p class="text-gray-500 text-xl md:text-2xl leading-relaxed">
+                  論壇手冊正在編製中，將於活動前公布，敬請期待。<br>
+                  论坛手册正在编制中，将于活动前公布，敬请期待。<br>
+                  The Symposium handbook is currently in preparation and will be released prior to the event. Stay tuned.
+                </p>
+              </div>
             </div>
           </div>
         </div>

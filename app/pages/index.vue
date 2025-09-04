@@ -54,7 +54,7 @@ const title = ref({
   //   workshop: "Session"
 })
 
-const chosenKeynote = [3, 17, 7, 1, 24, 2]
+const chosenKeynote = [1, 11, 12, 13, 14]
 
 const keyspeakersList = ref<Speaker[]>([])
 const organizeList = ref<Speaker[]>([])
@@ -63,7 +63,8 @@ const fetchKeynoteSpeakers = async () => {
   const resp = await $fetch('/api/speaker/listByQuery', {
     method: 'GET',
     query: {
-      kind: 'Keynote Speakers'
+      kind: 'Keynote Speakers',
+      year: '2026'
     }
   })
   const { status, data } = resp
@@ -76,7 +77,8 @@ const fetchOrganize = async () => {
   const resp = await $fetch('/api/speaker/listByQuery', {
     method: 'GET',
     query: {
-      kind: 'Organizing Committee'
+      kind: 'Organizing Committee',
+      year: '2026'
     }
   })
   const { status, data } = resp
@@ -146,18 +148,18 @@ onMounted(() => {
       <div class="bg-white/80 md:p-10 p-1 md:mt-0 mt-5">
         <Title :title-map="title.speaker" />
         <div class="grid md:grid-cols-3 gap-4 px-10">
-          <div v-for="speaker in KeynoteSpeakers" :key="speaker.id">
-            <SpeakersIntroduction :speakers="speaker" />
+          <div v-for="speaker in KeynoteSpeakers" :key="speaker.id" class="h-96">
+            <SpeakersIntroduction :speakers="speaker" class="h-full" />
           </div>
         </div>
-        <div v-if="keyspeakersList.length > 6" class="flex justify-center mt-4">
+        <!-- <div v-if="keyspeakersList.length > 6" class="flex justify-center mt-4">
           <NuxtLink :to="'/speakers/keynote'" class="text-blue-600 hover:text-green-800/80 font-semibold">
             <span class="italic">
               {{ $t("Show More Keynote") }}
               <font-awesome icon="fa-solid fa-angle-right" />
             </span>
           </NuxtLink>
-        </div>
+        </div> -->
       </div>
 
       <div class="bg-white/80 md:p-10 px-5">

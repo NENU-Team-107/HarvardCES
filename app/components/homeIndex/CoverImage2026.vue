@@ -200,7 +200,7 @@ onUnmounted(() => {
           💡 点击图片可跳转到第二届论坛（2026）页面
         </span>
         <span v-else>
-          📸 论坛现场照片
+          📸 第一届论坛现场照片
         </span>
       </div>
     </div>

@@ -150,14 +150,14 @@ onMounted(() => {
             <SpeakersIntroduction :speakers="speaker" />
           </div>
         </div>
-        <div v-if="keyspeakersList.length > 6" class="flex justify-center mt-4">
+        <!-- <div v-if="keyspeakersList.length > 6" class="flex justify-center mt-4">
           <NuxtLink :to="'/speakers/keynote'" class="text-blue-600 hover:text-green-800/80 font-semibold">
             <span class="italic">
               {{ $t("Show More Keynote") }}
               <font-awesome icon="fa-solid fa-angle-right" />
             </span>
           </NuxtLink>
-        </div>
+        </div> -->
       </div>
 
       <div class="bg-white/80 md:p-10 px-5">

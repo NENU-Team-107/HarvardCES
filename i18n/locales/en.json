@@ -27,7 +27,7 @@
   "symposium": "Symposium",
   "Symposium Handbook": "Program Overview",
   "Symposium Tabs": {
-    "overview": "Program Overview",
+    "overview": "Introduction",
     "schedule": "Agenda",
     "handbook": "Handbook"
   },
@@ -44,7 +44,7 @@
     "Details": {
       "Name": "The Education University of Hong Kong",
       "Language": "Chinese and English",
-      "Date": "8-10 May, 2025",
+      "Date": "14-16 May, 2026",
       "Location": "The Education University of Hong Kong \n Tai Po Campus",
       "Mail": "GIETfuture&#64;eduhk.hk"
     }
@@ -85,16 +85,16 @@
   "Show More Keynote": "View All Keynote Speakers",
   "Prev": "Prev",
   "Next": "Next",
-  "PopWindow": {
-    "Title": "Registration Link",
-    "Content": "Scan to Register"
+  "SymposiumBulletin": {
+    "Title": "Symposium Bulletin",
+    "Content": "The latest news and updates about the symposium will be posted here"
   },
   "session more": "The submission deadline for Parallel Session 2 and 7 has been extended to the end of March.",
   "Invited Speakers": "Invited Speakers",
   "Invited Speakers Title": "Invited Speakers(Workshop and Symposium)",
   "Guest of Honor": "Guest of Honor",
   "Keynote Speakers": "Keynote Speakers",
-  "Keynote Speakers Index": "Featuring Speakers From",
+  "Keynote Speakers Index": "Featuring Speakers",
   "Track Workshop Chair": "Track Workshop Chair",
   "Organizing Committee": "Organizing Committee",
   "Chair of Parallel session": {
@@ -1012,6 +1012,12 @@
         "name": "Dr. Chris Dede",
         "title": "Distinguished Professor and Senior Research Fellow <br> Harvard University",
         "inc": "Harvard University"
+      },
+      "id8": {
+        "description": "Dr. Sun Daner is Associate Professor and Associate Head of the Department of Mathematics and Information Technology at The Education University of Hong Kong (EdUHK), as well as Associate Co-Director of the Global Institute for Emerging Technologies. Her research focuses on AI in education, emerging technologies, mobile learning, and technology-enhanced STEM education, with an emphasis on fostering higher-order thinking. Dr. Sun has led and contributed to numerous competitive research projects. She is currently a PI and C-I of several funded projects, including those supported by GRF, QEF, and NSSF. With over 70 journal papers, predominantly appearing in SSCI and top-tier journals, Dr. Sun is recognized as one of the top 20 influential researchers in mobile learning globally. Beyond her research, Dr. Sun serves as associate editor of ETS, EAIT, RPETL and editorial board member for several prestigious journals. Actively engaged in the academic community, she has taken on leadership roles in organizing major international conferences, such as ICCE and GCCCE. Her work continues to shape the future of technology-enhanced education in Asia and beyond.",
+        "name": "Dr. Daner Sun",
+        "title": "Associate Professor <br> Associate Head of Department of Mathematics and Information Technology <br> Associate Co-Director of the Global Institute for Emerging Technologies <br> The Education University of Hong Kong",
+        "inc": "The Education University of Hong Kong"
       }
     },
     "Keynote Speakers": {
@@ -1103,6 +1109,50 @@
           "inc": "Principal Research Scientist in Education, Faculty Director <br> Harvard University",
           "title": "Supporting Adaptive Expertise: What Does it Involve and Why Is it Important for the Workforce in a Complex and Changing World?  ",
           "abstract": "This talk will highlight frameworks and findings from the Next Level Lab at Harvard University. It will share research-based visions of effective learners who learn in preparation for work contexts, but who also learn continuously in the flow of work and who engage as progressive problem-solvers. It will share the skills and attitudes that are essential for engaging as an adaptive expert in a complex world where innovation and change are demanded. It will report on research with early career and mid-career learners who are navigating these challenges and offer guidelines for supporting them."
+        }
+      },
+      "id11": {
+        "description": "Professor Amanda Claybaugh has served, since 2018, as the dean of undergraduate education at Harvard College. Her scholarship focuses on nineteenth-century literature and history, with particular attention to the role that teachers and writers play in times of social change. Her first book, The Novel of Purpose: Literature and Social Reform in the Anglo-American World, was awarded the Rudikoff Prize in Victorian studies. Since then, she has continued to publish scholarly articles, but also now writes in more public venues, such as the London Review of Books, Public Books, and n+1. She is currently finishing a work of narrative non-fiction, to be published by Farrar, Straus & Giroux, about the Union occupation of the South the 21st-century novel, the historical novel, and Carolina Sea islands during the Civil War. Her teaching ranges widely, from Humanities 10 to the Gen Ed course she co-teaches on the Civil War, but often find herself returning, again and again, to the novel. Dean Claybaugh teaches courses on the 19th century novel, the 21st-century novel, the historical novel, and the 21st century novel, the historical novel, and the Bildungsroman.",
+        "name": "Professor Amanda Claybaugh",
+        "title": "Dean of Undergraduate Education <br> Samuel Zemurray Jr. and Doris Zemurray Stone Professor of English",
+        "inc": "Harvard University",
+        "speaking": {
+          "inc": "",
+          "title": "",
+          "abstract": ""
+        }
+      },
+      "id12": {
+        "description": "Dr. Eric Klopfer is Professor and Director of the Scheller Teacher Education Program and The Education Arcade at MIT. He is also co-PI of MIT's RAISE initiative in AI education. His research focuses on technology and pedagogy for building understanding of science, technology, engineering and mathematics (STEM) and systems. He has special interests in games, simulations and computing as pathways to STEM learning. He is the co-author of the books, \"Adventures in Modeling\", \"The More We Know, and “Resonant Games”, as well as author of \"Augmented Learning.” His lab has produced software (from casual mobile games to MMOs to AR/VR) and platforms (including StarLogo Nova and Taleblazer) used by millions of people, as well as online courses that have reached hundreds of thousands. Klopfer is also the co-founder and past President of the non-profit Learning Games Network.",
+        "name": "Professor Eric Klopfer",
+        "title": "Professor and Director of the Scheller Teacher Education Program and <br> The Education Arcade",
+        "inc": "Massachusetts Institute of Technology (MIT)",
+        "speaking": {
+          "inc": "",
+          "title": "",
+          "abstract": ""
+        }
+      },
+      "id13": {
+        "description": "Dr. Mitchell L. Stevens is Professor of Education and (by courtesy) Sociology at Stanford University, and holds the position of co-director of Stanford Center on Longevity. He is an organizational sociologist with longstanding interests in educational sequences, lifelong learning, alternative educational forms, and the formal organization of knowledge. At Stanford he serves as faculty co-lead of the Pathways Network (pathways.stanford.edu), which is developing a science of sequences to better understand progress in school and at work, and convenes the Futures Project on Education and Learning for Longer Lives (futures.stanford.edu). His current priorities include advancing a vision for human-capital development over the next 2–10 years, improving transitions from school to work and across the lifespan, analyzing the political economy of higher education, and developing data sciences of higher education.",
+        "name": "Professor Mitchell L Stevens",
+        "title": "Professor, Graduate School of Education <br> Professor (By courtesy), Sociology <br> Faculty Affiliate, Institute for Human-Centered Artificial Intelligence (HAI)",
+        "inc": "Stanford University",
+        "speaking": {
+          "inc": "",
+          "title": "",
+          "abstract": ""
+        }
+      },
+      "id14": {
+        "description": "Professor Mark Feldman, Interim Dean and Professor of Law at Peking University School of Transnational Law (PKU STL), is a key leader in shaping the future of legal education in an increasingly digital world. While his direct research is in international law and investment treaty arbitration, his leadership in developing PKU STL’s “unique legal education model that combines common law and civil law curricula with a transnational focus” is highly pertinent to the evolution of legal pedagogy in the age of AI. Operating within a leading academic institution in China, a global hub for AI development, Professor Feldman offers a crucial institutional perspective on how law schools must strategically adapt their curricula and foster essential skills to prepare students for an AI-integrated legal profession.",
+        "name": "Professor Mark Feldman",
+        "title": "Interim Dean and Professor of Law",
+        "inc": "Peking University School of Transnational Law – PKU STL",
+        "speaking": {
+          "inc": "",
+          "title": "",
+          "abstract": ""
         }
       }
     },

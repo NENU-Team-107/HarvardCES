@@ -1,10 +1,12 @@
-import { guestOfHonor, invitedSpeakers, keynoteSpeaker, organizingCommittee } from '~/lib/data';
+import { guestOfHonor, invitedSpeakers, keynoteSpeaker, keynoteSpeaker2026, organizingCommittee, organizingCommittee2026 } from '~/lib/data';
 import type { H3Event } from 'h3';
 export default defineEventHandler(async (event: H3Event) => {
     const query = getQuery(event)
 
     if (query.kind === "Keynote Speakers") {
-        const result = keynoteSpeaker
+        // Check if year parameter is provided to determine which dataset to use
+        const year = query.year as string
+        const result = year === '2026' ? keynoteSpeaker2026 : keynoteSpeaker
         const data = {
             'status': 'Success',
             'data': result,
@@ -20,7 +22,9 @@ export default defineEventHandler(async (event: H3Event) => {
         }
         return data
     } else if (query.kind === 'Organizing Committee') {
-        const result = organizingCommittee
+        // Check if year parameter is provided to determine which dataset to use
+        const year = query.year as string
+        const result = year === '2026' ? organizingCommittee2026 : organizingCommittee
         const data = {
             'status': 'Success',
             'data': result,

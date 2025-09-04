@@ -12,6 +12,7 @@ const getSpeaker = async (idWithName: string) => {
     method: 'GET',
     query: {
       id: id,
+      year: '2026'
     }
   });
   if (resp && 'status' in resp && 'data' in resp) {

@@ -1,25 +1,20 @@
 <template>
   <div class="w-full h-full">
-    <div v-if="showPopup" class="fixed bottom-32 right-10 bg-blue-500 p-4 flex rounded-xl shadow-xl z-50">
-      <a :href="submitLink" target="_blank" class="text-red-500 hover:text-red-700">
-        <div class="md:m-2">
-          <NuxtImg src="/img/register_code.jpeg" sizes="60"/>
-        </div>
-      </a>
-      <div class="md:flex md:flex-col md:justify-center hidden">
-        <div class="flex justify-between items-center text-white text-center">
-          <span class="text-center">{{ $t("PopWindow.Content") }}</span>
-          <button class="text-red-500 hover:text-red-200 relative -top-8" @click="togglePopup">
-            <font-awesome icon="fa-solid fa-xmark" style="color: #ff0000;" />
+    <div v-if="showPopup" class="fixed bottom-32 right-10 bg-blue-100 p-4 rounded-xl shadow-xl z-50 max-w-xs">
+      <div class="flex flex-col">
+        <div class="flex justify-between items-center mb-2">
+          <h3 class="text-lg font-bold text-gray-800">{{ $t("SymposiumBulletin.Title") }}</h3>
+          <button class="text-red-500 hover:text-red-700" @click="togglePopup">
+            <font-awesome icon="fa-solid fa-xmark" />
           </button>
         </div>
+        <p class="text-gray-700">{{ $t("SymposiumBulletin.Content") }}</p>
       </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-const submitLink = ref("https://eduhk.au1.qualtrics.com/jfe/form/SV_agWfa1tf9UtiVU2")
 const showPopup = ref(true)
 const togglePopup = () => {
   showPopup.value = !showPopup.value

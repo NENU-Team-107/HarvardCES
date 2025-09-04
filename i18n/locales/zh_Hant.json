@@ -463,7 +463,7 @@
     "Details": {
       "Name": "香港教育大學",
       "Language": "普通話和英語",
-      "Date": "2025年5月8日-10日",
+      "Date": "2026年5月14日-16日",
       "Location": "香港教育大學大埔校園",
       "Mail": "GIETfuture&#64;eduhk.hk"
     }
@@ -502,13 +502,13 @@
   "Prev": "上一頁",
   "Next": "下一頁",
   "PopWindow": {
-    "Title": "註冊鏈接",
-    "Content": "註冊請掃描"
+    "Title": "論壇快訊",
+    "Content": "最新的論壇消息和更新將在這裡發布。"
   },
   "Invited Speakers Title": "特邀嘉賓(工作坊和論壇)",
   "Guest of Honor": "榮譽嘉賓",
   "Keynote Speakers": "主題演講嘉賓",
-  "Keynote Speakers Index": "演講嘉賓主要來自",
+  "Keynote Speakers Index": "演講嘉賓",
   "Track Workshop Chair": "分會場主席",
   "Organizing Committee": "組織委員會",
   "Media": {
@@ -658,6 +658,12 @@
         "name": "Chris Dede 教授",
         "title": "哈佛大學特聘教授、高級研究員 <br> 哈佛大學",
         "inc": "哈佛大學"
+      },
+      "id8": {
+        "description": "孫丹兒博士現任香港教育大學數學與資訊科技學系的副教授兼副系主任，並擔任全球新興技術研究所副聯席總監。她的研究聚焦於教育中的人工智能、新興技術、移動學習和技術增強的 STEM 教育，尤其關注借助科技手段培養學生的高階思維能力。孫博士主持並參與了多項具有競爭力的研究項目，目前擔任多個資助項目的首席研究員及合作研究員，這些項目獲香港研究資助局（GRF）、優質教育基金（QEF）及國家社會科學基金（NSSF）等重要機構支持。她已發表70餘篇學術論文，多數刊載於SSCI和其他頂級學術期刊上，並被列為全球移動學習領域最具影響力的前20名學者之一。除了科研工作，孫博士還長期擔任ETS，EAIT，RPETL等知名期刊的副編輯，以及多家權威學術期刊的編委。她積極參與學術社群，多次牽頭組織大型國際學術會議，如國際計算機教育會議（ICCE）和全球華人計算機教育應用大會（GCCCE），在推動技術增強教育的發展方面持續發揮重要影響力，其貢獻廣泛輻射至亞洲乃至國際教育領域。",
+        "name": "孫丹兒博士",
+        "title": "副教授 <br> 數學與資訊科技學系副系主任 <br> 全球新興技術研究所副聯席總監 <br> 香港教育大學",
+        "inc": "香港教育大學"
       }
     },
     "Keynote Speakers": {
@@ -754,6 +760,50 @@
           "inc": "教育首席科學家 <br> 哈佛大學",
           "title": "支持適應性專業能力：它包含哪些要素？為何在複雜多變的世界中對勞動力至關重要？",
           "abstract": "本次演講將重點介紹哈佛大學 Next Level Lab 的研究框架和研究發現。演講將分享基於研究的願景，即有效的學習者不僅為工作場景進行學習準備，還能夠在工作流程中持續學習，並以漸進式問題解決者的身份參與其中。演講將探討在一個要求創新和變革的複雜世界中，作為一名適應性專家所必需的技能和態度。此外，演講還將報告關於職業早期和職業中期學習者如何應對這些挑戰的研究，並提供支持他們發展的指導方針。"
+        }
+      },
+      "id11": {
+        "description": "Amanda Claybaugh教授自2018年起擔任哈佛學院本科教育院長（Dean for Undergraduate Education），負責統籌學院層面的本科教學事務。她的學術研究專注於十九世紀文學與歷史的交叉領域，尤其關注社會轉型過程中教師與作家所承擔的社會角色。其首部專著《立意小說：英美世界的文學與社會改革》（The Novel of Purpose: Literature and Social Reform in the Anglo-American World）曾獲維多利亞研究學會頒發的魯迪科夫獎（Rudikoff Prize）。除持續產出學術論文外，Claybaugh教授也積極投身公共寫作，為《倫敦書評》（London Review of Books）、《公共書籍》（Public Books）及《n+1》等知名文化媒體撰稿。目前，她正致力於完成一部由Farrar, Straus and Giroux出版的敘事性非虛構作品，該書以美國南北戰爭期間聯邦軍對南卡羅萊納州海島地區的佔領為焦點。在教學方面，Claybaugh教授既牽頭講授跨學科人文通識課程“Humanities 10”，也合授一門以南北戰爭為核心的通識教育課程。她所開設的專題課程涵蓋十九世紀小說、二十一世紀小說、歷史小說與成長小說等多個方向，始終以小說研究作為其教學實踐的主軸。",
+        "name": "Amanda Claybaugh教授",
+        "title": "本科生教育事務主任 <br> 英語系Samuel Zemurray Jr. and Doris Zemurray Stone教授",
+        "inc": "哈佛大學",
+        "speaking": {
+          "inc": "",
+          "title": "",
+          "abstract": ""
+        }
+      },
+      "id12": {
+        "description": "Eric Klopfer 博士是麻省理工學院 Scheller 教師教育計畫（Scheller Teacher Education Program）和教育街機實驗室（The Education Arcade）的教授兼主任，同時擔任麻省理工學院 RAISE 人工智慧教育倡議的首席研究員。他的研究專注於利用技術與教學法推動STEM教育及系統思維的發展，尤其關注遊戲、模擬和計算工具在促進STEM學習方面的潛力。 Klopfer 教授著作豐富，包括合著《模型探險記》（Adventures in Modeling）、《我們知道得越多》（The More We Know）和《共鳴遊戲》（Resonant Games），並獨立撰寫了《增強學習》（Augmented Learning）一書。他所領導的實驗室開發了多類教育科技產品，涵蓋休閒手機遊戲、大型多人線上遊戲及AR/VR應用，以及StarLogo Nova和Taleblazer等開放平台，這些工具已被全球數百萬人使用。此外，他還主導開發了惠及數十萬學習者的線上課程。 Klopfer 教授也是非營利組織「學習遊戲網路」（Learning Games Network）的聯合創始人及前任主席。",
+        "name": "Eric Klopfer教授",
+        "title": "The Scheller Teacher Education Program與The Education Arcade教授兼主任",
+        "inc": "麻省理工學院",
+        "speaking": {
+          "inc": "",
+          "title": "",
+          "abstract": ""
+        }
+      },
+      "id13": {
+        "description": "Mitchell L. Stevens博士是斯坦福大學教育學教授及社會學兼任教授，同時擔任斯坦福長壽中心（Stanford Center on Longevity）的聯席主任。作為一位組織社會學家，他的研究長期聚焦教育歷程、終身學習、替代教育形態以及知識的正式組織方式。 在斯坦福大學，Stevens教授是“Pathways Network”（pathways.stanford.edu）的教職聯席負責人。該項目致力於推動“歷程科學”的發展，以深入理解個體在教育和職業路徑中的進展機制。此外，他還主持“教育與長壽未來計劃”（The Futures Project on Education and Learning for Longer Lives，futures.stanford.edu），探索人類壽命延長背景下教育與學習的新模式與發展方向。 他目前的研究重點涵蓋以下方面：推動未來2–10年人力資本發展願景的構建；優化從學校到職場及人生其他關鍵階段的過渡機制；分析高等教育的政治經濟結構；以及發展面向高等教育研究的數據科學方法。",
+        "name": "Mitchell L Stevens教授",
+        "title": "教育學研究院教授, 社會學禮任教授, 以人為本人工智慧研究院教職成员",
+        "inc": "斯坦福大学",
+        "speaking": {
+          "inc": "",
+          "title": "",
+          "abstract": ""
+        }
+      },
+      "id14": {
+        "description": "Mark Feldman教授現任北京大學國際法學院（PKU STL）執行院長及法學教授，是數字時代法學教育變革的重要推動者。儘管他的直接研究專長集中於國際法與投資條約仲裁領域，但他在學院層面所倡導的教育創新——尤其是推動PKU STL構建「融合普通法與大陸法精髓、並具備跨國視野的獨特法學教育模式」——在人工智能深刻重塑法律行業的背景下，顯示出前瞻性的關聯價值。 作為身處全球人工智能發展核心國家中領先法學院的教育領導者，Feldman教授從制度設計與課程戰略的高度，提供了關鍵見解，指引法學院如何推進課程體系轉型，並重點培養學生適應人工智能深度整合環境下未來法律實踐所需的核心能力。",
+        "name": "Mark Feldman教授",
+        "title": "執行院長兼法學教授",
+        "inc": "北京大學國際法學院",
+        "speaking": {
+          "inc": "",
+          "title": "",
+          "abstract": ""
         }
       }
     },

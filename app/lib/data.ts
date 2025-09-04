@@ -11,6 +11,10 @@ export const speakerToKind: Map<number, string> = new Map([
     [8, 'Invited Speakers'],
     [9, 'Organizing Committee'],
     [10, 'Organizing Committee'],
+    [11, 'Keynote Speakers'],
+    [12, 'Keynote Speakers'],
+    [13, 'Keynote Speakers'],
+    [14, 'Keynote Speakers'],
     [11, 'Organizing Committee'],
     [12, 'Organizing Committee'],
     [13, 'Organizing Committee'],
@@ -33,7 +37,22 @@ export const speakerToKind: Map<number, string> = new Map([
     [30, 'Invited Speakers'],
     [31, 'Invited Speakers'],
     [32, 'Invited Speakers'],
+    [127, 'Organizing Committee'],
 ]);
+
+export const speakerToKind2026: Map<number, string> = new Map([
+    [1, 'Keynote Speakers'],
+    [11, 'Keynote Speakers'],
+    [12, 'Keynote Speakers'],
+    [13, 'Keynote Speakers'],
+    [14, 'Keynote Speakers'],
+    [9, 'Organizing Committee'],
+    [10, 'Organizing Committee'],
+    [21, 'Organizing Committee'],
+    [28, 'Organizing Committee'],
+    [29, 'Organizing Committee'],
+    [127, 'Organizing Committee'],
+])
 
 export const keynoteSpeaker: Array<Speaker> = [
     {
@@ -168,6 +187,84 @@ export const keynoteSpeaker: Array<Speaker> = [
                 description: "server.Keynote Speakers.id4.description",
                 title: "server.Keynote Speakers.id4.title",
                 link: '/speakers/speaker/4 ShijinWang'
+            }
+        }
+    },
+];
+
+export const keynoteSpeaker2026: Array<Speaker> = [
+    {
+        id: 1,
+        name: "server.Keynote Speakers.id1.name",
+        kind: "Keynote Speakers",
+        inc: "server.Keynote Speakers.id1.inc",
+        photo: "avatars/Chi-Kin John.png",
+        activateDate: new Date("2026-05-09"),
+        bio: {
+            details: {
+                description: "server.Keynote Speakers.id1.description",
+                title: "server.Keynote Speakers.id1.title",
+                link: '/2026/speakers/speaker/1 ProfessorLEE,Chi-KinJohn'
+            }
+        }
+    },
+    {
+        id: 11,
+        name: "server.Keynote Speakers.id11.name",
+        kind: "Keynote Speakers",
+        inc: "server.Keynote Speakers.id11.inc",
+        photo: "avatars/Amanda Claybaugh.png",
+        activateDate: new Date("2026-05-09"),
+        bio: {
+            details: {
+                description: "server.Keynote Speakers.id11.description",
+                title: "server.Keynote Speakers.id11.title",
+                link: '/2026/speakers/speaker/11 AmandaClaybaugh'
+            }
+        }
+    },
+    {
+        id: 12,
+        name: "server.Keynote Speakers.id12.name",
+        kind: "Keynote Speakers",
+        inc: "server.Keynote Speakers.id12.inc",
+        photo: "avatars/Eric Klopfer.png",
+        activateDate: new Date("2026-05-09"),
+        bio: {
+            details: {
+                description: "server.Keynote Speakers.id12.description",
+                title: "server.Keynote Speakers.id12.title",
+                link: '/2026/speakers/speaker/12 EricKlopfer'
+            }
+        }
+    },
+    {
+        id: 13,
+        name: "server.Keynote Speakers.id13.name",
+        kind: "Keynote Speakers",
+        inc: "server.Keynote Speakers.id13.inc",
+        photo: "avatars/Mitchell Stevens.png",
+        activateDate: new Date("2026-05-09"),
+        bio: {
+            details: {
+                description: "server.Keynote Speakers.id13.description",
+                title: "server.Keynote Speakers.id13.title",
+                link: '/2026/speakers/speaker/13 MitchellStevens'
+            }
+        }
+    },
+    {
+        id: 14,
+        name: "server.Keynote Speakers.id14.name",
+        kind: "Keynote Speakers",
+        inc: "server.Keynote Speakers.id14.inc",
+        photo: "avatars/Mark Feldman.png",
+        activateDate: new Date("2026-05-09"),
+        bio: {
+            details: {
+                description: "server.Keynote Speakers.id14.description",
+                title: "server.Keynote Speakers.id14.title",
+                link: '/2026/speakers/speaker/14 MarkFeldman'
             }
         }
     },
@@ -1054,17 +1151,17 @@ export const organizingCommittee2026: Array<Speaker> = [
         }
     },
     {
-        id: 27,
-        name: "server.Organizing Committee.id6.name",
+        id: 127,
+        name: "server.Organizing Committee.id8.name",
         kind: "Organizing Committee",
-        inc: "server.Organizing Committee.id6.inc",
-        photo: "avatars/Yue Jia.png",
+        inc: "server.Organizing Committee.id8.inc",
+        photo: "avatars/Daner Sun.png",
         activateDate: new Date("2025-05-09"),
         bio: {
             details: {
-                description: "server.Organizing Committee.id6.description",
-                title: "server.Organizing Committee.id6.title",
-                link: '/2026/speakers/speaker/27 Yue Jia'
+                description: "server.Organizing Committee.id8.description",
+                title: "server.Organizing Committee.id8.title",
+                link: '/2026/speakers/speaker/127 Daner Sun'
             }
         }
     },

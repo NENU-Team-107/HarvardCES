@@ -1,11 +1,15 @@
-import { guestOfHonor, invitedSpeakers, keynoteSpeaker, organizingCommittee, speakerToKind } from "~/lib/data"
+import { guestOfHonor, invitedSpeakers, keynoteSpeaker, keynoteSpeaker2026, organizingCommittee, organizingCommittee2026, speakerToKind, speakerToKind2026 } from "~/lib/data"
 import type { ApiResponseWithSpeaker } from "~/lib/model"
 import type { H3Event } from 'h3';
 export default defineEventHandler(async (event: H3Event) => {
     const query = getQuery(event)
 
     const id = Number.parseInt(query.id as string)
-    const kind = speakerToKind.get(id)
+    const year = query.year as string
+    
+    // Use appropriate mapping based on year
+    const speakerMapping = year === '2026' ? speakerToKind2026 : speakerToKind
+    const kind = speakerMapping.get(id)
 
     const data: ApiResponseWithSpeaker = {
         status: "Error",
@@ -15,7 +19,9 @@ export default defineEventHandler(async (event: H3Event) => {
     switch (kind) {
         case "Keynote Speakers":
             {
-                const result = keynoteSpeaker.find(speaker => speaker.id === id)
+                // Use appropriate dataset based on year
+                const keynoteData = year === '2026' ? keynoteSpeaker2026 : keynoteSpeaker
+                const result = keynoteData.find(speaker => speaker.id === id)
                 if (result !== undefined) {
                     data.status = "Success"
                     data.data = result
@@ -24,7 +30,9 @@ export default defineEventHandler(async (event: H3Event) => {
             break
         case "Organizing Committee":
             {
-                const result = organizingCommittee.find(speaker => speaker.id === id)
+                // Use appropriate dataset based on year
+                const organizingData = year === '2026' ? organizingCommittee2026 : organizingCommittee
+                const result = organizingData.find(speaker => speaker.id === id)
                 if (result !== undefined) {
                     data.status = "Success"
                     data.data = result
