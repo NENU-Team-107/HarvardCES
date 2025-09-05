@@ -162,7 +162,6 @@ export const routerArray: Array<RouterItem> = [
                 year: 2026,
                 name: "2026",
                 path: "/"
-
             }
         ]
     },

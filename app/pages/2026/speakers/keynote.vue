@@ -49,14 +49,14 @@ onMounted(() => {
 const pending = ref(true);
 
 // TODO: 2026年内容待更新 - 确认主旨演讲者Logo是否需要更新
-const logos = ref([
-  "img/KeynoteSpeakerLogo/Harvar_shield_Education.png",
-  "img/KeynoteSpeakerLogo/Stanford_Graduate_School_of_Education.png",
-  "img/KeynoteSpeakerLogo/co-sklcilogo.png",
-  "img/KeynoteSpeakerLogo/SE-StanfordOnline.png",
-  "img/KeynoteSpeakerLogo/NTU_Logo.webp",
-  "img/KeynoteSpeakerLogo/Shandong_University.jpg",
-]);
+// const logos = ref([
+//   "img/KeynoteSpeakerLogo/Harvar_shield_Education.png",
+//   "img/KeynoteSpeakerLogo/Stanford_Graduate_School_of_Education.png",
+//   "img/KeynoteSpeakerLogo/co-sklcilogo.png",
+//   "img/KeynoteSpeakerLogo/SE-StanfordOnline.png",
+//   "img/KeynoteSpeakerLogo/NTU_Logo.webp",
+//   "img/KeynoteSpeakerLogo/Shandong_University.jpg",
+// ]);
 
 </script>
 
@@ -93,12 +93,13 @@ const logos = ref([
           <SpeakersIntroduction :speakers="speaker" class="mx-10 my-5 h-full " />
         </div>
       </div>
+      <!-- 学校图标部分已注释掉
       <div class="w-full h-full flex flex-col items-center justify-center justify-self-center">
         <div class="w-4/5 mx-10 my-5 grid grid-rows-1 grid-cols-6 items-center justify-center mt-10">
-          <!-- TODO: 2026年内容待更新 - 确认Logo图片是否需要更新 -->
           <NuxtImg v-for="logo in logos" :key="logo" :src="logo" class="h-16 mx-auto"/>
         </div>
       </div>
+      -->
     </div>
   </div>
 </template>
