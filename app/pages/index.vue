@@ -53,7 +53,7 @@ const title = ref({
   // workshop: "Activities"
   //   workshop: "Session"
 })
-const chosenKeynote = [1, 11, 12, 13, 14]
+const chosenKeynote = [15, 11, 12, 13, 14]
 
 const keyspeakersList = ref<Speaker[]>([])
 const organizeList = ref<Speaker[]>([])
@@ -191,7 +191,7 @@ onMounted(() => {
 
           <div class="w-full">
             <div class="font-bold text-xl md:pl-10 p-1">{{ $t("In collaboration with") }}</div>
-            <div>
+            <!-- <div>
               <div
                 class="grid grid-cols-2 md:grid-cols-3 mt-5 gap-0.5 w-full md:w-4/5 px-5 md:px-0 justify-self-center">
                 <div v-for="logo in logoList" :key="logo.path" class="flex w-full h-full  items-center justify-around">
@@ -200,6 +200,11 @@ onMounted(() => {
                   </NuxtLink>
                 </div>
               </div>
+            </div> -->
+            <div class="text-gray-500 italic px-10 py-4">
+              我们正站在科技与教育的交汇点，期待与更多志同道合的伙伴携手前行。<br>
+              我們正站在科技與教育的交匯點，期待與更多志同道合的夥伴攜手前行。<br>
+              We stand at the intersection of technology and education, and look forward to joining hands with like-minded partners on this journey forward.
             </div>
 
             <div class="text-center mt-4 text-sm">

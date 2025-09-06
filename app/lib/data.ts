@@ -41,7 +41,7 @@ export const speakerToKind: Map<number, string> = new Map([
 ]);
 
 export const speakerToKind2026: Map<number, string> = new Map([
-    [1, 'Keynote Speakers'],
+    [15, 'Keynote Speakers'],
     [11, 'Keynote Speakers'],
     [12, 'Keynote Speakers'],
     [13, 'Keynote Speakers'],
@@ -194,17 +194,17 @@ export const keynoteSpeaker: Array<Speaker> = [
 
 export const keynoteSpeaker2026: Array<Speaker> = [
     {
-        id: 1,
-        name: "server.Keynote Speakers.id1.name",
+        id: 15,
+        name: "server.Keynote Speakers.id15.name",
         kind: "Keynote Speakers",
-        inc: "server.Keynote Speakers.id1.inc",
+        inc: "server.Keynote Speakers.id15.inc",
         photo: "avatars/Chi-Kin John.png",
         activateDate: new Date("2026-05-09"),
         bio: {
             details: {
-                description: "server.Keynote Speakers.id1.description",
-                title: "server.Keynote Speakers.id1.title",
-                link: '/2026/speakers/speaker/1 ProfessorLEE,Chi-KinJohn'
+                description: "server.Keynote Speakers.id15.description",
+                title: "server.Keynote Speakers.id15.title",
+                link: '/2026/speakers/speaker/15 ProfessorLEE,Chi-KinJohn'
             }
         }
     },
