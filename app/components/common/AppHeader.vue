@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { ref } from "vue";
+import { ref, watch } from "vue";
 import LangSwitcher from "./LangSwitcher.vue";
 import type { RouterItem } from "~/lib/model";
 
@@ -30,11 +30,17 @@ const routers = ref<RouterItem[]>([]);
 
 const isMenuOpen = ref<boolean>(false);
 
-const submenu = ref(routers.value.map((_item: RouterItem) => {
-  return {
-    show: false
-  };
-}))
+const submenu = ref<{ show: boolean }[]>([]);
+
+// 初始化submenu状态
+const initSubmenu = () => {
+  submenu.value = routers.value.map(() => ({ show: false }));
+};
+
+// 监听routers变化，重新初始化submenu
+watch(routers, () => {
+  initSubmenu();
+}, { immediate: true });
 
 // 三级菜单状态管理
 const thirdLevelMenus = ref<{ [key: string]: boolean }>({});
@@ -197,34 +203,84 @@ onUnmounted(() => {
           </svg>
         </button>
       </div>
-      <!-- TODO: FIX mobile nav, the `submenu` send error -->
-      <!-- <div
-v-show="isMenuOpen"
-        class="absolute top-0 right-0 mt-16 w-48 bg-white  rounded shadow-lg md:hidden">
-        <div v-for="(item, index) in routers" :key="item.path" class="relative group text-lg font-semibold">
-          <div v-if="item.children" class="bg-white">
-            <span class="underline cursor-pointer block w-full px-4 py-2 text-gray-700" @click="handleSubMenu(index)">
-              {{ $t(item.name) }} 
-            </span>
-            <div v-if="submenu[index].show">
+      <!-- 移动端菜单 -->
+      <div
+        v-show="isMenuOpen"
+        class="absolute top-full left-0 right-0 w-full bg-white border-t border-gray-200 shadow-lg md:hidden z-50"
+      >
+        <div class="max-h-96 overflow-y-auto">
+          <div v-for="(item, index) in routers" :key="item.path" class="border-b border-gray-100 last:border-b-0">
+            <div v-if="item.children" class="bg-white">
+              <!-- 主菜单项链接 -->
+               <NuxtLink
+                 :to="item.path"
+                 class="block px-4 py-2 text-gray-700 hover:bg-gray-50 font-bold border-b border-gray-100"
+                 @click="closeMenu"
+               >
+                 {{ $t(item.name) }}
+               </NuxtLink>
+              <!-- 子菜单展开按钮 -->
+              <button 
+                class="w-full text-left px-4 py-2 text-gray-600 hover:bg-gray-50 flex items-center justify-between text-sm"
+                @click="handleSubMenu(index)"
+              >
+                <span>{{ $t('More Options') }}</span>
+                <svg 
+                  :class="[
+                    'w-4 h-4 transform transition-transform duration-200',
+                    submenu[index]?.show ? 'rotate-180' : 'rotate-0'
+                  ]" 
+                  fill="currentColor" 
+                  viewBox="0 0 20 20"
+                >
+                  <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </button>
+              <div v-if="submenu[index]?.show" class="bg-gray-50">
+                <div v-for="child in item.children" :key="child.path">
+                  <!-- 有三级菜单的二级菜单项 -->
+                  <div v-if="child.children" class="border-b border-gray-200 last:border-b-0">
+                    <div class="px-6 py-2 text-sm font-medium text-gray-600 bg-gray-100">
+                      {{ $t(child.name) }}
+                    </div>
+                    <NuxtLink
+                      v-for="grandchild in child.children" 
+                      :key="grandchild.path" 
+                      :to="grandchild.path"
+                      class="block px-8 py-2 text-sm text-gray-600 hover:bg-gray-100 hover:text-blue-600"
+                      @click="closeMenu"
+                    >
+                      {{ $t(grandchild.name) }}
+                    </NuxtLink>
+                  </div>
+                  <!-- 没有三级菜单的二级菜单项 -->
+                  <NuxtLink
+                    v-else
+                    :to="child.path"
+                    class="block px-6 py-2 text-sm text-gray-600 hover:bg-gray-100 hover:text-blue-600"
+                    @click="closeMenu"
+                  >
+                    {{ $t(child.name) }}
+                  </NuxtLink>
+                </div>
+              </div>
+            </div>
+            <div v-else>
               <NuxtLink
-v-for="child in item.children" :key="child.path" :to="child.path"
-                class="block px-4 py-2 text-gray-700 hover:bg-gray-100" @click="closeMenu">
-                <span class="text-sm">{{ $t(child.name) }}</span>
+                :to="item.path" 
+                class="block w-full px-4 py-3 text-gray-700 hover:bg-gray-50 font-medium"
+                @click="closeMenu"
+              >
+                {{ $t(item.name) }}
               </NuxtLink>
             </div>
           </div>
-          <div v-else>
-            <NuxtLink
-:to="item.path" class="underline cursor-pointer block w-full px-4 py-2 text-gray-700"
-              @click="closeMenu">
-              <span>{{ $t(item.name) }}</span>
-            </NuxtLink>
+          <!-- 语言切换器 -->
+          <div class="px-4 py-3 border-t border-gray-200 bg-gray-50">
+            <LangSwitcher />
           </div>
         </div>
-        <LangSwitcher />
-
-      </div> -->
+      </div>
     </div>
   </div>
 </template>

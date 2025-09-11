@@ -49,7 +49,18 @@ onMounted(() => {
     <div v-else class="w-4/5 flex justify-center items-center overflow-hidden mt-4">
       <UCarousel
 ref="coverRef" :items="slides"
-        :ui="{ item: 'basis-full lg:basis-full flex justify-center item-center' }" indicators>
+        :ui="{ item: 'basis-full lg:basis-full flex justify-center item-center' }"
+        :prev-button="{
+          color: 'gray',
+          icon: 'i-heroicons-arrow-left-20-solid',
+          class: 'hidden md:flex -start-12'
+        }"
+        :next-button="{
+          color: 'gray', 
+          icon: 'i-heroicons-arrow-right-20-solid',
+          class: 'hidden md:flex -end-12'
+        }"
+        indicators>
         <template #default="{ item }">
           <NuxtImg :src="item.src" fit="cover" draggable="false" class="w-11/12 box-shadow" />
         </template>

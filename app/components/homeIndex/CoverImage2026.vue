@@ -90,6 +90,34 @@ const handleSideImageClick = (targetIndex: number) => {
   currentIndex.value = targetIndex;
 };
 
+// 触摸滑动功能
+const touchStartX = ref(0);
+const touchEndX = ref(0);
+const minSwipeDistance = 50; // 最小滑动距离
+
+const handleTouchStart = (event: TouchEvent) => {
+  touchStartX.value = event.touches[0].clientX;
+};
+
+const handleTouchEnd = (event: TouchEvent) => {
+  touchEndX.value = event.changedTouches[0].clientX;
+  handleSwipe();
+};
+
+const handleSwipe = () => {
+  const swipeDistance = touchStartX.value - touchEndX.value;
+  
+  if (Math.abs(swipeDistance) > minSwipeDistance) {
+    if (swipeDistance > 0) {
+      // 向左滑动，显示下一张
+      nextSlide();
+    } else {
+      // 向右滑动，显示上一张
+      prevSlide();
+    }
+  }
+};
+
 onMounted(() => {
   // 预加载所有图片
   slides.forEach(slide => {
@@ -118,7 +146,9 @@ onUnmounted(() => {
     <!-- 层叠轮播容器 -->
     <div v-else class="w-full flex justify-center items-center mt-4 relative carousel-container" 
          @mouseenter="stopAutoPlay" 
-         @mouseleave="startAutoPlay">
+         @mouseleave="startAutoPlay"
+         @touchstart="handleTouchStart"
+         @touchend="handleTouchEnd">
       
       <!-- 图片层叠容器 -->
       <div class="relative w-full max-w-8xl h-[700px] flex items-center justify-center"> <!-- 调整高度从500px到700px -->
@@ -163,17 +193,17 @@ onUnmounted(() => {
           </div>
         </div>
         
-        <!-- 左右箭头 -->
+        <!-- 左右箭头 - 仅在桌面端显示 -->
         <button 
           @click="prevSlide" 
-          class="absolute left-8 top-1/2 transform -translate-y-1/2 bg-green-800 text-white p-4 rounded-full hover:bg-green-900 transition-all duration-300 z-20 hover:scale-110 shadow-lg border-2 border-white">
+          class="absolute left-8 top-1/2 transform -translate-y-1/2 bg-green-800 text-white p-4 rounded-full hover:bg-green-900 transition-all duration-300 z-20 hover:scale-110 shadow-lg border-2 border-white hidden md:block">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
           </svg>
         </button>
         <button 
           @click="nextSlide" 
-          class="absolute right-8 top-1/2 transform -translate-y-1/2 bg-green-800 text-white p-4 rounded-full hover:bg-green-900 transition-all duration-300 z-20 hover:scale-110 shadow-lg border-2 border-white">
+          class="absolute right-8 top-1/2 transform -translate-y-1/2 bg-green-800 text-white p-4 rounded-full hover:bg-green-900 transition-all duration-300 z-20 hover:scale-110 shadow-lg border-2 border-white hidden md:block">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
           </svg>

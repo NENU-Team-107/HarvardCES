@@ -5,11 +5,11 @@
 ref="carouselRef" :items="slides" :ui="{ item: 'basis-full lg:basis-1/3' }" :prev-button="{
         color: 'gray',
         icon: 'i-heroicons-arrow-left-20-solid',
-        class: '-start-12'
+        class: 'hidden md:flex -start-12'
       }" :next-button="{
         color: 'gray',
         icon: 'i-heroicons-arrow-right-20-solid',
-        class: '-end-12'
+        class: 'hidden md:flex -end-12'
       }" indicators>
         <template #default="{ item }">
           <div class="w-full flex justify-center items-center mb-6">
