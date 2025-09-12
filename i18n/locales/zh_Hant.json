@@ -7,6 +7,7 @@
   "Registration Sub": "註冊",
   "About": "論壇介紹",
   "Submit": "演講投稿",
+  "Archive": "歷屆論壇",
   "Contact": "關於我們",
   "About EdUHK": "關於香港教育大學",
   "About GIET": "關於全球新興技術研究所",
@@ -14,6 +15,20 @@
   "2nd Symposium (2026)": "第二屆論壇(2026)",
   "1st Symposium (2025)": "第一屆論壇(2025)",
   "Press Release, Photo and Video": "論壇新聞稿, 照片及視頻",
+  "Press Release": "新聞稿",
+  "Photos": "照片",
+  "Videos": "視頻",
+  "Video Not Supported Message": "您的瀏覽器不支持視頻播放。請升級您的瀏覽器或下載視頻文件觀看。",
+  "Video Description": "哈佛-香港教育大學-斯坦福聯合論壇精彩回顧",
+  "Download Video": "下載視頻",
+  "Press Card 1 Title": "論壇照片畫廊",
+  "Press Card 1 Description": "AAPSEF 官方照片畫廊，展示論壇精彩瞬間",
+  "Press Card 2 Title": "官方新聞稿",
+  "Press Card 2 Description": "香港教育大學官方新聞發布",
+  "Press Card 3 Title": "論壇活動詳情",
+  "Press Card 3 Description": "AAPSEF 論壇活動完整信息",
+  "Press Card 4 Title": "會議信息",
+  "Press Card 4 Description": "香港教育大學會議官方頁面",
   "Format and Submission": "格式及提交",
   "Important Dates": "重要日期",
   "Back": "返回",
@@ -622,7 +637,7 @@
         "description": "李子建教授是教育界傑出的學者和領導者，現任香港教育大學校長及課程與教學講座教授。他整個的職業生涯對課程和教學作出了重大貢獻，曾擔任香港教育大學學術及首席副校長，香港中文大學（中大）教育學院院長。曾獲中大頒發校長模範教學獎，擁有廣泛的研究背景，專注於多個教育領域。李子建教授的學術文獻廣獲徵引，積極帶領教育研究及發展項目，過往成功取得不少校外撥款。李子建教授身兼多份本地、區域及國際期刊的編輯委員會成員或顧問，著作甚豐，已出版及編輯逾二十五本著作。他的教育研究及發展項目屢獲殊榮，榮獲聯合國教科文組織區域教育發展與終身學習教席。",
         "name": "李子建教授",
         "title": "校長、課程與教學講座教授 <br> 聯合國教科文組織區域教育發展與終身學習教席 <br> 香港教育大學",
-        "inc": "香港教育大學"
+        "inc": "香港教育大學 <br> HES 論壇主席及顧問"
       },
       "id2": {
         "description": "王敏娟教授是新上任的香港教育大學新興技術與未來教育講座教授、全球新興技術研究所聯席院長，《IEEE學習技術學報》（IEEE TLT Journal）的主編。王敏娟教授的研究專長涉獵不同學科，尤其是在STEM教育、由新興科技實現的未來教育（學習創念及培育人類責任感）、元宇宙與沉浸式學習，以及人工智能（包括AIGC）在教學、學習和培訓的設計與實施。她是一位極具影響力的作家和国际知名學者，曾在超過45次會議上發表主題演講。她在Nature旗下HSSC期刊、《計算機與教育》（Computers & Education）、IEEE-TLT（Transactions on Learning Technologies）期刊、《英國教育技術期刊》（British Journal of Education Technology）和《教育技術與社會》（ETS (Education Technology and Society)）等檢索英文期刊上，發表過大量有影響力的文章。此外，她的教學和研究還被國內頂級核心期刊（如《教育研究》）收錄。作為IEEE教育學會的資深會員，她為IEEE和其他學術界做出了巨大貢獻。最近，她被哈佛大學的Chris Dede教授提名为在國際學術界有很高的知名度的iLRN Scholar（沉浸式學習研究協會學者）。",
@@ -812,6 +827,17 @@
         "name": "李子建教授",
         "title": "校長 <br> 課程與教學講席教授 <br> 聯合國教科文組織區域教育發展與終身學習教席",
         "inc": "香港教育大學",
+        "speaking": {
+          "inc": "",
+          "title": "",
+          "abstract": ""
+        }
+      },
+      "id16": {
+        "description": "Jamie Horsley是耶魯大學法學院蔡中曾中國中心的法律研究學者和高級研究員。她的項目工作與研究主要圍繞行政法，治理與監管改革等議題，包括推動政府透明度，公眾參與及政府問責機制。她曾是耶魯大學中國法律研究中心的執行總監。在加入耶魯大學之前，她曾是國際律師事務所寶維斯有限法律責任合夥律師行 ( PAUL, WEISS, RIFKIND, WHARTON & GARRISON LLP) 的合夥人；曾任美國駐北京及馬尼拉大使館的商務專員；曾任摩托羅拉國際公司 (Motorola International, Inc.) 的副總裁；以及卡特中心 (The Carter Center) 的中國村級選舉項目 (China Village Elections Project) 的顧問。她擁有史丹福大學的文學學士學位，密歇根大學的中國研究碩士學位，哈佛大學法學院的法學博士學位，以及東亞大學的中國法律文憑。她曾於2015年至2016年間擔任伍德羅·威爾遜國際學者中心 (Woodrow Wilson International Center for Scholars) 的研究員。",
+        "name": "Jamie P. Horsley",
+        "title": "高級研究員 <br> 蔡中曾中國中心 <br> 耶魯大學法學院",
+        "inc": "耶魯大學",
         "speaking": {
           "inc": "",
           "title": "",
@@ -1035,43 +1061,78 @@
     "Details": {
       "line1": {
         "title": "分論壇 1 主席",
-        "name": "陸吉健",
-        "inc": "杭州師範大學"
+        "name": "陳錦榮",
+        "inc": "香港教育大學"
       },
       "line2": {
-        "title": "分論壇 2 主席",
-        "name": "錢春雨",
-        "inc": "浙江大學"
-      },
-      "line3": {
-        "title": "分論壇 3 主席",
-        "name": "張陽",
-        "inc": "陝西師範大學"
-      },
-      "line4": {
-        "title": "分論壇 4 主席",
-        "name": "殷明浩",
+        "title": "分論壇 1 主席",
+        "name": "王默",
         "inc": "東北師範大學"
       },
+      "line3": {
+        "title": "分論壇 2 主席",
+        "name": "黃岳",
+        "inc": "香港教育大學"
+      },
+      "line4": {
+        "title": "分論壇 2 主席",
+        "name": "顧敏康",
+        "inc": "香港教育大學"
+      },
       "line5": {
-        "title": "分論壇 5 主席",
-        "name": "吳永和",
-        "inc": "華東師範大學"
+        "title": "分論壇 3 主席",
+        "name": "凌萬豪",
+        "inc": "香港教育大學"
       },
       "line6": {
-        "title": "分論壇 6 主席",
-        "name": "張越",
+        "title": "分論壇 3 主席",
+        "name": "王越",
         "inc": "香港教育大學"
       },
       "line7": {
-        "title": "分論壇7主席",
-        "name": "盧宇",
-        "inc": "北京師範大學"
+        "title": "分論壇 3 主席",
+        "name": "杜旭",
+        "inc": "華中科技大學"
       },
       "line8": {
-        "title": "分論壇 7 主席",
-        "name": "申靈靈",
-        "inc": "南京郵電大學"
+        "title": "分論壇 4 主席",
+        "name": "蓋會霞",
+        "inc": "香港教育大學"
+      },
+      "line9": {
+        "title": "分論壇 4 主席",
+        "name": "王遠",
+        "inc": "香港教育大學"
+      },
+      "line10": {
+        "title": "分論壇 4 主席",
+        "name": "劉錦東",
+        "inc": "香港教育大學"
+      },
+      "line11": {
+        "title": "分論壇 5 主席",
+        "name": "張越",
+        "inc": "香港教育大學"
+      },
+      "line12": {
+        "title": "分論壇 5 主席",
+        "name": "楚肖燕",
+        "inc": "浙江大學"
+      },
+      "line13": {
+        "title": "分論壇 5 主席",
+        "name": "楊娟",
+        "inc": "武漢科技大學"
+      },
+      "line14": {
+        "title": "分論壇 6 主席",
+        "name": "胡力心",
+        "inc": "香港教育大學"
+      },
+      "line15": {
+        "title": "分論壇 6 主席",
+        "name": "GIET團隊",
+        "inc": "香港教育大學"
       }
     }
   },
@@ -1120,6 +1181,10 @@
     "Details": {
       "line1": {
         "name": "馬清",
+        "inc": "香港教育大學"
+      },
+      "line2": {
+        "name": "楊茵",
         "inc": "香港教育大學"
       }
     }
@@ -1173,7 +1238,7 @@
       },
       "line3": {
         "name": "李志遠",
-        "inc": "香港大學"
+        "inc": "香港城市大學"
       },
       "line4": {
         "name": "吳龍凱",
@@ -1348,5 +1413,6 @@
         "inc": "南京師範大學"
       }
     }
-  }
+  },
+  "Call2026Notice": "2026--即將推出。以下為2025年分會供您參考。"
 }

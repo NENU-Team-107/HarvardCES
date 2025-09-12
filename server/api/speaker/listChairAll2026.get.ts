@@ -32,11 +32,11 @@ export default defineEventHandler(async (event: H3Event) => {
       'status': 'Success',
       'data': ChairListProgram2026
     };
-  } else if (query.kind === 'Workshop Chair') {
-    return {
-      'status': 'Success',
-      'data': ChairListWorkshop2026
-    };
+  // } else if (query.kind === 'Workshop Chair') {
+  //   return {
+  //     'status': 'Success',
+  //     'data': ChairListWorkshop2026
+  //   }; // 2026版本暂时隐藏工作坊主席
   } else if (query.kind === 'Publicity Chair') {
     return {
       'status': 'Success',
@@ -47,11 +47,11 @@ export default defineEventHandler(async (event: H3Event) => {
       'status': 'Success',
       'data': ChairListRegistration2026
     };
-  } else if (query.kind === 'Workshop Co-Chair') {
-    return {
-      'status': 'Success',
-      'data': ChairListWorkshopCo2026
-    };
+  // } else if (query.kind === 'Workshop Co-Chair') {
+  //   return {
+  //     'status': 'Success',
+  //     'data': ChairListWorkshopCo2026
+  //   }; // 2026版本暂时隐藏工作坊联席主席
   } else if (query.kind === 'Publicity Co-chair') {
     return {
       'status': 'Success',

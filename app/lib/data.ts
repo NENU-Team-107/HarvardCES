@@ -46,12 +46,16 @@ export const speakerToKind2026: Map<number, string> = new Map([
     [12, 'Keynote Speakers'],
     [13, 'Keynote Speakers'],
     [14, 'Keynote Speakers'],
+    [16, 'Keynote Speakers'],
     [9, 'Organizing Committee'],
     [10, 'Organizing Committee'],
     [21, 'Organizing Committee'],
     [28, 'Organizing Committee'],
     [29, 'Organizing Committee'],
     [127, 'Organizing Committee'],
+    [33, 'Organizing Committee'],
+    [34, 'Organizing Committee'],
+    [35, 'Organizing Committee'],
 ])
 
 export const keynoteSpeaker: Array<Speaker> = [
@@ -66,7 +70,7 @@ export const keynoteSpeaker: Array<Speaker> = [
             details: {
                 description: "server.Keynote Speakers.id3.description",
                 title: "server.Keynote Speakers.id3.title",
-                link: '/speakers/speaker/3 ChrisDede'
+                link: '/2025/speakers/speaker/3 ChrisDede'
             }
         }
     },
@@ -81,7 +85,7 @@ export const keynoteSpeaker: Array<Speaker> = [
             details: {
                 description: "server.Keynote Speakers.id9.description",
                 title: "server.Keynote Speakers.id9.title",
-                link: '/speakers/speaker/17 TinaGrotzer'
+                link: '/2025/speakers/speaker/17 TinaGrotzer'
             }
         }
     },
@@ -96,7 +100,7 @@ export const keynoteSpeaker: Array<Speaker> = [
             details: {
                 description: "server.Keynote Speakers.id7_paul.description",
                 title: "server.Keynote Speakers.id7_paul.title",
-                link: '/speakers/speaker/7 PaulKim'
+                link: '/2025/speakers/speaker/7 PaulKim'
             }
         }
     },
@@ -111,7 +115,7 @@ export const keynoteSpeaker: Array<Speaker> = [
             details: {
                 description: "server.Keynote Speakers.id1.description",
                 title: "server.Keynote Speakers.id1.title",
-                link: '/speakers/speaker/1 ProfessorLEE,Chi-KinJohn'
+                link: '/2025/speakers/speaker/1 ProfessorLEE,Chi-KinJohn'
             }
         }
     },
@@ -126,7 +130,7 @@ export const keynoteSpeaker: Array<Speaker> = [
             details: {
                 description: "server.Invited Speakers.id1.description",
                 title: "server.Invited Speakers.id1.title",
-                link: '/speakers/speaker/24 John Clifford Mitchell'
+                link: '/2025/speakers/speaker/24 John Clifford Mitchell'
             }
         }
     },
@@ -141,7 +145,7 @@ export const keynoteSpeaker: Array<Speaker> = [
             details: {
                 description: "server.Keynote Speakers.id6.description",
                 title: "server.Keynote Speakers.id6.title",
-                link: '/speakers/speaker/6 Yew-SoonOng'
+                link: '/2025/speakers/speaker/6 Yew-SoonOng'
             }
         }
     },
@@ -156,7 +160,7 @@ export const keynoteSpeaker: Array<Speaker> = [
             details: {
                 description: "server.Keynote Speakers.id2.description",
                 title: "server.Keynote Speakers.id2.title",
-                link: '/speakers/speaker/2 RenYouqun'
+                link: '/2025/speakers/speaker/2 RenYouqun'
             }
         }
     },
@@ -171,7 +175,7 @@ export const keynoteSpeaker: Array<Speaker> = [
             details: {
                 description: "server.Keynote Speakers.id5.description",
                 title: "server.Keynote Speakers.id5.title",
-                link: '/speakers/speaker/5 MinjuanWANG'
+                link: '/2025/speakers/speaker/5 MinjuanWANG'
             }
         }
     },
@@ -186,7 +190,7 @@ export const keynoteSpeaker: Array<Speaker> = [
             details: {
                 description: "server.Keynote Speakers.id4.description",
                 title: "server.Keynote Speakers.id4.title",
-                link: '/speakers/speaker/4 ShijinWang'
+                link: '/2025/speakers/speaker/4 ShijinWang'
             }
         }
     },
@@ -265,6 +269,21 @@ export const keynoteSpeaker2026: Array<Speaker> = [
                 description: "server.Keynote Speakers.id14.description",
                 title: "server.Keynote Speakers.id14.title",
                 link: '/2026/speakers/speaker/14 MarkFeldman'
+            }
+        }
+    },
+    {
+        id: 16,
+        name: "server.Keynote Speakers.id16.name",
+        kind: "Keynote Speakers",
+        inc: "server.Keynote Speakers.id16.inc",
+        photo: "avatars/Jamie P. Horsley.png",
+        activateDate: new Date("2026-05-09"),
+        bio: {
+            details: {
+                description: "server.Keynote Speakers.id16.description",
+                title: "server.Keynote Speakers.id16.title",
+                link: '/2026/speakers/speaker/16 JamiePHorsley'
             }
         }
     },
@@ -420,7 +439,7 @@ export const guestOfHonor: Array<Speaker> = [
             details: {
                 description: "server.Guest of Honor.id2.description",
                 title: "server.Guest of Honor.id2.title",
-                link: '/speakers/speaker/15 CHENG,MayHung'
+                link: '/2025/speakers/speaker/15 CHENG,MayHung'
             }
         }
     },
@@ -435,7 +454,7 @@ export const guestOfHonor: Array<Speaker> = [
             details: {
                 description: "server.Guest of Honor.id3.description",
                 title: "server.Guest of Honor.id3.title",
-                link: '/speakers/speaker/16 CHAN,CheHinChetwyn'
+                link: '/2025/speakers/speaker/16 CHAN,CheHinChetwyn'
             }
         }
     },
@@ -450,7 +469,7 @@ export const guestOfHonor: Array<Speaker> = [
             details: {
                 description: "server.Guest of Honor.id1.description",
                 title: "server.Guest of Honor.id1.title",
-                link: '/speakers/speaker/14 AnnyChan'
+                link: '/2025/speakers/speaker/14 AnnyChan'
             }
         }
     },
@@ -468,7 +487,7 @@ export const invitedSpeakers: Array<Speaker> = [
             details: {
                 description: "server.Invited Speakers.id2.description",
                 title: "server.Invited Speakers.id2.title",
-                link: '/speakers/speaker/18 Qing LI'
+                link: '/2025/speakers/speaker/18 Qing LI'
             }
         }
     },
@@ -483,7 +502,7 @@ export const invitedSpeakers: Array<Speaker> = [
             details: {
                 description: "server.Invited Speakers.id3.description",
                 title: "server.Invited Speakers.id3.title",
-                link: '/speakers/speaker/19 Ju SeongLee'
+                link: '/2025/speakers/speaker/19 Ju SeongLee'
             }
         }
     },
@@ -499,7 +518,7 @@ export const invitedSpeakers: Array<Speaker> = [
             details: {
                 description: "server.Invited Speakers.id4.description",
                 title: "server.Invited Speakers.id4.title",
-                link: '/speakers/speaker/20 Anny Chan'
+                link: '/2025/speakers/speaker/20 Anny Chan'
             }
         }
     },
@@ -515,7 +534,7 @@ export const invitedSpeakers: Array<Speaker> = [
             details: {
                 description: "server.Invited Speakers.id6.description",
                 title: "server.Invited Speakers.id6.title",
-                link: '/speakers/speaker/22 Fridolin Ting'
+                link: '/2025/speakers/speaker/22 Fridolin Ting'
             }
         }
     },
@@ -530,7 +549,7 @@ export const invitedSpeakers: Array<Speaker> = [
             details: {
                 description: "server.Invited Speakers.id7_paul.description",
                 title: "server.Invited Speakers.id7_paul.title",
-                link: '/speakers/speaker/23 PaulKim'
+                link: '/2025/speakers/speaker/23 PaulKim'
             }
         }
     },
@@ -545,7 +564,7 @@ export const invitedSpeakers: Array<Speaker> = [
             details: {
                 description: "server.Invited Speakers.id8.description",
                 title: "server.Invited Speakers.id8.title",
-                link: '/speakers/speaker/25 Mutlu Cukurova'
+                link: '/2025/speakers/speaker/25 Mutlu Cukurova'
             }
         }
     },
@@ -560,7 +579,7 @@ export const invitedSpeakers: Array<Speaker> = [
             details: {
                 description: "server.Invited Speakers.id9.description",
                 title: "server.Invited Speakers.id9.title",
-                link: '/speakers/speaker/26 Weipeng Yang'
+                link: '/2025/speakers/speaker/26 Weipeng Yang'
             }
         }
     },
@@ -575,7 +594,7 @@ export const invitedSpeakers: Array<Speaker> = [
             details: {
                 description: "server.Keynote Speakers.id8.description",
                 title: "server.Keynote Speakers.id8.title",
-                link: '/speakers/speaker/8 Jonathon Ritcher'
+                link: '/2025/speakers/speaker/8 Jonathon Ritcher'
             }
         }
     },
@@ -590,7 +609,7 @@ export const invitedSpeakers: Array<Speaker> = [
             details: {
                 description: "server.Invited Speakers.id10.description",
                 title: "server.Invited Speakers.id10.title",
-                link: '/speakers/speaker/30 Ping Li'
+                link: '/2025/speakers/speaker/30 Ping Li'
             }
         }
     },
@@ -605,7 +624,7 @@ export const invitedSpeakers: Array<Speaker> = [
             details: {
                 description: "server.Invited Speakers.id11.description",
                 title: "server.Invited Speakers.id11.title",
-                link: '/speakers/speaker/31 Alberto Sols'
+                link: '/2025/speakers/speaker/31 Alberto Sols'
             }
         }
     },
@@ -620,7 +639,7 @@ export const invitedSpeakers: Array<Speaker> = [
             details: {
                 description: "server.Invited Speakers.id12.description",
                 title: "server.Invited Speakers.id12.title",
-                link: '/speakers/speaker/32 CHIU Kin-fung Thomas'
+                link: '/2025/speakers/speaker/32 CHIU Kin-fung Thomas'
             }
         }
     }
@@ -692,49 +711,49 @@ export const SubSymposiumPoster: Array<Poster> = [
         name: 'Sub-symposium1',
         path: 'img/poster/Sub-symposium1.jpg',
         callPath: "server.Poster.id0",
-        link: 'sub-symposium/0'
+        link: '/2025/sub-symposium/0'
     },
     {
         id: 1,
         name: 'Sub-symposium2',
         path: 'img/poster/Sub-symposium2.jpg',
         callPath: "server.Poster.id1",
-        link: 'sub-symposium/1'
+        link: '/2025/sub-symposium/1'
     },
     {
         id: 2,
         name: 'Sub-symposium3',
         path: 'img/poster/Sub-symposium3.jpg',
         callPath: "server.Poster.id2",
-        link: 'sub-symposium/2'
+        link: '/2025/sub-symposium/2'
     },
     {
         id: 3,
         name: 'Sub-symposium4',
         path: 'img/poster/Sub-symposium4.jpg',
         callPath: "server.Poster.id3",
-        link: 'sub-symposium/3'
+        link: '/2025/sub-symposium/3'
     },
     {
         id: 4,
         name: 'Sub-symposium5',
         path: 'img/poster/Sub-symposium5.jpg',
         callPath: "server.Poster.id4",
-        link: 'sub-symposium/4'
+        link: '/2025/sub-symposium/4'
     },
     {
         id: 5,
         name: 'Sub-symposium6',
         path: 'img/poster/Sub-symposium6.jpg',
         callPath: "server.Poster.id5",
-        link: 'sub-symposium/5'
+        link: '/2025/sub-symposium/5'
     },
     {
         id: 6,
         name: 'Sub-symposium7',
         path: 'img/poster/Sub-symposium7.jpg',
         callPath: "server.Poster.id6",
-        link: 'sub-symposium/6'
+        link: '/2025/sub-symposium/6'
     }
 ]
 
@@ -781,6 +800,10 @@ export const ChairListProgram: Array<ChairListItem> = [
     {
         "name": "Program Chair.Details.line1.name",
         "inc": "Program Chair.Details.line1.inc"
+    },
+    {
+        "name": "Program Chair.Details.line2.name",
+        "inc": "Program Chair.Details.line2.inc"
     },
 ];
 
@@ -1061,7 +1084,7 @@ export const organizingCommittee2026: Array<Speaker> = [
         }
     },
     {
-        id: 12,
+        id: 35,
         name: "server.Organizing Committee.id4.name",
         kind: "Organizing Committee",
         inc: "server.Organizing Committee.id4.inc",
@@ -1071,12 +1094,12 @@ export const organizingCommittee2026: Array<Speaker> = [
             details: {
                 description: "server.Organizing Committee.id4.description",
                 title: "server.Organizing Committee.id4.title",
-                link: '/2026/speakers/speaker/12 AnnyChan'
+                link: '/2026/speakers/speaker/35 陈康琪'
             }
         }
     },
     {
-        id: 13,
+        id: 33,
         name: "server.Organizing Committee.id5.name",
         kind: "Organizing Committee",
         inc: "server.Organizing Committee.id5.inc",
@@ -1086,12 +1109,12 @@ export const organizingCommittee2026: Array<Speaker> = [
             details: {
                 description: "server.Organizing Committee.id5.description",
                 title: "server.Organizing Committee.id5.title",
-                link: '/2026/speakers/speaker/13 Xuefan Li'
+                link: '/2026/speakers/speaker/33 李学凡'
             }
         }
     },
     {
-        id: 11,
+        id: 34,
         name: "server.Organizing Committee.id3.name",
         kind: "Organizing Committee",
         inc: "server.Organizing Committee.id3.inc",
@@ -1101,7 +1124,7 @@ export const organizingCommittee2026: Array<Speaker> = [
             details: {
                 description: "server.Organizing Committee.id3.description",
                 title: "server.Organizing Committee.id3.title",
-                link: '/2026/speakers/speaker/11 RongbingShen'
+                link: '/2026/speakers/speaker/34 沈容冰'
             }
         }
     },
@@ -1169,39 +1192,79 @@ export const organizingCommittee2026: Array<Speaker> = [
 
 export const ChairListParallel2026: Array<ChairListItem> = [
     {
-        "title": "",
-        "name": "",
-        "inc": ""
+        "title": "Chair of Parallel session.Details.line1.title",
+        "name": "Chair of Parallel session.Details.line1.name",
+        "inc": "Chair of Parallel session.Details.line1.inc"
     },
     {
-        "title": "",
-        "name": "",
-        "inc": ""
+        "title": "Chair of Parallel session.Details.line2.title",
+        "name": "Chair of Parallel session.Details.line2.name",
+        "inc": "Chair of Parallel session.Details.line2.inc"
     },
     {
-        "title": "",
-        "name": "",
-        "inc": ""
+        "title": "Chair of Parallel session.Details.line3.title",
+        "name": "Chair of Parallel session.Details.line3.name",
+        "inc": "Chair of Parallel session.Details.line3.inc"
     },
     {
-        "title": "",
-        "name": "",
-        "inc": ""
+        "title": "Chair of Parallel session.Details.line4.title",
+        "name": "Chair of Parallel session.Details.line4.name",
+        "inc": "Chair of Parallel session.Details.line4.inc"
     },
     {
-        "title": "",
-        "name": "",
-        "inc": ""
+        "title": "Chair of Parallel session.Details.line5.title",
+        "name": "Chair of Parallel session.Details.line5.name",
+        "inc": "Chair of Parallel session.Details.line5.inc"
     },
     {
-        "title": "",
-        "name": "",
-        "inc": ""
+        "title": "Chair of Parallel session.Details.line6.title",
+        "name": "Chair of Parallel session.Details.line6.name",
+        "inc": "Chair of Parallel session.Details.line6.inc"
     },
     {
-        "title": "",
-        "name": "",
-        "inc": ""
+        "title": "Chair of Parallel session.Details.line7.title",
+        "name": "Chair of Parallel session.Details.line7.name",
+        "inc": "Chair of Parallel session.Details.line7.inc"
+    },
+    {
+        "title": "Chair of Parallel session.Details.line8.title",
+        "name": "Chair of Parallel session.Details.line8.name",
+        "inc": "Chair of Parallel session.Details.line8.inc"
+    },
+    {
+        "title": "Chair of Parallel session.Details.line9.title",
+        "name": "Chair of Parallel session.Details.line9.name",
+        "inc": "Chair of Parallel session.Details.line9.inc"
+    },
+    {
+        "title": "Chair of Parallel session.Details.line10.title",
+        "name": "Chair of Parallel session.Details.line10.name",
+        "inc": "Chair of Parallel session.Details.line10.inc"
+    },
+    {
+        "title": "Chair of Parallel session.Details.line11.title",
+        "name": "Chair of Parallel session.Details.line11.name",
+        "inc": "Chair of Parallel session.Details.line11.inc"
+    },
+    {
+        "title": "Chair of Parallel session.Details.line12.title",
+        "name": "Chair of Parallel session.Details.line12.name",
+        "inc": "Chair of Parallel session.Details.line12.inc"
+    },
+    {
+        "title": "Chair of Parallel session.Details.line13.title",
+        "name": "Chair of Parallel session.Details.line13.name",
+        "inc": "Chair of Parallel session.Details.line13.inc"
+    },
+    {
+        "title": "Chair of Parallel session.Details.line14.title",
+        "name": "Chair of Parallel session.Details.line14.name",
+        "inc": "Chair of Parallel session.Details.line14.inc"
+    },
+    {
+        "title": "Chair of Parallel session.Details.line15.title",
+        "name": "Chair of Parallel session.Details.line15.name",
+        "inc": "Chair of Parallel session.Details.line15.inc"
     },
 ];
 
@@ -1209,6 +1272,10 @@ export const ChairListProgram2026: Array<ChairListItem> = [
     {
         "name": "Program Chair.Details.line1.name",
         "inc": "Program Chair.Details.line1.inc"
+    },
+    {
+        "name": "Program Chair.Details.line2.name",
+        "inc": "Program Chair.Details.line2.inc"
     },
 ];
 
@@ -1259,16 +1326,16 @@ export const ChairListLocalParallel2026: Array<ChairListItem> = [
         "name": "Local Chair of Parallel session.Details.line5.name",
         "inc": "Local Chair of Parallel session.Details.line5.inc"
     },
-    {
-        "title": "Local Chair of Parallel session.Details.line6.title",
-        "name": "Local Chair of Parallel session.Details.line6.name",
-        "inc": "Local Chair of Parallel session.Details.line6.inc"
-    },
-    {
-        "title": "Local Chair of Parallel session.Details.line7.title",
-        "name": "Local Chair of Parallel session.Details.line7.name",
-        "inc": "Local Chair of Parallel session.Details.line7.inc"
-    },
+    // {
+    //     "title": "Local Chair of Parallel session.Details.line6.title",
+    //     "name": "Local Chair of Parallel session.Details.line6.name",
+    //     "inc": "Local Chair of Parallel session.Details.line6.inc"
+    // }, // 2026版本暂时隐藏Local Chair of Parallel Session 6 (LIN Dan, YAN Jing)
+    // {
+    //     "title": "Local Chair of Parallel session.Details.line7.title",
+    //     "name": "Local Chair of Parallel session.Details.line7.name",
+    //     "inc": "Local Chair of Parallel session.Details.line7.inc"
+    // }, // 2026版本暂时隐藏Local Chair of Parallel Session 7 (KWOK Ching Man Christine, Singh Manpreet)
 ];
 
 export const ChairListWorkshopCo2026: Array<ChairListItem> = [

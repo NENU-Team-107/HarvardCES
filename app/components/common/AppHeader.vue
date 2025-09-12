@@ -26,6 +26,13 @@ onBeforeMount(() => {
   routerArray(year);
 });
 
+// 监听路由变化，当年份改变时重新加载导航栏
+watch(() => route.path, (newPath) => {
+  const currentYear = newPath.split('/')[1] || '2026';
+  const year = parseInt(currentYear);
+  routerArray(year);
+}, { immediate: false });
+
 const routers = ref<RouterItem[]>([]);
 
 const isMenuOpen = ref<boolean>(false);

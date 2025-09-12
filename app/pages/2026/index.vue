@@ -54,7 +54,7 @@ const title = ref({
   //   workshop: "Session"
 })
 
-const chosenKeynote = [15, 11, 12, 13, 14]
+const chosenKeynote = [15, 11, 12, 13, 14, 16]
 
 const keyspeakersList = ref<Speaker[]>([])
 const organizeList = ref<Speaker[]>([])

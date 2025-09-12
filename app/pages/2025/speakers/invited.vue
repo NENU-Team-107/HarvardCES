@@ -37,7 +37,7 @@ onMounted(() => {
                 speaker.photo = window.URL.createObjectURL(image)
                 const path = speaker.bio.details.link?.split('/')
                 if (path) {
-                    speaker.bio.details.link = '/speakers/speaker/' + path[path.length - 1]
+                    speaker.bio.details.link = '/2025/speakers/speaker/' + path[path.length - 1]
                 }
             }
             pending.value = false;

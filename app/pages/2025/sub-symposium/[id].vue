@@ -21,6 +21,19 @@ const notifyddl = computed(() => {
 
 <template>
   <div class="max-w-5xl mx-10 my-5 pt-24">
+    <!-- 返回按钮 -->
+    <div class="mb-4">
+      <UButton 
+        icon="i-heroicons-arrow-left-20-solid" 
+        color="gray" 
+        variant="ghost" 
+        @click="$router.back()"
+        class="hover:bg-gray-100"
+      >
+        {{ $t('Back') }}
+      </UButton>
+    </div>
+    
     <div
       class="md:flex flex-col px-8 md:px-16 bg-white/50 py-10 h-full w-full shadow-2xl  border-1 rounded-lg self-center relative hidden">
 
@@ -73,6 +86,18 @@ const notifyddl = computed(() => {
     </div>
 
     <div class="md:hidden">
+      <!-- 移动端返回按钮 -->
+      <div class="mb-4">
+        <UButton 
+          icon="i-heroicons-arrow-left-20-solid" 
+          color="gray" 
+          variant="ghost" 
+          @click="$router.back()"
+          class="hover:bg-gray-100"
+        >
+          {{ $t('Back') }}
+        </UButton>
+      </div>
 
       <div class="justify-between">
         <div class="text-orange-500 text-xl font-bold">

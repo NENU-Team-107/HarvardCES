@@ -42,7 +42,7 @@ onMounted(() => {
 const columns = computed(() => {
   if (props.flag)
     return [{ key: 'title', id: 'title', }, { key: 'name', id: 'name', }, { key: 'inc', id: 'inc', }];
-  return [{ key: 'name', id: 'name', }, { key: 'inc', id: 'name', }];
+  return [{ key: 'name', id: 'name', }, { key: 'inc', id: 'inc', }];
 });
 
 </script>

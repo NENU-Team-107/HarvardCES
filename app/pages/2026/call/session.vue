@@ -96,6 +96,7 @@ watchEffect(() => {
             <h1 class="mx-4">{{ $t("Sub-symposium Sessions Submit") }} </h1>
             <div class="h-0.5 w-20 bg-black"/>
           </div>
+          <p class="text-gray-500 text-sm font-normal mt-3">{{ $t('Call2026Notice') }}</p>
         </div>
         <div class="text-red-500/90 text-base mb-2">
           <strong><i>{{ $t("Due") }}</i></strong>
@@ -136,6 +137,7 @@ watchEffect(() => {
         <h1 class="text-center font-bold py-3">
           {{ $t("Sub-symposium Sessions Submit") }}
         </h1>
+        <p class="text-gray-500 text-xs font-normal text-center mb-2">{{ $t('Call2026Notice') }}</p>
         <h2 class="text-red-500/90 text-sm">
           <strong><i>{{ $t("Due") }}</i></strong>
         </h2>

@@ -19,9 +19,9 @@ const fetchSpeakers = async () => {
 const kinds = ref([
   { name: "Chair of Parallel session", flag: true },
   { name: "Program Chair", flag: false },
-  { name: "Workshop Chair", flag: false },
+  // { name: "Workshop Chair", flag: false }, // 2026版本暂时隐藏工作坊主席
   { name: "Local Chair of Parallel session", flag: true },
-  { name: "Workshop Co-Chair", flag: false },
+  // { name: "Workshop Co-Chair", flag: false }, // 2026版本暂时隐藏工作坊联席主席
   { name: "Publicity Co-chair", flag: false },
   { name: "Outreach Co-Chair", flag: false },
   { name: "Logistics Support", flag: false },

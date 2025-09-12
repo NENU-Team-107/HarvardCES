@@ -5,6 +5,21 @@
   "2nd Symposium (2026)": "2nd Symposium (2026)",
   "1st Symposium (2025)": "1st Symposium (2025)",
   "Press Release, Photo and Video": "Press Release, Photo and Video",
+  "Press Release": "Press Release",
+  "Photos": "Photos",
+  "Videos": "Videos",
+  "Video Not Supported Message": "Your browser does not support video playback. Please upgrade your browser or download the video file to watch.",
+  "Video Description": "Harvard-EdUHK-Stanford Joint Symposium Highlights",
+  "Download Video": "Download Video",
+  "Press Card 1 Title": "Forum Photo Gallery",
+  "Press Card 1 Description": "AAPSEF official photo gallery showcasing symposium highlights",
+  "Press Card 2 Title": "Official Press Release",
+  "Press Card 2 Description": "The Education University of Hong Kong official news release",
+  "Press Card 3 Title": "Symposium Event Details",
+  "Press Card 3 Description": "AAPSEF complete symposium event information",
+  "Press Card 4 Title": "Conference Information",
+  "Press Card 4 Description": "The Education University of Hong Kong official conference page",
+  "Archive": "Archive",
   "Format and Submission": "Format and Submission",
   "Important Dates": "Important Dates",
   "Home": "Home",
@@ -103,43 +118,78 @@
     "Details": {
       "line1": {
         "title": "Chair of Parallel Session 1",
-        "name": "LU Jijian",
-        "inc": "Hangzhou Normal University"
+        "name": "ERNI, John Nguyet",
+        "inc": "The Education University of Hong Kong"
       },
       "line2": {
-        "title": "Chair of Parallel Session 2",
-        "name": "QIAN Chunyu",
-        "inc": "Zhejiang University"
-      },
-      "line3": {
-        "title": "Chair of Parallel Session 3",
-        "name": "ZHANG Yang",
-        "inc": "Shaanxi Normal University"
-      },
-      "line4": {
-        "title": "Chair of Parallel Session 4",
-        "name": "YIN Minghao",
+        "title": "Chair of Parallel Session 1",
+        "name": "WANG Mo",
         "inc": "Northeast Normal University"
       },
+      "line3": {
+        "title": "Chair of Parallel Session 2",
+        "name": "HUANG Yue Andrew",
+        "inc": "The Education University of Hong Kong"
+      },
+      "line4": {
+        "title": "Chair of Parallel Session 2",
+        "name": "GU Minkang",
+        "inc": "The Education University of Hong Kong"
+      },
       "line5": {
-        "title": "Chair of Parallel Session 5",
-        "name": "WU Yonghe",
-        "inc": "East China Normal University"
+        "title": "Chair of Parallel Session 3",
+        "name": "LING Man Ho",
+        "inc": "The Education University of Hong Kong"
       },
       "line6": {
-        "title": "Chair of Parallel Session 6",
-        "name": "ZHANG Yue",
+        "title": "Chair of Parallel Session 3",
+        "name": "WANG Yue",
         "inc": "The Education University of Hong Kong"
       },
       "line7": {
-        "title": "Chair of Parallel Session 7",
-        "name": "LU Yu",
-        "inc": "Beijing Normal University"
+        "title": "Chair of Parallel Session 3",
+        "name": "DU Xu",
+        "inc": "Huazhong University of Science and Technology"
       },
       "line8": {
-        "title": "Chair of Parallel Session 7",
-        "name": "SHEN Lingling",
-        "inc": "Nanjing University of Posts and Telecommunications"
+        "title": "Chair of Parallel Session 4",
+        "name": "GAI Huixia Helen",
+        "inc": "The Education University of Hong Kong"
+      },
+      "line9": {
+        "title": "Chair of Parallel Session 4",
+        "name": "WANG Yuan",
+        "inc": "The Education University of Hong Kong"
+      },
+      "line10": {
+        "title": "Chair of Parallel Session 4",
+        "name": "LIU Jindong Leo",
+        "inc": "The Education University of Hong Kong"
+      },
+      "line11": {
+        "title": "Chair of Parallel Session 5",
+        "name": "ZHANG Yue",
+        "inc": "The Education University of Hong Kong"
+      },
+      "line12": {
+        "title": "Chair of Parallel Session 5",
+        "name": "CHU Xiaoyan",
+        "inc": "Zhejiang University"
+      },
+      "line13": {
+        "title": "Chair of Parallel Session 5",
+        "name": "YANG Juan",
+        "inc": "Wuhan University of Science and Technology"
+      },
+      "line14": {
+        "title": "Chair of Parallel Session 6",
+        "name": "HU Lixin Harry",
+        "inc": "The Education University of Hong Kong"
+      },
+      "line15": {
+        "title": "Chair of Parallel Session 6",
+        "name": "GIET Team",
+        "inc": "The Education University of Hong Kong"
       }
     }
   },
@@ -189,6 +239,10 @@
       "line1": {
         "name": "MA Qing",
         "inc": "The Education University of Hong Kong"
+      },
+      "line2": {
+        "name": "YANG Yin Nicole",
+        "inc": "The Education University of Hong Kong"
       }
     }
   },
@@ -232,7 +286,7 @@
     "Name": "Publicity Co-chair",
     "Details": {
       "line1": {
-        "name": "CHAN Henry",
+        "name": "CHAN Chun Bun Henry",
         "inc": "The Hong Kong Polytechnic University"
       },
       "line2": {
@@ -240,8 +294,8 @@
         "inc": "East China Normal University"
       },
       "line3": {
-        "name": "LEI Chi Un  Leon",
-        "inc": "The University of Hong Kong"
+        "name": "LEI Chi Un Leon",
+        "inc": "City University of Hong Kong"
       },
       "line4": {
         "name": "WU Longkai",
@@ -976,7 +1030,7 @@
         "description": "Professor Chi-Kin John Lee is a distinguished academic and leader in education, currently serving as President and Chair Professor at The Education University of Hong Kong. His career is marked by significant contributions to curriculum and instruction, including roles as Vice President (Academic) and Provost. Former Dean of Education and a recipient of the Vice-Chancellor’s Exemplary Teaching Award at The Chinese University of Hong Kong (CUHK). Professor Lee has an extensive research background with a focus on various educational areas. He is a top-cited scientist and has secured numerous grants for his projects. Professor Lee is an active member of several editorial boards, has authored and co-edited over 25 books, and has been involved in education and social services locally, nationally and globally. His projects have won awards, and he has held various prestigious positions, including Changjiang Scholar Chair Professor, UNESCO Chair and membership in the Chinese People’s Political Consultative Conference.",
         "name": "Professor John Chi-Kin Lee",
         "title": "President; Chair Professor of Curriculum and Instruction <br> UNESCO Chair in Regional Education Development and Lifelong Learning <br> The Education University of Hong Kong",
-        "inc": "The Education University of Hong Kong"
+        "inc": "The Education University of Hong Kong <br> HES Symposium Chair and Advisor"
       },
       "id2": {
         "description": "Dr. Minjuan Wang is a newly appointed Chair Professor of Emerging and Technologies and Future Education at the Education University of Hong Kong, GIET Co-Director, and Editor-in-Chief of the IEEE Transactions on Learning Technologies (TLT). Her research specialties are multidisciplinary, focusing on STEM Education, Future Education enabled by new and emerging technologies, Metaverse and immersive learning, and the design and implementation of artificial intelligence including AIGC for teaching, learning and training. Professor Wang is a high-impact author and an internationally recognized scholar who has keynoted more than 45 conferences. She publishes extensively in indexed and high-impact English journals such as Nature-HSSC, Computers and Education, IEEE-TLT, and British Journal of Education Technology. In addition, her teaching and research were also featured in top core journals in China (e.g., Educational Research). As a senior member of the IEEE Education Society, she has contributed significantly to both the IEEE community and other scholarly circles. Her international reputation in the field is evident, reflected in her recent nomination as an iLRN scholar by Chris Dede from Harvard University. ",
@@ -1161,6 +1215,17 @@
         "name": "Professor John Chi-Kin Lee",
         "title": "President <br> Chair Professor of Curriculum and Instruction <br> UNESCO Chair in Regional Education Development and Lifelong Learning",
         "inc": "The Education University of Hong Kong",
+        "speaking": {
+          "inc": "",
+          "title": "",
+          "abstract": ""
+        }
+      },
+      "id16": {
+        "description": "Jamie Horsley is a Research Scholar in Law and Senior Fellow of the Paul Tsai China Center at Yale Law School. Her project work and research revolve primarily around issues of administrative law, governance and regulatory reform, including promoting government transparency, public participation and government accountability. She was formerly Executive Director of the Yale China Law Center. Prior to joining Yale, she was a partner in the international law firm of Paul, Weiss, Rifkind, Wharton & Garrison; Commercial Attaché in the U.S. Embassies in Beijing and Manila; Vice President of Motorola International, Inc.; and a consultant to The Carter Center’s China Village Elections Project. She holds a B.A. from Stanford University, an M.A. in Chinese Studies from the University of Michigan, a J.D. from Harvard Law School, and a Diploma in Chinese Law from the University of East Asia. She was a Fellow at the Woodrow Wilson International Center for Scholars for 2015-2016.",
+        "name": "Jamie P. Horsley",
+        "title": "Senior Fellow <br> Paul Tsai China Center <br> Yale Law School",
+        "inc": "Yale University",
         "speaking": {
           "inc": "",
           "title": "",
@@ -1449,5 +1514,6 @@
       "speaker": "<a href='/speakers/speaker/22 Fridolin Ting'>Dr. Fridolin TING</a>(also the symposium Keynote speaker) <br> <a href='/speakers/speaker/7 PaulKim'>Dr. Paul Kim </a>(also the symposium Keynote speaker)",
       "slides": "Please check out <a href='/workshop/3'>the details of this session.</a>"
     }
-  }
+  },
+  "Call2026Notice": "2026--Coming Soon. Following are the 2025 Sessions for your reference."
 }
