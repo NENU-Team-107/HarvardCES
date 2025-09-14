@@ -72,7 +72,7 @@ export const routerArray: Array<RouterItem> = [
                     {
                         year: 2026,
                         name: "Press Release, Photo and Video",
-                        path: "/2025/press"
+                        path: "/2026/press"
                     }
                 ]
             }

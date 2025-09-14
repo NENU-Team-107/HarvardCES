@@ -21,8 +21,8 @@ const notifyddl = computed(() => {
 
 <template>
   <div class="max-w-5xl mx-10 my-5 pt-24">
-    <!-- 返回按钮 -->
-    <div class="mb-4">
+    <!-- 桌面版返回按钮 -->
+    <div class="mb-4 hidden md:block">
       <UButton 
         icon="i-heroicons-arrow-left-20-solid" 
         color="gray" 

@@ -94,6 +94,13 @@ const isThirdLevelMenuVisible = (itemIndex: number, childIndex: number): boolean
 
 const handleSubMenu = (index: number) => {
   if (index >= 0 && index < submenu.value.length) {
+    // 先关闭所有其他菜单
+    submenu.value.forEach((item, i) => {
+      if (i !== index) {
+        item.show = false;
+      }
+    });
+    // 然后切换当前菜单状态
     submenu.value[index].show = !submenu.value[index].show;
   }
 };
@@ -218,31 +225,34 @@ onUnmounted(() => {
         <div class="max-h-96 overflow-y-auto">
           <div v-for="(item, index) in routers" :key="item.path" class="border-b border-gray-100 last:border-b-0">
             <div v-if="item.children" class="bg-white">
-              <!-- 主菜单项链接 -->
-               <NuxtLink
-                 :to="item.path"
-                 class="block px-4 py-2 text-gray-700 hover:bg-gray-50 font-bold border-b border-gray-100"
-                 @click="closeMenu"
-               >
-                 {{ $t(item.name) }}
-               </NuxtLink>
-              <!-- 子菜单展开按钮 -->
-              <button 
-                class="w-full text-left px-4 py-2 text-gray-600 hover:bg-gray-50 flex items-center justify-between text-sm"
-                @click="handleSubMenu(index)"
-              >
-                <span>{{ $t('More Options') }}</span>
-                <svg 
-                  :class="[
-                    'w-4 h-4 transform transition-transform duration-200',
-                    submenu[index]?.show ? 'rotate-180' : 'rotate-0'
-                  ]" 
-                  fill="currentColor" 
-                  viewBox="0 0 20 20"
+              <!-- 主菜单项和更多选项按钮在同一行 -->
+              <div class="flex items-center border-b border-gray-100">
+                <!-- 主菜单项链接 -->
+                <NuxtLink
+                  :to="item.path"
+                  class="flex-1 px-4 py-2 text-gray-700 hover:bg-gray-50 font-bold"
+                  @click="closeMenu"
                 >
-                  <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                </svg>
-              </button>
+                  {{ $t(item.name) }}
+                </NuxtLink>
+                <!-- 子菜单展开按钮 -->
+                <button 
+                  class="px-4 py-2 text-gray-600 hover:bg-gray-50 flex items-center text-sm min-w-0 flex-shrink-0"
+                  @click="handleSubMenu(index)"
+                >
+                  <span>{{ $t('More Options') }}</span>
+                  <svg 
+                    :class="[
+                      'w-4 h-4 transform transition-transform duration-200 ml-1',
+                      submenu[index]?.show ? 'rotate-180' : 'rotate-0'
+                    ]" 
+                    fill="currentColor" 
+                    viewBox="0 0 20 20"
+                  >
+                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                  </svg>
+                </button>
+              </div>
               <div v-if="submenu[index]?.show" class="bg-gray-50">
                 <div v-for="child in item.children" :key="child.path">
                   <!-- 有三级菜单的二级菜单项 -->
