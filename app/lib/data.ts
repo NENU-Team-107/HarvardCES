@@ -41,12 +41,12 @@ export const speakerToKind: Map<number, string> = new Map([
 ]);
 
 export const speakerToKind2026: Map<number, string> = new Map([
-    [15, 'Keynote Speakers'],
+    [37, 'Keynote Speakers'], // 李子建教授 - 新ID避免冲突
     [11, 'Keynote Speakers'],
     [12, 'Keynote Speakers'],
     [13, 'Keynote Speakers'],
     [14, 'Keynote Speakers'],
-    [16, 'Keynote Speakers'],
+    [38, 'Keynote Speakers'], // Jamie P. Horsley - 新ID避免冲突
     [9, 'Organizing Committee'],
     [10, 'Organizing Committee'],
     [21, 'Organizing Committee'],
@@ -56,6 +56,10 @@ export const speakerToKind2026: Map<number, string> = new Map([
     [33, 'Organizing Committee'],
     [34, 'Organizing Committee'],
     [35, 'Organizing Committee'],
+    [15, 'Guest of Honor'], // 郑美红教授
+    [16, 'Guest of Honor'], // 陈智轩教授
+    [17, 'Guest of Honor'],
+    [36, 'Guest of Honor'],
 ])
 
 export const keynoteSpeaker: Array<Speaker> = [
@@ -198,7 +202,7 @@ export const keynoteSpeaker: Array<Speaker> = [
 
 export const keynoteSpeaker2026: Array<Speaker> = [
     {
-        id: 15,
+        id: 37, // 李子建教授 - 新ID避免冲突
         name: "server.Keynote Speakers.id15.name",
         kind: "Keynote Speakers",
         inc: "server.Keynote Speakers.id15.inc",
@@ -208,7 +212,7 @@ export const keynoteSpeaker2026: Array<Speaker> = [
             details: {
                 description: "server.Keynote Speakers.id15.description",
                 title: "server.Keynote Speakers.id15.title",
-                link: '/2026/speakers/speaker/15 ProfessorLEE,Chi-KinJohn'
+                link: '/2026/speakers/speaker/37 ProfessorLEE,Chi-KinJohn'
             }
         }
     },
@@ -273,7 +277,7 @@ export const keynoteSpeaker2026: Array<Speaker> = [
         }
     },
     {
-        id: 16,
+        id: 38, // Jamie P. Horsley - 新ID避免冲突
         name: "server.Keynote Speakers.id16.name",
         kind: "Keynote Speakers",
         inc: "server.Keynote Speakers.id16.inc",
@@ -283,7 +287,7 @@ export const keynoteSpeaker2026: Array<Speaker> = [
             details: {
                 description: "server.Keynote Speakers.id16.description",
                 title: "server.Keynote Speakers.id16.title",
-                link: '/2026/speakers/speaker/16 JamiePHorsley'
+                link: '/2026/speakers/speaker/38 JamiePHorsley'
             }
         }
     },
@@ -473,6 +477,69 @@ export const guestOfHonor: Array<Speaker> = [
             }
         }
     },
+]
+
+export const guestOfHonor2026: Array<Speaker> = [
+    {
+        id: 15,
+        name: "server.Guest of Honor.id1.name",
+        kind: "Guest of Honor",
+        inc: "server.Guest of Honor.id1.inc",
+        photo: "avatars/CHENG May Hung.png",
+        activateDate: new Date("2026-05-09"),
+        bio: {
+            details: {
+                description: "server.Guest of Honor.id1.description",
+                title: "server.Guest of Honor.id1.title",
+                link: '/2026/speakers/speaker/15 CHENG,MayHung'
+            }
+        }
+    },
+    {
+        id: 16,
+        name: "server.Guest of Honor.id2.name",
+        kind: "Guest of Honor",
+        inc: "server.Guest of Honor.id2.inc",
+        photo: "avatars/CHAN Che Hin Chetwyn.png",
+        activateDate: new Date("2026-05-09"),
+        bio: {
+            details: {
+                description: "server.Guest of Honor.id2.description",
+                title: "server.Guest of Honor.id2.title",
+                link: '/2026/speakers/speaker/16 CHAN,CheHinChetwyn'
+            }
+        }
+    },
+    {
+        id: 17,
+        name: "server.Guest of Honor.id3.name",
+        kind: "Guest of Honor",
+        inc: "server.Guest of Honor.id3.inc",
+        photo: "avatars/FONG Wing Ho Tom.png",
+        activateDate: new Date("2026-05-09"),
+        bio: {
+            details: {
+                description: "server.Guest of Honor.id3.description",
+                title: "server.Guest of Honor.id3.title",
+                link: '/2026/speakers/speaker/17 FONG,WingHoTom'
+            }
+        }
+    },
+    {
+        id: 36,
+        name: "server.Guest of Honor.id4.name",
+        kind: "Guest of Honor",
+        inc: "server.Guest of Honor.id4.inc",
+        photo: "avatars/GAI Huixia Helen.png",
+        activateDate: new Date("2026-05-09"),
+        bio: {
+            details: {
+                description: "server.Guest of Honor.id4.description",
+                title: "server.Guest of Honor.id4.title",
+                link: '/2026/speakers/speaker/36 GAI,HuixiaHelen'
+            }
+        }
+    }
 ]
 
 export const invitedSpeakers: Array<Speaker> = [
@@ -754,6 +821,64 @@ export const SubSymposiumPoster: Array<Poster> = [
         path: 'img/poster/Sub-symposium7.jpg',
         callPath: "server.Poster.id6",
         link: '/2025/sub-symposium/6'
+    }
+]
+
+export const SubSymposiumPoster2026: Array<Poster> = [
+    {
+        id: 0,
+        name: 'Sub-symposium1',
+        path: 'img/poster/Sub-symposium1.jpg',
+        callPath: "server.Poster.id0",
+        link: '/2026/sub-symposium/0'
+    },
+    {
+        id: 1,
+        name: 'Sub-symposium2',
+        path: 'img/poster/Sub-symposium2-2026-zh-Hans.png',
+        pathEn: 'img/poster/Sub-symposium2-2026-en.png',
+        pathZhHant: 'img/poster/Sub-symposium2-2026-zh-Hant.png',
+        callPath: "server.Poster.id1",
+        link: '/2026/sub-symposium/1'
+    },
+    {
+        id: 2,
+        name: 'Sub-symposium3',
+        path: 'img/poster/Sub-symposium3-2026-zh-Hans.png',
+        pathEn: 'img/poster/Sub-symposium3-2026-en.png',
+        pathZhHant: 'img/poster/Sub-symposium3-2026-zh-Hant.png',
+        callPath: "server.Poster.id2",
+        link: '/2026/sub-symposium/2'
+    },
+    {
+        id: 3,
+        name: 'Sub-symposium4',
+        path: 'img/poster/Sub-symposium4-2026-zh-Hans.png',
+        pathEn: 'img/poster/Sub-symposium4-2026-en.png',
+        pathZhHant: 'img/poster/Sub-symposium4-2026-zh-Hant.png',
+        callPath: "server.Poster.id3",
+        link: '/2026/sub-symposium/3'
+    },
+    {
+        id: 4,
+        name: 'Sub-symposium5',
+        path: 'img/poster/Sub-symposium5.jpg',
+        callPath: "server.Poster.id4",
+        link: '/2026/sub-symposium/4'
+    },
+    {
+        id: 5,
+        name: 'Sub-symposium6',
+        path: 'img/poster/Sub-symposium6.jpg',
+        callPath: "server.Poster.id5",
+        link: '/2026/sub-symposium/5'
+    },
+    {
+        id: 6,
+        name: 'Sub-symposium7',
+        path: 'img/poster/Sub-symposium7.jpg',
+        callPath: "server.Poster.id6",
+        link: '/2026/sub-symposium/6'
     }
 ]
 

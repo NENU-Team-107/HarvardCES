@@ -15,7 +15,8 @@ const fetchSpeakers = async () => {
     const resp = await $fetch('/api/speaker/listByQuery', {
         method: 'GET',
         query: {
-            kind: 'Guest of Honor'
+            kind: 'Guest of Honor',
+            year: '2026'
         }
     })
     const { status, data } = resp

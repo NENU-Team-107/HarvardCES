@@ -1,4 +1,4 @@
-import { guestOfHonor, invitedSpeakers, keynoteSpeaker, keynoteSpeaker2026, organizingCommittee, organizingCommittee2026, speakerToKind, speakerToKind2026 } from "~/lib/data"
+import { guestOfHonor, guestOfHonor2026, invitedSpeakers, keynoteSpeaker, keynoteSpeaker2026, organizingCommittee, organizingCommittee2026, speakerToKind, speakerToKind2026 } from "~/lib/data"
 import type { ApiResponseWithSpeaker } from "~/lib/model"
 import type { H3Event } from 'h3';
 export default defineEventHandler(async (event: H3Event) => {
@@ -41,7 +41,9 @@ export default defineEventHandler(async (event: H3Event) => {
             break
         case "Guest of Honor":
             {
-                const result = guestOfHonor.find(speaker => speaker.id === id)
+                // Use appropriate dataset based on year
+                const guestData = year === '2026' ? guestOfHonor2026 : guestOfHonor
+                const result = guestData.find(speaker => speaker.id === id)
                 if (result !== undefined) {
                     data.status = "Success"
                     data.data = result

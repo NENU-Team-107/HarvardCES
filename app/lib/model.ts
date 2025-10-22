@@ -35,6 +35,8 @@ export type Poster = {
     id: number,
     name: string
     path: string
+    pathEn?: string
+    pathZhHant?: string
     callPath: string
     link: string
 }

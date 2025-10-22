@@ -53,7 +53,7 @@ const title = ref({
   // workshop: "Activities"
   //   workshop: "Session"
 })
-const chosenKeynote = [15, 11, 12, 13, 14, 16]
+const chosenKeynote = [37, 11, 12, 13, 14, 38] // 更新为新的ID：37(李子建教授), 38(Jamie P. Horsley)
 
 const keyspeakersList = ref<Speaker[]>([])
 const organizeList = ref<Speaker[]>([])

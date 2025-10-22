@@ -25,7 +25,7 @@ const notifyddl = computed(() => {
     <div class="mb-4 hidden md:block">
       <UButton 
         icon="i-heroicons-arrow-left-20-solid" 
-        color="gray" 
+        color="neutral"
         variant="ghost" 
         @click="$router.back()"
         class="hover:bg-gray-100"
@@ -90,7 +90,7 @@ const notifyddl = computed(() => {
       <div class="mb-4">
         <UButton 
           icon="i-heroicons-arrow-left-20-solid" 
-          color="gray" 
+          color="neutral"
           variant="ghost" 
           @click="$router.back()"
           class="hover:bg-gray-100"

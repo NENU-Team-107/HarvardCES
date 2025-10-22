@@ -68,6 +68,19 @@ const initThirdLevelMenus = () => {
   thirdLevelMenus.value = menuStates;
 };
 
+// 处理特殊菜单项点击
+const handleSpecialMenuClick = (path: string, event: Event) => {
+  if (path === '/2025') {
+    event.preventDefault();
+    closeAllThirdLevelMenus();
+    
+    // 显示alert确认对话框
+    if (confirm('即将进入2025届论坛界面，是否继续？')) {
+      navigateTo('/2025');
+    }
+  }
+};
+
 // 切换三级菜单显示状态
 const toggleThirdLevelMenu = (itemIndex: number, childIndex: number, event: Event) => {
   event.preventDefault();
@@ -101,7 +114,7 @@ const handleSubMenu = (index: number) => {
       }
     });
     // 然后切换当前菜单状态
-    submenu.value[index].show = !submenu.value[index].show;
+    submenu.value[index] && (submenu.value[index].show = !submenu.value[index].show);
   }
 };
 
@@ -174,15 +187,25 @@ onUnmounted(() => {
                     class="absolute left-0 top-full w-48 bg-white border border-gray-200 rounded shadow-lg z-[70] mt-1 transition-all duration-200"
                     @click.stop
                   >
-                    <NuxtLink
-                      v-for="grandchild in child.children" 
-                      :key="grandchild.path" 
-                      :to="grandchild.path"
-                      class="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-sm transition-colors duration-150"
-                      @click="closeAllThirdLevelMenus"
-                    >
-                      <span class="underline">{{ $t(grandchild.name) }}</span>
-                    </NuxtLink>
+                    <template v-for="grandchild in child.children" :key="grandchild.path">
+                      <!-- 特殊处理：第一届论坛（2025）菜单项 -->
+                      <div
+                        v-if="grandchild.path === '/2025'"
+                        class="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-sm transition-colors duration-150 cursor-pointer"
+                        @click="handleSpecialMenuClick(grandchild.path, $event)"
+                      >
+                        <span class="underline">{{ $t(grandchild.name) }}</span>
+                      </div>
+                      <!-- 普通菜单项 -->
+                      <NuxtLink
+                        v-else
+                        :to="grandchild.path"
+                        class="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-sm transition-colors duration-150"
+                        @click="closeAllThirdLevelMenus"
+                      >
+                        <span class="underline">{{ $t(grandchild.name) }}</span>
+                      </NuxtLink>
+                    </template>
                   </div>
                 </div>
                 <!-- 没有子菜单的二级菜单项 -->
@@ -260,15 +283,25 @@ onUnmounted(() => {
                     <div class="px-6 py-2 text-sm font-medium text-gray-600 bg-gray-100">
                       {{ $t(child.name) }}
                     </div>
-                    <NuxtLink
-                      v-for="grandchild in child.children" 
-                      :key="grandchild.path" 
-                      :to="grandchild.path"
-                      class="block px-8 py-2 text-sm text-gray-600 hover:bg-gray-100 hover:text-blue-600"
-                      @click="closeMenu"
-                    >
-                      {{ $t(grandchild.name) }}
-                    </NuxtLink>
+                    <template v-for="grandchild in child.children" :key="grandchild.path">
+                      <!-- 特殊处理：第一届论坛（2025）菜单项 -->
+                      <div
+                        v-if="grandchild.path === '/2025'"
+                        class="block px-8 py-2 text-sm text-gray-600 hover:bg-gray-100 hover:text-blue-600 cursor-pointer"
+                        @click="handleSpecialMenuClick(grandchild.path, $event); closeMenu()"
+                      >
+                        {{ $t(grandchild.name) }}
+                      </div>
+                      <!-- 普通菜单项 -->
+                      <NuxtLink
+                        v-else
+                        :to="grandchild.path"
+                        class="block px-8 py-2 text-sm text-gray-600 hover:bg-gray-100 hover:text-blue-600"
+                        @click="closeMenu"
+                      >
+                        {{ $t(grandchild.name) }}
+                      </NuxtLink>
+                    </template>
                   </div>
                   <!-- 没有三级菜单的二级菜单项 -->
                   <NuxtLink

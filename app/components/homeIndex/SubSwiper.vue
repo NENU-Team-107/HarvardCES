@@ -22,12 +22,6 @@ ref="carouselRef" :items="slides" :ui="{ item: 'basis-full lg:basis-1/3' }" :pre
           </div>
         </template>
 
-        <template #indicator="{ onClick, page, active }">
-          <UButton
-:variant="active ? 'solid' : 'outline'" size="2xs" color="rose" class="rounded-full min-w-4 "
-            @click="onClick(page)" />
-        </template>
-
       </UCarousel>
     </div>
   </div>
@@ -39,16 +33,13 @@ ref="carouselRef" :items="slides" :ui="{ item: 'basis-full lg:basis-1/3' }" :pre
       <div v-for="slide in slides" :key="slide.src" class=" relative h-full w-full">
         <UCard
 v-if="slide.details" class="u-card-class" :ui="{
-          base: '',
           divide: '',
           ring: '',
           rounded: '',
           shadow: '',
           background: 'w-full h-full bg-opacity-30',
 
-          footer: {
-            base: 'flex justify-end w-full flex-col',
-          }
+          footer: 'flex justify-end w-full flex-col',
         }">
           <div class="max-h-[32rem] overflow-hidden flex-1 justify-center w-full flex">
             <NuxtImg
@@ -78,6 +69,7 @@ import type { Poster, SwiperItem } from '~/lib/model';
 import { useRouter } from 'vue-router';
 
 const router = useRouter();
+const { locale } = useI18n();
 
 const posterList = ref<Poster[]>([]);
 
@@ -102,8 +94,37 @@ const cards = defineModel('cards', {
   default: false
 });
 
+// 添加年份版本支持
+const year = defineModel('year', {
+  required: false,
+  type: String,
+  default: '2025'
+});
+
+// 根据语言获取对应的图片路径
+const getLocalizedImagePath = (poster: Poster) => {
+  const currentLocale = locale.value;
+  
+  // 如果poster有多语言图片路径
+  if (poster.pathEn || poster.pathZhHant) {
+    switch (currentLocale) {
+      case 'en':
+        return poster.pathEn || poster.path;
+      case 'zh-Hant':
+        return poster.pathZhHant || poster.path;
+      case 'zh-Hans':
+      default:
+        return poster.path;
+    }
+  }
+  
+  return poster.path;
+}
+
 const fetchPosters = async () => {
-  const resp = await $fetch('/api/poster/listAll', {
+  const apiEndpoint = year.value === '2026' ? '/api/poster/listAll2026' : '/api/poster/listAll';
+  
+  const resp = await $fetch(apiEndpoint, {
     method: 'GET'
   })
   const { status, data } = resp
@@ -112,7 +133,7 @@ const fetchPosters = async () => {
 
     slides.value = data.map((poster) => {
       return {
-        src: poster.path,
+        src: getLocalizedImagePath(poster),
         link: poster.link,
         details: true
       } as SwiperItem;
@@ -122,9 +143,20 @@ const fetchPosters = async () => {
   }
 }
 
-fetchPosters()
+// 监听语言变化，重新获取本地化图片路径
+watch(locale, () => {
+  if (posterList.value.length > 0) {
+    slides.value = posterList.value.map((poster) => {
+      return {
+        src: getLocalizedImagePath(poster),
+        link: poster.link,
+        details: true
+      } as SwiperItem;
+    })
+  }
+})
 
-</script>
+fetchPosters()</script>
 
 <style>
 .u-card-class>div {

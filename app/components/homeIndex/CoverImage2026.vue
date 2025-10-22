@@ -96,11 +96,11 @@ const touchEndX = ref(0);
 const minSwipeDistance = 50; // 最小滑动距离
 
 const handleTouchStart = (event: TouchEvent) => {
-  touchStartX.value = event.touches[0].clientX;
+  touchStartX.value = event.touches?.[0]?.clientX ?? 0;
 };
 
 const handleTouchEnd = (event: TouchEvent) => {
-  touchEndX.value = event.changedTouches[0].clientX;
+  touchEndX.value = event.changedTouches?.[0]?.clientX ?? 0;
   handleSwipe();
 };
 

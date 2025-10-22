@@ -107,12 +107,12 @@ watchEffect(() => {
           <!-- TODO: Use 'primevue/datatable' to replace NUXTUI -->
           <UTable
             :ui="{ td: 'md:text-base text-sm text-black', th: 'md:text-base text-base' }"
-            :rows="contact" :columns="columns">
+            :rows="(contact as Contact[])" :columns="columns">
             <template #topic-data="{ row }">
-              <NuxtLink v-if="row.link" :to="row.link" class="hover:text-green-500">
-                {{ row.topic }}
+              <NuxtLink v-if="(row as unknown as Contact).link" :to="(row as unknown as Contact).link" class="hover:text-green-500">
+                {{ (row as unknown as Contact).topic }}
               </NuxtLink>
-              <span v-else>{{ row.topic }}</span>
+              <span v-else>{{ (row as unknown as Contact).topic }}</span>
             </template>
           </UTable>
         </div>
@@ -127,7 +127,7 @@ watchEffect(() => {
       </div>
 
       <div class="w-full">
-        <SubSwiper :cards="true" />
+        <SubSwiper :cards="true" :year="'2026'" />
       </div>
 
     </div>
@@ -145,12 +145,12 @@ watchEffect(() => {
           <!-- TODO: Use 'primevue/datatable' to replace NUXTUI -->
           <UTable
             :ui="{ td: 'text-sm text-black drak:text:white hover:text-green-600', th: 'text-base' }"
-            :rows="contact" :columns="columns">
+            :rows="(contact as Contact[])" :columns="columns">
             <template #topic-data="{ row }">
-              <NuxtLink v-if="row.link" :to="row.link" class="hover:text-green-500">
-                {{ row.topic }}
+              <NuxtLink v-if="(row as unknown as Contact).link" :to="(row as unknown as Contact).link" class="hover:text-green-500">
+                {{ (row as unknown as Contact).topic }}
               </NuxtLink>
-              <span v-else>{{ row.topic }}</span>
+              <span v-else>{{ (row as unknown as Contact).topic }}</span>
             </template>
           </UTable>
         </div>
@@ -164,7 +164,7 @@ watchEffect(() => {
       </div>
 
       <div class="min-w-screen">
-        <SubSwiper :cards="true" />
+        <SubSwiper :cards="true" :year="'2026'" />
       </div>
 
     </div>

@@ -234,7 +234,7 @@ const getPhotoPath = (filename: string) => {
              <div v-if="photos.length > maxVisiblePhotos" class="flex justify-center mt-6">
                <button 
                  @click="toggleExpanded"
-                 class="w-12 h-12 bg-gray-100 hover:bg-gray-200 hover:scale-110 text-gray-600 hover:text-gray-800 rounded-full transition-all duration-200 flex items-center justify-center shadow-sm hover:shadow-md"
+                 class="w-12 h-12 bg-green-100 hover:bg-green-200 hover:scale-110 text-green-800 hover:text-green-900 rounded-full transition-all duration-200 flex items-center justify-center shadow-sm hover:shadow-md"
                >
                  <svg 
                    class="w-6 h-6 transition-transform duration-200" 

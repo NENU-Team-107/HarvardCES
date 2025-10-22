@@ -139,6 +139,11 @@ export const routerArray: Array<RouterItem> = [
     // 原有2025配置
     {
         year: 2025,
+        name: "Return to 2nd Forum",
+        path: "/"
+    },
+    {
+        year: 2025,
         name: "Home",
         path: "/2025",
         children: [
