@@ -828,7 +828,9 @@ export const SubSymposiumPoster2026: Array<Poster> = [
     {
         id: 0,
         name: 'Sub-symposium1',
-        path: 'img/poster/Sub-symposium1.jpg',
+        path: 'img/poster/Sub-symposium1-2026-zh-Hans.png',
+        pathEn: 'img/poster/Sub-symposium1-2026-en.png',
+        pathZhHant: 'img/poster/Sub-symposium1-2026-zh-Hant.png',
         callPath: "server.Poster.id0",
         link: '/2026/sub-symposium/0'
     },
@@ -862,7 +864,9 @@ export const SubSymposiumPoster2026: Array<Poster> = [
     {
         id: 4,
         name: 'Sub-symposium5',
-        path: 'img/poster/Sub-symposium5.jpg',
+        path: 'img/poster/Sub-symposium5-2026-zh-Hans.png',
+        pathEn: 'img/poster/Sub-symposium5-2026-en.png',
+        pathZhHant: 'img/poster/Sub-symposium5-2026-zh-Hant.png',
         callPath: "server.Poster.id4",
         link: '/2026/sub-symposium/4'
     },
