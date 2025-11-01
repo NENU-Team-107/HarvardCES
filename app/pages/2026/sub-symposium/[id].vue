@@ -1,6 +1,7 @@
 <script setup lang="ts">
-const route = useRoute()
+import { ref, computed } from 'vue'
 
+const route = useRoute()
 const { t } = useI18n()
 
 const sessionId = ref(Number.parseInt(route.params.id as string))

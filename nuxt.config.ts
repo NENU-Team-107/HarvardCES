@@ -1,4 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import { defineNuxtConfig } from 'nuxt/config'
 import { presetAttributify, presetIcons } from 'unocss'
 
 export default defineNuxtConfig({
