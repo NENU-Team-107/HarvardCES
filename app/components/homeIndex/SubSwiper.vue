@@ -33,11 +33,11 @@ ref="carouselRef" :items="slides" :ui="{ item: 'basis-full lg:basis-1/3' }" :pre
       <div v-for="slide in slides" :key="slide.src" class=" relative h-full w-full">
         <UCard
 v-if="slide.details" class="u-card-class" :ui="{
-          divide: '',
-          ring: '',
-          rounded: '',
-          shadow: '',
-          background: 'w-full h-full bg-opacity-30',
+          // divide 属性不在 UCard 的 ui 类型定义中，故移除
+          // ring 属性不在 UCard 的 ui 类型定义中，故移除
+          root: 'rounded-none',
+          // shadow 属性不在 UCard 的 ui 类型定义中，故移除
+          body: 'w-full h-full bg-opacity-30',
 
           footer: 'flex justify-end w-full flex-col',
         }">
@@ -110,9 +110,9 @@ const getLocalizedImagePath = (poster: Poster) => {
     switch (currentLocale) {
       case 'en':
         return poster.pathEn || poster.path;
-      case 'zh-Hant':
+      case 'zh-TW':
         return poster.pathZhHant || poster.path;
-      case 'zh-Hans':
+      case 'zh-CN':
       default:
         return poster.path;
     }
@@ -156,7 +156,7 @@ watch(locale, () => {
   }
 })
 
-fetchPosters()</script>
+fetchPosters();</script>
 
 <style>
 .u-card-class>div {

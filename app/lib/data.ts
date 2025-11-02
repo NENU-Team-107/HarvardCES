@@ -869,21 +869,22 @@ export const SubSymposiumPoster2026: Array<Poster> = [
         pathZhHant: 'img/poster/Sub-symposium5-2026-zh-Hant.png',
         callPath: "server.Poster.id4",
         link: '/2026/sub-symposium/4'
-    },
-    {
-        id: 5,
-        name: 'Sub-symposium6',
-        path: 'img/poster/Sub-symposium6.jpg',
-        callPath: "server.Poster.id5",
-        link: '/2026/sub-symposium/5'
-    },
-    {
-        id: 6,
-        name: 'Sub-symposium7',
-        path: 'img/poster/Sub-symposium7.jpg',
-        callPath: "server.Poster.id6",
-        link: '/2026/sub-symposium/6'
     }
+    // 暂时隐藏分论坛6、7
+    // {
+    //     id: 5,
+    //     name: 'Sub-symposium6',
+    //     path: 'img/poster/Sub-symposium6.jpg',
+    //     callPath: "server.Poster.id5",
+    //     link: '/2026/sub-symposium/5'
+    // },
+    // {
+    //     id: 6,
+    //     name: 'Sub-symposium7',
+    //     path: 'img/poster/Sub-symposium7.jpg',
+    //     callPath: "server.Poster.id6",
+    //     link: '/2026/sub-symposium/6'
+    // }
 ]
 
 
