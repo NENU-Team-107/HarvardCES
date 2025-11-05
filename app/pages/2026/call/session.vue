@@ -103,8 +103,9 @@ watchEffect(() => {
           <br>
           <span class="text-black"><strong><i>* {{ $t("session more") }}</i></strong></span>
         </div>
+        <!-- 投稿列表（桌面端 UTable）已临时注释 -->
+        <!--
         <div class="flex justify-center items-center w-full self-center">
-          <!-- TODO: Use 'primevue/datatable' to replace NUXTUI -->
           <UTable
             :ui="{ td: 'md:text-base text-sm text-black', th: 'md:text-base text-base' }"
             :rows="(contact as Contact[])" :columns="columns">
@@ -116,6 +117,7 @@ watchEffect(() => {
             </template>
           </UTable>
         </div>
+        -->
       </div>
 
       <div class="text-2xl font-bold text-center my-5">
@@ -141,8 +143,9 @@ watchEffect(() => {
         <h2 class="text-red-500/90 text-sm">
           <strong><i>{{ $t("Due") }}</i></strong>
         </h2>
+        <!-- 投稿列表（移动端 UTable）已临时注释 -->
+        <!--
         <div class="flex justify-center items-center w-full self-center">
-          <!-- TODO: Use 'primevue/datatable' to replace NUXTUI -->
           <UTable
             :ui="{ td: 'text-sm text-black drak:text:white hover:text-green-600', th: 'text-base' }"
             :rows="(contact as Contact[])" :columns="columns">
@@ -154,6 +157,7 @@ watchEffect(() => {
             </template>
           </UTable>
         </div>
+        -->
       </div>
       <div class="text-lg font-bold text-center my-5">
         <div class="flex justify-center items-center ">
