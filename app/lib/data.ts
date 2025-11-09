@@ -482,60 +482,60 @@ export const guestOfHonor: Array<Speaker> = [
 export const guestOfHonor2026: Array<Speaker> = [
     {
         id: 15,
-        name: "server.Guest of Honor.id1.name",
+        name: "server.Guest of Honor.id2.name",
         kind: "Guest of Honor",
-        inc: "server.Guest of Honor.id1.inc",
+        inc: "server.Guest of Honor.id2.inc",
         photo: "avatars/CHENG May Hung.png",
         activateDate: new Date("2026-05-09"),
         bio: {
             details: {
-                description: "server.Guest of Honor.id1.description",
-                title: "server.Guest of Honor.id1.title",
+                description: "server.Guest of Honor.id2.description",
+                title: "server.Guest of Honor.id2.title",
                 link: '/2026/speakers/speaker/15 CHENG,MayHung'
             }
         }
     },
     {
         id: 16,
-        name: "server.Guest of Honor.id2.name",
+        name: "server.Guest of Honor.id3.name",
         kind: "Guest of Honor",
-        inc: "server.Guest of Honor.id2.inc",
+        inc: "server.Guest of Honor.id3.inc",
         photo: "avatars/CHAN Che Hin Chetwyn.png",
         activateDate: new Date("2026-05-09"),
         bio: {
             details: {
-                description: "server.Guest of Honor.id2.description",
-                title: "server.Guest of Honor.id2.title",
+                description: "server.Guest of Honor.id3.description",
+                title: "server.Guest of Honor.id3.title",
                 link: '/2026/speakers/speaker/16 CHAN,CheHinChetwyn'
             }
         }
     },
     {
         id: 17,
-        name: "server.Guest of Honor.id3.name",
+        name: "server.Guest of Honor.id4.name",
         kind: "Guest of Honor",
-        inc: "server.Guest of Honor.id3.inc",
+        inc: "server.Guest of Honor.id4.inc",
         photo: "avatars/FONG Wing Ho Tom.png",
         activateDate: new Date("2026-05-09"),
         bio: {
             details: {
-                description: "server.Guest of Honor.id3.description",
-                title: "server.Guest of Honor.id3.title",
+                description: "server.Guest of Honor.id4.description",
+                title: "server.Guest of Honor.id4.title",
                 link: '/2026/speakers/speaker/17 FONG,WingHoTom'
             }
         }
     },
     {
         id: 36,
-        name: "server.Guest of Honor.id4.name",
+        name: "server.Guest of Honor.id5.name",
         kind: "Guest of Honor",
-        inc: "server.Guest of Honor.id4.inc",
+        inc: "server.Guest of Honor.id5.inc",
         photo: "avatars/GAI Huixia Helen.png",
         activateDate: new Date("2026-05-09"),
         bio: {
             details: {
-                description: "server.Guest of Honor.id4.description",
-                title: "server.Guest of Honor.id4.title",
+                description: "server.Guest of Honor.id5.description",
+                title: "server.Guest of Honor.id5.title",
                 link: '/2026/speakers/speaker/36 GAI,HuixiaHelen'
             }
         }
