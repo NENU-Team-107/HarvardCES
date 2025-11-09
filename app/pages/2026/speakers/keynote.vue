@@ -80,6 +80,22 @@ const pending = ref(true);
             <SpeakersIntroduction :speakers="speaker" class="mx-4 w-full h-full" />
           </div>
         </div>
+
+        <!-- 底部：演讲嘉宾来自（桌面端） -->
+        <div class="w-full mt-8">
+          <div class="text-center text-sm text-gray-600 font-semibold mb-3">
+            {{ $t('Speakers from:') }}
+          </div>
+          <div class="w-full flex flex-wrap items-center justify-center gap-6 py-2">
+            <img src="/img/KeynoteSpeakerLogo/keynotespeaker1.png" alt="" class="h-8 md:h-10 object-contain"/>
+            <img src="/img/KeynoteSpeakerLogo/keynotespeaker2.png" alt="" class="h-8 md:h-10 object-contain"/>
+            <img src="/img/KeynoteSpeakerLogo/keynotespeaker3.png" alt="" class="h-8 md:h-10 object-contain"/>
+            <img src="/img/KeynoteSpeakerLogo/keynotespeaker4.png" alt="" class="h-8 md:h-10 object-contain"/>
+            <img src="/img/KeynoteSpeakerLogo/keynotespeaker5.png" alt="" class="h-8 md:h-10 object-contain"/>
+            <img src="/img/KeynoteSpeakerLogo/keynotespeaker6.png" alt="" class="h-8 md:h-10 object-contain"/>
+            <img src="/img/KeynoteSpeakerLogo/keynotespeaker7.png" alt="" class="h-8 md:h-10 object-contain"/>
+          </div>
+        </div>
       </div>
       <div class="md:hidden">
         <div class="flex justify-center items-center ">
@@ -91,6 +107,22 @@ const pending = ref(true);
         </div>
         <div v-for="speaker in speakersList" :key="speaker.id">
           <SpeakersIntroduction :speakers="speaker" class="mx-10 my-5 h-full " />
+        </div>
+
+        <!-- 底部：演讲嘉宾来自（移动端） -->
+        <div class="w-full mt-6">
+          <div class="text-center text-xs text-gray-600 font-semibold mb-2">
+            {{ $t('Speakers from:') }}
+          </div>
+          <div class="flex flex-wrap items-center justify-center gap-4 py-1">
+            <img src="/img/KeynoteSpeakerLogo/keynotespeaker1.png" alt="" class="h-8 object-contain"/>
+            <img src="/img/KeynoteSpeakerLogo/keynotespeaker2.png" alt="" class="h-8 object-contain"/>
+            <img src="/img/KeynoteSpeakerLogo/keynotespeaker3.png" alt="" class="h-8 object-contain"/>
+            <img src="/img/KeynoteSpeakerLogo/keynotespeaker4.png" alt="" class="h-8 object-contain"/>
+            <img src="/img/KeynoteSpeakerLogo/keynotespeaker5.png" alt="" class="h-8 object-contain"/>  
+            <img src="/img/KeynoteSpeakerLogo/keynotespeaker6.png" alt="" class="h-7 object-contain"/>
+            <img src="/img/KeynoteSpeakerLogo/keynotespeaker7.png" alt="" class="h-7 object-contain"/>
+          </div>
         </div>
       </div>
       <!-- 学校图标部分已注释掉

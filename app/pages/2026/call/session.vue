@@ -132,6 +132,19 @@ watchEffect(() => {
         <SubSwiper :cards="true" :year="'2026'" />
       </div>
 
+      <!-- 合作期刊标识（桌面端） -->
+      <div class="w-full mt-6">
+        <div class="text-sm font-bold text-center my-5 text-gray-500">
+          <div class="flex justify-center items-center">
+            <h1 class="mx-4">{{ $t("Collaborative Journals:") }} </h1>
+          </div>
+        </div>
+        <div class="flex justify-center items-center gap-8 py-4">
+          <img src="/img/logo/co-IEEE-TLTlogo.png" alt="IEEE Transactions on Learning Technologies" class="h-12 md:h-16 object-contain"/>
+          <img src="/img/logo/session2026_logo2.png" alt="Open Education Research" class="h-12 md:h-16 object-contain"/>
+        </div>
+      </div>
+
     </div>
 
     <div class="md:hidden h-full w-full justify-self-center bg-white/80 justify-center items-center">
@@ -169,6 +182,19 @@ watchEffect(() => {
 
       <div class="min-w-screen">
         <SubSwiper :cards="true" :year="'2026'" />
+      </div>
+
+      <!-- 合作期刊标识（移动端） -->
+      <div class="w-full mt-6">
+        <div class="text-xs font-bold text-center my-5 text-gray-500">
+          <div class="flex justify-center items-center">
+            <h1 class="mx-4">{{ $t("Collaborative Journals:") }} </h1>
+          </div>
+        </div>
+        <div class="flex justify-center items-center gap-6 py-3">
+          <img src="/img/logo/co-IEEE-TLTlogo.png" alt="IEEE Transactions on Learning Technologies" class="h-10 object-contain"/>
+          <img src="/img/logo/session2026_logo2.png" alt="Open Education Research" class="h-10 object-contain"/>
+        </div>
       </div>
 
     </div>

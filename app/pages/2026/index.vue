@@ -189,12 +189,22 @@ onMounted(() => {
                   </ULink>
                 </div>
               </div>
+              <div class="md:w-4/5 w-full justify-self-center text-center md:text-2xl text-xl font-semibold mt-2">
+                <span>{{ $t('ETFE West Joint Lab') }}</span>
+              </div>
+
+              <!-- Logos for Host by: GIET & Key Lab of Modern Teaching Technology (MOE) -->
+              <div class="w-full md:w-4/5 justify-self-center mt-4 px-10 md:px-0">
+                <div class="flex items-center justify-center gap-6">
+                  <img src="/img/logo/giet.png" alt="GIET" class="h-12 md:h-16" />
+                  <img src="/img/logo/westlab.png" alt="Key Lab of Modern Teaching Technology, MOE" class="h-12 md:h-16" />
+                </div>
+              </div>
             </div>
 
           </div>
 
           <div class="w-full">
-            <div class="font-bold text-xl md:pl-10 p-1">{{ $t("In collaboration with") }}</div>
             <!-- <div>
               <div
                 class="grid grid-cols-2 md:grid-cols-3 mt-5 gap-0.5 w-full md:w-4/5 px-5 md:px-0 justify-self-center">
@@ -205,15 +215,16 @@ onMounted(() => {
                 </div>
               </div>
             </div> -->
+            <div class="text-center mt-4 text-sm">
+              <span><i> {{ t('Assisted') }}</i></span>
+              <div class="mt-1" v-html="$t('Disclaimer')" />
+            </div>
+            
+            <div class="font-bold text-xl md:pl-10 p-1">{{ $t("In collaboration with") }}</div>
             <div class="text-gray-500 italic px-10 py-4">
               我们正站在科技与教育的交汇点，期待与更多志同道合的伙伴携手前行。<br>
               我們正站在科技與教育的交匯點，期待與更多志同道合的夥伴攜手前行。<br>
               We stand at the intersection of technology and education, and look forward to joining hands with like-minded partners on this journey forward.
-            </div>
-
-            <div class="text-center mt-4 text-sm">
-              <span><i> {{ t('Assisted') }}</i></span>
-              <div class="mt-1" v-html="$t('Disclaimer')" />
             </div>
           </div>
         </div>

@@ -75,6 +75,7 @@
   "Show More Keynote": "查看所有主题演讲嘉宾",
   "Prev": "上一页",
   "Next": "下一页",
+  "Collaborative Journals:": "合作期刊：",
   "SymposiumBulletin": {
     "Title": "论坛快讯",
     "Content": "最新的论坛消息和更新将在这里发布。"
@@ -84,6 +85,7 @@
   "Guest of Honor": "荣誉嘉宾",
   "Keynote Speakers": "主题演讲嘉宾",
   "Keynote Speakers Index": "演讲嘉宾",
+  "Speakers from:": "演讲嘉宾来自：",
   "Track Workshop Chair": "分会场主席",
   "Organizing Committee": "组织委员会",
   "Media": {
@@ -110,6 +112,7 @@
   },
   "EduHK Full": "香港教育大学",
   "GIET": "全球新兴技术研究所",
+  "ETFE West Joint Lab": "新兴科技与未来教育西部联合实验室",
   "SendTo": "发送至邮箱： ",
   "SubmitNumber": "平行分会",
   "SubmitTopic": "主题",
@@ -1162,79 +1165,34 @@
     "Name": "分论坛主席",
     "Details": {
       "line1": {
-        "title": "分论坛 1 主席",
-        "name": "陈锦荣",
-        "inc": "香港教育大学"
+        "title": "平行分会一 主席",
+        "name": "张乐瑄\n王默",
+        "inc": "香港教育大学\n东北师范大学"
       },
       "line2": {
-        "title": "分论坛 1 主席",
-        "name": "王默",
-        "inc": "东北师范大学"
+        "title": "平行分会二 主席",
+        "name": "黄岳Andrew\n顾敏康",
+        "inc": "香港教育大学\n香港教育大学"
       },
       "line3": {
-        "title": "分论坛 2 主席",
-        "name": "黄岳",
-        "inc": "香港教育大学"
+        "title": "平行分会三 主席",
+        "name": "凌万豪\n王越",
+        "inc": "香港教育大学\n香港教育大学"
       },
       "line4": {
-        "title": "分论坛 2 主席",
-        "name": "顾敏康",
-        "inc": "香港教育大学"
+        "title": "平行分会四 主席",
+        "name": "王远\n刘锦东Leo",
+        "inc": "香港教育大学\n香港教育大学"
       },
       "line5": {
-        "title": "分论坛 3 主席",
-        "name": "凌万豪",
-        "inc": "香港教育大学"
+        "title": "平行分会五 主席",
+        "name": "张悦\n楚肖燕\n胡力心 Harry",
+        "inc": "香港教育大学\n浙江大学\n香港教育大学"
       },
       "line6": {
-        "title": "分论坛 3 主席",
-        "name": "王越",
-        "inc": "香港教育大学"
-      },
-      "line7": {
-        "title": "分论坛 3 主席",
-        "name": "杜旭",
-        "inc": "华中科技大学"
-      },
-      "line8": {
-        "title": "分论坛 4 主席",
-        "name": "盖会霞",
-        "inc": "香港教育大学"
-      },
-      "line9": {
-        "title": "分论坛 4 主席",
-        "name": "王远",
-        "inc": "香港教育大学"
-      },
-      "line10": {
-        "title": "分论坛 4 主席",
-        "name": "刘锦东",
-        "inc": "香港教育大学"
-      },
-      "line11": {
-        "title": "分论坛 5 主席",
-        "name": "张越",
-        "inc": "香港教育大学"
-      },
-      "line12": {
-        "title": "分论坛 5 主席",
-        "name": "楚肖燕",
-        "inc": "浙江大学"
-      },
-      "line13": {
-        "title": "分论坛 5 主席",
-        "name": "杨娟",
-        "inc": "武汉科技大学"
-      },
-      "line14": {
-        "title": "分论坛 6 主席",
-        "name": "胡力心",
-        "inc": "香港教育大学"
-      },
-      "line15": {
-        "title": "分论坛 6 主席",
-        "name": "GIET团队",
-        "inc": "香港教育大学"
+        "title": "平行分会六 主席",
+        "name": "杜旭\n赵明明\n杨娟",
+        "inc": "华中师范大学\n香港教育大学\n武汉科技大学"
       }
     }
   },
@@ -1282,7 +1240,7 @@
     "Name": "程序委员会主席",
     "Details": {
       "line1": {
-        "name": "马清",
+        "name": "陶思思",
         "inc": "香港教育大学"
       },
       "line2": {
@@ -1295,16 +1253,44 @@
     "Name": "宣传主席",
     "Details": {
       "line1": {
-        "name": "李辉",
+        "name": "盖会霞Helen",
         "inc": "香港教育大学"
+      },
+      "line2": {
+        "name": "陈峻斌 Henry",
+        "inc": "香港理工大学"
+      },
+      "line3": {
+        "name": "江波",
+        "inc": "华东师范大学"
+      },
+      "line4": {
+        "name": "李志远 Leon",
+        "inc": "香港城市大学"
+      },
+      "line5": {
+        "name": "吴龙凯",
+        "inc": "华中师范大学"
+      },
+      "line6": {
+        "name": "李主圣",
+        "inc": "香港教育大学"
+      },
+      "line7": {
+        "name": "李亭松",
+        "inc": "上海交通大学"
       }
     }
   },
   "Registration Chair": {
-    "Name": "注册委员会主席",
+    "Name": "注册主席",
     "Details": {
       "line1": {
         "name": "凌万豪",
+        "inc": "香港教育大学"
+      },
+      "line2": {
+        "name": "MIT办公室",
         "inc": "香港教育大学"
       }
     }
@@ -1349,6 +1335,10 @@
       "line5": {
         "name": "熊卫雁",
         "inc": "香港教育大学"
+      },
+      "line6": {
+        "name": "李亭松",
+        "inc": "上海交通大学"
       }
     }
   },

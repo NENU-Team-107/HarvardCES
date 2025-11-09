@@ -912,17 +912,7 @@ export const ChairListParallel: Array<ChairListItem> = [
     {
         "title": "Chair of Parallel session.Details.line5.title",
         "name": "Chair of Parallel session.Details.line5.name",
-        "inc": "Chair of Parallel session.Details.line6.inc"
-    },
-    {
-        "title": "Chair of Parallel session.Details.line7.title",
-        "name": "Chair of Parallel session.Details.line7.name",
-        "inc": "Chair of Parallel session.Details.line7.inc"
-    },
-    {
-        "title": "Chair of Parallel session.Details.line8.title",
-        "name": "Chair of Parallel session.Details.line8.name",
-        "inc": "Chair of Parallel session.Details.line8.inc"
+        "inc": "Chair of Parallel session.Details.line5.inc"
     },
 ]
 
@@ -1351,51 +1341,6 @@ export const ChairListParallel2026: Array<ChairListItem> = [
         "name": "Chair of Parallel session.Details.line6.name",
         "inc": "Chair of Parallel session.Details.line6.inc"
     },
-    {
-        "title": "Chair of Parallel session.Details.line7.title",
-        "name": "Chair of Parallel session.Details.line7.name",
-        "inc": "Chair of Parallel session.Details.line7.inc"
-    },
-    {
-        "title": "Chair of Parallel session.Details.line8.title",
-        "name": "Chair of Parallel session.Details.line8.name",
-        "inc": "Chair of Parallel session.Details.line8.inc"
-    },
-    {
-        "title": "Chair of Parallel session.Details.line9.title",
-        "name": "Chair of Parallel session.Details.line9.name",
-        "inc": "Chair of Parallel session.Details.line9.inc"
-    },
-    {
-        "title": "Chair of Parallel session.Details.line10.title",
-        "name": "Chair of Parallel session.Details.line10.name",
-        "inc": "Chair of Parallel session.Details.line10.inc"
-    },
-    {
-        "title": "Chair of Parallel session.Details.line11.title",
-        "name": "Chair of Parallel session.Details.line11.name",
-        "inc": "Chair of Parallel session.Details.line11.inc"
-    },
-    {
-        "title": "Chair of Parallel session.Details.line12.title",
-        "name": "Chair of Parallel session.Details.line12.name",
-        "inc": "Chair of Parallel session.Details.line12.inc"
-    },
-    {
-        "title": "Chair of Parallel session.Details.line13.title",
-        "name": "Chair of Parallel session.Details.line13.name",
-        "inc": "Chair of Parallel session.Details.line13.inc"
-    },
-    {
-        "title": "Chair of Parallel session.Details.line14.title",
-        "name": "Chair of Parallel session.Details.line14.name",
-        "inc": "Chair of Parallel session.Details.line14.inc"
-    },
-    {
-        "title": "Chair of Parallel session.Details.line15.title",
-        "name": "Chair of Parallel session.Details.line15.name",
-        "inc": "Chair of Parallel session.Details.line15.inc"
-    },
 ];
 
 export const ChairListProgram2026: Array<ChairListItem> = [
@@ -1414,12 +1359,40 @@ export const ChairListPublicity2026: Array<ChairListItem> = [
         "name": "Publicity Chair.Details.line1.name",
         "inc": "Publicity Chair.Details.line1.inc"
     },
+    {
+        "name": "Publicity Chair.Details.line2.name",
+        "inc": "Publicity Chair.Details.line2.inc"
+    },
+    {
+        "name": "Publicity Chair.Details.line3.name",
+        "inc": "Publicity Chair.Details.line3.inc"
+    },
+    {
+        "name": "Publicity Chair.Details.line4.name",
+        "inc": "Publicity Chair.Details.line4.inc"
+    },
+    {
+        "name": "Publicity Chair.Details.line5.name",
+        "inc": "Publicity Chair.Details.line5.inc"
+    },
+    {
+        "name": "Publicity Chair.Details.line6.name",
+        "inc": "Publicity Chair.Details.line6.inc"
+    },
+    {
+        "name": "Publicity Chair.Details.line7.name",
+        "inc": "Publicity Chair.Details.line7.inc"
+    },
 ];
 
 export const ChairListRegistration2026: Array<ChairListItem> = [
     {
         "name": "Registration Chair.Details.line1.name",
         "inc": "Registration Chair.Details.line1.inc"
+    },
+    {
+        "name": "Registration Chair.Details.line2.name",
+        "inc": "Registration Chair.Details.line2.inc"
     },
 ];
 

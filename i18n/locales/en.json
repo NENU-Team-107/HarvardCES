@@ -107,6 +107,7 @@
   "Show More Keynote": "View All Keynote Speakers",
   "Prev": "Prev",
   "Next": "Next",
+  "Collaborative Journals:": "Collaborative Journals:",
   "SymposiumBulletin": {
     "Title": "Symposium Bulletin",
     "Content": "The latest news and updates about the symposium will be posted here"
@@ -117,6 +118,7 @@
   "Guest of Honor": "Guest of Honor",
   "Keynote Speakers": "Keynote Speakers",
   "Keynote Speakers Index": "Featuring Speakers",
+  "Speakers from:": "Speakers from:",
   "Track Workshop Chair": "Track Workshop Chair",
   "Organizing Committee": "Organizing Committee",
   "Chair of Parallel session": {
@@ -124,78 +126,33 @@
     "Details": {
       "line1": {
         "title": "Chair of Parallel Session 1",
-        "name": "ERNI, John Nguyet",
-        "inc": "The Education University of Hong Kong"
+        "name": "Zhang Lexuan\nWANG Mo",
+        "inc": "The Education University of Hong Kong\nNortheast Normal University"
       },
       "line2": {
-        "title": "Chair of Parallel Session 1",
-        "name": "WANG Mo",
-        "inc": "Northeast Normal University"
+        "title": "Chair of Parallel Session 2",
+        "name": "HUANG Yue Andrew\nGU Minkang",
+        "inc": "The Education University of Hong Kong\nThe Education University of Hong Kong"
       },
       "line3": {
-        "title": "Chair of Parallel Session 2",
-        "name": "HUANG Yue Andrew",
-        "inc": "The Education University of Hong Kong"
+        "title": "Chair of Parallel Session 3",
+        "name": "LING Man Ho\nWANG Yue",
+        "inc": "The Education University of Hong Kong\nThe Education University of Hong Kong"
       },
       "line4": {
-        "title": "Chair of Parallel Session 2",
-        "name": "GU Minkang",
-        "inc": "The Education University of Hong Kong"
+        "title": "Chair of Parallel Session 4",
+        "name": "WANG Yuan\nLIU Jindong Leo",
+        "inc": "The Education University of Hong Kong\nThe Education University of Hong Kong"
       },
       "line5": {
-        "title": "Chair of Parallel Session 3",
-        "name": "LING Man Ho",
-        "inc": "The Education University of Hong Kong"
+        "title": "Chair of Parallel Session 5",
+        "name": "ZHANG Yue\nCHU Xiaoyan\nHu Lixin Harry",
+        "inc": "The Education University of Hong Kong\nZhejiang University\nThe Education University of Hong Kong"
       },
       "line6": {
-        "title": "Chair of Parallel Session 3",
-        "name": "WANG Yue",
-        "inc": "The Education University of Hong Kong"
-      },
-      "line7": {
-        "title": "Chair of Parallel Session 3",
-        "name": "DU Xu",
-        "inc": "Huazhong University of Science and Technology"
-      },
-      "line8": {
-        "title": "Chair of Parallel Session 4",
-        "name": "GAI Huixia Helen",
-        "inc": "The Education University of Hong Kong"
-      },
-      "line9": {
-        "title": "Chair of Parallel Session 4",
-        "name": "WANG Yuan",
-        "inc": "The Education University of Hong Kong"
-      },
-      "line10": {
-        "title": "Chair of Parallel Session 4",
-        "name": "LIU Jindong Leo",
-        "inc": "The Education University of Hong Kong"
-      },
-      "line11": {
-        "title": "Chair of Parallel Session 5",
-        "name": "ZHANG Yue",
-        "inc": "The Education University of Hong Kong"
-      },
-      "line12": {
-        "title": "Chair of Parallel Session 5",
-        "name": "CHU Xiaoyan",
-        "inc": "Zhejiang University"
-      },
-      "line13": {
-        "title": "Chair of Parallel Session 5",
-        "name": "YANG Juan",
-        "inc": "Wuhan University of Science and Technology"
-      },
-      "line14": {
         "title": "Chair of Parallel Session 6",
-        "name": "HU Lixin Harry",
-        "inc": "The Education University of Hong Kong"
-      },
-      "line15": {
-        "title": "Chair of Parallel Session 6",
-        "name": "GIET Team",
-        "inc": "The Education University of Hong Kong"
+        "name": "Du Xu\nChiu Ming Ming\nYang Juan",
+        "inc": "Central China Normal University\nThe Education University of Hong Kong\nWuhan University of Science and Technology"
       }
     }
   },
@@ -243,7 +200,7 @@
     "Name": "Program Chair",
     "Details": {
       "line1": {
-        "name": "MA Qing",
+        "name": "Tao Sisi",
         "inc": "The Education University of Hong Kong"
       },
       "line2": {
@@ -256,8 +213,32 @@
     "Name": "Publicity Chair",
     "Details": {
       "line1": {
-        "name": "LI Hui Philip",
+        "name": "GAI Huixia Helen",
         "inc": "The Education University of Hong Kong"
+      },
+      "line2": {
+        "name": "CHAN Chun Bun Henry",
+        "inc": "The Hong Kong Polytechnic University"
+      },
+      "line3": {
+        "name": "JIANG Bo",
+        "inc": "East China Normal University"
+      },
+      "line4": {
+        "name": "LEI Chi Un Leon",
+        "inc": "City University of Hong Kong"
+      },
+      "line5": {
+        "name": "WU Longkai",
+        "inc": "Central China Normal University"
+      },
+      "line6": {
+        "name": "LEE Juseong",
+        "inc": "The Education University of Hong Kong"
+      },
+      "line7": {
+        "name": "Li TingSong",
+        "inc": "Shanghai Jiao tong University"
       }
     }
   },
@@ -265,7 +246,11 @@
     "Name": "Registration Chair",
     "Details": {
       "line1": {
-        "name": "Ling Man Ho Alpha",
+        "name": "LING Man Ho",
+        "inc": "The Education University of Hong Kong"
+      },
+      "line2": {
+        "name": "MIT General Office",
         "inc": "The Education University of Hong Kong"
       }
     }
@@ -948,6 +933,7 @@
   "Sub-symposium Sessions Submit": "Call for Presentation",
   "EduHK Full": "The Education University of Hong Kong",
   "GIET": "Global Institute for Emerging Technologies (GIET)",
+  "ETFE West Joint Lab": "Emerging Technology and Future Education Western Joint Lab",
   "SendTo": "email: ",
   "SubmitNumber": "Parallel Session",
   "SubmitTopic": "Topic",

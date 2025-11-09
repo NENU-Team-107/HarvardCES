@@ -20,11 +20,14 @@ const kinds = ref([
   { name: "Chair of Parallel session", flag: true },
   { name: "Program Chair", flag: false },
   // { name: "Workshop Chair", flag: false }, // 2026版本暂时隐藏工作坊主席
-  { name: "Local Chair of Parallel session", flag: true },
+  // { name: "Local Chair of Parallel session", flag: true },
   // { name: "Workshop Co-Chair", flag: false }, // 2026版本暂时隐藏工作坊联席主席
-  { name: "Publicity Co-chair", flag: false },
+  { name: "Publicity Chair", flag: false },
+  { name: "Registration Chair", flag: false },
   { name: "Outreach Co-Chair", flag: false },
   { name: "Logistics Support", flag: false },
+  // 新增：宣傳主席
+  // { name: "Publicity Co-chair", flag: false },
 ]);
 
 const member = [{ title: "MemberLeft", flag: false }, { title: "MemberRight", flag: false }];

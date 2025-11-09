@@ -103,16 +103,16 @@ export const routerArray: Array<RouterItem> = [
         year: 2026,
         name: "Submit",
         children: [
-            {
-                year: 2026,
-                name: "Important Dates",
-                path: "/2026/call/dates"
-            },
-            {
-                year: 2026,
-                name: "Format and Submission",
-                path: "/2026/call/submission"
-            },
+            // {  // 2026版需求：暂时隐藏“重要日期”
+            //     year: 2026,
+            //     name: "Important Dates",
+            //     path: "/2026/call/dates"
+            // },
+            // {  // 2026版需求：暂时隐藏“格式及提交”
+            //     year: 2026,
+            //     name: "Format and Submission",
+            //     path: "/2026/call/submission"
+            // },
             {
                 year: 2026,
                 name: "Session",
