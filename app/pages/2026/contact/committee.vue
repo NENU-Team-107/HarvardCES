@@ -1,5 +1,6 @@
 <script setup>
 import ChairTable from '~/components/commitee/ChairTable.vue';
+import ChairTableWithAvatar from '~/components/commitee/ChairTableWithAvatar.vue';
 
 const speakersList = ref([])
 
@@ -24,7 +25,7 @@ const kinds = ref([
   // { name: "Workshop Co-Chair", flag: false }, // 2026版本暂时隐藏工作坊联席主席
   { name: "Publicity Chair", flag: false },
   { name: "Registration Chair", flag: false },
-  { name: "Outreach Co-Chair", flag: false },
+  // { name: "Outreach Co-Chair", flag: false },
   { name: "Logistics Support", flag: false },
   // 新增：宣傳主席
   // { name: "Publicity Co-chair", flag: false },
@@ -84,7 +85,7 @@ useHead({
       <div class="min-h-full w-full md:px-32 px-4 justify-self-center">
         <div class="w-full grid md:grid-cols-10 grid-cols-1 gap-12 justify-center justify-item-center bg-white/80 md:pt-12 rounded-lg">
           <div v-for="(item, index) in kinds" :key="index" :class="['w-full flex justify-center items-center', index % 5 == 0 ? 'row-span-4 md:col-span-6 col-span-1' : 'row-span-1 md:col-span-4 col-span-1']">
-            <ChairTable :title="item.name" :flag="item.flag" />
+            <component :is="item.name === 'Program Chair' ? ChairTableWithAvatar : ChairTable" :title="item.name" :flag="item.flag" />
           </div>
         </div>
       </div>
