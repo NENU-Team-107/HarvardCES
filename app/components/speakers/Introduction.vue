@@ -1,9 +1,12 @@
 <script setup lang="ts">
 import type { Speaker } from '~/lib/model';
 
-const props = defineProps<{
-  speakers: Speaker
-}>()
+const props = withDefaults(defineProps<{
+  speakers: Speaker,
+  hideDetails?: boolean,
+}>(), {
+  hideDetails: false,
+})
 
 const { t } = useI18n()
 
@@ -47,10 +50,11 @@ class="aspect-square min-w-3/5 max-h-44 mx-auto rounded-full" :src="props.speake
       <div class="text-center w-full flex justify-center items-center h-full my-auto" v-html="inc"/>
     </div>
 
-    <template #footer>
+    <template v-if="!props.hideDetails" #footer>
       <ULink
-:to="props.speakers.bio.details.link"
-        class="italic font-semibold hover:text-blue-600 text-black hover:transition-all hover:-translate-y-1 hover:scale-110 duration-300">
+        :to="props.speakers.bio.details.link"
+        class="italic font-semibold hover:text-blue-600 text-black hover:transition-all hover:-translate-y-1 hover:scale-110 duration-300"
+      >
         {{ $t("Details") }}
         <font-awesome icon="fa-solid fa-arrow-right" />
       </ULink>

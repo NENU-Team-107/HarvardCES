@@ -69,7 +69,7 @@ const getAvatarSrc = (nameKey: string) => {
         :ui="{ base: 'min-w-full table-fixed ', td: 'break-words text-left min-w-full table-fixed md:text-base text-sm text-black drak:text:white', tr: 'h-fit' }">
         <template #name-cell="{ row }">
           <div class="flex items-center gap-2 md:text-base text-sm text-black drak:text:white break-words text-left min-w-full table-fixed">
-            <NuxtImg v-if="props.title === 'Program Chair' && getAvatarSrc(row.original.name)" :src="getAvatarSrc(row.original.name)" alt="avatar" width="28" height="28" class="rounded-full object-cover" />
+            <NuxtImg v-if="props.title === 'Program Chair' && getAvatarSrc(row.original.name)" :src="getAvatarSrc(row.original.name)" alt="avatar" width="75" height="75" class="rounded-full object-cover" />
             <span v-html="$t(row.original.name).replace(/\n/g, '<br>')" />
           </div>
         </template>

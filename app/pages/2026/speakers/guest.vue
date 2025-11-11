@@ -36,11 +36,12 @@ onMounted(() => {
                     }
                 })
                 speaker.photo = window.URL.createObjectURL(image)
-                const path = speaker.bio.details.link?.split('/')
-                if (path) {
-                    // TODO: 2026年内容待更新 - 修改路径为2026年
-                    speaker.bio.details.link = '/2026/speakers/speaker/' + path[path.length - 1]
-                }
+                // 临时禁用详情展示与详情路径更新
+                // const path = speaker.bio.details.link?.split('/')
+                // if (path) {
+                //     // TODO: 2026年内容待更新 - 修改路径为2026年
+                //     speaker.bio.details.link = '/2026/speakers/speaker/' + path[path.length - 1]
+                // }
             }
         })
     pending.value = false;
@@ -68,7 +69,7 @@ const pending = ref(true)
 
                 <div class="grid grid-cols-3 gap-5 justify-items-center items-start ">
                     <div v-for="speaker in speakersList" :key="speaker.id" class="w-full h-full">
-                        <SpeakersIntroduction :speakers="speaker" class="mx-4 w-full h-full" />
+                        <SpeakersIntroduction :speakers="speaker" :hide-details="true" class="mx-4 w-full h-full" />
                     </div>
                 </div>
 
@@ -82,7 +83,7 @@ const pending = ref(true)
                     <div class="h-0.5 w-12 bg-black"/>
                 </div>
                 <div v-for="speaker in speakersList" :key="speaker.id">
-                    <SpeakersIntroduction :speakers="speaker" class="mx-10 my-5 h-full " />
+                    <SpeakersIntroduction :speakers="speaker" :hide-details="true" class="mx-10 my-5 h-full " />
                 </div>
             </div>
         </div>

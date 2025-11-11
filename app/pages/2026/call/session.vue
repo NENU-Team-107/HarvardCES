@@ -96,13 +96,15 @@ watchEffect(() => {
             <h1 class="mx-4">{{ $t("Sub-symposium Sessions Submit") }} </h1>
             <div class="h-0.5 w-20 bg-black"/>
           </div>
-          <p class="text-gray-500 text-sm font-normal mt-3">{{ $t('Call2026Notice') }}</p>
+          <p class="text-gray-500 text-base md:text-lg font-normal mt-3">{{ $t('Call2026Notice') }}</p>
         </div>
+        <!--
         <div class="text-red-500/90 text-base mb-2">
           <strong><i>{{ $t("Due") }}</i></strong>
           <br>
           <span class="text-black"><strong><i>* {{ $t("session more") }}</i></strong></span>
         </div>
+      -->
         <!-- 投稿列表（桌面端 UTable）已临时注释 -->
         <!--
         <div class="flex justify-center items-center w-full self-center">
@@ -136,7 +138,7 @@ watchEffect(() => {
       <div class="w-full mt-6">
         <div class="text-sm font-bold text-center my-5 text-gray-500">
           <div class="flex justify-center items-center">
-            <h1 class="mx-4">{{ $t("Collaborative Journals:") }} </h1>
+            <h1 class="mx-4 text-xl md:text-2xl">{{ $t("Collaborative Journals:") }} </h1>
           </div>
         </div>
         <div class="flex justify-center items-center gap-8 py-4">

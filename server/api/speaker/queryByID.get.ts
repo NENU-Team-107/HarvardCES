@@ -1,4 +1,4 @@
-import { guestOfHonor, guestOfHonor2026, invitedSpeakers, keynoteSpeaker, keynoteSpeaker2026, organizingCommittee, organizingCommittee2026, speakerToKind, speakerToKind2026 } from "~/lib/data"
+import { guestOfHonor, guestOfHonor2026, invitedSpeakers, invitedSpeakers2026, keynoteSpeaker, keynoteSpeaker2026, organizingCommittee, organizingCommittee2026, speakerToKind, speakerToKind2026 } from "~/lib/data"
 import type { ApiResponseWithSpeaker } from "~/lib/model"
 import type { H3Event } from 'h3';
 export default defineEventHandler(async (event: H3Event) => {
@@ -52,7 +52,8 @@ export default defineEventHandler(async (event: H3Event) => {
             break
         case "Invited Speakers":
             {
-                const result = invitedSpeakers.find(speaker => speaker.id === id)
+                const invitedData = year === '2026' ? invitedSpeakers2026 : invitedSpeakers
+                const result = invitedData.find(speaker => speaker.id === id)
                 if (result !== undefined) {
                     data.status = "Success"
                     data.data = result

@@ -1,4 +1,4 @@
-import { guestOfHonor, guestOfHonor2026, invitedSpeakers, keynoteSpeaker, keynoteSpeaker2026, organizingCommittee, organizingCommittee2026 } from '~/lib/data';
+import { guestOfHonor, guestOfHonor2026, invitedSpeakers, invitedSpeakers2026, keynoteSpeaker, keynoteSpeaker2026, organizingCommittee, organizingCommittee2026 } from '~/lib/data';
 import type { H3Event } from 'h3';
 export default defineEventHandler(async (event: H3Event) => {
     const query = getQuery(event)
@@ -58,7 +58,8 @@ export default defineEventHandler(async (event: H3Event) => {
         }
         return data
     } else if (query.kind === "Invited Speakers") {
-        const result = invitedSpeakers
+        const year = query.year as string
+        const result = year === '2026' ? invitedSpeakers2026 : invitedSpeakers
         const data = {
             'status': 'Success',
             'data': result,

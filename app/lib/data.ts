@@ -60,6 +60,17 @@ export const speakerToKind2026: Map<number, string> = new Map([
     [16, 'Guest of Honor'], // 陈智轩教授
     [17, 'Guest of Honor'],
     [36, 'Guest of Honor'],
+    // Invited Speakers 2026
+    [101, 'Invited Speakers'],
+    [102, 'Invited Speakers'],
+    [103, 'Invited Speakers'],
+    [104, 'Invited Speakers'],
+    [105, 'Invited Speakers'],
+    [106, 'Invited Speakers'],
+    [107, 'Invited Speakers'],
+    [108, 'Invited Speakers'],
+    [109, 'Invited Speakers'],
+    [110, 'Invited Speakers'],
 ])
 
 export const keynoteSpeaker: Array<Speaker> = [
@@ -707,6 +718,158 @@ export const invitedSpeakers: Array<Speaker> = [
                 description: "server.Invited Speakers.id12.description",
                 title: "server.Invited Speakers.id12.title",
                 link: '/2025/speakers/speaker/32 CHIU Kin-fung Thomas'
+            }
+        }
+    }
+]
+export const invitedSpeakers2026: Array<Speaker> = [
+    {
+        id: 101,
+        name: "server.Invited Speakers.id13.name",
+        kind: "Invited Speakers",
+        inc: "server.Invited Speakers.id13.inc",
+        photo: "avatars/Shijin Wang.png",
+        activateDate: new Date("2026-05-09"),
+        bio: {
+            details: {
+                description: "server.Invited Speakers.id13.description",
+                title: "server.Invited Speakers.id13.title",
+                link: '/2026/speakers/speaker/101 ShijinWang'
+            }
+        }
+    },
+    {
+        id: 102,
+        name: "server.Invited Speakers.id14.name",
+        kind: "Invited Speakers",
+        inc: "server.Invited Speakers.id14.inc",
+        photo: "avatars/Enhong Chen.png",
+        activateDate: new Date("2026-05-09"),
+        bio: {
+            details: {
+                description: "server.Invited Speakers.id14.description",
+                title: "server.Invited Speakers.id14.title",
+                link: '/2026/speakers/speaker/102 EnhongChen'
+            }
+        }
+    },
+    {
+        id: 103,
+        name: "server.Invited Speakers.id15.name",
+        kind: "Invited Speakers",
+        inc: "server.Invited Speakers.id15.inc",
+        photo: "avatars/Ping Li.png",
+        activateDate: new Date("2026-05-09"),
+        bio: {
+            details: {
+                description: "server.Invited Speakers.id15.description",
+                title: "server.Invited Speakers.id15.title",
+                link: '/2026/speakers/speaker/103 PingLi'
+            }
+        }
+    },
+    {
+        id: 104,
+        name: "server.Invited Speakers.id16.name",
+        kind: "Invited Speakers",
+        inc: "server.Invited Speakers.id16.inc",
+        photo: "avatars/liuqi.png",
+        activateDate: new Date("2026-05-09"),
+        bio: {
+            details: {
+                description: "server.Invited Speakers.id16.description",
+                title: "server.Invited Speakers.id16.title",
+                link: '/2026/speakers/speaker/104 LiuQi'
+            }
+        }
+    },
+    {
+        id: 105,
+        name: "server.Invited Speakers.id17.name",
+        kind: "Invited Speakers",
+        inc: "server.Invited Speakers.id17.inc",
+        photo: "avatars/yinminghao.png",
+        activateDate: new Date("2026-05-09"),
+        bio: {
+            details: {
+                description: "server.Invited Speakers.id17.description",
+                title: "server.Invited Speakers.id17.title",
+                link: '/2026/speakers/speaker/105 YinMinghao'
+            }
+        }
+    },
+    {
+        id: 106,
+        name: "server.Invited Speakers.id18.name",
+        kind: "Invited Speakers",
+        inc: "server.Invited Speakers.id18.inc",
+        photo: "avatars/duxv.png",
+        activateDate: new Date("2026-05-09"),
+        bio: {
+            details: {
+                description: "server.Invited Speakers.id18.description",
+                title: "server.Invited Speakers.id18.title",
+                link: '/2026/speakers/speaker/106 DuXu'
+            }
+        }
+    },
+    {
+        id: 107,
+        name: "server.Invited Speakers.id19.name",
+        kind: "Invited Speakers",
+        inc: "server.Invited Speakers.id19.inc",
+        photo: "avatars/Alberto Sols.png",
+        activateDate: new Date("2026-05-09"),
+        bio: {
+            details: {
+                description: "server.Invited Speakers.id19.description",
+                title: "server.Invited Speakers.id19.title",
+                link: '/2026/speakers/speaker/107 AlbertoSols'
+            }
+        }
+    },
+    {
+        id: 108,
+        name: "server.Invited Speakers.id20.name",
+        kind: "Invited Speakers",
+        inc: "server.Invited Speakers.id20.inc",
+        photo: "avatars/carina.png",
+        activateDate: new Date("2026-05-09"),
+        bio: {
+            details: {
+                description: "server.Invited Speakers.id20.description",
+                title: "server.Invited Speakers.id20.title",
+                link: '/2026/speakers/speaker/108 CarinaGonzalez'
+            }
+        }
+    },
+    {
+        id: 109,
+        name: "server.Invited Speakers.id21.name",
+        kind: "Invited Speakers",
+        inc: "server.Invited Speakers.id21.inc",
+        photo: "avatars/matthew.png",
+        activateDate: new Date("2026-05-09"),
+        bio: {
+            details: {
+                description: "server.Invited Speakers.id21.description",
+                title: "server.Invited Speakers.id21.title",
+                link: '/2026/speakers/speaker/109 MatthewKoschmann'
+            }
+        }
+    },
+    {
+        id: 110,
+        name: "server.Invited Speakers.id22.name",
+        kind: "Invited Speakers",
+        inc: "server.Invited Speakers.id22.inc",
+        photo: "avatars/chenqiufan.png",
+        activateDate: new Date("2026-05-09"),
+        bio: {
+            details: {
+                description: "server.Invited Speakers.id22.description",
+                title: "server.Invited Speakers.id22.title",
+                link: '/2026/speakers/speaker/110 ChenQiufan'
             }
         }
     }
