@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { Speaker } from '~/lib/model';
+import { invitedSpeakers2026 } from '~/lib/data';
 
 defineOptions({
     name: "InvitedSpeakers",
@@ -12,30 +13,43 @@ definePageMeta({
 const speakersList = ref<Speaker[]>([])
 
 const fetchSpeakers = async () => {
-    const resp = await $fetch('/api/speaker/listByQuery', {
-        method: 'GET',
-        query: {
-            kind: 'Invited Speakers',
-            year: '2026'
+    try {
+        const resp = await $fetch('/api/speaker/listByQuery', {
+            method: 'GET',
+            query: {
+                kind: 'Invited Speakers',
+                year: '2026'
+            }
+        })
+        const { status, data } = resp as { status: string, data: Speaker[] | null }
+        if (status === "Success" && data) {
+            speakersList.value = data
+            return 'api'
         }
-    })
-    const { status, data } = resp
-    if (status === "Success" && data !== null) {
-        speakersList.value = data;
+    } catch (e) {
+        // ignore and fallback
     }
+    // Fallback: use static dataset when API is unavailable in production
+    speakersList.value = invitedSpeakers2026 as unknown as Speaker[]
+    return 'fallback'
 }
 
 onMounted(() => {
     fetchSpeakers()
         .then(async () => {
             for (const speaker of speakersList.value) {
-                const image: Blob = await $fetch('/api/speaker/photo', {
-                    method: 'GET',
-                    query: {
-                        photo: speaker.photo
-                    }
-                })
-                speaker.photo = window.URL.createObjectURL(image)
+                try {
+                    const image: Blob = await $fetch('/api/speaker/photo', {
+                        method: 'GET',
+                        query: {
+                            photo: speaker.photo
+                        }
+                    })
+                    speaker.photo = window.URL.createObjectURL(image)
+                } catch (e) {
+                    // Fallback to static file from public directory
+                    speaker.photo = '/' + speaker.photo
+                }
                 const path = speaker.bio.details.link?.split('/')
                 if (path) {
                     // TODO: 修改演讲者详情页面路径为2026年
@@ -43,6 +57,9 @@ onMounted(() => {
                 }
             }
             pending.value = false;
+        })
+        .catch(() => {
+            pending.value = false
         })
 })
 
