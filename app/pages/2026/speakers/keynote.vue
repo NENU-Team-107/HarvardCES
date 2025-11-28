@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import Loading from '~/components/common/Loading.vue';
-
 import type { Speaker } from '~/lib/model';
+import { keynoteSpeaker2026 } from '~/lib/data';
+
 defineOptions({
   name: "KeynoteSpeakers",
 });
@@ -11,6 +12,9 @@ definePageMeta({
 })
 
 const speakersList = ref<Speaker[]>([])
+
+const pending = ref(true);
+
 const fetchSpeakers = async () => {
   const resp = await $fetch('/api/speaker/listByQuery', {
     method: 'GET',
@@ -22,31 +26,42 @@ const fetchSpeakers = async () => {
   const { status, data } = resp
   if (status === "Success" && data !== null) {
     speakersList.value = data;
+  } else {
+    throw new Error('Failed to fetch speakers');
   }
 }
 
-onMounted(() => {
-  fetchSpeakers()
-    .then(async () => {
-      for (const speaker of speakersList.value) {
+onMounted(async () => {
+  try {
+    await fetchSpeakers();
+    for (const speaker of speakersList.value) {
+      try {
         const image: Blob = await $fetch('/api/speaker/photo', {
           method: 'GET',
-          query: {
-            photo: speaker.photo
-          }
+          query: { photo: speaker.photo }
         })
         speaker.photo = window.URL.createObjectURL(image)
-        const path = speaker.bio.details.link?.split('/')
-        if (path) {
-          // TODO: 修改演讲者详情页面路径为2026年
-          speaker.bio.details.link = '/2026/speakers/speaker/' + path[path.length - 1]
-        }
+      } catch {
+        speaker.photo = '/' + speaker.photo
       }
-      pending.value = false;
-    });
+      const path = speaker.bio.details.link?.split('/')
+      if (path) {
+        speaker.bio.details.link = '/2026/speakers/speaker/' + path[path.length - 1]
+      }
+    }
+  } catch {
+    speakersList.value = keynoteSpeaker2026.map(s => ({ ...s })) as Speaker[]
+    for (const speaker of speakersList.value) {
+      speaker.photo = '/' + speaker.photo
+      const path = speaker.bio.details.link?.split('/')
+      if (path) {
+        speaker.bio.details.link = '/2026/speakers/speaker/' + path[path.length - 1]
+      }
+    }
+  } finally {
+    pending.value = false;
+  }
 })
-
-const pending = ref(true);
 
 // TODO: 2026年内容待更新 - 确认主旨演讲者Logo是否需要更新
 // const logos = ref([
