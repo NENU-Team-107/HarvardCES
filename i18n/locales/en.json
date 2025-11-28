@@ -66,7 +66,7 @@
     "Details": {
       "Name": "The Education University of Hong Kong",
       "Language": "Chinese and English",
-      "Date": "15-16 May, 2026",
+      "Date": "14-16 May, 2026",
       "Location": "The Education University of Hong Kong \n Tai Po Campus",
       "Mail": "GIETfuture&#64;eduhk.hk"
     }
@@ -126,27 +126,27 @@
     "Details": {
       "line1": {
         "title": "Chair of Parallel Session 1",
-        "name": "Zhang Lexuan\nWANG Mo",
+        "name": "Zhang Lexuan\nWang Mo",
         "inc": "The Education University of Hong Kong\nNortheast Normal University"
       },
       "line2": {
         "title": "Chair of Parallel Session 2",
-        "name": "HUANG Yue Andrew\nGU Minkang",
+        "name": "Huang Yue Andrew\nGu Minkang",
         "inc": "The Education University of Hong Kong\nThe Education University of Hong Kong"
       },
       "line3": {
         "title": "Chair of Parallel Session 3",
-        "name": "LING Man Ho\nWANG Yue",
+        "name": "Ling Man Ho\nWang Yue",
         "inc": "The Education University of Hong Kong\nThe Education University of Hong Kong"
       },
       "line4": {
         "title": "Chair of Parallel Session 4",
-        "name": "WANG Yuan\nLIU Jindong Leo",
+        "name": "Wang Yuan\nLiu Jindong Leo",
         "inc": "The Education University of Hong Kong\nThe Education University of Hong Kong"
       },
       "line5": {
         "title": "Chair of Parallel Session 5",
-        "name": "ZHANG Yue\nCHU Xiaoyan\nHu Lixin Harry",
+        "name": "Zhang Yue\nChu Xiaoyan\nHu Lixin Harry",
         "inc": "The Education University of Hong Kong\nZhejiang University\nThe Education University of Hong Kong"
       },
       "line6": {
@@ -204,7 +204,7 @@
         "inc": "The Education University of Hong Kong"
       },
       "line2": {
-        "name": "YANG Yin Nicole",
+        "name": "Yang Yin Nicole          ",
         "inc": "The Education University of Hong Kong"
       }
     }
@@ -213,27 +213,27 @@
     "Name": "Publicity Chair",
     "Details": {
       "line1": {
-        "name": "GAI Huixia Helen",
+        "name": "Gai Huixia Helen",
         "inc": "The Education University of Hong Kong"
       },
       "line2": {
-        "name": "CHAN Chun Bun Henry",
+        "name": "Chan Chun Bun Henry",
         "inc": "The Hong Kong Polytechnic University"
       },
       "line3": {
-        "name": "JIANG Bo",
+        "name": "Jiang Bo",
         "inc": "East China Normal University"
       },
       "line4": {
-        "name": "LEI Chi Un Leon",
+        "name": "Lei Chi Un Leon",
         "inc": "City University of Hong Kong"
       },
       "line5": {
-        "name": "WU Longkai",
+        "name": "Wu Longkai",
         "inc": "Central China Normal University"
       },
       "line6": {
-        "name": "LEE Juseong",
+        "name": "Lee Juseong",
         "inc": "The Education University of Hong Kong"
       },
       "line7": {
@@ -246,7 +246,7 @@
     "Name": "Registration Chair and Logistics Support",
     "Details": {
       "line1": {
-        "name": "LING Man Ho",
+        "name": "Ling Man Ho",
         "inc": "The Education University of Hong Kong"
       },
       "line2": {
@@ -1227,6 +1227,28 @@
           "title": "",
           "abstract": ""
         }
+      },
+      "id17": {
+        "description": "Daniel L. Schwartz is the I. James Quillen Dean and the Nomellini & Olivier Professor of Educational Technology at Stanford Graduate School of Education. He is also the Halper Family Faculty Director of the Stanford Accelerator for Learning, a major university-wide interdisciplinary initiative advancing the science and design of learning to bring effective and equitable solutions to the world. An expert in human learning and educational technology, Schwartz also oversees a laboratory that creates pedagogy, technology, and assessments that prepare students to continue learning and adapting throughout their lifetimes. He is author of \"The ABCs of How We Learn: 26 Scientifically Proven Approaches, How They Work, and When to Use Them\" and the co-host of the GSE podcast, \"School's In.\"",
+        "name": "Professor Daniel Schwartz",
+        "title": "I. James Quillen Dean <br> Nomellini & Olivier Professor of Educational Technology <br> Stanford Graduate School of Education",
+        "inc": "Stanford Graduate School of Education",
+        "speaking": {
+          "inc": "",
+          "title": "",
+          "abstract": ""
+        }
+      },
+      "id18": {
+        "description": "Professor Christian Montag is the Distinguished Professor of Cognitive and Brain Sciences and Associate Director of the Centre for Cognitive and Brain Sciences at the University of Macau. Recognized as a globally expert in biological psychology and neuroscience, Professor Montag leads pioneering research focused on addiction, decision-making, cognitive aging, brain disorders, and the applications of neuroimaging techniques. His work aims to elucidate the neural mechanisms underlying human behavior. A particularly relevant aspect of Professor Montag's research examines technology-related behaviors in the digital age, such as smartphone and social media use, and their effects on the brain. Through his innovative studies, Professor Montag provides valuable insights into how modern digital habits influence neural processes. His distinguished academic contributions have earned him international recognition, including being included in the prestigious Stanford University list of the \"World's Top 2% Scientists\" in 2025.",
+        "name": "Professor Christian MONTAG",
+        "title": "Distinguished Professor of Cognitive and Brain Sciences <br> Associate Director of the Institute of Collaborative Innovation <br> University of Macau, Macau, China",
+        "inc": "University of Macau, Macau, China",
+        "speaking": {
+          "inc": "",
+          "title": "",
+          "abstract": ""
+        }
       }
     },
     "Guest of Honor": {
@@ -1298,7 +1320,7 @@
       },
       "id5": {
         "description": "Professor Philip Li is Chair Professor of Early Childhood Education. He previously held leadership positions as Dean of the Shanghai Institute of Early Childhood Education at Shanghai Normal University (SHNU), Program Director (Master) in the Macquarie School of Education at Macquarie University (MQ), and Program Director (MEd) of the Faculty of Education at The University of Hong Kong (HKU). Professor Li has extensive and focused research interests in the field of early childhood development and education, spanning developmental cognitive neuroscience, developmental psycholinguistics, early literacy and bilingualism, curriculum and pedagogy, educational policy, school leadership, and teacher education. According to Google Scholar, he has a track record of 293 academic publications, including 234 journal articles, 9 books, 38 chapters, and 12 conference papers. Since 2021, he has been ranked among the World’s Top 2% Scientists by Stanford University.",
-        "name": "Professor LI, Hui Philip",
+        "name": "Professor Philip Hui Li",
         "title": "Publicity and Outreach Chair <br> Associate Editor, Frontiers in Psychology <br> Chair Professor of Early Childhood Education <br> The Education University of Hong Kong",
         "inc": "The Education University of Hong Kong"
       },
@@ -1479,15 +1501,15 @@
       },
       "id5": {
         "index": "6",
-        "name": "AI Writing and Assessment",
-        "submitddl": "Submission Deadline: 28 February, 2025",
-        "notifyddl": "Notification of Acceptance Date: 28 February, 2025",
+        "name": "National Natural Science Foundation F0701<br>Future Education: Science and Technology Research",
+        "submitddl": "",
+        "notifyddl": "",
         "content": {
-          "p1": "<p> The prestigious Harvard China Education Forum will be held in the early summer of 2025 at The Education University of Hong Kong (EdUHK)'s campus in Tai Po, which is situated on a mountainous landscape. The forum will bring together distinguished scholars from globally renowned universities such as Harvard, Stanford, MIT, EdUHK, and Peking University, as well as technology and education policy makers and experts. The three-day event will delve into the integration and application of emerging technologies such as Artificial Intelligence, Metaverse and Intelligent Reality in teaching, training and talent development. We invite you to share the latest R&D results and participate in the parallel session on May 10th. Excellent sharing may be invited to publish an extended version in high impact journals (SCI, SSCI and CSSCI). </p>",
+          "p1": "<p>In the early summer of 2026, the second Harvard-EdUHK-Stanford Joint Symposium will be held at the QS-5-star-rated The Education University of Hong Kong (EdUHK). The Symposium will boast an impressive roster of speakers from globally recognized institutions, such as Harvard, Stanford, MIT, EdUHK, and Yale University, and experts in the fields of humanity, art, law, new media, and technology. This two-day event will delve into the integration of new technologies such as artificial intelligence (AI), robot, and multimodal intelligent within teaching, training, and talents development. We invite you to share your proposal and present it in the parallel session on May 16th, 2026. Authors of excellent proposals may be invited to publish their full papers in high-impact journals (SCI, SSCI, or CSSCI).</p>",
           "d1": "Parallel Session Introduction",
-          "p2": "<p> Focusing on the current topic of AI technology in writing and assessment in the field of education technology, this parallel session aims to discuss the diversified applications of AI technology in writing and assessment and how to enhance the effectiveness of teaching and learning through AI. The parallel session consists of the following three sub-themes, providing a broad exchange platform for scholars and practitioners from different research directions. </p><div class=\"my-2\"><strong>Sub-theme 1:Artificial Intelligence and its Application in Writing </strong></div><p> Focusing on the application of artificial intelligence in the writing process, it explores how to integrate advanced artificial intelligence technology into writing teaching practices and the writing process to improve teaching quality and efficiency. Participants can present papers on the following topics: </p> <ul class=\"list-disc my-1\"><li>The design and implementation of AI-assisted writing teaching strategies.</li><li>Ethical considerations in AI-assisted writing</li><li>Application of AI in writing classrooms</li><li>Teacher's role in AI-assisted writing instruction</li><li>Exploration of the application of AI in extracurricular writing practices</li><li>Instructors' professional development and training needs</li><li>Critical thinking in AI-assisted writing instruction</li></ul> <div class=\"my-2\"><strong>Sub-theme 2:Artificial Intelligence in Formative Assessment </strong></div><p> Focusing on the application of artificial intelligence in the assessment process, we aim to explore how to use AI to provide learners with personalized and efficient learning experiences. The aim is to explore how intelligent technology can be used to provide learners with personalized and efficient learning experiences. This includes, but not limited to, the following topics: </p> <ul class=\"list-disc my-1\"><li>AI-assisted writing feedback</li><li>AI in corpus-assisted data-driven learning evaluation and assessment</li><li>The development and application of AI tutoring and assessment tools</li><li>Research and practices of AI-Assisted Automatic Evaluation/Grading</li><li>Student/instructor attitudes toward AI in writing</li><li>Ethical considerations in AI-assisted writing</li></ul> <div class=\"my-2\"><strong>Sub-theme 3: Artificial Intelligence’s application in Writing Teaching and Learning </strong></div><p> Exploring the impact of artificial intelligence in writing instruction, focusing on how AI can assist and transform pedagogical materials, teaching, learning, and task completion for teachers and students. This includes, but not limited to, the following topics: </p> <ul class=\"list-disc my-1\"><li>Changes in learning materials brought by AI</li><li>Effects of AI on the agency and interaction of teachers and students</li><li>AI-mediated pedagogy for writing</li><li>Application of AI in task-based writing</li><li>The supportive role of AI in writing tasks in higher education.</li></ul>",
-          "d2": "Guidelines for Proposal",
-          "p3": "<p>Please prepare a <strong>one-page</strong> proposal containing the following information:</p><ol class=\"list-decimal my-1\"><li><strong>Proposal Title:</strong> The title of your proposal session.</li><li><strong>Proposal Abstract:</strong> A brief description of your proposal topic and its relevance to the session topic.</li><li><strong>Proposal Objectives:</strong> The purpose of the proposal and the expected research outcomes.</li><li><strong>Methodology:</strong> The methods or data sources you plan to use.</li><li><strong>Contribution and Future Work:</strong> The possible contributions of this proposal to the application of LLMs in the field of education, and future research directions.</li><li><strong>Contact Information:</strong> Your full name, affiliation, email address, and phone number.</li></ol> <div class=\"mt-10\">Please send your one-page proposal and other information as a Word attachment to the email address：<a href=\"mailto:hnubai&#64;hainanu.edu.cn\" class=\"font-bold underline hover:text-red-600\">hnubai&#64;hainanu.edu.cn</a>, with the subject line \"Your Name + Harvard CES-EdUHK Joint Symposium parallel session 6.\" We look forward to your valuable work and discussing the infinite possibilities of using AI in writing and assessment together! </div>"
+          "p2": "<p>In 2018, the National Natural Science Foundation of China (NSFC) established the application code F0701 Educational Information Science and Technology, aiming to promote the deep integration of intelligent technologies into education and teaching, transform educational service models in the intelligent era, and advance the high-quality development of technology-empowered education. In recent years, this code direction has supported a wide range of NSFC programs, including key projects, major projects, general projects, young scientist funds, and regional science funds, resulting in a large number of outstanding research outcomes. This parallel sub-forum focuses on the strategic positioning and development trends of educational information science and technology. It aims to discuss frontier research directions, share experiences in applying for F0701 projects, present research progress and application achievements, and ultimately contribute to China’s digital education transformation and the flourishing of educational research.</p><div class=\"my-2\"><strong>Sub-topic1: Policy Analysis of the National Natural Science Foundation of China</strong></div><div class=\"my-2\"><strong>Sub-topic2: Experience Sharing on NSFC Project Applications</strong></div><div class=\"my-2\"><strong>Sub-topic3: Excellent Case Studies of NSFC-funded Projects</strong></div><div class=\"my-2\"><strong>Sub-topic4: Frontiers in Educational Information Science and Technology</strong></div>",
+          "d2": "",
+          "p3": ""
         }
       },
       "id6": {

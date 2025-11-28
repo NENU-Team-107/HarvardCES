@@ -47,6 +47,8 @@ export const speakerToKind2026: Map<number, string> = new Map([
     [13, 'Keynote Speakers'],
     [14, 'Keynote Speakers'],
     [38, 'Keynote Speakers'], // Jamie P. Horsley - 新ID避免冲突
+    [39, 'Keynote Speakers'],
+    [40, 'Keynote Speakers'],
     [9, 'Organizing Committee'],
     [10, 'Organizing Committee'],
     [21, 'Organizing Committee'],
@@ -302,6 +304,36 @@ export const keynoteSpeaker2026: Array<Speaker> = [
             }
         }
     },
+    {
+        id: 39,
+        name: "server.Keynote Speakers.id17.name",
+        kind: "Keynote Speakers",
+        inc: "server.Keynote Speakers.id17.inc",
+        photo: "avatars/Daniel Schwartz.png",
+        activateDate: new Date("2026-05-09"),
+        bio: {
+            details: {
+            description: "server.Keynote Speakers.id17.description",
+            title: "server.Keynote Speakers.id17.title",
+            link: "/2026/speakers/speaker/39 DanielSchwartz"
+            }
+        }
+    },
+    {
+        id: 40,
+        name: "server.Keynote Speakers.id18.name",
+        kind: "Keynote Speakers",
+        inc: "server.Keynote Speakers.id18.inc",
+        photo: "avatars/Christian Montag.png",
+        activateDate: new Date("2026-05-09"),
+        bio: {
+            details: {
+            description: "server.Keynote Speakers.id18.description",
+            title: "server.Keynote Speakers.id18.title",
+            link: "/2026/speakers/speaker/40 ChristianMontag"
+            }
+        }
+    }
 ];
 
 export const organizingCommittee: Array<Speaker> = [
@@ -1033,14 +1065,17 @@ export const SubSymposiumPoster2026: Array<Poster> = [
         callPath: "server.Poster.id4",
         link: '/2026/sub-symposium/4'
     }
-    // 暂时隐藏分论坛6、7
-    // {
-    //     id: 5,
-    //     name: 'Sub-symposium6',
-    //     path: 'img/poster/Sub-symposium6.jpg',
-    //     callPath: "server.Poster.id5",
-    //     link: '/2026/sub-symposium/5'
-    // },
+    ,
+    {
+        id: 5,
+        name: 'Sub-symposium6',
+        path: 'img/poster/Sub-symposium6-2026-zh-Hans.png',
+        pathEn: 'img/poster/Sub-symposium6-2026-en.png',
+        pathZhHant: 'img/poster/Sub-symposium6-2026-zh-Hant.png',
+        callPath: "server.Poster.id5",
+        link: '/2026/sub-symposium/5'
+    }
+    
     // {
     //     id: 6,
     //     name: 'Sub-symposium7',

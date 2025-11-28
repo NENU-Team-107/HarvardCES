@@ -142,8 +142,10 @@ watchEffect(() => {
           </div>
         </div>
         <div class="flex justify-center items-center gap-8 py-4">
-          <img src="/img/logo/co-IEEE-TLTlogo.png" alt="IEEE Transactions on Learning Technologies" class="h-12 md:h-16 object-contain"/>
-          <img src="/img/logo/session2026_logo2.png" alt="Open Education Research" class="h-12 md:h-16 object-contain"/>
+          <img src="/img/logo/co-IEEE-TLTlogo.png" alt="IEEE Transactions on Learning Technologies" class="h-16 md:h-20 object-contain"/>
+          <img src="/img/logo/session2026_logo2.png" alt="Open Education Research" class="h-16 md:h-20 object-contain"/>
+          <img src="/img/logo/Foreign%20Language%20Learning%20Theory%20and%20Practice.png" alt="外语教学理论与实践" class="h-16 md:h-20 object-contain"/>
+          <img src="/img/logo/Language%20Awareness.png" alt="Language Awareness" class="h-16 md:h-20 object-contain"/>
         </div>
       </div>
 
@@ -194,8 +196,10 @@ watchEffect(() => {
           </div>
         </div>
         <div class="flex justify-center items-center gap-6 py-3">
-          <img src="/img/logo/co-IEEE-TLTlogo.png" alt="IEEE Transactions on Learning Technologies" class="h-10 object-contain"/>
-          <img src="/img/logo/session2026_logo2.png" alt="Open Education Research" class="h-10 object-contain"/>
+          <img src="/img/logo/co-IEEE-TLTlogo.png" alt="IEEE Transactions on Learning Technologies" class="h-12 object-contain"/>
+          <img src="/img/logo/session2026_logo2.png" alt="Open Education Research" class="h-12 object-contain"/>
+          <img src="/img/logo/Foreign%20Language%20Learning%20Theory%20and%20Practice.png" alt="外语教学理论与实践" class="h-12 object-contain"/>
+          <img src="/img/logo/Language%20Awareness.png" alt="Language Awareness" class="h-12 object-contain"/>
         </div>
       </div>
 

@@ -51,7 +51,7 @@ v-if="slide.details" class="u-card-class" :ui="{
               <div v-if="slide.details" class="w-11/12 text-sm justify-end flex relative">
                 <div
                   class="font-semibold text-white bg-green-800 hover:bg-green-600 text-center p-2 h-fit absolute bottom-5 right-0">
-                  <ULink :to="slide.link">
+                  <ULink :to="slide.link" class="text-white hover:text-white visited:text-white focus:text-white">
                     {{ $t("About Us.EduHK.link") }}
                   </ULink>
                   <font-awesome class="ml-1" icon="fa-solid fa-arrow-right" />

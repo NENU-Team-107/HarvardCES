@@ -18,6 +18,11 @@ const notifyddl = computed(() => {
   return t('server.Poster.id' + sessionId.value + '.notifyddl')
 })
 
+// d2 标题（研究计划投稿指南），用于按需显示两侧横线
+const contentD2 = computed(() => {
+  return t('server.Poster.id' + sessionId.value + '.content.d2')
+})
+
 </script>
 
 <template>
@@ -48,9 +53,7 @@ const notifyddl = computed(() => {
             <div v-if="sessionId !== 6">
               {{ $t("Session") }}{{ $t("server.Poster.id" + sessionId + ".index") }}:
             </div>
-            <div>
-              {{ $t("server.Poster.id" + sessionId + ".name") }}
-            </div>
+            <div v-html="$t('server.Poster.id' + sessionId + '.name')"/>
             <div class="text-base text-end">
               {{ $t("server.Poster.id" + sessionId + ".submitddl") }}
               <br>
@@ -71,9 +74,9 @@ const notifyddl = computed(() => {
 
           <div v-html="content[1]"/>
 
-          <div class="flex text-green-900 justify-center items-center my-5 text-xl">
+          <div v-if="contentD2 && contentD2.trim().length > 0" class="flex text-green-900 justify-center items-center my-5 text-xl">
             <div class="bg-green-900 w-1/4 h-0.5"/>
-            <h1 class="mx-auto"> {{ t("server.Poster.id" + sessionId + ".content.d2") }}</h1>
+            <h1 class="mx-auto"> {{ contentD2 }} </h1>
             <div class="bg-green-900 w-1/4 h-0.5"/>
           </div>
 
@@ -110,7 +113,7 @@ const notifyddl = computed(() => {
             {{ $t("Session") }} {{ $t("server.Poster.id" + sessionId + ".index") }}:
           </div>
           <div>
-            {{ $t("server.Poster.id" + sessionId + ".name") }}
+            <span v-html="$t('server.Poster.id' + sessionId + '.name')"/>
             <br>
             <br>
           </div>
@@ -134,9 +137,9 @@ const notifyddl = computed(() => {
 
         <div v-html="content[1]"/>
 
-        <div class="flex text-green-900 justify-center items-center my-5 text-base">
+        <div v-if="contentD2 && contentD2.trim().length > 0" class="flex text-green-900 justify-center items-center my-5 text-base">
           <div class="bg-green-900 w-1/6 h-0.5"/>
-          <h1 class="mx-auto"> {{ t("server.Poster.id" + sessionId + ".content.d2") }}</h1>
+          <h1 class="mx-auto"> {{ contentD2 }} </h1>
           <div class="bg-green-900 w-1/6 h-0.5"/>
         </div>
 
