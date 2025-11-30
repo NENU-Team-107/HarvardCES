@@ -49,6 +49,7 @@ export const speakerToKind2026: Map<number, string> = new Map([
     [38, 'Keynote Speakers'], // Jamie P. Horsley - 新ID避免冲突
     [39, 'Keynote Speakers'],
     [40, 'Keynote Speakers'],
+    [41, 'Keynote Speakers'],
     [9, 'Organizing Committee'],
     [10, 'Organizing Committee'],
     [21, 'Organizing Committee'],
@@ -331,6 +332,21 @@ export const keynoteSpeaker2026: Array<Speaker> = [
             description: "server.Keynote Speakers.id18.description",
             title: "server.Keynote Speakers.id18.title",
             link: "/2026/speakers/speaker/40 ChristianMontag"
+            }
+        }
+    },
+    {
+        id: 41,
+        name: "server.Keynote Speakers.id19.name",
+        kind: "Keynote Speakers",
+        inc: "server.Keynote Speakers.id19.inc",
+        photo: "avatars/Minjuan WANG.png",
+        activateDate: new Date("2026-05-09"),
+        bio: {
+            details: {
+                description: "server.Keynote Speakers.id19.description",
+                title: "server.Keynote Speakers.id19.title",
+                link: '/2026/speakers/speaker/41 MinjuanWANG'
             }
         }
     }
@@ -874,7 +890,8 @@ export const invitedSpeakers2026: Array<Speaker> = [
                 link: '/2026/speakers/speaker/108 CarinaGonzalez'
             }
         }
-    },
+    }
+    /*
     {
         id: 109,
         name: "server.Invited Speakers.id21.name",
@@ -905,6 +922,8 @@ export const invitedSpeakers2026: Array<Speaker> = [
             }
         }
     }
+    */
+
 ]
 export const keynoteSpeaking: Array<SpeakingInfo> = [
     {

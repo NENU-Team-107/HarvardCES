@@ -1249,6 +1249,17 @@
           "title": "",
           "abstract": ""
         }
+      },
+      "id19": {
+        "description": "Professor Minjuan Wang is a distinguished scholar in the field of educational technology and computer science. She is a Peking University alumna, Shanghai “Oriental Scholar,” and Hainan “Overseas Distinguished Professor.” Currently, she serves as Assistant Vice President (Interdisciplinary Studies and Partnership, Chair Professor of Emerging Technologies and Future Education, and PhD supervisor at The Education University of Hong Kong. She is also Co-Director of the Global Institute for Emerging Technologies and Editor-in-Chief of IEEE Transactions on Learning Technologies. Professor Wang is internationally recognized for her contributions to educational technology. Bilingual in Chinese and English, and deeply familiar with cross-cultural contexts between China and the United States, she brings a global perspective and innovative thinking to her work. Her research focuses on the applications of XR, Artificial Intelligence (AI), and AI-generated content (AIGC) in education. She has delivered keynote speeches at numerous international conferences and achieved outstanding success in both teaching and research, with an extensive record of scholarly publications.",
+        "name": "Professor Minjuan Wang",
+        "title": "Assistant Vice President (Interdisciplinary Studies and Partnership) <br> Chair Professor of Emerging Technologies and Future Education <br> Co-Director of the Global Institute for Emerging Technologies <br> Editor-in-Chief of IEEE Transactions on Learning Technologies.",
+        "inc": "The Education University of Hong Kong",
+        "speaking": {
+          "inc": "",
+          "title": "",
+          "abstract": ""
+        }
       }
     },
     "Guest of Honor": {

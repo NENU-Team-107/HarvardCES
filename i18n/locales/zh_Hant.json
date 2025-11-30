@@ -882,6 +882,17 @@
           "title": "",
           "abstract": ""
         }
+      },
+      "id19": {
+        "description": "王敏娟教授，北大校友，上海市東方學者，海南省海外名師。現任香港教育大學新興科技與未來教育講席教授 (Chair Professor)、博士研究生導師，助理副校長兼任全球新興技術研究所聯席總監、《IEEE Transactions on Learning Technologies》期刊主編。作為教育技術領域具有國際影響力的學者，王教授精通中英文，深諳中美文化差異，具有國際化學術視野和創新思維，致力於XR、AI與AIGC在教育中的應用研究，曾在無數個國際會議上主題演講；她有著豐富的國際教學和交流經驗， 並取得了卓越的教學成效，積累了豐富的學術出版成果。",
+        "name": "王敏娟教授",
+        "title": "助理副校長（跨學科與夥伴協作） <br> 新興科技與未來教育講席教授 <br> 全球新興技術研究所聯席總監 <br> 《IEEE Transactions on Learning Technologies》期刊主編",
+        "inc": "香港教育大學",
+        "speaking": {
+          "inc": "",
+          "title": "",
+          "abstract": ""
+        }
       }
     },
     "Guest of Honor": {
