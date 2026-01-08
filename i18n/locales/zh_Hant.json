@@ -893,6 +893,17 @@
           "title": "",
           "abstract": ""
         }
+      },
+      "id20": {
+        "description": "Doris Sommer教授現任哈佛大學Romance Languages and Literatures以及African and African American Studies的Ira and Jewell Williams Professor講席教授，同時任教於社會研究領域。Doris Sommer教授的研究領域涵蓋19世紀拉丁美洲女性文學敘事、族裔文學以及雙語美學。她不僅深耕學術，還致力於通過藝術與人文手段促進社會發展，創立了Cultural Agents，這是一個哈佛發起的倡議，致力於復興人文學科公民使命的非政府組織。她創立了Pre-Texts項目，這是一項基於藝術的教師培訓計劃，旨在提升教師的讀寫能力、批判性思維和公民意識。\n\nDoris Sommer教授著作甚豐，其中包括：《Foundational Fictions: The National Romances of Latin America》（講述了關於幫助建立新國家的拉美小說）、《Proceed with Caution when Engaged by Minority Literature》（剖析立場差異的影響）、《Bilingual Aesthetics: A New Sentimental Education》（回應移民爭議的當代議題）以及《The Work of Art in the World: Civic Agency and Public Humanities》。她致力於推動優質公立教育，同時積極在全球推廣其理論與實踐。\n\nDoris Sommer教授擁有New Jersey's Douglass College for Women的學士學位以及Rutgers University的博士學位，並致力於發展優質公立教育事業，活躍於多個國際學術與公共政策組織，包括擔任Cultural Agents總監，同時也是以下組織的成員：David Rockefeller Center for Latin American Studies; American Studies; Ethnicity Migration, Rights; Public Service; Public Health；Mittal Institute for South Asia Studies；Bloomberg Center for Citie和American Academy of Arts and Sciences。",
+        "name": "Doris Sommer教授",
+        "title": "哈佛大學Ira and Jewell Williams講席教授 <br> 羅曼語族語言與文學（西班牙語方向）以及非洲與非裔美國人研究 <br> 羅曼語族語言與文學研究生院院長 <br> Cultural Agents Initiative總監",
+        "inc": "哈佛大學",
+        "speaking": {
+          "inc": "",
+          "title": "",
+          "abstract": ""
+        }
       }
     },
     "Guest of Honor": {
@@ -1081,7 +1092,7 @@
       "id0": {
               "index": "一",
               "name": "創意藝術與媒體中的AI",
-              "submitddl": "投稿截止日期：2026年1月31日",
+              "submitddl": "投稿截止日期：2026年2月6日",
               "notifyddl": "錄用通知日期：2026年2月28日",
               "content": {      
           "p1": "<p>第二屆哈佛-港教大-斯坦福聯合論壇，將在2026年的初夏走進香港教育大學依山傍水的大埔校園。本次論壇將彙聚來自哈佛、斯坦福、麻省理工學院、香港教育大學和耶魯大學等全球知名高校的傑出學者，以及人文、藝術、法學、新媒體和技術領域的專家。為期兩天的活動將深入探討人工智能、機器人和多模態智能體等新興科技在教學、培訓和人才發展中的整合與應用。我們誠邀您來分享最新的研發成果，參與2026年5月16日的分論壇。優秀分享的作者將被邀請在高影響力期刊（SCI、SSCI或CSSCI）上發表完整論文。</p>",
@@ -1094,7 +1105,7 @@
         "id1": {
         "index": "二",
         "name": "分論壇二：新興媒體技術的影響",
-        "submitddl": "投稿截止日期：2026年1月31日",
+        "submitddl": "投稿截止日期：2026年2月6日",
         "notifyddl": "錄用通知日期：2026年2月28日",
         "content": {
           "p1": "<p>第二屆哈佛-港教大-斯坦福聯合論壇，將在2026年的初夏走進香港教育大學依山傍水的大埔校園。本次論壇將匯聚來自哈佛、斯坦福、麻省理工學院、香港教育大學和耶魯大學等全球知名高校的傑出學者，以及人文、藝術、法學、新媒體和技術領域的專家。為期兩天的活動將深入探討人工智能、機器人和多模態智能體等新興科技在教學、培訓和人才發展中的整合與應用。我們誠邀您來分享最新的研發成果，參與2026年5月16日的分論壇。優秀分享的作者將被邀請在高影響力期刊（SCI、SSCI或CSSCI）上發表完整論文。</p>",
@@ -1107,8 +1118,8 @@
       "id2": {
         "index": "三",
         "name": "分論壇三：數據驅動策略下的未來教育",
-        "submitddl": "投稿截止日期：2026年 1 月 31 日",
-        "notifyddl": "錄用通知日期：2026年 2 月 28 日",
+        "submitddl": "投稿截止日期：2026年2月6日",
+        "notifyddl": "錄用通知日期：2026年2月28日",
         "content": {
           "p1": "<p> 第二屆哈佛教大斯坦福聯合論壇，將在2026年的初夏走進香港教育大學依山傍水的大埔校園。本次論壇將匯聚來自哈佛、斯坦福、MIT，香港教育大學和耶魯大學等全球知名高校的傑出學者，以及人文、藝術、法學、新媒體和技術領域的專家。為期兩天的活動將深入探討人工智能、機器人和多模態智能體等新興科技在教學、培訓和人才發展中的整合與應用。我們誠邀您來分享最新的研發成果，參與2026年5月16日的分論壇。優秀分享的作者將被邀請在高影響力期刊（SCI、SSCI或CSSCI）上發表完整論文。 </p>",
           "d1": "分論壇簡介",
@@ -1120,8 +1131,8 @@
       "id3": {
         "index": "四",
         "name": "分論壇四：人工智能與法律教育",
-        "submitddl": "投稿截止日期：2026年 1 月 31 日",
-        "notifyddl": "錄用通知日期：2026年 2 月 28 日",
+        "submitddl": "投稿截止日期：2026年2月6日",
+        "notifyddl": "錄用通知日期：2026年2月28日",
         "content": {
           "p1": "<p> 第二屆哈佛-港教大-斯坦福聯合論壇，將在2026年的初夏走進香港教育大學依山傍水的大埔校園。本次論壇將彙聚來自哈佛、斯坦福、麻省理工學院、香港教育大學和耶魯大學等全球知名高校的傑出學者，以及人文、藝術、法學、新媒體和技術領域的專家。為期兩天的活動將深入探討人工智能、機器人和多模態智能體等新興科技在教學、培訓和人才發展中的整合與應用。我們誠邀您來分享最新的研發成果，參與2026年5月16日的分論壇。優秀分享的作者將被邀請在高影響力期刊（SCI、SSCI或CSSCI）上發表完整論文。</p>",
           "d1": "分論壇簡介",
@@ -1133,7 +1144,7 @@
       "id4": {
         "index": "五",
         "name": "分論壇五：海報與演示",
-        "submitddl": "投稿截止日期：2026年1月31日",
+        "submitddl": "投稿截止日期：2026年2月6日",
         "notifyddl": "錄用通知日期：2026年2月28日",
         "content": {
           "p1": "<p>第二屆哈佛-港教大-斯坦福聯合論壇，將在2026年的初夏走進香港教育大學依山傍水的大埔校園。本次論壇將匯聚來自哈佛、斯坦福、麻省理工學院、香港教育大學和耶魯大學等全球知名高校的傑出學者，以及人文、藝術、法學、新媒體和技術領域的專家。為期兩天的活動將深入探討人工智能、機器人和多模態智能體等新興科技在教學、培訓和人才發展中的整合與應用。我們誠邀您來分享最新的研發成果，參與2026年5月16日的分論壇。優秀分享的作者將被邀請在高影響力期刊（SCI、SSCI或CSSCI）上發表完整論文。</p>",
