@@ -890,7 +890,7 @@ export const invitedSpeakers2026: Array<Speaker> = [
                 link: '/2026/speakers/speaker/108 CarinaGonzalez'
             }
         }
-    }
+    },
     /*
     {
         id: 109,
@@ -907,6 +907,7 @@ export const invitedSpeakers2026: Array<Speaker> = [
             }
         }
     },
+    */
     {
         id: 110,
         name: "server.Invited Speakers.id22.name",
@@ -922,7 +923,6 @@ export const invitedSpeakers2026: Array<Speaker> = [
             }
         }
     }
-    */
 
 ]
 export const keynoteSpeaking: Array<SpeakingInfo> = [
