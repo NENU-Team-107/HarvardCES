@@ -23,7 +23,10 @@ const fetchSpeakers = async () => {
         })
         const { status, data } = resp as { status: string, data: Speaker[] | null }
         if (status === "Success" && data) {
-            speakersList.value = data
+            const apiIds = new Set(data.map(s => s.id))
+            const merged = [...data, ...invitedSpeakers2026.filter(s => !apiIds.has(s.id))]
+            merged.sort((a, b) => a.id - b.id)
+            speakersList.value = merged
             return 'api'
         }
     } catch (e) {
