@@ -5,7 +5,7 @@ export const routerArray: Array<RouterItem> = [
     {
         year: 2026,
         name: "Home",
-        path: "/2026",
+        path: "/",
         children: [
             {
                 year: 2026,

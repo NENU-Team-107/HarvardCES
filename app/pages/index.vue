@@ -6,45 +6,6 @@ import type { Speaker } from '~/lib/model';
 
 const { t } = useI18n()
 
-const logoList = ref([
-  // {
-  //   label: "Collaborator",
-  //   path: "img/logo/co-iLRNLogo.png",
-  //   link: "https://www.immersivelrn.org/",
-  //   height: 12,
-  // },
-  // {
-  //   label: "Collaborator",
-  //   path: "img/logo/co-IEEE-TLTlogo.png",
-  //   link: "https://ieee-edusociety.org/publication/about-publications/tlt",
-  //   height: 16,
-  // },
-  {
-    label: "Collaborator",
-    path: "img/logo/co-iFLYTEKlogo.png",
-    link: "https://www.iflytek.com/cn/",
-    height: 12,
-  },
-  {
-    label: "Collaborator",
-    path: "img/logo/co-sklcilogo.png",
-    link: "https://cogskl.iflytek.com/",
-    height: 16,
-  },
-  // {
-  //   label: "Collaborator",
-  //   path: "img/logo/co-ERCELlogo.jpg",
-  //   link: "",
-  //   height: 18,
-  // },
-  {
-    label: "Collaborator",
-    path: "img/logo/co-MOElogo.png",
-    link: "https://mtt.snnu.edu.cn/index.htm",
-    height: 18,
-  }
-])
-
 const title = ref({
   intro: "Symposium2026.Title",
   speaker: "Keynote Speakers Index",
@@ -53,7 +14,7 @@ const title = ref({
   // workshop: "Activities"
   //   workshop: "Session"
 })
-const chosenKeynote = [37, 11, 12, 13, 14, 38] // 更新为新的ID：37(李子建教授), 38(Jamie P. Horsley)
+const chosenKeynote = [37, 11, 12, 13, 14, 38, 39, 40, 42] // 更新为新的ID：37(李子建教授), 38(Jamie P. Horsley)
 
 const keyspeakersList = ref<Speaker[]>([])
 const organizeList = ref<Speaker[]>([])

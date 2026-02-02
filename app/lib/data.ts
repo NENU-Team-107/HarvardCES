@@ -1577,6 +1577,10 @@ export const ChairListPublicity2026: Array<ChairListItem> = [
         "inc": "Publicity Chair.Details.line1.inc"
     },
     {
+        "name": "Publicity Chair.Details.line8.name",
+        "inc": "Publicity Chair.Details.line8.inc"
+    },
+    {
         "name": "Publicity Chair.Details.line2.name",
         "inc": "Publicity Chair.Details.line2.inc"
     },
@@ -1600,6 +1604,7 @@ export const ChairListPublicity2026: Array<ChairListItem> = [
         "name": "Publicity Chair.Details.line7.name",
         "inc": "Publicity Chair.Details.line7.inc"
     },
+    
 ];
 
 export const ChairListRegistration2026: Array<ChairListItem> = [
@@ -1685,6 +1690,14 @@ export const ChairListPublicityCo2026: Array<ChairListItem> = [
     {
         "name": "Publicity Co-chair.Details.line5.name",
         "inc": "Publicity Co-chair.Details.line5.inc"
+    },
+    {
+        "name": "Publicity Co-chair.Details.line6.name",
+        "inc": "Publicity Co-chair.Details.line6.inc"
+    },
+    {
+        "name": "Publicity Co-chair.Details.line7.name",
+        "inc": "Publicity Co-chair.Details.line7.inc"
     }
 ];
 
