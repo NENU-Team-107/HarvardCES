@@ -65,7 +65,7 @@ const tabs = [
             <!-- 添加论坛介绍图片 -->
             <div class="mt-6 flex justify-center px-4">
               <img 
-                src="/img/introduction.png" 
+                src="/img/introduction2.png" 
                 alt="论坛介绍图片" 
                 class="w-full max-w-full h-auto rounded-lg shadow-lg md:max-w-5xl lg:max-w-6xl xl:max-w-7xl"
                 style="max-width: min(1040px, 100vw - 2rem);"
