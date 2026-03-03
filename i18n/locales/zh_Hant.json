@@ -316,6 +316,168 @@
       }
     }
   },
+  "Symposium Agenda2026": {
+    "Day1": {
+      "line1": {
+        "Time": "8:30-9:00",
+        "Event": "Registration",
+        "Location": "N-G/F-01",
+        "Host": ""
+      },
+      "line2": {
+        "Time": "9:00-9:30",
+        "Event": "<div class='bg-yellow-100 w-full text-green-700 font-bold text-lg my-1'>Opening Remark</div><div>Welcome address</div>Professor John Lee Chi-Kin, JP, President of The Education University of Hong Kong\nProfessor John Mitchell, Stanford University\nMiss Anny Chan, Harvard University",
+        "Location": "N-G/F-01",
+        "Host": ""
+      },
+      "line3": {
+        "Time": "9:40-10:20",
+        "Event": "<div class='bg-yellow-100 w-full text-green-700 font-bold text-lg my-1'>Keynote Speech I</div>Professor Amanda Claybaugh\nDean of Undergraduate Education, Harvard University\nSpeech title: TBC",
+        "Location": "N-G/F-01",
+        "Host": ""
+      },
+      "line4": {
+        "Time": "10:20-10:50",
+        "Event": "<div class='bg-yellow-100 w-full text-green-700 font-bold text-lg my-1'>Coffee Break</div><div>MOU signing ceremony 1 (10:20-10:30)</div>Academy for Applied Policy Studies and Education Futures, The Education University of Hong Kong\nPeking University Law School\n<div class='mt-2'>MOU signing ceremony 2 (10:30-10:40)</div>Academy for Applied Policy Studies and Education Futures, The Education University of Hong Kong\nKoGuan School of Law, Shanghai Jiao Tong University",
+        "Location": "N-G/F-01 Corridor/\nVIP Room",
+        "Host": ""
+      },
+      "line5": {
+        "Time": "10:50-11:30",
+        "Event": "<div class='bg-yellow-100 w-full text-green-700 font-bold text-lg my-1'>Keynote Speech II</div>Professor Daniel Schwartz\nDean of Stanford Graduate School of Education, Stanford University\nSpeech title:\nTwo Paths for AI in Education: Automation and Augmentation",
+        "Location": "N-G/F-01",
+        "Host": ""
+      },
+      "line6": {
+        "Time": "11:30-12:10",
+        "Event": "<div class='bg-yellow-100 w-full text-green-700 font-bold text-lg my-1'>Keynote Speech III</div>Professor John Lee Chi-Kin\nPresident of The Education University of Hong Kong\nSpeech title:\nArtificial Intelligence and Interdisciplinary Education: Inquiry, Learning and Talent Development",
+        "Location": "N-G/F-01",
+        "Host": ""
+      },
+      "line7": {
+        "Time": "12:10-14:00",
+        "Event": "Luncheon\n(By invitation only)",
+        "Location": "B4 Chinese restaurant",
+        "Host": ""
+      },
+      "line8": {
+        "Time": "14:00-14:10",
+        "Event": "Welcome and introduce the Keynote Speakers for the afternoon session\nProfessor CHENG, May Hung May\nVice President (Academic), The Education University of Hong Kong",
+        "Location": "N-G/F-01",
+        "Host": ""
+      },
+      "line9": {
+        "Time": "14:10-14:50",
+        "Event": "<div class='bg-yellow-100 w-full text-green-700 font-bold text-lg my-1'>Keynote Speech IV</div>Professor Jamie P. Horsley\nSenior Fellow\nPaul Tsai China Center\nYale Law School\nSpeech title:\nGarbage In, Garbage Out?  Deploying Legal Reasoning to Interrogate Artificial Intelligence Output",
+        "Location": "N-G/F-01",
+        "Host": ""
+      },
+      "line10": {
+        "Time": "14:50-15:30",
+        "Event": "<div class='bg-yellow-100 w-full text-green-700 font-bold text-lg my-1'>Keynote Speech V</div>Professor Doris Sommer\nIra Jewell Williams, Jr., Professor of Romance Languages and Literatures (Spanish) and in African and African American Studies\nDirector of Graduate Studies\nHarvard University\nSpeech title: TBC",
+        "Location": "N-G/F-01",
+        "Host": ""
+      },
+      "line11": {
+        "Time": "15:30-15:50",
+        "Event": "Coffee Break",
+        "Location": "N-G/F-01 Corridor/\nVIP Room",
+        "Host": ""
+      },
+      "line12": {
+        "Time": "15:50-16:30",
+        "Event": "<div class='bg-yellow-100 w-full text-green-700 font-bold text-lg my-1'>Keynote Speech VI</div>Professor Mark Feldman\nInterim Dean and Professor of Law\nPeking University\nSpeech title:\nAI and Legal Education: Developing a Greatness Framework",
+        "Location": "N-G/F-01",
+        "Host": ""
+      },
+      "line13": {
+        "Time": "16:30-17:10",
+        "Event": "<div class='bg-yellow-100 w-full text-green-700 font-bold text-lg my-1'>Keynote Speech VII</div>Professor Christian Montag\nDistinguished Professor of Cognitive and Brain Sciences\nAssociate Director of the Institute of Collaborative Innovation\nUniversity of Macau\nSpeech title:\nThe Impact of AI on Society – a Psychological Perspective",
+        "Location": "N-G/F-01",
+        "Host": ""
+      },
+      "line14": {
+        "Time": "17:10-17:20",
+        "Event": "Closing Remarks and Logistics",
+        "Location": "N-G/F-01",
+        "Host": ""
+      },
+      "line15": {
+        "Time": "18:00-20:00",
+        "Event": "Dinner\n(By invitation only)",
+        "Location": "Peking Garden\nTsim Sha Tsui",
+        "Host": ""
+      },
+      "line16": {
+        "Time": "20:00-21:00",
+        "Event": "Boat trip",
+        "Location": "Tsim Sha Tsui",
+        "Host": ""
+      }
+    },
+    "Day2": {
+      "line1": {
+        "Time": "8:30-9:00",
+        "Event": "Registration",
+        "Location": "N-G/F-01",
+        "Host": ""
+      },
+      "line2": {
+        "Time": "9:00-9:30",
+        "Event": "<div class='bg-yellow-100 w-full text-green-700 font-bold text-lg my-1'>Opening Remark</div>Professor CHAN, Che Hin Chetwyn\nVice President (Research and Development), The Education University of Hong Kong",
+        "Location": "N-G/F-01",
+        "Host": ""
+      },
+      "line3": {
+        "Time": "9:40-10:20",
+        "Event": "<div class='bg-yellow-100 w-full text-green-700 font-bold text-lg my-1'>Keynote Speech VIII</div>Professor Eric Klopfer\nProfessor and Director of the Scheller Teacher Education Program and The Education, Arcade, Massachusetts Institute of Technology (MIT)\nOnline\nSpeech title: TBC",
+        "Location": "N-G/F-01",
+        "Host": ""
+      },
+      "line4": {
+        "Time": "10:30-12:30",
+        "Event": "Parallel Session I (Arts and Creativity in the Age of AI)\nParallel Session II (Impacts of Emerging Media Technologies)\nParallel Session III (Data-Driven Strategies for Future Education)\nParallel Session V (Poster and Demo)\nInvited Speech (10:30-11:00)\nDr. Wang Shijin\nVice President of iFlytek Co., Ltd.\nExecutive Dean of iFlytek AI Research Institute\nDeputy Director of the State Key Laboratory of Cognitive Intelligence, P.R.China\nSpeech title:\n教育大模型和教育智能體",
+        "Location": "N-1/F-02\nN-2/F-01\nN-2/F-02\nN-G/F-01",
+        "Host": ""
+      },
+      "line5": {
+        "Time": "12:30-14:00",
+        "Event": "Luncheon\n(By invitation only)",
+        "Location": "B4 Chinese restaurant",
+        "Host": ""
+      },
+      "line6": {
+        "Time": "14:00-16:00",
+        "Event": "Parallel Session Opening Speech\nProfessor GU, Minkang, JP, Associate Co-Director, Academy for Applied Policy Studies and Education Futures; Director, National Security and Legal Education Research Centre\nParallel Session IV (AI and Legal Education)\nParallel Session V (Poster and Demo)\nParallel Session VI (National Natural Science Foundation F0701 Future Education: Science and Technology Research)",
+        "Location": "N-1/F-02\nN-2/F-01\nN-2/F-02",
+        "Host": ""
+      },
+      "line7": {
+        "Time": "16:00-16:20",
+        "Event": "Coffee Break",
+        "Location": "N-G/F-01 Corridor/\nVIP Room",
+        "Host": ""
+      },
+      "line8": {
+        "Time": "16:20-17:00",
+        "Event": "<div class='bg-yellow-100 w-full text-green-700 font-bold text-lg my-1'>Closing Keynote Speech IX</div>Professor Mitchell L Stevens\nProfessor, Graduate School of Education\nProfessor (By courtesy), Sociology\nStanford University\nSpeech title:\nAfter the Schooled Society",
+        "Location": "N-G/F-01",
+        "Host": ""
+      },
+      "line9": {
+        "Time": "17:00-18:00",
+        "Event": "<div class='bg-yellow-100 w-full text-green-700 font-bold text-lg my-1'>Closing Remarks and Awards Ceremony</div>Professor Hui Li, Assistant Vice President (Regional Outreach), The Education University of Hong Kong\nMr. Li Xuefan, University of Toronto",
+        "Location": "N-G/F-01",
+        "Host": ""
+      },
+      "line10": {
+        "Time": "19:00-21:00",
+        "Event": "Banquet and Talent Show\n(Invited guests or ticket holders)",
+        "Location": "The Parc 88",
+        "Host": ""
+      }
+    }
+  },
   "Visitor Guide": "來訪指南",
   "Guide for Guests Visiting The Education University of Hong Kong (Tai Po Campus)": "香港教育大學（大埔校區）嘉賓來訪指南",
   "From Airport": {
@@ -591,7 +753,7 @@
   "Symposium Introduction": "論壇手冊",
   "Symposium Location": "論壇地點",
   "Symposium Time": {
-    "title": "論壇議程",
+    "title": "論壇日程",
     "tip": "Harvard-EdUHK-Stanford Joint Symposium: Emerging Technologies and Future Talents Agenda"
   },
   "Harvard CES": "中國教育論壇 (CES)",

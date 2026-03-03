@@ -38,7 +38,7 @@ import AgendaTable from '~/components/symposium/AgendaTable.vue'
         <div class="h-0.5 md:w-20 w-10 bg-black" />
       </div>
       <div class="w-full justify-center items-center py-3 md:py-6">
-        <AgendaTable />
+        <AgendaTable2025 />
       </div>
       <span class="text-center md:text-base text-xs mt-4"><i>{{ $t("Agenda Note") }}</i></span>
       <!-- <div class="w-full">

@@ -131,6 +131,11 @@ export const routerArray: Array<RouterItem> = [
             },
             {
                 year: 2026,
+                name: "Symposium Time.title",
+                path: '/2026/symposium/program'
+            },
+            {
+                year: 2026,
                 name: "Visitor Guide",
                 path: '/2026/visitor-guide'
             }
