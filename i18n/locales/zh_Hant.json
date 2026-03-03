@@ -326,91 +326,91 @@
       },
       "line2": {
         "Time": "9:00-9:30",
-        "Event": "<div class='bg-yellow-100 w-full text-green-700 font-bold text-lg my-1'>Opening Remark</div><div>Welcome address</div>Professor John Lee Chi-Kin, JP, President of The Education University of Hong Kong\nProfessor John Mitchell, Stanford University\nMiss Anny Chan, Harvard University",
+        "Event": "<div class='bg-yellow-100 w-full text-green-700 font-bold text-lg my-1'>Opening Remark</div><div>Welcome address</div><ul><li>Professor John Lee Chi-Kin, JP, President of The Education University of Hong Kong</li><li>Professor John Mitchell, Stanford University</li><li>Miss Anny Chan, Harvard University</li></ul>",
         "Location": "N-G/F-01",
         "Host": ""
       },
       "line3": {
         "Time": "9:40-10:20",
-        "Event": "<div class='bg-yellow-100 w-full text-green-700 font-bold text-lg my-1'>Keynote Speech I</div>Professor Amanda Claybaugh\nDean of Undergraduate Education, Harvard University\nSpeech title: TBC",
+        "Event": "<div class='bg-yellow-100 w-full text-green-700 font-bold text-lg my-1'>Keynote Speech I</div>Professor Amanda Claybaugh<br>Dean of Undergraduate Education, Harvard University<br><br>Speech title: TBC",
         "Location": "N-G/F-01",
         "Host": ""
       },
       "line4": {
         "Time": "10:20-10:50",
-        "Event": "<div class='bg-yellow-100 w-full text-green-700 font-bold text-lg my-1'>Coffee Break</div><div>MOU signing ceremony 1 (10:20-10:30)</div>Academy for Applied Policy Studies and Education Futures, The Education University of Hong Kong\nPeking University Law School\n<div class='mt-2'>MOU signing ceremony 2 (10:30-10:40)</div>Academy for Applied Policy Studies and Education Futures, The Education University of Hong Kong\nKoGuan School of Law, Shanghai Jiao Tong University",
-        "Location": "N-G/F-01 Corridor/\nVIP Room",
+        "Event": "<div class='flex'><div class='w-1/3 flex items-center justify-center font-bold'>Coffee Break</div><div class='w-2/3 border-l border-black pl-2'><div class='font-bold'>MOU signing ceremony 1</div><div class='font-bold'>10:20-10:30</div><br>Academy for Applied Policy Studies and Education Futures, The Education University of Hong Kong<br><br>Peking University Law School<hr class='border-black my-2'><div class='font-bold'>MOU signing ceremony 2</div><div class='font-bold'>10:30-10:40</div><br>Academy for Applied Policy Studies and Education Futures, The Education University of Hong Kong<br><br>KoGuan School of Law, Shanghai Jiao Tong University</div></div>",
+        "Location": "N-G/F-01 Corridor/<br>VIP Room",
         "Host": ""
       },
       "line5": {
         "Time": "10:50-11:30",
-        "Event": "<div class='bg-yellow-100 w-full text-green-700 font-bold text-lg my-1'>Keynote Speech II</div>Professor Daniel Schwartz\nDean of Stanford Graduate School of Education, Stanford University\nSpeech title:\nTwo Paths for AI in Education: Automation and Augmentation",
+        "Event": "<div class='bg-yellow-100 w-full text-green-700 font-bold text-lg my-1'>Keynote Speech II</div>Professor Daniel Schwartz<br>Dean of Stanford Graduate School of Education, Stanford University<br><br>Speech title:<br>Two Paths for AI in Education: Automation and Augmentation",
         "Location": "N-G/F-01",
         "Host": ""
       },
       "line6": {
         "Time": "11:30-12:10",
-        "Event": "<div class='bg-yellow-100 w-full text-green-700 font-bold text-lg my-1'>Keynote Speech III</div>Professor John Lee Chi-Kin\nPresident of The Education University of Hong Kong\nSpeech title:\nArtificial Intelligence and Interdisciplinary Education: Inquiry, Learning and Talent Development",
+        "Event": "<div class='bg-yellow-100 w-full text-green-700 font-bold text-lg my-1'>Keynote Speech III</div>Professor John Lee Chi-Kin<br>President of The Education University of Hong Kong<br><br>Speech title:<br>Artificial Intelligence and Interdisciplinary Education: Inquiry, Learning and Talent Development",
         "Location": "N-G/F-01",
         "Host": ""
       },
       "line7": {
         "Time": "12:10-14:00",
-        "Event": "Luncheon\n(By invitation only)",
-        "Location": "B4 Chinese restaurant",
+        "Event": "<div class='font-bold'>Luncheon</div>",
+        "Location": "B4 Chinese restaurant<br>(By invitation only)",
         "Host": ""
       },
       "line8": {
         "Time": "14:00-14:10",
-        "Event": "Welcome and introduce the Keynote Speakers for the afternoon session\nProfessor CHENG, May Hung May\nVice President (Academic), The Education University of Hong Kong",
+        "Event": "<div class='font-bold'>Welcome and introduce the Keynote Speakers for the afternoon session</div>Professor CHENG, May Hung May<br>Vice President (Academic), The Education University of Hong Kong",
         "Location": "N-G/F-01",
         "Host": ""
       },
       "line9": {
         "Time": "14:10-14:50",
-        "Event": "<div class='bg-yellow-100 w-full text-green-700 font-bold text-lg my-1'>Keynote Speech IV</div>Professor Jamie P. Horsley\nSenior Fellow\nPaul Tsai China Center\nYale Law School\nSpeech title:\nGarbage In, Garbage Out?  Deploying Legal Reasoning to Interrogate Artificial Intelligence Output",
+        "Event": "<div class='bg-yellow-100 w-full text-green-700 font-bold text-lg my-1'>Keynote Speech IV</div>Professor Jamie P. Horsley<br>Senior Fellow<br>Paul Tsai China Center<br>Yale Law School<br><br>Speech title:<br>Garbage In, Garbage Out?  Deploying Legal Reasoning to Interrogate Artificial Intelligence Output",
         "Location": "N-G/F-01",
         "Host": ""
       },
       "line10": {
         "Time": "14:50-15:30",
-        "Event": "<div class='bg-yellow-100 w-full text-green-700 font-bold text-lg my-1'>Keynote Speech V</div>Professor Doris Sommer\nIra Jewell Williams, Jr., Professor of Romance Languages and Literatures (Spanish) and in African and African American Studies\nDirector of Graduate Studies\nHarvard University\nSpeech title: TBC",
+        "Event": "<div class='bg-yellow-100 w-full text-green-700 font-bold text-lg my-1'>Keynote Speech V</div>Professor Doris Sommer<br>Ira Jewell Williams, Jr., Professor of Romance Languages and Literatures (Spanish) and in African and African American Studies<br>Director of Graduate Studies<br>Harvard University<br><br>Speech title: TBC",
         "Location": "N-G/F-01",
         "Host": ""
       },
       "line11": {
         "Time": "15:30-15:50",
-        "Event": "Coffee Break",
-        "Location": "N-G/F-01 Corridor/\nVIP Room",
+        "Event": "<div class='font-bold'>Coffee Break</div>",
+        "Location": "N-G/F-01 Corridor/<br>VIP Room",
         "Host": ""
       },
       "line12": {
         "Time": "15:50-16:30",
-        "Event": "<div class='bg-yellow-100 w-full text-green-700 font-bold text-lg my-1'>Keynote Speech VI</div>Professor Mark Feldman\nInterim Dean and Professor of Law\nPeking University\nSpeech title:\nAI and Legal Education: Developing a Greatness Framework",
+        "Event": "<div class='bg-yellow-100 w-full text-green-700 font-bold text-lg my-1'>Keynote Speech VI</div>Professor Mark Feldman<br>Interim Dean and Professor of Law<br>Peking University<br><br>Speech title:<br>AI and Legal Education: Developing a Greatness Framework",
         "Location": "N-G/F-01",
         "Host": ""
       },
       "line13": {
         "Time": "16:30-17:10",
-        "Event": "<div class='bg-yellow-100 w-full text-green-700 font-bold text-lg my-1'>Keynote Speech VII</div>Professor Christian Montag\nDistinguished Professor of Cognitive and Brain Sciences\nAssociate Director of the Institute of Collaborative Innovation\nUniversity of Macau\nSpeech title:\nThe Impact of AI on Society – a Psychological Perspective",
+        "Event": "<div class='bg-yellow-100 w-full text-green-700 font-bold text-lg my-1'>Keynote Speech VII</div>Professor Christian Montag<br>Distinguished Professor of Cognitive and Brain Sciences<br>Associate Director of the Institute of Collaborative Innovation<br>University of Macau<br><br>Speech title:<br>The Impact of AI on Society – a Psychological Perspective",
         "Location": "N-G/F-01",
         "Host": ""
       },
       "line14": {
         "Time": "17:10-17:20",
-        "Event": "Closing Remarks and Logistics",
+        "Event": "<div class='font-bold'>Closing Remarks and Logistics</div>",
         "Location": "N-G/F-01",
         "Host": ""
       },
       "line15": {
         "Time": "18:00-20:00",
-        "Event": "Dinner\n(By invitation only)",
-        "Location": "Peking Garden\nTsim Sha Tsui",
+        "Event": "<div class='font-bold'>Dinner</div>",
+        "Location": "Peking Garden<br>Tsim Sha Tsui<br>(By invitation only)",
         "Host": ""
       },
       "line16": {
         "Time": "20:00-21:00",
-        "Event": "Boat trip",
+        "Event": "<div class='font-bold'>Boat trip</div>",
         "Location": "Tsim Sha Tsui",
         "Host": ""
       }
@@ -424,56 +424,56 @@
       },
       "line2": {
         "Time": "9:00-9:30",
-        "Event": "<div class='bg-yellow-100 w-full text-green-700 font-bold text-lg my-1'>Opening Remark</div>Professor CHAN, Che Hin Chetwyn\nVice President (Research and Development), The Education University of Hong Kong",
+        "Event": "<div class='bg-yellow-100 w-full text-green-700 font-bold text-lg my-1'>Opening Remark</div>Professor CHAN, Che Hin Chetwyn<br>Vice President (Research and Development), The Education University of Hong Kong",
         "Location": "N-G/F-01",
         "Host": ""
       },
       "line3": {
         "Time": "9:40-10:20",
-        "Event": "<div class='bg-yellow-100 w-full text-green-700 font-bold text-lg my-1'>Keynote Speech VIII</div>Professor Eric Klopfer\nProfessor and Director of the Scheller Teacher Education Program and The Education, Arcade, Massachusetts Institute of Technology (MIT)\nOnline\nSpeech title: TBC",
+        "Event": "<div class='bg-yellow-100 w-full text-green-700 font-bold text-lg my-1'>Keynote Speech VIII</div>Professor Eric Klopfer<br>Professor and Director of the Scheller Teacher Education Program and The Education, Arcade, Massachusetts Institute of Technology (MIT)<br><span class='italic'>Online</span><br><br>Speech title: TBC",
         "Location": "N-G/F-01",
         "Host": ""
       },
       "line4": {
         "Time": "10:30-12:30",
-        "Event": "Parallel Session I (Arts and Creativity in the Age of AI)\nParallel Session II (Impacts of Emerging Media Technologies)\nParallel Session III (Data-Driven Strategies for Future Education)\nParallel Session V (Poster and Demo)\nInvited Speech (10:30-11:00)\nDr. Wang Shijin\nVice President of iFlytek Co., Ltd.\nExecutive Dean of iFlytek AI Research Institute\nDeputy Director of the State Key Laboratory of Cognitive Intelligence, P.R.China\nSpeech title:\n教育大模型和教育智能體",
-        "Location": "N-1/F-02\nN-2/F-01\nN-2/F-02\nN-G/F-01",
+        "Event": "<div class='flex'><div class='w-1/2 pr-2'><div><span class='font-bold'>Parallel Session I</span> <span class='text-xs'>(Arts and Creativity in the Age of AI)</span></div><div><span class='font-bold'>Parallel Session II</span> <span class='text-xs'>(Impacts of Emerging Media Technologies)</span></div><div><span class='font-bold'>Parallel Session III</span> <span class='text-xs'>(Data-Driven Strategies for Future Education)</span></div><div><span class='font-bold'>Parallel Session V</span> <span class='text-xs'>(Poster and Demo)</span></div></div><div class='w-1/2 border-l border-black pl-2'><div class='font-bold'>Invited Speech</div><div class='font-bold'>10:30-11:00</div><br>Dr. Wang Shijin<br>(to serve as the Invited Speaker)<br>Vice President of iFlytek Co., Ltd.<br>Executive Dean of iFlytek AI Research Institute<br>Deputy Director of the State Key Laboratory of Cognitive Intelligence, P.R.China<br><br>Speech title:<br>教育大模型和教育智能體</div></div>",
+        "Location": "N-1/F-02<br>N-2/F-01<br>N-2/F-02<br>N-G/F-01",
         "Host": ""
       },
       "line5": {
         "Time": "12:30-14:00",
-        "Event": "Luncheon\n(By invitation only)",
-        "Location": "B4 Chinese restaurant",
+        "Event": "<div class='font-bold'>Luncheon</div>",
+        "Location": "B4 Chinese restaurant<br>(By invitation only)",
         "Host": ""
       },
       "line6": {
         "Time": "14:00-16:00",
-        "Event": "Parallel Session Opening Speech\nProfessor GU, Minkang, JP, Associate Co-Director, Academy for Applied Policy Studies and Education Futures; Director, National Security and Legal Education Research Centre\nParallel Session IV (AI and Legal Education)\nParallel Session V (Poster and Demo)\nParallel Session VI (National Natural Science Foundation F0701 Future Education: Science and Technology Research)",
-        "Location": "N-1/F-02\nN-2/F-01\nN-2/F-02",
+        "Event": "<div class='font-bold'>Parallel Session Opening Speech</div>Professor GU, Minkang, JP, Associate Co-Director, Academy for Applied Policy Studies and Education Futures; Director, National Security and Legal Education Research Centre<br><br><div class='font-bold'>Parallel Session IV <span class='text-xs font-normal'>(AI and Legal Education)</span></div><div class='font-bold'>Parallel Session V <span class='text-xs font-normal'>(Poster and Demo)</span></div><div class='font-bold'>Parallel Session VI <span class='text-xs font-normal'>(National Natural Science Foundation F0701 Future Education: Science and Technology Research)</span></div>",
+        "Location": "N-1/F-02<br>N-2/F-01<br>N-2/F-02",
         "Host": ""
       },
       "line7": {
         "Time": "16:00-16:20",
-        "Event": "Coffee Break",
-        "Location": "N-G/F-01 Corridor/\nVIP Room",
+        "Event": "<div class='font-bold'>Coffee Break</div>",
+        "Location": "N-G/F-01 Corridor/<br>VIP Room",
         "Host": ""
       },
       "line8": {
         "Time": "16:20-17:00",
-        "Event": "<div class='bg-yellow-100 w-full text-green-700 font-bold text-lg my-1'>Closing Keynote Speech IX</div>Professor Mitchell L Stevens\nProfessor, Graduate School of Education\nProfessor (By courtesy), Sociology\nStanford University\nSpeech title:\nAfter the Schooled Society",
+        "Event": "<div class='bg-yellow-100 w-full text-green-700 font-bold text-lg my-1'>Closing Keynote Speech IX</div>Professor Mitchell L Stevens<br>Professor, Graduate School of Education<br>Professor (By courtesy), Sociology<br>Stanford University<br><br>Speech title:<br>After the Schooled Society",
         "Location": "N-G/F-01",
         "Host": ""
       },
       "line9": {
         "Time": "17:00-18:00",
-        "Event": "<div class='bg-yellow-100 w-full text-green-700 font-bold text-lg my-1'>Closing Remarks and Awards Ceremony</div>Professor Hui Li, Assistant Vice President (Regional Outreach), The Education University of Hong Kong\nMr. Li Xuefan, University of Toronto",
+        "Event": "<div class='bg-yellow-100 w-full text-green-700 font-bold text-lg my-1'>Closing Remarks and Awards Ceremony</div><ul><li>Professor Hui Li<br>Assistant Vice President (Regional Outreach), The Education University of Hong Kong</li><li>Mr. Li Xuefan, University of Toronto</li></ul>",
         "Location": "N-G/F-01",
         "Host": ""
       },
       "line10": {
         "Time": "19:00-21:00",
-        "Event": "Banquet and Talent Show\n(Invited guests or ticket holders)",
-        "Location": "The Parc 88",
+        "Event": "<div class='font-bold'>Banquet and Talent Show</div>",
+        "Location": "The Parc 88<br>(Invited guests or ticket holders)",
         "Host": ""
       }
     }
