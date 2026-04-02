@@ -143,7 +143,6 @@
     "schedule": "论坛日程",
     "handbook": "论坛手册"
   },
-  
   "Symposium Agenda": {
     "Day1": {
       "line1": {
@@ -379,7 +378,7 @@
         "Location": "",
         "Host": ""
       },
-      "line12":{
+      "line12": {
         "Time": "16:00-17:00",
         "Event": {
           "event1": "<div class='w-full '><div class='bg-yellow-100 text-green-700 font-bold text-lg my-1'>Closing Keynote:The Road Ahead for Al in Education</div><div>Professor Ping Li, Hong Kong Polytechnic University</div><div class='italic'>New Opportunities in the Integration of Humanities, Science, and Education</div><div>Professor Minjuan Wang, The Education University of Hong Kong</div><div class='italic'>Emerging Technology and Talent Development</div></div>"
@@ -387,7 +386,7 @@
         "Location": "D1-LP-02",
         "Host": "Ms. Clara Yue Jia"
       },
-      "line13":{
+      "line13": {
         "Time": "17:00-18:00",
         "Event": {
           "event1": "<div class='w-full '><div class='bg-yellow-100 text-green-700 font-bold text-lg my-1'>Closing Remarks and Awards Ceremony</div><div>Professor Minjuan Wang and Professor Hui Li (on behalf of the organizing committee)</div></div>"
@@ -395,7 +394,7 @@
         "Location": "D1-LP-02",
         "Host": "Ms. Clara Yue Jia"
       },
-      "line14":{
+      "line14": {
         "Time": "19:00-21:30",
         "Event": {
           "event1": "<div class='w-full '><div class='bg-yellow-100 text-green-700 font-bold text-lg my-1'>Dinner Gala - <span class='text-xs'>Invited and Ticketed Guests Only</span></div><div>For transporation arrangement, please check Shuttle schedule and boarding location online.</div></div>"
@@ -750,7 +749,6 @@
   "Videos": "视频",
   "Video Not Supported Message": "您的浏览器不支持视频播放。请升级您的浏览器或下载视频文件观看。",
   "Video Description": "哈佛-香港教育大学-斯坦福联合论坛精彩回顾",
-
   "Press Card 1 Title": "首届哈佛-香港教大-斯坦福联合论坛 　「新兴科技与未来人才」在教大成功举办",
   "Press Card 1 Description": "AAPSEF 官方照片画廊，展示论坛精彩瞬间",
   "Press Card 2 Title": "首届哈佛-香港教大-斯坦福联合论坛 　「新兴科技与未来人才」在教大成功举办",
@@ -857,7 +855,7 @@
         "inc": "哈佛大学"
       },
       "id8": {
-        "description":"孙丹儿博士现任香港教育大学数学与资讯科技学系的副教授兼副系主任，并担任全球新兴技术研究所副联席总监。她的研究聚焦于教育中的人工智能、新兴技术、移动学习和技术增强的 STEM 教育，尤其关注借助科技手段培养学生的高阶思维能力。孙博士主持并参与了多项具有竞争力的研究项目，目前担任多个资助项目的首席研究员及合作研究员，这些项目获香港研究资助局（GRF）、优质教育基金（QEF）及国家社会科学基金（NSSF）等重要机构支持。她已发表70余篇学术论文，多数刊载于SSCI和其他顶级学术期刊上，并被列为全球移动学习领域最具影响力的前20名学者之一。除了科研工作，孙博士还长期担任ETS，EAIT，RPETL等知名期刊的副编辑，以及多家权威学术期刊的编委。她积极参与学术社群，多次牵头组织大型国际学术会议，如国际计算机教育会议（ICCE）和全球华人计算机教育应用大会（GCCCE），在推动技术增强教育的发展方面持续发挥重要影响力，其贡献广泛辐射至亚洲乃至国际教育领域。孙丹儿博士的研究成果在国际教育界有着广泛的影响，她的研究成果被广泛引用，在国际教育界被视为有影响力的学者。",
+        "description": "孙丹儿博士现任香港教育大学数学与资讯科技学系的副教授兼副系主任，并担任全球新兴技术研究所副联席总监。她的研究聚焦于教育中的人工智能、新兴技术、移动学习和技术增强的 STEM 教育，尤其关注借助科技手段培养学生的高阶思维能力。孙博士主持并参与了多项具有竞争力的研究项目，目前担任多个资助项目的首席研究员及合作研究员，这些项目获香港研究资助局（GRF）、优质教育基金（QEF）及国家社会科学基金（NSSF）等重要机构支持。她已发表70余篇学术论文，多数刊载于SSCI和其他顶级学术期刊上，并被列为全球移动学习领域最具影响力的前20名学者之一。除了科研工作，孙博士还长期担任ETS，EAIT，RPETL等知名期刊的副编辑，以及多家权威学术期刊的编委。她积极参与学术社群，多次牵头组织大型国际学术会议，如国际计算机教育会议（ICCE）和全球华人计算机教育应用大会（GCCCE），在推动技术增强教育的发展方面持续发挥重要影响力，其贡献广泛辐射至亚洲乃至国际教育领域。孙丹儿博士的研究成果在国际教育界有着广泛的影响，她的研究成果被广泛引用，在国际教育界被视为有影响力的学者。",
         "name": "孙丹儿博士",
         "title": "副教授 <br> 香港教育大学数学与资讯科技学系副系主任 <br> 全球新兴技术研究所副联席总监 <br> 香港教育大学",
         "inc": "香港教育大学"
@@ -1180,10 +1178,10 @@
         "inc": "香港理工大学"
       },
       "id7_paul": {
-      "description": "Paul Kim 是 Seeds of Empowerment 的创始人兼总裁，该组织是他与斯坦福大学研究生于 2004 年合作成立的全球社会创新孵化器。目前，他担任世界银行教育技术国际专家委员会主席，并为 Lumos Capital、Roble Ventures 和 Chegg, Inc. 提供咨询。作为斯坦福大学教育研究生院的前副院长和首席技术官，Kim 博士在全球范围内为边缘化群体推动学习技术发展，贡献了 24 年的时间。",
-      "name": "Paul Kim 博士",
-      "title": "世界银行教育技术国际专家委员会主席 <br> 斯坦福大学教育研究生院前副院长",
-      "inc": "世界银行，斯坦福大学（前）"
+        "description": "Paul Kim 是 Seeds of Empowerment 的创始人兼总裁，该组织是他与斯坦福大学研究生于 2004 年合作成立的全球社会创新孵化器。目前，他担任世界银行教育技术国际专家委员会主席，并为 Lumos Capital、Roble Ventures 和 Chegg, Inc. 提供咨询。作为斯坦福大学教育研究生院的前副院长和首席技术官，Kim 博士在全球范围内为边缘化群体推动学习技术发展，贡献了 24 年的时间。",
+        "name": "Paul Kim 博士",
+        "title": "世界银行教育技术国际专家委员会主席 <br> 斯坦福大学教育研究生院前副院长",
+        "inc": "世界银行，斯坦福大学（前）"
       },
       "id11": {
         "description": "作为一名系统工程师，阿尔贝托·索尔斯拥有40年的工业和学术经验。在25年间，他曾在四家公司担任不同的管理职务。阿尔贝托自2018年1月起担任马德里欧洲大学的建筑工程科学与电脑学院院长。他拥有马德里理工大学 (Universidad Politecnica de Madrid) 的海军建筑与海洋工程硕士学位，弗吉尼亚理工学院与州立大学 (VirginiaPolytechnic Institute and State University) 的系统工程硕士学位，以及史蒂文斯理工学院 (Stevens Institute of Technology) 的系统工程博士学位。他已发表了超过35篇技术论文，撰写了7本系统工程和相关学科的书籍，并与他人合着了另外两本书。他是认证专业物流师，并获得生产和库存管理认证。阿尔贝托入选了军事艺术与科学学院。他对人工智慧有着浓厚的兴趣，并在学校的转型工作中扮演着重要的角色，试图探索人工智慧在高等教育中的充分应用。",
@@ -1329,13 +1327,13 @@
         "name": "国家自然科学基金F0701<br>未来教育-科学与技术研究",
         "submitddl": "",
         "notifyddl": "",
-      "content": {
-        "p1": "<p>第二届哈佛-港教大-斯坦福联合论坛将在2026年的初夏走进香港教育大学依山傍水的大埔校园。本次论坛将汇聚来自哈佛、斯坦福、麻省理工学院、香港教育大学和耶鲁大学等全球知名高校的杰出学者，以及人文、艺术、法学、新媒体和技术领域的专家。为期两天的活动将深入探讨人工智能、机器人和多模态智能体等新兴科技在教学、培训和人才发展中的整合与应用。我们诚邀您来分享最新的研发成果，参与2026年5月16日的分论坛。优秀分享的作者将被邀请在高影响力期刊（SCI、SSCI或CSSCI）上发表完整论文。</p>",
-        "d1": "分论坛简介",
-        "p2": "<p>2018年国家自然科学基金委设立了“F0701教育信息科学与技术”申请代码，旨在深入推动教育教学与智能技术的深度融合，变革智能时代教育服务供给模式，实现智能技术赋能教育教学的高质量发展。近年来，该代码已资助了国家自然科学基金重点项目、重大项目、面上项目、青年科学基金项目、地区科学基金项目等，并产出了一大批优秀的科研成果。本平行论坛旨在深入聚焦教育信息科学与技术的战略定位与发展方向，探讨其前沿研究趋势，分享F0701项目的申报经验、研究进展及应用成果，以期助力我国教育数字化转型与教育科研研究的蓬勃发展。</p><div class=\"my-2\"><strong>子主题1：国家自然科学基金相关政策分析</strong></div><div class=\"my-2\"><strong>子主题2：国家自然科学基金项目申报经验分享</strong></div><div class=\"my-2\"><strong>子主题3：国家自然科学基金项目优秀案例分析</strong></div><div class=\"my-2\"><strong>子主题4：教育信息科学与技术发展前沿</strong></div>",
-        "d2": "",
-        "p3": ""
-      }
+        "content": {
+          "p1": "<p>第二届哈佛-港教大-斯坦福联合论坛将在2026年的初夏走进香港教育大学依山傍水的大埔校园。本次论坛将汇聚来自哈佛、斯坦福、麻省理工学院、香港教育大学和耶鲁大学等全球知名高校的杰出学者，以及人文、艺术、法学、新媒体和技术领域的专家。为期两天的活动将深入探讨人工智能、机器人和多模态智能体等新兴科技在教学、培训和人才发展中的整合与应用。我们诚邀您来分享最新的研发成果，参与2026年5月16日的分论坛。优秀分享的作者将被邀请在高影响力期刊（SCI、SSCI或CSSCI）上发表完整论文。</p>",
+          "d1": "分论坛简介",
+          "p2": "<p>2018年国家自然科学基金委设立了“F0701教育信息科学与技术”申请代码，旨在深入推动教育教学与智能技术的深度融合，变革智能时代教育服务供给模式，实现智能技术赋能教育教学的高质量发展。近年来，该代码已资助了国家自然科学基金重点项目、重大项目、面上项目、青年科学基金项目、地区科学基金项目等，并产出了一大批优秀的科研成果。本平行论坛旨在深入聚焦教育信息科学与技术的战略定位与发展方向，探讨其前沿研究趋势，分享F0701项目的申报经验、研究进展及应用成果，以期助力我国教育数字化转型与教育科研研究的蓬勃发展。</p><div class=\"my-2\"><strong>子主题1：国家自然科学基金相关政策分析</strong></div><div class=\"my-2\"><strong>子主题2：国家自然科学基金项目申报经验分享</strong></div><div class=\"my-2\"><strong>子主题3：国家自然科学基金项目优秀案例分析</strong></div><div class=\"my-2\"><strong>子主题4：教育信息科学与技术发展前沿</strong></div><div class=\"my-2\"><strong>子主题5：国际期刊主编介绍投稿经验 （哈巍，北京大学教育学院副院长，SSCI期刊International Journal of Educational Development共同主编）</strong></div>",
+          "d2": "",
+          "p3": ""
+        }
       },
       "id6": {
         "index": "七",

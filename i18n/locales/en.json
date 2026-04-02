@@ -15,7 +15,6 @@
   "Videos": "Videos",
   "Video Not Supported Message": "Your browser does not support video playback. Please upgrade your browser or download the video file to watch.",
   "Video Description": "Harvard-EdUHK-Stanford Joint Symposium Highlights",
-
   "Press Card 1 Title": "Harvard-EdUHK-Stanford Joint Symposium: Emerging Technologies and Future Talents held at EdUHK",
   "Press Card 1 Description": "AAPSEF official photo gallery showcasing symposium highlights",
   "Press Card 2 Title": "Harvard-EdUHK-Stanford Joint Symposium: Emerging Technologies and Future Talents held at EdUHK",
@@ -743,7 +742,7 @@
         "Location": "",
         "Host": ""
       },
-      "line12":{
+      "line12": {
         "Time": "16:00-17:00",
         "Event": {
           "event1": "<div class='w-full '><div class='bg-yellow-100 text-green-700 font-bold text-lg my-1'>Closing Keynote:The Road Ahead for Al in Education</div><div>Professor Ping Li, Hong Kong Polytechnic University</div><div class='italic'>New Opportunities in the Integration of Humanities, Science, and Education</div><div>Professor Minjuan Wang, The Education University of Hong Kong</div><div class='italic'>Emerging Technology and Talent Development</div></div>"
@@ -751,7 +750,7 @@
         "Location": "D1-LP-02",
         "Host": "Ms. Clara Yue Jia"
       },
-      "line13":{
+      "line13": {
         "Time": "17:00-18:00",
         "Event": {
           "event1": "<div class='w-full '><div class='bg-yellow-100 text-green-700 font-bold text-lg my-1'>Closing Remarks and Awards Ceremony</div><div>Professor Minjuan Wang and Professor Hui Li (on behalf of the organizing committee)</div></div>"
@@ -759,7 +758,7 @@
         "Location": "D1-LP-02",
         "Host": "Ms. Clara Yue Jia"
       },
-      "line14":{
+      "line14": {
         "Time": "19:00-21:30",
         "Event": {
           "event1": "<div class='w-full '><div class='bg-yellow-100 text-green-700 font-bold text-lg my-1'>Dinner Gala - <span class='text-xs'>Invited and Ticketed Guests Only</span></div><div>For transporation arrangement, please check Shuttle schedule and boarding location online.</div></div>"
@@ -1306,10 +1305,10 @@
         "inc": "World Bank, Stanford University (Former)"
       },
       "id7": {
-      "description": "Prior to becoming a Senior Research Fellow, for 22 years Chris Dede was the Timothy E. Wirth Professor in Learning Technologies. His fundamental interest is developing new types of educational systems to meet the opportunities and challenges of the 21st century. His research spans emerging technologies for learning, infusing technology into large-scale educational improvement initiatives, developing policies that support educational transformation, and providing leadership in educational innovation. Currently, Dede is a co-principal investigator of the NSF-funded National Artificial Intelligence Institute in Adult Learning and Online Education. He co-founded the Silver Lining for Learning initiative and developed a widely used Framework for scaling up educational innovations.",
-      "name": "Dr. Chris Dede",
-      "title": "Distinguished Professor and Senior Research Fellow <br> Harvard University",
-      "inc": "Harvard University"
+        "description": "Prior to becoming a Senior Research Fellow, for 22 years Chris Dede was the Timothy E. Wirth Professor in Learning Technologies. His fundamental interest is developing new types of educational systems to meet the opportunities and challenges of the 21st century. His research spans emerging technologies for learning, infusing technology into large-scale educational improvement initiatives, developing policies that support educational transformation, and providing leadership in educational innovation. Currently, Dede is a co-principal investigator of the NSF-funded National Artificial Intelligence Institute in Adult Learning and Online Education. He co-founded the Silver Lining for Learning initiative and developed a widely used Framework for scaling up educational innovations.",
+        "name": "Dr. Chris Dede",
+        "title": "Distinguished Professor and Senior Research Fellow <br> Harvard University",
+        "inc": "Harvard University"
       },
       "id8": {
         "description": "Dr. Jonathon Richter is focused on creating inclusive and meaningful communities for the emerging field of design, research, and applied understanding of immersive learning experiences to amplify its transformational potential for everyone and our planet. Born and raised in Havre, Montana, Jonathon Richter holds a Bachelor of Arts (B.A.) degree in Psychology (1992), Masters of Education (M.Ed.) degree (1998), and a Doctorate of Education (Ed.D.) degree (2003), each from the University of Montana. Following college, he returned to Havre to start his family and his career as a successful grant writer and project coordinator of educational technology, then later as Assistant Professor of Graduate Education Programs working for Montana State University – Northern in Havre, Montana (2000 – 2005).",
@@ -1372,7 +1371,7 @@
           "abstract": ""
         }
       },
-        "id15": {
+      "id15": {
         "description": "Professor Chi-Kin John Lee is a distinguished academic and leader in education, currently serving as President and Chair Professor at The Education University of Hong Kong. His career is marked by significant contributions to curriculum and instruction, including roles as Vice President (Academic) and Provost. Former Dean of Education and a recipient of the Vice-Chancellor’s Exemplary Teaching Award at The Chinese University of Hong Kong (CUHK). Professor Lee has an extensive research background with a focus on various educational areas. He is a top-cited scientist and has secured numerous grants for his projects. Professor Lee is an active member of several editorial boards, has authored and co-edited over 25 books, and has been involved in education and social services locally, nationally and globally. His projects have won awards, and he has held various prestigious positions, including Changjiang Scholar Chair Professor, UNESCO Chair and membership in the Chinese People’s Political Consultative Conference.",
         "name": "Professor John Chi-Kin Lee",
         "title": "President <br> Chair Professor of Curriculum and Instruction <br> UNESCO Chair in Regional Education Development and Lifelong Learning",
@@ -1695,7 +1694,7 @@
         "content": {
           "p1": "<p>In the early summer of 2026, the second Harvard-EdUHK-Stanford Joint Symposium will be held at the QS-5-star-rated The Education University of Hong Kong (EdUHK). The Symposium will boast an impressive roster of speakers from globally recognized institutions, such as Harvard, Stanford, MIT, EdUHK, and Yale University, and experts in the fields of humanity, art, law, new media, and technology. This two-day event will delve into the integration of new technologies such as artificial intelligence (AI), robot, and multimodal intelligent within teaching, training, and talents development. We invite you to share your proposal and present it in the parallel session on May 16th, 2026. Authors of excellent proposals may be invited to publish their full papers in high-impact journals (SCI, SSCI, or CSSCI).</p>",
           "d1": "Parallel Session Introduction",
-          "p2": "<p>In 2018, the National Natural Science Foundation of China (NSFC) established the application code F0701 Educational Information Science and Technology, aiming to promote the deep integration of intelligent technologies into education and teaching, transform educational service models in the intelligent era, and advance the high-quality development of technology-empowered education. In recent years, this code direction has supported a wide range of NSFC programs, including key projects, major projects, general projects, young scientist funds, and regional science funds, resulting in a large number of outstanding research outcomes. This parallel sub-forum focuses on the strategic positioning and development trends of educational information science and technology. It aims to discuss frontier research directions, share experiences in applying for F0701 projects, present research progress and application achievements, and ultimately contribute to China’s digital education transformation and the flourishing of educational research.</p><div class=\"my-2\"><strong>Sub-topic1: Policy Analysis of the National Natural Science Foundation of China</strong></div><div class=\"my-2\"><strong>Sub-topic2: Experience Sharing on NSFC Project Applications</strong></div><div class=\"my-2\"><strong>Sub-topic3: Excellent Case Studies of NSFC-funded Projects</strong></div><div class=\"my-2\"><strong>Sub-topic4: Frontiers in Educational Information Science and Technology</strong></div>",
+          "p2": "<p>In 2018, the National Natural Science Foundation of China (NSFC) established the application code F0701 Educational Information Science and Technology, aiming to promote the deep integration of intelligent technologies into education and teaching, transform educational service models in the intelligent era, and advance the high-quality development of technology-empowered education. In recent years, this code direction has supported a wide range of NSFC programs, including key projects, major projects, general projects, young scientist funds, and regional science funds, resulting in a large number of outstanding research outcomes. This parallel sub-forum focuses on the strategic positioning and development trends of educational information science and technology. It aims to discuss frontier research directions, share experiences in applying for F0701 projects, present research progress and application achievements, and ultimately contribute to China’s digital education transformation and the flourishing of educational research.</p><div class=\"my-2\"><strong>Sub-topic1: Policy Analysis of the National Natural Science Foundation of China</strong></div><div class=\"my-2\"><strong>Sub-topic2: Experience Sharing on NSFC Project Applications</strong></div><div class=\"my-2\"><strong>Sub-topic3: Excellent Case Studies of NSFC-funded Projects</strong></div><div class=\"my-2\"><strong>Sub-topic4: Frontiers in Educational Information Science and Technology</strong></div><div class=\"my-2\"><strong>Sub-topic5: Sharing Manuscript Submission Experience by an International Journal Editor-in-Chief (Ha Wei, Vice Dean, Graduate School of Education, Peking University; Co-Editor-in-Chief, International Journal of Educational Development (SSCI))</strong></div>",
           "d2": "",
           "p3": ""
         }
@@ -1795,4 +1794,3 @@
   },
   "Call2026Notice": "This year's symposium will feature the following sessions. Click on each session flyer to learn the call details and to submit your presentation.\nPlease note that there is no single, centralized submission system for all sessions.\nYou must follow the specific instructions provided under each session description.\nThese instructions may include different formats, deadlines, or submission links.\nBefore submitting your paper, carefully review the details for your chosen session to ensure compliance with its requirements."
 }
-
