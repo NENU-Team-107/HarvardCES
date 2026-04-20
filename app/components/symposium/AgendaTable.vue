@@ -55,6 +55,46 @@ const day2Schedule = ref<ScheduleItem[]>([
 ])
 
 const currentSchedule = computed(() => (daySwitch.value === 1 ? day1Schedule.value : day2Schedule.value))
+const { t, locale } = useI18n()
+
+const translateHtml = (key: string) => t(key).replace(/\n/g, '<br>')
+
+// Force table refresh when translated schedule text changes in dev/HMR.
+const tableRenderKey = computed(() => (
+  `${locale.value}-${daySwitch.value}-${currentSchedule.value.map(row => translateHtml(row.time)).join('|')}`
+))
+
+const day1HostRowSpanMap: Record<number, number> = {
+  2: 3,
+  10: 1,
+  11: 2
+}
+
+const currentHostRowSpanMap = computed<Record<number, number>>(() => (daySwitch.value === 1 ? day1HostRowSpanMap : {}))
+
+const shouldRenderHostCell = (index: number) => {
+  for (const [startIndexText, span] of Object.entries(currentHostRowSpanMap.value)) {
+    const startIndex = Number(startIndexText)
+
+    if (index > startIndex && index < startIndex + span) {
+      return false
+    }
+  }
+
+  return true
+}
+
+const getHostRowSpan = (index: number) => currentHostRowSpanMap.value[index] ?? 1
+const getHostCellClass = (index: number) => {
+  const baseClass = 'p-2 border-l border-r border-black align-top'
+
+  // Day 1: add top/bottom horizontal lines for 12:10-14:00 (Luncheon)
+  if (daySwitch.value === 1 && (index === 6 || index === 14)) {
+    return `${baseClass} border-t border-b`
+  }
+
+  return baseClass
+}
 </script>
 
 <template>
@@ -75,7 +115,7 @@ const currentSchedule = computed(() => (daySwitch.value === 1 ? day1Schedule.val
 
   <div class="w-full h-full justify-center items-center text-center mx-auto px-4 md:px-8">
     <div class="w-full h-full justify-center items-center mt-4 overflow-x-auto">
-      <table class="w-full min-w-[640px] border border-black border-collapse font-serif">
+      <table :key="tableRenderKey" class="w-full min-w-[640px] border border-black border-collapse font-serif">
         <thead>
           <tr class="bg-orange-200 text-black border border-black">
             <th class="p-2 border border-black text-left w-28">Time</th>
@@ -85,18 +125,22 @@ const currentSchedule = computed(() => (daySwitch.value === 1 ? day1Schedule.val
           </tr>
         </thead>
         <tbody>
-          <tr v-for="(row, index) in currentSchedule" :key="index" class="border border-black">
+          <tr v-for="(row, index) in currentSchedule" :key="index">
             <td class="p-2 border border-black align-top">
-              <div v-html="$t((row as ScheduleItem).time).replace(/\\n/g, '<br>')" />
+              <div v-html="translateHtml((row as ScheduleItem).time)" />
             </td>
             <td class="p-2 border border-black text-left align-top">
-              <div v-html="$t((row as ScheduleItem).event).replace(/\\n/g, '<br>')" />
+              <div v-html="translateHtml((row as ScheduleItem).event)" />
             </td>
             <td class="p-2 border border-black align-top">
-              <div v-html="$t((row as ScheduleItem).location).replace(/\\n/g, '<br>')" />
+              <div v-html="translateHtml((row as ScheduleItem).location)" />
             </td>
-            <td class="p-2 border border-black align-top">
-              <div v-html="$t((row as ScheduleItem).host).replace(/\\n/g, '<br>')" />
+            <td
+              v-if="shouldRenderHostCell(index)"
+              :rowspan="getHostRowSpan(index)"
+              :class="getHostCellClass(index)"
+            >
+              <div v-html="translateHtml((row as ScheduleItem).host)" />
             </td>
           </tr>
         </tbody>

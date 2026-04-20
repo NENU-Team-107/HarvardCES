@@ -26,7 +26,6 @@
   "Videos": "視頻",
   "Video Not Supported Message": "您的瀏覽器不支持視頻播放。請升級您的瀏覽器或下載視頻文件觀看。",
   "Video Description": "哈佛-香港教育大學-斯坦福聯合論壇精彩回顧",
-
   "Press Card 1 Title": "首屆哈佛-香港教大-斯坦福聯合論壇 　「新興科技與未來人才」在教大成功舉辦",
   "Press Card 1 Description": "AAPSEF 官方照片畫廊，展示論壇精彩瞬間",
   "Press Card 2 Title": "首屆哈佛-香港教大-斯坦福聯合論壇 　「新興科技與未來人才」在教大成功舉辦",
@@ -54,7 +53,6 @@
   "Round Table": "圓桌討論",
   "Onsite Demo and Exhibition": "研發設計成果展示",
   "Activities": "會議活動",
-  
   "Symposium Agenda": {
     "Day1": {
       "line1": {
@@ -96,13 +94,13 @@
     },
     "Day2": {
       "line1": {
-        "Time": "08:45-09:00",
+        "Time": "8:30-9:00",
         "Event": "Registration",
         "Location": "D1-LP",
         "Host": ""
       },
       "line2": {
-        "Time": "09:00-09:10",
+        "Time": "9:00-9:30",
         "Event": "<div class='bg-yellow-100 w-full text-green-700 font-bold text-lg my-1'>Opening Remarks and Welcome</div>Professor John Chi-Kin Lee, President, Director of the Academy for Applied Policy Studies and Education Futures (AAPSEF), EdUHK",
         "Location": "D1-LP-02",
         "Host": "Professor Minjuan Wang \nMr. Xuefan Jordan Li"
@@ -290,7 +288,7 @@
         "Location": "",
         "Host": ""
       },
-      "line12":{
+      "line12": {
         "Time": "16:00-17:00",
         "Event": {
           "event1": "<div class='w-full '><div class='bg-yellow-100 text-green-700 font-bold text-lg my-1'>Closing Keynote:The Road Ahead for Al in Education</div><div>Professor Ping Li, Hong Kong Polytechnic University</div><div class='italic'>New Opportunities in the Integration of Humanities, Science, and Education</div><div>Professor Minjuan Wang, The Education University of Hong Kong</div><div class='italic'>Emerging Technology and Talent Development</div></div>"
@@ -298,7 +296,7 @@
         "Location": "D1-LP-02",
         "Host": "Ms. Clara Yue Jia"
       },
-      "line13":{
+      "line13": {
         "Time": "17:00-18:00",
         "Event": {
           "event1": "<div class='w-full '><div class='bg-yellow-100 text-green-700 font-bold text-lg my-1'>Closing Remarks and Awards Ceremony</div><div>Professor Minjuan Wang and Professor Hui Li (on behalf of the organizing committee)</div></div>"
@@ -306,7 +304,7 @@
         "Location": "D1-LP-02",
         "Host": "Ms. Clara Yue Jia"
       },
-      "line14":{
+      "line14": {
         "Time": "19:00-21:30",
         "Event": {
           "event1": "<div class='w-full '><div class='bg-yellow-100 text-green-700 font-bold text-lg my-1'>Dinner Gala - <span class='text-xs'>Invited and Ticketed Guests Only</span></div><div>For transporation arrangement, please check Shuttle schedule and boarding location online.</div></div>"
@@ -334,11 +332,11 @@
         "Time": "9:40-10:20",
         "Event": "<div class='bg-yellow-100 w-full text-green-700 font-bold text-lg my-1'>Keynote Speech I</div>Professor Amanda Claybaugh<br>Dean of Undergraduate Education, Harvard University<br><br>Speech title: TBC",
         "Location": "N-G/F-01",
-        "Host": ""
+        "Host": "<div class='font-bold'>Professor Wang Minjuan</div>Assistant Vice President (Interdisciplinary Studies and Partnership); Co-Director, Global Institute for Emerging Technologies, The Education University of Hong Kong<br><br><div class='font-bold'>Professor Li Hui Philip</div>Assistant Vice President (Regional Outreach); Co-Director, Academy for Educational Development and Innovation, The Education University of Hong Kong"
       },
       "line4": {
         "Time": "10:20-10:50",
-        "Event": "<div class='flex'><div class='w-1/3 flex items-center justify-center font-bold'>Coffee Break</div><div class='w-2/3 border-l border-black pl-2'><div class='font-bold'>MOU signing ceremony 1</div><div class='font-bold'>10:20-10:30</div><br>Academy for Applied Policy Studies and Education Futures, The Education University of Hong Kong<br><br>Peking University Law School<hr class='border-black my-2'><div class='font-bold'>MOU signing ceremony 2</div><div class='font-bold'>10:30-10:40</div><br>Academy for Applied Policy Studies and Education Futures, The Education University of Hong Kong<br><br>KoGuan School of Law, Shanghai Jiao Tong University</div></div>",
+        "Event": "<div class='flex'><div class='w-1/3 flex items-center justify-center font-bold'>Coffee Break</div><div class='w-2/3 border-l border-black pl-2'><div class='font-bold'>MOU signing ceremony 1</div><div class='font-bold'>10:20-10:30</div><!-- <br>Academy for Applied Policy Studies and Education Futures, The Education University of Hong Kong<br><br>Peking University Law School --><hr class='border-black my-2'><div class='font-bold'>MOU signing ceremony 2</div><div class='font-bold'>10:30-10:40</div><!-- <br>Academy for Applied Policy Studies and Education Futures, The Education University of Hong Kong<br><br>KoGuan School of Law, Shanghai Jiao Tong University --></div></div>",
         "Location": "N-G/F-01 Corridor/<br>VIP Room",
         "Host": ""
       },
@@ -382,13 +380,13 @@
         "Time": "15:30-15:50",
         "Event": "<div class='font-bold'>Coffee Break</div>",
         "Location": "N-G/F-01 Corridor/<br>VIP Room",
-        "Host": ""
+        "Host": "<div class='font-bold'>Dr. Tao Sisi</div>Assistant Professor, Department of Early Childhood Education, The Education University of Hong Kong"
       },
       "line12": {
         "Time": "15:50-16:30",
         "Event": "<div class='bg-yellow-100 w-full text-green-700 font-bold text-lg my-1'>Keynote Speech VI</div>Professor Mark Feldman<br>Interim Dean and Professor of Law<br>Peking University<br><br>Speech title:<br>AI and Legal Education: Developing a Greatness Framework",
         "Location": "N-G/F-01",
-        "Host": ""
+        "Host": "<div class='font-bold'>Mr Cao Jiaxin</div>Doctor of Philosophy Student, Department of Mathematics and Information Technology, The Education University of Hong Kong"
       },
       "line13": {
         "Time": "16:30-17:10",
@@ -417,13 +415,13 @@
     },
     "Day2": {
       "line1": {
-        "Time": "8:30-9:00",
+        "Time": "8:45-9:15",
         "Event": "Registration",
         "Location": "N-G/F-01",
         "Host": ""
       },
       "line2": {
-        "Time": "9:00-9:30",
+        "Time": "9:15-9:30",
         "Event": "<div class='bg-yellow-100 w-full text-green-700 font-bold text-lg my-1'>Opening Remark</div>Professor CHAN, Che Hin Chetwyn<br>Vice President (Research and Development), The Education University of Hong Kong",
         "Location": "N-G/F-01",
         "Host": ""
@@ -742,6 +740,7 @@
     "Details": "由哈佛中國教育論壇和香港教育大學聯合舉辦的“新興科技和未來人才聯合論壇會”，將於2025年5月8日至10日在享有“亞洲盛世之都”的中國香港舉行。香港教育大學的全球新興技術研究院非常榮幸地擔任這次活動的東道主，並熱烈歡迎世界各地的嘉賓。這為期三天的活動，將深入研究人工智能、元宇宙和智能現實等新興技術在教學、培訓和人才發展中的整合與應用。\n\n<div class=\"md:text-lg text-sm  indent-8\">此次以技術和未來為主題的論壇將匯聚頂尖學者、行業領袖、人才培養專家以及博士和研究生。豐富多彩的議程包括主題演講，多種形式的工作室和分會場討論，從開發人工智能工具和AI倫理實踐的研討到聚焦人工智能驅動的個性化學習；從教學設計以及創新與未來思維培養到名人雲集的主題演講和圓桌討論。參會者將通過平行分會深入探討人工智能、元宇宙、計算教育、研究分析、教育未來，創造力和人才培養等廣泛議題，開啓一場知識的盛宴。</div>\n<div class=\"md:text-lg text-sm  indent-8\">哈佛中國教育論壇由哈佛教育學院於2010年發起，旨在為中美教育工作者、學者、決策者和領導人搭建深度交流和長期合作的橋梁。香港教育大學是香港最大的教師教育高等學府。教大在《美國新聞與世界報道》2024-2025年全球最佳大學排名中，於教育與教育研究方面位列全球第六。2025年的哈佛中國教育論壇，除了在哈佛舉行之外，還將攜手香港教育大學共同打造一場突破性的聯合論壇。知識分享無國界！這是加強中美高校及企業合作的一次開創性嘗試，旨在將這一標誌性的哈佛中國教育論壇的影響力擴展至亞洲。</div>\n<div class=\"md:text-lg text-sm  indent-8\">在香港教育大學校長李子建教授團隊和哈佛中國教育論壇的鼎力支持下，本次論壇將匯聚來自哈佛、斯坦福、香港教育大學和北京大學等全球知名高校的傑出演講者，以及來自中國大陸和中國香港特別行政區的技術和教育政策制定者及專家。我們很榮幸地邀請到了來自國內頂尖大學的校長，哈佛教育學院的傑出教授和校友，知名企業的高管，以及香港教育大學國際知名的教授發表主題演講。憑借前瞻性的思維、卓越的領導力和高瞻遠矚的視野，他們的分享將為全球聽眾帶來對知識的熱愛和對未來的多方面理解。博士和碩士生們也將有機會跟世界級的專家們分享自己在融合新興技術、教育和人才培養等方面的前沿見解和研究動態。哈佛團隊還將精心策劃主題研討會，為所有參會者提供與哈佛精英面對面交流的寶貴機會。</div>\n<div class=\"md:text-lg text-sm  indent-8\">這場論壇將不僅是一場知識的盛宴，更是一次多元化思維在不同時空交匯的火花碰撞！</div>"
   },
   "Collaborative Journals:": "合作期刊：",
+  "Exhibitors": "參展公司:",
   "Organised by": "領銜主辦：",
   "In collaboration with": "贊助方：",
   "Organisers and Partners": "主辦單位與贊助方",
@@ -1252,11 +1251,11 @@
     },
     "Poster": {
       "id0": {
-              "index": "一",
-              "name": "創意藝術與媒體中的AI",
-              "submitddl": "投稿截止日期：2026年2月6日",
-              "notifyddl": "錄用通知日期：2026年2月28日",
-              "content": {      
+        "index": "一",
+        "name": "創意藝術與媒體中的AI",
+        "submitddl": "投稿截止日期：2026年2月6日",
+        "notifyddl": "錄用通知日期：2026年2月28日",
+        "content": {
           "p1": "<p>第二屆哈佛-港教大-斯坦福聯合論壇，將在2026年的初夏走進香港教育大學依山傍水的大埔校園。本次論壇將彙聚來自哈佛、斯坦福、麻省理工學院、香港教育大學和耶魯大學等全球知名高校的傑出學者，以及人文、藝術、法學、新媒體和技術領域的專家。為期兩天的活動將深入探討人工智能、機器人和多模態智能體等新興科技在教學、培訓和人才發展中的整合與應用。我們誠邀您來分享最新的研發成果，參與2026年5月16日的分論壇。優秀分享的作者將被邀請在高影響力期刊（SCI、SSCI或CSSCI）上發表完整論文。</p>",
           "d1": "分論壇簡介",
           "p2": "<p>在算法與畫筆交融的邊界，一場藝術本體的革命正在發生。本分論壇旨在探討人工智能在創意藝術與媒體領域引發的範式變革。重點主要聚焦於：從前沿的人機協作實踐出發，觀察並解讀蓬勃發展的生成藝術現象，最終落腳於理論反思與美學建構。本論壇關注AI賦能的新創作範式，也審視算法偏見對文化多樣性的挑戰；討論生成藝術背後的哲學思辨，亦探索人機協同的未來圖景。這不僅關乎技術革新，更是對藝術創作主體性的重新定義。</p><div class=\"my-2\"><strong>子主題1：人機協作的藝術實踐</strong></div><p>本子題聚焦於AI作為「創造夥伴」的角色，旨在分享與探討各類人機協同創作的具體工作流程、技術方法與代表性案例，涵蓋教育、音樂、影視、設計、表演等多個藝術門類：</p><ul class=\"list-disc my-1\"><li>人機共創的創新模式構建</li><li>AI在音樂與聲音創作中的實時交互應用</li><li>AI輔助的媒體創作與敘事生成</li><li>設計領域中的人機協同創意</li><li>實驗表演藝術中的機器人共演與動作生成</li></ul><div class=\"my-2\"><strong>子主題2：生成藝術的形態與傳播</strong></div><p>本子主題著眼於AI生成藝術本身，旨在分析其內容形態、風格特徵、傳播機制與社會文化影響，並審視其如何重塑從個人表達到整個藝術生態：</p><ul class=\"list-disc my-1\"><li>文本、圖像、視頻生成模型的藝術表達特徵</li><li>算法風格的形成機制與審美多樣性</li><li>生成藝術在社交媒體中的傳播路徑與影響</li><li>非專業創作者通過生成工具進行表達的現象</li><li>生成藝術的市場定位、版權與收藏模式</li></ul><div class=\"my-2\"><strong>子主題3：AI未來美學與現象反思</strong></div><p>本子主題旨在超越技術功能層面，深入探討AI所催生的新型美學語言、文化現象及其引發的深層思辨。我們將共同審視生成式藝術背後的哲學議題、人機關係的美學重構，以及技術內嵌的文化價值觀：</p><ul class=\"list-disc my-2\"><li>AI美學的媒體範式轉移</li><li>AI藝術中的文化偏見與美學標準化</li><li>如何定義與評價非人類中心的創作</li><li>人工智能藝術使用滿意度的系統性評估與分析</li><li>AI生成影像如何重塑人類的審美機制</li></ul><p>我們誠摯邀請廣大學者、學生和實踐者根據自己的研究方向和興趣，選擇上述任一子主題分享最新的研發成果，形式可以是報告或AI作品，並參與本次分論壇的交流與討論。</p>",
@@ -1264,7 +1263,7 @@
           "p3": "<p>請準備一份<strong>一頁</strong>的分享，包含以下資訊：</p><ol class=\"list-decimal my-1\"><li><strong>報告標題：</strong>您的報告或AI作品題目。</li><li><strong>研究摘要：</strong>請簡要說明您的研究、創作主題，以及其與本分壇議題的關聯性。</li><li><strong>報告目標：</strong>請闡明研究目的與預期研究結果、解析創作理念與作品表現形式。</li><li><strong>方法論：</strong>您計劃使用的研發方法或數據來源。</li><li><strong>貢獻與未來研究：</strong>該研究或藝術創作的潛在貢獻及未來研究方向。</li><li><strong>聯繫資訊：</strong>您的全名、所屬機構、電子郵箱、聯繫電話。</li></ol><div class=\"mt-10\">請將您的一頁成果分享和其他資料以Word附件的形式發送到電子郵寄地址：<a href=\"mailto:zlexuan&#64;eduhk.hk\" class=\"font-bold underline hover:text-red-600\">zlexuan&#64;eduhk.hk</a>，標題為\"您的姓名+哈佛-港教大-斯坦福聯合論壇分論壇一\"。期待您的佳作，共同探討新興媒體技術的影響！</div>"
         }
       },
-        "id1": {
+      "id1": {
         "index": "二",
         "name": "分論壇二：新興媒體技術的影響",
         "submitddl": "投稿截止日期：2026年2月6日",
@@ -1321,13 +1320,13 @@
         "name": "國家自然科學基金F0701<br>未來教育-科學與技術研究",
         "submitddl": "",
         "notifyddl": "",
-      "content": {
-        "p1": "<p>第二屆哈佛-港教大-斯坦福聯合論壇，將在2026年的初夏走進香港教育大學依山傍水的大埔校園。本次論壇將匯聚來自哈佛、斯坦福、麻省理工學院、香港教育大學和耶魯大學等全球知名高校的傑出學者，以及人文、藝術、法學、新媒體和技術領域的專家。為期兩天的活動將深入探討人工智能、機器人和多模態智能體等新興科技在教學、培訓和人才發展中的整合與應用。我們誠邀您來分享最新的研發成果，參與2026年5月16日的分論壇。優秀分享的作者將被邀請在高影響力期刊（SCI、SSCI或CSSCI）上發表完整論文。</p>",
-        "d1": "分論壇簡介",
-        "p2": "<p>2018年國家自然科學基金委設立了“F0701教育信息科學與技術”申請代碼，旨在深入推動教育教學與智能技術的深度融合，變革智能時代教育服務供給模式，實現智能技術賦能教育教學的高質量發展。近年來，該代碼已資助了國家自然科學基金重點項目、重大項目、面上項目、青年科學基金項目、地區科學基金項目等，並產出了一大批優秀的科研成果。本平行論壇旨在深入聚焦教育信息科學與技術的戰略定位與發展方向，探討其前沿研究趨勢，分享F0701項目的申報經驗、研究進展及應用成果，以期助力我國教育數字化轉型與教育科研研究的蓬勃發展。</p><div class=\"my-2\"><strong>子主題1：國家自然科學基金相關政策分析</strong></div><div class=\"my-2\"><strong>子主題2：國家自然科學基金項目申報經驗分享</strong></div><div class=\"my-2\"><strong>子主題3：國家自然科學基金項目優秀案例分析</strong></div><div class=\"my-2\"><strong>子主題4：教育信息科學與技術發展前沿</strong></div><div class=\"my-2\"><strong>子主題5：國際期刊主編介紹投稿經驗（哈巍，北京大學教育學院副院長，SSCI 期刊《International Journal of Educational Development》共同主編）</strong></div>",
-        "d2": "",
-        "p3": ""
-      }
+        "content": {
+          "p1": "<p>第二屆哈佛-港教大-斯坦福聯合論壇，將在2026年的初夏走進香港教育大學依山傍水的大埔校園。本次論壇將匯聚來自哈佛、斯坦福、麻省理工學院、香港教育大學和耶魯大學等全球知名高校的傑出學者，以及人文、藝術、法學、新媒體和技術領域的專家。為期兩天的活動將深入探討人工智能、機器人和多模態智能體等新興科技在教學、培訓和人才發展中的整合與應用。我們誠邀您來分享最新的研發成果，參與2026年5月16日的分論壇。優秀分享的作者將被邀請在高影響力期刊（SCI、SSCI或CSSCI）上發表完整論文。</p>",
+          "d1": "分論壇簡介",
+          "p2": "<p>2018年國家自然科學基金委設立了“F0701教育信息科學與技術”申請代碼，旨在深入推動教育教學與智能技術的深度融合，變革智能時代教育服務供給模式，實現智能技術賦能教育教學的高質量發展。近年來，該代碼已資助了國家自然科學基金重點項目、重大項目、面上項目、青年科學基金項目、地區科學基金項目等，並產出了一大批優秀的科研成果。本平行論壇旨在深入聚焦教育信息科學與技術的戰略定位與發展方向，探討其前沿研究趨勢，分享F0701項目的申報經驗、研究進展及應用成果，以期助力我國教育數字化轉型與教育科研研究的蓬勃發展。</p><div class=\"my-2\"><strong>子主題1：國家自然科學基金相關政策分析</strong></div><div class=\"my-2\"><strong>子主題2：國家自然科學基金項目申報經驗分享</strong></div><div class=\"my-2\"><strong>子主題3：國家自然科學基金項目優秀案例分析</strong></div><div class=\"my-2\"><strong>子主題4：教育信息科學與技術發展前沿</strong></div><div class=\"my-2\"><strong>子主題5：國際期刊主編介紹投稿經驗（哈巍，北京大學教育學院副院長，SSCI 期刊《International Journal of Educational Development》共同主編）</strong></div>",
+          "d2": "",
+          "p3": ""
+        }
       },
       "id7": {
         "index": "八",

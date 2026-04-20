@@ -162,10 +162,9 @@ onMounted(() => {
                 </div>
               </div>
             </div> -->
-            <div class="text-gray-500 italic px-10 py-4">
-              我们正站在科技与教育的交汇点，期待与更多志同道合的伙伴携手前行。<br>
-              我們正站在科技與教育的交匯點，期待與更多志同道合的夥伴攜手前行。<br>
-              We stand at the intersection of technology and education, and look forward to joining hands with like-minded partners on this journey forward.
+            <div class="flex flex-wrap justify-center items-center gap-8 px-6 py-6">
+              <img src="/img/logo/westlab.png" alt="Westlab" class="max-h-24 md:max-h-32 w-auto object-contain">
+              <img src="/img/logo/co-sklcilogo.png" alt="State Key Laboratory" class="max-h-24 md:max-h-32 w-auto object-contain">
             </div>
 
             <div class="text-center mt-4 text-sm">

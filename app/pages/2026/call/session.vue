@@ -149,6 +149,19 @@ watchEffect(() => {
         </div>
       </div>
 
+      <div class="w-full mt-6">
+        <div class="text-sm font-bold text-center my-5 text-gray-500">
+          <div class="flex justify-center items-center">
+            <h1 class="mx-4 text-xl md:text-2xl">{{ $t("Exhibitors") }} </h1>
+          </div>
+        </div>
+        <div class="grid grid-cols-3 gap-4 md:gap-6 py-4 px-4 max-w-5xl mx-auto place-items-center">
+          <img src="/img/250ef6ad0a1e097e93a4588cfb9f40e.jpg" alt="Exhibitor 1" class="max-h-20 md:max-h-28 max-w-full w-auto object-contain"/>
+          <img src="/img/8da4bb6a02cec4b54d780b3598e281f.jpg" alt="Exhibitor 2" class="max-h-20 md:max-h-28 max-w-full w-auto object-contain"/>
+          <img src="/img/6bf1c08830d30e316ec662d62400c1b.png" alt="Exhibitor 3" class="max-h-20 md:max-h-28 max-w-full w-auto object-contain"/>
+        </div>
+      </div>
+
     </div>
 
     <div class="md:hidden h-full w-full justify-self-center bg-white/80 justify-center items-center">
@@ -200,6 +213,19 @@ watchEffect(() => {
           <img src="/img/logo/session2026_logo2.png" alt="Open Education Research" class="h-12 object-contain"/>
           <img src="/img/logo/Foreign%20Language%20Learning%20Theory%20and%20Practice.png" alt="外语教学理论与实践" class="h-12 object-contain"/>
           <img src="/img/logo/Language%20Awareness.png" alt="Language Awareness" class="h-12 object-contain"/>
+        </div>
+      </div>
+
+      <div class="w-full mt-6">
+        <div class="text-xs font-bold text-center my-5 text-gray-500">
+          <div class="flex justify-center items-center">
+            <h1 class="mx-4">{{ $t("Exhibitors") }} </h1>
+          </div>
+        </div>
+        <div class="grid grid-cols-3 gap-3 py-3 px-3 place-items-center">
+          <img src="/img/250ef6ad0a1e097e93a4588cfb9f40e.jpg" alt="Exhibitor 1" class="max-h-14 max-w-full w-auto object-contain"/>
+          <img src="/img/8da4bb6a02cec4b54d780b3598e281f.jpg" alt="Exhibitor 2" class="max-h-14 max-w-full w-auto object-contain"/>
+          <img src="/img/6bf1c08830d30e316ec662d62400c1b.png" alt="Exhibitor 3" class="max-h-14 max-w-full w-auto object-contain"/>
         </div>
       </div>
 
