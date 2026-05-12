@@ -1,4 +1,15 @@
 <script lang="ts" setup>
+import AppHeader from "~/components/common/AppHeader.vue";
+
+definePageMeta({
+  layout: false,
+})
+
+const pdfSrc = computed(() => {
+  const fileName = encodeURIComponent('交通指南.pdf')
+  return `/pdf/symposium/${fileName}#toolbar=0&navpanes=0&scrollbar=0&view=FitH`
+})
+
 // Recommended Hotels 相关数据已暂时注释
 /*
 const columns = [
@@ -36,7 +47,27 @@ const rows = [
 </script>
 <template>
 
-  <div class="w-full h-full mx-10 my-5 pt-24">
+  <div class="w-full min-h-screen flex flex-col relative font-display">
+    <div class="absolute top-0 left-0 inset-0 bg-letter-paper bg-no-repeat bg-center bg-cover blur-sm opacity-80 bg-fixed" />
+    <div class="w-full flex flex-col justify-center relative z-10">
+      <AppHeader />
+      <div class="w-full overflow-hidden bg-yellow-100/10 pt-20 md:pt-24">
+        <div class="w-full h-[calc(100vh-5rem)] md:h-[calc(100vh-6rem)] flex justify-center items-center p-3 md:p-6">
+          <div class="w-full h-full max-w-6xl bg-white/80 rounded-lg shadow-2xl overflow-hidden">
+            <iframe
+              title="交通指南"
+              :src="pdfSrc"
+              class="w-full h-full border-0"
+              frameborder="0"
+              scrolling="auto"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div v-if="false" class="w-full h-full mx-10 my-5 pt-24">
     <div class="text-center font-bold md:text-2xl text-xl  my-5">
       <div class="flex justify-center items-center ">
         <div class="h-0.5 w-20 bg-black" />

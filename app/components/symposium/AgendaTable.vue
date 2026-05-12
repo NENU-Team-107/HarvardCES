@@ -3,8 +3,8 @@ import { computed, ref } from 'vue'
 
 const daySwitch = ref(1)
 const daySwitchOptions = ref([
-  { label: 'Day 1 (Friday, 15 May 2026)', value: 1, short: 'Day 1', pdf: '/pdf/symposium/Agenda_Day1.pdf' },
-  { label: 'Day 2 (Saturday, 16 May 2026)', value: 2, short: 'Day 2', pdf: '/pdf/symposium/Agenda_Day2.pdf' }
+  { label: 'Day 1 (Friday, 15 May 2026)', value: 1, short: 'Day 1', pdf: '/pdf/symposium/Symposium_Agenda_Day1.pdf' },
+  { label: 'Day 2 (Saturday, 16 May 2026)', value: 2, short: 'Day 2', pdf: '/pdf/symposium/Symposium_Agenda_Day2.pdf' }
 ])
 
 const currentPdfSrc = computed(() => (
